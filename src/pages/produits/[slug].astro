@@ -1,0 +1,197 @@
+---
+import { getCollection, render } from 'astro:content';
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+
+export async function getStaticPaths() {
+  const produits = await getCollection('produits');
+  return produits.map((p) => ({
+    params: { slug: p.id },
+    props: { produit: p },
+  }));
+}
+
+const { produit } = Astro.props;
+const d = produit.data;
+const { Content } = await render(produit);
+
+const categoryLabels = {
+  'boissons-aloe-vera': 'Boissons Aloe Vera',
+  'cremes-et-gels': 'Crèmes et Gels',
+  'programme-detox': 'Programmes Détox',
+  'sport-et-fitness': 'Sport et Fitness',
+  'nutrition': 'Nutrition',
+};
+const catLabel = categoryLabels[d.category] || 'Produits';
+
+// Image YouTube embed
+let videoEmbed = '';
+if (d.video) {
+  const m = d.video.match(/(?:v=|youtu\.be\/|embed\/)([\w-]{11})/);
+  if (m) videoEmbed = `https://www.youtube.com/embed/${m[1]}`;
+}
+
+const prix = d.price.toFixed(2).replace('.', ',');
+---
+
+<Layout
+  title={d.seoTitle || `${d.name} | Mon Aloe Vera Bien-être`}
+  description={d.seoDescription || d.description}
+  image={d.image}
+>
+  <Header />
+
+  <!-- Fil d'ariane -->
+  <nav class="mx-auto max-w-6xl px-6 pt-6 text-sm text-aloe-500">
+    <a href="/" class="hover:text-aloe-700">Accueil</a>
+    <span class="mx-2">/</span>
+    <a href="/produits" class="hover:text-aloe-700">Produits</a>
+    <span class="mx-2">/</span>
+    <span class="text-aloe-700">{d.name}</span>
+  </nav>
+
+  <!-- Hero produit -->
+  <section class="mx-auto max-w-6xl px-6 py-10 grid md:grid-cols-2 gap-12">
+    <div>
+      <div class="rounded-3xl bg-gradient-to-br from-aloe-50 to-aloe-100 p-8 flex items-center justify-center">
+        <img
+          src={d.image}
+          alt={d.name}
+          class="max-h-96 w-auto object-contain"
+          loading="eager"
+        />
+      </div>
+      {d.images.length > 0 && (
+        <div class="mt-4 flex gap-3">
+          {d.images.map((img) => (
+            <div class="rounded-xl bg-aloe-50 p-2 w-20 h-20 flex items-center justify-center">
+              <img src={img} alt={d.name} class="max-h-full object-contain" loading="lazy" />
+            </div>
+          ))}
+        </div>
+      )}
+    </div>
+
+    <div>
+      <span class="inline-block rounded-full bg-aloe-100 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-aloe-700">
+        {catLabel}
+      </span>
+      <h1 class="text-3xl md:text-4xl text-aloe-900 mt-4 leading-tight">{d.name}</h1>
+      {d.reference && (
+        <p class="text-sm text-aloe-500 mt-2">Référence : {d.reference}</p>
+      )}
+      <p class="text-aloe-700 leading-relaxed mt-5">{d.description}</p>
+
+      <div class="mt-8 flex items-baseline gap-3">
+        <span class="text-4xl font-display text-aloe-700">{prix} €</span>
+      </div>
+
+      <a
+        href={d.lienCommande || '/contact'}
+        target="_blank"
+        rel="noopener"
+        class="mt-6 inline-block rounded-full bg-aloe-600 px-8 py-4 text-sm font-semibold text-cream hover:bg-aloe-700 transition-colors"
+      >
+        Commander ce produit
+      </a>
+
+      <div class="mt-6 flex flex-wrap gap-x-6 gap-y-2 text-xs text-aloe-500">
+        <span>✓ Livraison rapide en France</span>
+        <span>✓ Produit Forever Living officiel</span>
+        <span>✓ Satisfait ou remboursé</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Détails produit -->
+  {d.titreDetails && (
+    <section class="bg-cream py-14">
+      <div class="mx-auto max-w-3xl px-6">
+        <h2 class="text-2xl md:text-3xl text-aloe-900 mb-5">{d.titreDetails}</h2>
+        <div class="prose-aloe text-aloe-700 leading-relaxed">
+          <Content />
+        </div>
+      </div>
+    </section>
+  )}
+
+  <!-- Caractéristiques -->
+  {d.caracteristiques.length > 0 && (
+    <section class="bg-sand/50 py-16">
+      <div class="mx-auto max-w-4xl px-6">
+        <h2 class="text-2xl md:text-3xl text-aloe-900 mb-8 text-center">
+          En détail
+        </h2>
+        <div class="grid gap-5">
+          {d.caracteristiques.map((c) => (
+            <div class="rounded-2xl bg-white border border-aloe-100 p-6">
+              <h3 class="text-lg text-aloe-800 mb-2">{c.titre}</h3>
+              <p class="text-sm text-aloe-600 leading-relaxed">{c.contenu}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  )}
+
+  <!-- Vidéo -->
+  {videoEmbed && (
+    <section class="bg-cream py-16">
+      <div class="mx-auto max-w-3xl px-6">
+        <h2 class="text-2xl text-aloe-900 mb-6 text-center">En vidéo</h2>
+        <div class="aspect-video rounded-2xl overflow-hidden">
+          <iframe
+            src={videoEmbed}
+            title={d.name}
+            class="w-full h-full"
+            loading="lazy"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </section>
+  )}
+
+  <!-- FAQ -->
+  {d.faq.length > 0 && (
+    <section class="bg-sand/50 py-16">
+      <div class="mx-auto max-w-3xl px-6">
+        <h2 class="text-2xl md:text-3xl text-aloe-900 mb-8 text-center">
+          Questions fréquentes
+        </h2>
+        <div class="space-y-3">
+          {d.faq.map((item) => (
+            <details class="group rounded-2xl bg-white border border-aloe-100 overflow-hidden">
+              <summary class="cursor-pointer list-none px-6 py-4 flex items-center justify-between text-aloe-800 font-medium">
+                {item.question}
+                <span class="text-aloe-400 group-open:rotate-45 transition-transform text-xl">+</span>
+              </summary>
+              <div class="px-6 pb-5 text-sm text-aloe-600 leading-relaxed">
+                {item.reponse}
+              </div>
+            </details>
+          ))}
+        </div>
+      </div>
+    </section>
+  )}
+
+  <!-- CTA -->
+  <section class="bg-aloe-800 text-cream py-16">
+    <div class="mx-auto max-w-2xl px-6 text-center">
+      <h2 class="text-3xl text-cream mb-3">Une question sur ce produit ?</h2>
+      <p class="text-aloe-100 mb-7">
+        Contactez votre distributeur Forever pour un conseil personnalisé.
+      </p>
+      <a
+        href="/contact"
+        class="inline-block rounded-full bg-cream px-8 py-3.5 text-sm font-semibold text-aloe-800 hover:bg-aloe-50 transition-colors"
+      >
+        Nous contacter
+      </a>
+    </div>
+  </section>
+
+  <Footer />
+</Layout>

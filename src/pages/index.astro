@@ -1,0 +1,223 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
+const produits = [
+  {
+    nom: "Aloe Vera Gel",
+    desc: "La pulpe pure à boire, 99,7% d'aloe vera stabilisé pour le confort digestif.",
+    prix: "29,90 €",
+    emoji: "🥤",
+    tag: "Best-seller",
+  },
+  {
+    nom: "Forever C9",
+    desc: "Programme de 9 jours pour repartir sur de bonnes bases et se sentir léger.",
+    prix: "119,00 €",
+    emoji: "✨",
+    tag: "Programme",
+  },
+  {
+    nom: "Aloe Lips",
+    desc: "Le baume à lèvres réparateur à l'aloe vera, jojoba et germe de blé.",
+    prix: "6,50 €",
+    emoji: "💄",
+    tag: "Petit prix",
+  },
+];
+
+const benefices = [
+  { titre: "Hydratation profonde", texte: "L'aloe vera apaise et nourrit la peau en profondeur." },
+  { titre: "Confort digestif", texte: "La pulpe soutient un transit et une digestion équilibrés." },
+  { titre: "Tonus naturel", texte: "Vitamines et minéraux pour accompagner votre vitalité." },
+];
+
+const avis = [
+  {
+    texte: "Je bois la pulpe d'aloe vera tous les matins depuis 3 mois, ma digestion s'est nettement améliorée.",
+    auteur: "Sylvie M.",
+    ville: "Nantes",
+  },
+  {
+    texte: "Le programme C9 m'a vraiment aidée à reprendre de bonnes habitudes. Conseils au top.",
+    auteur: "Karim B.",
+    ville: "Rennes",
+  },
+  {
+    texte: "Livraison rapide et produits de qualité. Je recommande sans hésiter.",
+    auteur: "Élodie R.",
+    ville: "Saint-Nazaire",
+  },
+];
+---
+
+<Layout>
+  <Header />
+
+  <!-- HERO -->
+  <section class="relative overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-br from-aloe-50 via-cream to-sand"></div>
+    <div class="absolute -right-20 -top-20 w-96 h-96 rounded-full bg-aloe-200/40 blur-3xl"></div>
+    <div class="absolute -left-32 bottom-0 w-96 h-96 rounded-full bg-aloe-300/30 blur-3xl"></div>
+
+    <div class="relative mx-auto max-w-6xl px-6 py-24 md:py-32 grid md:grid-cols-2 gap-12 items-center">
+      <div>
+        <span class="inline-block rounded-full bg-aloe-100 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-aloe-700 mb-6">
+          Distributeur indépendant Forever Living
+        </span>
+        <h1 class="text-5xl md:text-6xl leading-[1.05] text-aloe-900 mb-6">
+          Le pouvoir naturel de l'<span class="italic text-aloe-500">aloe vera</span>
+        </h1>
+        <p class="text-lg text-aloe-700 leading-relaxed mb-8 max-w-md">
+          Des soins et compléments à base d'aloe vera pur, sélectionnés pour
+          votre bien-être au quotidien. Qualité, naturel, et conseils personnalisés.
+        </p>
+        <div class="flex flex-wrap gap-4">
+          <a href="/produits" class="rounded-full bg-aloe-600 px-7 py-3.5 text-sm font-semibold text-cream hover:bg-aloe-700 transition-colors">
+            Découvrir les produits
+          </a>
+          <a href="/blog" class="rounded-full border border-aloe-300 px-7 py-3.5 text-sm font-semibold text-aloe-700 hover:bg-aloe-50 transition-colors">
+            Conseils bien-être
+          </a>
+        </div>
+      </div>
+
+      <div class="relative">
+        <div class="aspect-square rounded-[2.5rem] bg-gradient-to-br from-aloe-400 to-aloe-700 flex items-center justify-center shadow-2xl shadow-aloe-900/20">
+          <span class="text-[10rem]">🌿</span>
+        </div>
+        <div class="absolute -bottom-6 -left-6 bg-cream rounded-2xl px-5 py-4 shadow-xl">
+          <p class="text-2xl font-display text-aloe-600">99,7%</p>
+          <p class="text-xs text-aloe-500 uppercase tracking-wide">d'aloe vera pur</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BENEFICES -->
+  <section class="bg-cream py-20">
+    <div class="mx-auto max-w-6xl px-6">
+      <div class="grid md:grid-cols-3 gap-6">
+        {benefices.map((b) => (
+          <div class="rounded-2xl bg-white/60 border border-aloe-100 p-8">
+            <h3 class="text-xl text-aloe-800 mb-2">{b.titre}</h3>
+            <p class="text-sm text-aloe-600 leading-relaxed">{b.texte}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUITS PHARES -->
+  <section class="bg-sand/50 py-24">
+    <div class="mx-auto max-w-6xl px-6">
+      <div class="text-center mb-14">
+        <span class="text-xs font-semibold uppercase tracking-widest text-aloe-500">Notre sélection</span>
+        <h2 class="text-4xl text-aloe-900 mt-2">Produits phares</h2>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        {produits.map((p) => (
+          <article class="group rounded-3xl bg-white border border-aloe-100 overflow-hidden hover:shadow-xl hover:shadow-aloe-900/10 transition-all">
+            <div class="aspect-[4/3] bg-gradient-to-br from-aloe-50 to-aloe-100 flex items-center justify-center relative">
+              <span class="text-7xl group-hover:scale-110 transition-transform">{p.emoji}</span>
+              <span class="absolute top-4 left-4 rounded-full bg-aloe-600 px-3 py-1 text-[11px] font-semibold text-cream uppercase tracking-wide">
+                {p.tag}
+              </span>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl text-aloe-800 mb-2">{p.nom}</h3>
+              <p class="text-sm text-aloe-600 leading-relaxed mb-4">{p.desc}</p>
+              <div class="flex items-center justify-between">
+                <span class="text-lg font-display text-aloe-700">{p.prix}</span>
+                <a href="/produits" class="text-sm font-semibold text-aloe-500 hover:text-aloe-700 transition-colors">
+                  Voir le produit →
+                </a>
+              </div>
+            </div>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- POURQUOI L'ALOE VERA -->
+  <section class="bg-aloe-800 text-cream py-24">
+    <div class="mx-auto max-w-5xl px-6 grid md:grid-cols-2 gap-12 items-center">
+      <div>
+        <h2 class="text-4xl text-cream mb-6">Pourquoi choisir l'aloe vera ?</h2>
+        <p class="text-aloe-100 leading-relaxed mb-4">
+          Utilisée depuis des millénaires, cette plante concentre vitamines,
+          minéraux et acides aminés. Forever Living cultive son aloe vera sans
+          pesticides et le stabilise à froid pour préserver toutes ses qualités.
+        </p>
+        <p class="text-aloe-100 leading-relaxed">
+          De la pulpe à boire aux soins de la peau, chaque produit est pensé
+          pour vous accompagner vers un quotidien plus naturel.
+        </p>
+      </div>
+      <div class="grid grid-cols-2 gap-4">
+        <div class="rounded-2xl bg-aloe-700 p-6 text-center">
+          <p class="text-3xl font-display text-cream">+40</p>
+          <p class="text-xs text-aloe-200 uppercase tracking-wide mt-1">ans d'expertise</p>
+        </div>
+        <div class="rounded-2xl bg-aloe-700 p-6 text-center">
+          <p class="text-3xl font-display text-cream">0</p>
+          <p class="text-xs text-aloe-200 uppercase tracking-wide mt-1">pesticide</p>
+        </div>
+        <div class="rounded-2xl bg-aloe-700 p-6 text-center">
+          <p class="text-3xl font-display text-cream">100%</p>
+          <p class="text-xs text-aloe-200 uppercase tracking-wide mt-1">satisfait ou remboursé</p>
+        </div>
+        <div class="rounded-2xl bg-aloe-700 p-6 text-center">
+          <p class="text-3xl font-display text-cream">48h</p>
+          <p class="text-xs text-aloe-200 uppercase tracking-wide mt-1">livraison express</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AVIS CLIENTS -->
+  <section class="bg-cream py-24">
+    <div class="mx-auto max-w-6xl px-6">
+      <div class="text-center mb-14">
+        <span class="text-xs font-semibold uppercase tracking-widest text-aloe-500">Ils nous font confiance</span>
+        <h2 class="text-4xl text-aloe-900 mt-2">Avis clients</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-8">
+        {avis.map((a) => (
+          <figure class="rounded-2xl bg-white border border-aloe-100 p-8">
+            <div class="text-clay text-lg mb-3">★★★★★</div>
+            <blockquote class="text-sm text-aloe-700 leading-relaxed mb-4">"{a.texte}"</blockquote>
+            <figcaption class="text-sm">
+              <span class="font-semibold text-aloe-800">{a.auteur}</span>
+              <span class="text-aloe-500"> — {a.ville}</span>
+            </figcaption>
+          </figure>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="bg-sand py-20">
+    <div class="mx-auto max-w-3xl px-6 text-center">
+      <h2 class="text-4xl text-aloe-900 mb-4">Prêt à prendre soin de vous ?</h2>
+      <p class="text-aloe-700 mb-8">
+        Découvrez toute notre gamme d'aloe vera ou contactez-nous pour un
+        conseil personnalisé. Nous sommes là pour vous accompagner.
+      </p>
+      <div class="flex flex-wrap gap-4 justify-center">
+        <a href="/produits" class="rounded-full bg-aloe-600 px-8 py-3.5 text-sm font-semibold text-cream hover:bg-aloe-700 transition-colors">
+          Voir tous les produits
+        </a>
+        <a href="/contact" class="rounded-full border border-aloe-400 px-8 py-3.5 text-sm font-semibold text-aloe-700 hover:bg-aloe-50 transition-colors">
+          Nous contacter
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <Footer />
+</Layout>

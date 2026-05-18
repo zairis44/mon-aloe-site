@@ -1,0 +1,41 @@
+---
+const links = [
+  { href: "/", label: "Accueil" },
+  { href: "/produits", label: "Produits" },
+  { href: "/blog", label: "Conseils" },
+  { href: "/a-propos", label: "À propos" },
+  { href: "/contact", label: "Contact" },
+];
+---
+
+<header class="sticky top-0 z-50 bg-cream/90 backdrop-blur-md border-b border-aloe-100">
+  <nav class="mx-auto max-w-6xl px-6 h-18 flex items-center justify-between py-3">
+    <a href="/" class="flex items-center gap-2 group">
+      <span class="text-2xl">🌿</span>
+      <span class="font-display text-xl text-aloe-800 leading-tight">
+        Mon Aloe Vera<br />
+        <span class="text-xs tracking-widest uppercase text-aloe-500">Bien-être</span>
+      </span>
+    </a>
+
+    <ul class="hidden md:flex items-center gap-8">
+      {links.map((link) => (
+        <li>
+          <a
+            href={link.href}
+            class="text-sm font-medium text-aloe-700 hover:text-aloe-500 transition-colors"
+          >
+            {link.label}
+          </a>
+        </li>
+      ))}
+    </ul>
+
+    <a
+      href="/produits"
+      class="rounded-full bg-aloe-600 px-5 py-2.5 text-sm font-semibold text-cream hover:bg-aloe-700 transition-colors"
+    >
+      Commander
+    </a>
+  </nav>
+</header>
