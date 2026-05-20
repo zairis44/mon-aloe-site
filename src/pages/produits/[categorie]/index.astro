@@ -1,0 +1,234 @@
+---
+/**
+ * src/pages/produits/[categorie]/index.astro
+ * Page catégorie dynamique — liste les produits d'une catégorie
+ * Ex: /produits/boissons/, /produits/programmes-detox/
+ */
+import Layout from '../../../layouts/Layout.astro';
+import Header from '../../../components/Header.astro';
+import Footer from '../../../components/Footer.astro';
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+  const categories = [
+    'boissons',
+    'programmes-detox',
+    'sport-fitness',
+    'beaute-bien-etre',
+    'nutrition',
+  ];
+  return categories.map((categorie) => ({ params: { categorie } }));
+}
+
+const { categorie } = Astro.params;
+
+// Config par catégorie
+const config: Record<string, {
+  label: string;
+  icon: string;
+  desc: string;
+  descLongue: string;
+  couleur: string;
+  blogSlug?: string;
+}> = {
+  boissons: {
+    label: "Boissons Aloe Vera",
+    icon: "🥤",
+    desc: "Pulpes, jus & boissons enrichies pour votre bien-être intérieur.",
+    descLongue: "La gamme de boissons Forever Living est la plus complète du marché. La pulpe d'aloe vera pure (99,7%) est stabilisée à froid pour préserver tous ses actifs naturels : polysaccharides, vitamines A, B, C et E, enzymes digestives et minéraux essentiels.",
+    couleur: "from-aloe-50 to-aloe-100",
+    blogSlug: "aloe-vera-digestion-bienfaits",
+  },
+  "programmes-detox": {
+    label: "Programmes Détox",
+    icon: "🔄",
+    desc: "Cures complètes pour repartir sur de bonnes bases.",
+    descLongue: "Les programmes détox Forever Living combinent aloe vera, fibres alimentaires et compléments ciblés pour un reboot complet de votre organisme. Le C9 (9 jours) et le DX4 (4 jours) sont les deux références incontournables pour relancer votre métabolisme.",
+    couleur: "from-sand to-aloe-50",
+    blogSlug: "programme-c9-forever-guide-cure-detox-9-jours",
+  },
+  "sport-fitness": {
+    label: "Sport & Fitness",
+    icon: "💪",
+    desc: "Performance naturelle et récupération musculaire optimisée.",
+    descLongue: "La gamme Sport & Fitness Forever Living est conçue pour accompagner les sportifs réguliers et les personnes actives. Récupération musculaire, énergie durable, hydratation cellulaire : des produits naturels et certifiés pour booster vos performances.",
+    couleur: "from-aloe-100 to-aloe-200",
+    blogSlug: "aloe-vera-sport-recuperation-musculaire",
+  },
+  "beaute-bien-etre": {
+    label: "Beauté & Bien-être",
+    icon: "🧴",
+    desc: "Soins naturels pour la peau, le corps et les cheveux.",
+    descLongue: "La gamme beauté Forever Living exploite les propriétés hydratantes, apaisantes et régénératrices de l'aloe vera. Gels, crèmes, savons et soins pour le visage, le corps et les cheveux — des soins naturels certifiés, sans parabènes ni produits agressifs.",
+    couleur: "from-cream to-sand",
+    blogSlug: "aloe-vera-peau-beaute-bienfaits-forever",
+  },
+  nutrition: {
+    label: "Nutrition",
+    icon: "🌱",
+    desc: "Compléments alimentaires naturels certifiés.",
+    descLongue: "La gamme nutrition Forever Living complète votre alimentation avec des actifs naturels soigneusement sélectionnés. Vitamines, minéraux, protéines végétales et compléments spécifiques pour soutenir votre santé au quotidien.",
+    couleur: "from-aloe-50 to-cream",
+  },
+};
+
+const info = config[categorie] ?? {
+  label: categorie,
+  icon: "🌿",
+  desc: "",
+  descLongue: "",
+  couleur: "from-aloe-50 to-aloe-100",
+};
+
+// Récupérer les produits de cette catégorie
+let produits: any[] = [];
+try {
+  const tous = await getCollection('produits', ({ data }) => data.disponible);
+  // Filtrer par catégorie en tenant compte des variations de noms
+  produits = tous.filter((p) => {
+    const cat = p.data.categorie?.toLowerCase().replace(/\s/g, '-') ?? '';
+    return cat === categorie ||
+      cat.includes(categorie.split('-')[0]);
+  });
+} catch (_) {}
+
+const schemaBreadcrumb = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Accueil", item: "https://espritaloe.fr/" },
+    { "@type": "ListItem", position: 2, name: "Produits", item: "https://espritaloe.fr/produits/" },
+    { "@type": "ListItem", position: 3, name: info.label, item: `https://espritaloe.fr/produits/${categorie}/` },
+  ],
+};
+---
+
+<Layout
+  title={`${info.label} Forever Living — Distributeur France | Esprit Aloé`}
+  description={`${info.desc} Achetez vos produits ${info.label} Forever Living en France. Livraison 24-72h. Distributeur certifié, conseils personnalisés.`}
+  canonical={`https://espritaloe.fr/produits/${categorie}/`}
+>
+  <script type="application/ld+json" set:html={JSON.stringify(schemaBreadcrumb)} slot="head" />
+
+  <Header />
+
+  <!-- En-tête catégorie -->
+  <section class={`bg-gradient-to-br ${info.couleur} py-16`}>
+    <div class="mx-auto max-w-6xl px-6">
+      <nav class="text-xs text-aloe-400 mb-6" aria-label="Fil d'Ariane">
+        <ol class="flex items-center gap-2">
+          <li><a href="/" class="hover:text-aloe-600 transition-colors">Accueil</a></li>
+          <li aria-hidden="true">›</li>
+          <li><a href="/produits/" class="hover:text-aloe-600 transition-colors">Produits</a></li>
+          <li aria-hidden="true">›</li>
+          <li class="text-aloe-700 font-medium" aria-current="page">{info.label}</li>
+        </ol>
+      </nav>
+
+      <div class="flex items-center gap-4 mb-4">
+        <span class="text-5xl">{info.icon}</span>
+        <h1 class="text-4xl md:text-5xl text-aloe-900">{info.label}</h1>
+      </div>
+      <p class="text-lg text-aloe-600 max-w-2xl leading-relaxed">{info.descLongue}</p>
+
+      {info.blogSlug && (
+        <a
+          href={`/blog/${info.blogSlug}/`}
+          class="inline-flex items-center gap-2 mt-6 text-sm font-medium text-aloe-600 hover:text-aloe-800 transition-colors"
+        >
+          <span>📖</span> Lire notre guide sur ce thème →
+        </a>
+      )}
+    </div>
+  </section>
+
+  <!-- Grille produits -->
+  <section class="bg-cream py-16">
+    <div class="mx-auto max-w-6xl px-6">
+
+      {produits.length === 0 ? (
+        <!-- État vide -->
+        <div class="text-center py-20">
+          <span class="text-5xl">{info.icon}</span>
+          <p class="text-xl text-aloe-400 mt-4 mb-2">Produits bientôt disponibles</p>
+          <p class="text-sm text-aloe-300 mb-6">
+            Ajoutez des fichiers <code>.md</code> dans <code>src/content/produits/</code>
+            avec <code>categorie: {categorie}</code>
+          </p>
+          <a href="/contact/" class="rounded-full bg-aloe-600 px-6 py-3 text-sm font-semibold text-cream hover:bg-aloe-700 transition-colors">
+            Nous contacter pour commander
+          </a>
+        </div>
+      ) : (
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {produits.map((produit) => (
+            <article class="group rounded-3xl bg-white border border-aloe-100 overflow-hidden hover:shadow-xl hover:shadow-aloe-900/10 transition-all">
+              <a href={`/produits/${produit.slug}/`} class="block">
+                <div class="aspect-[4/3] bg-gradient-to-br from-aloe-50 to-aloe-100 flex items-center justify-center overflow-hidden">
+                  {produit.data.image ? (
+                    <img
+                      src={produit.data.image.src}
+                      alt={produit.data.image.alt}
+                      width="400"
+                      height="300"
+                      loading="lazy"
+                      class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
+                  ) : (
+                    <span class="text-6xl group-hover:scale-110 transition-transform">{info.icon}</span>
+                  )}
+                </div>
+              </a>
+              <div class="p-6">
+                <h2 class="text-lg font-semibold text-aloe-800 mb-2 leading-snug">
+                  <a href={`/produits/${produit.slug}/`} class="hover:text-aloe-600 transition-colors">
+                    {produit.data.nom}
+                  </a>
+                </h2>
+                <p class="text-sm text-aloe-500 leading-relaxed mb-4 line-clamp-2">
+                  {produit.data.description}
+                </p>
+                <div class="flex items-center justify-between">
+                  <span class="text-lg font-display text-aloe-700">
+                    {produit.data.prix.toFixed(2)} €
+                  </span>
+                  <a
+                    href={`/produits/${produit.slug}/`}
+                    class="rounded-full bg-aloe-600 px-4 py-2 text-xs font-semibold text-cream hover:bg-aloe-700 transition-colors"
+                  >
+                    Voir le produit
+                  </a>
+                </div>
+              </div>
+            </article>
+          ))}
+        </div>
+      )}
+    </div>
+  </section>
+
+  <!-- Navigation inter-catégories -->
+  <section class="bg-sand/50 py-12">
+    <div class="mx-auto max-w-6xl px-6">
+      <p class="text-xs font-semibold uppercase tracking-widest text-aloe-400 mb-4 text-center">
+        Explorer d'autres gammes
+      </p>
+      <div class="flex flex-wrap justify-center gap-3">
+        {Object.entries(config)
+          .filter(([slug]) => slug !== categorie)
+          .map(([slug, cat]) => (
+            <a
+              href={`/produits/${slug}/`}
+              class="flex items-center gap-2 rounded-full border border-aloe-200 bg-white px-4 py-2 text-sm font-medium text-aloe-600 hover:bg-aloe-50 hover:border-aloe-300 transition-colors"
+            >
+              <span>{cat.icon}</span>
+              <span>{cat.label}</span>
+            </a>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <Footer />
+</Layout>
