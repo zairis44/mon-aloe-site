@@ -1,0 +1,167 @@
+---
+/**
+ * src/pages/blog/index.astro
+ * Page listing blog — FICHIER MANQUANT qui causait le 404
+ *
+ * URL : /blog/
+ * Schema.org : CollectionPage + ItemList
+ */
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import { getCollection } from 'astro:content';
+
+const articles = await getCollection('blog', ({ data }) => !data.draft);
+const articlesTriés = articles.sort(
+  (a, b) => b.data.publishDate.getTime() - a.data.publishDate.getTime()
+);
+
+const categorieLabels: Record<string, string> = {
+  'boissons': 'Boissons',
+  'beaute-bien-etre': 'Beauté & Bien-être',
+  'programmes-detox': 'Programmes Détox',
+  'sport-fitness': 'Sport & Fitness',
+  'nutrition': 'Nutrition',
+  'guides': 'Guides',
+};
+
+const categorieColors: Record<string, string> = {
+  'boissons': 'bg-aloe-100 text-aloe-700',
+  'beaute-bien-etre': 'bg-sand text-clay',
+  'programmes-detox': 'bg-aloe-50 text-aloe-600',
+  'sport-fitness': 'bg-aloe-200 text-aloe-800',
+  'nutrition': 'bg-cream text-aloe-600',
+  'guides': 'bg-aloe-100 text-aloe-700',
+};
+
+// Schema.org ItemList pour le listing
+const schemaItemList = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  name: "Blog Aloe Vera Forever — Esprit Aloé",
+  numberOfItems: articlesTriés.length,
+  itemListElement: articlesTriés.map((article, i) => ({
+    "@type": "ListItem",
+    position: i + 1,
+    name: article.data.title,
+    url: `https://espritaloe.fr/blog/${article.slug}/`,
+  })),
+};
+---
+
+<Layout
+  title="Blog Aloe Vera Forever Living — Conseils bien-être naturel | Esprit Aloé"
+  description="Guides, conseils et articles sur les produits Aloe Vera Forever Living : digestion, peau, immunité, articulations, programmes détox. Rédigés par votre distributeur certifié."
+  canonical="https://espritaloe.fr/blog/"
+>
+  <script type="application/ld+json" set:html={JSON.stringify(schemaItemList)} />
+
+  <Header />
+
+  <!-- En-tête listing -->
+  <section class="bg-gradient-to-br from-aloe-50 via-cream to-sand py-20">
+    <div class="mx-auto max-w-6xl px-6">
+      <!-- Breadcrumb -->
+      <nav class="text-xs text-aloe-500 mb-6" aria-label="Fil d'Ariane">
+        <ol class="flex items-center gap-2">
+          <li><a href="/" class="hover:text-aloe-700 transition-colors">Accueil</a></li>
+          <li aria-hidden="true">›</li>
+          <li class="text-aloe-700 font-medium" aria-current="page">Blog</li>
+        </ol>
+      </nav>
+
+      <h1 class="text-5xl text-aloe-900 mb-4">Blog Aloe Vera</h1>
+      <p class="text-lg text-aloe-600 max-w-2xl">
+        Conseils pratiques, guides produits et dossiers thématiques sur les bienfaits
+        de l'Aloe Vera Forever Living. Digestion, immunité, peau, articulations et minceur.
+      </p>
+    </div>
+  </section>
+
+  <!-- Grille articles -->
+  <section class="bg-cream py-16">
+    <div class="mx-auto max-w-6xl px-6">
+
+      {articlesTriés.length === 0 ? (
+        <!-- État vide pendant le développement -->
+        <div class="text-center py-20">
+          <p class="text-2xl text-aloe-300 mb-4">🌿</p>
+          <p class="text-aloe-500">Les articles arrivent bientôt…</p>
+          <p class="text-sm text-aloe-400 mt-2">
+            Ajoutez des fichiers <code>.md</code> dans <code>src/content/blog/</code>
+          </p>
+        </div>
+      ) : (
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {articlesTriés.map((article) => (
+            <article class="group rounded-3xl bg-white border border-aloe-100 overflow-hidden hover:shadow-xl hover:shadow-aloe-900/10 transition-all flex flex-col">
+              {article.data.image && (
+                <a href={`/blog/${article.slug}/`} class="block overflow-hidden aspect-[16/9]">
+                  <img
+                    src={article.data.image.src}
+                    alt={article.data.image.alt}
+                    width="400"
+                    height="225"
+                    loading="lazy"
+                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                </a>
+              )}
+
+              <div class="p-6 flex flex-col flex-1">
+                <div class="flex items-center gap-2 mb-3">
+                  <span class={`rounded-full px-3 py-1 text-[11px] font-semibold uppercase tracking-wide ${categorieColors[article.data.categorie] ?? 'bg-aloe-100 text-aloe-700'}`}>
+                    {categorieLabels[article.data.categorie] ?? article.data.categorie}
+                  </span>
+                  <time
+                    datetime={article.data.publishDate.toISOString()}
+                    class="text-xs text-aloe-400"
+                  >
+                    {article.data.publishDate.toLocaleDateString('fr-FR', {
+                      day: 'numeric',
+                      month: 'short',
+                      year: 'numeric',
+                    })}
+                  </time>
+                </div>
+
+                <h2 class="text-lg text-aloe-800 mb-2 leading-snug flex-1">
+                  <a href={`/blog/${article.slug}/`} class="hover:text-aloe-600 transition-colors">
+                    {article.data.title}
+                  </a>
+                </h2>
+
+                <p class="text-sm text-aloe-600 leading-relaxed mb-4">
+                  {article.data.description}
+                </p>
+
+                <a
+                  href={`/blog/${article.slug}/`}
+                  class="mt-auto text-sm font-semibold text-aloe-500 hover:text-aloe-700 transition-colors"
+                >
+                  Lire l'article →
+                </a>
+              </div>
+            </article>
+          ))}
+        </div>
+      )}
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="bg-sand py-16">
+    <div class="mx-auto max-w-3xl px-6 text-center">
+      <h2 class="text-3xl text-aloe-900 mb-4">Un conseil personnalisé ?</h2>
+      <p class="text-aloe-600 mb-6">
+        Votre distributeur Forever est disponible 7j/7 pour vous guider
+        vers les produits adaptés à vos besoins.
+      </p>
+      <a href="/contact/" class="rounded-full bg-aloe-600 px-8 py-3.5 text-sm font-semibold text-cream hover:bg-aloe-700 transition-colors">
+        Nous contacter
+      </a>
+    </div>
+  </section>
+
+  <Footer />
+</Layout>
