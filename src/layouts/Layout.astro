@@ -1,5 +1,6 @@
 ---
 import '../styles/global.css';
+import SpeedInsights from '@vercel/speed-insights/astro';
 
 export interface Props {
   title?: string;
@@ -96,5 +97,6 @@ const schemaGraph = {
   </head>
   <body>
     <slot />
+    <SpeedInsights />
   </body>
 </html>
