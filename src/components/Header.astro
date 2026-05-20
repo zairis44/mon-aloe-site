@@ -1,7 +1,7 @@
 ---
 const categories = [
   {
-    href: "/produits/boissons/",
+    href: "/produits/boissons-aloe-vera/",
     label: "Boissons Aloe Vera",
     icon: "🥤",
     desc: "Pulpes, jus & boissons",
@@ -13,13 +13,13 @@ const categories = [
     desc: "C9, DX4 — cures minceur",
   },
   {
-    href: "/produits/sport-fitness/",
+    href: "/produits/sport-et-fitness/",
     label: "Sport & Fitness",
     icon: "💪",
     desc: "Performance & récupération",
   },
   {
-    href: "/produits/beaute-bien-etre/",
+    href: "/produits/cremes-et-gels/",
     label: "Beauté & Bien-être",
     icon: "🧴",
     desc: "Soins peau, corps & cheveux",
@@ -42,7 +42,6 @@ const links = [
 <header class="sticky top-0 z-50 bg-cream/90 backdrop-blur-md border-b border-aloe-100">
   <nav class="mx-auto max-w-6xl px-6 h-18 flex items-center justify-between py-3">
 
-    <!-- Logo -->
     <a href="/" class="flex items-center gap-2 group">
       <span class="text-2xl">🌿</span>
       <span class="font-display text-xl text-aloe-800 leading-tight">
@@ -51,10 +50,7 @@ const links = [
       </span>
     </a>
 
-    <!-- Nav desktop -->
     <ul class="hidden md:flex items-center gap-8">
-
-      <!-- Produits avec dropdown -->
       <li class="relative group">
         <a
           href="/produits/"
@@ -66,20 +62,12 @@ const links = [
           </svg>
         </a>
 
-        <!-- Dropdown panel -->
-        <div
-          class="absolute left-1/2 -translate-x-1/2 top-full mt-3 w-[480px] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 translate-y-1 group-hover:translate-y-0"
-        >
-          <!-- Flèche décorative -->
+        <div class="absolute left-1/2 -translate-x-1/2 top-full mt-3 w-[480px] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 translate-y-1 group-hover:translate-y-0">
           <div class="absolute -top-1.5 left-1/2 -translate-x-1/2 w-3 h-3 bg-white border-l border-t border-aloe-100 rotate-45 z-10"></div>
-
           <div class="bg-white rounded-2xl border border-aloe-100 shadow-xl shadow-aloe-900/10 overflow-hidden">
             <div class="grid grid-cols-2 gap-px bg-aloe-50 p-px">
               {categories.map((cat) => (
-                <a
-                  href={cat.href}
-                  class="flex items-center gap-3 bg-white p-4 hover:bg-aloe-50 transition-colors"
-                >
+                <a href={cat.href} class="flex items-center gap-3 bg-white p-4 hover:bg-aloe-50 transition-colors">
                   <span class="text-2xl flex-shrink-0 w-10 h-10 flex items-center justify-center rounded-xl bg-aloe-50">
                     {cat.icon}
                   </span>
@@ -89,48 +77,28 @@ const links = [
                   </div>
                 </a>
               ))}
-              <!-- Lien "Voir tout" pleine largeur -->
-              <a
-                href="/produits/"
-                class="col-span-2 flex items-center justify-center gap-2 bg-aloe-50 hover:bg-aloe-100 transition-colors p-3"
-              >
-                <span class="text-xs font-semibold uppercase tracking-widest text-aloe-600">
-                  Voir toute la gamme →
-                </span>
+              <a href="/produits/" class="col-span-2 flex items-center justify-center gap-2 bg-aloe-50 hover:bg-aloe-100 transition-colors p-3">
+                <span class="text-xs font-semibold uppercase tracking-widest text-aloe-600">Voir toute la gamme →</span>
               </a>
             </div>
           </div>
         </div>
       </li>
 
-      <!-- Autres liens -->
       {links.map((link) => (
         <li>
-          <a
-            href={link.href}
-            class="text-sm font-medium text-aloe-700 hover:text-aloe-500 transition-colors"
-          >
+          <a href={link.href} class="text-sm font-medium text-aloe-700 hover:text-aloe-500 transition-colors">
             {link.label}
           </a>
         </li>
       ))}
     </ul>
 
-    <!-- CTA + burger -->
     <div class="flex items-center gap-3">
-      <a
-        href="/produits/"
-        class="hidden md:inline-flex rounded-full bg-aloe-600 px-5 py-2.5 text-sm font-semibold text-cream hover:bg-aloe-700 transition-colors"
-      >
+      <a href="/produits/" class="hidden md:inline-flex rounded-full bg-aloe-600 px-5 py-2.5 text-sm font-semibold text-cream hover:bg-aloe-700 transition-colors">
         Commander
       </a>
-
-      <button
-        id="burger"
-        class="md:hidden flex flex-col gap-1.5 p-2"
-        aria-label="Ouvrir le menu"
-        aria-expanded="false"
-      >
+      <button id="burger" class="md:hidden flex flex-col gap-1.5 p-2" aria-label="Ouvrir le menu" aria-expanded="false">
         <span class="w-5 h-0.5 bg-aloe-700 transition-all duration-200" id="b1"></span>
         <span class="w-5 h-0.5 bg-aloe-700 transition-all duration-200" id="b2"></span>
         <span class="w-5 h-0.5 bg-aloe-700 transition-all duration-200" id="b3"></span>
@@ -138,17 +106,11 @@ const links = [
     </div>
   </nav>
 
-  <!-- Menu mobile -->
   <div id="mobile-menu" class="hidden md:hidden border-t border-aloe-100 bg-cream">
     <div class="mx-auto max-w-6xl px-6 py-4 space-y-1">
-      <p class="text-xs font-semibold uppercase tracking-widest text-aloe-400 px-3 py-2">
-        Produits
-      </p>
+      <p class="text-xs font-semibold uppercase tracking-widest text-aloe-400 px-3 py-2">Produits</p>
       {categories.map((cat) => (
-        <a
-          href={cat.href}
-          class="flex items-center gap-3 px-3 py-2.5 rounded-xl hover:bg-aloe-50 transition-colors"
-        >
+        <a href={cat.href} class="flex items-center gap-3 px-3 py-2.5 rounded-xl hover:bg-aloe-50 transition-colors">
           <span class="text-xl w-8 text-center">{cat.icon}</span>
           <div>
             <p class="text-sm font-medium text-aloe-700">{cat.label}</p>
@@ -156,22 +118,14 @@ const links = [
           </div>
         </a>
       ))}
-
       <div class="border-t border-aloe-100 pt-3 mt-1 space-y-1">
         {links.map((link) => (
-          <a
-            href={link.href}
-            class="block px-3 py-2.5 text-sm font-medium text-aloe-700 hover:bg-aloe-50 rounded-xl transition-colors"
-          >
+          <a href={link.href} class="block px-3 py-2.5 text-sm font-medium text-aloe-700 hover:bg-aloe-50 rounded-xl transition-colors">
             {link.label}
           </a>
         ))}
       </div>
-
-      <a
-        href="/produits/"
-        class="block mt-3 rounded-full bg-aloe-600 px-5 py-3 text-sm font-semibold text-cream text-center hover:bg-aloe-700 transition-colors"
-      >
+      <a href="/produits/" class="block mt-3 rounded-full bg-aloe-600 px-5 py-3 text-sm font-semibold text-cream text-center hover:bg-aloe-700 transition-colors">
         Commander
       </a>
     </div>
