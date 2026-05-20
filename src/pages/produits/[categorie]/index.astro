@@ -1,132 +1,163 @@
 ---
-import Layout from '../../layouts/Layout.astro';
-import Header from '../../components/Header.astro';
-import Footer from '../../components/Footer.astro';
+import Layout from '../../../layouts/Layout.astro';
+import Header from '../../../components/Header.astro';
+import Footer from '../../../components/Footer.astro';
+import { getCollection } from 'astro:content';
 
-const categories = [
-  {
-    slug: "boissons-aloe-vera",
+export async function getStaticPaths() {
+  return [
+    { params: { categorie: 'boissons-aloe-vera' } },
+    { params: { categorie: 'programmes-detox' } },
+    { params: { categorie: 'sport-et-fitness' } },
+    { params: { categorie: 'cremes-et-gels' } },
+    { params: { categorie: 'nutrition' } },
+  ];
+}
+
+const { categorie } = Astro.params;
+
+const config: Record<string, { label: string; icon: string; desc: string; couleur: string }> = {
+  'boissons-aloe-vera': {
     label: "Boissons Aloe Vera",
     icon: "🥤",
-    desc: "La base de la gamme Forever Living. Pulpe d'aloe vera pure, boissons enrichies et coffrets découverte pour votre bien-être intérieur au quotidien.",
-    nbProduits: 9,
+    desc: "Pulpe d'aloe vera pure, boissons enrichies et coffrets. La base de votre bien-être intérieur au quotidien.",
     couleur: "from-aloe-50 to-aloe-100",
-    produitPhare: "Forever Aloe Vera Gel",
   },
-  {
-    slug: "programmes-detox",
+  'programmes-detox': {
     label: "Programmes Détox",
     icon: "🔄",
-    desc: "Cures complètes pour repartir sur de bonnes bases. Le C9 (9 jours) et DX4 (4 jours) pour relancer votre métabolisme naturellement.",
-    nbProduits: 3,
+    desc: "Le C9 (9 jours) et DX4 (4 jours) pour repartir sur de bonnes bases et relancer naturellement votre métabolisme.",
     couleur: "from-sand to-aloe-50",
-    produitPhare: "Programme C9",
   },
-  {
-    slug: "sport-et-fitness",
+  'sport-et-fitness': {
     label: "Sport & Fitness",
     icon: "💪",
     desc: "Compléments naturels pour optimiser vos performances et accélérer la récupération musculaire.",
-    nbProduits: 4,
     couleur: "from-aloe-100 to-aloe-200",
-    produitPhare: "Forever Argi+",
   },
-  {
-    slug: "cremes-et-gels",
+  'cremes-et-gels': {
     label: "Beauté & Bien-être",
     icon: "🧴",
-    desc: "Soins naturels pour la peau, le corps et les cheveux à base d'aloe vera pur. Gels, crèmes et savons.",
-    nbProduits: 9,
+    desc: "Gels, crèmes et savons naturels à base d'aloe vera pur pour prendre soin de votre peau, corps et cheveux.",
     couleur: "from-cream to-sand",
-    produitPhare: "Aloe Gelly",
   },
-  {
-    slug: "nutrition",
+  'nutrition': {
     label: "Nutrition",
     icon: "🌱",
-    desc: "Compléments alimentaires naturels certifiés IASC pour soutenir votre santé au quotidien.",
-    nbProduits: 4,
+    desc: "Compléments alimentaires naturels certifiés IASC pour soutenir votre santé et votre vitalité au quotidien.",
     couleur: "from-aloe-50 to-cream",
-    produitPhare: "Forever Lite Ultra",
   },
-];
+};
+
+const info = config[categorie] ?? { label: categorie, icon: "🌿", desc: "", couleur: "from-aloe-50 to-aloe-100" };
+
+// Filtrage sur le vrai champ "category" de vos fichiers .md
+const tous = await getCollection('produits');
+const produits = tous.filter((p: any) => p.data.category === categorie);
 ---
 
 <Layout
-  title="Tous les produits Aloe Vera Forever Living | Esprit Aloé"
-  description="Parcourez toute la gamme Forever Living : boissons aloe vera, programmes détox C9 & DX4, soins beauté, compléments sportifs et nutrition. Livraison France 24-72h."
-  canonical="https://espritaloe.fr/produits/"
+  title={`${info.label} Forever Living | Esprit Aloé`}
+  description={`${info.desc} Achetez vos produits ${info.label} Forever Living en France. Livraison 24-72h.`}
+  canonical={`https://espritaloe.fr/produits/${categorie}/`}
 >
   <Header />
 
-  <section class="bg-gradient-to-br from-aloe-50 via-cream to-sand py-16">
+  <!-- En-tête -->
+  <section class={`bg-gradient-to-br ${info.couleur} py-16`}>
     <div class="mx-auto max-w-6xl px-6">
       <nav class="text-xs text-aloe-400 mb-6" aria-label="Fil d'Ariane">
         <ol class="flex items-center gap-2">
           <li><a href="/" class="hover:text-aloe-600 transition-colors">Accueil</a></li>
           <li>›</li>
-          <li class="text-aloe-700 font-medium">Produits</li>
+          <li><a href="/produits/" class="hover:text-aloe-600 transition-colors">Produits</a></li>
+          <li>›</li>
+          <li class="text-aloe-700 font-medium">{info.label}</li>
         </ol>
       </nav>
-      <h1 class="text-5xl text-aloe-900 mb-4">Toute la gamme<br />Forever Living</h1>
-      <p class="text-lg text-aloe-600 max-w-xl">
-        Des produits naturels à base d'Aloe Vera certifiés IASC, pour chaque besoin de bien-être.
-        Livrés partout en France en 24–72h.
-      </p>
+      <div class="flex items-center gap-4 mb-4">
+        <span class="text-5xl">{info.icon}</span>
+        <h1 class="text-4xl md:text-5xl text-aloe-900">{info.label}</h1>
+      </div>
+      <p class="text-lg text-aloe-600 max-w-2xl">{info.desc}</p>
     </div>
   </section>
 
+  <!-- Grille produits -->
   <section class="bg-cream py-16">
     <div class="mx-auto max-w-6xl px-6">
-      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {categories.map((cat) => (
-          <a
-            href={`/produits/${cat.slug}/`}
-            class="group rounded-3xl overflow-hidden border border-aloe-100 bg-white hover:shadow-xl hover:shadow-aloe-900/10 transition-all duration-300 hover:-translate-y-1"
-          >
-            <div class={`bg-gradient-to-br ${cat.couleur} p-10 flex items-center justify-center`}>
-              <span class="text-6xl group-hover:scale-110 transition-transform duration-300">{cat.icon}</span>
-            </div>
-            <div class="p-6">
-              <div class="flex items-start justify-between mb-3">
-                <h2 class="text-xl font-semibold text-aloe-800">{cat.label}</h2>
-                <span class="text-xs text-aloe-400 bg-aloe-50 rounded-full px-2.5 py-1 flex-shrink-0 ml-2">
-                  {cat.nbProduits} produits
-                </span>
-              </div>
-              <p class="text-sm text-aloe-600 leading-relaxed mb-4">{cat.desc}</p>
-              <div class="flex items-center justify-between">
-                <span class="text-xs text-aloe-400">
-                  Phare : <strong class="text-aloe-600">{cat.produitPhare}</strong>
-                </span>
-                <span class="text-sm font-semibold text-aloe-500 group-hover:text-aloe-700 transition-colors">Voir →</span>
-              </div>
-            </div>
+      {produits.length === 0 ? (
+        <div class="text-center py-20">
+          <span class="text-5xl">{info.icon}</span>
+          <p class="text-xl text-aloe-400 mt-4 mb-6">Aucun produit trouvé pour cette catégorie.</p>
+          <a href="/contact/" class="rounded-full bg-aloe-600 px-6 py-3 text-sm font-semibold text-cream hover:bg-aloe-700 transition-colors">
+            Nous contacter pour commander
           </a>
-        ))}
-      </div>
+        </div>
+      ) : (
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {produits.map((produit: any) => (
+            <article class="group rounded-3xl bg-white border border-aloe-100 overflow-hidden hover:shadow-xl hover:shadow-aloe-900/10 transition-all">
+              <a href={`/produits/${produit.data.slug || produit.slug}/`} class="block">
+                <div class="aspect-[4/3] bg-gradient-to-br from-aloe-50 to-aloe-100 flex items-center justify-center overflow-hidden">
+                  {produit.data.image ? (
+                    <img
+                      src={produit.data.image}
+                      alt={produit.data.name}
+                      width="400"
+                      height="300"
+                      loading="lazy"
+                      class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
+                  ) : (
+                    <span class="text-6xl">{info.icon}</span>
+                  )}
+                </div>
+              </a>
+              <div class="p-6">
+                <h2 class="text-lg font-semibold text-aloe-800 mb-2 leading-snug line-clamp-2">
+                  <a href={`/produits/${produit.data.slug || produit.slug}/`} class="hover:text-aloe-600 transition-colors">
+                    {produit.data.name}
+                  </a>
+                </h2>
+                <div class="flex items-center justify-between mt-4">
+                  <span class="text-lg font-display text-aloe-700">
+                    {produit.data.price?.toFixed(2)} €
+                  </span>
+                  <a
+                    href={`/produits/${produit.data.slug || produit.slug}/`}
+                    class="rounded-full bg-aloe-600 px-4 py-2 text-xs font-semibold text-cream hover:bg-aloe-700 transition-colors"
+                  >
+                    Voir le produit
+                  </a>
+                </div>
+              </div>
+            </article>
+          ))}
+        </div>
+      )}
     </div>
   </section>
 
-  <section class="bg-aloe-800 py-10">
+  <!-- Autres catégories -->
+  <section class="bg-sand/50 py-12">
     <div class="mx-auto max-w-6xl px-6">
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-        <div>
-          <p class="text-2xl font-display text-cream">IASC</p>
-          <p class="text-xs text-aloe-200 mt-1">Certifié aloe vera pur</p>
-        </div>
-        <div>
-          <p class="text-2xl font-display text-cream">24–72h</p>
-          <p class="text-xs text-aloe-200 mt-1">Livraison France</p>
-        </div>
-        <div>
-          <p class="text-2xl font-display text-cream">30j</p>
-          <p class="text-xs text-aloe-200 mt-1">Satisfait ou remboursé</p>
-        </div>
-        <div>
-          <p class="text-2xl font-display text-cream">7j/7</p>
-          <p class="text-xs text-aloe-200 mt-1">Conseiller disponible</p>
-        </div>
+      <p class="text-xs font-semibold uppercase tracking-widest text-aloe-400 mb-4 text-center">
+        Explorer d'autres gammes
+      </p>
+      <div class="flex flex-wrap justify-center gap-3">
+        {Object.entries(config)
+          .filter(([slug]) => slug !== categorie)
+          .map(([slug, cat]) => (
+            <a
+              href={`/produits/${slug}/`}
+              class="flex items-center gap-2 rounded-full border border-aloe-200 bg-white px-4 py-2 text-sm font-medium text-aloe-600 hover:bg-aloe-50 transition-colors"
+            >
+              <span>{cat.icon}</span>
+              <span>{cat.label}</span>
+            </a>
+          ))
+        }
       </div>
     </div>
   </section>
