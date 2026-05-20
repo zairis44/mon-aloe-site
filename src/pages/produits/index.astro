@@ -1,16 +1,11 @@
 ---
-/**
- * src/pages/produits/index.astro
- * Page Collections — liste toutes les catégories
- * Équivalent de monaloeverabienetre.fr/collections
- */
 import Layout from '../../layouts/Layout.astro';
 import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
 
 const categories = [
   {
-    slug: "boissons",
+    slug: "boissons-aloe-vera",
     label: "Boissons Aloe Vera",
     icon: "🥤",
     desc: "La base de la gamme Forever Living. Pulpe d'aloe vera pure, boissons enrichies et coffrets découverte pour votre bien-être intérieur au quotidien.",
@@ -22,25 +17,25 @@ const categories = [
     slug: "programmes-detox",
     label: "Programmes Détox",
     icon: "🔄",
-    desc: "Cures complètes pour repartir sur de bonnes bases. Le programme C9 (9 jours) et DX4 (4 jours) pour relancer votre métabolisme naturellement.",
+    desc: "Cures complètes pour repartir sur de bonnes bases. Le C9 (9 jours) et DX4 (4 jours) pour relancer votre métabolisme naturellement.",
     nbProduits: 3,
     couleur: "from-sand to-aloe-50",
     produitPhare: "Programme C9",
   },
   {
-    slug: "sport-fitness",
+    slug: "sport-et-fitness",
     label: "Sport & Fitness",
     icon: "💪",
-    desc: "Compléments naturels pour optimiser vos performances et accélérer la récupération musculaire. Idéal pour les sportifs réguliers.",
+    desc: "Compléments naturels pour optimiser vos performances et accélérer la récupération musculaire.",
     nbProduits: 4,
     couleur: "from-aloe-100 to-aloe-200",
     produitPhare: "Forever Argi+",
   },
   {
-    slug: "beaute-bien-etre",
+    slug: "cremes-et-gels",
     label: "Beauté & Bien-être",
     icon: "🧴",
-    desc: "Soins naturels pour la peau, le corps et les cheveux à base d'aloe vera pur. Gels, crèmes, savons et soins quotidiens.",
+    desc: "Soins naturels pour la peau, le corps et les cheveux à base d'aloe vera pur. Gels, crèmes et savons.",
     nbProduits: 9,
     couleur: "from-cream to-sand",
     produitPhare: "Aloe Gelly",
@@ -49,7 +44,7 @@ const categories = [
     slug: "nutrition",
     label: "Nutrition",
     icon: "🌱",
-    desc: "Compléments alimentaires naturels pour soutenir votre santé au quotidien. Vitamines, minéraux et actifs naturels certifiés.",
+    desc: "Compléments alimentaires naturels certifiés IASC pour soutenir votre santé au quotidien.",
     nbProduits: 4,
     couleur: "from-aloe-50 to-cream",
     produitPhare: "Forever Lite Ultra",
@@ -64,25 +59,23 @@ const categories = [
 >
   <Header />
 
-  <!-- En-tête -->
   <section class="bg-gradient-to-br from-aloe-50 via-cream to-sand py-16">
     <div class="mx-auto max-w-6xl px-6">
       <nav class="text-xs text-aloe-400 mb-6" aria-label="Fil d'Ariane">
         <ol class="flex items-center gap-2">
           <li><a href="/" class="hover:text-aloe-600 transition-colors">Accueil</a></li>
-          <li aria-hidden="true">›</li>
-          <li class="text-aloe-700 font-medium" aria-current="page">Produits</li>
+          <li>›</li>
+          <li class="text-aloe-700 font-medium">Produits</li>
         </ol>
       </nav>
       <h1 class="text-5xl text-aloe-900 mb-4">Toute la gamme<br />Forever Living</h1>
       <p class="text-lg text-aloe-600 max-w-xl">
-        Des produits naturels à base d'Aloe Vera certifiés IASC,
-        pour chaque besoin de bien-être. Livrés partout en France en 24–72h.
+        Des produits naturels à base d'Aloe Vera certifiés IASC, pour chaque besoin de bien-être.
+        Livrés partout en France en 24–72h.
       </p>
     </div>
   </section>
 
-  <!-- Grille catégories -->
   <section class="bg-cream py-16">
     <div class="mx-auto max-w-6xl px-6">
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -91,14 +84,9 @@ const categories = [
             href={`/produits/${cat.slug}/`}
             class="group rounded-3xl overflow-hidden border border-aloe-100 bg-white hover:shadow-xl hover:shadow-aloe-900/10 transition-all duration-300 hover:-translate-y-1"
           >
-            <!-- Zone icône -->
             <div class={`bg-gradient-to-br ${cat.couleur} p-10 flex items-center justify-center`}>
-              <span class="text-6xl group-hover:scale-110 transition-transform duration-300">
-                {cat.icon}
-              </span>
+              <span class="text-6xl group-hover:scale-110 transition-transform duration-300">{cat.icon}</span>
             </div>
-
-            <!-- Contenu -->
             <div class="p-6">
               <div class="flex items-start justify-between mb-3">
                 <h2 class="text-xl font-semibold text-aloe-800">{cat.label}</h2>
@@ -108,10 +96,10 @@ const categories = [
               </div>
               <p class="text-sm text-aloe-600 leading-relaxed mb-4">{cat.desc}</p>
               <div class="flex items-center justify-between">
-                <span class="text-xs text-aloe-400">Produit phare : <strong class="text-aloe-600">{cat.produitPhare}</strong></span>
-                <span class="text-sm font-semibold text-aloe-500 group-hover:text-aloe-700 transition-colors">
-                  Voir →
+                <span class="text-xs text-aloe-400">
+                  Phare : <strong class="text-aloe-600">{cat.produitPhare}</strong>
                 </span>
+                <span class="text-sm font-semibold text-aloe-500 group-hover:text-aloe-700 transition-colors">Voir →</span>
               </div>
             </div>
           </a>
@@ -120,7 +108,6 @@ const categories = [
     </div>
   </section>
 
-  <!-- Bandeau confiance -->
   <section class="bg-aloe-800 py-10">
     <div class="mx-auto max-w-6xl px-6">
       <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
