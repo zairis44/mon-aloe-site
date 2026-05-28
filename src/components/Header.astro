@@ -2,7 +2,7 @@
 /**
  * src/components/Header.astro
  * Header principal — Esprit Aloé
- * Bouton "Boutique Forever" → foreverliving.fr/ref/330001628607/
+ * Mis à jour : bouton CTA → /commander/ (interne) au lieu de la boutique externe
  */
 
 const categories = [
@@ -42,10 +42,9 @@ const links = [
   { href: "/blog/", label: "Blog" },
   { href: "/notre-aloe/", label: "Notre Aloé" },
   { href: "/a-propos/", label: "À propos" },
+  { href: "/commander/", label: "Commander" },
   { href: "/contact/", label: "Contact" },
 ];
-
-const boutiqueUrl = "https://www.foreverliving.fr/ref/330001628607/";
 ---
 
 <header class="sticky top-0 z-50 bg-cream/90 backdrop-blur-md border-b border-aloe-100">
@@ -101,7 +100,10 @@ const boutiqueUrl = "https://www.foreverliving.fr/ref/330001628607/";
       <!-- Liens simples -->
       {links.map((link) => (
         <li>
-          <a href={link.href} class="text-sm font-medium text-aloe-700 hover:text-aloe-500 transition-colors">
+          <a
+            href={link.href}
+            class="text-sm font-medium text-aloe-700 hover:text-aloe-500 transition-colors"
+          >
             {link.label}
           </a>
         </li>
@@ -110,18 +112,21 @@ const boutiqueUrl = "https://www.foreverliving.fr/ref/330001628607/";
 
     <!-- CTA desktop + burger mobile -->
     <div class="flex items-center gap-3">
-      <!-- Bouton Boutique Forever (desktop) -->
+      <!-- Bouton Commander (desktop) — pointe vers /commander/ -->
       <a
-        href={boutiqueUrl}
-        target="_blank"
-        rel="noopener noreferrer"
+        href="/commander/"
         class="hidden md:inline-flex items-center gap-1.5 rounded-full bg-aloe-600 px-5 py-2.5 text-sm font-semibold text-cream hover:bg-aloe-700 transition-colors"
       >
-        🛒 Boutique Forever
+        🛒 Commander
       </a>
 
       <!-- Burger menu (mobile) -->
-      <button id="burger" class="md:hidden flex flex-col gap-1.5 p-2" aria-label="Ouvrir le menu" aria-expanded="false">
+      <button
+        id="burger"
+        class="md:hidden flex flex-col gap-1.5 p-2"
+        aria-label="Ouvrir le menu"
+        aria-expanded="false"
+      >
         <span class="w-5 h-0.5 bg-aloe-700 transition-all duration-200" id="b1"></span>
         <span class="w-5 h-0.5 bg-aloe-700 transition-all duration-200" id="b2"></span>
         <span class="w-5 h-0.5 bg-aloe-700 transition-all duration-200" id="b3"></span>
@@ -146,20 +151,21 @@ const boutiqueUrl = "https://www.foreverliving.fr/ref/330001628607/";
 
       <div class="border-t border-aloe-100 pt-3 mt-1 space-y-1">
         {links.map((link) => (
-          <a href={link.href} class="block px-3 py-2.5 text-sm font-medium text-aloe-700 hover:bg-aloe-50 rounded-xl transition-colors">
+          <a
+            href={link.href}
+            class="block px-3 py-2.5 text-sm font-medium text-aloe-700 hover:bg-aloe-50 rounded-xl transition-colors"
+          >
             {link.label}
           </a>
         ))}
       </div>
 
-      <!-- Bouton Boutique Forever (mobile) -->
+      <!-- Bouton Commander (mobile) — pointe vers /commander/ -->
       <a
-        href={boutiqueUrl}
-        target="_blank"
-        rel="noopener noreferrer"
+        href="/commander/"
         class="flex items-center justify-center gap-2 mt-3 rounded-full bg-aloe-600 px-5 py-3 text-sm font-semibold text-cream hover:bg-aloe-700 transition-colors"
       >
-        🛒 Boutique Forever
+        🛒 Commander
       </a>
     </div>
   </div>
