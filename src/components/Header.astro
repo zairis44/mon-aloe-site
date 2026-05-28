@@ -1,0 +1,189 @@
+---
+/**
+ * src/components/Header.astro
+ * Header principal — Esprit Aloé
+ * Bouton "Boutique Forever" → foreverliving.fr/ref/330001628607/
+ */
+
+const categories = [
+  {
+    href: "/produits/boissons-aloe-vera/",
+    label: "Boissons Aloe Vera",
+    icon: "🥤",
+    desc: "Pulpes, jus & boissons",
+  },
+  {
+    href: "/produits/programmes-detox/",
+    label: "Programmes Détox",
+    icon: "🔄",
+    desc: "C9, DX4 — cures minceur",
+  },
+  {
+    href: "/produits/sport-et-fitness/",
+    label: "Sport & Fitness",
+    icon: "💪",
+    desc: "Performance & récupération",
+  },
+  {
+    href: "/produits/cremes-et-gels/",
+    label: "Beauté & Bien-être",
+    icon: "🧴",
+    desc: "Soins peau, corps & cheveux",
+  },
+  {
+    href: "/produits/nutrition/",
+    label: "Nutrition",
+    icon: "🌱",
+    desc: "Compléments alimentaires",
+  },
+];
+
+const links = [
+  { href: "/blog/", label: "Blog" },
+  { href: "/notre-aloe/", label: "Notre Aloé" },
+  { href: "/a-propos/", label: "À propos" },
+  { href: "/contact/", label: "Contact" },
+];
+
+const boutiqueUrl = "https://www.foreverliving.fr/ref/330001628607/";
+---
+
+<header class="sticky top-0 z-50 bg-cream/90 backdrop-blur-md border-b border-aloe-100">
+  <nav class="mx-auto max-w-6xl px-6 h-18 flex items-center justify-between py-3">
+
+    <!-- Logo -->
+    <a href="/" class="flex items-center gap-2 group">
+      <span class="text-2xl">🌿</span>
+      <span class="font-display text-xl text-aloe-800 leading-tight">
+        Esprit Aloé<br />
+        <span class="text-xs tracking-widest uppercase text-aloe-500">Forever Living</span>
+      </span>
+    </a>
+
+    <!-- Navigation desktop -->
+    <ul class="hidden md:flex items-center gap-8">
+
+      <!-- Dropdown Produits -->
+      <li class="relative group">
+        <a
+          href="/produits/"
+          class="flex items-center gap-1 text-sm font-medium text-aloe-700 hover:text-aloe-500 transition-colors"
+        >
+          Produits
+          <svg class="w-3.5 h-3.5 transition-transform duration-200 group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+          </svg>
+        </a>
+
+        <div class="absolute left-1/2 -translate-x-1/2 top-full mt-3 w-[480px] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 translate-y-1 group-hover:translate-y-0">
+          <div class="absolute -top-1.5 left-1/2 -translate-x-1/2 w-3 h-3 bg-white border-l border-t border-aloe-100 rotate-45 z-10"></div>
+          <div class="bg-white rounded-2xl border border-aloe-100 shadow-xl shadow-aloe-900/10 overflow-hidden">
+            <div class="grid grid-cols-2 gap-px bg-aloe-50 p-px">
+              {categories.map((cat) => (
+                <a href={cat.href} class="flex items-center gap-3 bg-white p-4 hover:bg-aloe-50 transition-colors">
+                  <span class="text-2xl flex-shrink-0 w-10 h-10 flex items-center justify-center rounded-xl bg-aloe-50">
+                    {cat.icon}
+                  </span>
+                  <div>
+                    <p class="text-sm font-semibold text-aloe-800">{cat.label}</p>
+                    <p class="text-xs text-aloe-500">{cat.desc}</p>
+                  </div>
+                </a>
+              ))}
+              <a href="/produits/" class="col-span-2 flex items-center justify-center gap-2 bg-aloe-50 hover:bg-aloe-100 transition-colors p-3">
+                <span class="text-xs font-semibold uppercase tracking-widest text-aloe-600">Voir toute la gamme →</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </li>
+
+      <!-- Liens simples -->
+      {links.map((link) => (
+        <li>
+          <a href={link.href} class="text-sm font-medium text-aloe-700 hover:text-aloe-500 transition-colors">
+            {link.label}
+          </a>
+        </li>
+      ))}
+    </ul>
+
+    <!-- CTA desktop + burger mobile -->
+    <div class="flex items-center gap-3">
+      <!-- Bouton Boutique Forever (desktop) -->
+      <a
+        href={boutiqueUrl}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="hidden md:inline-flex items-center gap-1.5 rounded-full bg-aloe-600 px-5 py-2.5 text-sm font-semibold text-cream hover:bg-aloe-700 transition-colors"
+      >
+        🛒 Boutique Forever
+      </a>
+
+      <!-- Burger menu (mobile) -->
+      <button id="burger" class="md:hidden flex flex-col gap-1.5 p-2" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span class="w-5 h-0.5 bg-aloe-700 transition-all duration-200" id="b1"></span>
+        <span class="w-5 h-0.5 bg-aloe-700 transition-all duration-200" id="b2"></span>
+        <span class="w-5 h-0.5 bg-aloe-700 transition-all duration-200" id="b3"></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Menu mobile -->
+  <div id="mobile-menu" class="hidden md:hidden border-t border-aloe-100 bg-cream">
+    <div class="mx-auto max-w-6xl px-6 py-4 space-y-1">
+
+      <p class="text-xs font-semibold uppercase tracking-widest text-aloe-400 px-3 py-2">Produits</p>
+      {categories.map((cat) => (
+        <a href={cat.href} class="flex items-center gap-3 px-3 py-2.5 rounded-xl hover:bg-aloe-50 transition-colors">
+          <span class="text-xl w-8 text-center">{cat.icon}</span>
+          <div>
+            <p class="text-sm font-medium text-aloe-700">{cat.label}</p>
+            <p class="text-xs text-aloe-400">{cat.desc}</p>
+          </div>
+        </a>
+      ))}
+
+      <div class="border-t border-aloe-100 pt-3 mt-1 space-y-1">
+        {links.map((link) => (
+          <a href={link.href} class="block px-3 py-2.5 text-sm font-medium text-aloe-700 hover:bg-aloe-50 rounded-xl transition-colors">
+            {link.label}
+          </a>
+        ))}
+      </div>
+
+      <!-- Bouton Boutique Forever (mobile) -->
+      <a
+        href={boutiqueUrl}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="flex items-center justify-center gap-2 mt-3 rounded-full bg-aloe-600 px-5 py-3 text-sm font-semibold text-cream hover:bg-aloe-700 transition-colors"
+      >
+        🛒 Boutique Forever
+      </a>
+    </div>
+  </div>
+</header>
+
+<script>
+  const burger = document.getElementById('burger');
+  const menu = document.getElementById('mobile-menu');
+  const b1 = document.getElementById('b1');
+  const b2 = document.getElementById('b2');
+  const b3 = document.getElementById('b3');
+
+  burger?.addEventListener('click', () => {
+    const isOpen = !menu?.classList.contains('hidden');
+    menu?.classList.toggle('hidden', isOpen);
+    burger.setAttribute('aria-expanded', String(!isOpen));
+    if (!isOpen) {
+      b1?.classList.add('rotate-45', 'translate-y-2');
+      b2?.classList.add('opacity-0');
+      b3?.classList.add('-rotate-45', '-translate-y-2');
+    } else {
+      b1?.classList.remove('rotate-45', 'translate-y-2');
+      b2?.classList.remove('opacity-0');
+      b3?.classList.remove('-rotate-45', '-translate-y-2');
+    }
+  });
+</script>

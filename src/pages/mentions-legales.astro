@@ -1,0 +1,107 @@
+---
+/**
+ * src/pages/mentions-legales.astro
+ * Mentions légales — Esprit Aloé
+ * Obligatoire (loi LCEN, art. 6 III)
+ */
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout
+  title="Mentions légales | Esprit Aloé"
+  description="Mentions légales du site espritaloe.fr — Distributeur indépendant Forever Living Products."
+  canonical="https://espritaloe.fr/mentions-legales/"
+  noindex={true}
+>
+  <Header />
+
+  <section class="bg-gradient-to-br from-aloe-50 via-cream to-sand py-12">
+    <div class="mx-auto max-w-3xl px-6">
+      <nav class="text-xs text-aloe-400 mb-6" aria-label="Fil d'Ariane">
+        <ol class="flex items-center gap-2">
+          <li><a href="/" class="hover:text-aloe-600 transition-colors">Accueil</a></li>
+          <li>›</li>
+          <li class="text-aloe-700 font-medium">Mentions légales</li>
+        </ol>
+      </nav>
+      <h1 class="text-4xl text-aloe-900 mb-2">Mentions légales</h1>
+      <p class="text-sm text-aloe-400">Dernière mise à jour : mai 2025</p>
+    </div>
+  </section>
+
+  <section class="bg-cream py-14">
+    <div class="mx-auto max-w-3xl px-6 space-y-10 text-aloe-700">
+
+      <div>
+        <h2 class="text-xl font-semibold text-aloe-900 mb-3">1. Éditeur du site</h2>
+        <p class="leading-relaxed">
+          Le site <strong>espritaloe.fr</strong> est édité par :<br /><br />
+          <strong>Rafael Avenard</strong><br />
+          Entrepreneur Indépendant — Partenaire de la Société Forever Living Products<br />
+          Téléphone : <a href="tel:+33677352226" class="text-aloe-600 underline">06 77 35 22 26</a><br />
+          Email : <a href="mailto:contact@espritaloe.fr" class="text-aloe-600 underline">contact@espritaloe.fr</a>
+        </p>
+        <p class="mt-3 leading-relaxed text-sm text-aloe-500">
+          Rafael Avenard est un entrepreneur indépendant, non salarié de Forever Living Products.
+          Ce site est une initiative personnelle et n'est pas le site officiel de Forever Living Products.
+        </p>
+      </div>
+
+      <div>
+        <h2 class="text-xl font-semibold text-aloe-900 mb-3">2. Hébergement</h2>
+        <p class="leading-relaxed">
+          Ce site est hébergé par :<br /><br />
+          <strong>Vercel Inc.</strong><br />
+          340 Pine Street, Suite 701<br />
+          San Francisco, CA 94104 — États-Unis<br />
+          <a href="https://vercel.com" target="_blank" rel="noopener noreferrer" class="text-aloe-600 underline">vercel.com</a>
+        </p>
+      </div>
+
+      <div>
+        <h2 class="text-xl font-semibold text-aloe-900 mb-3">3. Propriété intellectuelle</h2>
+        <p class="leading-relaxed">
+          L'ensemble du contenu de ce site (textes, descriptions, structure) est la propriété
+          de Rafael Avenard, sauf mention contraire. Toute reproduction totale ou partielle
+          est interdite sans autorisation préalable.
+        </p>
+        <p class="mt-3 leading-relaxed">
+          Les marques Forever Living Products®, Forever®, C9® et autres sont la propriété
+          exclusive de Forever Living Products International LLC.
+        </p>
+      </div>
+
+      <div>
+        <h2 class="text-xl font-semibold text-aloe-900 mb-3">4. Responsabilité</h2>
+        <p class="leading-relaxed">
+          Les informations publiées sur ce site ont une vocation informative et ne sauraient
+          se substituer à un avis médical professionnel. En cas de pathologie ou de traitement
+          médical en cours, consultez un professionnel de santé avant toute utilisation
+          de compléments alimentaires.
+        </p>
+      </div>
+
+      <div>
+        <h2 class="text-xl font-semibold text-aloe-900 mb-3">5. Données personnelles</h2>
+        <p class="leading-relaxed">
+          Pour toute question relative au traitement de vos données personnelles,
+          consultez notre <a href="/confidentialite/" class="text-aloe-600 underline">Politique de confidentialité</a>.
+        </p>
+      </div>
+
+      <div>
+        <h2 class="text-xl font-semibold text-aloe-900 mb-3">6. Contact</h2>
+        <p class="leading-relaxed">
+          Pour toute question relative à ce site ou à son contenu :<br />
+          <a href="mailto:contact@espritaloe.fr" class="text-aloe-600 underline">contact@espritaloe.fr</a>
+          ou <a href="tel:+33677352226" class="text-aloe-600 underline">06 77 35 22 26</a>
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <Footer />
+</Layout>

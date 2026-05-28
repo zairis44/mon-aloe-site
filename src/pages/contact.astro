@@ -1,0 +1,288 @@
+---
+/**
+ * src/pages/contact.astro
+ * Page contact — Esprit Aloé
+ * Formulaire via Formspree (remplacer l'action par votre endpoint)
+ * Schema.org : ContactPage
+ */
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
+const schemaContact = {
+  "@context": "https://schema.org",
+  "@type": "ContactPage",
+  name: "Contactez Esprit Aloé — Distributeur Forever Living",
+  url: "https://espritaloe.fr/contact/",
+  description: "Contactez Rafael Avenard, distributeur Forever Living Products en France. Disponible 7j/7 pour vous conseiller.",
+  mainEntity: {
+    "@type": "Person",
+    name: "Rafael Avenard",
+    jobTitle: "Distributeur Forever Living Products",
+    telephone: "+33677352226",
+    email: "contact@espritaloe.fr",
+    url: "https://espritaloe.fr/contact/",
+    sameAs: ["https://www.facebook.com/RafaelAvenardDistributeurForever"],
+  },
+};
+
+const sujets = [
+  "Demande d'informations",
+  "Conseils produits",
+  "Commander un produit",
+  "Programme C9 / DX4",
+  "Devenir distributeur",
+  "Inscription à une présentation",
+  "Autre",
+];
+---
+
+<Layout
+  title="Contactez votre distributeur Forever Living France | Esprit Aloé"
+  description="Contactez Rafael Avenard, distributeur Forever Living Products en France. Disponible 7j/7 au 06 77 35 22 26 pour vous conseiller sur les produits Aloe Vera."
+  canonical="https://espritaloe.fr/contact/"
+>
+  <script type="application/ld+json" set:html={JSON.stringify(schemaContact)} slot="head" />
+
+  <Header />
+
+  <!-- En-tête -->
+  <section class="bg-gradient-to-br from-aloe-50 via-cream to-sand py-16">
+    <div class="mx-auto max-w-6xl px-6">
+      <nav class="text-xs text-aloe-400 mb-6" aria-label="Fil d'Ariane">
+        <ol class="flex items-center gap-2">
+          <li><a href="/" class="hover:text-aloe-600 transition-colors">Accueil</a></li>
+          <li>›</li>
+          <li class="text-aloe-700 font-medium">Contact</li>
+        </ol>
+      </nav>
+      <h1 class="text-5xl text-aloe-900 mb-4">Contactez-nous</h1>
+      <p class="text-lg text-aloe-600 max-w-xl">
+        Une question sur un produit, une commande ou les programmes détox ?
+        Rafael est disponible <strong>7j/7</strong> pour vous répondre.
+      </p>
+    </div>
+  </section>
+
+  <!-- Corps -->
+  <section class="bg-cream py-16">
+    <div class="mx-auto max-w-6xl px-6 grid md:grid-cols-2 gap-14">
+
+      <!-- ── Formulaire ──────────────────────────────────────────── -->
+      <div>
+        <h2 class="text-2xl text-aloe-800 mb-8">Envoyez-nous un message</h2>
+
+        <!--
+          FORMSPREE : remplacez l'action par votre endpoint.
+          1. Créez un compte gratuit sur formspree.io
+          2. New Form → copiez l'URL (ex: https://formspree.io/f/XXXXXXXX)
+          3. Collez-la dans l'attribut action ci-dessous
+        -->
+        <form
+          action="https://formspree.io/f/REMPLACER_ICI"
+          method="POST"
+          class="space-y-5"
+          id="contact-form"
+        >
+          <!-- Nom -->
+          <div>
+            <label for="nom" class="block text-sm font-medium text-aloe-700 mb-1.5">
+              Votre nom <span class="text-clay">*</span>
+            </label>
+            <input
+              type="text"
+              id="nom"
+              name="nom"
+              required
+              placeholder="Prénom Nom"
+              class="w-full rounded-xl border border-aloe-200 bg-white px-4 py-3 text-sm text-aloe-800 placeholder:text-aloe-300 focus:border-aloe-400 focus:outline-none focus:ring-2 focus:ring-aloe-100 transition-colors"
+            />
+          </div>
+
+          <!-- Email -->
+          <div>
+            <label for="email" class="block text-sm font-medium text-aloe-700 mb-1.5">
+              Votre email <span class="text-clay">*</span>
+            </label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              placeholder="vous@exemple.fr"
+              class="w-full rounded-xl border border-aloe-200 bg-white px-4 py-3 text-sm text-aloe-800 placeholder:text-aloe-300 focus:border-aloe-400 focus:outline-none focus:ring-2 focus:ring-aloe-100 transition-colors"
+            />
+          </div>
+
+          <!-- Téléphone -->
+          <div>
+            <label for="telephone" class="block text-sm font-medium text-aloe-700 mb-1.5">
+              Téléphone <span class="text-aloe-400 text-xs font-normal">(optionnel)</span>
+            </label>
+            <input
+              type="tel"
+              id="telephone"
+              name="telephone"
+              placeholder="06 XX XX XX XX"
+              class="w-full rounded-xl border border-aloe-200 bg-white px-4 py-3 text-sm text-aloe-800 placeholder:text-aloe-300 focus:border-aloe-400 focus:outline-none focus:ring-2 focus:ring-aloe-100 transition-colors"
+            />
+          </div>
+
+          <!-- Sujet -->
+          <div>
+            <label for="sujet" class="block text-sm font-medium text-aloe-700 mb-1.5">
+              Objet de votre message <span class="text-clay">*</span>
+            </label>
+            <select
+              id="sujet"
+              name="sujet"
+              required
+              class="w-full rounded-xl border border-aloe-200 bg-white px-4 py-3 text-sm text-aloe-800 focus:border-aloe-400 focus:outline-none focus:ring-2 focus:ring-aloe-100 transition-colors"
+            >
+              <option value="" disabled selected>Choisir un objet…</option>
+              {sujets.map((s) => (
+                <option value={s}>{s}</option>
+              ))}
+            </select>
+          </div>
+
+          <!-- Message -->
+          <div>
+            <label for="message" class="block text-sm font-medium text-aloe-700 mb-1.5">
+              Votre message <span class="text-clay">*</span>
+            </label>
+            <textarea
+              id="message"
+              name="message"
+              required
+              rows="5"
+              placeholder="Décrivez votre besoin, vos objectifs bien-être ou votre question…"
+              class="w-full rounded-xl border border-aloe-200 bg-white px-4 py-3 text-sm text-aloe-800 placeholder:text-aloe-300 focus:border-aloe-400 focus:outline-none focus:ring-2 focus:ring-aloe-100 transition-colors resize-none"
+            ></textarea>
+          </div>
+
+          <!-- Submit -->
+          <button
+            type="submit"
+            class="w-full rounded-full bg-aloe-600 px-6 py-4 text-sm font-semibold text-cream hover:bg-aloe-700 active:scale-[0.98] transition-all"
+          >
+            Envoyer le message
+          </button>
+
+          <p class="text-xs text-aloe-400 text-center">
+            Réponse garantie sous 24h · Vos données ne sont jamais revendues
+          </p>
+        </form>
+
+        <!-- Message de confirmation (affiché par Formspree automatiquement) -->
+        <div id="confirmation" class="hidden mt-6 rounded-2xl bg-aloe-50 border border-aloe-200 p-6 text-center">
+          <p class="text-2xl mb-2">✅</p>
+          <p class="font-semibold text-aloe-800">Message envoyé !</p>
+          <p class="text-sm text-aloe-600 mt-1">Rafael vous répondra dans les plus brefs délais.</p>
+        </div>
+      </div>
+
+      <!-- ── Coordonnées ─────────────────────────────────────────── -->
+      <div class="space-y-8">
+
+        <!-- Carte distributeur -->
+        <div class="rounded-3xl bg-aloe-800 text-cream p-8">
+          <div class="flex items-center gap-4 mb-6">
+            <!-- Photo Rafael — à remplacer par votre vraie photo -->
+            <div class="w-16 h-16 rounded-2xl bg-aloe-700 flex items-center justify-center text-3xl flex-shrink-0">
+              🌿
+            </div>
+            <div>
+              <p class="font-display text-xl">Rafael Avenard</p>
+              <p class="text-xs text-aloe-300 uppercase tracking-widest mt-0.5">
+                Distributeur Forever Living Products
+              </p>
+            </div>
+          </div>
+
+          <ul class="space-y-4">
+            <li class="flex items-center gap-3">
+              <span class="text-lg">📞</span>
+              <div>
+                <p class="text-xs text-aloe-400 uppercase tracking-wide">Téléphone</p>
+                <a href="tel:+33677352226" class="font-semibold hover:text-aloe-300 transition-colors">
+                  06 77 35 22 26
+                </a>
+              </div>
+            </li>
+            <li class="flex items-center gap-3">
+              <span class="text-lg">✉️</span>
+              <div>
+                <p class="text-xs text-aloe-400 uppercase tracking-wide">Email</p>
+                <a href="mailto:contact@espritaloe.fr" class="font-semibold hover:text-aloe-300 transition-colors">
+                  contact@espritaloe.fr
+                </a>
+              </div>
+            </li>
+            <li class="flex items-center gap-3">
+              <span class="text-lg">🕐</span>
+              <div>
+                <p class="text-xs text-aloe-400 uppercase tracking-wide">Disponibilité</p>
+                <p class="font-semibold">7j/7 — Réponse sous 24h</p>
+              </div>
+            </li>
+            <li class="flex items-center gap-3">
+              <span class="text-lg">📦</span>
+              <div>
+                <p class="text-xs text-aloe-400 uppercase tracking-wide">Livraison</p>
+                <p class="font-semibold">Partout en France — 24 à 72h</p>
+              </div>
+            </li>
+          </ul>
+
+          <div class="border-t border-aloe-700 mt-6 pt-6">
+            <a
+              href="https://www.facebook.com/RafaelAvenardDistributeurForever"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center gap-2 text-sm text-aloe-300 hover:text-cream transition-colors"
+            >
+              <span>📘</span> Suivre sur Facebook
+            </a>
+          </div>
+        </div>
+
+        <!-- À propos -->
+        <div class="rounded-3xl bg-white border border-aloe-100 p-8">
+          <h3 class="text-xl text-aloe-800 mb-4">Notre philosophie</h3>
+          <p class="text-sm text-aloe-600 leading-relaxed mb-4">
+            Notre mission est de vous offrir des produits naturels fabriqués
+            à partir des meilleures ressources de la nature. Avec plus de 40 ans
+            d'expérience, Forever Living s'engage à vous proposer des produits
+            de haute qualité, respectueux de votre santé et de l'environnement.
+          </p>
+          <p class="text-sm text-aloe-600 leading-relaxed mb-6">
+            Que vous soyez à la recherche d'un soin naturel, d'un programme
+            détox ou simplement de conseils bien-être personnalisés, je suis là
+            pour vous accompagner pas à pas.
+          </p>
+          <a
+            href="/produits/"
+            class="inline-flex items-center gap-2 text-sm font-semibold text-aloe-600 hover:text-aloe-800 transition-colors"
+          >
+            Découvrir les produits →
+          </a>
+        </div>
+
+        <!-- Signaux de confiance -->
+        <div class="grid grid-cols-2 gap-4">
+          <div class="rounded-2xl bg-aloe-50 border border-aloe-100 p-5 text-center">
+            <p class="text-2xl font-display text-aloe-700">IASC</p>
+            <p class="text-xs text-aloe-500 mt-1">Certifié aloe vera</p>
+          </div>
+          <div class="rounded-2xl bg-aloe-50 border border-aloe-100 p-5 text-center">
+            <p class="text-2xl font-display text-aloe-700">30j</p>
+            <p class="text-xs text-aloe-500 mt-1">Satisfait ou remboursé</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <Footer />
+</Layout>
