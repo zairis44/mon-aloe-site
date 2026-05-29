@@ -3,9 +3,9 @@ name: "Aloe Gelly Forever : Gel d'Aloe Vera Pur à 84% | Apaisant & Cicatrisant"
 reference: "61"
 slug: "aloe-gelly-forever-gel-apaisant"
 price: 24.4
-image: "/images/produits/6857aa5213760a2f76e569dc_aloe-vera-gelly.webp"
+image: "/images/produits/aloe-gelly-forever-gel-apaisant.webp"
 images:
-  - "/images/produits/6857aa5efaa270cde18aa8af_aloe-vera-gelly-forever-living.webp"
+  - "/images/produits/aloe-gelly-forever-gel-apaisant-2.webp"
 category: "cremes-et-gels"
 description: "Le gel d'Aloe Vera le plus pur du marché : 84% d'Aloe Barbadensis Miller stabilisé Le Forever Aloe Gelly est bien plus qu'un simple gel hydratant. C'est un véritable concentré de bienfaits naturels, formulé à partir de 100% de gel d'Aloe vera stabilisé grâce à un procédé breveté unique qui préserve toutes les propriétés actives de la plante fraîche. Pourquoi choisir Forever Aloe Gelly ? Soulagement immédiat : Appliqué sur une peau irritée, brûlée par le soleil ou agressée, ce gel apporte un effet frais instantané et calme les sensations d'inconfort en quelques minutes. Texture non-grasse et pénétration rapide : Contrairement à de nombreux gels du marché, l'Aloe Gelly pénètre rapidement sans laisser de film collant ou gras. Idéal pour une application quotidienne, même sous vos soins habituels. Multi-usage pour toute la famille : Coups de soleil, irritations après l'épilation, petites brûlures, piqûres d'insectes, zones sèches... Ce gel s'adapte à tous les besoins cutanés du quotidien. Formule ultra-pure : Sans parfum, sans alcool"
 titreDetails: "Forever Aloe Vera Gelly : le soin multi-usage à l’Aloe vera ultra-pur"
