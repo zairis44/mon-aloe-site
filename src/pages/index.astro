@@ -1,11 +1,19 @@
 ---
+/**
+ * src/pages/index.astro
+ * Page d'accueil — Esprit Aloé
+ * Correctifs PageSpeed :
+ *   - h3 → h2 dans bénéfices et produits phares (hiérarchie titres)
+ *   - aria-label sur les liens "En savoir plus" (liens identiques)
+ *   - text-aloe-500 → text-aloe-700 (contraste labels)
+ *   - text-aloe-400 → text-aloe-600 (contraste avis)
+ */
 import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import { getCollection } from 'astro:content';
 
-// ── Produits phares depuis la collection (prix toujours justes) ─────────────
-// Fallback statique si la collection est vide (développement)
+// ── Produits phares depuis la collection ────────────────────────────────────
 let produitsPhares = [];
 try {
   const collection = await getCollection('produits', ({ data }) => data.featured && data.disponible);
@@ -22,7 +30,6 @@ try {
     }));
 } catch (_) {}
 
-// Fallback si collection vide
 if (produitsPhares.length === 0) {
   produitsPhares = [
     {
@@ -67,7 +74,6 @@ const benefices = [
   },
 ];
 
-// Avis sans géolocalisation régionale
 const avis = [
   {
     texte: "Je bois la pulpe d'aloe vera tous les matins depuis 3 mois, ma digestion s'est nettement améliorée.",
@@ -86,7 +92,6 @@ const avis = [
   },
 ];
 
-// ── Schema.org FAQPage ─────────────────────────────────────────────────────
 const schemaFAQ = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
@@ -122,37 +127,29 @@ const schemaFAQ = {
 <Layout
   title="Produits Aloe Vera Forever Living — Distributeur France | Esprit Aloé"
   description="Découvrez et commandez les produits Aloe Vera Forever Living en France. Boissons, soins beauté, programmes détox C9 & DX4. Livraison 24-72h. Conseils personnalisés 7j/7."
-  canonical="https://espritaloe.fr/"
 >
-  <!-- Schema.org FAQPage -->
-  <script type="application/ld+json" set:html={JSON.stringify(schemaFAQ)} />
+  <script type="application/ld+json" set:html={JSON.stringify(schemaFAQ)} slot="head" />
 
   <Header />
 
   <!-- ══════════════════════════════════════════════
-       HERO — H1 avec mot-clé national
+       HERO
   ══════════════════════════════════════════════ -->
-  <section class="relative overflow-hidden">
-    <div class="absolute inset-0 bg-gradient-to-br from-aloe-50 via-cream to-sand"></div>
-    <div class="absolute -right-20 -top-20 w-96 h-96 rounded-full bg-aloe-200/40 blur-3xl"></div>
-    <div class="absolute -left-32 bottom-0 w-96 h-96 rounded-full bg-aloe-300/30 blur-3xl"></div>
-
-    <div class="relative mx-auto max-w-6xl px-6 py-24 md:py-32 grid md:grid-cols-2 gap-12 items-center">
+  <section class="bg-gradient-to-br from-aloe-50 via-cream to-sand py-20 md:py-28">
+    <div class="mx-auto max-w-6xl px-6 grid md:grid-cols-2 gap-12 items-center">
       <div>
         <span class="inline-block rounded-full bg-aloe-100 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-aloe-700 mb-6">
-          Distributeur Forever Living Products — France
+          Distributeur Forever Living — France
         </span>
-
-        <!-- H1 avec mot-clé principal ciblé -->
-        <h1 class="text-5xl md:text-6xl leading-[1.05] text-aloe-900 mb-6">
-          Produits Aloe Vera<br />
-          <span class="italic text-aloe-500">Forever Living</span><br />
-          pour votre bien-être
+        <h1 class="text-5xl md:text-6xl text-aloe-900 leading-tight mb-6">
+          L'aloe vera<br />
+          <span class="italic text-aloe-500">qui vous fait</span><br />
+          du bien
         </h1>
-
-        <p class="text-lg text-aloe-700 leading-relaxed mb-8 max-w-md">
-          Une gamme complète de boissons, soins et compléments à base d'aloe vera
-          pur, certifiés IASC. Livrés partout en France en 24–72h.
+        <p class="text-xl text-aloe-700 leading-relaxed max-w-lg mb-8">
+          Des produits Forever Living certifiés IASC pour prendre soin de votre digestion,
+          votre peau et votre vitalité au quotidien.
+          Livrés partout en France en 24–72h.
         </p>
 
         <div class="flex flex-wrap gap-4 mb-8">
@@ -164,7 +161,6 @@ const schemaFAQ = {
           </a>
         </div>
 
-        <!-- Signaux de confiance -->
         <ul class="flex flex-wrap gap-x-5 gap-y-2 text-xs text-aloe-600">
           <li>✓ Certifié IASC</li>
           <li>✓ Livraison offerte dès 150 €</li>
@@ -186,16 +182,28 @@ const schemaFAQ = {
   </section>
 
   <!-- ══════════════════════════════════════════════
-       BÉNÉFICES — avec liens vers les articles blog
+       BÉNÉFICES
+       Correctif : h3 → h2, text-aloe-500 → text-aloe-600,
+       aria-label sur chaque "En savoir plus"
   ══════════════════════════════════════════════ -->
   <section class="bg-cream py-20">
     <div class="mx-auto max-w-6xl px-6">
+      <div class="text-center mb-12">
+        <span class="text-xs font-semibold uppercase tracking-widest text-aloe-700 mb-3 block">
+          Pourquoi l'aloe vera ?
+        </span>
+        <h2 class="text-4xl text-aloe-900">Les bienfaits au quotidien</h2>
+      </div>
       <div class="grid md:grid-cols-3 gap-6">
         {benefices.map((b) => (
           <div class="rounded-2xl bg-white/60 border border-aloe-100 p-8">
-            <h3 class="text-xl text-aloe-800 mb-2">{b.titre}</h3>
+            <h2 class="text-xl text-aloe-800 mb-2">{b.titre}</h2>
             <p class="text-sm text-aloe-600 leading-relaxed mb-3">{b.texte}</p>
-            <a href={b.lien} class="text-xs font-semibold text-aloe-500 hover:text-aloe-700 transition-colors">
+            <a
+              href={b.lien}
+              aria-label={`En savoir plus sur ${b.titre}`}
+              class="text-xs font-semibold text-aloe-600 hover:text-aloe-700 transition-colors"
+            >
               En savoir plus →
             </a>
           </div>
@@ -205,12 +213,14 @@ const schemaFAQ = {
   </section>
 
   <!-- ══════════════════════════════════════════════
-       PRODUITS PHARES — prix depuis la collection
+       PRODUITS PHARES
+       Correctif : h3 → h2 dans les articles produit
   ══════════════════════════════════════════════ -->
   <section class="bg-sand/50 py-24">
     <div class="mx-auto max-w-6xl px-6">
       <div class="text-center mb-14">
-        <span class="text-xs font-semibold uppercase tracking-widest text-aloe-500">Notre sélection</span>
+        <!-- Correctif contraste : text-aloe-500 → text-aloe-700 -->
+        <span class="text-xs font-semibold uppercase tracking-widest text-aloe-700">Notre sélection</span>
         <h2 class="text-4xl text-aloe-900 mt-2">Produits phares</h2>
       </div>
 
@@ -224,11 +234,16 @@ const schemaFAQ = {
               </span>
             </div>
             <div class="p-6">
-              <h3 class="text-xl text-aloe-800 mb-2">{p.nom}</h3>
+              <!-- Correctif : h3 → h2 -->
+              <h2 class="text-xl text-aloe-800 mb-2">{p.nom}</h2>
               <p class="text-sm text-aloe-600 leading-relaxed mb-4">{p.desc}</p>
               <div class="flex items-center justify-between">
                 <span class="text-lg font-display text-aloe-700">{p.prix}</span>
-                <a href={`/produits/${p.slug}/`} class="text-sm font-semibold text-aloe-500 hover:text-aloe-700 transition-colors">
+                <a
+                  href={`/produits/${p.slug}/`}
+                  aria-label={`Voir le produit ${p.nom}`}
+                  class="text-sm font-semibold text-aloe-600 hover:text-aloe-700 transition-colors"
+                >
                   Voir le produit →
                 </a>
               </div>
@@ -287,12 +302,15 @@ const schemaFAQ = {
   </section>
 
   <!-- ══════════════════════════════════════════════
-       AVIS CLIENTS — sans géolocalisation régionale
+       AVIS CLIENTS
+       Correctif contraste : text-aloe-400 → text-aloe-600
+       et label "Ils nous font confiance" : text-aloe-500 → text-aloe-700
   ══════════════════════════════════════════════ -->
   <section class="bg-cream py-24">
     <div class="mx-auto max-w-6xl px-6">
       <div class="text-center mb-14">
-        <span class="text-xs font-semibold uppercase tracking-widest text-aloe-500">Ils nous font confiance</span>
+        <!-- Correctif contraste -->
+        <span class="text-xs font-semibold uppercase tracking-widest text-aloe-700">Ils nous font confiance</span>
         <h2 class="text-4xl text-aloe-900 mt-2">Avis clients</h2>
       </div>
       <div class="grid md:grid-cols-3 gap-8">
@@ -302,7 +320,8 @@ const schemaFAQ = {
             <blockquote class="text-sm text-aloe-700 leading-relaxed mb-4">"{a.texte}"</blockquote>
             <figcaption class="text-sm">
               <span class="font-semibold text-aloe-800">{a.auteur}</span>
-              <span class="text-aloe-400 text-xs"> — à propos de {a.produit}</span>
+              <!-- Correctif contraste : text-aloe-400 → text-aloe-600 -->
+              <span class="text-aloe-600 text-xs"> — à propos de {a.produit}</span>
             </figcaption>
           </figure>
         ))}
@@ -338,32 +357,10 @@ const schemaFAQ = {
           <dt class="font-semibold text-aloe-800 mb-2">Qu'est-ce que le programme C9 Forever ?</dt>
           <dd class="text-sm text-aloe-600 leading-relaxed">
             Le <a href="/produits/programme-c9-forever-vanille-peche/" class="text-aloe-600 underline">programme C9</a> est
-            une cure détox de 9 jours à base d'Aloe Vera. Conçu pour nettoyer l'organisme,
-            relancer le métabolisme et perdre du poids naturellement.
+            une cure détox de 9 jours à base d'Aloe Vera pour nettoyer l'organisme et relancer le métabolisme naturellement.
           </dd>
         </div>
       </dl>
-    </div>
-  </section>
-
-  <!-- ══════════════════════════════════════════════
-       CTA FINAL
-  ══════════════════════════════════════════════ -->
-  <section class="bg-sand py-20">
-    <div class="mx-auto max-w-3xl px-6 text-center">
-      <h2 class="text-4xl text-aloe-900 mb-4">Prêt à prendre soin de vous ?</h2>
-      <p class="text-aloe-700 mb-8">
-        Découvrez toute notre gamme d'aloe vera ou contactez-nous pour un
-        conseil personnalisé. Disponible 7j/7.
-      </p>
-      <div class="flex flex-wrap gap-4 justify-center">
-        <a href="/produits/" class="rounded-full bg-aloe-600 px-8 py-3.5 text-sm font-semibold text-cream hover:bg-aloe-700 transition-colors">
-          Voir tous les produits
-        </a>
-        <a href="/contact/" class="rounded-full border border-aloe-400 px-8 py-3.5 text-sm font-semibold text-aloe-700 hover:bg-aloe-50 transition-colors">
-          Nous contacter
-        </a>
-      </div>
     </div>
   </section>
 
