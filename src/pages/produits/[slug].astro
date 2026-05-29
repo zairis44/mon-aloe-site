@@ -152,7 +152,7 @@ const seoDescription = d.seoDescription ?? d.description;
               width="800"
               height="600"
               loading="eager"
-              class="w-full h-full object-cover"
+              class="w-full h-full object-contain"
             />
           ) : (
             <span class="text-[8rem]">{catIcon}</span>
@@ -164,7 +164,7 @@ const seoDescription = d.seoDescription ?? d.description;
           <div class="flex gap-3 mb-10 overflow-x-auto pb-2">
             {d.images.map((img: string) => (
               <div class="flex-shrink-0 w-24 h-24 rounded-xl overflow-hidden border-2 border-transparent hover:border-aloe-400 transition-colors cursor-pointer">
-                <img src={img} alt={d.name} width="96" height="96" loading="lazy" class="w-full h-full object-cover" />
+                <img src={img} alt={d.name} width="96" height="96" loading="lazy" class="w-full h-full object-contain" />
               </div>
             ))}
           </div>
