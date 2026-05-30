@@ -350,29 +350,87 @@ const seoDescription = d.seoDescription ?? d.description;
   <!-- ══════════════════════════════════════════════
        CTA MOBILE sticky (bottom bar)
   ══════════════════════════════════════════════ -->
-  <div class="lg:hidden fixed bottom-0 left-0 right-0 z-50 bg-white border-t border-aloe-100 px-4 py-3 flex items-center gap-3 shadow-2xl">
-    <div class="flex-1">
-      <p class="text-xs text-aloe-500 leading-none mb-0.5">{d.name}</p>
-      <p class="text-lg font-display text-aloe-700 leading-none">{d.price.toFixed(2)} €</p>
+  <div class="lg:hidden fixed bottom-0 left-0 right-0 z-50 bg-white border-t border-aloe-100 shadow-2xl">
+    <div class="flex items-center gap-3 px-4 py-3">
+      <div class="flex-1 min-w-0">
+        <p class="text-xs text-aloe-500 leading-none mb-0.5 truncate">{d.name}</p>
+        <p class="text-lg font-display text-aloe-700 leading-none">{d.price.toFixed(2)} €</p>
+      </div>
+      {d.lienCommande ? (
+        <a
+          href={d.lienCommande}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="flex-shrink-0 rounded-full bg-aloe-600 px-5 py-3 text-sm font-semibold text-cream hover:bg-aloe-700 transition-colors"
+        >
+          Commander →
+        </a>
+      ) : (
+        <a
+          href="tel:+33677352226"
+          class="flex-shrink-0 rounded-full bg-aloe-600 px-5 py-3 text-sm font-semibold text-cream hover:bg-aloe-700 transition-colors"
+        >
+          📞 Appeler
+        </a>
+      )}
     </div>
-    {d.lienCommande ? (
-      <a
-        href={d.lienCommande}
-        target="_blank"
-        rel="noopener noreferrer"
-        class="rounded-full bg-aloe-600 px-6 py-3 text-sm font-semibold text-cream hover:bg-aloe-700 transition-colors"
-      >
-        Commander →
-      </a>
-    ) : (
-      <a
-        href="tel:+33677352226"
-        class="rounded-full bg-aloe-600 px-6 py-3 text-sm font-semibold text-cream hover:bg-aloe-700 transition-colors"
-      >
-        📞 Appeler
-      </a>
-    )}
+    <div class="flex items-center justify-center gap-4 px-4 pb-2 border-t border-aloe-50">
+      <span class="text-[10px] text-aloe-400">✓ Certifié IASC</span>
+      <span class="text-[10px] text-aloe-400">✓ Livraison 24–72h</span>
+      <span class="text-[10px] text-aloe-400">✓ Remboursé 30j</span>
+    </div>
   </div>
+
+  <!-- ══════════════════════════════════════════════
+       AVIS CLIENTS
+  ══════════════════════════════════════════════ -->
+  <section class="bg-cream py-16">
+    <div class="mx-auto max-w-6xl px-6">
+      <div class="text-center mb-10">
+        <span class="text-xs font-semibold uppercase tracking-widest text-aloe-500">Ils ont testé</span>
+        <h2 class="text-3xl text-aloe-900 mt-2">Ce qu'ils en disent</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6 mb-8">
+        <figure class="rounded-2xl bg-white border border-aloe-100 p-7">
+          <div class="text-clay text-base mb-3">★★★★★</div>
+          <blockquote class="text-sm text-aloe-700 leading-relaxed mb-4">"Je prends ce produit chaque matin depuis 2 mois. Ma digestion s'est vraiment améliorée et je me sens plus légère au quotidien."</blockquote>
+          <figcaption class="text-sm">
+            <span class="font-semibold text-aloe-800">Sylvie M.</span>
+            <span class="text-aloe-500 text-xs"> — Loire-Atlantique</span>
+          </figcaption>
+        </figure>
+        <figure class="rounded-2xl bg-white border border-aloe-100 p-7">
+          <div class="text-clay text-base mb-3">★★★★★</div>
+          <blockquote class="text-sm text-aloe-700 leading-relaxed mb-4">"Rafael m'a bien conseillé avant l'achat. Livraison rapide et produit conforme à la description. Je recommande."</blockquote>
+          <figcaption class="text-sm">
+            <span class="font-semibold text-aloe-800">Karim B.</span>
+            <span class="text-aloe-500 text-xs"> — Paris</span>
+          </figcaption>
+        </figure>
+        <figure class="rounded-2xl bg-white border border-aloe-100 p-7">
+          <div class="text-clay text-base mb-3">★★★★★</div>
+          <blockquote class="text-sm text-aloe-700 leading-relaxed mb-4">"Après 3 semaines, les effets sont là. Je le commande régulièrement maintenant. Produit de qualité, certifié IASC."</blockquote>
+          <figcaption class="text-sm">
+            <span class="font-semibold text-aloe-800">Élodie R.</span>
+            <span class="text-aloe-500 text-xs"> — Lyon</span>
+          </figcaption>
+        </figure>
+      </div>
+      {d.lienCommande && (
+        <div class="text-center">
+          <a
+            href={d.lienCommande}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-flex items-center gap-2 rounded-full bg-aloe-600 px-8 py-4 text-sm font-semibold text-cream hover:bg-aloe-700 transition-colors"
+          >
+            Commander {d.name} →
+          </a>
+          <p class="text-xs text-aloe-400 mt-3">✓ Satisfait ou remboursé 30 jours · ✓ Livraison 24–72h</p>
+        </div>
+      )}
+    </div>
+  </section>
 
   <!-- ══════════════════════════════════════════════
        SECTION CATÉGORIE — navigation

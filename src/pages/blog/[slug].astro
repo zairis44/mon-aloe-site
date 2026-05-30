@@ -1,5 +1,5 @@
 ---
-import { getCollection, render } from 'astro:content'; // render() importé séparément
+import { getCollection, render } from 'astro:content';
 import Layout from '../../layouts/Layout.astro';
 import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
@@ -13,11 +13,23 @@ export async function getStaticPaths() {
 }
 
 const { article } = Astro.props;
-const { Content } = await render(article); // Astro 5 : render(entry) et non entry.render()
+const { Content } = await render(article);
 const { title, description, pubDate, updatedDate, author, image, imageAlt, category, produitsLies } = article.data;
 
 const siteUrl = 'https://espritaloe.fr';
 const articleUrl = `${siteUrl}/blog/${article.id}/`;
+
+// Enrichissement : récupérer prix + lienCommande depuis la collection produits
+const allProduits = await getCollection('produits');
+const produitsAvecDetails = produitsLies.map((p: any) => {
+  const found = allProduits.find((prod) => prod.data.slug === p.slug);
+  return {
+    slug: p.slug,
+    nom: p.nom,
+    price: found?.data.price ?? null,
+    lienCommande: found?.data.lienCommande ?? null,
+  };
+});
 
 const schemaArticle = {
   "@context": "https://schema.org",
@@ -109,25 +121,42 @@ const categoryLabels: Record<string, string> = {
           <Content />
         </div>
 
-        {produitsLies.length > 0 && (
+        {produitsAvecDetails.length > 0 && (
           <aside class="lg:sticky lg:top-24 self-start space-y-4">
             <div class="rounded-2xl bg-aloe-800 p-6 text-cream">
               <p class="text-xs font-semibold uppercase tracking-widest text-aloe-300 mb-4">Produits recommandés</p>
-              <ul class="space-y-3">
-                {produitsLies.map((p: any) => (
-                  <li>
-                    <a href={`/produits/${p.slug}/`} class="flex items-center gap-2 text-sm font-medium text-cream hover:text-aloe-300 transition-colors">
-                      <span class="text-aloe-400">🌿</span>{p.nom}
-                    </a>
-                  </li>
+              <div class="space-y-4">
+                {produitsAvecDetails.map((p: any) => (
+                  <div class="rounded-xl bg-aloe-700/60 p-4">
+                    <p class="text-sm font-semibold text-cream mb-1 leading-snug">{p.nom}</p>
+                    {p.price && (
+                      <p class="text-lg font-display text-aloe-200 mb-3">{p.price.toFixed(2)} €</p>
+                    )}
+                    <div class="flex flex-col gap-2">
+                      {p.lienCommande && (
+                        <a
+                          href={p.lienCommande}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          class="block text-center rounded-full bg-aloe-500 hover:bg-aloe-400 px-4 py-2 text-xs font-semibold text-cream transition-colors"
+                        >
+                          Commander directement →
+                        </a>
+                      )}
+                      <a
+                        href={`/produits/${p.slug}/`}
+                        class="block text-center rounded-full border border-aloe-500 px-4 py-2 text-xs font-medium text-aloe-200 hover:text-cream transition-colors"
+                      >
+                        Voir la fiche produit
+                      </a>
+                    </div>
+                  </div>
                 ))}
-              </ul>
-              <a href="/produits/" class="mt-5 block text-center rounded-full bg-aloe-600 px-4 py-2.5 text-sm font-semibold text-cream hover:bg-aloe-500 transition-colors">
-                Voir tous les produits
-              </a>
+              </div>
             </div>
-            <div class="rounded-2xl bg-white border border-aloe-100 p-6">
-              <p class="text-sm font-semibold text-aloe-800 mb-2">Un conseil personnalisé ?</p>
+            <div class="rounded-2xl bg-white border border-aloe-100 p-5">
+              <p class="text-sm font-semibold text-aloe-800 mb-1">Un doute sur le produit ?</p>
+              <p class="text-xs text-aloe-500 mb-3 leading-relaxed">Rafael vous conseille gratuitement selon votre situation.</p>
               <a href="tel:+33677352226" class="block text-center rounded-full border border-aloe-300 px-4 py-2.5 text-sm font-semibold text-aloe-700 hover:bg-aloe-50 transition-colors">
                 📞 06 77 35 22 26
               </a>
@@ -136,6 +165,42 @@ const categoryLabels: Record<string, string> = {
         )}
       </div>
     </div>
+
+    {produitsAvecDetails.length > 0 && (
+      <div class="bg-aloe-50 py-10 lg:hidden">
+        <div class="mx-auto max-w-3xl px-6">
+          <p class="text-xs font-semibold uppercase tracking-widest text-aloe-500 mb-4">Produits mentionnés dans cet article</p>
+          <div class="grid sm:grid-cols-2 gap-4">
+            {produitsAvecDetails.map((p: any) => (
+              <div class="rounded-2xl bg-white border border-aloe-100 p-5 flex flex-col">
+                <p class="text-sm font-semibold text-aloe-800 mb-1 leading-snug">{p.nom}</p>
+                {p.price && <p class="text-xl font-display text-aloe-700 mb-4">{p.price.toFixed(2)} €</p>}
+                <div class="mt-auto flex flex-col gap-2">
+                  {p.lienCommande && (
+                    <a
+                      href={p.lienCommande}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="block text-center rounded-full bg-aloe-600 hover:bg-aloe-700 px-4 py-2.5 text-sm font-semibold text-cream transition-colors"
+                    >
+                      Commander →
+                    </a>
+                  )}
+                  <a href={`/produits/${p.slug}/`} class="block text-center text-xs text-aloe-500 hover:text-aloe-700 transition-colors">
+                    Voir la fiche →
+                  </a>
+                </div>
+              </div>
+            ))}
+          </div>
+          <div class="mt-4 flex items-center gap-4 text-xs text-aloe-400 justify-center">
+            <span>✓ Certifié IASC</span>
+            <span>✓ Livraison 24–72h</span>
+            <span>✓ Satisfait ou remboursé 30j</span>
+          </div>
+        </div>
+      </div>
+    )}
 
     <div class="bg-sand/50 py-10">
       <div class="mx-auto max-w-3xl px-6">

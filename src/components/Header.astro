@@ -2,8 +2,11 @@
 /**
  * src/components/Header.astro
  * Header principal — Esprit Aloé
- * Mis à jour : bouton CTA → /commander/ (interne) au lieu de la boutique externe
+ * CTA "Commander" → boutique Forever directement (moins de friction)
+ * Lien "Commander" dans la nav → /commander/ (page informative)
  */
+
+const boutiqueUrl = "https://www.foreverliving.fr/ref/330001628607/";
 
 const categories = [
   {
@@ -112,9 +115,11 @@ const links = [
 
     <!-- CTA desktop + burger mobile -->
     <div class="flex items-center gap-3">
-      <!-- Bouton Commander (desktop) — pointe vers /commander/ -->
+      <!-- Bouton Commander (desktop) — boutique Forever directe -->
       <a
-        href="/commander/"
+        href={boutiqueUrl}
+        target="_blank"
+        rel="noopener noreferrer"
         class="hidden md:inline-flex items-center gap-1.5 rounded-full bg-aloe-600 px-5 py-2.5 text-sm font-semibold text-cream hover:bg-aloe-700 transition-colors"
       >
         🛒 Commander
@@ -160,12 +165,14 @@ const links = [
         ))}
       </div>
 
-      <!-- Bouton Commander (mobile) — pointe vers /commander/ -->
+      <!-- Bouton Commander (mobile) — boutique Forever directe -->
       <a
-        href="/commander/"
+        href={boutiqueUrl}
+        target="_blank"
+        rel="noopener noreferrer"
         class="flex items-center justify-center gap-2 mt-3 rounded-full bg-aloe-600 px-5 py-3 text-sm font-semibold text-cream hover:bg-aloe-700 transition-colors"
       >
-        🛒 Commander
+        🛒 Commander sur Forever Living
       </a>
     </div>
   </div>
