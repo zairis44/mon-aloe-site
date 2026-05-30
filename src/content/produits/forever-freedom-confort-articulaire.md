@@ -14,6 +14,19 @@ video: ""
 lienCommande: "http://www.foreverliving.fr/ref/330001628607/196"
 featured: true
 disponible: true
+avis:
+  - texte: "J'ai des douleurs aux genoux depuis ma reprise du running. Après 6 semaines de Forever Freedom, la différence est nette. Je monte les escaliers sans grimace maintenant."
+    auteur: "Nicolas F."
+    ville: "Rennes"
+    note: 5
+  - texte: "Retraitée, j'avais des raideurs matinales importantes. Avec Forever Freedom depuis 2 mois, je me lève sans douleur. Je le prends matin et soir comme conseillé."
+    auteur: "Monique L."
+    ville: "Nantes"
+    note: 5
+  - texte: "Joueur de tennis amateur. Forever Freedom + Aloe MSM Gel en local après les matchs : récupération articulaire vraiment plus rapide. Je valide complètement."
+    auteur: "Pierre-Antoine G."
+    ville: "Angers"
+    note: 5
 faq:
   - question: "À quoi sert Forever Freedom ?"
     reponse: "Forever Freedom® est conçu pour soutenir le bon fonctionnement des articulations. Il combine les bienfaits de l’aloe vera – reconnu pour ses propriétés apaisantes – avec trois nutriments clés : la glucosamine et la chondroïtine, qui participent à la régénération du cartilage, et le MSM, un composé organique soufré qui aide à réduire les inconforts articulaires. En synergie, ces ingrédients contribuent à maintenir une mobilité fluide, à soulager les articulations sollicitées et à préserver le confort au quotidien."

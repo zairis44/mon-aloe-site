@@ -381,52 +381,52 @@ const seoDescription = d.seoDescription ?? d.description;
     </div>
   </div>
 
-  <!-- ══════════════════════════════════════════════
-       AVIS CLIENTS
-  ══════════════════════════════════════════════ -->
   <section class="bg-cream py-16">
     <div class="mx-auto max-w-6xl px-6">
       <div class="text-center mb-10">
         <span class="text-xs font-semibold uppercase tracking-widest text-aloe-500">Ils ont testé</span>
         <h2 class="text-3xl text-aloe-900 mt-2">Ce qu'ils en disent</h2>
       </div>
-      <div class="grid md:grid-cols-3 gap-6 mb-8">
-        <figure class="rounded-2xl bg-white border border-aloe-100 p-7">
-          <div class="text-clay text-base mb-3">★★★★★</div>
-          <blockquote class="text-sm text-aloe-700 leading-relaxed mb-4">"Je prends ce produit chaque matin depuis 2 mois. Ma digestion s'est vraiment améliorée et je me sens plus légère au quotidien."</blockquote>
-          <figcaption class="text-sm">
-            <span class="font-semibold text-aloe-800">Sylvie M.</span>
-            <span class="text-aloe-500 text-xs"> — Loire-Atlantique</span>
-          </figcaption>
-        </figure>
-        <figure class="rounded-2xl bg-white border border-aloe-100 p-7">
-          <div class="text-clay text-base mb-3">★★★★★</div>
-          <blockquote class="text-sm text-aloe-700 leading-relaxed mb-4">"Rafael m'a bien conseillé avant l'achat. Livraison rapide et produit conforme à la description. Je recommande."</blockquote>
-          <figcaption class="text-sm">
-            <span class="font-semibold text-aloe-800">Karim B.</span>
-            <span class="text-aloe-500 text-xs"> — Paris</span>
-          </figcaption>
-        </figure>
-        <figure class="rounded-2xl bg-white border border-aloe-100 p-7">
-          <div class="text-clay text-base mb-3">★★★★★</div>
-          <blockquote class="text-sm text-aloe-700 leading-relaxed mb-4">"Après 3 semaines, les effets sont là. Je le commande régulièrement maintenant. Produit de qualité, certifié IASC."</blockquote>
-          <figcaption class="text-sm">
-            <span class="font-semibold text-aloe-800">Élodie R.</span>
-            <span class="text-aloe-500 text-xs"> — Lyon</span>
-          </figcaption>
-        </figure>
-      </div>
-      {d.lienCommande && (
-        <div class="text-center">
+
+      {d.avis?.length > 0 ? (
+        <>
+          <div class="grid md:grid-cols-3 gap-6 mb-8">
+            {d.avis.map((a: any) => (
+              <figure class="rounded-2xl bg-white border border-aloe-100 p-7">
+                <div class="text-clay text-base mb-3">{'★'.repeat(a.note)}{'☆'.repeat(5 - a.note)}</div>
+                <blockquote class="text-sm text-aloe-700 leading-relaxed mb-4">"{a.texte}"</blockquote>
+                <figcaption class="text-sm">
+                  <span class="font-semibold text-aloe-800">{a.auteur}</span>
+                  {a.ville && <span class="text-aloe-500 text-xs"> — {a.ville}</span>}
+                </figcaption>
+              </figure>
+            ))}
+          </div>
+          {d.lienCommande && (
+            <div class="text-center">
+              <a
+                href={d.lienCommande}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-flex items-center gap-2 rounded-full bg-aloe-600 px-8 py-4 text-sm font-semibold text-cream hover:bg-aloe-700 transition-colors"
+              >
+                Commander {d.name} →
+              </a>
+              <p class="text-xs text-aloe-400 mt-3">✓ Satisfait ou remboursé 30 jours · ✓ Livraison 24–72h</p>
+            </div>
+          )}
+        </>
+      ) : (
+        <div class="text-center py-10">
+          <div class="text-clay text-3xl mb-4">★★★★★</div>
+          <p class="text-aloe-600 text-lg mb-2">Soyez les premiers à laisser votre avis</p>
+          <p class="text-aloe-400 text-sm mb-6">Vous avez essayé ce produit ? Partagez votre expérience.</p>
           <a
-            href={d.lienCommande}
-            target="_blank"
-            rel="noopener noreferrer"
-            class="inline-flex items-center gap-2 rounded-full bg-aloe-600 px-8 py-4 text-sm font-semibold text-cream hover:bg-aloe-700 transition-colors"
+            href="tel:+33677352226"
+            class="inline-flex items-center gap-2 rounded-full border border-aloe-300 px-6 py-3 text-sm font-semibold text-aloe-700 hover:bg-aloe-50 transition-colors"
           >
-            Commander {d.name} →
+            📞 Contacter Rafael — 06 77 35 22 26
           </a>
-          <p class="text-xs text-aloe-400 mt-3">✓ Satisfait ou remboursé 30 jours · ✓ Livraison 24–72h</p>
         </div>
       )}
     </div>

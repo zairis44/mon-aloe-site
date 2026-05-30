@@ -14,6 +14,19 @@ video: ""
 lienCommande: "http://www.foreverliving.fr/ref/330001628607/629"
 featured: true
 disponible: true
+avis:
+  - texte: "J'ai perdu 3,5 kg en 9 jours et surtout retrouvé une vraie légèreté digestive. Les 2 premiers jours sont difficiles mais après c'est incroyable. Je l'ai refait 3 mois plus tard."
+    auteur: "Émilie R."
+    ville: "Lyon"
+    note: 5
+  - texte: "Le programme C9 m'a donné le coup de pouce dont j'avais besoin après les fêtes. Rafael m'a accompagnée tout au long des 9 jours. Conseils au top, résultats au rendez-vous."
+    auteur: "Karim B."
+    ville: "Bordeaux"
+    note: 5
+  - texte: "Honnêtement je ne croyais pas trop aux programmes détox mais là c'est bluffant. Moins 4 kg, ventre plat et beaucoup plus d'énergie. Je recommande à 100%."
+    auteur: "Sandrine P."
+    ville: "Toulouse"
+    note: 5
 faq:
   - question: "Qu’est-ce que le programme C9 de Forever ?"
     reponse: "Le C9 est une cure bien-être de 9 jours qui combine gel d’aloe vera, compléments alimentaires, plan nutritionnel et exercices physiques. Il est conçu pour soutenir un rééquilibrage digestif, une détox légère et une hausse d’énergie naturelle."

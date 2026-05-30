@@ -27,6 +27,12 @@ const produits = defineCollection({
       titre: z.string(),
       contenu: z.string(),
     })).optional(),
+    avis: z.array(z.object({
+      texte: z.string(),
+      auteur: z.string(),
+      ville: z.string().optional(),
+      note: z.number().min(1).max(5).default(5),
+    })).optional(),
   }),
 });
 
