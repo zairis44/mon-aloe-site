@@ -1,0 +1,409 @@
+---
+/**
+ * src/pages/produits/[slug].astro
+ * Template fiche produit — Esprit Aloé
+ * Schema.org : Product + FAQPage + BreadcrumbList
+ * Sidebar sticky : CTA commande + conseil personnalisé
+ */
+import { getCollection, render } from 'astro:content';
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+
+export async function getStaticPaths() {
+  const produits = await getCollection('produits');
+  return produits.map((produit) => ({
+    params: { slug: (produit.data as any).slug },
+    props: { produit },
+  }));
+}
+
+const { produit } = Astro.props;
+const { Content } = await render(produit);
+
+const d = produit.data as any;
+const siteUrl = 'https://espritaloe.fr';
+const produitUrl = `${siteUrl}/produits/${d.slug}/`;
+
+// Labels catégorie
+const categoryLabels: Record<string, string> = {
+  'boissons-aloe-vera': 'Boissons Aloe Vera',
+  'beaute-bien-etre': 'Beauté & Bien-être',
+  'programmes-detox': 'Programmes Détox',
+  'sport-et-fitness': 'Sport & Fitness',
+  'nutrition': 'Nutrition',
+};
+
+const categoryIcons: Record<string, string> = {
+  'boissons-aloe-vera': '🥤',
+  'beaute-bien-etre': '🧴',
+  'programmes-detox': '🔄',
+  'sport-et-fitness': '💪',
+  'nutrition': '🌱',
+};
+
+const catLabel = categoryLabels[d.category] ?? d.category;
+const catIcon  = categoryIcons[d.category] ?? '🌿';
+
+// ── Schema.org Product ──────────────────────────────────────────────────────
+const schemaProduct = {
+  "@context": "https://schema.org",
+  "@type": "Product",
+  name: d.name,
+  description: d.seoDescription ?? d.description,
+  image: d.image ? `${siteUrl}${d.image}` : undefined,
+  sku: d.reference ?? undefined,
+  brand: {
+    "@type": "Brand",
+    name: "Forever Living Products",
+  },
+  offers: {
+    "@type": "Offer",
+    priceCurrency: "EUR",
+    price: d.price.toFixed(2),
+    availability: "https://schema.org/InStock",
+    url: produitUrl,
+    seller: {
+      "@type": "Organization",
+      name: "Esprit Aloé",
+    },
+  },
+};
+
+// ── Schema.org FAQPage (si FAQ définie) ────────────────────────────────────
+const schemaFAQ = d.faq?.length ? {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: d.faq.map((item: any) => ({
+    "@type": "Question",
+    name: item.question,
+    acceptedAnswer: { "@type": "Answer", text: item.reponse },
+  })),
+} : null;
+
+// ── Schema.org BreadcrumbList ───────────────────────────────────────────────
+const schemaBreadcrumb = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Accueil", item: `${siteUrl}/` },
+    { "@type": "ListItem", position: 2, name: "Produits", item: `${siteUrl}/produits/` },
+    { "@type": "ListItem", position: 3, name: catLabel, item: `${siteUrl}/produits/${d.category}/` },
+    { "@type": "ListItem", position: 4, name: d.name, item: produitUrl },
+  ],
+};
+
+const seoTitle       = d.seoTitle ?? `${d.name} — Forever Living | Esprit Aloé`;
+const seoDescription = d.seoDescription ?? d.description;
+---
+
+<Layout
+  title={seoTitle}
+  description={seoDescription}
+  image={d.image}
+  canonical={produitUrl}
+>
+  <!-- JSON-LD injectés dans <head> -->
+  <script type="application/ld+json" set:html={JSON.stringify(schemaProduct)} slot="head" />
+  <script type="application/ld+json" set:html={JSON.stringify(schemaBreadcrumb)} slot="head" />
+  {schemaFAQ && (
+    <script type="application/ld+json" set:html={JSON.stringify(schemaFAQ)} slot="head" />
+  )}
+
+  <Header />
+
+  <!-- ══════════════════════════════════════════════
+       FIL D'ARIANE + EN-TÊTE
+  ══════════════════════════════════════════════ -->
+  <section class="bg-gradient-to-br from-aloe-50 via-cream to-sand py-12">
+    <div class="mx-auto max-w-6xl px-6">
+      <nav class="text-xs text-aloe-400 mb-6" aria-label="Fil d'Ariane">
+        <ol class="flex flex-wrap items-center gap-2">
+          <li><a href="/" class="hover:text-aloe-600 transition-colors">Accueil</a></li>
+          <li>›</li>
+          <li><a href="/produits/" class="hover:text-aloe-600 transition-colors">Produits</a></li>
+          <li>›</li>
+          <li>
+            <a href={`/produits/${d.category}/`} class="hover:text-aloe-600 transition-colors">
+              {catLabel}
+            </a>
+          </li>
+          <li>›</li>
+          <li class="text-aloe-700 font-medium truncate max-w-[200px]">{d.name}</li>
+        </ol>
+      </nav>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════
+       BLOC PRODUIT PRINCIPAL
+  ══════════════════════════════════════════════ -->
+  <section class="bg-cream py-10 md:py-16">
+    <div class="mx-auto max-w-6xl px-6 grid lg:grid-cols-[1fr_340px] gap-12 items-start">
+
+      <!-- ── Colonne gauche : image + contenu Markdown ──────────── -->
+      <div>
+        <!-- Image principale -->
+        <div class="rounded-3xl bg-white border border-aloe-100 aspect-square flex items-center justify-center mb-8 p-6">
+          {d.image ? (
+            <img
+              src={d.image}
+              alt={d.name}
+              width="800"
+              height="600"
+              loading="eager"
+              class="w-full h-full object-contain"
+            />
+          ) : (
+            <span class="text-[8rem]">{catIcon}</span>
+          )}
+        </div>
+
+        <!-- Galerie secondaire si images[] défini -->
+        {d.images?.length > 0 && (
+          <div class="flex gap-3 mb-10 overflow-x-auto pb-2">
+            {d.images.map((img: string) => (
+              <div class="flex-shrink-0 w-24 h-24 rounded-xl overflow-hidden border-2 border-transparent hover:border-aloe-400 transition-colors cursor-pointer">
+                <img src={img} alt={d.name} width="96" height="96" loading="lazy" class="w-full h-full object-contain" />
+              </div>
+            ))}
+          </div>
+        )}
+
+        <!-- Titre mobile (visible uniquement sur petits écrans) -->
+        <div class="lg:hidden mb-8">
+          <span class="inline-block rounded-full bg-aloe-100 px-3 py-1 text-xs font-semibold text-aloe-700 uppercase tracking-widest mb-3">
+            {catIcon} {catLabel}
+          </span>
+          <h1 class="text-3xl text-aloe-900 mb-3 leading-tight">{d.name}</h1>
+          <p class="text-aloe-600 leading-relaxed mb-4">{d.description}</p>
+          <p class="text-3xl font-display text-aloe-700 mb-6">{d.price.toFixed(2)} €</p>
+          {d.lienCommande && (
+            <a
+              href={d.lienCommande}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="block w-full text-center rounded-full bg-aloe-600 px-6 py-4 text-base font-semibold text-cream hover:bg-aloe-700 transition-colors mb-3"
+            >
+              Commander ce produit →
+            </a>
+          )}
+        </div>
+
+        <!-- Contenu Markdown de la fiche -->
+        {produit.body && (
+          <div class="prose prose-aloe max-w-none
+            prose-headings:text-aloe-900
+            prose-h2:text-2xl prose-h2:mt-10 prose-h2:mb-4
+            prose-h3:text-xl prose-h3:mt-6 prose-h3:mb-3
+            prose-p:text-aloe-700 prose-p:leading-relaxed
+            prose-a:text-aloe-600 prose-a:underline
+            prose-strong:text-aloe-800
+            prose-ul:text-aloe-700
+            prose-li:my-1
+            prose-blockquote:border-aloe-300 prose-blockquote:text-aloe-600">
+            <Content />
+          </div>
+        )}
+
+        <!-- Caractéristiques détaillées -->
+        {d.caracteristiques?.length > 0 && (
+          <div class="mt-12 space-y-6">
+            <h2 class="text-2xl text-aloe-900">
+              {d.titreDetails ?? 'Caractéristiques du produit'}
+            </h2>
+            {d.caracteristiques.map((c: any) => (
+              <div class="rounded-2xl bg-white border border-aloe-100 p-6">
+                <h3 class="font-semibold text-aloe-800 mb-2">{c.titre}</h3>
+                <p class="text-sm text-aloe-600 leading-relaxed">{c.contenu}</p>
+              </div>
+            ))}
+          </div>
+        )}
+
+        <!-- Vidéo YouTube si définie -->
+        {d.video && (
+          <div class="mt-12">
+            <h2 class="text-2xl text-aloe-900 mb-6">Vidéo de présentation</h2>
+            <div class="aspect-video rounded-2xl overflow-hidden shadow-lg">
+              <iframe
+                src={`https://www.youtube.com/embed/${d.video}`}
+                title={`Vidéo ${d.name}`}
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+                class="w-full h-full"
+                loading="lazy"
+              />
+            </div>
+          </div>
+        )}
+
+        <!-- FAQ accordéon -->
+        {d.faq?.length > 0 && (
+          <div class="mt-12">
+            <h2 class="text-2xl text-aloe-900 mb-6">Questions fréquentes</h2>
+            <div class="space-y-3" id="faq-list">
+              {d.faq.map((item: any, i: number) => (
+                <details
+                  class="group rounded-2xl bg-white border border-aloe-100 overflow-hidden"
+                  name="faq"
+                >
+                  <summary class="flex cursor-pointer items-center justify-between p-5 font-semibold text-aloe-800 hover:bg-aloe-50 transition-colors list-none">
+                    <span>{item.question}</span>
+                    <span class="ml-4 flex-shrink-0 text-aloe-400 transition-transform group-open:rotate-45 text-xl leading-none">+</span>
+                  </summary>
+                  <div class="px-5 pb-5 text-sm text-aloe-600 leading-relaxed border-t border-aloe-100 pt-4">
+                    {item.reponse}
+                  </div>
+                </details>
+              ))}
+            </div>
+          </div>
+        )}
+      </div>
+
+      <!-- ── Sidebar sticky droite (desktop) ───────────────────── -->
+      <aside class="hidden lg:block sticky top-24 self-start space-y-4">
+
+        <!-- Carte produit -->
+        <div class="rounded-3xl bg-white border border-aloe-100 p-7 shadow-xl shadow-aloe-900/5">
+          <span class="inline-block rounded-full bg-aloe-100 px-3 py-1 text-xs font-semibold text-aloe-700 uppercase tracking-widest mb-4">
+            {catIcon} {catLabel}
+          </span>
+          <h1 class="text-2xl text-aloe-900 leading-tight mb-3">{d.name}</h1>
+          {d.reference && (
+            <p class="text-xs text-aloe-400 mb-4">Réf. {d.reference}</p>
+          )}
+          <p class="text-sm text-aloe-600 leading-relaxed mb-6">{d.description}</p>
+
+          <div class="border-t border-aloe-100 pt-5 mb-6">
+            <p class="text-xs text-aloe-400 uppercase tracking-wide mb-1">Prix TTC</p>
+            <p class="text-4xl font-display text-aloe-700">{d.price.toFixed(2)} <span class="text-xl">€</span></p>
+            <p class="text-xs text-aloe-400 mt-1">Livraison offerte dès 150 €</p>
+          </div>
+
+          {d.lienCommande ? (
+            <a
+              href={d.lienCommande}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="block w-full text-center rounded-full bg-aloe-600 px-6 py-4 text-sm font-semibold text-cream hover:bg-aloe-700 transition-colors mb-3"
+            >
+              Commander ce produit →
+            </a>
+          ) : (
+            <a
+              href="/contact/"
+              class="block w-full text-center rounded-full bg-aloe-600 px-6 py-4 text-sm font-semibold text-cream hover:bg-aloe-700 transition-colors mb-3"
+            >
+              Commander par téléphone
+            </a>
+          )}
+
+          <a
+            href="tel:+33677352226"
+            class="block w-full text-center rounded-full border border-aloe-300 px-6 py-3.5 text-sm font-semibold text-aloe-700 hover:bg-aloe-50 transition-colors"
+          >
+            📞 06 77 35 22 26
+          </a>
+        </div>
+
+        <!-- Signaux de confiance -->
+        <div class="rounded-2xl bg-aloe-800 p-5 text-cream">
+          <ul class="space-y-3 text-sm">
+            <li class="flex items-center gap-3">
+              <span class="text-aloe-300">✓</span>
+              <span>Certifié IASC — Aloe vera garanti pur</span>
+            </li>
+            <li class="flex items-center gap-3">
+              <span class="text-aloe-300">✓</span>
+              <span>Livraison France 24–72h</span>
+            </li>
+            <li class="flex items-center gap-3">
+              <span class="text-aloe-300">✓</span>
+              <span>Satisfait ou remboursé 30 jours</span>
+            </li>
+            <li class="flex items-center gap-3">
+              <span class="text-aloe-300">✓</span>
+              <span>Conseiller disponible 7j/7</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Conseil personnalisé -->
+        <div class="rounded-2xl bg-white border border-aloe-100 p-5">
+          <p class="text-sm font-semibold text-aloe-800 mb-2">Un doute sur ce produit ?</p>
+          <p class="text-xs text-aloe-500 leading-relaxed mb-4">
+            Rafael vous conseille gratuitement selon votre situation et vos objectifs.
+          </p>
+          <a
+            href="/contact/"
+            class="block text-center text-xs font-semibold text-aloe-600 hover:text-aloe-800 transition-colors"
+          >
+            Obtenir un conseil →
+          </a>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════
+       CTA MOBILE sticky (bottom bar)
+  ══════════════════════════════════════════════ -->
+  <div class="lg:hidden fixed bottom-0 left-0 right-0 z-50 bg-white border-t border-aloe-100 px-4 py-3 flex items-center gap-3 shadow-2xl">
+    <div class="flex-1">
+      <p class="text-xs text-aloe-500 leading-none mb-0.5">{d.name}</p>
+      <p class="text-lg font-display text-aloe-700 leading-none">{d.price.toFixed(2)} €</p>
+    </div>
+    {d.lienCommande ? (
+      <a
+        href={d.lienCommande}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="rounded-full bg-aloe-600 px-6 py-3 text-sm font-semibold text-cream hover:bg-aloe-700 transition-colors"
+      >
+        Commander →
+      </a>
+    ) : (
+      <a
+        href="tel:+33677352226"
+        class="rounded-full bg-aloe-600 px-6 py-3 text-sm font-semibold text-cream hover:bg-aloe-700 transition-colors"
+      >
+        📞 Appeler
+      </a>
+    )}
+  </div>
+
+  <!-- ══════════════════════════════════════════════
+       SECTION CATÉGORIE — navigation
+  ══════════════════════════════════════════════ -->
+  <section class="bg-sand/50 py-14">
+    <div class="mx-auto max-w-6xl px-6 text-center">
+      <p class="text-xs font-semibold uppercase tracking-widest text-aloe-400 mb-4">
+        Voir aussi
+      </p>
+      <div class="flex flex-wrap justify-center gap-3">
+        <a
+          href={`/produits/${d.category}/`}
+          class="flex items-center gap-2 rounded-full border border-aloe-200 bg-white px-5 py-2.5 text-sm font-medium text-aloe-600 hover:bg-aloe-50 transition-colors"
+        >
+          {catIcon} Tous les {catLabel}
+        </a>
+        <a
+          href="/produits/"
+          class="flex items-center gap-2 rounded-full border border-aloe-200 bg-white px-5 py-2.5 text-sm font-medium text-aloe-600 hover:bg-aloe-50 transition-colors"
+        >
+          🌿 Toute la gamme
+        </a>
+        <a
+          href="/blog/"
+          class="flex items-center gap-2 rounded-full border border-aloe-200 bg-white px-5 py-2.5 text-sm font-medium text-aloe-600 hover:bg-aloe-50 transition-colors"
+        >
+          📖 Conseils bien-être
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <Footer />
+</Layout>

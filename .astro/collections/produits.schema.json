@@ -1,0 +1,103 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "reference": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "string"
+    },
+    "price": {
+      "type": "number"
+    },
+    "image": {
+      "type": "string"
+    },
+    "images": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "category": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "titreDetails": {
+      "type": "string"
+    },
+    "seoTitle": {
+      "type": "string"
+    },
+    "seoDescription": {
+      "type": "string"
+    },
+    "video": {
+      "type": "string"
+    },
+    "lienCommande": {
+      "type": "string"
+    },
+    "featured": {
+      "default": false,
+      "type": "boolean"
+    },
+    "disponible": {
+      "default": true,
+      "type": "boolean"
+    },
+    "faq": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "question": {
+            "type": "string"
+          },
+          "reponse": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "question",
+          "reponse"
+        ]
+      }
+    },
+    "caracteristiques": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "titre": {
+            "type": "string"
+          },
+          "contenu": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "titre",
+          "contenu"
+        ]
+      }
+    },
+    "$schema": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "name",
+    "slug",
+    "price",
+    "image",
+    "category",
+    "description"
+  ]
+}

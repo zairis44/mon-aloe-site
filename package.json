@@ -1,0 +1,19 @@
+{
+  "name": "mon-aloe-site",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/sitemap": "^3.7.3",
+    "@fontsource/fraunces": "^5.2.9",
+    "@fontsource/mulish": "^5.2.8",
+    "@tailwindcss/vite": "^4.1.18",
+    "astro": "^6.3.5",
+    "tailwindcss": "^4.1.18"
+  }
+}
