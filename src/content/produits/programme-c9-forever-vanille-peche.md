@@ -12,11 +12,8 @@ seoTitle: "Programme C9 Forever Vanille Pêche – Cure détox 9 jours, minceur 
 seoDescription: "Programme C9 Forever Vanille-Pêche : cure détox complète 9 jours. Aloe vera, shakes protéinés, compléments ciblés. Perdez 2 à 5 kg naturellement. Livraison rapide France."
 video: ""
 lienCommande: "http://www.foreverliving.fr/ref/330001628607/629"
-<<<<<<< HEAD
 featured: true
 disponible: true
-=======
->>>>>>> 75a4dceb7b0c1f0328825babad017a3bd7eeb7f3
 faq:
   - question: "Qu’est-ce que le programme C9 de Forever ?"
     reponse: "Le C9 est une cure bien-être de 9 jours qui combine gel d’aloe vera, compléments alimentaires, plan nutritionnel et exercices physiques. Il est conçu pour soutenir un rééquilibrage digestif, une détox légère et une hausse d’énergie naturelle."

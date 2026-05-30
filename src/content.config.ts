@@ -17,11 +17,8 @@ const produits = defineCollection({
     seoDescription: z.string().optional(),
     video: z.string().optional(),
     lienCommande: z.string().optional(),
-<<<<<<< HEAD
     featured: z.boolean().default(false),
     disponible: z.boolean().default(true),
-=======
->>>>>>> 75a4dceb7b0c1f0328825babad017a3bd7eeb7f3
     faq: z.array(z.object({
       question: z.string(),
       reponse: z.string(),

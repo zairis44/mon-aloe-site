@@ -12,11 +12,8 @@ seoTitle: "Forever Aloe Vera Gel – Boisson aloe vera pure 99,7 % | Réf. 815"
 seoDescription: "Forever Aloe Vera Gel (Réf. 815) : 99,7 % de gel d’aloe vera stabilisé, sans conservateur, riche en vitamine C. La boisson aloe vera la plus vendue au monde. Livraison rapide en France."
 video: ""
 lienCommande: "http://www.foreverliving.fr/ref/330001628607/815"
-<<<<<<< HEAD
 featured: true
 disponible: true
-=======
->>>>>>> 75a4dceb7b0c1f0328825babad017a3bd7eeb7f3
 faq:
   - question: "Pourquoi Forever Aloe Vera Gel est-il considéré comme le meilleur gel d’aloe vera ?"
     reponse: "Forever Aloe Vera Gel est certifié par l’IASC, la référence mondiale en matière de qualité de l’aloe vera. Il utilise exclusivement la pulpe intérieure de la feuille (sans l’écorce qui contient l’aloïne), stabilisée dans les 4 heures suivant la récolte pour préserver 100 % des composés actifs. Avec 99,7 % d’aloe vera pur, c’est la concentration la plus élevée du marché."
