@@ -9,10 +9,7 @@
     "astro": "astro"
   },
   "dependencies": {
-<<<<<<< HEAD
     "@astrojs/sitemap": "^3.7.3",
-=======
->>>>>>> 75a4dceb7b0c1f0328825babad017a3bd7eeb7f3
     "@fontsource/fraunces": "^5.2.9",
     "@fontsource/mulish": "^5.2.8",
     "@tailwindcss/vite": "^4.1.18",
