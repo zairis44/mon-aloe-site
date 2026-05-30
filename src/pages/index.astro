@@ -21,12 +21,21 @@ try {
     .sort((a, b) => (b.data.featured ? 1 : 0) - (a.data.featured ? 1 : 0))
     .slice(0, 3)
     .map(p => ({
+<<<<<<< HEAD
       nom: p.data.name,
       desc: p.data.description,
       prix: `${p.data.price.toFixed(2)} €`,
       slug: p.data.slug,
       tag: p.data.category === 'programmes-detox' ? 'Programme' :
            p.data.price < 20 ? 'Petit prix' : 'Best-seller',
+=======
+      nom: p.data.nom,
+      desc: p.data.description,
+      prix: `${p.data.prix.toFixed(2)} €`,
+      slug: p.slug,
+      tag: p.data.categorie === 'programmes-detox' ? 'Programme' :
+           p.data.prix < 20 ? 'Petit prix' : 'Best-seller',
+>>>>>>> 75a4dceb7b0c1f0328825babad017a3bd7eeb7f3
     }));
 } catch (_) {}
 
