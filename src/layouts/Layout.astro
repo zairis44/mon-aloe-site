@@ -97,6 +97,15 @@ const schemaGraph = {
 
     <!-- Slot pour JSON-LD spécifiques aux pages (FAQPage, Product, Article…) -->
     <slot name="head" />
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BNF9DV82DN"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-BNF9DV82DN');
+    </script>
   </head>
   <body>
     <slot />
