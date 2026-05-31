@@ -9,7 +9,7 @@ category: "cremes-et-gels"
 description: "Adoptez le Forever Bright Toothgel, un dentifrice gel naturel formulé avec de l’Aloe vera stabilisé et de la propolis. Sans fluor, il nettoie efficacement tout en respectant vos gencives. La propolis offre un effet apaisant et purifiant, tandis que les arômes frais de menthe poivrée et verte laissent une haleine propre et durable. Idéal pour toute la famille, y compris les enfants, il est sans gluten et convient aux bouches sensibles. Offrez à votre sourire une routine d’hygiène douce, efficace et naturellement revitalisante."
 titreDetails: "Forever Bright Toothgel : un nettoyage bucco-dentaire respectueux et naturel"
 seoTitle: "Forever Bright Toothgel – Dentifrice naturel Aloe & Propolis"
-seoDescription: "Forever Bright Toothgel : dentifrice sans fluor à l’Aloe vera et propolis. Nettoyage doux, protège les gencives, haleine fraîche et preventive."
+seoDescription: "Forever Bright Toothgel : dentifrice naturel à l'aloe vera et propolis, sans fluor. Nettoyage doux, haleine fraîche, respect des gencives sensibles."
 video: ""
 lienCommande: "http://www.foreverliving.fr/ref/330001628607/28"
 faq:

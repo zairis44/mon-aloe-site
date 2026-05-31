@@ -8,7 +8,7 @@ images: []
 category: "boissons-aloe-vera"
 description: "Forever Aloe Berry Nectar™ est un nectar doux et gourmand, composé à 90,7 % de gel pur d’aloe vera stabilisé, associé à des jus naturels de cranberry, pomme et framboise. Cette boisson sans gluten, sans lactose ni conservateurs, favorise l’hydratation, la digestion et offre une pause fruitée saine. Elle allie les bienfaits hydratants de l’aloe vera aux propriétés antioxydantes des fruits rouges, pour soutenir votre vitalité au quotidien."
 titreDetails: "Forever Aloe Berry Nectar : l'aloe vera et les fruits rouges pour immunité, digestion et vitalité"
-seoTitle: "Forever Aloe Berry Nectar – Jus aloe vera fruits rouges pour digestion & vitalité"
+seoTitle: "Forever Aloe Berry Nectar – Jus aloe vera & digestion"
 seoDescription: "Boisson 90 % gel aloe + cranberry, pomme & framboise. Soutient digestion, immunité, hydratation. Vegan, sans gluten, délicieux & naturel."
 video: ""
 lienCommande: "http://www.foreverliving.fr/ref/330001628607/834"

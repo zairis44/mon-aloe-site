@@ -8,8 +8,8 @@ images: []
 category: "sport-et-fitness"
 description: "Forever Therm™ est un complément nutritionnel innovant conçu pour stimuler le métabolisme et soutenir vos objectifs de gestion du poids. Sa formule associe des extraits naturels de thé vert, guarana, café vert et cétones de framboise ainsi qu’un mélange ciblé de vitamines B et C. Ce cocktail botanique et vitaminique accélère la thermogenèse, favorise la combustion des calories et améliore le niveau d’énergie. C’est un soutien idéal dans le cadre d’un mode de vie sain et actif."
 titreDetails: "Forever Therm™ : le booster métabolique naturel pour accompagner votre perte de poids"
-seoTitle: "Forever Therm™ – Complément métabolisme, énergie et gestion du poids"
-seoDescription: "Forever Therm™ combine thé vert, guarana, café vert, cétones de framboise et vitamines B/C. Complément pour soutenir métabolisme, énergie, thermogenèse, perte de poids."
+seoTitle: "Forever Therm – Métabolisme et énergie naturelle"
+seoDescription: "Forever Therm : thé vert, guarana et café vert pour soutenir le métabolisme, l'énergie et la thermogenèse. Complément naturel perte de poids."
 video: ""
 lienCommande: "http://www.foreverliving.fr/ref/330001628607/463"
 faq:

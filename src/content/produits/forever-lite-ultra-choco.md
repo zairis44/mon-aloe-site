@@ -8,8 +8,8 @@ images: []
 category: "sport-et-fitness"
 description: "Forever Lite Ultra™ Chocolat est un shake protéiné végétal gourmand, conçu pour soutenir la gestion du poids, favoriser la satiété et offrir une source nutritive complète. Sa base de protéines de soja, enrichie du complexe Aminotein®, facilite la digestion tout en apportant 17 g de protéines par portion avec seulement ~90 kcal. Agrémenté d’un arôme chocolat doux et riche, ce shake s’intègre naturellement à une routine saine pour un petit-déjeuner rassasiant, une collation ou un repas minceur."
 titreDetails: "Forever Lite Ultra™ Chocolat : le shake protéiné gourmand pour maigrir sans se priver"
-seoTitle: "Forever Lite Ultra™ Chocolat – Shake protéiné végétal chocolat, vitamines & fibres"
-seoDescription: "Shake protéiné végétal Forever Lite Ultra™ Chocolat : 17 g de protéines, vitamines, fibres et saveur chocolat gourmande. Shake minceur, gestion du poids et satiété naturelle."
+seoTitle: "Forever Lite Ultra Chocolat – Shake protéiné"
+seoDescription: "Forever Lite Ultra Chocolat : shake protéiné végétal, 17 g de protéines, vitamines et fibres. Idéal pour satiété et gestion du poids au naturel."
 video: ""
 lienCommande: "http://www.foreverliving.fr/ref/330001628607/471"
 faq:

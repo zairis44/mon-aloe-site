@@ -1,6 +1,7 @@
 ---
 title: "Perdre du poids avec Forever : C9, DX4 — quel programme choisir ?"
-description: "C9 ou DX4 : comparatif complet des programmes minceur Forever Living, ce qu'ils contiennent, comment ils fonctionnent et pour qui ils sont adaptés."
+seoTitle: "Perdre du poids Forever : C9 ou DX4"
+description: "C9 ou DX4 : comparatif des programmes minceur Forever Living, ce qu'ils contiennent, comment ils fonctionnent et lequel choisir selon votre objectif."
 pubDate: 2026-03-23
 author: "Rafael Avenard"
 category: "programmes-detox"
@@ -17,6 +18,13 @@ produitsLies:
     nom: "Programme C9 Vanille-Pêche"
   - slug: "programme-dx4-forever"
     nom: "Programme DX4 Forever"
+articlesLies:
+  - slug: "programme-c9-forever-guide-cure-detox-9-jours"
+    titre: "Programme C9 Forever : guide complet détox"
+  - slug: "aloe-vera-digestion-bienfaits"
+    titre: "Aloe vera digestion : 5 effets concrets"
+  - slug: "forever-living-avis-produits-france"
+    titre: "Forever Living avis France : les vrais retours"
 draft: false
 ---
 
@@ -72,6 +80,4 @@ L'hydratation est fondamentale — visez 2 à 3 litres d'eau par jour pendant le
 
 **Les résultats sont-ils durables ?** Ils le sont si vous maintenez des habitudes alimentaires raisonnables après le programme. Le C9 est un tremplin, pas une solution permanente à lui seul.
 
-**Le programme convient-il à tout le monde ?** Déconseillé aux femmes enceintes ou allaitantes, aux personnes diabétiques sans avis médical, et aux mineurs. En cas de traitement médical, consultez votre médecin avant de commencer.
-
-Je vous accompagne gratuitement avant, pendant et après votre programme. [Contactez-moi](/contact/) pour choisir la formule adaptée à vos objectifs — 7j/7.
+**Le 

@@ -1,6 +1,7 @@
 ---
 title: "Aloe vera et stress : retrouver sérénité et sommeil naturellement"
-description: "Fatigue mentale, insomnies, tension constante : comment les vitamines B et le magnésium de l'aloe vera Forever soutiennent votre système nerveux et améliorent votre sommeil."
+seoTitle: "Aloe vera stress : sommeil et sérénité"
+description: "Fatigue mentale, insomnies, tension constante : comment les vitamines B et le magnésium de l'aloe vera Forever soutiennent votre système nerveux."
 pubDate: 2026-03-26
 author: "Rafael Avenard"
 category: "bien-etre"
@@ -17,6 +18,13 @@ produitsLies:
     nom: "Forever Aloe Vera Gel"
   - slug: "forever-argi-pls"
     nom: "Forever ARGI+"
+articlesLies:
+  - slug: "aloe-vera-digestion-bienfaits"
+    titre: "Aloe vera digestion : 5 effets concrets"
+  - slug: "aloe-vera-systeme-immunitaire-defenses-naturelles"
+    titre: "Aloe vera et immunité : renforcer ses défenses"
+  - slug: "aloe-vera-sport-recuperation-musculaire"
+    titre: "Aloe vera et sport : récupération musculaire"
 draft: false
 ---
 
@@ -70,6 +78,4 @@ Le **[Mini Aloe Argi+](/produits/mini-aloe-argi-plus/)** est le format nomade de
 
 ## Ce qu'il faut retenir
 
-L'aloe vera Forever n'est pas un sédatif. C'est un soutien nutritionnel naturel qui crée les conditions physiologiques d'un meilleur équilibre nerveux : système nerveux mieux nourri, cortisol mieux régulé, intestin apaisé, production de mélatonine facilitée. Les effets se construisent progressivement sur 3 à 6 semaines.
-
-Vous souhaitez un conseil personnalisé selon votre situation ? [Contactez-moi](/contact/) — disponible 7j/7.
+L'aloe vera Forever n'est pas un sédatif. C'est un soutien nu

@@ -8,7 +8,7 @@ images: []
 category: "boissons-aloe-vera"
 description: "Forever Freedom® combine l’extrait pur d’aloe vera avec un trio d’actifs essentiels pour soutenir vos articulations au quotidien. Formulé avec de la glucosamine, de la chondroïtine et du MSM, ce jus aromatisé à l’orange favorise la flexibilité, maintient la fonction articulaire et contribue à la santé des os et du cartilage. Riche en vitamine C, qui participe à la formation normale du collagène, il s’adresse aux personnes actives, sportifs ou simplement désireuses de préserver leur mobilité de manière naturelle . Conditionné en flacon d’1 L, il se boit deux fois 45 ml par jour, à diluer ou pure, avec une saveur orange agréable et rafraîchissante."
 titreDetails: ""
-seoTitle: "Forever Freedom® – Boisson Articulaire Aloe Vera | Glucosamine & MSM"
+seoTitle: "Forever Freedom – Aloe vera glucosamine MSM"
 seoDescription: "Forever Freedom® : jus d'aloe vera enrichi en glucosamine, chondroïtine et MSM pour soutenir vos articulations au quotidien. Mobilité, confort et flexibilité naturels."
 video: ""
 lienCommande: "http://www.foreverliving.fr/ref/330001628607/196"
@@ -44,7 +44,4 @@ caracteristiques:
   - titre: "À quel moment le consommer ?"
     contenu: "Vous pouvez le prendre à jeun pour bien démarrer la journée ou après le repas pour soutenir le confort articulaire."
   - titre: "Conservation et format"
-    contenu: "Conditionné dans un flacon d’1 L, à conserver au réfrigérateur après ouverture et à consommer dans les 30 jours."
----
-
-Forever Freedom® combine l’extrait pur d’aloe vera avec un trio d’actifs essentiels pour soutenir vos articulations au quotidien. Formulé avec de la glucosamine, de la chondroïtine et du MSM, ce jus aromatisé à l’orange favorise la flexibilité, maintient la fonction articulaire et contribue à la santé des os et du cartilage. Riche en vitamine C, qui participe à la formation normale du collagène, il s’adresse aux personnes actives, sportifs ou simplement désireuses de préserver leur mobilité de manière naturelle . Conditionné en flacon d’1 L, il se boit deux fois 45 ml par jour, à diluer ou pure, avec une saveur orange agréable et rafraîchissante.
+    contenu: "Conditionné dans un fl

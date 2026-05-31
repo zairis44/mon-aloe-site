@@ -8,7 +8,7 @@ images: []
 category: "sport-et-fitness"
 description: "Forever ARGI+™ est un stick poudre à mélanger contenant 5 g d’arginine pure et un complexe de B‑vitamines, vitamines C, D, et K2. Enrichi d’extraits de fruits riches en antioxydants et présenté dans un format nomade pratique, il soutient naturellement la production d’oxyde nitrique, favorise la circulation, booste l’énergie et contribue à l’endurance physique. Sa saveur fruitée permet de l’intégrer facilement à votre routine, que ce soit avant un effort sportif ou en début de journée."
 titreDetails: "Forever ARGI+™ : L-arginine, vitamines et antioxydants pour une circulation optimale et des performances accrues"
-seoTitle: "Forever ARGI+™ – L‑Arginine & vitamines pour énergie, circulation et performance"
+seoTitle: "Forever ARGI+ – L-Arginine énergie et circulation"
 seoDescription: "Forever ARGI+™ associe 5 g d’arginine et des vitamines C, D, B6, B12 et K2. Stick nomade pour meilleure circulation, énergie et récupération. Saveur fruits rouges."
 video: ""
 lienCommande: "http://www.foreverliving.fr/ref/330001628607/473"

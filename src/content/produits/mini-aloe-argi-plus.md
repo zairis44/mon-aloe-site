@@ -8,7 +8,7 @@ images: []
 category: "boissons-aloe-vera"
 description: "Le Mini Aloe Argi+™ est un format nomade compact de gel d’aloe vera stabilisé, enrichi d’extraits végétaux ciblés et d’arginine, conçu pour soutenir la digestion, dynamiser l’immunité et contribuer à la régénération cellulaire. Avec ses 60 mL, ce flacon pratique offre une dose puissante à emporter partout : voyage, travail, sport. Il apporte confort intestinal, hydratation et nutriments essentiels, dans une formule naturelle, vegan et sans gluten."
 titreDetails: "Mini Aloe Argi+™ : le format compact pour profiter de l'aloe vera et de l'arginine partout"
-seoTitle: "Mini Aloe Argi+™ – Gel aloe nomade à l’arginine pour digestion & immunité"
+seoTitle: "Mini Aloe Argi+ – Arginine digestion immunité"
 seoDescription: "Mini Aloe Argi+™, gel d’aloe vera stabilisé enrichi en arginine et extraits végétaux. Format nomade 60 mL, digestion, immunité et récupération."
 video: ""
 lienCommande: "http://www.foreverliving.fr/ref/330001628607/71633"

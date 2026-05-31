@@ -1,6 +1,7 @@
 ---
 title: "Programme C9 Forever : le guide complet de la cure détox 9 jours"
-description: "Guide complet du programme C9 Forever : coffret, déroulement des 9 jours, résultats attendus et conseils pour réussir votre cure détox aloe vera."
+seoTitle: "Programme C9 Forever : guide complet cure détox"
+description: "Programme C9 Forever : contenu du coffret, déroulement des 9 jours, résultats attendus et conseils pour réussir votre cure détox aloe vera."
 pubDate: 2026-05-15
 author: "Rafael Avenard"
 category: "programmes-detox"
@@ -19,6 +20,13 @@ produitsLies:
     nom: "Programme C9 Chocolat-Pêche"
   - slug: "forever-pulpe-daloe-vera"
     nom: "Forever Aloe Vera Gel"
+articlesLies:
+  - slug: "perdre-du-poids-naturellement-forever-programmes-minceur"
+    titre: "Perdre du poids avec Forever : C9 ou DX4 ?"
+  - slug: "aloe-vera-digestion-bienfaits"
+    titre: "Aloe vera digestion : 5 effets concrets"
+  - slug: "forever-living-avis-produits-france"
+    titre: "Forever Living avis France : les vrais retours"
 draft: false
 ---
 

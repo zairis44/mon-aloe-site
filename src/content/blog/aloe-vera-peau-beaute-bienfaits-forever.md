@@ -1,6 +1,7 @@
 ---
 title: "Aloe vera pour la peau : guide complet des bienfaits et produits Forever"
-description: "Hydratation, apaisement, anti-âge : ce que l'aloe vera fait vraiment pour votre peau, et quels produits Forever utiliser selon votre type cutané."
+seoTitle: "Aloe vera peau : bienfaits et soins naturels"
+description: "Hydratation, apaisement, anti-âge : ce que l'aloe vera fait vraiment pour votre peau et quels produits Forever utiliser selon votre type cutané."
 pubDate: 2026-03-23
 author: "Rafael Avenard"
 category: "beaute"
@@ -17,6 +18,13 @@ produitsLies:
     nom: "Aloe Vera Gelly"
   - slug: "forever-aloe-propolis-creme"
     nom: "Aloe Propolis Crème"
+articlesLies:
+  - slug: "aloe-vera-cheveux-cuir-chevelu-bienfaits"
+    titre: "Aloe vera cheveux : bienfaits et soins naturels"
+  - slug: "aloe-vera-digestion-bienfaits"
+    titre: "Aloe vera digestion : 5 effets concrets"
+  - slug: "aloe-vera-stress-sommeil-naturel"
+    titre: "Aloe vera et stress : sérénité et sommeil"
 draft: false
 ---
 
@@ -82,6 +90,4 @@ Une routine cohérente à l'aloe vera maximise les résultats sur la durée :
 
 **Combien de temps avant de voir des résultats ?** Les effets apaisants et hydratants sont immédiats. Pour les bénéfices anti-âge et régénérants, comptez 4 à 6 semaines d'utilisation régulière.
 
-**L'aloe vera aide-t-il contre l'acné ?** Grâce à ses propriétés anti-inflammatoires et antibactériennes, il peut réduire les rougeurs et calmer les boutons. Il n'est pas un traitement médical de l'acné sévère, mais un soin complémentaire intéressant pour les peaux à tendance acnéique.
-
-Vous souhaitez une recommandation personnalisée selon votre type de peau ? [Contactez-moi](/contact/) pour un conseil gratuit.
+**L'aloe vera aide-t-il contre l'acné ?

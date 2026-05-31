@@ -8,7 +8,7 @@ images: []
 category: "boissons-aloe-vera"
 description: "Le Forever 4‑Pack Mix™ est un coffret découverte composé de quatre bouteilles de gel d’aloe vera aromatisé. Il permet de varier les plaisirs entre les différentes saveurs phares de la gamme Forever : Aloe Vera Gel (goût original), Aloe Mango, Aloe Berry Nectar et Aloe Peaches. Chaque bouteille contient plus de 90 % de gel pur d’aloe vera stabilisé, combiné à des extraits de fruits naturels pour une boisson rafraîchissante, saine et bénéfique pour la digestion, l’immunité et l’hydratation. Ce pack est idéal pour les personnes curieuses de découvrir la gamme, les familles, ou pour ceux qui souhaitent alterner les saveurs tout au long de la semaine."
 titreDetails: "Forever 4‑Pack Mix™ : le coffret découverte 4 saveurs pour débuter votre cure aloe vera"
-seoTitle: "Forever 4‑Pack Mix™ – Coffret aloe vera 4 saveurs pour digestion & vitalité"
+seoTitle: "Forever 4-Pack Mix – Coffret aloe vera 4 saveurs"
 seoDescription: "Testez 4 saveurs d’aloe vera Forever avec le 4‑Pack Mix™ : gel pur à 90 %, fruits naturels, sans gluten. Hydratation, digestion et plaisir au quotidien."
 video: ""
 lienCommande: "http://www.foreverliving.fr/ref/330001628607/8234"

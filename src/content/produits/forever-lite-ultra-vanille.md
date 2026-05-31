@@ -8,8 +8,8 @@ images: []
 category: "sport-et-fitness"
 description: "Forever Lite Ultra™ Vanille est une poudre protéinée végétale enrichie en vitamines, minéraux et fibre, pensée pour soutenir la gestion du poids, la satiété et l’énergie au quotidien. Sa source principale de protéines est l’isolat de soja, complété par le complexe Aminotein®, qui améliore la digestion des protéines. Chaque portion (25 g) offre environ 90 kcal, 17 g de protéines, 1 g de graisse et très peu de sucres, avec un délicieux goût vanille qui s’intègre facilement aux shakes, smoothies ou préparations culinaires ."
 titreDetails: "Forever Lite Ultra™ Vanille : le shake protéiné végétal complet pour gérer son poids naturellement"
-seoTitle: "Forever Lite Ultra™ Vanille – Shake protéiné végétal, vitamines & fibres"
-seoDescription: "Forever Lite Ultra™ Vanille : shake protéiné végétal à la vanille, 17 g de protéines, vitamines A, C, D, B6, B12, fibres, idéal pour satiété, gestion de poids et bien-être."
+seoTitle: "Forever Lite Ultra Vanille – Shake protéiné"
+seoDescription: "Forever Lite Ultra Vanille : shake protéiné végétal, 17 g de protéines, vitamines et fibres. Satiété, gestion de poids et bien-être au quotidien."
 video: ""
 lienCommande: "http://www.foreverliving.fr/ref/330001628607/470"
 faq:

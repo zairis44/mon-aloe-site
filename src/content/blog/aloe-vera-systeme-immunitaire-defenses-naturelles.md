@@ -1,6 +1,7 @@
 ---
 title: "Aloe vera et immunité : comment renforcer vos défenses naturelles au quotidien"
-description: "Acemannane, vitamines C et zinc : les composants de l'aloe vera Forever qui soutiennent votre système immunitaire, et comment les intégrer dans votre routine."
+seoTitle: "Aloe vera immunité : défenses naturelles"
+description: "Acemannane, vitamines C et zinc : les composants de l'aloe vera Forever qui soutiennent votre système immunitaire et comment les intégrer au quotidien."
 pubDate: 2026-03-23
 author: "Rafael Avenard"
 category: "bien-etre"
@@ -17,6 +18,13 @@ produitsLies:
     nom: "Forever Aloe Vera Gel"
   - slug: "forever-aloe-vera-4pack"
     nom: "Forever Aloe Vera 4 Pack"
+articlesLies:
+  - slug: "aloe-vera-digestion-bienfaits"
+    titre: "Aloe vera digestion : 5 effets concrets"
+  - slug: "aloe-vera-stress-sommeil-naturel"
+    titre: "Aloe vera et stress : sérénité et sommeil"
+  - slug: "forever-living-avis-produits-france"
+    titre: "Forever Living avis France : les vrais retours"
 draft: false
 ---
 
@@ -76,8 +84,4 @@ L'aloe vera Forever s'intègre dans cette approche globale comme un renforcement
 
 **Combien de temps avant de ressentir les effets ?** Entre 3 et 6 semaines de consommation régulière pour les effets immunitaires. Les effets digestifs et énergétiques se manifestent souvent plus rapidement.
 
-**L'aloe vera est-il compatible avec mes médicaments ?** Dans la grande majorité des cas, oui. Si vous êtes sous traitement lourd (chimiothérapie, immunosuppresseurs), consultez votre médecin avant de débuter une cure.
-
-**Peut-on en donner aux enfants ?** La pulpe d'aloe vera est généralement bien tolérée. Pour les enfants de moins de 12 ans, demandez l'avis d'un pédiatre et réduisez la dose proportionnellement.
-
-Des questions sur la dose ou le produit le mieux adapté à votre situation ? [Contactez-moi directement](/contact/) — conseil gratuit, 7j/7.
+**L'aloe vera est-il compatible avec mes médicaments ?** Dans la grande majorité des cas, oui. Si vous êtes sous traitement lourd (chimiothérapie, immunosuppresseurs), consultez votre 

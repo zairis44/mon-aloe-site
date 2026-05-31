@@ -8,8 +8,8 @@ images: []
 category: "boissons-aloe-vera"
 description: "Forever Aloe Vera Gel est le produit phare de Forever Living Products avec 99,7 % d’aloe vera stabilisé. Reformulé sans conservateur et enrichi en vitamine C naturelle, il est conditionné dans un emballage 100 % recyclable. Référence mondiale depuis 1978, ce gel concentre plus de 200 composés actifs (vitamines, minéraux, enzymes, acides aminés) pour soutenir la digestion, renforcer l’immunité, réduire la fatigue et hydrater l’organisme de l’intérieur."
 titreDetails: "Forever Aloe Vera Gel : 99,7 % de pureté, zéro conservateur"
-seoTitle: "Forever Aloe Vera Gel – Boisson aloe vera pure 99,7 % | Réf. 815"
-seoDescription: "Forever Aloe Vera Gel (Réf. 815) : 99,7 % de gel d’aloe vera stabilisé, sans conservateur, riche en vitamine C. La boisson aloe vera la plus vendue au monde. Livraison rapide en France."
+seoTitle: "Forever Aloe Vera Gel – Boisson aloe 99,7 %"
+seoDescription: "Forever Aloe Vera Gel (Réf. 815) : 99,7 % de gel d'aloe vera pur, sans conservateur, riche en vitamine C. La boisson aloe vera la plus vendue au monde."
 video: ""
 lienCommande: "http://www.foreverliving.fr/ref/330001628607/815"
 featured: true
@@ -44,7 +44,4 @@ caracteristiques:
   - titre: "Comment intégrer le Forever Aloe Vera Gel dans votre quotidien"
     contenu: "Le matin à jeun : 30 à 60 ml purs ou dilués dans 240 ml d’eau, 15 à 30 min avant le petit-déjeuner. C’est le moment idéal pour que l’aloe vera agisse sur la muqueuse intestinale. Peut aussi être ajouté à un smoothie ou consommé après le sport pour la récupération."
   - titre: "Utilisation et conservation"
-    contenu: "Prendre 30 à 60 ml par jour. Agiter avant utilisation. Après ouverture, conserver au réfrigérateur (à max 7°C) et consommer dans les 30 jours. Ne pas exposer à la chaleur ou au soleil direct. La boîte non ouverte se conserve à température ambiante."
----
-
-Forever Aloe Vera Gel (Réf. 815) concentre 40 ans d’expertise Forever Living Products dans la culture et la stabilisation de l’aloe vera. Sa formule optimisée : 99,7 % de gel d’aloe vera stabilisé (pulpe intérieure, sans écorce ni aloïne), zéro conservateur artificiel (stabilisé uniquement par vitamine C et technologie Tetra Pak), vitamine C qui contribue à réduire la fatigue et soutenir le système immunitaire, emballage 100 % recyclable, certifié IASC. Sans gluten, vegan, casher et halal. Mode d’emploi : 30 à 60 ml par jour dilués dans 240 ml d’eau, de préférence le matin à jeun. Après ouverture, conserver au réfrigérateur et consommer dans les 30 jours.
+    contenu: "Prendre 30 à 60 ml par jour. Agiter avant utilisation. Après ouverture, conserver au réfrigérateur (à max 7°C) et consommer dans les 30 jours. Ne pas exposer à la chaleur ou

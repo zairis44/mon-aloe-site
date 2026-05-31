@@ -48,9 +48,14 @@ const blog = defineCollection({
     tags: z.array(z.string()).default([]),
     image: z.string().optional(),
     imageAlt: z.string().optional(),
+    seoTitle: z.string().optional(),
     produitsLies: z.array(z.object({
       slug: z.string(),
       nom: z.string(),
+    })).default([]),
+    articlesLies: z.array(z.object({
+      slug: z.string(),
+      titre: z.string(),
     })).default([]),
     draft: z.boolean().default(false),
   }),

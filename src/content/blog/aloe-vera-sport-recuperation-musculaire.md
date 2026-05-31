@@ -1,6 +1,7 @@
 ---
 title: "Aloe vera et sport : accélérer la récupération musculaire naturellement"
-description: "Courbatures, inflammations, fatigue après l'effort : comment l'aloe vera Forever soutient la récupération des sportifs et quels produits utiliser selon votre discipline."
+seoTitle: "Aloe vera sport : récupération musculaire"
+description: "Courbatures, inflammations, fatigue après l'effort : comment l'aloe vera Forever soutient la récupération des sportifs et quels produits utiliser."
 pubDate: 2026-03-26
 author: "Rafael Avenard"
 category: "sport"
@@ -17,6 +18,13 @@ produitsLies:
     nom: "Forever Freedom"
   - slug: "forever-argi-pls"
     nom: "Forever ARGI+"
+articlesLies:
+  - slug: "forever-freedom-aloe-vera-articulations-mobilite"
+    titre: "Forever Freedom : soin articulaire aloe vera"
+  - slug: "aloe-vera-stress-sommeil-naturel"
+    titre: "Aloe vera et stress : sérénité et sommeil"
+  - slug: "perdre-du-poids-naturellement-forever-programmes-minceur"
+    titre: "Perdre du poids avec Forever : C9 ou DX4 ?"
 draft: false
 ---
 
@@ -72,8 +80,4 @@ Les enzymes digestives de l'aloe vera (amylase, lipase) optimisent l'absorption 
 
 ## Ce que disent les sportifs
 
-*"J'avais des douleurs chroniques aux genoux depuis ma reprise du running. Depuis que je prends Forever Freedom chaque jour, j'ai retrouvé une mobilité quasi normale et mes séances sont nettement plus confortables."* — Nicolas, 41 ans, coureur amateur
-
-*"L'Aloe MSM Gel est devenu mon indispensable après chaque match. Application immédiate sur les cuisses, et le lendemain je n'ai presque plus de courbatures."* — Julien, 28 ans, football amateur
-
-Besoin d'un protocole adapté à votre sport et vos objectifs ? [Contactez-moi](/contact/) pour un conseil personnalisé gratuit.
+*"J'avais des douleurs chroniques aux genoux depuis ma reprise du running. Depuis que je prends Forever Freedom chaque jour, j'ai retrouvé une mobilité quasi normale et mes séances 

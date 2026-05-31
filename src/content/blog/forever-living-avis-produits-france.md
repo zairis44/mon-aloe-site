@@ -1,6 +1,7 @@
 ---
 title: "Forever Living avis : ce que les clients français disent vraiment"
-description: "Forever Living est-il fiable ? Que valent vraiment les produits ? Avis clients, composition, certifications et retours d'expérience concrets depuis la France."
+seoTitle: "Forever Living avis France : fiable ou arnaque ?"
+description: "Forever Living est-il fiable ? Avis clients français, composition, certifications IASC et retours d'expérience concrets pour vous aider à décider."
 pubDate: 2026-05-31
 author: "Rafael Avenard"
 category: "guides"
@@ -17,6 +18,13 @@ produitsLies:
     nom: "Forever Aloe Vera Gel"
   - slug: "programme-c9-forever-vanille-peche"
     nom: "Programme C9 Vanille-Pêche"
+articlesLies:
+  - slug: "programme-c9-forever-guide-cure-detox-9-jours"
+    titre: "Programme C9 Forever : guide complet détox"
+  - slug: "perdre-du-poids-naturellement-forever-programmes-minceur"
+    titre: "Perdre du poids Forever : C9 ou DX4 ?"
+  - slug: "aloe-vera-digestion-bienfaits"
+    titre: "Aloe vera digestion : 5 effets concrets"
 draft: false
 ---
 

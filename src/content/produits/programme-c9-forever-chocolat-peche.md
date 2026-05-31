@@ -8,8 +8,8 @@ images: []
 category: "programme-detox"
 description: "Le Programme C9 Forever Chocolat-Pêche est une cure bien-être complète de 9 jours conçue par Forever Living Products. Basé sur le gel d'aloe vera stabilisé, il associe des shakes protéinés saveur chocolat, des compléments alimentaires ciblés et un guide nutritionnel complet pour aider l'organisme à se purifier, relancer le métabolisme et perdre du poids naturellement. Idéal pour celles et ceux qui préfèrent une saveur chocolatée gourmande tout en profitant de tous les bienfaits du programme C9."
 titreDetails: "Programme C9 Forever Chocolat-Pêche : votre cure détox complète en 9 jours"
-seoTitle: "Programme C9 Forever Chocolat Pêche – Cure détox et minceur 9 jours"
-seoDescription: "Découvrez le Programme C9 Forever Chocolat-Pêche : cure détox complète 9 jours à base d'aloe vera. Perdez du poids naturellement avec shakes protéinés, compléments et guide nutrition."
+seoTitle: "Programme C9 Chocolat Pêche – Détox 9 jours"
+seoDescription: "Programme C9 Forever Chocolat-Pêche : cure détox 9 jours. Aloe vera, shakes protéinés, compléments ciblés. Perdez du poids naturellement. Livraison France."
 video: ""
 lienCommande: "http://www.foreverliving.fr/ref/330001628607/475"
 faq:

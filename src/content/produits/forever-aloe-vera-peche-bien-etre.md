@@ -8,7 +8,7 @@ images: []
 category: "boissons-aloe-vera"
 description: "Forever Aloe Vera Pêche est une boisson rafraîchissante composée à 84,5 % de gel d'aloe vera stabilisé, enrichie d'une purée de pêche naturelle et de vitamine C antioxydante. Cette boisson sans gluten, sans lactose et sans conservateurs, favorise l'hydratation cellulaire, soutient la digestion et contribue à renforcer les défenses naturelles. Sa saveur douce et fruitée en fait un allié plaisir au quotidien, idéal pour une cure bien-être ou simplement pour remplacer une boisson sucrée."
 titreDetails: "Forever Aloe Vera Pêche : l'alliance naturelle de l'aloe vera et de la pêche pour votre bien-être quotidien"
-seoTitle: "Forever Aloe Vera Pêche – Boisson Aloe Vera & Pêche | Digestion & Vitalité"
+seoTitle: "Forever Aloe Vera Pêche – Digestion & vitalité"
 seoDescription: "Forever Aloe Vera Pêche : 84,5 % de gel d'aloe vera pur mêlé à la douceur de la pêche. Soutien digestif, immunité et vitalité au naturel. Sans gluten, vegan."
 video: ""
 lienCommande: "http://www.foreverliving.fr/ref/330001628607/877"

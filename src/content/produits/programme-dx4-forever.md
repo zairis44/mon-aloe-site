@@ -8,8 +8,8 @@ images: []
 category: "programme-detox"
 description: "Le Programme DX4 Forever est une cure bien-être intensive de 4 jours conçue pour remettre l’organisme à zéro rapidement. Idéal après les fêtes, un voyage ou une période d’excès, il combine le gel d’aloe vera stabilisé à 6 compléments exclusifs pour éliminer les toxines, booster l’énergie, maintenir le système immunitaire et freiner les fringales. Son format court et efficace en fait le programme parfait pour une remise en forme express."
 titreDetails: "Programme DX4 Forever : votre remise à zéro en 4 jours"
-seoTitle: "Programme DX4 Forever – Détox 4 jours, énergie et bien-être naturel"
-seoDescription: "Le Programme DX4 Forever : cure bien-être complète de 4 jours à base d'aloe vera et 6 compléments exclusifs. Élimine les toxines, booste l'énergie, freine les fringales. Livraison rapide."
+seoTitle: "Programme DX4 Forever – Détox intense 4 jours"
+seoDescription: "Programme DX4 Forever : cure bien-être 4 jours à base d'aloe vera. Élimine les toxines, booste l'énergie et freine les fringales. Livraison rapide."
 video: ""
 lienCommande: ""
 faq:
