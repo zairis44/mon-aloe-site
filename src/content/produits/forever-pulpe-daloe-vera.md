@@ -44,4 +44,7 @@ caracteristiques:
   - titre: "Comment intégrer le Forever Aloe Vera Gel dans votre quotidien"
     contenu: "Le matin à jeun : 30 à 60 ml purs ou dilués dans 240 ml d’eau, 15 à 30 min avant le petit-déjeuner. C’est le moment idéal pour que l’aloe vera agisse sur la muqueuse intestinale. Peut aussi être ajouté à un smoothie ou consommé après le sport pour la récupération."
   - titre: "Utilisation et conservation"
-    contenu: "Prendre 30 à 60 ml par jour. Agiter avant utilisation. Après ouverture, conserver au réfrigérateur (à max 7°C) et consommer dans les 30 jours. Ne pas exposer à la chaleur ou
+    contenu: "Prendre 30 à 60 ml par jour. Agiter avant utilisation. Après ouverture, conserver au réfrigérateur (à max 7°C) et consommer dans les 30 jours. Ne pas exposer à la chaleur ou au soleil direct. La boîte non ouverte se conserve à température ambiante."
+---
+
+Forever Aloe Vera Gel (Réf. 815) concentre 40 ans d’expertise Forever Living Products dans la culture et la stabilisation de l’aloe vera. Sa formule optimisée : 99,7 % de gel d’aloe vera stabilisé (pulpe intérieure, sans écorce ni aloïne), zéro conservateur artificiel (stabilisé uniquement par vitamine C et technologie Tetra Pak), vitamine C qui contribue à réduire la fatigue et soutenir le système immunitaire, emballage 100 % recyclable, certifié IASC. Sans gluten, vegan, casher et halal. Mode d’emploi : 30 à 60 ml par jour dilués dans 240 ml d’eau, de préférence le matin à jeun. Après ouverture, conserver au réfrigérateur et consommer dans les 30 jours.

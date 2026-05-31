@@ -99,4 +99,15 @@ const schemaGraph = {
     <slot name="head" />
 
     <!-- Google Analytics -->
-    <script async s
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BNF9DV82DN"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-BNF9DV82DN');
+    </script>
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>

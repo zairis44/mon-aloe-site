@@ -111,6 +111,16 @@ const links = [
           </a>
         </li>
       ))}
+
+      <!-- Bouton Devenir Distributeur — distinct, séparé visuellement -->
+      <li class="ml-2">
+        <a
+          href="/devenir-distributeur-forever-living/"
+          class="inline-flex items-center gap-1.5 rounded-full border-2 border-clay text-clay hover:bg-clay hover:text-cream px-4 py-2 text-sm font-semibold transition-colors"
+        >
+          🌿 Devenir distributeur
+        </a>
+      </li>
     </ul>
 
     <!-- CTA desktop + burger mobile -->
@@ -165,6 +175,14 @@ const links = [
         ))}
       </div>
 
+      <!-- Bouton Devenir Distributeur (mobile) -->
+      <a
+        href="/devenir-distributeur-forever-living/"
+        class="flex items-center justify-center gap-2 mt-2 rounded-full border-2 border-clay text-clay hover:bg-clay hover:text-cream px-5 py-3 text-sm font-semibold transition-colors"
+      >
+        🌿 Devenir distributeur Forever
+      </a>
+
       <!-- Bouton Commander (mobile) — boutique Forever directe -->
       <a
         href={boutiqueUrl}
@@ -191,4 +209,12 @@ const links = [
     burger.setAttribute('aria-expanded', String(!isOpen));
     if (!isOpen) {
       b1?.classList.add('rotate-45', 'translate-y-2');
-      b2?.classList.add('op
+      b2?.classList.add('opacity-0');
+      b3?.classList.add('-rotate-45', '-translate-y-2');
+    } else {
+      b1?.classList.remove('rotate-45', 'translate-y-2');
+      b2?.classList.remove('opacity-0');
+      b3?.classList.remove('-rotate-45', '-translate-y-2');
+    }
+  });
+</script>

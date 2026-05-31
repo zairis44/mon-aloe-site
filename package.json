@@ -14,4 +14,6 @@
     "@fontsource/mulish": "^5.2.8",
     "@tailwindcss/vite": "^4.1.18",
     "astro": "^6.3.5",
-    "tailwindcss": 
+    "tailwindcss": "^4.1.18"
+  }
+}
