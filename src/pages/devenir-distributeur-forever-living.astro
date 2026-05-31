@@ -95,6 +95,27 @@ const schemaFAQ = {
     acceptedAnswer: { "@type": "Answer", text: r },
   })),
 };
+
+const schemaWebPage = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": pageUrl,
+  url: pageUrl,
+  name: "Devenir Distributeur Forever Living en France",
+  description: "Guide complet pour devenir distributeur Forever Living en France : revenus, fonctionnement, étapes et accompagnement par Rafael Avenard.",
+  inLanguage: "fr-FR",
+  about: {
+    "@type": "Occupation",
+    name: "Distributeur Forever Living Products",
+    description: "Activité indépendante de vente directe de produits aloe vera certifiés IASC en France.",
+  },
+  author: {
+    "@type": "Person",
+    name: "Rafael Avenard",
+    jobTitle: "Distributeur Indépendant Forever Living Products",
+    telephone: "+33677352226",
+  },
+};
 ---
 
 <Layout
@@ -103,6 +124,7 @@ const schemaFAQ = {
   canonical={pageUrl}
 >
   <script type="application/ld+json" set:html={JSON.stringify(schemaFAQ)} slot="head" />
+  <script type="application/ld+json" set:html={JSON.stringify(schemaWebPage)} slot="head" />
 
   <Header />
 
@@ -117,11 +139,11 @@ const schemaFAQ = {
             Opportunité business
           </span>
           <h1 class="text-4xl md:text-5xl text-cream font-display leading-tight mb-6">
-            Entreprendre avec Forever Living —<br />
-            <span class="text-aloe-400 italic">pourquoi ça fonctionne</span>
+            Devenir distributeur Forever Living —<br />
+            <span class="text-aloe-400 italic">tout ce qu'il faut savoir</span>
           </h1>
           <p class="text-lg text-aloe-200 leading-relaxed mb-8">
-            Des produits certifiés que les clients consomment chaque jour, un modèle qui ne demande aucun stock, une liberté totale d'organisation. Voilà ce que je vis depuis que je suis distributeur Forever en Loire-Atlantique.
+            Devenir distributeur Forever Living, c'est lancer une activité indépendante autour de produits aloe vera certifiés que les clients consomment chaque jour — sans stock obligatoire, sans quota, à ton propre rythme. Je suis distributeur Forever en Loire-Atlantique depuis plusieurs années. Voici ce que j'aurais voulu savoir avant de commencer.
           </p>
           <div class="flex flex-wrap gap-4">
             <a href="tel:+33677352226"
