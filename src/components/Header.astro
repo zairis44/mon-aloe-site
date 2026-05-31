@@ -153,17 +153,36 @@ const links = [
   <div id="mobile-menu" class="hidden md:hidden border-t border-aloe-100 bg-cream">
     <div class="mx-auto max-w-6xl px-6 py-4 space-y-1">
 
-      <p class="text-xs font-semibold uppercase tracking-widest text-aloe-400 px-3 py-2">Produits</p>
-      {categories.map((cat) => (
-        <a href={cat.href} class="flex items-center gap-3 px-3 py-2.5 rounded-xl hover:bg-aloe-50 transition-colors">
-          <span class="text-xl w-8 text-center">{cat.icon}</span>
-          <div>
-            <p class="text-sm font-medium text-aloe-700">{cat.label}</p>
-            <p class="text-xs text-aloe-400">{cat.desc}</p>
-          </div>
-        </a>
-      ))}
+      <!-- 🛒 Commander EN PREMIER — bouton de conversion prioritaire -->
+      <a
+        href={boutiqueUrl}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="flex items-center justify-center gap-2 rounded-full bg-aloe-600 px-5 py-3 text-sm font-semibold text-cream hover:bg-aloe-700 transition-colors mb-2"
+      >
+        🛒 Commander sur Forever Living
+      </a>
 
+      <!-- Produits en accordéon (fermé par défaut) -->
+      <details class="group">
+        <summary class="flex items-center justify-between px-3 py-2.5 rounded-xl hover:bg-aloe-50 transition-colors cursor-pointer list-none">
+          <span class="text-xs font-semibold uppercase tracking-widest text-aloe-500">Produits</span>
+          <span class="text-aloe-400 text-xs transition-transform duration-200 group-open:rotate-180">▼</span>
+        </summary>
+        <div class="mt-1 space-y-1 pl-1">
+          {categories.map((cat) => (
+            <a href={cat.href} class="flex items-center gap-3 px-3 py-2.5 rounded-xl hover:bg-aloe-50 transition-colors">
+              <span class="text-xl w-8 text-center">{cat.icon}</span>
+              <div>
+                <p class="text-sm font-medium text-aloe-700">{cat.label}</p>
+                <p class="text-xs text-aloe-400">{cat.desc}</p>
+              </div>
+            </a>
+          ))}
+        </div>
+      </details>
+
+      <!-- Autres liens de navigation -->
       <div class="border-t border-aloe-100 pt-3 mt-1 space-y-1">
         {links.map((link) => (
           <a
@@ -175,7 +194,7 @@ const links = [
         ))}
       </div>
 
-      <!-- Bouton Devenir Distributeur (mobile) -->
+      <!-- Devenir distributeur -->
       <a
         href="/devenir-distributeur-forever-living/"
         class="flex items-center justify-center gap-2 mt-2 rounded-full border-2 border-clay text-clay hover:bg-clay hover:text-cream px-5 py-3 text-sm font-semibold transition-colors"
@@ -183,15 +202,6 @@ const links = [
         🌿 Devenir distributeur Forever
       </a>
 
-      <!-- Bouton Commander (mobile) — boutique Forever directe -->
-      <a
-        href={boutiqueUrl}
-        target="_blank"
-        rel="noopener noreferrer"
-        class="flex items-center justify-center gap-2 mt-3 rounded-full bg-aloe-600 px-5 py-3 text-sm font-semibold text-cream hover:bg-aloe-700 transition-colors"
-      >
-        🛒 Commander sur Forever Living
-      </a>
     </div>
   </div>
 </header>
