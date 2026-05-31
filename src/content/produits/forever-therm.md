@@ -3,8 +3,9 @@ name: "Forever therm"
 reference: "463"
 slug: "forever-therm"
 price: 42.25
-image: "/images/produits/68619ec121b70f57415710aa_forever-therm.webp"
-images: []
+image: "/images/produits/forever-therm.webp"
+images:
+  - "/images/produits/forever-therm-2.webp"
 category: "sport-et-fitness"
 description: "Forever Therm™ est un complément nutritionnel innovant conçu pour stimuler le métabolisme et soutenir vos objectifs de gestion du poids. Sa formule associe des extraits naturels de thé vert, guarana, café vert et cétones de framboise ainsi qu’un mélange ciblé de vitamines B et C. Ce cocktail botanique et vitaminique accélère la thermogenèse, favorise la combustion des calories et améliore le niveau d’énergie. C’est un soutien idéal dans le cadre d’un mode de vie sain et actif."
 titreDetails: "Forever Therm™ : le booster métabolique naturel pour accompagner votre perte de poids"
