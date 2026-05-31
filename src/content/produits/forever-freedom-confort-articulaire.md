@@ -12,7 +12,7 @@ description: "Forever Freedom® combine l’extrait pur d’aloe vera avec un tr
 titreDetails: ""
 seoTitle: "Forever Freedom – Aloe vera glucosamine MSM"
 seoDescription: "Forever Freedom® : jus d'aloe vera enrichi en glucosamine, chondroïtine et MSM pour soutenir vos articulations au quotidien. Mobilité, confort et flexibilité naturels."
-video: ""
+video: "https://www.youtube.com/watch?v=QmxkBeO4ObA"
 lienCommande: "http://www.foreverliving.fr/ref/330001628607/196"
 featured: true
 disponible: true
