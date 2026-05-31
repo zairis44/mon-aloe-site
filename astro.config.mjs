@@ -9,21 +9,4 @@ export default defineConfig({
   integrations: [
     sitemap({
       filter: (page) =>
-        !page.includes('/mentions-legales') &&
-        !page.includes('/confidentialite') &&
-        !page.includes('/livraison') &&
-        !page.includes('/404'),
-      changefreq: 'weekly',
-      priority: 0.7,
-      lastmod: new Date(),
-    }),
-  ],
-
-  build: {
-    inlineStylesheets: 'always',
-  },
-
-  vite: {
-    plugins: [tailwindcss()],
-  },
-});
+   

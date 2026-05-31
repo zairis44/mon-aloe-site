@@ -44,16 +44,4 @@ const blog = defineCollection({
     pubDate: z.coerce.date(),
     updatedDate: z.coerce.date().optional(),
     author: z.string().default('Rafael Avenard'),
-    category: z.string(),
-    tags: z.array(z.string()).default([]),
-    image: z.string().optional(),
-    imageAlt: z.string().optional(),
-    produitsLies: z.array(z.object({
-      slug: z.string(),
-      nom: z.string(),
-    })).default([]),
-    draft: z.boolean().default(false),
-  }),
-});
-
-export const collections = { produits, blog };
+    category: z.string(),
