@@ -3,8 +3,10 @@ name: "Forever Freedom"
 reference: "196"
 slug: "forever-freedom-confort-articulaire"
 price: 50.89
-image: "/images/produits/forever-freedom-confort-articulaire.webp"
-images: []
+image: "/images/produits/forever-freedom-confort-articulaire-2.webp"
+images:
+  - "/images/produits/forever-freedom-confort-articulaire-3.webp"
+  - "/images/produits/forever-freedom-confort-articulaire-4.webp"
 category: "boissons-aloe-vera"
 description: "Forever Freedom® combine l’extrait pur d’aloe vera avec un trio d’actifs essentiels pour soutenir vos articulations au quotidien. Formulé avec de la glucosamine, de la chondroïtine et du MSM, ce jus aromatisé à l’orange favorise la flexibilité, maintient la fonction articulaire et contribue à la santé des os et du cartilage. Riche en vitamine C, qui participe à la formation normale du collagène, il s’adresse aux personnes actives, sportifs ou simplement désireuses de préserver leur mobilité de manière naturelle . Conditionné en flacon d’1 L, il se boit deux fois 45 ml par jour, à diluer ou pure, avec une saveur orange agréable et rafraîchissante."
 titreDetails: ""
