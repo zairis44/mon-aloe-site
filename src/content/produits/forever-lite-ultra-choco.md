@@ -3,7 +3,7 @@ name: "Forever Lite Ultra choco"
 reference: "471"
 slug: "forever-lite-ultra-choco"
 price: 30.49
-image: "/images/produits/6861a20f51a916cdb1621b1a_forever-lite-ultra-choco.webp"
+image: "/images/produits/forever-lite-ultra-choco.webp"
 images: []
 category: "sport-et-fitness"
 description: "Forever Lite Ultra™ Chocolat est un shake protéiné végétal gourmand, conçu pour soutenir la gestion du poids, favoriser la satiété et offrir une source nutritive complète. Sa base de protéines de soja, enrichie du complexe Aminotein®, facilite la digestion tout en apportant 17 g de protéines par portion avec seulement ~90 kcal. Agrémenté d’un arôme chocolat doux et riche, ce shake s’intègre naturellement à une routine saine pour un petit-déjeuner rassasiant, une collation ou un repas minceur."
