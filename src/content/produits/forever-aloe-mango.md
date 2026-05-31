@@ -3,14 +3,15 @@ name: "Forever Aloe Mango"
 reference: "836"
 slug: "forever-aloe-mango"
 price: 37.29
-image: "/images/produits/6845c715a0ae3989f8bea91c_forever-aloe-vera-mangue.webp"
-images: []
+image: "/images/produits/forever-aloe-mango.webp"
+images:
+  - "/images/produits/forever-aloe-mango-2.webp"
 category: "boissons-aloe-vera"
 description: "Forever Aloe Mango est un jus à base de gel d’aloe vera stabilisé, enrichi d’un délicieux extrait naturel de mangue tropicale. Cette boisson rafraîchissante et légère apporte hydratation, bien-être digestif et plaisir fruité dans un format pratique. Son goût doux et exotique en fait un allié parfait pour accompagner les moments de détente, renforcer le système immunitaire ou simplement savourer une pause gourmande au quotidien."
 titreDetails: "Forever Aloe Mango : les bienfaits de l'aloe vera et de la mangue pour hydratation et digestion"
 seoTitle: "Forever Aloe Mango – Jus d’aloe vera à la mangue naturelle"
 seoDescription: "Forever Aloe Mango : boisson rafraîchissante à l’aloe vera et mangue. Idéale pour l’hydratation, la digestion et un moment fruité au quotidien."
-video: ""
+video: "https://www.youtube.com/watch?v=uMEAyhzRf54"
 lienCommande: "http://www.foreverliving.fr/ref/330001628607/836"
 faq:
   - question: "Quels sont les bienfaits pour la santé ?"
