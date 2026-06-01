@@ -3,7 +3,7 @@ name: "Forever Aloe Vera 4 Pack – Coffret découverte 4 boissons aloe vera"
 reference: "8154"
 slug: "forever-aloe-vera-4pack"
 price: 149.18
-image: "/images/produits/685f04b989dc26cdead660eb_chatgpt_image_27_juin_2025_a_22_50_43.webp"
+image: "/images/produits/forever-aloe-vera-4pack.webp"
 images: []
 category: "boissons-aloe-vera"
 description: "Le Forever Aloe Vera 4 Pack est le coffret idéal pour découvrir les boissons aloe vera Forever ou débuter une cure bien-être. Ce pack contient quatre bouteilles de 330 ml de gel d’aloe vera stabilisé à 84 %, au format pratique nomade. Sa texture unique avec de véritables morceaux de pulpe et sa saveur douce en font une boisson plaisir, tout en apportant hydratation cellulaire, soutien digestif et vitalité au quotidien. Format économique et pratique pour initier une routine aloe vera."
