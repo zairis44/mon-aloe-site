@@ -11,7 +11,7 @@ titreDetails: "Programme DX4 Forever : votre remise à zéro en 4 jours"
 seoTitle: "Programme DX4 Forever – Détox intense 4 jours"
 seoDescription: "Programme DX4 Forever : cure bien-être 4 jours à base d'aloe vera. Élimine les toxines, booste l'énergie et freine les fringales. Livraison rapide."
 video: ""
-lienCommande: ""
+lienCommande: "https://www.foreverliving.fr/ref/330001628607/659"
 faq:
   - question: "En quoi le DX4 est-il différent du C9 ?"
     reponse: "Le DX4 est plus court (4 jours vs 9 jours pour le C9) et plus concentré. Il est idéal pour une remise à zéro rapide quand on n’a pas le temps de faire un C9 complet. Le C9 est plus adapté pour une perte de poids significative et un rééquilibrage nutritionnel profond. Les deux programmes se complètent parfaitement."
