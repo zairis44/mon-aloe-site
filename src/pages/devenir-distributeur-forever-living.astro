@@ -40,7 +40,7 @@ const avantages = [
     icon: "💰",
     titre: "Comment sont construits les revenus",
     texte: "Tu gagnes sur chaque vente directe — une commission sur le prix de vente au détail. Tu bénifies aussi de bonus liés au volume de ventes et, si tu le souhaites, d'une équipe que tu accompagnes à ton tour. Il n'y a aucune obligation de recruter : beaucoup de distributeurs réussissent très bien en se concentrant uniquement sur les ventes clients.",
-    photo: "/images/distributeur/entreprendre-avec-forever-living.webp",
+    photo: null,
     alt: "Entreprendre avec Forever Living et construire ses revenus",
     sens: "droite",
   },
@@ -236,18 +236,26 @@ const schemaWebPage = {
             <p class="text-aloe-700 leading-relaxed text-lg">{item.texte}</p>
           </div>
 
-          <!-- Photo -->
+          <!-- Photo ou placeholder -->
           <div class={item.sens === 'droite' ? 'md:order-1' : ''}>
-            <div class="aspect-square rounded-3xl overflow-hidden shadow-lg border border-aloe-100">
-              <img
-                src={item.photo}
-                alt={item.alt}
-                width="600"
-                height="600"
-                loading="lazy"
-                class="w-full h-full object-cover object-top"
-              />
-            </div>
+            {item.photo ? (
+              <div class="aspect-square rounded-3xl overflow-hidden shadow-lg border border-aloe-100">
+                <img
+                  src={item.photo}
+                  alt={item.alt}
+                  width="600"
+                  height="600"
+                  loading="lazy"
+                  class="w-full h-full object-cover object-top"
+                />
+              </div>
+            ) : (
+              <div class="aspect-square rounded-3xl bg-gradient-to-br from-aloe-50 to-aloe-100 border-2 border-dashed border-aloe-200 flex flex-col items-center justify-center text-center p-8">
+                <span class="text-5xl mb-4">🌿</span>
+                <p class="text-sm font-semibold text-aloe-600">Photo à venir</p>
+                <p class="text-xs text-aloe-400 mt-2 leading-relaxed">Une belle image arrive bientôt<br />pour illustrer cette section</p>
+              </div>
+            )}
           </div>
 
         </div>
