@@ -3,8 +3,10 @@ name: "Forever Aloe Ever-Shield Deodorant Stick – Fraîcheur douce et sans alu
 reference: "67"
 slug: "forever-aloe-ever-shield-deodorant-stick"
 price: 11.76
-image: "/images/produits/68581370fc58febdd7759403_stick-deodorant-alors-forever.webp"
-images: []
+image: "/images/produits/forever-aloe-ever-shield-deodorant-stick.webp"
+images:
+  - "/images/produits/forever-aloe-ever-shield-deodorant-stick-2.webp"
+  - "/images/produits/forever-aloe-ever-shield-deodorant-stick-3.webp"
 category: "cremes-et-gels"
 description: "Découvrez le Forever Aloe Ever-Shield Deodorant Stick, un déodorant stick apaisant formulé à base d’Aloe vera stabilisé, sans sels d’aluminium ni alcool. Sa texture onctueuse glisse facilement sur la peau pour vous offrir une **protection durable contre les mauvaises odeurs**, sans tacher les vêtements. Adapté aux peaux sensibles, il peut être utilisé après le rasage ou l’épilation sans provoquer d’irritations. Complété par des agents antibactériens doux (ex. triclosan), il respecte l’équilibre naturel de votre peau tout en lui offrant un confort longue durée. Un geste quotidien pratique, efficace et délicat."
 titreDetails: "Forever Aloe Ever-Shield Stick : déodorant naturel à l’Aloe vera, efficace et respectueux"
