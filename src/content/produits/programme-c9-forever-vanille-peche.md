@@ -5,7 +5,7 @@ slug: "programme-c9-forever-vanille-peche"
 price: 152.42
 image: "/images/produits/programme-c9-forever-vanille-peche.webp"
 images: []
-category: "programme-detox"
+category: "programmes-detox"
 description: "Le Programme C9 Forever Vanille-Pêche est une cure bien-être complète de 9 jours conçue par Forever Living Products. Basé sur le gel d'aloe vera stabilisé certifié IASC, il associe des shakes protéinés saveur vanille-pêche, des compléments alimentaires ciblés (Forever Therm, Forever Fiber, Garcinia Plus) et un guide nutritionnel et sportif complet. En 9 jours, le C9 aide l'organisme à se purifier, relance le métabolisme et établit de nouvelles habitudes alimentaires durables. Résultats constatés en moyenne : 2 à 5 kg perdus, réduction des ballonnements, regain d'énergie dès le 3e jour. Livraison rapide en France avec accompagnement personnalisé offert par Rafael Avenard, distributeur Forever Loire-Atlantique."
 titreDetails: "Le Programme C9 Forever : Votre Cure Détox Complète de 9 Jours"
 seoTitle: "Programme C9 Vanille Pêche – Détox minceur 9j"
