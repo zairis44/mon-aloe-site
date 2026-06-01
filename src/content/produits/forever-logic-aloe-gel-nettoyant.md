@@ -3,8 +3,9 @@ name: "Forever Logic Aloe Gel Nettoyant – Pureté et douceur au naturel"
 reference: "667"
 slug: "forever-logic-aloe-gel-nettoyant"
 price: 31.45
-image: "/images/produits/689dd9eed75251740b18ce45_nouveau-gel-nettoyant-logic-forever.webp"
-images: []
+image: "/images/produits/forever-logic-aloe-gel-nettoyant.webp"
+images:
+  - "/images/produits/forever-logic-aloe-gel-nettoyant-2.webp"
 category: "cremes-et-gels"
 description: "Le **Logic Aloe Gel Nettoyant** de Forever est un soin haute qualité composé à **plus de 96 % d’ingrédients d’origine naturelle**, dont le gel pur stabilisé d’aloe vera, des esters de jojoba et l’extrait de fruit de date du désert. Il nettoie la peau en douceur, respecte son équilibre et la laisse apaisée et hydratée. Sa mousse légère procure une sensation de fraîcheur sans agression, idéale pour tous les types de peaux, y compris les plus sensibles. Vegan, sans sulfate et sans parfum, il offre un nettoyage efficace, sain et respectueux."
 titreDetails: "Forever Logic Aloe Gel Nettoyant : le soin quotidien qui respecte votre peau"
