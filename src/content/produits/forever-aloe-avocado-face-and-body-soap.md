@@ -3,9 +3,9 @@ name: "Forever Aloe Avocado Face & Body Soap – Le savon hydratant qui respecte
 reference: "284"
 slug: "forever-aloe-avocado-face-and-body-soap"
 price: 8.2
-image: "/images/produits/6859b1e582a18701e4ade747_savon-corps-et-visage-aloe-avocat-forever.webp"
+image: "/images/produits/forever-aloe-avocado-face-and-body-soap.webp"
 images:
-  - "/images/produits/6859b1eac2469b3b66ab3b78_savon-corps-et-visage-forever.webp"
+  - "/images/produits/forever-aloe-avocado-face-and-body-soap-2.webp"
 category: "cremes-et-gels"
 description: "Offrez à votre peau un soin quotidien d’exception avec le Forever Aloe Avocado Face & Body Soap, un savon riche en huile d’avocat et en Aloe vera pur. Sa formule douce et nourrissante nettoie efficacement tout en préservant l’hydratation naturelle de la peau. L’huile d’avocat, riche en vitamines A, D et E, aide à nourrir en profondeur, tandis que l’Aloe vera apaise et régénère. Idéal pour le visage comme pour le corps, il convient à tous les types de peaux, même les plus sensibles. Sans agents agressifs, il laisse votre peau douce, souple et agréablement parfumée après chaque utilisation."
 titreDetails: "Forever Aloe Avocado Face & Body Soap : la douceur naturelle de l’avocat et de l’Aloe vera pour votre peau"
