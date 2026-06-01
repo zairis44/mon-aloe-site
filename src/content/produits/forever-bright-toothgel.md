@@ -4,13 +4,15 @@ reference: "28"
 slug: "forever-bright-toothgel"
 price: 12.48
 image: "/images/produits/forever-bright-toothgel.webp"
-images: []
+images:
+  - "/images/produits/forever-bright-toothgel-2.webp"
+  - "/images/produits/forever-bright-toothgel-3.webp"
 category: "cremes-et-gels"
 description: "Adoptez le Forever Bright Toothgel, un dentifrice gel naturel formulé avec de l’Aloe vera stabilisé et de la propolis. Sans fluor, il nettoie efficacement tout en respectant vos gencives. La propolis offre un effet apaisant et purifiant, tandis que les arômes frais de menthe poivrée et verte laissent une haleine propre et durable. Idéal pour toute la famille, y compris les enfants, il est sans gluten et convient aux bouches sensibles. Offrez à votre sourire une routine d’hygiène douce, efficace et naturellement revitalisante."
 titreDetails: "Forever Bright Toothgel : un nettoyage bucco-dentaire respectueux et naturel"
 seoTitle: "Forever Bright Toothgel – Dentifrice naturel Aloe & Propolis"
 seoDescription: "Forever Bright Toothgel : dentifrice naturel à l'aloe vera et propolis, sans fluor. Nettoyage doux, haleine fraîche, respect des gencives sensibles."
-video: ""
+video: "https://www.youtube.com/watch?v=fhId-IDuuTs"
 lienCommande: "http://www.foreverliving.fr/ref/330001628607/28"
 faq:
   - question: "Est-ce que ce dentifrice convient aux enfants ?"
