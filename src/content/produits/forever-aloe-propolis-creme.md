@@ -3,8 +3,10 @@ name: "Forever Aloe Propolis Crème – Confort intense & soin naturel"
 reference: "51"
 slug: "forever-aloe-propolis-creme"
 price: 32.5
-image: "/images/produits/6857b820dd78e3f5bf2cf240_cre-me-aloe-propolis-forever.webp"
-images: []
+image: "/images/produits/forever-aloe-propolis-creme.webp"
+images:
+  - "/images/produits/forever-aloe-propolis-creme-2.webp"
+  - "/images/produits/forever-aloe-propolis-creme-3.webp"
 category: "cremes-et-gels"
 description: "Découvrez la **Forever Aloe Propolis Crème**, une crème ultra-nourrissante qui marie le gel d’Aloe vera stabilisé à la propolis naturelle pour apaiser et protéger votre peau. Enrichie en vitamines A, E et C ainsi qu’en camomille, elle hydrate intensément, restaure le confort cutané et apaise les irritations. Sa texture riche pénètre sans laisser de film gras, idéale pour les peaux sèches, abîmées ou sensibles. Utilisable sur le visage, le cou et le corps, elle constitue un soin quotidien complet pour une peau douce, souple et naturellement protégée à tout moment."
 titreDetails: "Forever Aloe Propolis Crème : la crème réparatrice aux bienfaits naturels"
