@@ -3,8 +3,10 @@ name: "Forever Aloe Liquid Soap – Le nettoyant doux qui nourrit votre peau"
 reference: "633"
 slug: "forever-aloe-liquid-soap"
 price: 23.86
-image: "/images/produits/68580e410d0b04f86a44c3aa_aloe-liquid-soap-de-forever.webp"
-images: []
+image: "/images/produits/forever-aloe-liquid-soap.webp"
+images:
+  - "/images/produits/forever-aloe-liquid-soap-2.webp"
+  - "/images/produits/forever-aloe-liquid-soap-3.webp"
 category: "cremes-et-gels"
 description: "Découvrez le **Forever Aloe Liquid Soap**, un savon liquide délicat enrichi en Aloe vera pur, huile d’argan, esters de jojoba et extrait de citron et arnica. Sa texture perleuse nettoie avec douceur, tout en hydratant et apaisant votre peau. Adapté à toute la famille, il nettoie visage, mains et corps sans dessécher ni irriter. Grâce à ses huiles nourrissantes, il laisse une sensation de fraîcheur durable et un confort souple. Un geste beauté quotidien, clean et complet pour choyer votre peau naturellement."
 titreDetails: "Forever Aloe Liquid Soap : douceur nettoyante et soin hydratant en un seul geste"
