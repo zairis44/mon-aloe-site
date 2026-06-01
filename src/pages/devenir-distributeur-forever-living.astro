@@ -1,7 +1,7 @@
 ---
 /**
  * Page Devenir Distributeur Forever Living
- * Layout alterné texte / espace photo — Rafael ajoute ses photos directement
+ * Layout alterné texte / photo + section témoignages
  * Schema.org : FAQPage + WebPage
  */
 import Layout from '../layouts/Layout.astro';
@@ -16,43 +16,68 @@ const avantages = [
     icon: "🌍",
     titre: "Une marque mondiale, une opportunité locale",
     texte: "Forever Living Products est présent dans plus de 160 pays depuis 1978. Tu travailles en indépendant, mais avec le soutien d'une structure internationale solide, des outils de vente éprouvés et une gamme de produits qui se vend d'elle-même.",
-    photo: null,
+    photo: "/images/distributeur/pourquoi-choisir-forever-living.webp",
+    alt: "Pourquoi choisir Forever Living Products comme activité indépendante",
     sens: "gauche",
   },
   {
     icon: "📦",
     titre: "Des produits que les clients commandent à nouveau",
     texte: "La vraie force d'un business Forever : les clients reviennent. L'aloe vera se consomme quotidiennement. Le programme C9 se fait plusieurs fois par an. Le Forever Freedom s'intègre dans une routine. Ce ne sont pas des achats impulsifs — ce sont des habitudes. Ton revenu se construit sur des clients fidèles, pas sur une chasse permanente aux nouveaux acheteurs.",
-    photo: null,
+    photo: "/images/distributeur/devenir-distributeur-forever-living-produits.webp",
+    alt: "Produits Forever Living aloe vera pour distributeurs indépendants",
     sens: "droite",
   },
   {
     icon: "⏱️",
     titre: "Tu décides de ton temps et de ton rythme",
     texte: "Distributeur Forever, ça peut être une activité principale, un complément de revenus, ou simplement un projet à tester. Tu fixes tes horaires, ta zone géographique, ton canal de vente (en ligne, bouche-à-oreille, réseaux sociaux). Aucun patron, aucune obligation de résultat imposée de l'extérieur.",
-    photo: null,
+    photo: "/images/distributeur/devenir-distributeur-forever.webp",
+    alt: "Devenir distributeur Forever Living à son propre rythme",
     sens: "gauche",
   },
   {
     icon: "💰",
     titre: "Comment sont construits les revenus",
     texte: "Tu gagnes sur chaque vente directe — une commission sur le prix de vente au détail. Tu bénifies aussi de bonus liés au volume de ventes et, si tu le souhaites, d'une équipe que tu accompagnes à ton tour. Il n'y a aucune obligation de recruter : beaucoup de distributeurs réussissent très bien en se concentrant uniquement sur les ventes clients.",
-    photo: null,
+    photo: "/images/distributeur/entreprendre-avec-forever-living.webp",
+    alt: "Entreprendre avec Forever Living et construire ses revenus",
     sens: "droite",
   },
   {
     icon: "🎓",
     titre: "Formation et accompagnement inclus",
     texte: "Forever Living fournit des outils de vente, des formations produits et business, et un accès à une plateforme de commande en ligne clé en main. De mon côté, je t'accompagne personnellement dans tes premiers pas : choix des produits à présenter, techniques de vente, gestion des clients, développement de ta présence en ligne.",
-    photo: null,
+    photo: "/images/distributeur/formation-forever-living-distributeur.webp",
+    alt: "Formation et accompagnement pour distributeurs Forever Living",
     sens: "gauche",
   },
   {
     icon: "🚀",
     titre: "Démarrer ne coûte presque rien",
     texte: "L'investissement de départ est minimal — une adhésion symbolique et quelques produits pour démarrer ta propre expérience. Contrairement à une franchise classique qui nécessite des dizaines de milliers d'euros, tu peux tester sérieusement l'activité Forever Living pour quelques centaines d'euros. Si ça ne te convient pas, tu t'arrêtes — sans perte lourde.",
-    photo: null,
+    photo: "/images/distributeur/assistance-forever-living-distributeur.webp",
+    alt: "Assistance et support Forever Living pour démarrer facilement",
     sens: "droite",
+  },
+];
+
+const temoignages = [
+  {
+    img: "/images/distributeur/temoignage-forever-manager-leader.webp",
+    alt: "Témoignage Sandrine T. Manager Leader Forever Living",
+  },
+  {
+    img: "/images/distributeur/temoignage-forever-manager-senior.webp",
+    alt: "Témoignage Anne A. Manager Senior Forever Living",
+  },
+  {
+    img: "/images/distributeur/temoignage-forever-manager.webp",
+    alt: "Témoignage Jéromine J. Manager Forever Living",
+  },
+  {
+    img: "/images/distributeur/temoignage-forever-manager-reconnu.webp",
+    alt: "Témoignage Daniel E. Manager Reconnu Forever Living",
   },
 ];
 
@@ -197,7 +222,7 @@ const schemaWebPage = {
   </section>
 
   <!-- ══════════════════════════════════════════
-       SECTIONS ALTERNÉES : texte + espace photo
+       SECTIONS ALTERNÉES : texte + photo
   ══════════════════════════════════════════ -->
   {avantages.map((item, i) => (
     <section class={`py-20 ${i % 2 === 0 ? 'bg-white' : 'bg-sand/40'}`}>
@@ -211,12 +236,17 @@ const schemaWebPage = {
             <p class="text-aloe-700 leading-relaxed text-lg">{item.texte}</p>
           </div>
 
-          <!-- Espace photo (placeholder) -->
-          <div class={`${item.sens === 'droite' ? 'md:order-1' : ''}`}>
-            <div class="aspect-[4/3] rounded-3xl bg-aloe-50 border-2 border-dashed border-aloe-200 flex flex-col items-center justify-center text-center p-8">
-              <span class="text-5xl mb-4 opacity-30">📸</span>
-              <p class="text-sm text-aloe-400 font-medium">Espace pour ta photo</p>
-              <p class="text-xs text-aloe-300 mt-2 leading-relaxed">Ajoute ici une image qui illustre ce point :<br />{item.titre}</p>
+          <!-- Photo -->
+          <div class={item.sens === 'droite' ? 'md:order-1' : ''}>
+            <div class="aspect-square rounded-3xl overflow-hidden shadow-lg border border-aloe-100">
+              <img
+                src={item.photo}
+                alt={item.alt}
+                width="600"
+                height="600"
+                loading="lazy"
+                class="w-full h-full object-cover object-top"
+              />
             </div>
           </div>
 
@@ -224,6 +254,32 @@ const schemaWebPage = {
       </div>
     </section>
   ))}
+
+  <!-- ══════════════════════════════════════════
+       TÉMOIGNAGES DISTRIBUTEURS — 4 carrés
+  ══════════════════════════════════════════ -->
+  <section class="bg-aloe-50 py-16">
+    <div class="mx-auto max-w-6xl px-6">
+      <div class="text-center mb-10">
+        <span class="text-xs font-semibold uppercase tracking-widest text-aloe-600 mb-2 block">Ils ont fait le pas</span>
+        <h2 class="text-3xl text-aloe-900">Ce que disent les distributeurs Forever</h2>
+      </div>
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        {temoignages.map((t) => (
+          <div class="rounded-3xl overflow-hidden shadow-md border border-aloe-100 aspect-square">
+            <img
+              src={t.img}
+              alt={t.alt}
+              width="600"
+              height="600"
+              loading="lazy"
+              class="w-full h-full object-cover object-top"
+            />
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
 
   <!-- ══════════════════════════════════════════
        LES 4 ÉTAPES POUR DÉMARRER
@@ -254,18 +310,20 @@ const schemaWebPage = {
   </section>
 
   <!-- ══════════════════════════════════════════
-       TÉMOIGNAGE RAFAEL (section avec photo)
+       TÉMOIGNAGE RAFAEL (avec photo)
   ══════════════════════════════════════════ -->
   <section class="bg-cream py-20">
     <div class="mx-auto max-w-6xl px-6">
       <div class="grid md:grid-cols-2 gap-16 items-center">
-        <div>
-          <!-- Espace photo Rafael -->
-          <div class="aspect-square rounded-3xl bg-aloe-50 border-2 border-dashed border-aloe-200 flex flex-col items-center justify-center text-center p-8">
-            <span class="text-5xl mb-4 opacity-30">🤳</span>
-            <p class="text-sm text-aloe-400 font-medium">Ta photo ici</p>
-            <p class="text-xs text-aloe-300 mt-2 leading-relaxed">Une photo de toi avec les produits,<br />ou en déplacement, ou avec des clients</p>
-          </div>
+        <div class="aspect-square rounded-3xl overflow-hidden shadow-lg border border-aloe-100">
+          <img
+            src="/images/distributeur/devenir-distributeur-forever-living.webp"
+            alt="Rafael Avenard distributeur Forever Living Loire-Atlantique"
+            width="600"
+            height="600"
+            loading="lazy"
+            class="w-full h-full object-cover object-top"
+          />
         </div>
         <div>
           <span class="text-xs font-semibold uppercase tracking-widest text-aloe-500 mb-4 block">Le mot de Rafael</span>
