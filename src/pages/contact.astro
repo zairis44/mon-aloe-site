@@ -46,21 +46,51 @@ const sujets = [
 
   <Header />
 
-  <!-- En-tête -->
+  <!-- En-tête — texte gauche / carte droite -->
   <section class="bg-gradient-to-br from-aloe-50 via-cream to-sand py-16">
-    <div class="mx-auto max-w-6xl px-6">
-      <nav class="text-xs text-aloe-400 mb-6" aria-label="Fil d'Ariane">
-        <ol class="flex items-center gap-2">
-          <li><a href="/" class="hover:text-aloe-600 transition-colors">Accueil</a></li>
-          <li>›</li>
-          <li class="text-aloe-700 font-medium">Contact</li>
-        </ol>
-      </nav>
-      <h1 class="text-5xl text-aloe-900 mb-4">Contactez-nous</h1>
-      <p class="text-lg text-aloe-600 max-w-xl">
-        Une question sur un produit, une commande ou les programmes détox ?
-        Rafael est disponible <strong>7j/7</strong> pour vous répondre.
-      </p>
+    <div class="mx-auto max-w-6xl px-6 grid md:grid-cols-2 gap-12 items-center">
+
+      <!-- Gauche : texte -->
+      <div>
+        <nav class="text-xs text-aloe-400 mb-6" aria-label="Fil d'Ariane">
+          <ol class="flex items-center gap-2">
+            <li><a href="/" class="hover:text-aloe-600 transition-colors">Accueil</a></li>
+            <li>›</li>
+            <li class="text-aloe-700 font-medium">Contact</li>
+          </ol>
+        </nav>
+        <h1 class="text-5xl text-aloe-900 mb-4">Contactez-nous</h1>
+        <p class="text-lg text-aloe-600 max-w-xl leading-relaxed">
+          Une question sur un produit, une commande ou les programmes détox ?
+          Rafael est disponible <strong>7j/7</strong> pour vous répondre.
+        </p>
+        <div class="mt-6 flex flex-col gap-3">
+          <a href="tel:+33677352226" class="inline-flex items-center gap-3 text-sm font-semibold text-aloe-700 hover:text-aloe-500 transition-colors">
+            <span class="text-lg">📞</span> 06 77 35 22 26
+          </a>
+          <a href="mailto:contact@espritaloe.fr" class="inline-flex items-center gap-3 text-sm font-semibold text-aloe-700 hover:text-aloe-500 transition-colors">
+            <span class="text-lg">✉️</span> contact@espritaloe.fr
+          </a>
+          <span class="inline-flex items-center gap-3 text-sm text-aloe-500">
+            <span class="text-lg">📍</span> Loire-Atlantique — Pays de la Loire
+          </span>
+        </div>
+      </div>
+
+      <!-- Droite : carte Google Maps -->
+      <div class="rounded-3xl overflow-hidden shadow-xl border border-aloe-100 h-72 md:h-80">
+        <iframe
+          src="https://maps.google.com/maps?q=Loire-Atlantique,France&z=9&output=embed&hl=fr"
+          width="100%"
+          height="100%"
+          style="border:0; display:block;"
+          allowfullscreen
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Distributeur Forever Living Loire-Atlantique — Esprit Aloé"
+        ></iframe>
+      </div>
+
     </div>
   </section>
 
@@ -160,7 +190,6 @@ const sujets = [
             Envoyer le message
           </button>
 
-          <!-- Message d'erreur réseau -->
           <div id="form-error" class="hidden rounded-2xl bg-red-50 border border-red-200 p-4 text-center">
             <p class="text-sm text-red-700">Une erreur est survenue. Veuillez réessayer ou nous contacter directement au 06 77 35 22 26.</p>
           </div>
@@ -278,35 +307,6 @@ const sujets = [
             </a>
           </div>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ── Carte Google Maps ───────────────────────────────────────── -->
-  <section class="bg-sand/30 py-12">
-    <div class="mx-auto max-w-6xl px-6">
-      <div class="text-center mb-8">
-        <span class="text-xs font-semibold uppercase tracking-widest text-aloe-600 mb-2 block">
-          Zone d'intervention
-        </span>
-        <h2 class="text-2xl text-aloe-900">
-          Distributeur en Loire-Atlantique & Pays de la Loire
-        </h2>
-        <p class="text-sm text-aloe-500 mt-2">
-          Basé en Loire-Atlantique · Livraison partout en France en 24–72h
-        </p>
-      </div>
-      <div class="rounded-3xl overflow-hidden shadow-lg border border-aloe-100">
-        <iframe
-          src="https://maps.google.com/maps?q=Loire-Atlantique,France&z=9&output=embed&hl=fr"
-          width="100%"
-          height="420"
-          style="border:0; display:block;"
-          allowfullscreen
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-          title="Distributeur Forever Living Loire-Atlantique — Esprit Aloé"
-        ></iframe>
       </div>
     </div>
   </section>
