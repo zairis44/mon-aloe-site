@@ -1,5 +1,5 @@
 ---
-name: "Programme C9 Forever : Cure Détox 9 Jours pour Perdre du Poids | Vanille Pêche"
+name: "Programme C9 Forever Vanille Pêche – Cure détox 9 jours"
 reference: "629"
 slug: "programme-c9-forever-vanille-peche"
 price: 152.42
