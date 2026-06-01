@@ -39,7 +39,7 @@ const sujets = [
 
 <Layout
   title="Contactez votre distributeur Forever Living France | Esprit Aloé"
-  description="Contactez Rafael Avenard, distributeur Forever Living Products en France. Disponible 7j/7 au 06 77 35 22 26 pour vous conseiller sur les produits Aloe Vera."
+  description="Contactez Rafael Avenard, distributeur Forever Living Products en Loire-Atlantique. Disponible 7j/7 au 06 77 35 22 26 pour vous conseiller sur les produits Aloe Vera."
   canonical="https://espritaloe.fr/contact/"
 >
   <script type="application/ld+json" set:html={JSON.stringify(schemaContact)} slot="head" />
@@ -72,7 +72,6 @@ const sujets = [
       <div>
         <h2 class="text-2xl text-aloe-800 mb-8">Envoyez-nous un message</h2>
 
-        <!-- Le formulaire n'a pas d'action ni method : géré par fetch ci-dessous -->
         <form id="contact-form" class="space-y-5" novalidate>
 
           <!-- Nom -->
@@ -171,7 +170,7 @@ const sujets = [
           </p>
         </form>
 
-        <!-- ✅ Confirmation inline — masquée par défaut -->
+        <!-- ✅ Confirmation inline -->
         <div
           id="confirmation"
           class="hidden mt-6 rounded-2xl bg-aloe-50 border border-aloe-200 p-8 text-center"
@@ -228,6 +227,13 @@ const sujets = [
               </div>
             </li>
             <li class="flex items-center gap-3">
+              <span class="text-lg">📍</span>
+              <div>
+                <p class="text-xs text-aloe-400 uppercase tracking-wide">Zone</p>
+                <p class="font-semibold">Loire-Atlantique — Pays de la Loire</p>
+              </div>
+            </li>
+            <li class="flex items-center gap-3">
               <span class="text-lg">🕐</span>
               <div>
                 <p class="text-xs text-aloe-400 uppercase tracking-wide">Disponibilité</p>
@@ -276,6 +282,35 @@ const sujets = [
     </div>
   </section>
 
+  <!-- ── Carte Google Maps ───────────────────────────────────────── -->
+  <section class="bg-sand/30 py-12">
+    <div class="mx-auto max-w-6xl px-6">
+      <div class="text-center mb-8">
+        <span class="text-xs font-semibold uppercase tracking-widest text-aloe-600 mb-2 block">
+          Zone d'intervention
+        </span>
+        <h2 class="text-2xl text-aloe-900">
+          Distributeur en Loire-Atlantique & Pays de la Loire
+        </h2>
+        <p class="text-sm text-aloe-500 mt-2">
+          Basé en Loire-Atlantique · Livraison partout en France en 24–72h
+        </p>
+      </div>
+      <div class="rounded-3xl overflow-hidden shadow-lg border border-aloe-100">
+        <iframe
+          src="https://maps.google.com/maps?q=Loire-Atlantique,France&z=9&output=embed&hl=fr"
+          width="100%"
+          height="420"
+          style="border:0; display:block;"
+          allowfullscreen
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Distributeur Forever Living Loire-Atlantique — Esprit Aloé"
+        ></iframe>
+      </div>
+    </div>
+  </section>
+
   <Footer />
 </Layout>
 
@@ -290,13 +325,11 @@ const sujets = [
   form?.addEventListener("submit", async (e) => {
     e.preventDefault();
 
-    // Validation HTML5 native
     if (!form.checkValidity()) {
       form.reportValidity();
       return;
     }
 
-    // État chargement
     if (btn) {
       btn.disabled = true;
       btn.textContent = "Envoi en cours…";
@@ -311,7 +344,6 @@ const sujets = [
       });
 
       if (res.ok) {
-        // Masquer le formulaire, afficher la confirmation
         form.classList.add("hidden");
         confirm?.classList.remove("hidden");
         confirm?.scrollIntoView({ behavior: "smooth", block: "center" });
