@@ -7,7 +7,6 @@ import { getCollection } from 'astro:content';
 export async function getStaticPaths() {
   const tous = await getCollection('produits');
 
-  // Grouper les produits par leur vraie valeur de category
   const parCategorie: Record<string, typeof tous> = {};
   for (const produit of tous) {
     const cat = (produit.data as any).category as string;
@@ -182,16 +181,28 @@ const schemaItemList = {
                       {d.name}
                     </a>
                   </h2>
-                  <div class="flex items-center justify-between">
+                  <div class="flex items-center justify-between mb-3">
                     <span class="text-lg font-display text-aloe-700">
                       {Number(d.price).toFixed(2)} €
                     </span>
+                  </div>
+                  <div class="flex gap-2">
                     <a
                       href={`/produits/${slug}/`}
-                      class="rounded-full bg-aloe-600 px-4 py-2 text-xs font-semibold text-cream hover:bg-aloe-700 transition-colors"
+                      class="flex-1 text-center rounded-full border border-aloe-300 px-3 py-2 text-xs font-semibold text-aloe-700 hover:bg-aloe-50 transition-colors"
                     >
                       Voir →
                     </a>
+                    {d.lienCommande && (
+                      <a
+                        href={d.lienCommande}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="flex-1 text-center rounded-full bg-aloe-600 px-3 py-2 text-xs font-semibold text-cream hover:bg-aloe-700 transition-colors"
+                      >
+                        🛒 Commander
+                      </a>
+                    )}
                   </div>
                 </div>
               </article>
