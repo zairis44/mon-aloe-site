@@ -2,8 +2,6 @@
 /**
  * src/pages/notre-aloe.astro
  * Page éditoriale : L'Aloe Vera Forever Living
- * Cible SEO : "aloe vera forever living", "aloe vera barbadensis miller"
- * Schema.org : WebPage
  */
 import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
@@ -51,6 +49,21 @@ const bienfaits = [
   { icon: "⚡", titre: "Énergie & vitalité", texte: "Riche en vitamines du groupe B, l'aloe vera contribue à réduire la fatigue et à soutenir le métabolisme énergétique." },
   { icon: "🧹", titre: "Détox naturelle", texte: "Les fibres et les enzymes facilitent l'élimination des déchets métaboliques. Base de tous les programmes détox C9 et DX4." },
 ];
+
+const saviez = [
+  {
+    img: "/images/notre-aloe/aloe-vera-bienfaits-bon-a-savoir-1.webp",
+    alt: "Le saviez-vous ? 20 plants d'aloe vera transforment autant de CO2 qu'un arbre",
+  },
+  {
+    img: "/images/notre-aloe/aloe-vera-bienfaits-bon-a-savoir-2.webp",
+    alt: "Le saviez-vous ? L'écorce des feuilles est utilisée comme fertilisant naturel",
+  },
+  {
+    img: "/images/notre-aloe/aloe-vera-bienfaits-bon-a-savoir-3.webp",
+    alt: "Le saviez-vous ? Forever Living a réduit sa consommation d'eau de 90% grâce à l'énergie solaire",
+  },
+];
 ---
 
 <Layout
@@ -61,12 +74,11 @@ const bienfaits = [
   <Header />
 
   <!-- ══════════════════════════════════════════
-       EN-TÊTE — texte gauche / photo droite
+       EN-TÊTE — texte gauche / photo plantation droite
   ══════════════════════════════════════════ -->
   <section class="bg-gradient-to-br from-aloe-50 via-cream to-sand py-20">
     <div class="mx-auto max-w-6xl px-6 grid md:grid-cols-2 gap-12 items-center">
 
-      <!-- Texte -->
       <div>
         <nav class="text-xs text-aloe-400 mb-6" aria-label="Fil d'Ariane">
           <ol class="flex items-center gap-2">
@@ -88,7 +100,6 @@ const bienfaits = [
         </p>
       </div>
 
-      <!-- Photo plantation -->
       <div class="rounded-3xl overflow-hidden shadow-xl border border-aloe-100 h-80 md:h-96">
         <img
           src="/images/notre-aloe/forever-living-gel-plantation-aloe-vera.webp"
@@ -129,30 +140,13 @@ const bienfaits = [
   ══════════════════════════════════════════ -->
   <section class="bg-cream py-20">
     <div class="mx-auto max-w-6xl px-6">
-
-      <!-- Titre + photo bon-a-savoir-1 -->
-      <div class="grid md:grid-cols-2 gap-12 items-center mb-14">
-        <div>
-          <h2 class="text-4xl text-aloe-900 mb-4">De la plante à la bouteille</h2>
-          <p class="text-aloe-600 leading-relaxed">
-            Forever Living contrôle chaque étape — de la plantation à la mise en pot —
-            pour garantir une pureté sans compromis. Un savoir-faire unique depuis 1978,
-            reconnu par les plus hautes certifications internationales.
-          </p>
-        </div>
-        <div class="rounded-3xl overflow-hidden shadow-lg border border-aloe-100 h-64">
-          <img
-            src="/images/notre-aloe/aloe-vera-bienfaits-bon-a-savoir-1.webp"
-            alt="Bienfaits et culture de l'aloe vera Forever Living"
-            width="600"
-            height="400"
-            loading="lazy"
-            class="w-full h-full object-cover"
-          />
-        </div>
+      <div class="text-center mb-14">
+        <h2 class="text-4xl text-aloe-900">De la plante à la bouteille</h2>
+        <p class="text-aloe-600 mt-3 max-w-xl mx-auto">
+          Forever Living contrôle chaque étape — de la plantation à la mise en pot —
+          pour garantir une pureté sans compromis.
+        </p>
       </div>
-
-      <!-- 4 étapes -->
       <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
         {etapes.map((e) => (
           <div class="rounded-2xl bg-white border border-aloe-100 p-7 relative overflow-hidden">
@@ -166,34 +160,43 @@ const bienfaits = [
   </section>
 
   <!-- ══════════════════════════════════════════
+       LE SAVIEZ-VOUS — 3 visuels carrés
+  ══════════════════════════════════════════ -->
+  <section class="bg-aloe-50 py-16">
+    <div class="mx-auto max-w-6xl px-6">
+      <div class="text-center mb-10">
+        <span class="text-xs font-semibold uppercase tracking-widest text-aloe-600">Forever Living & la planète</span>
+        <h2 class="text-3xl text-aloe-900 mt-2">Le saviez-vous ?</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        {saviez.map((s) => (
+          <div class="rounded-3xl overflow-hidden shadow-md border border-aloe-100 aspect-square">
+            <img
+              src={s.img}
+              alt={s.alt}
+              width="600"
+              height="600"
+              loading="lazy"
+              class="w-full h-full object-cover object-top"
+            />
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
        COMPOSITION
   ══════════════════════════════════════════ -->
   <section class="bg-sand/50 py-20">
     <div class="mx-auto max-w-6xl px-6">
-
-      <!-- Titre + photo bon-a-savoir-2 -->
-      <div class="grid md:grid-cols-2 gap-12 items-center mb-12">
-        <div class="rounded-3xl overflow-hidden shadow-lg border border-aloe-100 h-64 order-last md:order-first">
-          <img
-            src="/images/notre-aloe/aloe-vera-bienfaits-bon-a-savoir-2.webp"
-            alt="Composition et nutriments de l'aloe vera Forever Living"
-            width="600"
-            height="400"
-            loading="lazy"
-            class="w-full h-full object-cover"
-          />
-        </div>
-        <div>
-          <h2 class="text-4xl text-aloe-900 mb-4">Une plante, 200+ nutriments</h2>
-          <p class="text-aloe-600 leading-relaxed">
-            L'<em>Aloe Barbadensis Miller</em> est l'une des plantes les plus nutritionnellement
-            denses au monde. Sa richesse en vitamines, minéraux et polysaccharides en fait
-            un allié naturel incomparable pour votre santé au quotidien.
-          </p>
-        </div>
+      <div class="text-center mb-12">
+        <h2 class="text-4xl text-aloe-900">Une plante, 200+ nutriments</h2>
+        <p class="text-aloe-600 mt-3 max-w-xl mx-auto">
+          L'<em>Aloe Barbadensis Miller</em> est l'une des plantes les plus nutritionnellement
+          denses au monde. Voici ce qu'elle contient naturellement.
+        </p>
       </div>
-
-      <!-- Grille nutriments -->
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
         {nutriments.map((n) => (
           <div class="rounded-2xl bg-white border border-aloe-100 p-6">
@@ -214,30 +217,9 @@ const bienfaits = [
   ══════════════════════════════════════════ -->
   <section class="bg-cream py-20">
     <div class="mx-auto max-w-6xl px-6">
-
-      <!-- Titre + photo bon-a-savoir-3 -->
-      <div class="grid md:grid-cols-2 gap-12 items-center mb-12">
-        <div>
-          <h2 class="text-4xl text-aloe-900 mb-4">Les bienfaits reconnus de l'aloe vera</h2>
-          <p class="text-aloe-600 leading-relaxed">
-            De la digestion à l'immunité, en passant par l'hydratation cutanée et le confort
-            articulaire, l'aloe vera Forever Living accompagne votre bien-être de façon globale
-            et naturelle.
-          </p>
-        </div>
-        <div class="rounded-3xl overflow-hidden shadow-lg border border-aloe-100 h-64">
-          <img
-            src="/images/notre-aloe/aloe-vera-bienfaits-bon-a-savoir-3.webp"
-            alt="Les bienfaits naturels de l'aloe vera pour la santé et le bien-être"
-            width="600"
-            height="400"
-            loading="lazy"
-            class="w-full h-full object-cover"
-          />
-        </div>
+      <div class="text-center mb-12">
+        <h2 class="text-4xl text-aloe-900">Les bienfaits reconnus de l'aloe vera</h2>
       </div>
-
-      <!-- 6 cartes bienfaits -->
       <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {bienfaits.map((b) => (
           <div class="rounded-2xl bg-white border border-aloe-100 p-7">
