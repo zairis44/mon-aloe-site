@@ -3,7 +3,7 @@ name: "Forever Aloe MSM Gel – Le gel multi-usages qui apaise naturellement"
 reference: "205"
 slug: "forever-aloe-msm-gel"
 price: 37.88
-image: "/images/produits/6857b6a2bda1c16e19e9c719_gel-aloe-msm-forever.webp"
+image: "/images/produits/forever-aloe-msm-gel.webp"
 images: []
 category: "cremes-et-gels"
 description: "Découvrez le **Forever Aloe MSM Gel**, un gel apaisant à base d’Aloe vera stabilisé et de MSM (soufre organique), formulé pour soulager muscles, articulations et peaux irritées. Sa texture légère glisse facilement, pénètre rapidement et ne laisse aucune trace : parfaite après l’effort ou comme geste de confort express. Enrichi en extraits naturels (arbre à thé, saule, romarin), il calme, hydrate et aide à revitaliser la peau. Idéal dans une routine beauté ou sportive, ce gel vegan et certifié procure un soulagement ciblé et une sensation de fraîcheur immédiate, tout en respectant l’équilibre cutané."
