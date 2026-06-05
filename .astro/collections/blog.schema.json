@@ -36,6 +36,9 @@
     "imageAlt": {
       "type": "string"
     },
+    "seoTitle": {
+      "type": "string"
+    },
     "produitsLies": {
       "default": [],
       "type": "array",
@@ -52,6 +55,25 @@
         "required": [
           "slug",
           "nom"
+        ]
+      }
+    },
+    "articlesLies": {
+      "default": [],
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "slug": {
+            "type": "string"
+          },
+          "titre": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "slug",
+          "titre"
         ]
       }
     },

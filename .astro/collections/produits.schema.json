@@ -44,7 +44,6 @@
     "lienCommande": {
       "type": "string"
     },
-<<<<<<< HEAD
     "featured": {
       "default": false,
       "type": "boolean"
@@ -53,8 +52,6 @@
       "default": true,
       "type": "boolean"
     },
-=======
->>>>>>> 75a4dceb7b0c1f0328825babad017a3bd7eeb7f3
     "faq": {
       "type": "array",
       "items": {
@@ -88,6 +85,33 @@
         "required": [
           "titre",
           "contenu"
+        ]
+      }
+    },
+    "avis": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "texte": {
+            "type": "string"
+          },
+          "auteur": {
+            "type": "string"
+          },
+          "ville": {
+            "type": "string"
+          },
+          "note": {
+            "default": 5,
+            "type": "number",
+            "minimum": 1,
+            "maximum": 5
+          }
+        },
+        "required": [
+          "texte",
+          "auteur"
         ]
       }
     },
