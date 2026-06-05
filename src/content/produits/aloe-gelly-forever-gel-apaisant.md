@@ -7,30 +7,48 @@ image: "/images/produits/aloe-gelly-forever-gel-apaisant.webp"
 images:
   - "/images/produits/aloe-gelly-forever-gel-apaisant-2.webp"
 category: "cremes-et-gels"
-description: "Le gel d'Aloe Vera le plus pur du marché : 84% d'Aloe Barbadensis Miller stabilisé Le Forever Aloe Gelly est bien plus qu'un simple gel hydratant. C'est un véritable concentré de bienfaits naturels, formulé à partir de 100% de gel d'Aloe vera stabilisé grâce à un procédé breveté unique qui préserve toutes les propriétés actives de la plante fraîche. Pourquoi choisir Forever Aloe Gelly ? Soulagement immédiat : Appliqué sur une peau irritée, brûlée par le soleil ou agressée, ce gel apporte un effet frais instantané et calme les sensations d'inconfort en quelques minutes. Texture non-grasse et pénétration rapide : Contrairement à de nombreux gels du marché, l'Aloe Gelly pénètre rapidement sans laisser de film collant ou gras. Idéal pour une application quotidienne, même sous vos soins habituels. Multi-usage pour toute la famille : Coups de soleil, irritations après l'épilation, petites brûlures, piqûres d'insectes, zones sèches... Ce gel s'adapte à tous les besoins cutanés du quotidien. Formule ultra-pure : Sans parfum, sans alcool"
+description: "Le geste apaisant à garder dans la salle de bain. L'Aloe Gelly Forever, c'est du gel d'aloe vera stabilisé pur, à appliquer sur un coup de soleil, une zone épilée ou une peau qui tiraille. Texture fraîche, non grasse, qui pénètre vite. Sans parfum ni alcool, pour toute la famille."
 titreDetails: "Forever Aloe Vera Gelly : le soin multi-usage à l’Aloe vera ultra-pur"
 seoTitle: "Forever Aloe Vera Gelly – Gel apaisant et hydratant 100 % aloe"
 seoDescription: "Forever Aloe Vera Gelly : gel apaisant riche à base d’Aloe vera stabilisé. Hydratation immédiate, calme les irritations, usage visage, corps, cheveux."
 video: "https://www.youtube.com/watch?v=-gx_PkubVtc"
 lienCommande: "http://www.foreverliving.fr/ref/330001628607/61"
 faq:
-  - question: "Est-ce que ce gel est vraiment pur à 100 % ?"
-    reponse: "Oui, le Forever Aloe Gelly contient 100% de gel d'Aloe vera stabilisé (Aloe Barbadensis Miller), sans aucun additif, parfum, colorant ou alcool. Cette pureté exceptionnelle est rendue possible grâce au procédé breveté de Forever Living qui stabilise le gel d'aloe fraîchement récolté dans les 4 heures suivant la coupe. Cette formulation ultra-clean préserve l'intégralité des 200+ composés actifs naturels de la plante : polysaccharides, enzymes, acides aminés, vitamines et minéraux. C'est cette pureté qui permet une hydratation profonde et un apaisement immédiat, même sur les peaux les plus sensibles ou réactives. Le produit est également certifié par l'International Aloe Science Council (IASC), gage de qualité et d'authenticité reconnu mondialement."
-  - question: "Peut-il soulager efficacement les coups de soleil ?"
-    reponse: "Absolument, c'est même l'une de ses utilisations phares. Appliqué généreusement sur les zones exposées et rougies, l'Aloe Gelly apporte un effet frais et apaisant immédiat. Ses propriétés naturellement anti-inflammatoires (notamment grâce aux polysaccharides et à l'acemannane) calment les sensations de brûlure, réduisent les rougeurs et accélèrent la régénération cutanée. Pour un effet optimal, conservez le tube au réfrigérateur et appliquez le gel frais plusieurs fois par jour sur les zones concernées. Vous constaterez une diminution rapide de l'inconfort et une peau apaisée. Ce gel peut également être utilisé en prévention, avant l'exposition, pour préparer la peau."
-  - question: "Peut-on l’utiliser après le rasage ou l’épilation ?"
-    reponse: "Oui, et c'est même fortement recommandé ! Le rasage et l'épilation agressent la peau et peuvent provoquer des micro-coupures, rougeurs et irritations. L'Aloe Gelly, avec sa texture légère et non grasse, pénètre rapidement pour apaiser instantanément ces désagréments. Il calme le feu du rasoir, réduit les rougeurs post-épilation et aide à prévenir les poils incarnés grâce à ses propriétés apaisantes et régénérantes. Contrairement aux après-rasages alcoolisés qui assèchent et piquent, ce gel hydrate sans agresser. Appliquez-le immédiatement après le rasage ou l'épilation sur peau propre et sèche. Convient aussi bien au visage qu'au corps, pour hommes et femmes. Résultat : une peau douce, apaisée et confortable, sans tiraillements."
+  - question: "Le gel est-il vraiment pur ?"
+    reponse: "Oui. L'Aloe Gelly contient du gel d'aloe vera stabilisé (Aloe Barbadensis Miller), sans additif, parfum, colorant ni alcool. Forever stabilise le gel dans les heures qui suivent la récolte, ce qui préserve ses composés actifs : polysaccharides, enzymes, acides aminés, vitamines et minéraux. Le produit porte la certification IASC. Cette pureté permet un apaisement et une hydratation même sur les peaux les plus réactives."
+  - question: "Est-il efficace sur les coups de soleil ?"
+    reponse: "C'est l'un de ses usages phares. Appliquez-le généreusement sur les zones rougies : il rafraîchit et apaise tout de suite. Ses polysaccharides et son acémannane calment la sensation de brûlure et accompagnent la récupération de la peau. Pour un effet renforcé, gardez le tube au réfrigérateur et renouvelez l'application plusieurs fois par jour."
+  - question: "Après le rasage ou l'épilation ?"
+    reponse: "Oui, et c'est même conseillé. Le rasage et l'épilation laissent des micro-irritations. Sa texture légère pénètre vite et apaise le feu du rasoir, réduit les rougeurs et aide à limiter les poils incarnés. Contrairement aux après-rasages alcoolisés qui piquent, il hydrate sans agresser. Appliquez-le sur peau propre, au visage comme au corps."
   - question: "Convient-il aux enfants ?"
-    reponse: "Oui, le Forever Aloe Gelly peut être utilisé en toute sécurité dès le plus jeune âge. Sa formule 100% naturelle, sans parfum, sans alcool et sans colorant, en fait un soin adapté aux peaux sensibles des enfants. Il est particulièrement efficace pour soulager les petites brûlures superficielles, les irritations dues aux couches, les piqûres d'insectes, les égratignures ou encore les coups de soleil légers. Pour les nourrissons ou peaux très sensibles, vous pouvez effectuer un test préalable sur une petite zone (intérieur du poignet) et attendre 24h pour vérifier l'absence de réaction. En cas de doute, consultez votre pédiatre. Conservez toujours le produit hors de portée des enfants et assurez-vous qu'il soit utilisé en usage externe uniquement."
-  - question: "Peut-on l’appliquer sur les cheveux ou le cuir chevelu ?"
-    reponse: "Oui, tout à fait ! Bien que l'Aloe Gelly soit principalement conçu pour la peau, il peut être utilisé comme masque capillaire express pour apaiser un cuir chevelu irrité, sec ou sujet aux pellicules. Appliquez une noisette de gel directement sur le cuir chevelu en massant doucement, laissez poser 10 à 15 minutes, puis rincez à l'eau tiède avant votre shampoing habituel. L'aloe vera hydrate en profondeur, apaise les démangeaisons et régule l'excès de sébum. Vous pouvez également l'appliquer sur les longueurs pour hydrater les cheveux secs ou abîmés. Attention : en raison de sa texture gel, il nécessite un rinçage complet. Ne pas utiliser comme produit coiffant sans rinçage, car il pourrait alourdir les cheveux."
+    reponse: "Oui, sa formule sans parfum, sans alcool et sans colorant convient aux peaux sensibles des enfants : petites brûlures superficielles, irritations, piqûres d'insectes, coups de soleil légers. Pour un nourrisson ou une peau très réactive, testez d'abord une petite zone et attendez 24 h. En cas de doute, parlez-en à votre pédiatre. Usage externe uniquement, et hors de portée des enfants."
+  - question: "Peut-on l'utiliser sur les cheveux ?"
+    reponse: "Oui, en masque express pour apaiser un cuir chevelu sec ou irrité. Massez une noisette de gel sur le cuir chevelu, laissez poser 10 à 15 minutes, puis rincez à l'eau tiède avant votre shampoing. L'aloe vera hydrate, calme les démangeaisons et régule l'excès de sébum. À bien rincer : sa texture gel alourdirait les cheveux s'il restait en place."
 caracteristiques:
-  - titre: "Ingrédients"
-    contenu: "100 % gel stabilisé d’Aloe Barbadensis Miller (Aloe vera). Sans additifs, sans parfum, sans alcool — formule pure, vegan, sans gluten."
-  - titre: "Conseils d’utilisation"
-    contenu: "Appliquer localement sur peau propre — coups de soleil, rougeurs, zone épilée, point chaud. Peut être utilisé plusieurs fois par jour. Usage externe uniquement."
-  - titre: "Garantie & certifications"
-    contenu: "Certifié par l’International Aloe Science Council (IASC). Non testé sur les animaux. Formulation clean et respectueuse de tous les types de peau."
+  - titre: "Composition"
+    contenu: "Gel stabilisé d'Aloe Barbadensis Miller (aloe vera). Sans additif, sans parfum, sans alcool. Formule vegan, sans gluten."
+  - titre: "Comment l'utiliser"
+    contenu: "Appliquez localement sur peau propre : coup de soleil, rougeur, zone épilée, point d'inconfort. Renouvelez plusieurs fois par jour si besoin. Usage externe uniquement."
+  - titre: "Certifications"
+    contenu: "Certifié par l'International Aloe Science Council (IASC). Non testé sur les animaux. Formule respectueuse de tous les types de peau."
 ---
 
-Le **Forever Aloe Vera Gelly** est un gel exceptionnel, composé à 100 % d’Aloe vera stabilisé. Grâce à son procédé exclusif, il conserve toutes les vertus originelles de la plante — apaisement, hydratation, régénération — dans une texture fraîche, légère et non grasse. Ce gel est idéal pour calmer les coups de soleil, les zones irritées après l’épilation ou le rasage, ou tout simplement apporter un effet rafraîchissant à une peau incomfortée. Sa capacité à pénétrer rapidement en fait un soin pratique et efficace, tout en respectant l’équilibre cutané, que ce soit sur le visage, le corps ou même les cheveux en masque express. Vegan, sans parfum, sans colorants et sans alcool, cette formule pure est adaptée aux peaux les plus sensibles, même celles sujettes aux rougeurs ou aux réactions. De plus, sa texture gel peut servir de base hydratante pour préparer la peau avant une crème plus riche, ou comme accent détente après une douche chaude. Produit iconique de Forever Living, il porte la certification IASC, gage d’authenticité et de qualité. Si vous cherchez un geste simple, efficace et naturel, pour calmer, hydrater ou revitaliser instantanément, ce gel est conçu pour votre quotidien et pour toute la famille.
+Un coup de soleil, une zone irritée après l'épilation, une peau qui tiraille en fin de journée : l'Aloe Gelly Forever est le geste simple qui apaise sur le moment. Du gel d'aloe vera pur, frais, à appliquer là où ça gêne.
+
+## Un gel d'aloe vera stabilisé, et rien d'autre
+
+L'Aloe Gelly repose sur le gel d'aloe vera stabilisé, préservé grâce au procédé Forever qui traite la pulpe juste après la récolte. Sa texture reste fraîche et non grasse : elle pénètre vite, sans film collant, et respecte l'équilibre de la peau. Sans parfum, sans alcool, sans colorant, elle convient même aux peaux sujettes aux rougeurs.
+
+## Pour qui
+
+Vous passez du temps au soleil, vous vous épilez ou vous rasez, vous avez la peau réactive, ou vous voulez simplement un soin apaisant fiable pour toute la maison. L'Aloe Gelly couvre ces besoins, des adultes aux enfants.
+
+## Comment l'utiliser
+
+Appliquez localement sur peau propre, autant de fois que nécessaire. Au réfrigérateur, l'effet frais est encore plus net sur un coup de soleil. Il sert aussi de base hydratante avant une crème plus riche, ou de masque express pour le cuir chevelu.
+
+Pour aller plus loin sur l'aloe vera et la peau, lisez notre [guide des bienfaits de l'aloe vera sur la peau](/blog/aloe-vera-peau-beaute-bienfaits-forever/).
+
+## Une question sur votre peau ?
+
+Appelez-moi ou écrivez-moi. Je vous oriente vers le bon soin selon votre type de peau et vos besoins.
