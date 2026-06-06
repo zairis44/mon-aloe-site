@@ -6,30 +6,48 @@ price: 30.49
 image: "/images/produits/forever-lite-ultra-choco.webp"
 images: []
 category: "sport-et-fitness"
-description: "Forever Lite Ultra™ Chocolat est un shake protéiné végétal gourmand, conçu pour soutenir la gestion du poids, favoriser la satiété et offrir une source nutritive complète. Sa base de protéines de soja, enrichie du complexe Aminotein®, facilite la digestion tout en apportant 17 g de protéines par portion avec seulement ~90 kcal. Agrémenté d’un arôme chocolat doux et riche, ce shake s’intègre naturellement à une routine saine pour un petit-déjeuner rassasiant, une collation ou un repas minceur."
+description: "Le shake protéiné végétal saveur chocolat, pour la satiété et la gestion du poids. 17 g de protéines de soja pour environ 90 kcal par portion, enrichi du complexe Aminotein, de vitamines et de fibres. En substitut de repas, collation post-sport ou petit-déjeuner rassasiant. Sans gluten, végétarien."
 titreDetails: "Forever Lite Ultra™ Chocolat : le shake protéiné gourmand pour maigrir sans se priver"
 seoTitle: "Forever Lite Ultra Chocolat – Shake protéiné"
 seoDescription: "Forever Lite Ultra Chocolat : shake protéiné végétal, 17 g de protéines, vitamines et fibres. Idéal pour satiété et gestion du poids au naturel."
 video: ""
 lienCommande: "http://www.foreverliving.fr/ref/330001628607/471"
 faq:
-  - question: "Qu’est-ce qui distingue Forever Lite Ultra™ Chocolat d’un shake classique ?"
-    reponse: "Ce shake se démarque par sa base 100 % végétale (protéine de soja), son complexe Aminotein® pour une meilleure digestion des protéines, et sa richesse en vitamines et minéraux essentiels, le tout dans une formule faible en calories. La version chocolat offre un plaisir gustatif tout en soutenant la satiété et la gestion du poids."
-  - question: "Quelle est la valeur nutritionnelle d’une portion ?"
-    reponse: "Une portion de 25 g apporte environ 90 kcal, 17 g de protéines, 1 g de lipides, environ 3 g de glucides dont 1 g de sucres, et une dose de fibres prébiotiques. C’est un snack complet, rassasiant et nutritif, idéal pour un programme équilibré."
-  - question: "Peut-il remplacer un repas ?"
-    reponse: "Dans le cadre d’un régime hypocalorique ou d’un plan de gestion de poids, il peut servir de substitut de repas. Pour un repas complet, il est conseillé de l’accompagner d’un fruit ou de quelques graines pour un apport équilibré."
-  - question: "Le Forever Lite Ultra Chocolat est-il adapté aux intolérants au lactose ?"
-    reponse: "Oui, Forever Lite Ultra Chocolat est sans lactose et sans gluten. Sa base végétale (isola de protéine de soja) le rend adapté aux personnes intolérantes au lactose. En revanche, il contient du soja — à éviter en cas d'allergie au soja. Convient aux régimes végétariens."
-  - question: "Peut-on utiliser ce shake en dehors d'un programme minceur ?"
-    reponse: "Absolument. Forever Lite Ultra Chocolat peut être consommé comme collation protéinée post-sport, petit-déjeuner rapide ou en-cas du soir pour éviter les grignotages. Grâce à ses 17 g de protéines et seulement 90 kcal par portion, il s'intègre dans tout mode de vie actif, même en dehors d'une cure de perte de poids."
+  - question: "Qu'est-ce qui le distingue d'un shake classique ?"
+    reponse: "Sa base 100 % végétale (protéine de soja), le complexe Aminotein qui soutient la digestion des protéines, et sa richesse en vitamines et minéraux, le tout pour peu de calories. La version chocolat ajoute le plaisir du goût sans alourdir l'apport."
+  - question: "Quelle valeur nutritionnelle par portion ?"
+    reponse: "Une portion de 25 g apporte environ 90 kcal, 17 g de protéines, 1 g de lipides, environ 3 g de glucides dont 1 g de sucres, et des fibres prébiotiques. Un en-cas rassasiant et nutritif, adapté à un programme équilibré."
+  - question: "Peut-il remplacer un repas ?"
+    reponse: "Dans le cadre d'un programme de gestion du poids, oui, il peut servir de substitut de repas. Pour un repas plus complet, accompagnez-le d'un fruit ou de quelques graines, histoire d'équilibrer l'apport."
+  - question: "Convient-il aux intolérants au lactose ?"
+    reponse: "Oui, il est sans lactose et sans gluten. Sa base d'isolat de protéine de soja le rend adapté aux personnes intolérantes au lactose. Il contient en revanche du soja, à éviter en cas d'allergie. Convient aux régimes végétariens."
+  - question: "Utile hors d'un programme minceur ?"
+    reponse: "Oui. Il fait une bonne collation protéinée après le sport, un petit-déjeuner rapide ou un en-cas du soir pour éviter le grignotage. Avec 17 g de protéines pour 90 kcal, il s'intègre à tout mode de vie actif, pas seulement à une cure de perte de poids."
 caracteristiques:
-  - titre: "Les bienfaits de Forever Lite Ultra™ Chocolat"
-    contenu: "Ce shake combine des protéines végétales de soja à un complexe Aminotein® pour une assimilation optimale, tout en offrant une satisfaction durable grâce à une formule faible en calories et en sucres. Enrichi d’un ensemble de vitamines (A, C, D, B6, B12) et de minéraux (zinc, sélénium), il contribue à soutenir le système immunitaire, l’énergie quotidienne et les fonctions métaboliques. La texture veloutée au chocolat permet d’assouvir les envies sucrées sans compromis sur la nutrition, idéal dans un régime équilibré ou un programme de perte de poids."
-  - titre: "Conseils d’utilisation"
-    contenu: "Versez un scoop (25 g) dans environ 240 mL d’eau, de lait écrémé ou de boisson végétale. Mélangez à l’aide d’un shaker ou d’un blender jusqu’à obtenir une texture homogène. À consommer de préférence le matin, en collation ou après l’effort pour aider à la récupération. Ce produit est sans gluten, mais contient du soja. Après ouverture, conserver le sachet bien fermé dans un endroit frais et sec."
-  - titre: "Composition et caractéristiques"
-    contenu: "Chaque sac de 375 g (environ 15 portions) est formulé à base d’isolat de protéine de soja, de fructose, de fibres prébiotiques (FOS), de complex Aminotein®, d’huile de carthame, de lécithine de soja, d’arôme naturel chocolat, et d’un complexe vitaminico-minéral complet. Le parfum chocolat est naturellement obtenu, sans colorants artificiels. Chaque portion est faible en matières grasses et sucres, adaptée aux régimes végétariens et aux personnes suivant un programme minceur ou de bien-être."
+  - titre: "Ce que la formule apporte"
+    contenu: "Des protéines végétales de soja associées au complexe Aminotein pour une bonne assimilation, dans une formule pauvre en calories et en sucres qui soutient la satiété. Les vitamines (A, C, D, B6, B12) et minéraux (zinc, sélénium) accompagnent les défenses naturelles, l'énergie et le métabolisme. La texture chocolat satisfait l'envie de sucré sans déséquilibrer une démarche minceur."
+  - titre: "Comment l'utiliser"
+    contenu: "Versez une dose (25 g) dans environ 240 ml d'eau, de lait écrémé ou de boisson végétale. Mélangez au shaker ou au blender. À prendre le matin, en collation ou après l'effort pour la récupération. Sans gluten, contient du soja. Après ouverture, refermez bien le sachet et conservez au frais et au sec."
+  - titre: "Composition et format"
+    contenu: "Sachet de 375 g (environ 15 portions). Isolat de protéine de soja, fructose, fibres prébiotiques (FOS), complexe Aminotein, huile de carthame, lécithine de soja, arôme naturel chocolat, complexe vitamines-minéraux. Sans colorants artificiels. Pauvre en matières grasses et sucres, adapté aux régimes végétariens."
 ---
 
-Forever Lite Ultra™ Chocolat est un shake protéiné végétal gourmand, formulé avec le même niveau d'excellence que la version vanille : isolat de protéine de soja, complexe Aminotein®, vitamines et minéraux essentiels. Chaque portion de 25 g apporte 17 g de protéines pour ~90 kcal seulement. Son arôme chocolat naturel satisfait les envies gourmandes sans compromettre vos objectifs minceur. Les fibres prébiotiques contribuent à la satiété et à l'équilibre du microbiote. Vitamines A, C, D, B6, B12, zinc et sélénium soutiennent l'immunité, l'énergie et le métabolisme. Sans gluten, végétarien, sans conservateurs ni arômes artificiels. Conditionné en sachet de 375 g (~15 portions). Idéal dans le cadre du Programme C9 Chocolat-Pêche ou en complément d'une routine bien-être quotidienne.
+Une envie de sucré qui menace votre démarche minceur, un petit-déjeuner à prendre vite, une collation après le sport : le Forever Lite Ultra chocolat couvre ces moments avec un apport protéiné maîtrisé.
+
+## Un shake gourmand mais léger
+
+La formule repose sur l'isolat de protéine de soja et le complexe Aminotein, qui soutient l'assimilation des protéines. Chaque portion de 25 g apporte 17 g de protéines pour environ 90 kcal seulement. Les fibres prébiotiques aident à la satiété, et les vitamines A, C, D, B6, B12, le zinc et le sélénium accompagnent l'immunité, l'énergie et le métabolisme. L'arôme chocolat naturel fait le reste.
+
+## Pour qui
+
+Vous suivez un programme de gestion du poids, vous cherchez une collation protéinée après l'entraînement, ou un petit-déjeuner rapide et rassasiant. Ce shake s'adresse à vous. Il fait aussi partie du [Programme C9 Chocolat-Pêche](/produits/programme-c9-forever-chocolat-peche/).
+
+## Comment l'utiliser
+
+Une dose dans 240 ml d'eau, de lait écrémé ou de boisson végétale, au shaker. Le matin, en collation ou après le sport.
+
+Pour situer ce shake dans une démarche minceur, lisez notre article sur [comment perdre du poids naturellement avec Forever](/blog/perdre-du-poids-naturellement-forever-programmes-minceur/).
+
+## Une question ?
+
+Appelez-moi ou écrivez-moi. Je vous conseille selon vos objectifs et votre routine.
