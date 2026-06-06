@@ -7,30 +7,50 @@ image: "/images/produits/forever-fab-active-boost.webp"
 images:
   - "/images/produits/forever-fab-active-boost-2.webp"
 category: "boissons-aloe-vera"
-description: "Forever FAB™ est une boisson énergisante innovante pensée pour les personnes dynamiques, actives ou sportives qui recherchent un regain d’énergie sans compromettre leur bien-être. Élaborée à partir de gel d’aloe vera stabilisé, cette boisson associe les bienfaits de la nature à des ingrédients ciblés pour booster la vitalité, améliorer l’endurance et soutenir la concentration mentale. Elle contient du guarana, une source naturelle de caféine, ainsi qu’un complexe exclusif appelé ADX7, composé de plantes adaptogènes utilisées par des athlètes de haut niveau. Enrichie en taurine, vitamines B et extraits de fruits tels que l’acérola ou le cranberry, elle offre un soutien rapide et durable lors des efforts physiques, des entraînements ou des journées intenses. Sa saveur fruitée et pétillante en fait une alternative saine et agréable aux boissons énergétiques classiques, tout en étant vegan, sans gluten ni produits d’origine animale."
+description: "La boisson énergisante à base d'aloe vera, pensée pour les actifs et les sportifs. Forever FAB associe le gel d'aloe vera, le guarana (caféine naturelle), le complexe de plantes adaptogènes ADX7, la taurine et des vitamines B. Saveur fruitée et pétillante, vegan, sans gluten. Une alternative plus naturelle aux energy drinks classiques. Réservée aux adultes."
 titreDetails: ""
 seoTitle: "Forever FAB – Boisson énergisante aloe vera sport"
 seoDescription: "Forever FAB booste énergie et concentration grâce au guarana, aloe vera et ADX7. Boisson vegan, sans gluten, idéale pour sportifs et journées intenses."
 video: ""
 lienCommande: "http://www.foreverliving.fr/ref/330001628607/821"
+featured: false
+disponible: true
 faq:
-  - question: "Forever FAB est-il efficace pour améliorer la performance sportive ?"
-    reponse: "Oui, Forever FAB™ est conçu pour répondre aux besoins des personnes actives. Il contient de la caféine naturelle issue du guarana, qui aide à stimuler l’énergie et à améliorer la vigilance. Le complexe ADX7, composé d’herbes adaptogènes, contribue à renforcer l’endurance et la récupération, ce qui est particulièrement utile lors d'entraînements prolongés ou intenses."
-  - question: "Quelle est la différence entre Forever FAB et une boisson énergisante classique ?"
-    reponse: "Contrairement aux boissons énergisantes classiques souvent riches en additifs, Forever FAB™ mise sur des ingrédients naturels, sans conservateurs chimiques ni arômes artificiels. L’aloe vera favorise l’assimilation des nutriments, tandis que les B‑vitamines, le guarana et les adaptogènes apportent un soutien global à l’organisme sans le coup de fatigue brutal souvent associé à des produits industriels."
-  - question: "Peut-on consommer Forever FAB en dehors du sport ?"
-    reponse: "Oui, cette boisson est idéale aussi lors de journées de travail intenses, pendant les examens, ou simplement en cas de baisse d’énergie passagère. Sa formule douce, sans effets secondaires notables pour un usage modéré, permet de l’intégrer dans une routine quotidienne pour retrouver vitalité et concentration."
-  - question: "Forever FAB contient-il de la caféine ? Est-ce compatible avec une sensibilité à la caféine ?"
-    reponse: "Oui, Forever FAB contient de la caféine naturelle issue du guarana. La dose par canette est comparable à un café léger (environ 80-100 mg). Les personnes sensibles à la caféine, les femmes enceintes ou allaitantes et les individus souffrant de troubles cardiovasculaires doivent éviter ce produit ou consulter leur médecin. Il est également déconseillé de le consommer après 18h pour préserver la qualité du sommeil."
-  - question: "À partir de quel âge peut-on consommer Forever FAB ?"
-    reponse: "Forever FAB est réservé aux adultes (18 ans et plus). Sa teneur en caféine et en taurine le rend inadapté aux enfants et adolescents. Il est également déconseillé aux femmes enceintes ou allaitantes, aux personnes souffrant d'hypertension, de troubles cardiaques ou de sensibilité à la caféine. En cas de doute, consultez un professionnel de santé avant consommation."
+  - question: "Forever FAB aide-t-il à la performance sportive ?"
+    reponse: "Il accompagne les personnes actives. Sa caféine naturelle, issue du guarana, soutient l'énergie et la vigilance. Le complexe ADX7, à base de plantes adaptogènes, accompagne l'endurance et la récupération, utile lors d'entraînements prolongés."
+  - question: "Différence avec une boisson énergisante classique ?"
+    reponse: "Forever FAB mise sur des ingrédients naturels, sans conservateurs chimiques ni arômes artificiels. L'aloe vera soutient l'assimilation des nutriments, et le trio vitamines B, guarana et adaptogènes apporte un soutien progressif, sans le coup de fatigue brutal de certains produits industriels."
+  - question: "Peut-on en boire hors du sport ?"
+    reponse: "Oui, lors de journées de travail intenses, en période d'examens ou en cas de baisse d'énergie passagère. Sa formule, en usage modéré, s'intègre à une routine quand on a besoin d'un coup de vitalité."
+  - question: "Contient-il de la caféine ?"
+    reponse: "Oui, de la caféine naturelle issue du guarana, à hauteur d'environ 80 à 100 mg par canette, comparable à un café léger. Les personnes sensibles à la caféine, les femmes enceintes ou allaitantes et celles ayant des troubles cardiovasculaires l'évitent ou demandent l'avis d'un médecin. À ne pas consommer après 18 h pour préserver le sommeil."
+  - question: "À partir de quel âge ?"
+    reponse: "Réservé aux adultes de 18 ans et plus. Sa teneur en caféine et en taurine le rend inadapté aux enfants et adolescents. Il est aussi déconseillé aux femmes enceintes ou allaitantes et en cas d'hypertension, de troubles cardiaques ou de sensibilité à la caféine. Au moindre doute, demandez conseil à un professionnel de santé."
 caracteristiques:
-  - titre: "Bienfaits naturels de Forever FAB™"
-    contenu: "Forever FAB™ ne se contente pas de \"réveiller\" temporairement. Grâce à son aloe vera, il contribue à une meilleure hydratation cellulaire et facilite l’assimilation des nutriments. Le guarana, source naturelle de caféine, procure un effet stimulant progressif et durable. Les plantes adaptogènes contenues dans le complexe ADX7 aident le corps à mieux résister au stress physique, en améliorant la capacité d’endurance et la récupération. La taurine soutient l’activité musculaire et nerveuse, tandis que les vitamines du groupe B participent activement au métabolisme énergétique, réduisent la fatigue et soutiennent les fonctions cognitives. Cette synergie d’ingrédients naturels fait de Forever FAB™ une aide précieuse pour garder la forme tout au long de la journée, sans coup de pompe."
-  - titre: "Conseils d’utilisation"
-    contenu: "Consommez Forever FAB™ bien frais, avant ou pendant une activité physique, ou en cas de coup de fatigue au cours de la journée. Agitez légèrement avant ouverture. Il est recommandé de ne pas dépasser 2 à 3 canettes par jour, en fonction de vos besoins et de votre tolérance à la caféine. Ne pas consommer en soirée pour éviter les troubles du sommeil. Ce produit est réservé aux adultes."
-  - titre: "Composition et caractéristiques"
-    contenu: "Forever FAB™ est conditionné en canettes de 250 mL. Il contient : eau gazeuse, gel d’aloe vera stabilisé, sucres naturels (dextrose, sucrose), guarana, taurine, glucuronolactone, inositol, acérola, cranberry, açaï, vitamines B2, B3, B6, B12, et un complexe adaptogène ADX7. Sans gluten, sans soja, vegan, sans arômes artificiels ni conservateurs chimiques."
+  - titre: "Ce que la formule apporte"
+    contenu: "Le gel d'aloe vera soutient l'hydratation cellulaire et l'assimilation des nutriments. Le guarana, source de caféine naturelle, apporte un effet stimulant progressif. Les plantes adaptogènes du complexe ADX7 aident le corps à composer avec l'effort. La taurine soutient l'activité musculaire et nerveuse, et les vitamines B accompagnent le métabolisme énergétique et réduisent la fatigue."
+  - titre: "Comment l'utiliser"
+    contenu: "À boire bien frais, avant ou pendant une activité physique, ou lors d'un coup de fatigue dans la journée. Ne dépassez pas 2 à 3 canettes par jour selon votre tolérance à la caféine. À éviter en soirée. Réservé aux adultes."
+  - titre: "Composition et format"
+    contenu: "Canettes de 250 ml. Eau gazeuse, gel d'aloe vera stabilisé, sucres naturels, guarana, taurine, glucuronolactone, inositol, acérola, cranberry, açaï, vitamines B2, B3, B6, B12, complexe adaptogène ADX7. Sans gluten, sans soja, vegan, sans arômes artificiels ni conservateurs chimiques."
 ---
 
-Forever FAB™ est une boisson énergisante innovante pensée pour les personnes dynamiques, actives ou sportives qui recherchent un regain d’énergie sans compromettre leur bien-être. Élaborée à partir de gel d’aloe vera stabilisé, cette boisson associe les bienfaits de la nature à des ingrédients ciblés pour booster la vitalité, améliorer l’endurance et soutenir la concentration mentale. Elle contient du guarana, une source naturelle de caféine, ainsi qu’un complexe exclusif appelé ADX7, composé de plantes adaptogènes utilisées par des athlètes de haut niveau. Enrichie en taurine, vitamines B et extraits de fruits tels que l’acérola ou le cranberry, elle offre un soutien rapide et durable lors des efforts physiques, des entraînements ou des journées intenses. Sa saveur fruitée et pétillante en fait une alternative saine et agréable aux boissons énergétiques classiques, tout en étant vegan, sans gluten ni produits d’origine animale.
+Vous cherchez un coup de boost pour un entraînement ou une journée chargée, mais les energy drinks classiques et leur liste d'additifs vous rebutent. Forever FAB propose une alternative à base d'aloe vera, avec une caféine d'origine naturelle.
+
+## Une boisson énergisante autrement
+
+La base reste le gel d'aloe vera stabilisé, qui soutient l'hydratation et l'assimilation. S'y ajoutent le guarana, source de caféine naturelle, le complexe de plantes adaptogènes ADX7 qui accompagne l'endurance, la taurine, et des vitamines B qui aident à réduire la fatigue. Le tout pétillant et fruité, sans conservateurs chimiques ni arômes artificiels.
+
+## Pour qui
+
+Vous êtes sportif, actif, ou vous traversez une période intense (travail, examens). Forever FAB vous apporte un soutien d'énergie quand vous en avez besoin. À une condition : être un adulte non sensible à la caféine. Ce n'est pas une boisson du quotidien à volonté.
+
+## Comment l'utiliser
+
+Bien frais, avant ou pendant l'effort, ou lors d'un coup de mou. Pas plus de 2 à 3 canettes par jour, jamais en soirée.
+
+Pour le contexte sportif, lisez notre article sur [l'aloe vera et la récupération musculaire](/blog/aloe-vera-sport-recuperation-musculaire/).
+
+## Une question ?
+
+Appelez-moi ou écrivez-moi. Je vous conseille selon votre activité et votre tolérance.
