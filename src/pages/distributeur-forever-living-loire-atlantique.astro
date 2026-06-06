@@ -21,10 +21,12 @@ const schemaLocalBusiness = {
   "@type": "LocalBusiness",
   "@id": pageUrl,
   name: "Esprit Aloé — Distributeur Forever Living Loire-Atlantique",
-  description: "Distributeur indépendant Forever Living Products en Loire-Atlantique (Nantes, Saint-Nazaire, La Baule). Produits aloe vera certifiés IASC, livraison France 24–72h, conseils personnalisés 7j/7.",
+  description: "Distributeur indépendant Forever Living Products en Loire-Atlantique (Nantes, Saint-Nazaire, La Baule). Produits aloe vera certifiés IASC, livraison partout en France, conseils personnalisés.",
   url: siteUrl,
   telephone: "+33677352226",
   email: "contact@espritaloe.fr",
+  image: `${siteUrl}/images/hero-aloe-vera.webp`,
+  priceRange: "€€",
   areaServed: [
     { "@type": "AdministrativeArea", name: "Loire-Atlantique" },
     { "@type": "City", name: "Nantes" },
@@ -37,7 +39,10 @@ const schemaLocalBusiness = {
     name: "Rafael Avenard",
     jobTitle: "Distributeur Indépendant Forever Living Products",
   },
-  sameAs: ["https://www.facebook.com/RafaelAvenardDistributeurForever"],
+  sameAs: [
+    "https://www.facebook.com/RafaelAvenardDistributeurForever",
+    "https://maps.app.goo.gl/tBmMFpfawmBnbyzF6",
+  ],
 };
 
 const schemaFAQ = {
@@ -49,7 +54,7 @@ const schemaFAQ = {
       name: "Comment contacter le distributeur Forever Living en Loire-Atlantique ?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Rafael Avenard est disponible au 06 77 35 22 26, 7j/7. Vous pouvez aussi commander directement sur espritaloe.fr avec livraison en 24–72h partout en France.",
+        text: "Rafael Avenard est disponible au 06 77 35 22 26, 7j/7. Vous pouvez aussi commander directement sur espritaloe.fr avec livraison partout en France.",
       },
     },
     {
@@ -74,7 +79,7 @@ const schemaFAQ = {
 
 <Layout
   title="Distributeur Forever Living Loire-Atlantique — Nantes | Esprit Aloé"
-  description="Rafael Avenard, distributeur Forever Living en Loire-Atlantique. Produits aloe vera certifiés IASC livrés à Nantes et partout en France en 24-72h. Conseils gratuits 7j/7."
+  description="Rafael Avenard, distributeur Forever Living en Loire-Atlantique. Produits aloe vera certifiés IASC livrés à Nantes et partout en France. Conseils gratuits 7j/7."
   canonical={pageUrl}
 >
   <script type="application/ld+json" set:html={JSON.stringify(schemaLocalBusiness)} slot="head" />
@@ -103,16 +108,16 @@ const schemaFAQ = {
         <p class="text-xl text-aloe-700 leading-relaxed mb-8">
           Rafael Avenard, distributeur indépendant certifié Forever Living Products, vous accompagne
           depuis la Loire-Atlantique. Commande en ligne ou conseil personnalisé par téléphone —
-          livraison en 24–72h partout en France.
+          livraison rapide partout en France.
         </p>
         <div class="flex flex-wrap gap-4">
-          <a
+          
             href="tel:+33677352226"
             class="rounded-full bg-aloe-600 px-7 py-3.5 text-sm font-semibold text-cream hover:bg-aloe-700 transition-colors"
           >
             📞 Appeler Rafael — 06 77 35 22 26
           </a>
-          <a
+          
             href="/produits/"
             class="rounded-full border border-aloe-300 px-7 py-3.5 text-sm font-semibold text-aloe-700 hover:bg-aloe-50 transition-colors"
           >
@@ -218,7 +223,7 @@ const schemaFAQ = {
           <p class="text-aloe-200 leading-relaxed mb-6">
             Les produits Forever Living sont livrés directement depuis les entrepôts Forever en France.
             Que vous soyez à Nantes, Saint-Nazaire, La Baule, Pornic ou ailleurs en France,
-            la livraison est identique : 24 à 72h en point relais, J+1 à domicile.
+            la livraison est identique : 48 à 72h en point relais, J+1 à domicile par Chronopost.
           </p>
           <p class="text-aloe-200 leading-relaxed">
             Le conseil de Rafael, lui, est local : il connaît ses clients, suit leur progression
@@ -243,7 +248,7 @@ const schemaFAQ = {
       <dl class="space-y-4">
         <div class="rounded-2xl bg-white border border-aloe-100 p-6">
           <dt class="font-semibold text-aloe-800 mb-2">Comment contacter le distributeur Forever Living en Loire-Atlantique ?</dt>
-          <dd class="text-sm text-aloe-600 leading-relaxed">Rafael Avenard est disponible au <a href="tel:+33677352226" class="text-aloe-600 underline">06 77 35 22 26</a>, 7j/7. Vous pouvez aussi passer commande directement sur ce site avec livraison en 24–72h.</dd>
+          <dd class="text-sm text-aloe-600 leading-relaxed">Rafael Avenard est disponible au <a href="tel:+33677352226" class="text-aloe-600 underline">06 77 35 22 26</a>, 7j/7. Vous pouvez aussi passer commande directement sur ce site avec livraison rapide partout en France.</dd>
         </div>
         <div class="rounded-2xl bg-white border border-aloe-100 p-6">
           <dt class="font-semibold text-aloe-800 mb-2">Peut-on recevoir les produits Forever Living à Nantes ?</dt>
