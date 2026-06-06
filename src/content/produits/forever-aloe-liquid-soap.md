@@ -8,30 +8,48 @@ images:
   - "/images/produits/forever-aloe-liquid-soap-2.webp"
   - "/images/produits/forever-aloe-liquid-soap-3.webp"
 category: "cremes-et-gels"
-description: "Découvrez le **Forever Aloe Liquid Soap**, un savon liquide délicat enrichi en Aloe vera pur, huile d’argan, esters de jojoba et extrait de citron et arnica. Sa texture perleuse nettoie avec douceur, tout en hydratant et apaisant votre peau. Adapté à toute la famille, il nettoie visage, mains et corps sans dessécher ni irriter. Grâce à ses huiles nourrissantes, il laisse une sensation de fraîcheur durable et un confort souple. Un geste beauté quotidien, clean et complet pour choyer votre peau naturellement."
+description: "Le savon liquide qui lave en douceur et hydrate à la fois. Enrichi en aloe vera, huile d'argan, jojoba et arnica, il nettoie visage, mains et corps sans dessécher. Sa texture perlée convient à toute la famille, même aux peaux sensibles. Vegan, sans parabènes."
 titreDetails: "Forever Aloe Liquid Soap : douceur nettoyante et soin hydratant en un seul geste"
 seoTitle: "Forever Aloe Liquid Soap – Nettoie, apaise et hydrate"
 seoDescription: "Forever Aloe Liquid Soap : savon liquide doux à base d’Aloe vera, jojoba, argan et arnica. Nettoyage délicat, hydratation et apaisement pour toute la famille."
 video: ""
 lienCommande: "http://www.foreverliving.fr/ref/330001628607/633"
 faq:
-  - question: "Ce savon convient-il vraiment à toute la famille ?"
-    reponse: "Oui, le Forever Aloe Liquid Soap est formulé pour être suffisamment doux pour un usage quotidien sur le visage, les mains et le corps. Il nettoie sans dessécher et est bien toléré par les peaux sensibles comme celles des enfants, tout en conservant souplesse et confort."
-  - question: "Hydrate-t-il réellement ou dessèche-t-il comme beaucoup de savons ?"
-    reponse: "Il hydrate véritablement. Grâce à l’Aloe vera, les esters de jojoba et l’huile d’argan, il nettoie tout en préservant les huiles naturelles de la peau, évitant toute sensation de tiraillement ou de film sec après le lavage."
-  - question: "Aide-t-il à apaiser les peaux irritées ou sujettes aux rougeurs ?"
-    reponse: "Oui. L’arnica et l’Aloe vera combinés dans la formule contribuent à calmer les rougeurs, à régénérer l'épiderme et à apporter une sensation apaisante immédiate, idéale après exposition, rasage ou météo agressive."
-  - question: "Peut-on l’utiliser comme gel douche ou même pour laver les cheveux ?"
-    reponse: "Tout à fait. Sa texture sans larmes permet un usage polyvalent : gel douche doux ou shampooing léger, notamment pour les cuirs chevelus sensibles ou après sport. Il nettoie efficacement tout en respectant le pH et le confort."
-  - question: "Laisse-t-il un parfum ou résidu gras ?"
-    reponse: "Il laisse une agréable sensation de propre et de douceur, sans résidu huileux ni parfum trop marqué. Son parfum délicat et naturel apporte une impression de fraîcheur subtile et équilibrée."
+  - question: "Convient-il à toute la famille ?"
+    reponse: "Oui. Il est assez doux pour un usage quotidien sur le visage, les mains et le corps. Il nettoie sans dessécher et reste bien toléré par les peaux sensibles comme celles des enfants, tout en gardant la peau souple."
+  - question: "Hydrate-t-il vraiment ?"
+    reponse: "Oui. L'aloe vera, les esters de jojoba et l'huile d'argan nettoient en préservant les huiles naturelles de la peau. Pas de sensation de tiraillement ni de film sec après le lavage."
+  - question: "Apaise-t-il les peaux sujettes aux rougeurs ?"
+    reponse: "L'arnica et l'aloe vera calment les rougeurs et apportent une sensation apaisante, utile après une exposition, un rasage ou par temps froid."
+  - question: "Peut-on l'utiliser comme gel douche ?"
+    reponse: "Oui, sa texture douce permet un usage polyvalent : gel douche ou nettoyage du corps. Il nettoie efficacement tout en respectant le pH et le confort de la peau."
+  - question: "Laisse-t-il un résidu gras ?"
+    reponse: "Non. Il laisse une sensation de propre et de douceur, sans résidu huileux. Son parfum naturel reste discret, juste une fraîcheur subtile."
 caracteristiques:
-  - titre: "Ingrédients"
-    contenu: "Gel stabilisé d’Aloe vera, huile d’argan (vitamine E), esters de jojoba, extrait de concombre, arnica, agents nettoyants doux. Vegan, sans parabènes agressifs."
-  - titre: "Conseils d'utilisation"
-    contenu: "Appliquer sur peau humide (visage, mains ou corps), faire mousser légèrement puis rincer à l’eau claire. Usage quotidien pour une peau douce et propre."
-  - titre: "Garantie & certifications"
-    contenu: "Certifié par l’International Aloe Science Council (IASC), végan, halal, non testé sur les animaux — un soin disponible pour toute la famille avec la garantie qualité Forever."
+  - titre: "Composition"
+    contenu: "Gel stabilisé d'aloe vera, huile d'argan (vitamine E), esters de jojoba, extrait de concombre, arnica, bases lavantes douces. Vegan, sans parabènes agressifs."
+  - titre: "Comment l'utiliser"
+    contenu: "Appliquez sur peau humide (visage, mains ou corps), faites mousser, puis rincez à l'eau claire. Usage quotidien."
+  - titre: "Certifications"
+    contenu: "Certifié IASC, vegan, halal, non testé sur les animaux. Pour toute la famille."
 ---
 
-Le **Forever Aloe Liquid Soap** est conçu comme un soin complet pour nettoyer et régénérer la peau en douceur. Sa base lave légère, enrichie en gel d’Aloe vera stabilisé, respecte l’équilibre cutané tout en procurant hydratation et apaisement. Les esters de jojoba forment un bouclier protecteur, tandis que l’huile d’argan, surnommée “or liquide du Maroc”, nourrit et renforce l’épiderme grâce à ses acides gras et vitamine E. L’extrait de concombre retient l’eau, garantissant une hydratation durable, et l’arnica réveille l’éclat et apaise les peaux fatiguées ou sensibilisées. Sa texture mousse fine et perleuse enveloppe la peau sans la décaper, idéale pour une routine visage, mains ou corps.** Adapté aux peaux sensibles et testé dermatologiquement, ce savon liquide ne perturbe pas le pH naturel et évite toute sensation de tiraillement post-lavage.** Certifié IASC, végan et sans parabènes, il s’intègre parfaitement dans une démarche responsable et saine de beauté. Une solution fiable pour les familles en quête d’un produit multifonctions doux, efficace et respectueux de chacun.
+Un savon qui nettoie vraiment mais qui laisse la peau souple, sans la décaper : c'est l'équilibre que vise le Forever Aloe Liquid Soap. Un seul flacon pour le visage, les mains et le corps.
+
+## Quatre actifs nourrissants
+
+La base lavante reste douce, enrichie en gel d'aloe vera stabilisé qui respecte l'équilibre cutané. Les esters de jojoba forment un voile protecteur. L'huile d'argan, riche en acides gras et en vitamine E, nourrit et renforce l'épiderme. L'arnica apaise les peaux fatiguées ou sensibilisées. Sa mousse fine et perlée enveloppe la peau sans la dessécher.
+
+## Pour qui
+
+Vous cherchez un nettoyant multi-usage pour toute la maison, doux pour les peaux sensibles et celles des enfants. Vous en avez assez des savons qui tiraillent. Ce produit vous convient, du visage au corps.
+
+## Comment l'intégrer
+
+Au quotidien, au lavabo ou sous la douche. Il prépare bien la peau avant une crème hydratante. Vous pouvez le combiner avec les autres soins de la gamme pour une routine complète.
+
+Pour comprendre l'action de l'aloe vera sur la peau, lisez notre [guide complet aloe vera et peau](/blog/aloe-vera-peau-beaute-bienfaits-forever/).
+
+## Une question ?
+
+Appelez-moi ou écrivez-moi. Je vous oriente vers les soins adaptés à votre peau et à votre famille.
