@@ -39,7 +39,7 @@ const avantages = [
   {
     icon: "💰",
     titre: "Comment sont construits les revenus",
-    texte: "Tu gagnes sur chaque vente directe — une commission sur le prix de vente au détail. Tu bénifies aussi de bonus liés au volume de ventes et, si tu le souhaites, d'une équipe que tu accompagnes à ton tour. Il n'y a aucune obligation de recruter : beaucoup de distributeurs réussissent très bien en se concentrant uniquement sur les ventes clients.",
+    texte: "Tu gagnes sur chaque vente directe — une commission sur le prix de vente au détail. Tu bénéficies aussi de bonus liés au volume de ventes et, si tu le souhaites, d'une équipe que tu accompagnes à ton tour. Il n'y a aucune obligation de recruter : beaucoup de distributeurs réussissent très bien en se concentrant uniquement sur les ventes clients.",
     photo: null,
     alt: "Entreprendre avec Forever Living et construire ses revenus",
     sens: "droite",
@@ -109,6 +109,14 @@ const faq = [
     q: "Y a-t-il des quotas de vente à respecter ?",
     r: "Non. Il n'y a aucune obligation mensuelle. Tu travailles à ton rythme.",
   },
+  {
+    q: "Forever Living est-il une franchise ?",
+    r: "Non, et c'est une bonne nouvelle pour ton portefeuille. Une franchise classique exige un droit d'entrée de plusieurs dizaines de milliers d'euros, un local et un contrat contraignant. Devenir distributeur (ou revendeur) Forever Living relève de la vente directe : une adhésion symbolique, aucun local, aucun engagement de durée. Tu obtiens les mêmes atouts qu'un franchisé — marque mondiale, produits éprouvés, formation — sans l'investissement lourd.",
+  },
+  {
+    q: "Peut-on devenir distributeur Forever Living en Suisse ou en Belgique ?",
+    r: "Oui. Forever Living Products est implanté en Suisse et en Belgique avec ses propres circuits de livraison. Je peux te parrainer et t'accompagner à distance, exactement comme un candidat en France : appel découverte, choix des produits, premiers pas dans l'activité.",
+  },
 ];
 
 const schemaFAQ = {
@@ -127,7 +135,7 @@ const schemaWebPage = {
   "@id": pageUrl,
   url: pageUrl,
   name: "Devenir Distributeur Forever Living en France",
-  description: "Guide complet pour devenir distributeur Forever Living en France : revenus, fonctionnement, étapes et accompagnement par Rafael Avenard.",
+  description: "Guide complet pour devenir distributeur Forever Living en France, Suisse et Belgique : revenus, fonctionnement, étapes et accompagnement par Rafael Avenard.",
   inLanguage: "fr-FR",
   about: {
     "@type": "Occupation",
@@ -144,8 +152,8 @@ const schemaWebPage = {
 ---
 
 <Layout
-  title="Devenir Distributeur Forever Living — Entreprendre avec l'aloe vera | Esprit Aloé"
-  description="Pourquoi et comment devenir distributeur Forever Living en France ? Revenus complémentaires, liberté d'organisation, produits qui fidélisent. Rafael Avenard vous accompagne."
+  title="Devenir Distributeur Forever Living en France | Esprit Aloé"
+  description="Comment devenir distributeur Forever Living en France ou en Suisse ? Revenus, étapes, fonctionnement. Accompagnement personnalisé par Rafael, distributeur FBO."
   canonical={pageUrl}
 >
   <script type="application/ld+json" set:html={JSON.stringify(schemaFAQ)} slot="head" />
@@ -168,7 +176,7 @@ const schemaWebPage = {
             <span class="text-aloe-400 italic">tout ce qu'il faut savoir</span>
           </h1>
           <p class="text-lg text-aloe-200 leading-relaxed mb-8">
-            Devenir distributeur Forever Living, c'est lancer une activité indépendante autour de produits aloe vera certifiés que les clients consomment chaque jour — sans stock obligatoire, sans quota, à ton propre rythme. Je suis distributeur Forever en Loire-Atlantique depuis plusieurs années. Voici ce que j'aurais voulu savoir avant de commencer.
+            Devenir distributeur Forever Living (on dit aussi revendeur ou FBO), c'est lancer une activité indépendante autour de produits aloe vera certifiés que les clients consomment chaque jour — sans stock obligatoire, sans quota, à ton propre rythme. Je suis distributeur Forever en Loire-Atlantique depuis plusieurs années. Voici ce que j'aurais voulu savoir avant de commencer.
           </p>
           <div class="flex flex-wrap gap-4">
             <a href="tel:+33677352226"
