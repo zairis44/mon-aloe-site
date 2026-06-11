@@ -5,6 +5,8 @@ description: "Forever Living n'est pas une franchise mais un réseau de vente di
 pubDate: 2026-06-11
 author: "Rafael Avenard"
 category: "guides"
+image: "/images/blog/forever-living-franchise-ou-vente-directe.webp"
+imageAlt: "Pourquoi choisir Forever Living : vente directe plutôt que franchise"
 tags:
   - "franchise forever living"
   - "forever living franchise"
