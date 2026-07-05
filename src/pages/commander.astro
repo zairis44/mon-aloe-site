@@ -1,0 +1,369 @@
+---
+/**
+ * src/pages/commander.astro
+ * Page "Comment commander" — Esprit Aloé
+ * Objectif : convertir les visiteurs en acheteurs, réduire la friction
+ * SEO : longue traîne "commander produits forever living france"
+ * Schema.org : HowTo + FAQPage
+ */
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
+const boutiqueUrl = "https://www.foreverliving.fr/ref/330001628607/";
+
+const etapes = [
+  {
+    numero: "01",
+    titre: "Parcourez les produits",
+    texte:
+      "Visitez notre catalogue ou consultez les fiches produit du site pour identifier ce qui correspond à vos besoins. En cas de doute, appelez directement Rafael au 06 77 35 22 26 — il vous guide sans engagement.",
+    icon: "🌿",
+    lien: "/produits/",
+    labelLien: "Voir les produits",
+  },
+  {
+    numero: "02",
+    titre: "Choisissez votre mode de commande",
+    texte:
+      "Vous pouvez commander via la boutique en ligne Forever Living, par téléphone ou par e-mail. Les trois options donnent accès aux mêmes produits et aux mêmes tarifs.",
+    icon: "🛒",
+    lien: null,
+    labelLien: null,
+  },
+  {
+    numero: "03",
+    titre: "Validez et payez en sécurité",
+    texte:
+      "La boutique Forever Living accepte les cartes bancaires (Visa, Mastercard) et PayPal. Pour les commandes par téléphone ou e-mail, nous convenons ensemble du mode de règlement.",
+    icon: "🔒",
+    lien: null,
+    labelLien: null,
+  },
+  {
+    numero: "04",
+    titre: "Recevez votre commande",
+    texte:
+      "Livraison en point relais en 48h–72h (dès 4 € pour les commandes entre 50 et 150 €, gratuite au-delà de 150 €) ou à domicile par Chronopost J+1 à 13 €. Pour toute commande passée avant 12h45.",
+    icon: "📦",
+    lien: "/livraison/",
+    labelLien: "Détails livraison",
+  },
+];
+
+const modesCommande = [
+  {
+    icon: "🖥️",
+    titre: "Boutique en ligne Forever",
+    description:
+      "La voie la plus directe. La boutique officielle Forever Living est sécurisée, disponible 24h/24 et livre partout en France. Utilisez le lien ci-dessous pour passer par notre espace distributeur.",
+    avantages: [
+      "Disponible 24h/24, 7j/7",
+      "Paiement sécurisé par carte ou PayPal",
+      "Suivi de commande en temps réel",
+      "Catalogue complet — plus de 150 produits",
+    ],
+    cta: "Commander en ligne",
+    ctaUrl: boutiqueUrl,
+    badge: "Recommandé",
+  },
+  {
+    icon: "📞",
+    titre: "Par téléphone",
+    description:
+      "Vous préférez parler à quelqu'un avant de commander ? Rafael est disponible du lundi au samedi pour prendre votre commande et vous conseiller.",
+    avantages: [
+      "Conseils personnalisés avant achat",
+      "Idéal si vous hésitez entre plusieurs produits",
+      "Commande passée en moins de 5 minutes",
+    ],
+    cta: "06 77 35 22 26",
+    ctaUrl: "tel:+33677352226",
+    badge: null,
+  },
+  {
+    icon: "✉️",
+    titre: "Par e-mail",
+    description:
+      "Envoyez la liste des produits souhaités et Rafael revient vers vous rapidement avec un récapitulatif de commande, les tarifs et les modalités de livraison.",
+    avantages: [
+      "Réponse sous 24h (souvent le jour même)",
+      "Pratique pour les commandes récurrentes",
+      "Possibilité de joindre une liste de produits",
+    ],
+    cta: "contact@espritaloe.fr",
+    ctaUrl: "mailto:contact@espritaloe.fr",
+    badge: null,
+  },
+];
+
+const faq = [
+  {
+    q: "Dois-je créer un compte pour commander ?",
+    r: "Non. Vous pouvez commander par téléphone ou e-mail sans aucun compte. Si vous passez par la boutique en ligne Forever Living, un compte est créé automatiquement lors de votre première commande — cela vous permet ensuite de suivre vos colis.",
+  },
+  {
+    q: "Les prix sont-ils les mêmes que sur la boutique officielle Forever ?",
+    r: "Oui, les tarifs sont identiques. En passant par notre lien distributeur, vous bénéficiez du même catalogue officiel et du même service après-vente Forever, avec en plus le suivi personnalisé de Rafael.",
+  },
+  {
+    q: "Puis-je bénéficier d'une réduction client privilégié ?",
+    r: "Oui. Forever Living propose un statut client privilégié qui ouvre droit à des réductions à partir d'un certain volume d'achats. Contactez Rafael pour en savoir plus selon votre profil.",
+  },
+  {
+    q: "Comment savoir quel produit me convient ?",
+    r: "Rafael est disponible 7j/7 pour un conseil personnalisé, sans engagement. Appelez le 06 77 35 22 26 ou consultez les fiches produit du site — chacune précise le profil d'utilisateur idéal.",
+  },
+  {
+    q: "Livrez-vous dans les DOM-TOM ?",
+    r: "Oui. La boutique Forever Living livre dans les DOM-TOM. Les délais et frais peuvent différer — contactez-nous avant de commander pour un devis précis.",
+  },
+  {
+    q: "Et si je ne suis pas satisfait(e) ?",
+    r: "Forever Living garantit vos achats avec une politique de retour sous 30 jours satisfait ou remboursé. Consultez notre page livraison pour les détails.",
+  },
+];
+
+// ── Schema.org HowTo ──────────────────────────────────────────────────────
+const schemaHowTo = {
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  name: "Comment commander des produits Forever Living en France",
+  description:
+    "Étapes pour commander vos produits Forever Living en France via la boutique en ligne, par téléphone ou par e-mail.",
+  totalTime: "PT5M",
+  step: etapes.map((e, i) => ({
+    "@type": "HowToStep",
+    position: i + 1,
+    name: e.titre,
+    text: e.texte,
+  })),
+};
+
+// ── Schema.org FAQPage ────────────────────────────────────────────────────
+const schemaFAQ = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faq.map(({ q, r }) => ({
+    "@type": "Question",
+    name: q,
+    acceptedAnswer: { "@type": "Answer", text: r },
+  })),
+};
+---
+
+<Layout
+  title="Commander des produits Forever Living en France | Esprit Aloé"
+  description="Commandez vos produits Forever Living par la boutique en ligne, par téléphone ou par e-mail. Livraison 48–72h en relais, J+1 à domicile. Gratuite dès 150 €."
+  canonical="https://espritaloe.fr/commander/"
+>
+  <script type="application/ld+json" set:html={JSON.stringify(schemaHowTo)} slot="head" />
+  <script type="application/ld+json" set:html={JSON.stringify(schemaFAQ)} slot="head" />
+
+  <Header />
+
+  <!-- ══════════════════════════════════════════
+       EN-TÊTE
+  ══════════════════════════════════════════ -->
+  <section class="bg-gradient-to-br from-aloe-50 via-cream to-sand py-16">
+    <div class="mx-auto max-w-6xl px-6">
+      <nav class="text-xs text-aloe-400 mb-6" aria-label="Fil d'Ariane">
+        <ol class="flex items-center gap-2">
+          <li><a href="/" class="hover:text-aloe-600 transition-colors">Accueil</a></li>
+          <li>›</li>
+          <li class="text-aloe-700 font-medium">Commander</li>
+        </ol>
+      </nav>
+      <div class="max-w-3xl">
+        <span class="inline-block rounded-full bg-aloe-100 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-aloe-700 mb-6">
+          Boutique Forever Living — France
+        </span>
+        <h1 class="text-5xl md:text-6xl text-aloe-900 leading-tight mb-6">
+          Comment commander<br />
+          <span class="italic text-aloe-500">vos produits ?</span>
+        </h1>
+        <p class="text-xl text-aloe-700 leading-relaxed max-w-2xl mb-8">
+          Trois façons de passer commande, un seul interlocuteur — Rafael, disponible 7j/7
+          pour vous guider du choix produit jusqu'à la livraison.
+        </p>
+        <a
+          href={boutiqueUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex items-center gap-2 rounded-full bg-aloe-600 px-8 py-4 text-sm font-semibold text-cream hover:bg-aloe-700 transition-colors"
+        >
+          🛒 Accéder à la boutique en ligne
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       ÉTAPES HowTo
+  ══════════════════════════════════════════ -->
+  <section class="bg-cream py-20">
+    <div class="mx-auto max-w-6xl px-6">
+      <div class="text-center mb-14">
+        <span class="text-xs font-semibold uppercase tracking-widest text-aloe-500">Processus de commande</span>
+        <h2 class="text-4xl text-aloe-900 mt-2">En 4 étapes simples</h2>
+      </div>
+      <ol class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        {etapes.map((e) => (
+          <li class="rounded-2xl bg-white border border-aloe-100 p-7 flex flex-col">
+            <span class="text-3xl mb-4">{e.icon}</span>
+            <span class="text-xs font-semibold text-aloe-400 tracking-widest mb-2">Étape {e.numero}</span>
+            <h3 class="text-lg font-semibold text-aloe-800 mb-3 leading-snug">{e.titre}</h3>
+            <p class="text-sm text-aloe-600 leading-relaxed flex-1">{e.texte}</p>
+            {e.lien && (
+              <a
+                href={e.lien}
+                class="mt-5 inline-flex items-center gap-1 text-sm font-semibold text-aloe-600 hover:text-aloe-800 transition-colors"
+              >
+                {e.labelLien} →
+              </a>
+            )}
+          </li>
+        ))}
+      </ol>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       3 MODES DE COMMANDE
+  ══════════════════════════════════════════ -->
+  <section class="bg-sand/50 py-20">
+    <div class="mx-auto max-w-6xl px-6">
+      <div class="text-center mb-14">
+        <span class="text-xs font-semibold uppercase tracking-widest text-aloe-500">Choisissez votre façon</span>
+        <h2 class="text-4xl text-aloe-900 mt-2">Trois façons de commander</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-8">
+        {modesCommande.map((m) => (
+          <div class="rounded-2xl bg-white border border-aloe-100 p-8 flex flex-col relative">
+            {m.badge && (
+              <span class="absolute -top-3 left-8 rounded-full bg-aloe-600 px-4 py-1 text-xs font-semibold text-cream">
+                {m.badge}
+              </span>
+            )}
+            <span class="text-3xl mb-4">{m.icon}</span>
+            <h3 class="text-xl font-semibold text-aloe-800 mb-3">{m.titre}</h3>
+            <p class="text-sm text-aloe-600 leading-relaxed mb-5">{m.description}</p>
+            <ul class="space-y-2 mb-8 flex-1">
+              {m.avantages.map((av) => (
+                <li class="flex items-start gap-2 text-sm text-aloe-700">
+                  <span class="text-aloe-500 mt-0.5">✓</span>
+                  <span>{av}</span>
+                </li>
+              ))}
+            </ul>
+            <a
+              href={m.ctaUrl}
+              target={m.ctaUrl.startsWith("http") ? "_blank" : undefined}
+              rel={m.ctaUrl.startsWith("http") ? "noopener noreferrer" : undefined}
+              class="inline-flex items-center justify-center gap-2 rounded-full bg-aloe-600 px-6 py-3 text-sm font-semibold text-cream hover:bg-aloe-700 transition-colors text-center"
+            >
+              {m.cta}
+            </a>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       BANDEAU LIVRAISON (rappel synthétique)
+  ══════════════════════════════════════════ -->
+  <section class="bg-aloe-800 text-cream py-14">
+    <div class="mx-auto max-w-6xl px-6">
+      <div class="text-center mb-10">
+        <h2 class="text-3xl text-cream">Livraison rapide partout en France</h2>
+        <p class="text-aloe-200 mt-2 text-sm">Commande passée avant 12h45</p>
+      </div>
+      <div class="grid sm:grid-cols-3 gap-6 max-w-3xl mx-auto text-center">
+        <div class="rounded-2xl bg-aloe-700/50 p-6">
+          <span class="text-3xl block mb-3">📦</span>
+          <p class="font-semibold text-cream text-sm mb-1">Point relais — 48h à 72h</p>
+          <p class="text-xs text-aloe-200">8 € (–50 €) · 4 € (50–150 €) · Gratuit (+150 €)</p>
+        </div>
+        <div class="rounded-2xl bg-aloe-700/50 p-6">
+          <span class="text-3xl block mb-3">🚚</span>
+          <p class="font-semibold text-cream text-sm mb-1">Domicile Chronopost — J+1</p>
+          <p class="text-xs text-aloe-200">13 € fixe · Pas de livraison le samedi</p>
+        </div>
+        <div class="rounded-2xl bg-aloe-700/50 p-6">
+          <span class="text-3xl block mb-3">↩️</span>
+          <p class="font-semibold text-cream text-sm mb-1">Retours sous 30 jours</p>
+          <p class="text-xs text-aloe-200">Satisfait(e) ou remboursé(e) — sans tracas</p>
+        </div>
+      </div>
+      <div class="text-center mt-8">
+        <a
+          href="/livraison/"
+          class="inline-flex items-center gap-2 rounded-full border border-aloe-400 px-6 py-3 text-sm font-semibold text-cream hover:bg-aloe-700 transition-colors"
+        >
+          Voir tous les détails livraison →
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       FAQ
+  ══════════════════════════════════════════ -->
+  <section class="bg-cream py-20">
+    <div class="mx-auto max-w-3xl px-6">
+      <div class="text-center mb-12">
+        <h2 class="text-4xl text-aloe-900">Questions fréquentes</h2>
+        <p class="text-aloe-500 mt-3 text-sm">
+          Une question non listée ? Contactez Rafael au
+          <a href="tel:+33677352226" class="underline text-aloe-600">06 77 35 22 26</a>.
+        </p>
+      </div>
+      <dl class="space-y-4">
+        {faq.map(({ q, r }) => (
+          <div class="rounded-2xl bg-white border border-aloe-100 p-6">
+            <dt class="font-semibold text-aloe-800 mb-2">{q}</dt>
+            <dd class="text-sm text-aloe-600 leading-relaxed">{r}</dd>
+          </div>
+        ))}
+      </dl>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       CTA FINAL
+  ══════════════════════════════════════════ -->
+  <section class="bg-gradient-to-br from-aloe-50 via-cream to-sand py-16">
+    <div class="mx-auto max-w-3xl px-6 text-center">
+      <h2 class="text-3xl text-aloe-900 mb-4">Prêt(e) à passer commande ?</h2>
+      <p class="text-aloe-600 leading-relaxed mb-8 text-lg">
+        Boutique en ligne disponible maintenant, ou Rafael au téléphone si vous préférez
+        un conseil avant d'acheter.
+      </p>
+      <div class="flex flex-wrap items-center justify-center gap-4">
+        <a
+          href={boutiqueUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex items-center gap-2 rounded-full bg-aloe-600 px-8 py-4 text-sm font-semibold text-cream hover:bg-aloe-700 transition-colors"
+        >
+          🛒 Boutique en ligne
+        </a>
+        <a
+          href="tel:+33677352226"
+          class="inline-flex items-center gap-2 rounded-full border border-aloe-300 px-8 py-4 text-sm font-semibold text-aloe-700 hover:bg-aloe-50 transition-colors"
+        >
+          📞 06 77 35 22 26
+        </a>
+        <a
+          href="/contact/"
+          class="inline-flex items-center gap-2 rounded-full border border-aloe-300 px-8 py-4 text-sm font-semibold text-aloe-700 hover:bg-aloe-50 transition-colors"
+        >
+          ✉️ Nous écrire
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <Footer />
+</Layout>

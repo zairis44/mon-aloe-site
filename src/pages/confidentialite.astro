@@ -1,0 +1,126 @@
+---
+/**
+ * src/pages/confidentialite.astro
+ * Politique de confidentialité — Esprit Aloé
+ * Conformité RGPD (Règlement UE 2016/679)
+ */
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout
+  title="Politique de confidentialité | Esprit Aloé"
+  description="Politique de confidentialité et traitement des données personnelles — espritaloe.fr"
+  canonical="https://espritaloe.fr/confidentialite/"
+  noindex={true}
+>
+  <Header />
+
+  <section class="bg-gradient-to-br from-aloe-50 via-cream to-sand py-12">
+    <div class="mx-auto max-w-3xl px-6">
+      <nav class="text-xs text-aloe-400 mb-6" aria-label="Fil d'Ariane">
+        <ol class="flex items-center gap-2">
+          <li><a href="/" class="hover:text-aloe-600 transition-colors">Accueil</a></li>
+          <li>›</li>
+          <li class="text-aloe-700 font-medium">Confidentialité</li>
+        </ol>
+      </nav>
+      <h1 class="text-4xl text-aloe-900 mb-2">Politique de confidentialité</h1>
+      <p class="text-sm text-aloe-400">Dernière mise à jour : mai 2025</p>
+    </div>
+  </section>
+
+  <section class="bg-cream py-14">
+    <div class="mx-auto max-w-3xl px-6 space-y-10 text-aloe-700">
+
+      <div>
+        <h2 class="text-xl font-semibold text-aloe-900 mb-3">1. Responsable du traitement</h2>
+        <p class="leading-relaxed">
+          <strong>Rafael Avenard</strong> — contact@espritaloe.fr — 06 77 35 22 26<br />
+          Entrepreneur indépendant, partenaire Forever Living Products.
+        </p>
+      </div>
+
+      <div>
+        <h2 class="text-xl font-semibold text-aloe-900 mb-3">2. Données collectées</h2>
+        <p class="leading-relaxed mb-3">
+          Ce site collecte des données uniquement via le formulaire de contact :
+        </p>
+        <ul class="list-disc list-inside space-y-1 text-sm pl-2">
+          <li>Nom et prénom</li>
+          <li>Adresse e-mail</li>
+          <li>Numéro de téléphone (optionnel)</li>
+          <li>Message libre</li>
+        </ul>
+        <p class="mt-3 text-sm leading-relaxed">
+          Aucun cookie de tracking, aucune publicité ciblée, aucune collecte automatique
+          de données de navigation sur ce site.
+        </p>
+      </div>
+
+      <div>
+        <h2 class="text-xl font-semibold text-aloe-900 mb-3">3. Finalités du traitement</h2>
+        <p class="leading-relaxed">
+          Les données du formulaire de contact sont utilisées exclusivement pour :
+        </p>
+        <ul class="list-disc list-inside space-y-1 text-sm pl-2 mt-2">
+          <li>Répondre à votre demande d'information ou de conseil</li>
+          <li>Traiter votre commande si vous en faites la demande</li>
+          <li>Vous rappeler si vous avez fourni un numéro de téléphone</li>
+        </ul>
+      </div>
+
+      <div>
+        <h2 class="text-xl font-semibold text-aloe-900 mb-3">4. Sous-traitants</h2>
+        <p class="leading-relaxed">
+          Le formulaire de contact est géré par <strong>Formspree</strong> (formspree.io),
+          prestataire américain conforme au RGPD via le mécanisme des Clauses Contractuelles Types.
+          Les données transmises sont acheminées directement vers notre messagerie professionnelle
+          et ne sont pas stockées de manière permanente par Formspree.
+        </p>
+      </div>
+
+      <div>
+        <h2 class="text-xl font-semibold text-aloe-900 mb-3">5. Durée de conservation</h2>
+        <p class="leading-relaxed">
+          Vos données sont conservées le temps nécessaire au traitement de votre demande,
+          puis supprimées dans un délai maximum de <strong>3 ans</strong> à compter
+          du dernier contact.
+        </p>
+      </div>
+
+      <div>
+        <h2 class="text-xl font-semibold text-aloe-900 mb-3">6. Vos droits (RGPD)</h2>
+        <p class="leading-relaxed mb-3">
+          Conformément au Règlement Général sur la Protection des Données (RGPD),
+          vous disposez des droits suivants :
+        </p>
+        <ul class="list-disc list-inside space-y-1 text-sm pl-2">
+          <li><strong>Droit d'accès</strong> — connaître les données vous concernant</li>
+          <li><strong>Droit de rectification</strong> — corriger des données inexactes</li>
+          <li><strong>Droit à l'effacement</strong> — demander la suppression de vos données</li>
+          <li><strong>Droit d'opposition</strong> — vous opposer au traitement</li>
+          <li><strong>Droit à la portabilité</strong> — recevoir vos données dans un format lisible</li>
+        </ul>
+        <p class="mt-4 leading-relaxed">
+          Pour exercer ces droits : <a href="mailto:contact@espritaloe.fr" class="text-aloe-600 underline">contact@espritaloe.fr</a>.
+          En cas de litige non résolu, vous pouvez saisir la <strong>CNIL</strong> (Commission Nationale
+          de l'Informatique et des Libertés) sur <a href="https://www.cnil.fr" target="_blank" rel="noopener noreferrer" class="text-aloe-600 underline">cnil.fr</a>.
+        </p>
+      </div>
+
+      <div>
+        <h2 class="text-xl font-semibold text-aloe-900 mb-3">7. Cookies</h2>
+        <p class="leading-relaxed">
+          Ce site <strong>n'utilise pas de cookies</strong> de tracking ou d'analyse.
+          Le site est un site statique (Astro) sans scripts tiers de collecte de données.
+          Aucune bannière cookies n'est donc nécessaire.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <Footer />
+</Layout>

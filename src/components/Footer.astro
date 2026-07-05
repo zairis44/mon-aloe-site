@@ -1,0 +1,60 @@
+---
+const year = new Date().getFullYear();
+---
+
+<footer class="bg-aloe-800 text-aloe-100">
+  <div class="mx-auto max-w-6xl px-6 py-14 grid gap-10 md:grid-cols-4">
+    <div class="md:col-span-2">
+      <div class="flex items-center gap-2 mb-4">
+        <span class="text-2xl">🌿</span>
+        <span class="font-display text-xl text-cream">Esprit Aloé</span>
+      </div>
+      <p class="text-sm text-aloe-200 max-w-sm leading-relaxed">
+        Distributeur indépendant Forever Living Products. Des soins naturels
+        à base d'aloe vera pour prendre soin de vous au quotidien.
+      </p>
+      <p class="text-xs text-aloe-400 mt-4 leading-relaxed">
+        Rafael Avenard — Entrepreneur Indépendant,<br />
+        Partenaire de la Société Forever Living Products
+      </p>
+      <a
+        href="tel:+33677352226"
+        class="inline-flex items-center gap-2 mt-3 text-sm text-aloe-300 hover:text-cream transition-colors"
+      >
+        📞 06 77 35 22 26
+      </a>
+    </div>
+
+    <div>
+      <h4 class="text-cream text-sm uppercase tracking-widest mb-4">Produits</h4>
+      <ul class="space-y-2 text-sm">
+        <li><a href="/produits/" class="hover:text-cream transition-colors">Toute la gamme</a></li>
+        <li><a href="/produits/boissons-aloe-vera/" class="hover:text-cream transition-colors">Boissons Aloe Vera</a></li>
+        <li><a href="/produits/programmes-detox/" class="hover:text-cream transition-colors">Programmes Détox</a></li>
+        <li><a href="/produits/sport-et-fitness/" class="hover:text-cream transition-colors">Sport & Fitness</a></li>
+        <li><a href="/produits/cremes-et-gels/" class="hover:text-cream transition-colors">Beauté & Bien-être</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h4 class="text-cream text-sm uppercase tracking-widest mb-4">Informations</h4>
+      <ul class="space-y-2 text-sm">
+        <li><a href="/blog/" class="hover:text-cream transition-colors">Blog bien-être</a></li>
+        <li><a href="/a-propos/" class="hover:text-cream transition-colors">À propos</a></li>
+        <li><a href="/devenir-distributeur-forever-living/" class="hover:text-cream transition-colors text-aloe-300">🌿 Devenir distributeur</a></li>
+        <li><a href="/distributeur-forever-living-loire-atlantique/" class="hover:text-cream transition-colors">📍 Loire-Atlantique</a></li>
+        <li><a href="/contact/" class="hover:text-cream transition-colors">Contact</a></li>
+        <li><a href="/mentions-legales/" class="hover:text-cream transition-colors">Mentions légales</a></li>
+        <li><a href="/confidentialite/" class="hover:text-cream transition-colors">Confidentialité</a></li>
+        <li><a href="/livraison/" class="hover:text-cream transition-colors">Livraison</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="border-t border-aloe-700">
+    <div class="mx-auto max-w-6xl px-6 py-5 text-xs text-aloe-300 flex flex-col md:flex-row justify-between gap-2">
+      <p>© {year} Esprit Aloé — Tous droits réservés.</p>
+      <p>Distributeur indépendant Forever Living Products.</p>
+    </div>
+  </div>
+</footer>

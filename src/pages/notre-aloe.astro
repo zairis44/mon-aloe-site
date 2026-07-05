@@ -1,0 +1,257 @@
+---
+/**
+ * src/pages/notre-aloe.astro
+ * Page éditoriale : L'Aloe Vera Forever Living
+ */
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
+const siteUrl = 'https://espritaloe.fr';
+
+const etapes = [
+  {
+    num: "01",
+    titre: "Culture sans pesticides",
+    texte: "Forever Living cultive l'Aloe Barbadensis Miller dans des champs en Arizona, au Texas et aux Caraïbes. Zéro pesticide, irrigation naturelle, sol volcanique riche en minéraux.",
+  },
+  {
+    num: "02",
+    titre: "Récolte à la main",
+    texte: "Chaque feuille est récoltée manuellement pour préserver l'intégrité du gel. La découpe est réalisée dans les heures suivant la récolte pour éviter l'oxydation.",
+  },
+  {
+    num: "03",
+    titre: "Stabilisation à froid",
+    texte: "Le procédé breveté de Forever Living stabilise la pulpe sans chaleur. C'est ce qui préserve les 200+ nutriments actifs — polysaccharides, vitamines, acides aminés.",
+  },
+  {
+    num: "04",
+    titre: "Certification IASC",
+    texte: "Chaque lot est soumis à l'International Aloe Science Council pour vérification de la pureté, de la concentration et de l'absence de contaminants.",
+  },
+];
+
+const nutriments = [
+  { cat: "Vitamines", liste: "A, B1, B2, B6, B12, C, E, Acide folique" },
+  { cat: "Minéraux", liste: "Calcium, Magnésium, Zinc, Chrome, Sélénium, Sodium, Fer, Potassium, Cuivre, Manganèse" },
+  { cat: "Acides aminés", liste: "20 sur 22 acides aminés essentiels, dont les 8 que le corps ne peut pas synthétiser" },
+  { cat: "Enzymes", liste: "Amylase, Lipase, Phosphatase alcaline, Carboxypeptidase" },
+  { cat: "Polysaccharides", liste: "Acemannan — le composé actif clé de l'aloe vera" },
+  { cat: "Anthraquinones", liste: "Aloïne, Émodine — propriétés antioxydantes et anti-inflammatoires" },
+];
+
+const bienfaits = [
+  { icon: "🫁", titre: "Confort digestif", texte: "Les polysaccharides tapissent et apaisent les muqueuses de l'intestin. Études cliniques à l'appui sur le syndrome de l'intestin irritable." },
+  { icon: "🛡️", titre: "Soutien immunitaire", texte: "L'Acemannan stimule les macrophages, premières lignes de défense de l'organisme. Recommandé en période hivernale." },
+  { icon: "💧", titre: "Hydratation cutanée", texte: "Pénètre jusqu'à 7 couches épidermiques (contre 2-3 pour une crème classique). Idéal pour peaux sèches, irritées ou après-soleil." },
+  { icon: "🦴", titre: "Confort articulaire", texte: "Associé à la glucosamine et au MSM dans Forever Freedom, l'aloe vera soutient la mobilité des articulations." },
+  { icon: "⚡", titre: "Énergie & vitalité", texte: "Riche en vitamines du groupe B, l'aloe vera contribue à réduire la fatigue et à soutenir le métabolisme énergétique." },
+  { icon: "🧹", titre: "Détox naturelle", texte: "Les fibres et les enzymes facilitent l'élimination des déchets métaboliques. Base de tous les programmes détox C9 et DX4." },
+];
+
+const saviez = [
+  {
+    img: "/images/notre-aloe/aloe-vera-bienfaits-bon-a-savoir-1.webp",
+    alt: "Le saviez-vous ? 20 plants d'aloe vera transforment autant de CO2 qu'un arbre",
+  },
+  {
+    img: "/images/notre-aloe/aloe-vera-bienfaits-bon-a-savoir-2.webp",
+    alt: "Le saviez-vous ? L'écorce des feuilles est utilisée comme fertilisant naturel",
+  },
+  {
+    img: "/images/notre-aloe/aloe-vera-bienfaits-bon-a-savoir-3.webp",
+    alt: "Le saviez-vous ? Forever Living a réduit sa consommation d'eau de 90% grâce à l'énergie solaire",
+  },
+];
+---
+
+<Layout
+  title="Aloe vera Forever Living : culture, composition et bienfaits"
+  description="Pourquoi l'aloe vera Forever Living est différent : culture sans pesticides, stabilisation à froid, certification IASC et composition scientifiquement reconnue."
+  canonical={`${siteUrl}/notre-aloe/`}
+>
+  <Header />
+
+  <!-- ══════════════════════════════════════════
+       EN-TÊTE — texte gauche / photo plantation droite
+  ══════════════════════════════════════════ -->
+  <section class="bg-gradient-to-br from-aloe-50 via-cream to-sand py-20">
+    <div class="mx-auto max-w-6xl px-6 grid md:grid-cols-2 gap-12 items-center">
+
+      <div>
+        <nav class="text-xs text-aloe-400 mb-6" aria-label="Fil d'Ariane">
+          <ol class="flex items-center gap-2">
+            <li><a href="/" class="hover:text-aloe-600 transition-colors">Accueil</a></li>
+            <li>›</li>
+            <li class="text-aloe-700 font-medium">Notre Aloe Vera</li>
+          </ol>
+        </nav>
+        <span class="inline-block rounded-full bg-aloe-100 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-aloe-700 mb-6">
+          Aloe Barbadensis Miller
+        </span>
+        <h1 class="text-5xl md:text-6xl text-aloe-900 leading-tight mb-6">
+          L'Aloe Vera<br />
+          <span class="italic text-aloe-500">Forever Living</span>
+        </h1>
+        <p class="text-xl text-aloe-700 leading-relaxed">
+          Pas tous les aloe vera se ressemblent. Découvrez pourquoi la qualité,
+          la traçabilité et le procédé de stabilisation font toute la différence.
+        </p>
+      </div>
+
+      <div class="rounded-3xl overflow-hidden shadow-xl border border-aloe-100 h-80 md:h-96">
+        <img
+          src="/images/notre-aloe/forever-living-gel-plantation-aloe-vera.webp"
+          alt="Forever Aloe Vera Gel au cœur d'une plantation d'aloe vera Forever Living"
+          width="800"
+          height="600"
+          loading="eager"
+          class="w-full h-full object-cover"
+        />
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       CHIFFRES CLÉS
+  ══════════════════════════════════════════ -->
+  <section class="bg-aloe-800 text-cream py-14">
+    <div class="mx-auto max-w-6xl px-6">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+        {[
+          { val: "99,7%", label: "de pulpe d'aloe vera pure dans la boisson phare" },
+          { val: "+200", label: "nutriments actifs dans la feuille d'aloe vera" },
+          { val: "1978", label: "année de création de Forever Living Products" },
+          { val: "IASC", label: "certification internationale de pureté aloe" },
+        ].map((s) => (
+          <div class="rounded-2xl bg-aloe-700 p-6">
+            <p class="text-3xl md:text-4xl font-display text-cream mb-2">{s.val}</p>
+            <p class="text-xs text-aloe-200 leading-relaxed">{s.label}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       DE LA PLANTE À LA BOUTEILLE
+  ══════════════════════════════════════════ -->
+  <section class="bg-cream py-20">
+    <div class="mx-auto max-w-6xl px-6">
+      <div class="text-center mb-14">
+        <h2 class="text-4xl text-aloe-900">De la plante à la bouteille</h2>
+        <p class="text-aloe-600 mt-3 max-w-xl mx-auto">
+          Forever Living contrôle chaque étape — de la plantation à la mise en pot —
+          pour garantir une pureté sans compromis.
+        </p>
+      </div>
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        {etapes.map((e) => (
+          <div class="rounded-2xl bg-white border border-aloe-100 p-7 relative overflow-hidden">
+            <span class="absolute top-4 right-5 text-6xl font-display text-aloe-50 select-none">{e.num}</span>
+            <h3 class="font-semibold text-aloe-800 mb-3 relative">{e.titre}</h3>
+            <p class="text-sm text-aloe-600 leading-relaxed relative">{e.texte}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       LE SAVIEZ-VOUS — 3 visuels carrés
+  ══════════════════════════════════════════ -->
+  <section class="bg-aloe-50 py-16">
+    <div class="mx-auto max-w-6xl px-6">
+      <div class="text-center mb-10">
+        <span class="text-xs font-semibold uppercase tracking-widest text-aloe-600">Forever Living & la planète</span>
+        <h2 class="text-3xl text-aloe-900 mt-2">Le saviez-vous ?</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        {saviez.map((s) => (
+          <div class="rounded-3xl overflow-hidden shadow-md border border-aloe-100 aspect-square">
+            <img
+              src={s.img}
+              alt={s.alt}
+              width="600"
+              height="600"
+              loading="lazy"
+              class="w-full h-full object-cover object-top"
+            />
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       COMPOSITION
+  ══════════════════════════════════════════ -->
+  <section class="bg-sand/50 py-20">
+    <div class="mx-auto max-w-6xl px-6">
+      <div class="text-center mb-12">
+        <h2 class="text-4xl text-aloe-900">Une plante, 200+ nutriments</h2>
+        <p class="text-aloe-600 mt-3 max-w-xl mx-auto">
+          L'<em>Aloe Barbadensis Miller</em> est l'une des plantes les plus nutritionnellement
+          denses au monde. Voici ce qu'elle contient naturellement.
+        </p>
+      </div>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
+        {nutriments.map((n) => (
+          <div class="rounded-2xl bg-white border border-aloe-100 p-6">
+            <h3 class="font-semibold text-aloe-800 mb-2 text-sm uppercase tracking-wide">{n.cat}</h3>
+            <p class="text-sm text-aloe-600 leading-relaxed">{n.liste}</p>
+          </div>
+        ))}
+      </div>
+      <p class="text-xs text-aloe-400 mt-6 text-center max-w-2xl mx-auto">
+        * Ces informations sont données à titre éducatif. Les compléments alimentaires
+        ne se substituent pas à une alimentation équilibrée ni à un suivi médical.
+      </p>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       BIENFAITS
+  ══════════════════════════════════════════ -->
+  <section class="bg-cream py-20">
+    <div class="mx-auto max-w-6xl px-6">
+      <div class="text-center mb-12">
+        <h2 class="text-4xl text-aloe-900">Les bienfaits reconnus de l'aloe vera</h2>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        {bienfaits.map((b) => (
+          <div class="rounded-2xl bg-white border border-aloe-100 p-7">
+            <span class="text-3xl block mb-4">{b.icon}</span>
+            <h3 class="font-semibold text-aloe-800 mb-2">{b.titre}</h3>
+            <p class="text-sm text-aloe-600 leading-relaxed">{b.texte}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       LIEN VERS LES PRODUITS
+  ══════════════════════════════════════════ -->
+  <section class="bg-aloe-800 text-cream py-16">
+    <div class="mx-auto max-w-4xl px-6 text-center">
+      <h2 class="text-3xl text-cream mb-4">Prêt à découvrir les produits ?</h2>
+      <p class="text-aloe-100 mb-8 max-w-xl mx-auto">
+        Boissons, soins, compléments — toute la gamme Forever Living est disponible
+        avec conseil personnalisé et livraison France 48–72h.
+      </p>
+      <div class="flex flex-wrap gap-4 justify-center">
+        <a href="/produits/" class="rounded-full bg-cream px-8 py-3.5 text-sm font-semibold text-aloe-800 hover:bg-aloe-100 transition-colors">
+          Voir les produits
+        </a>
+        <a href="/blog/" class="rounded-full border border-aloe-500 px-8 py-3.5 text-sm font-semibold text-cream hover:border-aloe-300 transition-colors">
+          Lire le blog bien-être
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <Footer />
+</Layout>

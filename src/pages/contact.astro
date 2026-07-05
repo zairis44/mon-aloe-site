@@ -1,0 +1,356 @@
+---
+/**
+ * src/pages/contact.astro
+ * Page contact — Esprit Aloé
+ * Formulaire Formspree via fetch() → confirmation inline, pas de redirection
+ * Schema.org : ContactPage
+ */
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
+const schemaContact = {
+  "@context": "https://schema.org",
+  "@type": "ContactPage",
+  name: "Contactez Esprit Aloé — Distributeur Forever Living",
+  url: "https://espritaloe.fr/contact/",
+  description: "Contactez Rafael Avenard, distributeur Forever Living Products en France. Disponible 7j/7 pour vous conseiller.",
+  mainEntity: {
+    "@type": "Person",
+    name: "Rafael Avenard",
+    jobTitle: "Distributeur Forever Living Products",
+    telephone: "+33677352226",
+    email: "contact@espritaloe.fr",
+    url: "https://espritaloe.fr/contact/",
+    sameAs: ["https://www.facebook.com/RafaelAvenardDistributeurForever"],
+  },
+};
+
+const sujets = [
+  "Demande d'informations",
+  "Conseils produits",
+  "Commander un produit",
+  "Programme C9 / DX4",
+  "Devenir distributeur",
+  "Inscription à une présentation",
+  "Autre",
+];
+---
+
+<Layout
+  title="Contactez votre distributeur Forever Living France | Esprit Aloé"
+  description="Contactez Rafael Avenard, distributeur Forever Living Products en Loire-Atlantique. Disponible 7j/7 au 06 77 35 22 26 pour vous conseiller sur les produits Aloe Vera."
+  canonical="https://espritaloe.fr/contact/"
+>
+  <script type="application/ld+json" set:html={JSON.stringify(schemaContact)} slot="head" />
+
+  <Header />
+
+  <!-- En-tête — texte gauche / carte droite -->
+  <section class="bg-gradient-to-br from-aloe-50 via-cream to-sand py-16">
+    <div class="mx-auto max-w-6xl px-6 grid md:grid-cols-2 gap-12 items-center">
+
+      <!-- Gauche : texte -->
+      <div>
+        <nav class="text-xs text-aloe-400 mb-6" aria-label="Fil d'Ariane">
+          <ol class="flex items-center gap-2">
+            <li><a href="/" class="hover:text-aloe-600 transition-colors">Accueil</a></li>
+            <li>›</li>
+            <li class="text-aloe-700 font-medium">Contact</li>
+          </ol>
+        </nav>
+        <h1 class="text-5xl text-aloe-900 mb-4">Contactez-nous</h1>
+        <p class="text-lg text-aloe-600 max-w-xl leading-relaxed">
+          Une question sur un produit, une commande ou les programmes détox ?
+          Rafael est disponible <strong>7j/7</strong> pour vous répondre.
+        </p>
+        <p class="mt-5 text-sm text-aloe-500 leading-relaxed max-w-lg">
+          Basé en Loire-Atlantique, j'interviens dans toute la région Pays de la Loire :
+          <span class="font-medium text-aloe-700">Nantes, Saint-Nazaire, Donges, Savenay, La Baule-Escoublac,
+          Pornic, Ancenis, Saint-Herblain, Rezé, Châteaubriant, Pontchâteau</span>
+          et partout en France grâce à la livraison en 48–72h.
+        </p>
+      </div>
+
+      <!-- Droite : carte Google Maps -->
+      <div class="rounded-3xl overflow-hidden shadow-xl border border-aloe-100 h-72 md:h-80">
+        <iframe
+          src="https://maps.google.com/maps?q=Loire-Atlantique,France&z=9&output=embed&hl=fr"
+          width="100%"
+          height="100%"
+          style="border:0; display:block;"
+          allowfullscreen
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Distributeur Forever Living Loire-Atlantique — Esprit Aloé"
+        ></iframe>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Corps -->
+  <section class="bg-cream py-16">
+    <div class="mx-auto max-w-6xl px-6 grid md:grid-cols-2 gap-14">
+
+      <!-- ── Formulaire ──────────────────────────────────────────── -->
+      <div>
+        <h2 class="text-2xl text-aloe-800 mb-8">Envoyez-nous un message</h2>
+
+        <form id="contact-form" class="space-y-5" novalidate>
+
+          <!-- Nom -->
+          <div>
+            <label for="nom" class="block text-sm font-medium text-aloe-700 mb-1.5">
+              Votre nom <span class="text-clay">*</span>
+            </label>
+            <input
+              type="text"
+              id="nom"
+              name="nom"
+              required
+              placeholder="Prénom Nom"
+              class="w-full rounded-xl border border-aloe-200 bg-white px-4 py-3 text-sm text-aloe-800 placeholder:text-aloe-300 focus:border-aloe-400 focus:outline-none focus:ring-2 focus:ring-aloe-100 transition-colors"
+            />
+          </div>
+
+          <!-- Email -->
+          <div>
+            <label for="email" class="block text-sm font-medium text-aloe-700 mb-1.5">
+              Votre email <span class="text-clay">*</span>
+            </label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              placeholder="vous@exemple.fr"
+              class="w-full rounded-xl border border-aloe-200 bg-white px-4 py-3 text-sm text-aloe-800 placeholder:text-aloe-300 focus:border-aloe-400 focus:outline-none focus:ring-2 focus:ring-aloe-100 transition-colors"
+            />
+          </div>
+
+          <!-- Téléphone -->
+          <div>
+            <label for="telephone" class="block text-sm font-medium text-aloe-700 mb-1.5">
+              Téléphone <span class="text-aloe-400 text-xs font-normal">(optionnel)</span>
+            </label>
+            <input
+              type="tel"
+              id="telephone"
+              name="telephone"
+              placeholder="06 XX XX XX XX"
+              class="w-full rounded-xl border border-aloe-200 bg-white px-4 py-3 text-sm text-aloe-800 placeholder:text-aloe-300 focus:border-aloe-400 focus:outline-none focus:ring-2 focus:ring-aloe-100 transition-colors"
+            />
+          </div>
+
+          <!-- Sujet -->
+          <div>
+            <label for="sujet" class="block text-sm font-medium text-aloe-700 mb-1.5">
+              Objet de votre message <span class="text-clay">*</span>
+            </label>
+            <select
+              id="sujet"
+              name="sujet"
+              required
+              class="w-full rounded-xl border border-aloe-200 bg-white px-4 py-3 text-sm text-aloe-800 focus:border-aloe-400 focus:outline-none focus:ring-2 focus:ring-aloe-100 transition-colors"
+            >
+              <option value="" disabled selected>Choisir un objet…</option>
+              {sujets.map((s) => (
+                <option value={s}>{s}</option>
+              ))}
+            </select>
+          </div>
+
+          <!-- Message -->
+          <div>
+            <label for="message" class="block text-sm font-medium text-aloe-700 mb-1.5">
+              Votre message <span class="text-clay">*</span>
+            </label>
+            <textarea
+              id="message"
+              name="message"
+              required
+              rows="5"
+              placeholder="Décrivez votre besoin, vos objectifs bien-être ou votre question…"
+              class="w-full rounded-xl border border-aloe-200 bg-white px-4 py-3 text-sm text-aloe-800 placeholder:text-aloe-300 focus:border-aloe-400 focus:outline-none focus:ring-2 focus:ring-aloe-100 transition-colors resize-none"
+            ></textarea>
+          </div>
+
+          <!-- Submit -->
+          <button
+            type="submit"
+            id="submit-btn"
+            class="w-full rounded-full bg-aloe-600 px-6 py-4 text-sm font-semibold text-cream hover:bg-aloe-700 active:scale-[0.98] transition-all disabled:opacity-60 disabled:cursor-not-allowed"
+          >
+            Envoyer le message
+          </button>
+
+          <div id="form-error" class="hidden rounded-2xl bg-red-50 border border-red-200 p-4 text-center">
+            <p class="text-sm text-red-700">Une erreur est survenue. Veuillez réessayer ou nous contacter directement au 06 77 35 22 26.</p>
+          </div>
+
+          <p class="text-xs text-aloe-400 text-center">
+            Réponse garantie sous 24h · Vos données ne sont jamais revendues
+          </p>
+        </form>
+
+        <!-- ✅ Confirmation inline -->
+        <div
+          id="confirmation"
+          class="hidden mt-6 rounded-2xl bg-aloe-50 border border-aloe-200 p-8 text-center"
+          role="alert"
+          aria-live="polite"
+        >
+          <p class="text-4xl mb-4">🌿</p>
+          <p class="text-xl font-semibold text-aloe-800 mb-2">Message bien reçu !</p>
+          <p class="text-sm text-aloe-600 leading-relaxed">
+            Merci de nous avoir contactés.<br />
+            Je reviendrai vers vous dans les plus brefs délais — généralement sous 24h, souvent bien moins.
+          </p>
+          <p class="text-sm text-aloe-500 mt-4">
+            Besoin d'une réponse rapide ?
+            <a href="tel:+33677352226" class="font-semibold text-aloe-600 underline">06 77 35 22 26</a>
+          </p>
+        </div>
+      </div>
+
+      <!-- ── Coordonnées ─────────────────────────────────────────── -->
+      <div class="space-y-8">
+
+        <!-- Carte distributeur -->
+        <div class="rounded-3xl bg-aloe-800 text-cream p-8">
+          <div class="flex items-center gap-4 mb-6">
+            <div class="w-16 h-16 rounded-2xl bg-aloe-700 flex items-center justify-center text-3xl flex-shrink-0">
+              🌿
+            </div>
+            <div>
+              <p class="font-display text-xl">Rafael Avenard</p>
+              <p class="text-xs text-aloe-300 uppercase tracking-widest mt-0.5">
+                Distributeur Forever Living Products
+              </p>
+            </div>
+          </div>
+
+          <ul class="space-y-4">
+            <li class="flex items-center gap-3">
+              <span class="text-lg">📞</span>
+              <div>
+                <p class="text-xs text-aloe-400 uppercase tracking-wide">Téléphone</p>
+                <a href="tel:+33677352226" class="font-semibold hover:text-aloe-300 transition-colors">
+                  06 77 35 22 26
+                </a>
+              </div>
+            </li>
+            <li class="flex items-center gap-3">
+              <span class="text-lg">✉️</span>
+              <div>
+                <p class="text-xs text-aloe-400 uppercase tracking-wide">Email</p>
+                <a href="mailto:contact@espritaloe.fr" class="font-semibold hover:text-aloe-300 transition-colors">
+                  contact@espritaloe.fr
+                </a>
+              </div>
+            </li>
+            <li class="flex items-center gap-3">
+              <span class="text-lg">📍</span>
+              <div>
+                <p class="text-xs text-aloe-400 uppercase tracking-wide">Zone</p>
+                <p class="font-semibold">Loire-Atlantique — Pays de la Loire</p>
+              </div>
+            </li>
+            <li class="flex items-center gap-3">
+              <span class="text-lg">🕐</span>
+              <div>
+                <p class="text-xs text-aloe-400 uppercase tracking-wide">Disponibilité</p>
+                <p class="font-semibold">7j/7 — Réponse sous 24h</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Signaux de confiance -->
+        <div class="grid grid-cols-2 gap-4">
+          <div class="rounded-2xl bg-aloe-50 border border-aloe-100 p-5 text-center">
+            <p class="text-2xl font-display text-aloe-700">IASC</p>
+            <p class="text-xs text-aloe-500 mt-1">Certifié aloe vera</p>
+          </div>
+          <div class="rounded-2xl bg-aloe-50 border border-aloe-100 p-5 text-center">
+            <p class="text-2xl font-display text-aloe-700">30j</p>
+            <p class="text-xs text-aloe-500 mt-1">Satisfait ou remboursé</p>
+          </div>
+          <div class="rounded-2xl bg-aloe-50 border border-aloe-100 p-5 text-center">
+            <p class="text-2xl font-display text-aloe-700">+40</p>
+            <p class="text-xs text-aloe-500 mt-1">Ans d'expertise</p>
+          </div>
+          <div class="rounded-2xl bg-aloe-50 border border-aloe-100 p-5 text-center">
+            <p class="text-2xl font-display text-aloe-700">FR</p>
+            <p class="text-xs text-aloe-500 mt-1">Livraison France</p>
+          </div>
+        </div>
+
+        <!-- Lien produits -->
+        <div class="rounded-2xl border border-aloe-100 bg-white p-6">
+          <p class="text-sm text-aloe-700 leading-relaxed mb-4">
+            Pas encore sûr(e) du produit qui vous convient ? Explorez la gamme ou lisez
+            nos conseils bien-être avant de nous écrire.
+          </p>
+          <div class="flex flex-col gap-3">
+            <a href="/produits/" class="inline-flex items-center gap-2 text-sm font-semibold text-aloe-600 hover:text-aloe-800 transition-colors">
+              🌿 Voir tous les produits →
+            </a>
+            <a href="/blog/" class="inline-flex items-center gap-2 text-sm font-semibold text-aloe-600 hover:text-aloe-800 transition-colors">
+              📖 Conseils & articles →
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <Footer />
+</Layout>
+
+<script>
+  const FORMSPREE_URL = "https://formspree.io/f/xbdbgzgy";
+
+  const form      = document.getElementById("contact-form") as HTMLFormElement | null;
+  const btn       = document.getElementById("submit-btn") as HTMLButtonElement | null;
+  const confirm   = document.getElementById("confirmation") as HTMLElement | null;
+  const errBox    = document.getElementById("form-error") as HTMLElement | null;
+
+  form?.addEventListener("submit", async (e) => {
+    e.preventDefault();
+
+    if (!form.checkValidity()) {
+      form.reportValidity();
+      return;
+    }
+
+    if (btn) {
+      btn.disabled = true;
+      btn.textContent = "Envoi en cours…";
+    }
+    errBox?.classList.add("hidden");
+
+    try {
+      const res = await fetch(FORMSPREE_URL, {
+        method: "POST",
+        headers: { "Accept": "application/json" },
+        body: new FormData(form),
+      });
+
+      if (res.ok) {
+        form.classList.add("hidden");
+        confirm?.classList.remove("hidden");
+        confirm?.scrollIntoView({ behavior: "smooth", block: "center" });
+      } else {
+        throw new Error("Réponse serveur non OK");
+      }
+    } catch {
+      errBox?.classList.remove("hidden");
+      if (btn) {
+        btn.disabled = false;
+        btn.textContent = "Envoyer le message";
+      }
+    }
+  });
+</script>

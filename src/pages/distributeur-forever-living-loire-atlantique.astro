@@ -1,0 +1,274 @@
+---
+/**
+ * Page SEO locale — Distributeur Forever Living Loire-Atlantique
+ * Cible : "distributeur forever living Loire-Atlantique", "forever living Nantes", "aloe vera Nantes"
+ */
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { getCollection } from 'astro:content';
+
+const produits = await getCollection('produits', ({ data }) => data.disponible);
+const produitsPhares = produits
+  .filter((p) => p.data.featured)
+  .slice(0, 3);
+
+const siteUrl = 'https://espritaloe.fr';
+const pageUrl = `${siteUrl}/distributeur-forever-living-loire-atlantique/`;
+
+const schemaLocalBusiness = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "@id": pageUrl,
+  name: "Esprit Aloé — Distributeur Forever Living Loire-Atlantique",
+  description: "Distributeur indépendant Forever Living Products en Loire-Atlantique (Nantes, Saint-Nazaire, La Baule). Produits aloe vera certifiés IASC, livraison partout en France, conseils personnalisés.",
+  url: siteUrl,
+  telephone: "+33677352226",
+  email: "contact@espritaloe.fr",
+  image: `${siteUrl}/images/hero-aloe-vera.webp`,
+  priceRange: "€€",
+  areaServed: [
+    { "@type": "AdministrativeArea", name: "Loire-Atlantique" },
+    { "@type": "City", name: "Nantes" },
+    { "@type": "City", name: "Saint-Nazaire" },
+    { "@type": "City", name: "La Baule" },
+    { "@type": "Country", name: "France" },
+  ],
+  founder: {
+    "@type": "Person",
+    name: "Rafael Avenard",
+    jobTitle: "Distributeur Indépendant Forever Living Products",
+  },
+  sameAs: [
+    "https://www.facebook.com/RafaelAvenardDistributeurForever",
+    "https://maps.app.goo.gl/tBmMFpfawmBnbyzF6",
+  ],
+};
+
+const schemaFAQ = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "Comment contacter le distributeur Forever Living en Loire-Atlantique ?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Rafael Avenard est disponible au 06 77 35 22 26, 7j/7. Vous pouvez aussi commander directement sur espritaloe.fr avec livraison partout en France.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Peut-on recevoir les produits Forever Living à Nantes ?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Oui. La livraison Forever Living couvre toute la France y compris Nantes et la Loire-Atlantique. Livraison en point relais sous 48–72h ou à domicile par Chronopost J+1.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Y a-t-il un point de retrait physique pour les produits Forever en Loire-Atlantique ?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Les produits sont livrés directement par Forever Living. Rafael Avenard peut également organiser une remise en main propre en Loire-Atlantique sur rendez-vous. Contactez-le au 06 77 35 22 26 pour convenir d'un arrangement.",
+      },
+    },
+  ],
+};
+---
+
+<Layout
+  title="Distributeur Forever Living Loire-Atlantique — Nantes | Esprit Aloé"
+  description="Rafael Avenard, distributeur Forever Living en Loire-Atlantique. Produits aloe vera certifiés IASC livrés à Nantes et partout en France. Conseils gratuits 7j/7."
+  canonical={pageUrl}
+>
+  <script type="application/ld+json" set:html={JSON.stringify(schemaLocalBusiness)} slot="head" />
+  <script type="application/ld+json" set:html={JSON.stringify(schemaFAQ)} slot="head" />
+
+  <Header />
+
+  <!-- ══════════════ HERO ══════════════ -->
+  <section class="bg-gradient-to-br from-aloe-50 via-cream to-sand py-16">
+    <div class="mx-auto max-w-6xl px-6">
+      <nav class="text-xs text-aloe-400 mb-6" aria-label="Fil d'Ariane">
+        <ol class="flex items-center gap-2">
+          <li><a href="/" class="hover:text-aloe-600 transition-colors">Accueil</a></li>
+          <li>›</li>
+          <li class="text-aloe-700 font-medium">Distributeur Loire-Atlantique</li>
+        </ol>
+      </nav>
+      <div class="max-w-3xl">
+        <span class="inline-block rounded-full bg-aloe-100 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-aloe-700 mb-6">
+          Forever Living Loire-Atlantique · Nantes · 44
+        </span>
+        <h1 class="text-4xl md:text-5xl text-aloe-900 leading-tight mb-6">
+          Votre distributeur Forever Living<br />
+          <span class="italic text-aloe-500">en Loire-Atlantique</span>
+        </h1>
+        <p class="text-xl text-aloe-700 leading-relaxed mb-8">
+          Rafael Avenard, distributeur indépendant certifié Forever Living Products, vous accompagne
+          depuis la Loire-Atlantique. Commande en ligne ou conseil personnalisé par téléphone —
+          livraison rapide partout en France.
+        </p>
+        <div class="flex flex-wrap gap-4">
+          <a href="tel:+33677352226" class="rounded-full bg-aloe-600 px-7 py-3.5 text-sm font-semibold text-cream hover:bg-aloe-700 transition-colors">
+            📞 Appeler Rafael — 06 77 35 22 26
+          </a>
+          <a href="/produits/" class="rounded-full border border-aloe-300 px-7 py-3.5 text-sm font-semibold text-aloe-700 hover:bg-aloe-50 transition-colors">
+            Voir les produits
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ QUI EST RAFAEL ══════════════ -->
+  <section class="bg-cream py-20">
+    <div class="mx-auto max-w-6xl px-6 grid md:grid-cols-2 gap-12 items-center">
+      <div>
+        <span class="text-xs font-semibold uppercase tracking-widest text-aloe-500 mb-4 block">Votre interlocuteur</span>
+        <h2 class="text-3xl text-aloe-900 mb-6">Rafael Avenard,<br />distributeur Forever en Loire-Atlantique</h2>
+        <p class="text-aloe-700 leading-relaxed mb-4">
+          Basé en Loire-Atlantique, Rafael est distributeur indépendant Forever Living Products.
+          Il sélectionne, commande et conseille sur toute la gamme aloe vera : boissons, soins,
+          programmes détox C9 et DX4, compléments sportifs.
+        </p>
+        <p class="text-aloe-700 leading-relaxed mb-6">
+          Son approche : écouter votre situation, comprendre vos objectifs et vous orienter vers
+          les produits réellement adaptés — sans vous vendre ce dont vous n'avez pas besoin.
+          Disponible 7j/7 par téléphone ou e-mail.
+        </p>
+        <ul class="space-y-2 text-sm text-aloe-700">
+          <li class="flex items-center gap-2"><span class="text-aloe-500">✓</span> Distributeur certifié Forever Living Products</li>
+          <li class="flex items-center gap-2"><span class="text-aloe-500">✓</span> Conseil personnalisé gratuit avant achat</li>
+          <li class="flex items-center gap-2"><span class="text-aloe-500">✓</span> Suivi après commande inclus</li>
+          <li class="flex items-center gap-2"><span class="text-aloe-500">✓</span> Disponible 7j/7 au 06 77 35 22 26</li>
+        </ul>
+      </div>
+      <div class="rounded-3xl bg-aloe-800 p-10 text-cream">
+        <div class="w-20 h-20 rounded-2xl bg-aloe-600 flex items-center justify-center text-cream font-bold text-2xl mb-6">RA</div>
+        <p class="text-2xl font-display mb-2">Rafael Avenard</p>
+        <p class="text-aloe-300 text-sm mb-6">Entrepreneur Indépendant<br />Partenaire de la Société Forever Living Products</p>
+        <div class="space-y-3 text-sm">
+          <a href="tel:+33677352226" class="flex items-center gap-3 text-aloe-200 hover:text-cream transition-colors">
+            <span>📞</span> 06 77 35 22 26
+          </a>
+          <a href="mailto:contact@espritaloe.fr" class="flex items-center gap-3 text-aloe-200 hover:text-cream transition-colors">
+            <span>✉️</span> contact@espritaloe.fr
+          </a>
+          <a href="/contact/" class="flex items-center gap-3 text-aloe-200 hover:text-cream transition-colors">
+            <span>💬</span> Formulaire de contact
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ PRODUITS PHARES ══════════════ -->
+  <section class="bg-sand/50 py-20">
+    <div class="mx-auto max-w-6xl px-6">
+      <div class="text-center mb-12">
+        <span class="text-xs font-semibold uppercase tracking-widest text-aloe-500">Les plus commandés en Loire-Atlantique</span>
+        <h2 class="text-3xl text-aloe-900 mt-2">Produits phares Forever Living</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-8">
+        {produitsPhares.map((p) => (
+          <div class="rounded-3xl bg-white border border-aloe-100 overflow-hidden">
+            <div class="aspect-square bg-aloe-50 flex items-center justify-center p-6">
+              {p.data.image ? (
+                <img src={p.data.image} alt={p.data.name} width="300" height="300" loading="lazy" class="w-full h-full object-contain" />
+              ) : (
+                <span class="text-6xl">🌿</span>
+              )}
+            </div>
+            <div class="p-6">
+              <h3 class="text-base font-semibold text-aloe-800 mb-2 leading-snug">{p.data.name}</h3>
+              <p class="text-lg font-display text-aloe-700 mb-4">{p.data.price.toFixed(2)} €</p>
+              <div class="flex flex-col gap-2">
+                {p.data.lienCommande && (
+                  <a href={p.data.lienCommande} target="_blank" rel="noopener noreferrer" class="block text-center rounded-full bg-aloe-600 px-4 py-2.5 text-sm font-semibold text-cream hover:bg-aloe-700 transition-colors">
+                    Commander →
+                  </a>
+                )}
+                <a href={`/produits/${p.data.slug}/`} class="block text-center text-xs text-aloe-500 hover:text-aloe-700 transition-colors">
+                  Voir la fiche produit
+                </a>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+      <div class="text-center mt-10">
+        <a href="/produits/" class="rounded-full border border-aloe-300 px-8 py-3.5 text-sm font-semibold text-aloe-700 hover:bg-aloe-50 transition-colors">
+          Voir toute la gamme (25 produits) →
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ ZONE GÉOGRAPHIQUE ══════════════ -->
+  <section class="bg-aloe-800 text-cream py-16">
+    <div class="mx-auto max-w-6xl px-6">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div>
+          <h2 class="text-3xl text-cream mb-6">Livraison partout en France,<br />conseil depuis la Loire-Atlantique</h2>
+          <p class="text-aloe-200 leading-relaxed mb-6">
+            Les produits Forever Living sont livrés directement depuis les entrepôts Forever en France.
+            Que vous soyez à Nantes, Saint-Nazaire, La Baule, Pornic ou ailleurs en France,
+            la livraison est identique : 48 à 72h en point relais, J+1 à domicile par Chronopost.
+          </p>
+          <p class="text-aloe-200 leading-relaxed">
+            Le conseil de Rafael, lui, est local : il connaît ses clients, suit leur progression
+            et reste disponible après la première commande.
+          </p>
+        </div>
+        <div class="grid grid-cols-2 gap-4">
+          {["Nantes", "Saint-Nazaire", "La Baule", "Pornic", "Ancenis", "Châteaubriant", "Toute la France", "DOM-TOM"].map((ville) => (
+            <div class="rounded-xl bg-aloe-700/50 px-4 py-3 text-sm text-aloe-200 text-center">
+              📍 {ville}
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ FAQ ══════════════ -->
+  <section class="bg-cream py-16">
+    <div class="mx-auto max-w-3xl px-6">
+      <h2 class="text-3xl text-aloe-900 text-center mb-10">Questions fréquentes</h2>
+      <dl class="space-y-4">
+        <div class="rounded-2xl bg-white border border-aloe-100 p-6">
+          <dt class="font-semibold text-aloe-800 mb-2">Comment contacter le distributeur Forever Living en Loire-Atlantique ?</dt>
+          <dd class="text-sm text-aloe-600 leading-relaxed">Rafael Avenard est disponible au <a href="tel:+33677352226" class="text-aloe-600 underline">06 77 35 22 26</a>, 7j/7. Vous pouvez aussi passer commande directement sur ce site avec livraison rapide partout en France.</dd>
+        </div>
+        <div class="rounded-2xl bg-white border border-aloe-100 p-6">
+          <dt class="font-semibold text-aloe-800 mb-2">Peut-on recevoir les produits Forever Living à Nantes ?</dt>
+          <dd class="text-sm text-aloe-600 leading-relaxed">Oui. La livraison couvre toute la France, Nantes et la Loire-Atlantique inclus. Livraison en point relais sous 48–72h ou à domicile par Chronopost J+1 (commande avant 12h45).</dd>
+        </div>
+        <div class="rounded-2xl bg-white border border-aloe-100 p-6">
+          <dt class="font-semibold text-aloe-800 mb-2">Y a-t-il un point de retrait en Loire-Atlantique ?</dt>
+          <dd class="text-sm text-aloe-600 leading-relaxed">Les produits sont livrés directement par Forever Living. Une remise en main propre peut être organisée en Loire-Atlantique sur rendez-vous. Contactez Rafael au <a href="tel:+33677352226" class="text-aloe-600 underline">06 77 35 22 26</a> pour convenir d'un arrangement.</dd>
+        </div>
+      </dl>
+    </div>
+  </section>
+
+  <!-- ══════════════ CTA FINAL ══════════════ -->
+  <section class="bg-gradient-to-br from-aloe-50 to-cream py-14">
+    <div class="mx-auto max-w-3xl px-6 text-center">
+      <h2 class="text-3xl text-aloe-900 mb-4">Prêt à commander vos produits Forever ?</h2>
+      <p class="text-aloe-600 mb-8">Rafael vous répond dans la journée. Conseil gratuit, sans engagement.</p>
+      <div class="flex flex-wrap items-center justify-center gap-4">
+        <a href="tel:+33677352226" class="rounded-full bg-aloe-600 px-8 py-4 text-sm font-semibold text-cream hover:bg-aloe-700 transition-colors">
+          📞 06 77 35 22 26
+        </a>
+        <a href="/produits/" class="rounded-full border border-aloe-300 px-8 py-4 text-sm font-semibold text-aloe-700 hover:bg-aloe-50 transition-colors">
+          Voir les produits
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <Footer />
+</Layout>

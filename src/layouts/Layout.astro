@@ -1,0 +1,113 @@
+---
+/**
+ * src/layouts/Layout.astro
+ * Layout principal — Esprit Aloé
+ * Polices auto-hébergées via fontsource (suppression Google Fonts)
+ */
+import '../styles/global.css';
+import '@fontsource/fraunces/400.css';
+import '@fontsource/fraunces/500.css';
+import '@fontsource/fraunces/600.css';
+import '@fontsource/mulish/400.css';
+import '@fontsource/mulish/500.css';
+import '@fontsource/mulish/600.css';
+import '@fontsource/mulish/700.css';
+
+export interface Props {
+  title?: string;
+  description?: string;
+  image?: string;
+  canonical?: string;
+  noindex?: boolean;
+}
+
+const {
+  title = "Esprit Aloé — Produits Aloe Vera Forever Living France",
+  description = "Découvrez et commandez les produits Aloe Vera Forever Living en France. Boissons, soins beauté, programmes détox C9 & DX4. Distributeur certifié, livraison 48–72h. Conseils 7j/7.",
+  image = "/og-image.jpg",
+  noindex = false,
+} = Astro.props;
+
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+const ogImage = new URL(image, Astro.site);
+
+const schemaGraph = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": `${Astro.site}#website`,
+      url: Astro.site,
+      name: "Esprit Aloé",
+      publisher: { "@id": `${Astro.site}#organization` },
+      inLanguage: "fr-FR",
+    },
+    {
+      "@type": "Organization",
+      "@id": `${Astro.site}#organization`,
+      name: "Esprit Aloé",
+      url: Astro.site,
+      contactPoint: {
+        "@type": "ContactPoint",
+        telephone: "+33677352226",
+        contactType: "customer service",
+        availableLanguage: "French",
+      },
+      sameAs: [
+        "https://www.facebook.com/RafaelAvenardDistributeurForever",
+      ],
+    },
+  ],
+};
+---
+
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+
+    <!-- SEO -->
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonicalURL} />
+    {noindex && <meta name="robots" content="noindex, nofollow" />}
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:url" content={canonicalURL} />
+    <meta property="og:locale" content="fr_FR" />
+    <meta property="og:site_name" content="Esprit Aloé" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImage} />
+
+    <!-- Schema.org Organisation + WebSite (toutes les pages) -->
+    <script type="application/ld+json" set:html={JSON.stringify(schemaGraph)} />
+
+    <!-- Slot pour JSON-LD spécifiques aux pages (FAQPage, Product, Article…) -->
+    <slot name="head" />
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BNF9DV82DN"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-BNF9DV82DN');
+    </script>
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>
