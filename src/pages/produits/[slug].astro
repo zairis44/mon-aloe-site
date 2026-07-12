@@ -53,6 +53,12 @@ const catLabel = categoryLabels[d.category] ?? d.category;
 const catIcon  = categoryIcons[d.category] ?? '🌿';
 
 // ── Schema.org Product ──────────────────────────────────────────────────────
+// Avis clients : note moyenne calculée depuis le frontmatter (si avis présents)
+const avisProduit = d.avis ?? [];
+const noteMoyenne = avisProduit.length
+  ? Math.round((avisProduit.reduce((s: number, a: any) => s + a.note, 0) / avisProduit.length) * 10) / 10
+  : 0;
+
 const schemaProduct = {
   "@context": "https://schema.org",
   "@type": "Product",
@@ -75,6 +81,32 @@ const schemaProduct = {
       name: "Esprit Aloé",
     },
   },
+  // Étoiles dans les SERP : uniquement si de vrais avis existent en frontmatter
+  ...(avisProduit.length
+    ? {
+        aggregateRating: {
+          "@type": "AggregateRating",
+          ratingValue: noteMoyenne,
+          reviewCount: avisProduit.length,
+          bestRating: 5,
+          worstRating: 1,
+        },
+        review: avisProduit.map((a: any) => ({
+          "@type": "Review",
+          reviewRating: {
+            "@type": "Rating",
+            ratingValue: a.note,
+            bestRating: 5,
+            worstRating: 1,
+          },
+          author: {
+            "@type": "Person",
+            name: a.auteur,
+          },
+          reviewBody: a.texte,
+        })),
+      }
+    : {}),
 };
 
 // ── Schema.org FAQPage (si FAQ définie) ────────────────────────────────────
