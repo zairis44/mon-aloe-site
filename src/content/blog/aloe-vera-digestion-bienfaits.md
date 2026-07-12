@@ -3,7 +3,7 @@ title: "Aloe vera et digestion : 5 effets concrets sur votre confort intestinal"
 seoTitle: "Aloe vera digestion : 5 bienfaits prouvés"
 description: "Ballonnements, transit difficile, inconfort après les repas : comment l'aloe vera Forever agit sur votre digestion et quel produit choisir."
 pubDate: 2026-03-26
-updatedDate: 2026-06-28
+updatedDate: 2026-07-12
 author: "Rafael Avenard"
 category: "bien-etre"
 tags:
@@ -63,7 +63,7 @@ L'effet apaisant sur les parois intestinales limite les fermentations excessives
 
 L'usage de l'aloe vera pour le confort digestif ne repose pas seulement sur la tradition. Plusieurs travaux scientifiques se sont penchés sur son intérêt pour le système digestif.
 
-Une étude publiée dans le *Journal of Research in Medical Sciences* a observé une amélioration des symptômes chez des personnes atteintes du syndrome de l'intestin irritable après une prise régulière de gel d'aloe vera. D'autres recherches s'intéressent à l'acemannane, ce polysaccharide qui forme une barrière protectrice sur la muqueuse et soutient la flore intestinale.
+Une [étude publiée dans le *Journal of Research in Medical Sciences*](https://pmc.ncbi.nlm.nih.gov/articles/PMC3872617/) a observé une amélioration des symptômes chez des personnes atteintes du syndrome de l'intestin irritable après une prise régulière de gel d'aloe vera. Plus largement, une [méta-analyse publiée en 2018](https://pubmed.ncbi.nlm.nih.gov/30153721/), regroupant plusieurs essais cliniques contrôlés, conclut que l'aloe vera s'est montré efficace et bien toléré à court terme sur les symptômes de l'intestin irritable. D'autres recherches s'intéressent à l'acemannane, ce polysaccharide qui forme une barrière protectrice sur la muqueuse et soutient la flore intestinale.
 
 La science reste prudente : les effets varient d'une personne à l'autre, et l'aloe vera ne remplace jamais un traitement médical. Mais le faisceau d'indices converge vers un soutien réel du confort digestif chez beaucoup d'utilisateurs. Mon expérience de huit ans avec ces produits, et celle des personnes que j'accompagne, va dans ce sens.
 
