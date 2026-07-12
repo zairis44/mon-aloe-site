@@ -1,0 +1,34 @@
+{
+  "redirects": [
+    {
+      "source": "/produits/nutrition",
+      "destination": "/produits/",
+      "permanent": true
+    },
+    {
+      "source": "/produits/nutrition/",
+      "destination": "/produits/",
+      "permanent": true
+    },
+    {
+      "source": "/produits/dentifrice-forever-bright-toothgel",
+      "destination": "/produits/forever-bright-toothgel/",
+      "permanent": true
+    },
+    {
+      "source": "/produits/dentifrice-forever-bright-toothgel/",
+      "destination": "/produits/forever-bright-toothgel/",
+      "permanent": true
+    },
+    {
+      "source": "/produits/programme-detox",
+      "destination": "/produits/programmes-detox/",
+      "permanent": true
+    },
+    {
+      "source": "/produits/programme-detox/",
+      "destination": "/produits/programmes-detox/",
+      "permanent": true
+    }
+  ]
+}
