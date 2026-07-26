@@ -34,7 +34,7 @@ faq:
   - question: "Les produits sont-ils remboursables ?"
     reponse: "Forever Living propose une garantie satisfait ou remboursé de 30 jours."
   - question: "Faut-il devenir distributeur pour acheter ?"
-    reponse: "Non. Vous pouvez acheter en tant que client sans aucun engagement ni abonnement."
+    reponse: "Non. Vous pouvez acheter en tant que client sans aucun engagement ni abonnement. Si la distribution vous intéresse en revanche, tout est détaillé sur la page devenir distributeur Forever Living."
   - question: "Où acheter les produits Forever Living en France ?"
     reponse: "Via la boutique en ligne d'un distributeur agréé, avec livraison 48–72h, ou en contactant Rafael directement au 06 77 35 22 26. Le site officiel Forever ne vend pas en direct."
 draft: false
@@ -84,7 +84,7 @@ En plusieurs années de distribution en Loire-Atlantique, j'ai accompagné des d
 
 **Les effets ne sont pas immédiats.** Certaines personnes arrêtent au bout de deux semaines en n'ayant rien ressenti. L'aloe vera n'est pas un médicament — c'est un complément naturel dont les effets se construisent avec la régularité. Le minimum pour évaluer honnêtement un produit est de 4 semaines consécutives.
 
-**Le modèle de distribution MLM** crée de la méfiance chez certains. C'est compréhensible. Il faut distinguer la qualité du produit du modèle de distribution. Les certifications IASC, Kosher et Halal concernent les produits, pas le modèle commercial.
+**Le modèle de distribution MLM** crée de la méfiance chez certains. C'est compréhensible. Il faut distinguer la qualité du produit du modèle de distribution. Les certifications IASC, Kosher et Halal concernent les produits, pas le modèle commercial. Si le fonctionnement du réseau vous intrigue, j'explique [pourquoi Forever n'est pas une franchise](/blog/forever-living-franchise-ou-vente-directe/) dans un article dédié.
 
 ## Comment distinguer un vrai avis d'un faux
 
@@ -110,7 +110,7 @@ Si vous souhaitez un résultat plus rapide et structuré, le **[Programme C9](/p
 
 **Les produits sont-ils remboursables ?** Forever Living propose une garantie satisfait ou remboursé de 30 jours.
 
-**Faut-il devenir distributeur pour acheter ?** Non. Vous pouvez acheter en tant que client sans aucun engagement ni abonnement.
+**Faut-il devenir distributeur pour acheter ?** Non. Vous pouvez acheter en tant que client sans aucun engagement ni abonnement. Si la distribution vous intéresse en revanche, tout est détaillé sur la page [devenir distributeur Forever Living](/devenir-distributeur-forever-living/).
 
 **Où acheter les produits Forever Living en France ?** Via la boutique officielle ci-dessous avec livraison 48–72h, ou en contactant Rafael directement au 06 77 35 22 26.
 
