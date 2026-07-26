@@ -1,6 +1,6 @@
 ---
 title: "Forever Living avis : ce que les clients français disent vraiment"
-seoTitle: "Forever Living avis : mon retour honnête (2026) | Esprit Aloé"
+seoTitle: "Forever Living avis : mon retour honnête (2026)"
 description: "Forever Living, fiable ou arnaque ? Avis clients français, composition, certification IASC et retours concrets après plusieurs années de distribution."
 pubDate: 2026-05-31
 updatedDate: 2026-07-26

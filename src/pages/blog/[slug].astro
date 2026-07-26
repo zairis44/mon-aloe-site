@@ -117,8 +117,10 @@ const readingTime = Math.max(1, Math.ceil((article.body?.split(' ').length ?? 0)
             <div class="w-10 h-10 rounded-xl bg-aloe-600 flex items-center justify-center text-cream font-bold text-sm flex-shrink-0">RA</div>
             <div class="text-left">
               <p class="text-sm font-semibold text-cream">{author}</p>
-              <time class="text-xs text-aloe-400" datetime={pubDate.toISOString()}>
-                {pubDate.toLocaleDateString('fr-FR', { day: 'numeric', month: 'long', year: 'numeric' })}
+              <time class="text-xs text-aloe-400" datetime={(updatedDate ?? pubDate).toISOString()}>
+                {updatedDate
+                  ? `Mis à jour le ${updatedDate.toLocaleDateString('fr-FR', { day: 'numeric', month: 'long', year: 'numeric' })}`
+                  : pubDate.toLocaleDateString('fr-FR', { day: 'numeric', month: 'long', year: 'numeric' })}
               </time>
             </div>
           </div>
