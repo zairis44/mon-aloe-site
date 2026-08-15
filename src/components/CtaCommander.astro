@@ -1,0 +1,131 @@
+---
+/**
+ * src/components/CtaCommander.astro
+ * Bouton "Commander" universel — s'ouvre sur 3 méthodes :
+ * 1. Lien direct Forever (si lienCommande fourni)
+ * 2. Appel téléphonique
+ * 3. Formulaire de contact
+ * Zéro JS — natif <details>/<summary>.
+ */
+export interface Props {
+  lienCommande?: string;
+  fullWidth?: boolean;
+  size?: 'md' | 'sm';
+  label?: string;
+  telephone?: string;
+  telephoneAffiche?: string;
+  contactHref?: string;
+}
+
+const {
+  lienCommande,
+  fullWidth = false,
+  size = 'md',
+  label = 'Commander',
+  telephone = '+33677352226',
+  telephoneAffiche = '06 77 35 22 26',
+  contactHref = '/contact/',
+} = Astro.props;
+---
+
+<details class:list={['cta-commander', fullWidth && 'cta-commander--full', size === 'sm' && 'cta-commander--sm']}>
+  <summary class="cta-commander__resume">
+    <span>{label}</span>
+    <span class="cta-commander__chevron">▾</span>
+  </summary>
+  <div class="cta-commander__options">
+    {lienCommande && (
+      <a href={lienCommande} target="_blank" rel="noopener noreferrer" class="cta-commander__option cta-commander__option--primary">
+        🛒 Commander sur Forever
+      </a>
+    )}
+    <a href={`tel:${telephone}`} class="cta-commander__option">
+      📞 Appeler — {telephoneAffiche}
+    </a>
+    <a href={contactHref} class="cta-commander__option">
+      ✉️ Formulaire de contact
+    </a>
+  </div>
+</details>
+
+<style>
+  .cta-commander__resume {
+    list-style: none;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;
+    background: var(--color-aloe-600, #4d7a4d);
+    color: var(--color-cream, #fdfbf7);
+    font-weight: 600;
+    font-size: 0.9rem;
+    padding: 0.9rem 1.75rem;
+    border-radius: 999px;
+    transition: background-color 0.2s;
+  }
+  .cta-commander__resume:hover {
+    background: var(--color-aloe-700, #33502e);
+  }
+  .cta-commander__resume::-webkit-details-marker { display: none; }
+
+  .cta-commander--full .cta-commander__resume {
+    display: flex;
+    width: 100%;
+  }
+
+  .cta-commander--sm .cta-commander__resume {
+    font-size: 0.78rem;
+    padding: 0.55rem 1rem;
+  }
+
+  .cta-commander__chevron {
+    font-size: 0.65rem;
+    transition: transform 0.2s;
+  }
+  .cta-commander[open] .cta-commander__chevron {
+    transform: rotate(180deg);
+  }
+
+  .cta-commander__options {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    margin-top: 0.5rem;
+  }
+
+  .cta-commander__option {
+    display: block;
+    text-align: center;
+    padding: 0.7rem 1rem;
+    border-radius: 0.65rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--color-aloe-700, #33502e);
+    background: var(--color-aloe-50, #f2f7f2);
+  }
+
+  .cta-commander__option--primary {
+    background: var(--color-aloe-600, #4d7a4d);
+    color: var(--color-cream, #fdfbf7);
+  }
+
+  .cta-commander--sm .cta-commander__option {
+    font-size: 0.72rem;
+    padding: 0.55rem 0.8rem;
+  }
+</style>
+
+<script>
+  // Fait défiler la page pour révéler les options dès l'ouverture,
+  // utile quand le bouton est dans une barre fixe (ex : CTA mobile bas de page).
+  document.querySelectorAll('.cta-commander').forEach((details) => {
+    details.addEventListener('toggle', () => {
+      if ((details as HTMLDetailsElement).open) {
+        const options = details.querySelector('.cta-commander__options');
+        options?.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      }
+    });
+  });
+</script>

@@ -454,20 +454,36 @@ const nbMesures = [
   <Footer />
 
   <!-- ══════════════════════════════════════════════
-       CTA STICKY — achat rapide, visible en permanence
+       CTA STICKY — achat rapide, 3 méthodes de commande
   ══════════════════════════════════════════════ -->
   {produitC9 && (
     <div class="cta-sticky">
-      <a href={`/produits/${slugProduitLie}/`} class="cta-sticky__lien">
-        {produitC9.data.image && (
-          <img src={produitC9.data.image} alt={produitC9.data.name} class="cta-sticky__image" />
-        )}
-        <div class="cta-sticky__texte">
-          <span class="cta-sticky__nom">{produitC9.data.name}</span>
-          <span class="cta-sticky__prix">{produitC9.data.price.toFixed(2)} €</span>
+      <details class="cta-sticky__details">
+        <summary class="cta-sticky__resume">
+          {produitC9.data.image && (
+            <img src={produitC9.data.image} alt={produitC9.data.name} class="cta-sticky__image" />
+          )}
+          <div class="cta-sticky__texte">
+            <span class="cta-sticky__nom">{produitC9.data.name}</span>
+            <span class="cta-sticky__prix">{produitC9.data.price.toFixed(2)} €</span>
+          </div>
+          <span class="cta-sticky__bouton">Commander <span class="cta-sticky__chevron">▾</span></span>
+        </summary>
+
+        <div class="cta-sticky__options">
+          {produitC9.data.lienCommande && (
+            <a href={produitC9.data.lienCommande} target="_blank" rel="noopener noreferrer" class="cta-sticky__option cta-sticky__option--primary">
+              🛒 Commander directement sur Forever
+            </a>
+          )}
+          <a href="tel:+33677352226" class="cta-sticky__option">
+            📞 Appeler Rafael — 06 77 35 22 26
+          </a>
+          <a href="/contact/" class="cta-sticky__option">
+            ✉️ Passer par le formulaire de contact
+          </a>
         </div>
-        <span class="cta-sticky__bouton">Commander</span>
-      </a>
+      </details>
     </div>
   )}
 </Layout>
@@ -499,7 +515,7 @@ const nbMesures = [
     border-color: #7A4FA0;
   }
 
-  /* ── CTA sticky achat rapide ── */
+  /* ── CTA sticky achat rapide (menu 3 méthodes) ── */
   .cta-sticky {
     position: fixed;
     bottom: 0;
@@ -511,15 +527,22 @@ const nbMesures = [
     box-shadow: 0 -8px 24px rgba(0, 0, 0, 0.08);
   }
 
-  .cta-sticky__lien {
+  .cta-sticky__details {
+    max-width: 56rem;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  /* Cache le triangle par défaut du <summary> */
+  .cta-sticky__resume {
+    list-style: none;
     display: flex;
     align-items: center;
     gap: 0.85rem;
-    max-width: 56rem;
-    margin: 0 auto;
     padding: 0.6rem 1rem;
-    text-decoration: none;
+    cursor: pointer;
   }
+  .cta-sticky__resume::-webkit-details-marker { display: none; }
 
   .cta-sticky__image {
     width: 42px;
@@ -554,6 +577,9 @@ const nbMesures = [
 
   .cta-sticky__bouton {
     flex-shrink: 0;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
     background: #7A4FA0;
     color: var(--color-cream, #fdfbf7);
     font-size: 0.85rem;
@@ -561,6 +587,47 @@ const nbMesures = [
     padding: 0.6rem 1.1rem;
     border-radius: 999px;
     white-space: nowrap;
+  }
+
+  .cta-sticky__chevron {
+    font-size: 0.7rem;
+    transition: transform 0.2s;
+  }
+  .cta-sticky__details[open] .cta-sticky__chevron {
+    transform: rotate(180deg);
+  }
+
+  .cta-sticky__options {
+    position: absolute;
+    bottom: 100%;
+    left: 1rem;
+    right: 1rem;
+    background: white;
+    border: 1px solid var(--color-aloe-100, #e3ede3);
+    border-radius: 1rem;
+    padding: 0.6rem;
+    margin-bottom: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    box-shadow: 0 -8px 24px rgba(0, 0, 0, 0.1);
+  }
+
+  .cta-sticky__option {
+    display: block;
+    padding: 0.75rem 1rem;
+    border-radius: 0.65rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--color-aloe-700, #33502e);
+    background: var(--color-aloe-50, #f2f7f2);
+    text-align: center;
+  }
+
+  .cta-sticky__option--primary {
+    background: #7A4FA0;
+    color: var(--color-cream, #fdfbf7);
   }
 
   /* Laisse de la place en bas de page pour ne rien cacher derrière la barre */

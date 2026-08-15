@@ -9,6 +9,7 @@ import { getCollection, render } from 'astro:content';
 import Layout from '../../layouts/Layout.astro';
 import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
+import CtaCommander from '../../components/CtaCommander.astro';
 
 export async function getStaticPaths() {
   const produits = await getCollection('produits');
@@ -217,16 +218,7 @@ const seoDescription = d.seoDescription ?? d.description;
           <h1 class="text-3xl text-aloe-900 mb-3 leading-tight">{d.name}</h1>
           <p class="text-aloe-600 leading-relaxed mb-4">{d.description}</p>
           <p class="text-3xl font-display text-aloe-700 mb-6">{d.price.toFixed(2)} €</p>
-          {d.lienCommande && (
-            <a
-              href={d.lienCommande}
-              target="_blank"
-              rel="noopener noreferrer"
-              class="block w-full text-center rounded-full bg-aloe-600 px-6 py-4 text-base font-semibold text-cream hover:bg-aloe-700 transition-colors mb-3"
-            >
-              Commander ce produit →
-            </a>
-          )}
+          <CtaCommander lienCommande={d.lienCommande} fullWidth label="Commander ce produit" />
         </div>
 
         <!-- Contenu Markdown de la fiche -->
@@ -321,30 +313,7 @@ const seoDescription = d.seoDescription ?? d.description;
             <p class="text-xs text-aloe-400 mt-1">Livraison offerte dès 150 €</p>
           </div>
 
-          {d.lienCommande ? (
-            <a
-              href={d.lienCommande}
-              target="_blank"
-              rel="noopener noreferrer"
-              class="block w-full text-center rounded-full bg-aloe-600 px-6 py-4 text-sm font-semibold text-cream hover:bg-aloe-700 transition-colors mb-3"
-            >
-              Commander ce produit →
-            </a>
-          ) : (
-            <a
-              href="/contact/"
-              class="block w-full text-center rounded-full bg-aloe-600 px-6 py-4 text-sm font-semibold text-cream hover:bg-aloe-700 transition-colors mb-3"
-            >
-              Commander par téléphone
-            </a>
-          )}
-
-          <a
-            href="tel:+33677352226"
-            class="block w-full text-center rounded-full border border-aloe-300 px-6 py-3.5 text-sm font-semibold text-aloe-700 hover:bg-aloe-50 transition-colors"
-          >
-            📞 06 77 35 22 26
-          </a>
+          <CtaCommander lienCommande={d.lienCommande} fullWidth label="Commander ce produit" />
         </div>
 
         <!-- Signaux de confiance -->
@@ -395,23 +364,7 @@ const seoDescription = d.seoDescription ?? d.description;
         <p class="text-xs text-aloe-500 leading-none mb-0.5 truncate">{d.name}</p>
         <p class="text-lg font-display text-aloe-700 leading-none">{d.price.toFixed(2)} €</p>
       </div>
-      {d.lienCommande ? (
-        <a
-          href={d.lienCommande}
-          target="_blank"
-          rel="noopener noreferrer"
-          class="flex-shrink-0 rounded-full bg-aloe-600 px-5 py-3 text-sm font-semibold text-cream hover:bg-aloe-700 transition-colors"
-        >
-          Commander →
-        </a>
-      ) : (
-        <a
-          href="tel:+33677352226"
-          class="flex-shrink-0 rounded-full bg-aloe-600 px-5 py-3 text-sm font-semibold text-cream hover:bg-aloe-700 transition-colors"
-        >
-          📞 Appeler
-        </a>
-      )}
+      <CtaCommander lienCommande={d.lienCommande} size="sm" label="Commander" />
     </div>
     <div class="flex items-center justify-center gap-4 px-4 pb-2 border-t border-aloe-50">
       <span class="text-[10px] text-aloe-400">✓ Certifié IASC</span>
@@ -443,14 +396,7 @@ const seoDescription = d.seoDescription ?? d.description;
           </div>
           {d.lienCommande && (
             <div class="text-center">
-              <a
-                href={d.lienCommande}
-                target="_blank"
-                rel="noopener noreferrer"
-                class="inline-flex items-center gap-2 rounded-full bg-aloe-600 px-8 py-4 text-sm font-semibold text-cream hover:bg-aloe-700 transition-colors"
-              >
-                Commander {d.name} →
-              </a>
+              <CtaCommander lienCommande={d.lienCommande} label={`Commander ${d.name}`} />
               <p class="text-xs text-aloe-400 mt-3">✓ Satisfait ou remboursé 30 jours · ✓ Livraison 48–72h</p>
             </div>
           )}
