@@ -1,0 +1,570 @@
+---
+/**
+ * src/pages/mon-journal-c9.astro
+ * Journal de bord personnel — cure C9 suivie en direct par Rafael
+ * Objectif SEO : E-E-A-T (expérience vécue), longue traîne "avis C9 Forever"
+ * Objectif conversion : preuve sociale authentique → fiches produit C9
+ * Schema.org : BlogPosting + BreadcrumbList
+ */
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { getCollection, render } from 'astro:content';
+
+const tousLesJournaux = await getCollection('journal');
+const entry = tousLesJournaux.find((e) => e.data.slug === 'mon-journal-c9');
+
+if (!entry) {
+  throw new Error("Entrée introuvable : aucun fichier dans src/content/journal/ n'a slug: \"mon-journal-c9\"");
+}
+
+const { Content } = await render(entry);
+const d = entry.data;
+
+const TOTAL_JOURS = 9;
+const jourActuel = d.jours.length; // nombre de jours déjà remplis
+const estTermine = d.statut === 'termine';
+const numerosJours = Array.from({ length: TOTAL_JOURS }, (_, i) => i + 1);
+
+const pageUrl = 'https://espritaloe.fr/mon-journal-c9/';
+const imageCouverture = d.imageCouverture ?? '/og-image.jpg';
+
+const seoTitle = d.seoTitle ?? `${d.titre} | Esprit Aloé`;
+const seoDescription = d.seoDescription ??
+  "Mon ressenti, jour après jour, pendant les 9 jours du programme C9 Forever — sans filtre, comme un vrai journal.";
+
+const schemaArticle = {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "@id": pageUrl,
+  headline: d.titre,
+  description: seoDescription,
+  author: {
+    "@type": "Person",
+    name: "Rafael Avenard",
+    jobTitle: "Distributeur Indépendant Forever Living Products",
+    url: "https://espritaloe.fr/a-propos/",
+  },
+  datePublished: d.dateDebut.toISOString(),
+  dateModified: new Date().toISOString(),
+  image: `https://espritaloe.fr${imageCouverture}`,
+  mainEntityOfPage: pageUrl,
+  publisher: {
+    "@type": "Organization",
+    name: "Esprit Aloé",
+    url: "https://espritaloe.fr",
+  },
+};
+
+const schemaBreadcrumb = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Accueil", item: "https://espritaloe.fr/" },
+    { "@type": "ListItem", position: 2, name: "Blog", item: "https://espritaloe.fr/blog/" },
+    { "@type": "ListItem", position: 3, name: d.titre, item: pageUrl },
+  ],
+};
+
+const labelProgramme = d.programme === 'vanille-peche' ? 'Vanille-Pêche' : 'Chocolat-Pêche';
+const slugProduitLie = d.programme === 'vanille-peche'
+  ? 'programme-c9-forever-vanille-peche'
+  : 'programme-c9-forever-chocolat-peche';
+
+// Produit lié — récupéré directement depuis la collection produits
+// (même image et prix que la fiche produit, pas de nouveau fichier à gérer)
+const tousLesProduits = await getCollection('produits');
+const produitC9 = tousLesProduits.find((p) => p.data.slug === slugProduitLie);
+
+const mesures = d.mesurationsDepart;
+const nbMesures = [
+  mesures.poids, mesures.tourPoitrine, mesures.tourNombril, mesures.tourTaille,
+  mesures.tourHanches, mesures.tourCuisse, mesures.tourBras,
+].filter((v) => v != null).length;
+---
+
+<Layout
+  title={seoTitle}
+  description={seoDescription}
+  image={imageCouverture}
+  canonical={pageUrl}
+>
+  <script type="application/ld+json" set:html={JSON.stringify(schemaArticle)} slot="head" />
+  <script type="application/ld+json" set:html={JSON.stringify(schemaBreadcrumb)} slot="head" />
+
+  <Header />
+
+  <!-- ══════════════════════════════════════════════
+       EN-TÊTE
+  ══════════════════════════════════════════════ -->
+  <header class="bg-gradient-to-b from-[#4E2E6E] to-[#3B2354] py-16">
+    <div class="mx-auto max-w-3xl px-6 text-center">
+      <nav class="text-xs text-aloe-400 mb-8" aria-label="Fil d'Ariane">
+        <ol class="flex items-center justify-center gap-2">
+          <li><a href="/" class="hover:text-aloe-200 transition-colors">Accueil</a></li>
+          <li class="text-aloe-600">›</li>
+          <li><a href="/blog/" class="hover:text-aloe-200 transition-colors">Blog</a></li>
+          <li class="text-aloe-600">›</li>
+          <li class="text-aloe-300">Mon journal C9</li>
+        </ol>
+      </nav>
+
+      <span class:list={[
+        "inline-flex items-center gap-2 rounded-full px-4 py-1.5 text-xs font-semibold uppercase tracking-widest mb-6",
+        estTermine ? "bg-aloe-700 text-aloe-200" : "bg-clay text-cream"
+      ]}>
+        {estTermine ? "✓ Cure terminée" : "🔴 En cours"} — Jour {jourActuel}/{TOTAL_JOURS}
+      </span>
+
+      <h1 class="text-3xl md:text-4xl text-cream leading-tight mb-6 font-display">{d.titre}</h1>
+      <p class="text-lg text-aloe-200 leading-relaxed mb-8">{seoDescription}</p>
+
+      <div class="flex items-center justify-center gap-3">
+        <div class="w-10 h-10 rounded-xl bg-[#7A4FA0] flex items-center justify-center text-cream font-bold text-sm flex-shrink-0">RA</div>
+        <div class="text-left">
+          <p class="text-sm font-semibold text-cream">Rafael Avenard — ma 10e cure C9</p>
+          <p class="text-xs text-aloe-400">Programme {labelProgramme} — démarré le {d.dateDebut.toLocaleDateString('fr-FR', { day: 'numeric', month: 'long', year: 'numeric' })}</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ══════════════════════════════════════════════
+       INTRO PERSONNELLE (corps markdown du fichier)
+  ══════════════════════════════════════════════ -->
+  <section class="bg-cream py-14">
+    <div class="mx-auto max-w-2xl px-6 prose prose-aloe">
+      <Content />
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════
+       MON HISTOIRE
+  ══════════════════════════════════════════════ -->
+  {d.monHistoire?.texte && (
+    <section class="bg-[#3B2354] py-16">
+      <div class="mx-auto max-w-2xl px-6">
+        <h2 class="text-2xl text-cream mb-6 font-display text-center">Mon histoire avec le C9</h2>
+        <div class="rounded-3xl bg-[#4E2E6E]/50 border border-[#7A4FA0] p-8">
+          <p class="text-[#EADFF5] leading-relaxed whitespace-pre-line">{d.monHistoire.texte}</p>
+        </div>
+      </div>
+    </section>
+  )}
+
+  <!-- ══════════════════════════════════════════════
+       MENSURATIONS DE DÉPART
+  ══════════════════════════════════════════════ -->
+  <section class="bg-sand/50 py-14">
+    <div class="mx-auto max-w-4xl px-6">
+      <h2 class="text-2xl text-aloe-900 mb-2 font-display text-center">Avant de commencer</h2>
+      <p class="text-sm text-aloe-500 text-center mb-8">Mon point de départ, pour que tu puisses suivre l'évolution</p>
+
+      {nbMesures > 0 && (
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+          {mesures.poids != null && (
+            <div class="rounded-2xl bg-white border border-aloe-100 p-5 text-center">
+              <p class="text-2xl font-display text-aloe-700">{mesures.poids} kg</p>
+              <p class="text-xs text-aloe-400 mt-1">Poids</p>
+            </div>
+          )}
+          {mesures.tourPoitrine != null && (
+            <div class="rounded-2xl bg-white border border-aloe-100 p-5 text-center">
+              <p class="text-2xl font-display text-aloe-700">{mesures.tourPoitrine} cm</p>
+              <p class="text-xs text-aloe-400 mt-1">Tour de poitrine</p>
+            </div>
+          )}
+          {mesures.tourNombril != null && (
+            <div class="rounded-2xl bg-white border border-aloe-100 p-5 text-center">
+              <p class="text-2xl font-display text-aloe-700">{mesures.tourNombril} cm</p>
+              <p class="text-xs text-aloe-400 mt-1">Tour de nombril</p>
+            </div>
+          )}
+          {mesures.tourTaille != null && (
+            <div class="rounded-2xl bg-white border border-aloe-100 p-5 text-center">
+              <p class="text-2xl font-display text-aloe-700">{mesures.tourTaille} cm</p>
+              <p class="text-xs text-aloe-400 mt-1">Tour de taille</p>
+            </div>
+          )}
+          {mesures.tourHanches != null && (
+            <div class="rounded-2xl bg-white border border-aloe-100 p-5 text-center">
+              <p class="text-2xl font-display text-aloe-700">{mesures.tourHanches} cm</p>
+              <p class="text-xs text-aloe-400 mt-1">Tour de hanches</p>
+            </div>
+          )}
+          {mesures.tourCuisse != null && (
+            <div class="rounded-2xl bg-white border border-aloe-100 p-5 text-center">
+              <p class="text-2xl font-display text-aloe-700">{mesures.tourCuisse} cm</p>
+              <p class="text-xs text-aloe-400 mt-1">Tour de cuisse</p>
+            </div>
+          )}
+          {mesures.tourBras != null && (
+            <div class="rounded-2xl bg-white border border-aloe-100 p-5 text-center">
+              <p class="text-2xl font-display text-aloe-700">{mesures.tourBras} cm</p>
+              <p class="text-xs text-aloe-400 mt-1">Tour de bras</p>
+            </div>
+          )}
+          {mesures.energie != null && (
+            <div class="rounded-2xl bg-white border border-aloe-100 p-5 text-center">
+              <p class="text-2xl font-display text-aloe-700">{mesures.energie}/10</p>
+              <p class="text-xs text-aloe-400 mt-1">Énergie</p>
+            </div>
+          )}
+        </div>
+      )}
+
+      {mesures.vetementReference && (
+        <div class="mt-6 rounded-2xl bg-white border border-aloe-100 p-6">
+          <p class="text-xs font-semibold uppercase tracking-widest text-aloe-400 mb-2">👖 Mon repère vêtement</p>
+          <p class="text-aloe-700 leading-relaxed">{mesures.vetementReference}</p>
+        </div>
+      )}
+
+      {mesures.motivation && (
+        <div class="mt-4 rounded-2xl bg-white border border-aloe-100 p-6">
+          <p class="text-xs font-semibold uppercase tracking-widest text-aloe-400 mb-2">Pourquoi je me lance cette fois</p>
+          <p class="text-aloe-700 leading-relaxed">{mesures.motivation}</p>
+        </div>
+      )}
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════
+       JOURNAL JOUR PAR JOUR — onglets CSS pur, zéro JS
+  ══════════════════════════════════════════════ -->
+  <section class="bg-cream py-16">
+    <div class="mx-auto max-w-4xl px-6">
+      <h2 class="text-2xl text-aloe-900 mb-8 font-display text-center">Mon journal, jour par jour</h2>
+
+      <div class="c9-tabs">
+        <!-- Radios (cachés) -->
+        {numerosJours.map((num) => {
+          const jourDispo = d.jours.some((j) => j.numero === num);
+          return (
+            <input
+              type="radio"
+              name="c9-jour"
+              id={`c9-radio-${num}`}
+              class="c9-radio sr-only"
+              checked={num === jourActuel}
+              disabled={!jourDispo}
+            />
+          );
+        })}
+
+        <!-- Étiquettes -->
+        <div class="c9-labels flex flex-wrap justify-center gap-2 mb-8">
+          {numerosJours.map((num) => {
+            const jourDispo = d.jours.some((j) => j.numero === num);
+            return (
+              <label
+                for={`c9-radio-${num}`}
+                class:list={[
+                  "c9-label rounded-full px-4 py-2 text-sm font-semibold border transition-colors",
+                  jourDispo
+                    ? "border-aloe-300 text-aloe-700 cursor-pointer hover:bg-aloe-50"
+                    : "border-aloe-100 text-aloe-300 cursor-not-allowed",
+                ]}
+              >
+                {jourDispo ? `Jour ${num}` : `🔒 J${num}`}
+              </label>
+            );
+          })}
+        </div>
+
+        <!-- Panneaux -->
+        <div class="c9-panels">
+          {d.jours.map((jour) => (
+            <div id={`c9-panel-${jour.numero}`} class="c9-panel rounded-3xl bg-white border border-aloe-100 p-8">
+              <div class="flex items-center justify-between flex-wrap gap-3 mb-5">
+                <h3 class="text-xl text-aloe-900 font-display">{jour.titre}</h3>
+                <span class="text-xs text-aloe-400">
+                  {jour.date.toLocaleDateString('fr-FR', { day: 'numeric', month: 'long' })}
+                </span>
+              </div>
+
+              <div class="flex flex-wrap gap-4 mb-6">
+                {jour.poids != null && (
+                  <span class="rounded-full bg-aloe-50 px-4 py-1.5 text-sm text-aloe-700">⚖️ {jour.poids} kg</span>
+                )}
+                {jour.note != null && (
+                  <span class="rounded-full bg-aloe-50 px-4 py-1.5 text-sm text-aloe-700">
+                    {'⭐'.repeat(jour.note)}{'☆'.repeat(5 - jour.note)}
+                  </span>
+                )}
+              </div>
+
+              <p class="text-aloe-700 leading-relaxed mb-6">{jour.ressenti}</p>
+
+              <div class="grid md:grid-cols-2 gap-4 mb-6">
+                {jour.positifs.length > 0 && (
+                  <div class="rounded-2xl bg-aloe-50 p-5">
+                    <p class="text-xs font-semibold uppercase tracking-widest text-aloe-500 mb-3">👍 Ce qui va bien</p>
+                    <ul class="space-y-2">
+                      {jour.positifs.map((p) => (
+                        <li class="text-sm text-aloe-700 flex gap-2"><span>✓</span><span>{p}</span></li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
+                {jour.negatifs.length > 0 && (
+                  <div class="rounded-2xl bg-sand/60 p-5">
+                    <p class="text-xs font-semibold uppercase tracking-widest text-aloe-500 mb-3">👎 Ce qui est difficile</p>
+                    <ul class="space-y-2">
+                      {jour.negatifs.map((n) => (
+                        <li class="text-sm text-aloe-700 flex gap-2"><span>−</span><span>{n}</span></li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
+              </div>
+
+              {jour.photos.length > 0 && (
+                <div class:list={["grid gap-3", jour.photos.length > 1 ? "grid-cols-2" : "grid-cols-1"]}>
+                  {jour.photos.map((photo) => (
+                    <figure class="m-0">
+                      <img
+                        src={photo.src}
+                        alt={photo.legende ?? `Photo du ${jour.titre}`}
+                        class="w-full rounded-2xl border border-aloe-100"
+                        loading="lazy"
+                      />
+                      {photo.legende && (
+                        <figcaption class="text-xs text-aloe-400 mt-2 text-center">{photo.legende}</figcaption>
+                      )}
+                    </figure>
+                  ))}
+                </div>
+              )}
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════
+       POINTS À NE PAS NÉGLIGER
+  ══════════════════════════════════════════════ -->
+  {d.pointsANePasNegliger.length > 0 && (
+    <section class="bg-aloe-50 py-16">
+      <div class="mx-auto max-w-3xl px-6">
+        <h2 class="text-2xl text-aloe-900 mb-2 font-display text-center">Points à ne pas négliger</h2>
+        <p class="text-sm text-aloe-500 text-center mb-8">Ce que mes 10 cures m'ont appris, en pratique</p>
+
+        <div class="space-y-3">
+          {d.pointsANePasNegliger.map((point) => (
+            <div class="flex gap-3 rounded-2xl bg-white border border-aloe-100 p-5">
+              <span class="text-lg flex-shrink-0">💡</span>
+              <p class="text-sm text-aloe-700 leading-relaxed">{point}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  )}
+
+  <!-- ══════════════════════════════════════════════
+       SYNTHÈSE FINALE (visible seulement une fois remplie)
+  ══════════════════════════════════════════════ -->
+  <section class="bg-gradient-to-br from-aloe-50 via-cream to-sand py-16">
+    <div class="mx-auto max-w-3xl px-6">
+      {d.synthese?.avisGlobal ? (
+        <>
+          <h2 class="text-3xl text-aloe-900 mb-8 font-display text-center">Bilan après 9 jours</h2>
+
+          <div class="grid grid-cols-2 gap-4 mb-8">
+            {d.synthese.poidsPerdu != null && (
+              <div class="rounded-2xl bg-white border border-aloe-100 p-6 text-center">
+                <p class="text-3xl font-display text-aloe-700">−{d.synthese.poidsPerdu} kg</p>
+                <p class="text-xs text-aloe-400 mt-1">Poids perdu</p>
+              </div>
+            )}
+            {d.synthese.tourTaillePerdu != null && (
+              <div class="rounded-2xl bg-white border border-aloe-100 p-6 text-center">
+                <p class="text-3xl font-display text-aloe-700">−{d.synthese.tourTaillePerdu} cm</p>
+                <p class="text-xs text-aloe-400 mt-1">Tour de taille</p>
+              </div>
+            )}
+          </div>
+
+          <div class="rounded-3xl bg-white border border-aloe-100 p-8 mb-6">
+            <p class="text-aloe-700 leading-relaxed">{d.synthese.avisGlobal}</p>
+          </div>
+
+          {d.synthese.pourQui && (
+            <div class="rounded-2xl bg-aloe-800 p-6 text-center">
+              <p class="text-xs font-semibold uppercase tracking-widest text-aloe-300 mb-2">Pour qui ?</p>
+              <p class="text-cream leading-relaxed">{d.synthese.pourQui}</p>
+            </div>
+          )}
+        </>
+      ) : (
+        <div class="rounded-3xl bg-white border border-dashed border-aloe-200 p-10 text-center">
+          <p class="text-4xl mb-4">📝</p>
+          <h2 class="text-xl text-aloe-900 mb-2 font-display">La synthèse arrive bientôt</h2>
+          <p class="text-aloe-500">
+            Je publierai mon bilan complet une fois les 9 jours terminés — résultats, ce que j'en retiens vraiment, et si je le referais.
+          </p>
+        </div>
+      )}
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════
+       AVERTISSEMENT — conformité
+  ══════════════════════════════════════════════ -->
+  <section class="bg-cream py-8">
+    <div class="mx-auto max-w-2xl px-6">
+      <p class="text-xs text-aloe-400 leading-relaxed text-center">
+        Ceci est mon retour d'expérience personnel, pas un avis médical. Beaucoup de choses reviennent d'une cure à l'autre, mais les sensations, les besoins et les envies peuvent varier d'une fois à l'autre — et encore davantage d'une personne à l'autre. Le programme C9 n'est pas recommandé en cas de grossesse, d'allaitement ou de pathologie chronique — demandez l'avis de votre médecin en cas de doute.
+      </p>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════
+       CTA + MAILLAGE INTERNE
+  ══════════════════════════════════════════════ -->
+  <section class="bg-sand/50 py-16">
+    <div class="mx-auto max-w-4xl px-6 text-center">
+      <h2 class="text-2xl text-aloe-900 mb-8 font-display">Pour aller plus loin</h2>
+      <div class="flex flex-wrap justify-center gap-3 mb-10">
+        <a href="/blog/programme-c9-forever-guide-cure-detox-9-jours/" class="rounded-full border border-aloe-200 bg-white px-5 py-2.5 text-sm font-medium text-aloe-600 hover:bg-aloe-50 transition-colors">
+          📖 Le guide complet du C9
+        </a>
+        <a href="/blog/perdre-du-poids-naturellement-forever-programmes-minceur/" class="rounded-full border border-aloe-200 bg-white px-5 py-2.5 text-sm font-medium text-aloe-600 hover:bg-aloe-50 transition-colors">
+          ⚖️ C9 ou DX4, lequel choisir ?
+        </a>
+      </div>
+
+      <div class="rounded-3xl bg-aloe-800 p-10">
+        <p class="text-cream text-lg mb-6">Envie de te lancer aussi ? Je t'accompagne tout au long de la cure.</p>
+        <div class="flex flex-wrap justify-center gap-4">
+          <a href={`/produits/${slugProduitLie}/`} class="inline-flex items-center gap-2 rounded-full bg-cream px-7 py-3.5 text-sm font-semibold text-aloe-800 hover:bg-aloe-100 transition-colors">
+            🛒 Voir le programme C9
+          </a>
+          <a href="/contact/" class="inline-flex items-center gap-2 rounded-full border border-aloe-500 px-7 py-3.5 text-sm font-semibold text-cream hover:bg-aloe-700 transition-colors">
+            ✉️ Me poser une question
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <Footer />
+
+  <!-- ══════════════════════════════════════════════
+       CTA STICKY — achat rapide, visible en permanence
+  ══════════════════════════════════════════════ -->
+  {produitC9 && (
+    <div class="cta-sticky">
+      <a href={`/produits/${slugProduitLie}/`} class="cta-sticky__lien">
+        {produitC9.data.image && (
+          <img src={produitC9.data.image} alt={produitC9.data.name} class="cta-sticky__image" />
+        )}
+        <div class="cta-sticky__texte">
+          <span class="cta-sticky__nom">{produitC9.data.name}</span>
+          <span class="cta-sticky__prix">{produitC9.data.price.toFixed(2)} €</span>
+        </div>
+        <span class="cta-sticky__bouton">Commander</span>
+      </a>
+    </div>
+  )}
+</Layout>
+
+<style>
+  .c9-panel { display: none; }
+
+  #c9-radio-1:checked ~ .c9-panels #c9-panel-1 { display: block; }
+  #c9-radio-2:checked ~ .c9-panels #c9-panel-2 { display: block; }
+  #c9-radio-3:checked ~ .c9-panels #c9-panel-3 { display: block; }
+  #c9-radio-4:checked ~ .c9-panels #c9-panel-4 { display: block; }
+  #c9-radio-5:checked ~ .c9-panels #c9-panel-5 { display: block; }
+  #c9-radio-6:checked ~ .c9-panels #c9-panel-6 { display: block; }
+  #c9-radio-7:checked ~ .c9-panels #c9-panel-7 { display: block; }
+  #c9-radio-8:checked ~ .c9-panels #c9-panel-8 { display: block; }
+  #c9-radio-9:checked ~ .c9-panels #c9-panel-9 { display: block; }
+
+  #c9-radio-1:checked ~ .c9-labels label[for="c9-radio-1"],
+  #c9-radio-2:checked ~ .c9-labels label[for="c9-radio-2"],
+  #c9-radio-3:checked ~ .c9-labels label[for="c9-radio-3"],
+  #c9-radio-4:checked ~ .c9-labels label[for="c9-radio-4"],
+  #c9-radio-5:checked ~ .c9-labels label[for="c9-radio-5"],
+  #c9-radio-6:checked ~ .c9-labels label[for="c9-radio-6"],
+  #c9-radio-7:checked ~ .c9-labels label[for="c9-radio-7"],
+  #c9-radio-8:checked ~ .c9-labels label[for="c9-radio-8"],
+  #c9-radio-9:checked ~ .c9-labels label[for="c9-radio-9"] {
+    background-color: #7A4FA0;
+    color: var(--color-cream);
+    border-color: #7A4FA0;
+  }
+
+  /* ── CTA sticky achat rapide ── */
+  .cta-sticky {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 40;
+    background: var(--color-cream, #fdfbf7);
+    border-top: 1px solid var(--color-aloe-100, #e3ede3);
+    box-shadow: 0 -8px 24px rgba(0, 0, 0, 0.08);
+  }
+
+  .cta-sticky__lien {
+    display: flex;
+    align-items: center;
+    gap: 0.85rem;
+    max-width: 56rem;
+    margin: 0 auto;
+    padding: 0.6rem 1rem;
+    text-decoration: none;
+  }
+
+  .cta-sticky__image {
+    width: 42px;
+    height: 42px;
+    object-fit: contain;
+    border-radius: 0.6rem;
+    background: white;
+    border: 1px solid var(--color-aloe-100, #e3ede3);
+    flex-shrink: 0;
+  }
+
+  .cta-sticky__texte {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-width: 0;
+  }
+
+  .cta-sticky__nom {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--color-aloe-800, #2a3d2a);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .cta-sticky__prix {
+    font-size: 0.78rem;
+    color: var(--color-aloe-500, #6b8a6b);
+  }
+
+  .cta-sticky__bouton {
+    flex-shrink: 0;
+    background: #7A4FA0;
+    color: var(--color-cream, #fdfbf7);
+    font-size: 0.85rem;
+    font-weight: 600;
+    padding: 0.6rem 1.1rem;
+    border-radius: 999px;
+    white-space: nowrap;
+  }
+
+  /* Laisse de la place en bas de page pour ne rien cacher derrière la barre */
+  :global(body:has(.cta-sticky)) {
+    padding-bottom: 64px;
+  }
+</style>

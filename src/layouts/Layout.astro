@@ -12,6 +12,7 @@ import '@fontsource/mulish/400.css';
 import '@fontsource/mulish/500.css';
 import '@fontsource/mulish/600.css';
 import '@fontsource/mulish/700.css';
+import PopupRemise from '../components/PopupRemise.astro';
 
 export interface Props {
   title?: string;
@@ -109,5 +110,24 @@ const schemaGraph = {
   </head>
   <body>
     <slot />
+
+    <!-- Popup promo -15% -->
+    <PopupRemise />
+
+    <!-- Suivi des clics sortants vers Forever (compteur simple via GA4) -->
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        document.querySelectorAll('a[href*="foreverliving.fr"]').forEach((lien) => {
+          lien.addEventListener('click', () => {
+            if (typeof gtag === 'function') {
+              gtag('event', 'click_lien_forever', {
+                page_path: window.location.pathname,
+                link_url: lien.getAttribute('href'),
+              });
+            }
+          });
+        });
+      });
+    </script>
   </body>
 </html>

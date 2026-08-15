@@ -128,3 +128,5 @@ Le C9 est disponible en deux saveurs :
 - **[C9 Chocolat-Pêche](/produits/programme-c9-forever-chocolat-peche/)** — pour les amateurs de chocolat
 
 Livraison partout en France en 24 à 72h. Je vous accompagne avant, pendant et après votre cure — n'hésitez pas à [me contacter](/contact/) pour des conseils personnalisés avant de commencer.
+
+Envie de voir à quoi ressemble vraiment une cure C9, jour après jour ? Je documente en ce moment ma 10e cure dans [mon journal C9](/mon-journal-c9/), avec mon ressenti sincère, mes mensurations et mes vrais résultats.

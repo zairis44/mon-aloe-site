@@ -1,0 +1,255 @@
+---
+/**
+ * src/components/PopupRemise.astro
+ * Popup promo générique — déclenché par exit-intent (desktop) ou
+ * scroll/délai (mobile, où l'exit-intent n'existe pas).
+ * Ne s'affiche qu'une fois tous les 7 jours, jamais après conversion.
+ *
+ * Code créé côté back-office Forever : BIENVENUE15 (offre évènementielle,
+ * minimum de commande 50€).
+ */
+export interface Props {
+  code?: string;
+  remise?: string;
+  minimumCommande?: string;
+  ctaHref?: string;
+  ctaLabel?: string;
+  conditions?: string;
+}
+
+const {
+  code = "BIENVENUE15",
+  remise = "15%",
+  minimumCommande = "50€",
+  ctaHref = "https://www.foreverliving.fr/ref/330001628607/",
+  ctaLabel = "Profiter de l'offre",
+  conditions = "Offre valable pour toute nouvelle inscription sur la boutique, à partir de 50€ d'achat. Non cumulable avec une autre offre.",
+} = Astro.props;
+---
+
+<div id="popup-remise" class="popup-remise" hidden>
+  <div class="popup-remise__overlay" data-popup-close></div>
+  <div class="popup-remise__card" role="dialog" aria-labelledby="popup-remise-titre" aria-modal="true">
+    <button type="button" class="popup-remise__close" data-popup-close aria-label="Fermer">✕</button>
+
+    <span class="popup-remise__badge">🎁 Offre de bienvenue</span>
+    <h3 id="popup-remise-titre" class="popup-remise__titre">−{remise} sur votre première commande</h3>
+    <p class="popup-remise__texte">
+      Inscrivez-vous sur la boutique Forever et profitez de {remise} de réduction dès {minimumCommande} d'achat, avec le code ci-dessous.
+    </p>
+
+    <div class="popup-remise__code" data-copy-code>
+      <span>{code}</span>
+      <button type="button" class="popup-remise__copy" data-copy-btn aria-label="Copier le code">Copier</button>
+    </div>
+
+    <a href={ctaHref} target="_blank" rel="noopener noreferrer" class="popup-remise__cta" data-popup-cta>
+      {ctaLabel}
+    </a>
+
+    <p class="popup-remise__conditions">{conditions}</p>
+  </div>
+</div>
+
+<script define:vars={{ code }}>
+  (function () {
+    const STORAGE_KEY = 'espritaloe_popup_last_shown';
+    const CONVERTED_KEY = 'espritaloe_promo_converted';
+    const DELAI_REAFFICHAGE_JOURS = 7;
+    const DELAI_FALLBACK_MS = 25000; // 25s si pas de scroll ni exit-intent
+    const SEUIL_SCROLL = 0.5; // 50% de la page
+
+    // Ne jamais réafficher si déjà converti
+    if (localStorage.getItem(CONVERTED_KEY) === 'true') return;
+
+    // Ne pas réafficher avant le délai
+    const dernierAffichage = localStorage.getItem(STORAGE_KEY);
+    if (dernierAffichage) {
+      const joursEcoules = (Date.now() - Number(dernierAffichage)) / (1000 * 60 * 60 * 24);
+      if (joursEcoules < DELAI_REAFFICHAGE_JOURS) return;
+    }
+
+    let dejaAffiche = false;
+    const popup = document.getElementById('popup-remise');
+    if (!popup) return;
+
+    function afficherPopup() {
+      if (dejaAffiche) return;
+      dejaAffiche = true;
+      popup.hidden = false;
+      document.body.style.overflow = 'hidden';
+      localStorage.setItem(STORAGE_KEY, String(Date.now()));
+    }
+
+    function fermerPopup() {
+      popup.hidden = true;
+      document.body.style.overflow = '';
+    }
+
+    // Fermeture (croix + clic sur l'overlay)
+    popup.querySelectorAll('[data-popup-close]').forEach((el) => {
+      el.addEventListener('click', fermerPopup);
+    });
+
+    // Clic sur le CTA = conversion, on ne réaffiche plus jamais
+    const cta = popup.querySelector('[data-popup-cta]');
+    if (cta) {
+      cta.addEventListener('click', () => {
+        localStorage.setItem(CONVERTED_KEY, 'true');
+      });
+    }
+
+    // Copier le code
+    const copyBtn = popup.querySelector('[data-copy-btn]');
+    if (copyBtn) {
+      copyBtn.addEventListener('click', () => {
+        navigator.clipboard?.writeText(code).then(() => {
+          copyBtn.textContent = 'Copié !';
+          setTimeout(() => { copyBtn.textContent = 'Copier'; }, 2000);
+        });
+      });
+    }
+
+    // Déclencheur 1 — exit-intent (desktop uniquement)
+    document.addEventListener('mouseleave', (e) => {
+      if (e.clientY <= 0) afficherPopup();
+    });
+
+    // Déclencheur 2 — scroll à 50% de la page (fonctionne sur mobile)
+    window.addEventListener('scroll', () => {
+      const hauteurTotale = document.documentElement.scrollHeight - window.innerHeight;
+      if (hauteurTotale <= 0) return;
+      const pourcentage = window.scrollY / hauteurTotale;
+      if (pourcentage >= SEUIL_SCROLL) afficherPopup();
+    }, { passive: true });
+
+    // Déclencheur 3 — filet de sécurité temporel (mobile, faible scroll)
+    setTimeout(afficherPopup, DELAI_FALLBACK_MS);
+  })();
+</script>
+
+<style>
+  .popup-remise[hidden] { display: none; }
+
+  .popup-remise {
+    position: fixed;
+    inset: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+  }
+
+  .popup-remise__overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(30, 20, 10, 0.55);
+  }
+
+  .popup-remise__card {
+    position: relative;
+    background: var(--color-cream, #fdfbf7);
+    border-radius: 1.5rem;
+    max-width: 420px;
+    width: 100%;
+    padding: 2.5rem 2rem 2rem;
+    text-align: center;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
+  }
+
+  .popup-remise__close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: none;
+    border: none;
+    font-size: 1.1rem;
+    color: var(--color-aloe-400, #8a9a8a);
+    cursor: pointer;
+    line-height: 1;
+    padding: 0.5rem;
+  }
+
+  .popup-remise__badge {
+    display: inline-block;
+    background: var(--color-clay, #c17a4f);
+    color: var(--color-cream, #fdfbf7);
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    padding: 0.35rem 0.9rem;
+    border-radius: 999px;
+    margin-bottom: 1rem;
+  }
+
+  .popup-remise__titre {
+    font-family: var(--font-display, inherit);
+    font-size: 1.5rem;
+    color: var(--color-aloe-900, #1f2e1f);
+    margin: 0 0 0.75rem;
+  }
+
+  .popup-remise__texte {
+    color: var(--color-aloe-600, #4d6a4d);
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin: 0 0 1.5rem;
+  }
+
+  .popup-remise__code {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem;
+    background: white;
+    border: 2px dashed var(--color-aloe-300, #a3c2a3);
+    border-radius: 0.75rem;
+    padding: 0.75rem 1rem;
+    margin-bottom: 1.5rem;
+    font-family: monospace;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--color-aloe-800, #2a3d2a);
+    letter-spacing: 0.05em;
+  }
+
+  .popup-remise__copy {
+    background: var(--color-aloe-100, #e3ede3);
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.4rem 0.8rem;
+    font-size: 0.75rem;
+    font-family: sans-serif;
+    font-weight: 600;
+    color: var(--color-aloe-700, #33502e);
+    cursor: pointer;
+    flex-shrink: 0;
+  }
+
+  .popup-remise__cta {
+    display: inline-block;
+    width: 100%;
+    background: var(--color-aloe-600, #4d7a4d);
+    color: var(--color-cream, #fdfbf7);
+    font-weight: 600;
+    font-size: 0.95rem;
+    padding: 0.9rem 1.5rem;
+    border-radius: 999px;
+    text-decoration: none;
+    margin-bottom: 1rem;
+    transition: background-color 0.2s;
+  }
+
+  .popup-remise__cta:hover {
+    background: var(--color-aloe-700, #33502e);
+  }
+
+  .popup-remise__conditions {
+    font-size: 0.7rem;
+    color: var(--color-aloe-400, #8a9a8a);
+    line-height: 1.4;
+    margin: 0;
+  }
+</style>

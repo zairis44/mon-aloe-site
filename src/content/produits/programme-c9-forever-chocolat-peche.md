@@ -44,6 +44,8 @@ Deux jours d'allègement, puis sept jours de réintroduction progressive d'un re
 
 Pour aller plus loin, lisez notre [guide complet du programme C9](/blog/programme-c9-forever-guide-cure-detox-9-jours/) et notre article sur [comment perdre du poids naturellement avec Forever](/blog/perdre-du-poids-naturellement-forever-programmes-minceur/).
 
+C'est justement la version que j'utilise pour ma cure en cours : je documente tout, jour après jour, dans [mon journal C9](/mon-journal-c9/) — mensurations, ressenti, points positifs et négatifs, sans filtre.
+
 ## Une question sur le bon programme ?
 
 Appelez-moi ou écrivez-moi. Je vous accompagne pendant la cure et je vous aide à choisir entre C9, DX4 et F15.
