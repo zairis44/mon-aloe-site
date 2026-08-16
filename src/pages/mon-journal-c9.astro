@@ -296,6 +296,19 @@ const nbMesures = [
 
               <p class="text-aloe-700 leading-relaxed mb-6">{jour.ressenti}</p>
 
+              {jour.photos.length > 0 && (
+                <div class:list={["grid gap-3 mb-6", jour.photos.length > 1 ? "grid-cols-2" : "grid-cols-1"]}>
+                  {jour.photos.map((photo) => (
+                    <img
+                      src={photo.src}
+                      alt={photo.legende ?? `${jour.titre} — programme C9 Forever, journal de Rafael Avenard`}
+                      class="w-auto max-h-[420px] mx-auto rounded-2xl border border-aloe-100"
+                      loading="lazy"
+                    />
+                  ))}
+                </div>
+              )}
+
               <div class="grid md:grid-cols-2 gap-4 mb-6">
                 {jour.positifs.length > 0 && (
                   <div class="rounded-2xl bg-aloe-50 p-5">
@@ -320,7 +333,7 @@ const nbMesures = [
               </div>
 
               {jour.infoDuJour && (
-                <div class="rounded-2xl bg-[#F3ECFA] border border-[#C9AEE0] p-6 mb-6">
+                <div class="rounded-2xl bg-[#F3ECFA] border border-[#C9AEE0] p-6">
                   <p class="text-xs font-semibold uppercase tracking-widest text-[#7A4FA0] mb-3">
                     💡 L'info du jour — {jour.infoDuJour.titre}
                   </p>
@@ -328,29 +341,11 @@ const nbMesures = [
                   {jour.infoDuJour.photo && (
                     <img
                       src={jour.infoDuJour.photo}
-                      alt={jour.infoDuJour.titre}
-                      class="mt-4 w-full rounded-xl border border-[#C9AEE0]"
+                      alt={`${jour.infoDuJour.titre} — programme C9 Forever Living`}
+                      class="mt-4 w-auto max-h-[300px] mx-auto rounded-xl border border-[#C9AEE0]"
                       loading="lazy"
                     />
                   )}
-                </div>
-              )}
-
-              {jour.photos.length > 0 && (
-                <div class:list={["grid gap-3", jour.photos.length > 1 ? "grid-cols-2" : "grid-cols-1"]}>
-                  {jour.photos.map((photo) => (
-                    <figure class="m-0">
-                      <img
-                        src={photo.src}
-                        alt={photo.legende ?? `Photo du ${jour.titre}`}
-                        class="w-full rounded-2xl border border-aloe-100"
-                        loading="lazy"
-                      />
-                      {photo.legende && (
-                        <figcaption class="text-xs text-aloe-400 mt-2 text-center">{photo.legende}</figcaption>
-                      )}
-                    </figure>
-                  ))}
                 </div>
               )}
             </div>
