@@ -1,21 +1,76 @@
 ---
 /**
  * src/pages/recettes-c9.astro
- * Page recettes du programme C9 — en construction
- * Objectif SEO : capter "recette C9 Forever", "que manger pendant le C9"
+ * Recettes du programme C9 — 3 sections : repas, shakers, boissons
+ * Alimenté par la collection "recettes" (src/content/recettes/)
+ * Objectif SEO : "recette C9 Forever", "que manger pendant le C9",
+ *                "shaker Forever recette", "cocktail aloe vera"
  */
 import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import { getCollection } from 'astro:content';
+
+const toutes = await getCollection('recettes', ({ data }) => !data.draft);
+const triees = toutes.sort((a, b) => a.data.ordre - b.data.ordre);
+
+const SECTIONS = [
+  {
+    cle: 'repas' as const,
+    titre: 'Les repas du C9',
+    intro: "Le repas quotidien du programme laisse plus de liberté qu'on ne l'imagine. Voici des idées testées pendant mes cures, simples à préparer et rassasiantes.",
+    icone: '🍽️',
+    couleurFond: '#F3ECFA',
+    couleurBordure: '#C9AEE0',
+    couleurAccent: '#7A4FA0',
+  },
+  {
+    cle: 'shaker' as const,
+    titre: 'Les shakers améliorés',
+    intro: "Le shake nature finit par lasser, surtout en fin de cure. Quelques ajouts simples suffisent à transformer complètement l'expérience.",
+    icone: '🥤',
+    couleurFond: '#EEF6FF',
+    couleurBordure: '#93B8DE',
+    couleurAccent: '#3A72AB',
+  },
+  {
+    cle: 'boisson' as const,
+    titre: 'Les boissons à l\'aloe vera',
+    intro: "Pour les moments conviviaux : des boissons rafraîchissantes à base d'aloe vera, sans alcool, qui vous évitent de rester au verre d'eau en soirée.",
+    icone: '🍹',
+    couleurFond: '#EDF7F0',
+    couleurBordure: '#9CCBA9',
+    couleurAccent: '#3E8C57',
+  },
+];
 
 const pageUrl = 'https://espritaloe.fr/recettes-c9/';
+const nbRecettes = triees.length;
+
+// Schema.org — liste de recettes
+const schemaItemList = nbRecettes > 0 ? {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  name: "Recettes du programme C9 Forever",
+  url: pageUrl,
+  numberOfItems: nbRecettes,
+  itemListElement: triees.map((r, i) => ({
+    "@type": "ListItem",
+    position: i + 1,
+    name: r.data.titre,
+  })),
+} : null;
 ---
 
 <Layout
   title="Recettes du programme C9 Forever | Esprit Aloé"
-  description="Des idées de repas simples et variés pour votre cure C9 Forever. Page en cours de construction — mes recettes testées pendant mes cures arrivent bientôt."
+  description="Idées de repas, shakers améliorés et boissons à l'aloe vera pour votre cure C9 Forever. Des recettes simples testées pendant mes propres cures."
   canonical={pageUrl}
 >
+  {schemaItemList && (
+    <script type="application/ld+json" set:html={JSON.stringify(schemaItemList)} slot="head" />
+  )}
+
   <Header />
 
   <header class="bg-gradient-to-b from-[#4E2E6E] to-[#3B2354] py-16">
@@ -28,65 +83,138 @@ const pageUrl = 'https://espritaloe.fr/recettes-c9/';
         </ol>
       </nav>
 
-      <span class="inline-flex items-center gap-2 rounded-full bg-white/15 px-4 py-1.5 text-xs font-semibold text-cream uppercase tracking-widest mb-6">
-        🚧 Page en construction
-      </span>
-
       <h1 class="text-3xl md:text-4xl text-cream leading-tight mb-6 font-display">
         Les recettes du programme C9
       </h1>
-      <p class="text-lg text-aloe-200 leading-relaxed">
+      <p class="text-lg text-aloe-200 leading-relaxed mb-8">
         Une idée reçue tenace : le C9 se résumerait à des shakes et à la privation.
-        C'est faux — les repas sont variés, savoureux, et se préparent avec des
+        C'est faux. Les repas sont variés, savoureux, et se préparent avec des
         ingrédients qu'on trouve partout.
       </p>
+
+      <div class="flex flex-wrap justify-center gap-3">
+        {SECTIONS.map((s) => (
+          <a href={`#${s.cle}`} class="rounded-full bg-white/15 px-5 py-2 text-sm font-semibold text-cream hover:bg-white/25 transition-colors">
+            {s.icone} {s.titre}
+          </a>
+        ))}
+      </div>
     </div>
   </header>
 
-  <section class="bg-cream py-16">
-    <div class="mx-auto max-w-2xl px-6">
-      <div class="rounded-3xl bg-white border border-dashed border-[#C9AEE0] p-10 text-center mb-10">
-        <p class="text-4xl mb-4">👨‍🍳</p>
-        <h2 class="text-xl text-aloe-900 mb-3 font-display">Les recettes arrivent bientôt</h2>
-        <p class="text-aloe-600 leading-relaxed">
-          Je rassemble en ce moment les repas que je teste au fil de mes cures,
-          avec les quantités, le temps de préparation et mon avis honnête sur
-          chacun. Revenez d'ici quelques semaines.
-        </p>
-      </div>
+  {SECTIONS.map((section) => {
+    const recettesSection = triees.filter((r) => r.data.categorie === section.cle);
+    return (
+      <section id={section.cle} class="py-16" style={`background-color: ${section.couleurFond};`}>
+        <div class="mx-auto max-w-4xl px-6">
+          <div class="text-center mb-10">
+            <span class="text-4xl">{section.icone}</span>
+            <h2 class="text-2xl md:text-3xl font-display mt-3 mb-4" style={`color: ${section.couleurAccent};`}>
+              {section.titre}
+            </h2>
+            <p class="text-aloe-700 leading-relaxed max-w-2xl mx-auto">{section.intro}</p>
+          </div>
 
-      <div class="rounded-2xl bg-[#F3ECFA] border border-[#C9AEE0] p-8">
-        <p class="text-xs font-semibold uppercase tracking-widest text-[#7A4FA0] mb-4">
-          En attendant, un aperçu
-        </p>
-        <p class="text-aloe-700 leading-relaxed mb-4">
-          Deux repas pris pendant ma cure en cours, pour vous donner une idée
-          concrète de ce qu'on mange réellement :
-        </p>
-        <ul class="space-y-3 text-sm text-aloe-700">
-          <li class="flex gap-3">
-            <span class="flex-shrink-0">🌯</span>
-            <span><strong>Wraps à la viande hachée</strong> — galettes, mélange pour wrap,
-            tomate, salade, oignon rouge, poivrons vert et rouge, et une toute petite
-            touche de gruyère. Un pur régal.</span>
-          </li>
-          <li class="flex gap-3">
-            <span class="flex-shrink-0">🐟</span>
-            <span><strong>Riz, poisson et ratatouille</strong> — simple, rassasiant,
-            et facile à préparer en quantité pour plusieurs repas (attention toutefois
-            à ne pas trop en faire, au risque de vous lasser).</span>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </section>
+          {recettesSection.length === 0 ? (
+            <div class="rounded-3xl bg-white/70 border border-dashed p-10 text-center" style={`border-color: ${section.couleurBordure};`}>
+              <p class="text-3xl mb-3">👨‍🍳</p>
+              <p class="font-semibold text-aloe-800 mb-2">Les recettes arrivent bientôt</p>
+              <p class="text-sm text-aloe-600">
+                Je rassemble en ce moment celles que je teste au fil de mes cures.
+              </p>
+            </div>
+          ) : (
+            <div class="space-y-6">
+              {recettesSection.map((recette) => {
+                const r = recette.data;
+                return (
+                  <article class="rounded-3xl bg-white border overflow-hidden" style={`border-color: ${section.couleurBordure};`}>
+                    <div class="grid md:grid-cols-[300px_1fr] gap-0">
+                      {r.image && (
+                        <img
+                          src={r.image}
+                          alt={r.imageAlt ?? `${r.titre} — recette du programme C9 Forever`}
+                          class="w-full h-full object-cover max-h-[280px] md:max-h-none"
+                          loading="lazy"
+                        />
+                      )}
+                      <div class="p-7">
+                        <h3 class="text-xl font-display mb-2" style={`color: ${section.couleurAccent};`}>
+                          {r.titre}
+                        </h3>
+                        <p class="text-sm text-aloe-600 leading-relaxed mb-4">{r.description}</p>
+
+                        {(r.tempsPreparation || r.portions) && (
+                          <div class="flex flex-wrap gap-3 mb-5">
+                            {r.tempsPreparation && (
+                              <span class="rounded-full px-3 py-1 text-xs font-semibold" style={`background-color: ${section.couleurFond}; color: ${section.couleurAccent};`}>
+                                ⏱️ {r.tempsPreparation}
+                              </span>
+                            )}
+                            {r.portions && (
+                              <span class="rounded-full px-3 py-1 text-xs font-semibold" style={`background-color: ${section.couleurFond}; color: ${section.couleurAccent};`}>
+                                🍽️ {r.portions}
+                              </span>
+                            )}
+                          </div>
+                        )}
+
+                        {r.ingredients.length > 0 && (
+                          <div class="mb-5">
+                            <p class="text-xs font-semibold uppercase tracking-widest text-aloe-500 mb-2">Ingrédients</p>
+                            <ul class="space-y-1">
+                              {r.ingredients.map((ing) => (
+                                <li class="text-sm text-aloe-700 flex gap-2">
+                                  <span style={`color: ${section.couleurAccent};`}>•</span>
+                                  <span>{ing}</span>
+                                </li>
+                              ))}
+                            </ul>
+                          </div>
+                        )}
+
+                        {r.etapes.length > 0 && (
+                          <div class="mb-5">
+                            <p class="text-xs font-semibold uppercase tracking-widest text-aloe-500 mb-2">Préparation</p>
+                            <ol class="space-y-2">
+                              {r.etapes.map((etape, i) => (
+                                <li class="text-sm text-aloe-700 flex gap-3">
+                                  <span class="flex-shrink-0 w-5 h-5 rounded-full flex items-center justify-center text-[11px] font-bold text-white" style={`background-color: ${section.couleurAccent};`}>
+                                    {i + 1}
+                                  </span>
+                                  <span>{etape}</span>
+                                </li>
+                              ))}
+                            </ol>
+                          </div>
+                        )}
+
+                        {r.astuce && (
+                          <div class="rounded-xl p-4" style={`background-color: ${section.couleurFond};`}>
+                            <p class="text-xs font-semibold uppercase tracking-widest mb-1.5" style={`color: ${section.couleurAccent};`}>
+                              💡 Mon astuce
+                            </p>
+                            <p class="text-sm text-aloe-700 leading-relaxed">{r.astuce}</p>
+                          </div>
+                        )}
+                      </div>
+                    </div>
+                  </article>
+                );
+              })}
+            </div>
+          )}
+        </div>
+      </section>
+    );
+  })}
 
   <section class="bg-sand/50 py-16">
     <div class="mx-auto max-w-3xl px-6 text-center">
-      <h2 class="text-2xl text-aloe-900 mb-6 font-display">En attendant les recettes</h2>
-      <div class="flex flex-wrap justify-center gap-3">
+      <h2 class="text-2xl text-aloe-900 mb-6 font-display">Pour aller plus loin</h2>
+      <div class="flex flex-wrap justify-center gap-3 mb-8">
         <a href="/mon-journal-c9/" class="rounded-full border border-aloe-200 bg-white px-5 py-2.5 text-sm font-medium text-aloe-600 hover:bg-aloe-50 transition-colors">
-          📓 Suivre mon journal C9 jour par jour
+          📓 Mon journal C9 jour par jour
         </a>
         <a href="/blog/programme-c9-forever-guide-cure-detox-9-jours/" class="rounded-full border border-aloe-200 bg-white px-5 py-2.5 text-sm font-medium text-aloe-600 hover:bg-aloe-50 transition-colors">
           📖 Le guide complet du C9
@@ -95,6 +223,10 @@ const pageUrl = 'https://espritaloe.fr/recettes-c9/';
           ✉️ Me poser une question
         </a>
       </div>
+      <p class="text-xs text-aloe-400 leading-relaxed max-w-xl mx-auto">
+        Ces recettes respectent le cadre du programme C9. Adaptez les quantités
+        à votre situation et référez-vous toujours au livret fourni avec votre coffret.
+      </p>
     </div>
   </section>
 

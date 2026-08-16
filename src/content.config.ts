@@ -142,4 +142,26 @@ const journal = defineCollection({
   }),
 });
 
-export const collections = { produits, blog, journal };
+// ── Collection "recettes" ────────────────────────────────────────
+// Recettes du programme C9 : repas, shakers améliorés, boissons.
+// Une recette = un fichier .md dans src/content/recettes/
+const recettes = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/recettes' }),
+  schema: z.object({
+    titre: z.string(),
+    slug: z.string(),
+    categorie: z.enum(['repas', 'shaker', 'boisson']),
+    description: z.string(),
+    image: z.string().optional(),
+    imageAlt: z.string().optional(),
+    tempsPreparation: z.string().optional(),
+    portions: z.string().optional(),
+    ingredients: z.array(z.string()).default([]),
+    etapes: z.array(z.string()).default([]),
+    astuce: z.string().optional(),
+    ordre: z.number().default(99),
+    draft: z.boolean().default(false),
+  }),
+});
+
+export const collections = { produits, blog, journal, recettes };
