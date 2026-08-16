@@ -81,6 +81,44 @@ const nbMesures = [
   mesures.poids, mesures.tourPoitrine, mesures.tourNombril, mesures.tourTaille,
   mesures.tourHanches, mesures.tourCuisse, mesures.tourBras,
 ].filter((v) => v != null).length;
+
+// ── Les 3 phases officielles du programme C9 ──────────────────
+const PHASES = [
+  {
+    numero: 1,
+    nom: 'Nettoyage',
+    jours: [1, 2],
+    description: "Les deux journées les plus strictes : pas de repas solide, on laisse le corps éliminer.",
+    couleurFond: '#EEF6FF',
+    couleurBordure: '#93B8DE',
+    couleurTexte: '#1E4976',
+    couleurOnglet: '#3A72AB',
+  },
+  {
+    numero: 2,
+    nom: 'Adaptation',
+    jours: [3, 4, 5, 6],
+    description: "Un repas équilibré est réintroduit chaque jour. Le corps s'ajuste, l'énergie remonte.",
+    couleurFond: '#F3ECFA',
+    couleurBordure: '#C9AEE0',
+    couleurTexte: '#4A2E6E',
+    couleurOnglet: '#7A4FA0',
+  },
+  {
+    numero: 3,
+    nom: 'Stabilisation',
+    jours: [7, 8, 9],
+    description: "La dernière ligne droite : on consolide les acquis et on prépare l'après-cure.",
+    couleurFond: '#EDF7F0',
+    couleurBordure: '#9CCBA9',
+    couleurTexte: '#215B33',
+    couleurOnglet: '#3E8C57',
+  },
+];
+
+function phaseDuJour(num: number) {
+  return PHASES.find((p) => p.jours.includes(num)) ?? PHASES[0];
+}
 ---
 
 <Layout
@@ -252,32 +290,65 @@ const nbMesures = [
           );
         })}
 
-        <!-- Étiquettes -->
-        <div class="c9-labels flex flex-wrap justify-center gap-2 mb-8">
+        <!-- Étiquettes sur une seule ligne, colorées par phase -->
+        <div class="c9-labels mb-4 flex flex-wrap items-center justify-center gap-2">
           {numerosJours.map((num) => {
             const jourDispo = d.jours.some((j) => j.numero === num);
+            const phase = phaseDuJour(num);
+            const debutDePhase = phase.jours[0] === num;
             return (
-              <label
-                for={`c9-radio-${num}`}
-                class:list={[
-                  "c9-label rounded-full px-4 py-2 text-sm font-semibold border transition-colors",
-                  jourDispo
-                    ? "border-aloe-300 text-aloe-700 cursor-pointer hover:bg-aloe-50"
-                    : "border-aloe-100 text-aloe-300 cursor-not-allowed",
-                ]}
-              >
-                {jourDispo ? `Jour ${num}` : `🔒 J${num}`}
-              </label>
+              <>
+                {debutDePhase && num !== 1 && (
+                  <span class="text-aloe-200 select-none px-1">|</span>
+                )}
+                <label
+                  for={`c9-radio-${num}`}
+                  class:list={["c9-label rounded-full px-4 py-2 text-sm font-semibold border transition-colors", !jourDispo && "cursor-not-allowed opacity-40"]}
+                  style={jourDispo
+                    ? `border-color: ${phase.couleurBordure}; color: ${phase.couleurTexte}; cursor: pointer;`
+                    : `border-color: #E5E5E5; color: #BBB;`}
+                >
+                  {jourDispo ? `Jour ${num}` : `🔒 J${num}`}
+                </label>
+              </>
             );
           })}
         </div>
 
+        <!-- Légende des phases -->
+        <div class="flex flex-wrap items-center justify-center gap-x-5 gap-y-2 mb-8">
+          {PHASES.map((phase) => (
+            <span class="inline-flex items-center gap-2 text-[11px] font-semibold uppercase tracking-widest" style={`color: ${phase.couleurOnglet}`}>
+              <span class="w-2.5 h-2.5 rounded-full" style={`background-color: ${phase.couleurOnglet}`}></span>
+              Phase {phase.numero} — {phase.nom}
+            </span>
+          ))}
+        </div>
+
         <!-- Panneaux -->
         <div class="c9-panels">
-          {d.jours.map((jour) => (
-            <div id={`c9-panel-${jour.numero}`} class="c9-panel rounded-3xl bg-white border border-aloe-100 p-8">
+          {d.jours.map((jour) => {
+            const phase = phaseDuJour(jour.numero);
+            return (
+            <div
+              id={`c9-panel-${jour.numero}`}
+              class="c9-panel rounded-3xl border p-8"
+              style={`background-color: ${phase.couleurFond}; border-color: ${phase.couleurBordure};`}
+            >
+              <!-- Bandeau de phase -->
+              <div
+                class="rounded-2xl px-5 py-3 mb-6 text-center"
+                style={`background-color: ${phase.couleurOnglet};`}
+              >
+                <p class="text-[11px] font-semibold uppercase tracking-widest text-white/80 mb-1">
+                  Phase {phase.numero} sur 3 — Jours {phase.jours[0]} à {phase.jours[phase.jours.length - 1]}
+                </p>
+                <p class="text-lg font-display text-white leading-tight">{phase.nom}</p>
+                <p class="text-xs text-white/80 mt-1.5 leading-relaxed">{phase.description}</p>
+              </div>
+
               <div class="flex items-center justify-between flex-wrap gap-3 mb-5">
-                <h3 class="text-xl text-aloe-900 font-display">{jour.titre}</h3>
+                <h3 class="text-xl font-display" style={`color: ${phase.couleurTexte}`}>{jour.titre}</h3>
                 <span class="text-xs text-aloe-400">
                   {jour.date.toLocaleDateString('fr-FR', { day: 'numeric', month: 'long' })}
                 </span>
@@ -285,10 +356,10 @@ const nbMesures = [
 
               <div class="flex flex-wrap gap-4 mb-6">
                 {jour.poids != null && (
-                  <span class="rounded-full bg-aloe-50 px-4 py-1.5 text-sm text-aloe-700">⚖️ {jour.poids} kg</span>
+                  <span class="rounded-full bg-white/70 px-4 py-1.5 text-sm" style={`color: ${phase.couleurTexte}`}>⚖️ {jour.poids} kg</span>
                 )}
                 {jour.note != null && (
-                  <span class="rounded-full bg-aloe-50 px-4 py-1.5 text-sm text-aloe-700">
+                  <span class="rounded-full bg-white/70 px-4 py-1.5 text-sm" style={`color: ${phase.couleurTexte}`}>
                     {'⭐'.repeat(jour.note)}{'☆'.repeat(5 - jour.note)}
                   </span>
                 )}
@@ -302,7 +373,7 @@ const nbMesures = [
                     <img
                       src={photo.src}
                       alt={photo.legende ?? `${jour.titre} — programme C9 Forever, journal de Rafael Avenard`}
-                      class="w-auto max-h-[420px] mx-auto rounded-2xl border border-aloe-100"
+                      class="w-auto max-h-[420px] mx-auto rounded-2xl border border-white"
                       loading="lazy"
                     />
                   ))}
@@ -311,8 +382,8 @@ const nbMesures = [
 
               <div class="grid md:grid-cols-2 gap-4 mb-6">
                 {jour.positifs.length > 0 && (
-                  <div class="rounded-2xl bg-aloe-50 p-5">
-                    <p class="text-xs font-semibold uppercase tracking-widest text-aloe-500 mb-3">👍 Ce qui va bien</p>
+                  <div class="rounded-2xl bg-white/70 p-5">
+                    <p class="text-xs font-semibold uppercase tracking-widest mb-3" style={`color: ${phase.couleurTexte}`}>👍 Ce qui va bien</p>
                     <ul class="space-y-2">
                       {jour.positifs.map((p) => (
                         <li class="text-sm text-aloe-700 flex gap-2"><span>✓</span><span>{p}</span></li>
@@ -321,8 +392,8 @@ const nbMesures = [
                   </div>
                 )}
                 {jour.negatifs.length > 0 && (
-                  <div class="rounded-2xl bg-sand/60 p-5">
-                    <p class="text-xs font-semibold uppercase tracking-widest text-aloe-500 mb-3">👎 Ce qui est difficile</p>
+                  <div class="rounded-2xl bg-white/70 p-5">
+                    <p class="text-xs font-semibold uppercase tracking-widest mb-3" style={`color: ${phase.couleurTexte}`}>👎 Ce qui est difficile</p>
                     <ul class="space-y-2">
                       {jour.negatifs.map((n) => (
                         <li class="text-sm text-aloe-700 flex gap-2"><span>−</span><span>{n}</span></li>
@@ -333,23 +404,25 @@ const nbMesures = [
               </div>
 
               {jour.infoDuJour && (
-                <div class="rounded-2xl bg-[#F3ECFA] border border-[#C9AEE0] p-6">
-                  <p class="text-xs font-semibold uppercase tracking-widest text-[#7A4FA0] mb-3">
+                <div class="rounded-2xl bg-white border p-6" style={`border-color: ${phase.couleurBordure};`}>
+                  <p class="text-xs font-semibold uppercase tracking-widest mb-3" style={`color: ${phase.couleurOnglet}`}>
                     💡 L'info du jour — {jour.infoDuJour.titre}
                   </p>
-                  <p class="text-sm text-[#4A2E6E] leading-relaxed">{jour.infoDuJour.texte}</p>
+                  <p class="text-sm text-aloe-700 leading-relaxed">{jour.infoDuJour.texte}</p>
                   {jour.infoDuJour.photo && (
                     <img
                       src={jour.infoDuJour.photo}
                       alt={`${jour.infoDuJour.titre} — programme C9 Forever Living`}
-                      class="mt-4 w-auto max-h-[300px] mx-auto rounded-xl border border-[#C9AEE0]"
+                      class="mt-4 w-auto max-h-[300px] mx-auto rounded-xl border"
+                      style={`border-color: ${phase.couleurBordure};`}
                       loading="lazy"
                     />
                   )}
                 </div>
               )}
             </div>
-          ))}
+            );
+          })}
         </div>
       </div>
     </div>
@@ -513,18 +586,29 @@ const nbMesures = [
   #c9-radio-8:checked ~ .c9-panels #c9-panel-8 { display: block; }
   #c9-radio-9:checked ~ .c9-panels #c9-panel-9 { display: block; }
 
+  /* Onglet actif — couleur selon la phase */
   #c9-radio-1:checked ~ .c9-labels label[for="c9-radio-1"],
-  #c9-radio-2:checked ~ .c9-labels label[for="c9-radio-2"],
+  #c9-radio-2:checked ~ .c9-labels label[for="c9-radio-2"] {
+    background-color: #3A72AB !important;
+    border-color: #3A72AB !important;
+    color: #fff !important;
+  }
+
   #c9-radio-3:checked ~ .c9-labels label[for="c9-radio-3"],
   #c9-radio-4:checked ~ .c9-labels label[for="c9-radio-4"],
   #c9-radio-5:checked ~ .c9-labels label[for="c9-radio-5"],
-  #c9-radio-6:checked ~ .c9-labels label[for="c9-radio-6"],
+  #c9-radio-6:checked ~ .c9-labels label[for="c9-radio-6"] {
+    background-color: #7A4FA0 !important;
+    border-color: #7A4FA0 !important;
+    color: #fff !important;
+  }
+
   #c9-radio-7:checked ~ .c9-labels label[for="c9-radio-7"],
   #c9-radio-8:checked ~ .c9-labels label[for="c9-radio-8"],
   #c9-radio-9:checked ~ .c9-labels label[for="c9-radio-9"] {
-    background-color: #7A4FA0;
-    color: var(--color-cream);
-    border-color: #7A4FA0;
+    background-color: #3E8C57 !important;
+    border-color: #3E8C57 !important;
+    color: #fff !important;
   }
 
   /* ── CTA sticky achat rapide (menu 3 méthodes) ── */
