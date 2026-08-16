@@ -110,6 +110,12 @@ const journal = defineCollection({
         src: z.string(),
         legende: z.string().optional(),
       })).default([]),
+      // Encadré pédagogique du jour (compléments, hydratation, sport…)
+      infoDuJour: z.object({
+        titre: z.string(),
+        texte: z.string(),
+        photo: z.string().optional(),
+      }).optional(),
     })).default([]),
 
     // Liste globale de conseils pratiques, affichée en encadré dédié

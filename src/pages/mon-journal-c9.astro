@@ -319,6 +319,23 @@ const nbMesures = [
                 )}
               </div>
 
+              {jour.infoDuJour && (
+                <div class="rounded-2xl bg-[#F3ECFA] border border-[#C9AEE0] p-6 mb-6">
+                  <p class="text-xs font-semibold uppercase tracking-widest text-[#7A4FA0] mb-3">
+                    💡 L'info du jour — {jour.infoDuJour.titre}
+                  </p>
+                  <p class="text-sm text-[#4A2E6E] leading-relaxed">{jour.infoDuJour.texte}</p>
+                  {jour.infoDuJour.photo && (
+                    <img
+                      src={jour.infoDuJour.photo}
+                      alt={jour.infoDuJour.titre}
+                      class="mt-4 w-full rounded-xl border border-[#C9AEE0]"
+                      loading="lazy"
+                    />
+                  )}
+                </div>
+              )}
+
               {jour.photos.length > 0 && (
                 <div class:list={["grid gap-3", jour.photos.length > 1 ? "grid-cols-2" : "grid-cols-1"]}>
                   {jour.photos.map((photo) => (

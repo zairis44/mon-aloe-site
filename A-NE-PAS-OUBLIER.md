@@ -1,53 +1,77 @@
 # Esprit Aloé — À ne pas oublier
-*Mise à jour : 12 juillet 2026*
+*Mise à jour : 15 août 2026*
 
-## 🔴 Priorité haute — prochaines séances
+## 🔴 Priorité haute — fenêtres de mesure actives
 
-- [ ] **Collecter de vrais avis clients** pour les 3 fiches les plus vues sans avis :
-  déodorant Ever Shield (34 imp.), dentifrice Bright Toothgel (27 imp.), savon
-  liquide (21 imp.). 2-3 avis par produit suffisent (prénom + initiale, ville,
-  note /5, témoignage). → Envoyer un SMS/WhatsApp personnalisé aux clients récents.
-  Claude peut rédiger le message type (2 variantes : clients récents / fidèles).
-- [ ] **Ajouter les blocs `avis:`** dans les fichiers .md dès que les retours arrivent
-  (Claude fabrique les fichiers complets → zéro risque d'erreur YAML).
-- [ ] **Surveiller l'apparition des étoiles** dans les SERP (schema déployé le 12/07,
-  validé au test Google). Accélérer via inspection + demande d'indexation GSC sur
-  Freedom, C9 vanille/choco et Pulpe d'aloe vera.
+- [ ] **FAQ "dangereux"** (déployée le 9 août) : verdict prévu début septembre.
+  Page `forever-living-avis-produits-france` **gelée**, ne pas toucher avant la mesure.
+- [ ] **Journal C9** (`/mon-journal-c9/`, live depuis aujourd'hui) : nouvelle fenêtre
+  de mesure GSC à ouvrir — comparer impressions/clics avant vs après sur les requêtes
+  type "avis C9 Forever", "C9 Forever jour par jour". Première vraie mesure possible
+  mi-septembre (le temps que Google indexe et que le journal avance vers le Jour 9).
+- [ ] **Continuer le journal C9** jusqu'au Jour 9, puis rédiger l'article de synthèse
+  ("Mon avis C9 après l'avoir testé") qui capitalisera sur le contenu du journal.
+- [ ] **Ajouter les vraies photos** dans `public/images/journal/` — les 6 emplacements
+  utilisent actuellement des placeholders "Photo à venir" générés automatiquement.
 
 ## 🟠 Priorité moyenne
 
-- [ ] **Bloc "Mon retour personnel — Rafael"** sur les fiches produit : champ optionnel
-  `retourPerso` dans le frontmatter, encart distinct des avis clients (angle E-E-A-T /
-  Experience, 100 % légal car assumé comme distributeur). Idée validée le 12/07,
-  à construire lors d'une séance dédiée.
+- [ ] **Franchise cluster** / requête navigationnelle "forever" : re-évaluation
+  prévue fin septembre (fenêtre insuffisante avant cette date).
+- [ ] **Collecter de vrais avis clients** pour les fiches les plus vues sans avis
+  (déodorant Ever Shield, dentifrice Bright Toothgel, savon liquide). Templates
+  SMS/WhatsApp déjà rédigés dans une session précédente.
 - [ ] **Image paysage article franchise** : remplacer l'image carrée 1090×1078 de
   `forever-living-franchise-ou-vente-directe` par un visuel ~1200×600 (ratio 2:1).
-  Rafael choisit l'image, Squoosh (1200px, WebP, qualité 75).
-- [ ] **Renforcer l'article digestion** (`aloe-vera-digestion-bienfaits`) : position 33
-  sur "aloe vera digestion" (32 imp., 3e mot-clé du site en volume). Contenu +
-  maillage interne entrant.
-- [ ] **Page Belgique** (`devenir-distributeur-forever-living-belgique`) : 24 impressions
-  position 11,7 sans page dédiée. Même recette que la page Suisse.
-- [ ] **Re-mesure GSC page distributeur** (fin juillet) : export filtré sur
-  `/devenir-distributeur-forever-living/` avec comparaison 28j vs 28j précédents,
-  pour juger l'effet du variant "revendeur".
+- [ ] **Renforcer l'article digestion** (`aloe-vera-digestion-bienfaits`) : position
+  historiquement faible sur "aloe vera digestion", 3e mot-clé du site en volume.
+- [ ] **Page Belgique** (`devenir-distributeur-forever-living-belgique`) : même
+  recette que la page Suisse (qui, elle, est déjà live et ranke ~position 9).
 
 ## 🟡 Quand on aura le temps
 
-- [ ] **Nettoyage `.gitignore`** : exclure les fichiers générés `.astro/` (6 fichiers
-  committés au lieu de 2 le 12/07 — sans danger mais bruyant).
-- [ ] **Mise à jour Astro 7** (actuellement 6.3.5, la 7.0.7 est dispo) : séance dédiée,
+- [ ] **Mise à jour Astro** (actuellement 6.3.5, la 7.2.2 est dispo) : séance dédiée,
   jamais en pleine optimisation. Tester en local avant push.
-- [ ] **Trancher les claims revenus** de la FAQ distributeur France (accord explicite
-  de Rafael requis avant modification).
-- [ ] **Dégeler aloe-mango et freedom** une fois la fenêtre de mesure GSC jugée propre.
-- [ ] **Affiner encore le snippet accueil** si le CTR ne bouge pas d'ici fin août
-  (meta déjà réécrite le 12/07 pour capter le rebond du site officiel).
+- [ ] **`npm audit fix`** : 8 vulnérabilités signalées (1 low, 7 high) au dernier
+  `npm install`. Pas urgent, mais à traiter un jour calme, séparément du reste.
+- [ ] **Bouton "Commander" du menu principal** : volontairement laissé tel quel
+  (pas de produit précis associé) pendant qu'on observe les clics sortants vers
+  Forever via le tracking GA4 mis en place aujourd'hui.
 
-## ✅ Fait le 12 juillet 2026 (pour mémoire)
+## ✅ Fait le 15 août 2026 (session complète C9 + conversion)
 
-- Redirections 301 des 3 URLs en 404 (`vercel.json`) + validation GSC
-- Page bloquée robots.txt confirmée volontaire (pages légales)
-- Analyse GSC complète : impressions x20 en 6 semaines, filon "avis" = 67 % des clics
-- Meta description accueil réécrite (friction site officiel → opportunité)
-- Schema `aggregateRating` + `review` sur le template produit, validé au test Google
+**Journal C9 (nouvelle collection Astro `journal`)**
+- Nouvelle page `/mon-journal-c9/`, publiée en cours de rédaction (Jours 1-5/9)
+- Design dédié ton violet (façon boîte C9), distinct du reste du site
+- Sections : mensurations de départ, mon histoire, journal jour par jour (onglets
+  CSS purs, zéro JS), galerie photos par jour, points à ne pas négliger, synthèse
+  (masquée jusqu'au Jour 9)
+- Maillage interne bidirectionnel : blog index (encadré dédié), guide C9, fiches
+  produit vanille-pêche et chocolat-pêche ↔ journal
+
+**Conversion**
+- Popup site entier -15% (code `BIENVENUE15`, min. 50€, offre évènementielle
+  Forever) — déclenchement exit-intent desktop / scroll ou délai mobile,
+  anti-spam localStorage (7j, jamais après conversion)
+- Code fidélité `FIDELE15` envoyé aux clients existants via le système Forever
+  (email + relance automatique gérés par Forever)
+- Composant **`CtaCommander.astro`** : menu à 3 choix (lien direct Forever en
+  premier, appel téléphonique, formulaire contact), natif `<details>/<summary>`,
+  zéro JS sauf auto-scroll à l'ouverture. Déployé sur : fiche produit (×4
+  emplacements), cartes catégories, sidebar + bloc mobile des articles de blog.
+- Bouton sticky "achat rapide" sur la page journal (photo + prix tirés
+  automatiquement de la fiche produit liée)
+
+**Tracking**
+- Suivi des clics sortants vers `foreverliving.fr` via événement GA4
+  `click_lien_forever` (page d'origine + URL cliquée), intégré au Layout global —
+  couvre automatiquement tous les nouveaux boutons CtaCommander sans réglage
+  supplémentaire
+
+## 📌 Pour mémoire — avant le 15 août
+
+- FAQ "fiables" (26 juillet) : validée, génère des clics (CTR 7%+)
+- Redirections 301, schema `aggregateRating`/`review`, meta accueil réécrite,
+  page Suisse live et validée (~position 9)
+- Décision technique : suivi des clics finalement fait via GA4 (déjà en place
+  sur le site) plutôt que Umami, envisagé un temps dans une session antérieure
