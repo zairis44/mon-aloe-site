@@ -1,0 +1,102 @@
+---
+/**
+ * src/pages/recettes-c9.astro
+ * Page recettes du programme C9 — en construction
+ * Objectif SEO : capter "recette C9 Forever", "que manger pendant le C9"
+ */
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
+const pageUrl = 'https://espritaloe.fr/recettes-c9/';
+---
+
+<Layout
+  title="Recettes du programme C9 Forever | Esprit Aloé"
+  description="Des idées de repas simples et variés pour votre cure C9 Forever. Page en cours de construction — mes recettes testées pendant mes cures arrivent bientôt."
+  canonical={pageUrl}
+>
+  <Header />
+
+  <header class="bg-gradient-to-b from-[#4E2E6E] to-[#3B2354] py-16">
+    <div class="mx-auto max-w-3xl px-6 text-center">
+      <nav class="text-xs text-aloe-400 mb-8" aria-label="Fil d'Ariane">
+        <ol class="flex items-center justify-center gap-2">
+          <li><a href="/" class="hover:text-aloe-200 transition-colors">Accueil</a></li>
+          <li class="text-aloe-600">›</li>
+          <li class="text-aloe-300">Recettes C9</li>
+        </ol>
+      </nav>
+
+      <span class="inline-flex items-center gap-2 rounded-full bg-white/15 px-4 py-1.5 text-xs font-semibold text-cream uppercase tracking-widest mb-6">
+        🚧 Page en construction
+      </span>
+
+      <h1 class="text-3xl md:text-4xl text-cream leading-tight mb-6 font-display">
+        Les recettes du programme C9
+      </h1>
+      <p class="text-lg text-aloe-200 leading-relaxed">
+        Une idée reçue tenace : le C9 se résumerait à des shakes et à la privation.
+        C'est faux — les repas sont variés, savoureux, et se préparent avec des
+        ingrédients qu'on trouve partout.
+      </p>
+    </div>
+  </header>
+
+  <section class="bg-cream py-16">
+    <div class="mx-auto max-w-2xl px-6">
+      <div class="rounded-3xl bg-white border border-dashed border-[#C9AEE0] p-10 text-center mb-10">
+        <p class="text-4xl mb-4">👨‍🍳</p>
+        <h2 class="text-xl text-aloe-900 mb-3 font-display">Les recettes arrivent bientôt</h2>
+        <p class="text-aloe-600 leading-relaxed">
+          Je rassemble en ce moment les repas que je teste au fil de mes cures,
+          avec les quantités, le temps de préparation et mon avis honnête sur
+          chacun. Revenez d'ici quelques semaines.
+        </p>
+      </div>
+
+      <div class="rounded-2xl bg-[#F3ECFA] border border-[#C9AEE0] p-8">
+        <p class="text-xs font-semibold uppercase tracking-widest text-[#7A4FA0] mb-4">
+          En attendant, un aperçu
+        </p>
+        <p class="text-aloe-700 leading-relaxed mb-4">
+          Deux repas pris pendant ma cure en cours, pour vous donner une idée
+          concrète de ce qu'on mange réellement :
+        </p>
+        <ul class="space-y-3 text-sm text-aloe-700">
+          <li class="flex gap-3">
+            <span class="flex-shrink-0">🌯</span>
+            <span><strong>Wraps à la viande hachée</strong> — galettes, mélange pour wrap,
+            tomate, salade, oignon rouge, poivrons vert et rouge, et une toute petite
+            touche de gruyère. Un pur régal.</span>
+          </li>
+          <li class="flex gap-3">
+            <span class="flex-shrink-0">🐟</span>
+            <span><strong>Riz, poisson et ratatouille</strong> — simple, rassasiant,
+            et facile à préparer en quantité pour plusieurs repas (attention toutefois
+            à ne pas trop en faire, au risque de vous lasser).</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-sand/50 py-16">
+    <div class="mx-auto max-w-3xl px-6 text-center">
+      <h2 class="text-2xl text-aloe-900 mb-6 font-display">En attendant les recettes</h2>
+      <div class="flex flex-wrap justify-center gap-3">
+        <a href="/mon-journal-c9/" class="rounded-full border border-aloe-200 bg-white px-5 py-2.5 text-sm font-medium text-aloe-600 hover:bg-aloe-50 transition-colors">
+          📓 Suivre mon journal C9 jour par jour
+        </a>
+        <a href="/blog/programme-c9-forever-guide-cure-detox-9-jours/" class="rounded-full border border-aloe-200 bg-white px-5 py-2.5 text-sm font-medium text-aloe-600 hover:bg-aloe-50 transition-colors">
+          📖 Le guide complet du C9
+        </a>
+        <a href="/contact/" class="rounded-full border border-aloe-200 bg-white px-5 py-2.5 text-sm font-medium text-aloe-600 hover:bg-aloe-50 transition-colors">
+          ✉️ Me poser une question
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <Footer />
+</Layout>
