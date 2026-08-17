@@ -37,8 +37,14 @@
 
 /* ══════════════════════════════════════════════════════════════
    TYPOGRAPHIE DES CONTENUS MARKDOWN
-   Utilisée par les articles de blog et le corps des fiches produit.
+   Articles de blog + corps des fiches produit.
    Remplace @tailwindcss/typography (non installé) — aucun plugin requis.
+
+   IMPORTANT : chaque sélecteur est enveloppé dans :where() pour
+   ramener sa spécificité à ZÉRO. Sans ça, ces règles écrasent les
+   classes utilitaires Tailwind (ex : text-cream sur un bouton vert
+   devient illisible). Le :not(.not-prose) permet d'exclure un bloc
+   HTML inline du style éditorial, comme le fait le plugin officiel.
    ══════════════════════════════════════════════════════════════ */
 
 .article-body {
@@ -48,19 +54,21 @@
 }
 
 /* Paragraphes — l'air entre les blocs vient d'ici */
-.article-body p {
+.article-body :where(p):not(:where(.not-prose, .not-prose *)) {
   margin-bottom: 1.75em;
 }
 
-.article-body > p:first-child {
-  font-size: 1.1875rem;      /* chapô : 19px */
+/* Chapô : premier paragraphe de l'article */
+.article-body > :where(p:first-child):not(:where(.not-prose, .not-prose *)) {
+  font-size: 1.1875rem;      /* 19px */
   line-height: 1.75;
   color: var(--color-aloe-800);
   margin-bottom: 2em;
 }
 
-/* Titres — beaucoup d'espace AVANT, peu après : le titre colle à son texte */
-.article-body h2 {
+/* Titres — beaucoup d'espace AVANT, peu après :
+   le titre doit adhérer à son propre texte. */
+.article-body :where(h2):not(:where(.not-prose, .not-prose *)) {
   font-family: var(--font-display);
   font-weight: 500;
   font-size: 1.625rem;
@@ -72,7 +80,7 @@
   border-bottom: 1px solid var(--color-aloe-100);
 }
 
-.article-body h3 {
+.article-body :where(h3):not(:where(.not-prose, .not-prose *)) {
   font-family: var(--font-display);
   font-weight: 500;
   font-size: 1.3125rem;
@@ -82,7 +90,7 @@
   margin-bottom: 0.875rem;
 }
 
-.article-body h4 {
+.article-body :where(h4):not(:where(.not-prose, .not-prose *)) {
   font-family: var(--font-display);
   font-weight: 500;
   font-size: 1.125rem;
@@ -91,36 +99,40 @@
   margin-bottom: 0.75rem;
 }
 
-.article-body > :first-child {
+.article-body > :where(:first-child) {
   margin-top: 0;
 }
 
 /* Listes */
-.article-body ul,
-.article-body ol {
+.article-body :where(ul, ol):not(:where(.not-prose, .not-prose *)) {
   margin: 1.75em 0;
   padding-left: 1.5rem;
 }
 
-.article-body ul { list-style: disc; }
-.article-body ol { list-style: decimal; }
+.article-body :where(ul):not(:where(.not-prose, .not-prose *)) {
+  list-style: disc;
+}
 
-.article-body li {
+.article-body :where(ol):not(:where(.not-prose, .not-prose *)) {
+  list-style: decimal;
+}
+
+.article-body :where(li):not(:where(.not-prose, .not-prose *)) {
   margin-bottom: 0.75em;
   padding-left: 0.375rem;
   line-height: 1.75;
 }
 
-.article-body li::marker {
+.article-body :where(li):not(:where(.not-prose, .not-prose *))::marker {
   color: var(--color-aloe-400);
 }
 
-.article-body li > p {
+.article-body :where(li > p):not(:where(.not-prose, .not-prose *)) {
   margin-bottom: 0.75em;
 }
 
-/* Liens */
-.article-body a {
+/* Liens éditoriaux — ne touche PAS les liens stylés en boutons */
+.article-body :where(a):not(:where(.not-prose, .not-prose *)) {
   color: var(--color-aloe-600);
   text-decoration: underline;
   text-decoration-thickness: 1px;
@@ -128,17 +140,17 @@
   transition: color 0.15s ease;
 }
 
-.article-body a:hover {
+.article-body :where(a):not(:where(.not-prose, .not-prose *)):hover {
   color: var(--color-aloe-800);
 }
 
-.article-body strong {
+.article-body :where(strong):not(:where(.not-prose, .not-prose *)) {
   color: var(--color-aloe-900);
   font-weight: 600;
 }
 
 /* Citations */
-.article-body blockquote {
+.article-body :where(blockquote):not(:where(.not-prose, .not-prose *)) {
   margin: 2.5em 0;
   padding: 1.25rem 1.5rem;
   border-left: 4px solid var(--color-aloe-300);
@@ -147,44 +159,43 @@
   color: var(--color-aloe-600);
 }
 
-.article-body blockquote p:last-child {
+.article-body :where(blockquote p:last-child):not(:where(.not-prose, .not-prose *)) {
   margin-bottom: 0;
 }
 
 /* Images, séparateurs, tableaux */
-.article-body img {
+.article-body :where(img):not(:where(.not-prose, .not-prose *)) {
   margin: 2.5em 0;
   border-radius: 1rem;
   box-shadow: 0 4px 16px rgb(26 49 35 / 0.08);
 }
 
-.article-body hr {
+.article-body :where(hr):not(:where(.not-prose, .not-prose *)) {
   margin: 3.5em 0;
   border: 0;
   border-top: 1px solid var(--color-aloe-100);
 }
 
-.article-body table {
+.article-body :where(table):not(:where(.not-prose, .not-prose *)) {
   width: 100%;
   margin: 2em 0;
   font-size: 0.9375rem;
   border-collapse: collapse;
 }
 
-.article-body th,
-.article-body td {
+.article-body :where(th, td):not(:where(.not-prose, .not-prose *)) {
   padding: 0.75rem 1rem;
   border-bottom: 1px solid var(--color-aloe-100);
   text-align: left;
 }
 
-.article-body th {
+.article-body :where(th):not(:where(.not-prose, .not-prose *)) {
   color: var(--color-aloe-900);
   font-weight: 600;
   background-color: var(--color-aloe-50);
 }
 
-.article-body code {
+.article-body :where(code):not(:where(.not-prose, .not-prose *)) {
   font-size: 0.9em;
   background-color: var(--color-aloe-50);
   padding: 0.15em 0.4em;
@@ -197,7 +208,7 @@
     font-size: 1.125rem;     /* 18px */
     line-height: 1.9;
   }
-  .article-body > p:first-child {
+  .article-body > :where(p:first-child):not(:where(.not-prose, .not-prose *)) {
     font-size: 1.25rem;
   }
 }
