@@ -18,6 +18,8 @@ produitsLies:
     nom: "Aloe Vera Gelly"
   - slug: "forever-aloe-propolis-creme"
     nom: "Aloe Propolis Crème"
+  - slug: "forever-marine-collagen"
+    nom: "Forever Marine Collagen"
 articlesLies:
   - slug: "aloe-vera-cheveux-cuir-chevelu-bienfaits"
     titre: "Aloe vera cheveux : bienfaits et soins naturels"
@@ -68,6 +70,10 @@ La **[Aloe Propolis Crème](/produits/forever-aloe-propolis-creme/)** combine l'
 
 Le **[Aloe MSM Gel](/produits/forever-aloe-msm-gel/)** intègre le soufre organique (MSM) à l'aloe vera. Application externe sur muscles et articulations douloureux, mais aussi sur les zones cutanées irritées qui bénéficient de l'action anti-inflammatoire combinée des deux actifs.
 
+### Pour agir de l'intérieur : Forever Marine Collagen
+
+Tous les soins ci-dessus travaillent en surface. Le **[Forever Marine Collagen](/produits/forever-marine-collagen/)** complète l'approche par voie interne : une dosette de 15 ml par jour apporte 3 000 mg de peptides de collagène marin hydrolysé, avec de la vitamine C qui contribue à la formation normale du collagène et du zinc qui participe au maintien d'une peau normale. C'est le geste à ajouter quand votre préoccupation porte sur la fermeté et les ridules plutôt que sur l'hydratation immédiate. Comptez trois mois de cure pour juger, le temps que la peau se renouvelle.
+
 ### Pour le nettoyage doux : Aloe Liquid Soap
 
 Le **[Aloe Liquid Soap](/produits/forever-aloe-liquid-soap/)** est un savon liquide à l'aloe vera sans parabènes, adapté à toute la famille y compris les peaux sensibles et les enfants. Il nettoie sans décaper la barrière cutanée, ce qui est fondamental pour maintenir l'hydratation naturelle de la peau.
@@ -88,6 +94,6 @@ Une routine cohérente à l'aloe vera maximise les résultats sur la durée :
 
 **Peut-on l'appliquer autour des yeux ?** Le Aloe Vera Gelly peut être utilisé avec précaution sur le contour de l'œil. Évitez tout contact direct avec les yeux.
 
-**Combien de temps avant de voir des résultats ?** Les effets apaisants et hydratants sont immédiats. Pour les bénéfices anti-âge et régénérants, comptez 4 à 6 semaines d'utilisation régulière.
+**Combien de temps avant de voir des résultats ?** Les effets apaisants et hydratants sont immédiats. Pour les bénéfices anti-âge et régénérants, comptez 4 à 6 semaines d'utilisation régulière. Si vous ajoutez une cure de [collagène marin](/produits/forever-marine-collagen/) en parallèle, raisonnez plutôt sur trois mois.
 
 **L'aloe vera aide-t-il contre l'acné ?

@@ -36,7 +36,7 @@ const produitUrl = `${siteUrl}/produits/${d.slug}/`;
 // Labels catégorie
 const categoryLabels: Record<string, string> = {
   'boissons-aloe-vera': 'Boissons Aloe Vera',
-  'beaute-bien-etre': 'Beauté & Bien-être',
+  'cremes-et-gels': 'Beauté & Bien-être',
   'programmes-detox': 'Programmes Détox',
   'sport-et-fitness': 'Sport & Fitness',
   'nutrition': 'Nutrition',
@@ -44,7 +44,7 @@ const categoryLabels: Record<string, string> = {
 
 const categoryIcons: Record<string, string> = {
   'boissons-aloe-vera': '🥤',
-  'beaute-bien-etre': '🧴',
+  'cremes-et-gels': '🧴',
   'programmes-detox': '🔄',
   'sport-et-fitness': '💪',
   'nutrition': '🌱',
@@ -75,11 +75,23 @@ const schemaProduct = {
     "@type": "Offer",
     priceCurrency: "EUR",
     price: d.price.toFixed(2),
-    availability: "https://schema.org/InStock",
+    priceValidUntil: `${new Date().getFullYear() + 1}-12-31`,
+    itemCondition: "https://schema.org/NewCondition",
+    availability: d.disponible === false
+      ? "https://schema.org/OutOfStock"
+      : "https://schema.org/InStock",
     url: produitUrl,
     seller: {
       "@type": "Organization",
       name: "Esprit Aloé",
+    },
+    hasMerchantReturnPolicy: {
+      "@type": "MerchantReturnPolicy",
+      applicableCountry: "FR",
+      returnPolicyCategory: "https://schema.org/MerchantReturnFiniteReturnWindow",
+      merchantReturnDays: 30,
+      returnMethod: "https://schema.org/ReturnByMail",
+      returnFees: "https://schema.org/FreeReturn",
     },
   },
   // Étoiles dans les SERP : uniquement si de vrais avis existent en frontmatter
@@ -188,7 +200,7 @@ const seoDescription = d.seoDescription ?? d.description;
           {d.image ? (
             <img
               src={d.image}
-              alt={d.name}
+              alt={`${d.name} — Forever Living, ${catLabel.toLowerCase()}`}
               width="800"
               height="600"
               loading="eager"
@@ -202,9 +214,9 @@ const seoDescription = d.seoDescription ?? d.description;
         <!-- Galerie secondaire si images[] défini -->
         {d.images?.length > 0 && (
           <div class="flex gap-3 mb-10 overflow-x-auto pb-2">
-            {d.images.map((img: string) => (
+            {d.images.map((img: string, i: number) => (
               <div class="flex-shrink-0 w-24 h-24 rounded-xl overflow-hidden border-2 border-transparent hover:border-aloe-400 transition-colors cursor-pointer">
-                <img src={img} alt={d.name} width="96" height="96" loading="lazy" class="w-full h-full object-contain" />
+                <img src={img} alt={`${d.name} — visuel ${i + 2}`} width="96" height="96" loading="lazy" class="w-full h-full object-contain" />
               </div>
             ))}
           </div>
@@ -223,16 +235,7 @@ const seoDescription = d.seoDescription ?? d.description;
 
         <!-- Contenu Markdown de la fiche -->
         {produit.body && (
-          <div class="prose prose-aloe max-w-none
-            prose-headings:text-aloe-900
-            prose-h2:text-2xl prose-h2:mt-10 prose-h2:mb-4
-            prose-h3:text-xl prose-h3:mt-6 prose-h3:mb-3
-            prose-p:text-aloe-700 prose-p:leading-relaxed
-            prose-a:text-aloe-600 prose-a:underline
-            prose-strong:text-aloe-800
-            prose-ul:text-aloe-700
-            prose-li:my-1
-            prose-blockquote:border-aloe-300 prose-blockquote:text-aloe-600">
+          <div class="article-body max-w-[680px]">
             <Content />
           </div>
         )}
@@ -430,7 +433,7 @@ const seoDescription = d.seoDescription ?? d.description;
           href={`/produits/${d.category}/`}
           class="flex items-center gap-2 rounded-full border border-aloe-200 bg-white px-5 py-2.5 text-sm font-medium text-aloe-600 hover:bg-aloe-50 transition-colors"
         >
-          {catIcon} Tous les {catLabel}
+          {catIcon} Voir la catégorie {catLabel}
         </a>
         <a
           href="/produits/"

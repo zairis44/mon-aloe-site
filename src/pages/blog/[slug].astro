@@ -30,6 +30,7 @@ const produitsAvecDetails = produitsLies.map((p: any) => {
     nom: p.nom,
     price: found?.data.price ?? null,
     lienCommande: found?.data.lienCommande ?? null,
+    image: found?.data.image ?? null,
   };
 });
 
@@ -154,20 +155,7 @@ const readingTime = Math.max(1, Math.ceil((article.body?.split(' ').length ?? 0)
 
           <!-- Contenu texte — max-width contraint pour lisibilité -->
           <div class="min-w-0">
-            <div class="prose max-w-[680px]
-              prose-headings:font-display
-              prose-h2:text-2xl prose-h2:text-aloe-900 prose-h2:mt-14 prose-h2:mb-5 prose-h2:pb-3 prose-h2:border-b prose-h2:border-aloe-100
-              prose-h3:text-xl prose-h3:text-aloe-800 prose-h3:mt-10 prose-h3:mb-4
-              prose-p:text-aloe-700 prose-p:leading-[1.9] prose-p:text-[17px] prose-p:mb-6
-              prose-a:text-aloe-600 prose-a:underline prose-a:underline-offset-2 hover:prose-a:text-aloe-800
-              prose-strong:text-aloe-900 prose-strong:font-semibold
-              prose-ul:text-aloe-700 prose-ul:space-y-2 prose-ul:my-6
-              prose-ol:text-aloe-700 prose-ol:space-y-2 prose-ol:my-6
-              prose-li:leading-relaxed prose-li:text-[17px]
-              prose-blockquote:border-l-4 prose-blockquote:border-aloe-300 prose-blockquote:bg-aloe-50 prose-blockquote:rounded-r-xl prose-blockquote:py-4 prose-blockquote:px-6 prose-blockquote:text-aloe-600 prose-blockquote:not-italic prose-blockquote:my-8
-              prose-table:text-sm prose-table:w-full
-              prose-img:rounded-2xl prose-img:shadow-md prose-img:my-8
-              prose-hr:border-aloe-100 prose-hr:my-12">
+            <div class="article-body max-w-[680px]">
               <Content />
             </div>
           </div>
@@ -180,10 +168,27 @@ const readingTime = Math.max(1, Math.ceil((article.body?.split(' ').length ?? 0)
                 <div class="space-y-5">
                   {produitsAvecDetails.map((p: any) => (
                     <div class="border-b border-aloe-700 pb-5 last:border-0 last:pb-0">
-                      <p class="text-sm font-semibold text-cream mb-1 leading-snug">{p.nom}</p>
-                      {p.price && (
-                        <p class="text-2xl font-display text-aloe-200 mb-3">{p.price.toFixed(2)} €</p>
-                      )}
+                      <div class="flex items-start gap-3 mb-3">
+                        {p.image && (
+                          <a href={`/produits/${p.slug}/`} class="flex-shrink-0 w-16 h-16 rounded-xl bg-white p-1.5 overflow-hidden">
+                            <img
+                              src={p.image}
+                              alt={p.nom}
+                              width="64"
+                              height="64"
+                              loading="lazy"
+                              decoding="async"
+                              class="w-full h-full object-contain"
+                            />
+                          </a>
+                        )}
+                        <div class="min-w-0">
+                          <p class="text-sm font-semibold text-cream mb-1 leading-snug">{p.nom}</p>
+                          {p.price && (
+                            <p class="text-xl font-display text-aloe-200">{p.price.toFixed(2)} €</p>
+                          )}
+                        </div>
+                      </div>
                       <div class="flex flex-col gap-2">
                         {p.lienCommande && (
                           <CtaCommander lienCommande={p.lienCommande} fullWidth size="sm" label="Commander" />
@@ -221,6 +226,19 @@ const readingTime = Math.max(1, Math.ceil((article.body?.split(' ').length ?? 0)
           <div class="grid sm:grid-cols-2 gap-5">
             {produitsAvecDetails.map((p: any) => (
               <div class="rounded-2xl bg-white border border-aloe-100 p-6 flex flex-col shadow-sm">
+                {p.image && (
+                  <a href={`/produits/${p.slug}/`} class="block h-32 mb-4">
+                    <img
+                      src={p.image}
+                      alt={p.nom}
+                      width="200"
+                      height="128"
+                      loading="lazy"
+                      decoding="async"
+                      class="w-full h-full object-contain"
+                    />
+                  </a>
+                )}
                 <p class="text-sm font-semibold text-aloe-800 mb-2 leading-snug">{p.nom}</p>
                 {p.price && <p class="text-2xl font-display text-aloe-700 mb-5">{p.price.toFixed(2)} €</p>}
                 <div class="mt-auto flex flex-col gap-2">

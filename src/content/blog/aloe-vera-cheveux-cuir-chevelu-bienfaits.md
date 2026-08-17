@@ -18,6 +18,8 @@ produitsLies:
     nom: "Aloe Vera Gelly"
   - slug: "forever-aloe-liquid-soap"
     nom: "Forever Aloe Liquid Soap"
+  - slug: "forever-marine-collagen"
+    nom: "Forever Marine Collagen"
 articlesLies:
   - slug: "aloe-vera-peau-beaute-bienfaits-forever"
     titre: "Aloe vera pour la peau : guide complet"
@@ -68,6 +70,10 @@ Le **[Forever Aloe Liquid Soap](/produits/forever-aloe-liquid-soap/)** peut êtr
 
 Ne sous-estimez pas l'action interne. La qualité des cheveux reflète directement l'état nutritionnel de l'organisme. Une cure de **[Forever Aloe Vera Gel](/produits/forever-pulpe-daloe-vera/)** apporte les vitamines, minéraux et acides aminés nécessaires à la kératine — la protéine constitutive du cheveu. Les personnes qui combinent application locale et cure interne obtiennent généralement de meilleurs résultats que celles qui n'utilisent que l'un ou l'autre.
 
+### Pour les ongles et la densité capillaire : Forever Marine Collagen
+
+Si vos ongles se dédoublent en même temps que vos cheveux s'affinent, le signal est nutritionnel avant d'être capillaire. Le **[Forever Marine Collagen](/produits/forever-marine-collagen/)** apporte 3 000 mg de peptides de collagène marin par dosette, avec du zinc et de la biotine qui contribuent au maintien de cheveux et d'ongles normaux. Une dosette par jour, en complément — pas en remplacement — des soins locaux ci-dessus. Un mois suffit généralement pour se faire une première idée sur les ongles.
+
 ## Protocole pratique selon votre problème
 
 **Cuir chevelu irrité ou qui démange** : Aloe Vera Gelly en masque cuir chevelu 2 fois par semaine + Forever Aloe Liquid Soap en shampoing. Évitez les produits coiffants contenant des silicones ou des alcools pendant la cure.
@@ -75,6 +81,8 @@ Ne sous-estimez pas l'action interne. La qualité des cheveux reflète directeme
 **Cheveux secs et abîmés** : Aloe Vera Gelly en masque sur toute la longueur, de la racine aux pointes, 1 fois par semaine. Laissez poser 30 minutes sous une serviette chaude pour optimiser la pénétration.
 
 **Chute de cheveux liée au stress ou aux carences** : Cure interne de Forever Aloe Vera Gel (60 ml par jour le matin à jeun) pendant au moins 2 mois. L'action se fait de l'intérieur — attendez-vous à des résultats après 6 à 10 semaines.
+
+**Ongles cassants et cheveux qui manquent de densité** : ajoutez une dosette quotidienne de [Forever Marine Collagen](/produits/forever-marine-collagen/) à la cure interne, sur un mois minimum.
 
 **Cheveux ternes et sans brillance** : quelques gouttes d'Aloe Vera Gelly sur les cheveux humides comme soin sans rinçage. Sa texture légère ne colle pas et restitue de la brillance naturelle.
 
