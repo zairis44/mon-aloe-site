@@ -129,14 +129,16 @@ const schemaItemList = nbRecettes > 0 ? {
                 const r = recette.data;
                 return (
                   <article class="rounded-3xl bg-white border overflow-hidden" style={`border-color: ${section.couleurBordure};`}>
-                    <div class="grid md:grid-cols-[300px_1fr] gap-0">
+                    <div class="grid md:grid-cols-[300px_1fr] gap-0 items-center">
                       {r.image && (
-                        <img
-                          src={r.image}
-                          alt={r.imageAlt ?? `${r.titre} — recette du programme C9 Forever`}
-                          class="w-full h-full object-cover max-h-[280px] md:max-h-none"
-                          loading="lazy"
-                        />
+                        <div class="p-5 flex items-center justify-center h-full">
+                          <img
+                            src={r.image}
+                            alt={r.imageAlt ?? `${r.titre} — recette du programme C9 Forever`}
+                            class="w-full max-h-[280px] object-cover rounded-2xl"
+                            loading="lazy"
+                          />
+                        </div>
                       )}
                       <div class="p-7">
                         <h3 class="text-xl font-display mb-2" style={`color: ${section.couleurAccent};`}>

@@ -2,6 +2,16 @@
 import Layout from '../../layouts/Layout.astro';
 import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
+import { getCollection } from 'astro:content';
+
+// Le nombre de produits par catégorie est calculé automatiquement
+// depuis la collection : plus aucun chiffre à mettre à jour à la main
+// quand un produit est ajouté ou retiré.
+const tousLesProduits = await getCollection('produits');
+
+function compter(slugCategorie: string) {
+  return tousLesProduits.filter((p) => (p.data as any).category === slugCategorie).length;
+}
 
 const categories = [
   {
@@ -9,47 +19,49 @@ const categories = [
     label: "Boissons Aloe Vera",
     icon: "🥤",
     desc: "La base de la gamme Forever Living. Pulpe d'aloe vera pure, boissons enrichies et coffrets découverte pour votre bien-être intérieur au quotidien.",
-    nbProduits: 9,
     couleur: "from-aloe-50 to-aloe-100",
     produitPhare: "Forever Aloe Vera Gel",
+    image: "/images/categories/boissons-aloe-vera.webp",
   },
   {
     slug: "programmes-detox",
     label: "Programmes Détox",
     icon: "🔄",
     desc: "Cures complètes pour repartir sur de bonnes bases. Le C9 (9 jours) et DX4 (4 jours) pour relancer votre métabolisme naturellement.",
-    nbProduits: 3,
     couleur: "from-sand to-aloe-50",
     produitPhare: "Programme C9",
+    image: "/images/categories/programmes-detox.webp",
   },
   {
     slug: "sport-et-fitness",
     label: "Sport & Fitness",
     icon: "💪",
     desc: "Compléments naturels pour optimiser vos performances et accélérer la récupération musculaire.",
-    nbProduits: 4,
     couleur: "from-aloe-100 to-aloe-200",
     produitPhare: "Forever Argi+",
+    image: "/images/categories/sport-et-fitness.webp",
   },
   {
     slug: "cremes-et-gels",
     label: "Beauté & Bien-être",
     icon: "🧴",
     desc: "Soins naturels pour la peau, le corps et les cheveux à base d'aloe vera pur. Gels, crèmes et savons.",
-    nbProduits: 9,
     couleur: "from-cream to-sand",
     produitPhare: "Aloe Gelly",
+    image: "/images/categories/cremes-et-gels.webp",
   },
   {
     slug: "nutrition",
     label: "Nutrition",
     icon: "🌱",
     desc: "Compléments alimentaires naturels certifiés IASC pour soutenir votre santé au quotidien.",
-    nbProduits: 4,
     couleur: "from-aloe-50 to-cream",
     produitPhare: "Forever Lite Ultra",
+    image: "/images/categories/nutrition.webp",
   },
-];
+].map((cat) => ({ ...cat, nbProduits: compter(cat.slug) }))
+ // On masque les catégories vides plutôt que d'afficher "0 produits"
+ .filter((cat) => cat.nbProduits > 0);
 ---
 
 <Layout
@@ -84,14 +96,24 @@ const categories = [
             href={`/produits/${cat.slug}/`}
             class="group rounded-3xl overflow-hidden border border-aloe-100 bg-white hover:shadow-xl hover:shadow-aloe-900/10 transition-all duration-300 hover:-translate-y-1"
           >
-            <div class={`bg-gradient-to-br ${cat.couleur} p-10 flex items-center justify-center`}>
-              <span class="text-6xl group-hover:scale-110 transition-transform duration-300">{cat.icon}</span>
+            <div class={`relative bg-gradient-to-br ${cat.couleur} aspect-[4/3] flex items-center justify-center overflow-hidden`}>
+              <!-- Emoji affiché en repli, masqué dès que l'image charge -->
+              <span class="absolute inset-0 flex items-center justify-center text-6xl group-hover:scale-110 transition-transform duration-300">
+                {cat.icon}
+              </span>
+              <img
+                src={cat.image}
+                alt={`${cat.label} — produits Forever Living`}
+                class="relative w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                loading="lazy"
+                onerror="this.style.display='none'"
+              />
             </div>
             <div class="p-6">
               <div class="flex items-start justify-between mb-3">
                 <h2 class="text-xl font-semibold text-aloe-800">{cat.label}</h2>
                 <span class="text-xs text-aloe-400 bg-aloe-50 rounded-full px-2.5 py-1 flex-shrink-0 ml-2">
-                  {cat.nbProduits} produits
+                  {cat.nbProduits} {cat.nbProduits > 1 ? 'produits' : 'produit'}
                 </span>
               </div>
               <p class="text-sm text-aloe-600 leading-relaxed mb-4">{cat.desc}</p>
