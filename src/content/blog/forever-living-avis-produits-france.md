@@ -44,6 +44,18 @@ draft: false
 
 Avant de commander des produits Forever Living, la plupart des gens font la même chose : ils cherchent des avis. "Forever living avis", "forever living arnaque", "ça marche vraiment ?" — ce sont des questions légitimes, surtout quand les prix ne sont pas anodins. Ce guide compile ce que les clients français disent réellement, et ce qu'il faut vérifier avant d'acheter.
 
+<div class="not-prose my-8 rounded-2xl bg-[#F3ECFA] border border-[#C9AEE0] p-6">
+  <p class="text-xs font-semibold uppercase tracking-widest text-[#7A4FA0] mb-2">Vous préférez juger sur pièces ?</p>
+  <p class="text-sm text-aloe-700 leading-relaxed mb-4">
+    Un avis de distributeur reste un avis de distributeur — je le sais. C'est pour ça que je documente
+    actuellement ma 10e cure C9 jour après jour : mensurations réelles, coups de mou, difficultés,
+    données sportives chiffrées. Sans version lissée.
+  </p>
+  <a href="/mon-journal-c9/" class="inline-flex items-center gap-2 rounded-full bg-[#7A4FA0] px-5 py-2.5 text-sm font-semibold text-white hover:opacity-90 transition-opacity">
+    📓 Lire mon journal C9, jour par jour
+  </a>
+</div>
+
 ## Forever Living : l'entreprise en quelques chiffres
 
 Forever Living Products existe depuis 1978. Fondée aux États-Unis par Rex Maughan, l'entreprise est aujourd'hui présente dans plus de 160 pays et affiche un chiffre d'affaires de plusieurs milliards de dollars annuels. En France, les produits sont distribués via un réseau de distributeurs indépendants agréés — dont je fais partie.
@@ -95,6 +107,8 @@ Sur internet, les avis Forever Living sont très polarisés : soit des superlati
 Voici les signaux d'un avis crédible : la personne précise la durée de la cure (pas "j'ai essayé" mais "après 6 semaines"), cite un effet spécifique plutôt qu'un bénéfice générique, et mentionne si elle a respecté le protocole recommandé (dosage, régularité).
 
 Un avis qui dit "ces produits ont changé ma vie" sans aucun détail n'a pas plus de valeur qu'un "c'est une arnaque" sans argument.
+
+C'est exactement pour cette raison que j'ai choisi de documenter ma dernière cure en direct plutôt que de la raconter après coup : [mon journal C9](/mon-journal-c9/) contient mes chiffres de départ, mes journées difficiles, mes écarts et mes résultats — vous jugerez par vous-même.
 
 ## Ce que je recommande avant d'acheter
 
