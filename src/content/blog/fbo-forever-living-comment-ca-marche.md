@@ -11,6 +11,8 @@ tags:
   - "fbo forever living"
   - "devenir fbo"
   - "distributeur forever living"
+image: "/images/blog/fbo-forever-living.webp"
+imageAlt: "Équipe de distributeurs Forever Living travaillant ensemble — statut FBO"
 produitsLies:
   - slug: "forever-pulpe-daloe-vera"
     nom: "Forever Aloe Vera Gel"
