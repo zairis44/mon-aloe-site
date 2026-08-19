@@ -31,6 +31,8 @@ produitsLies:
     nom: "Programme C9 Chocolat-Pêche"
   - slug: "programme-c9-forever-vanille-peche"
     nom: "Programme C9 Vanille-Pêche"
+  - slug: "programme-f15-debutant-vanille"
+    nom: "Programme F15 Débutant — la suite du C9"
 articlesLies:
   - slug: "programme-c9-forever-guide-cure-detox-9-jours"
     titre: "Programme C9 Forever : le guide complet"
@@ -73,6 +75,8 @@ Côté sportif, la **progression est mesurable**. Au Jour 3, je courais 5,29 km 
 **Ce qui est faux.** Prétendre que tout revient systématiquement. Ce qui détermine le maintien des résultats, ce n'est pas le programme, c'est ce que vous en faites ensuite. Avec une activité physique régulière et une attention aux quantités comme à la qualité des repas, la perte se conserve.
 
 C'est d'ailleurs le point le plus mal compris : **le C9 n'est pas un régime**. C'est une remise à zéro de 9 jours. Ceux qui le traitent comme une parenthèse à refermer reprennent tout. Ceux qui s'en servent comme d'un point de départ gardent leurs résultats.
+
+Forever a d'ailleurs prévu une suite pour cette raison précise : le [programme F15](/produits/programme-f15-debutant-vanille/), sur 15 jours, est conçu pour consolider plutôt que pour créer un nouveau déclic. Ce n'est pas obligatoire, mais c'est une option à connaître si la question de l'après vous préoccupe.
 
 ## Critique n°2 : « On meurt de faim »
 

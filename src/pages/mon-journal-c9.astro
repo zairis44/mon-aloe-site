@@ -542,11 +542,33 @@ function phaseDuJour(num: number) {
           )}
 
           {d.synthese.recommandation && (
-            <div class="rounded-2xl bg-aloe-800 p-7">
+            <div class="rounded-2xl bg-aloe-800 p-7 mb-6">
               <p class="text-xs font-semibold uppercase tracking-widest text-aloe-300 mb-3">Mon mot de la fin</p>
               <p class="text-cream leading-relaxed">{d.synthese.recommandation}</p>
             </div>
           )}
+
+          <!-- Passerelle vers le F15 -->
+          <div class="rounded-3xl bg-white border-2 border-[#9CCBA9] p-8">
+            <p class="text-xs font-semibold uppercase tracking-widest text-[#3E8C57] mb-3">
+              La suite du programme
+            </p>
+            <h3 class="text-xl text-aloe-900 font-display mb-3">Et si vous enchaîniez sur un F15 ?</h3>
+            <p class="text-sm text-aloe-700 leading-relaxed mb-5">
+              Forever conçoit le F15 comme la suite logique du C9 : 15 jours orientés vers la
+              consolidation plutôt que vers le déclic, avec trois niveaux selon votre condition
+              physique. C'est l'option à considérer si vous voulez éviter de repartir de zéro
+              dans quelques semaines. Rien d'obligatoire, mais le sujet mérite d'être posé.
+            </p>
+            <div class="flex flex-wrap gap-3">
+              <a href="/produits/programme-f15-debutant-vanille/" class="rounded-full bg-[#3E8C57] px-5 py-2.5 text-sm font-semibold text-white hover:opacity-90 transition-opacity">
+                Découvrir le F15 Débutant →
+              </a>
+              <a href="/produits/programmes-detox/" class="rounded-full border border-[#9CCBA9] px-5 py-2.5 text-sm font-semibold text-[#3E8C57] hover:bg-[#EDF7F0] transition-colors">
+                Voir tous les programmes
+              </a>
+            </div>
+          </div>
         </>
       ) : (
         <div class="rounded-3xl bg-white border border-dashed border-aloe-200 p-10 text-center">
@@ -605,8 +627,14 @@ function phaseDuJour(num: number) {
         <a href="/blog/programme-c9-forever-guide-cure-detox-9-jours/" class="rounded-full border border-aloe-200 bg-white px-5 py-2.5 text-sm font-medium text-aloe-600 hover:bg-aloe-50 transition-colors">
           📖 Le guide complet du C9
         </a>
+        <a href="/blog/c9-forever-avis/" class="rounded-full border border-aloe-200 bg-white px-5 py-2.5 text-sm font-medium text-aloe-600 hover:bg-aloe-50 transition-colors">
+          💬 Les avis sur le C9 passés au crible
+        </a>
         <a href="/blog/perdre-du-poids-naturellement-forever-programmes-minceur/" class="rounded-full border border-aloe-200 bg-white px-5 py-2.5 text-sm font-medium text-aloe-600 hover:bg-aloe-50 transition-colors">
           ⚖️ C9 ou DX4, lequel choisir ?
+        </a>
+        <a href="/produits/programmes-detox/" class="rounded-full border border-aloe-200 bg-white px-5 py-2.5 text-sm font-medium text-aloe-600 hover:bg-aloe-50 transition-colors">
+          📦 Tous les programmes : C9, F15, DX4
         </a>
       </div>
 
