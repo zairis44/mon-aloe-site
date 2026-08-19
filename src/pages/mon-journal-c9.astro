@@ -429,6 +429,138 @@ function phaseDuJour(num: number) {
   </section>
 
   <!-- ══════════════════════════════════════════════
+       SYNTHÈSE FINALE (visible seulement une fois remplie)
+  ══════════════════════════════════════════════ -->
+  <section class="bg-gradient-to-br from-aloe-50 via-cream to-sand py-16">
+    <div class="mx-auto max-w-3xl px-6">
+      {d.synthese?.avisGlobal ? (
+        <>
+          <div class="text-center mb-10">
+            <span class="inline-flex items-center gap-2 rounded-full bg-[#3E8C57] px-5 py-2 text-xs font-semibold uppercase tracking-widest text-white mb-5">
+              ✓ Cure terminée
+            </span>
+            <h2 class="text-3xl md:text-4xl text-aloe-900 font-display">Mon bilan après 9 jours</h2>
+          </div>
+
+          <!-- Résultats chiffrés -->
+          <div class="grid grid-cols-2 md:grid-cols-3 gap-4 mb-10">
+            {d.synthese.poidsFinal != null && d.synthese.poidsPerdu != null && (
+              <div class="col-span-2 md:col-span-3 rounded-3xl bg-[#3E8C57] p-8">
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-8">
+                  <div class="text-center">
+                    <p class="text-xs font-semibold uppercase tracking-widest text-white/70 mb-2">Poids final</p>
+                    <p class="text-5xl font-display text-white mb-1">{d.synthese.poidsFinal} kg</p>
+                    <p class="text-sm text-white/90">
+                      soit −{d.synthese.poidsPerdu} kg depuis le Jour 1
+                      {mesures.poids != null && ` (${mesures.poids} kg)`}
+                    </p>
+                  </div>
+                  {d.synthese.photoBalance && (
+                    <img
+                      src={d.synthese.photoBalance}
+                      alt="Balance avant et après le programme C9 Forever : 82,4 kg puis 79,7 kg"
+                      class="w-auto max-h-[220px] rounded-2xl border-2 border-white/30"
+                      loading="lazy"
+                    />
+                  )}
+                </div>
+              </div>
+            )}
+            {d.synthese.tourPoitrinePerdu != null && d.synthese.tourPoitrinePerdu > 0 && (
+              <div class="rounded-2xl bg-white border border-aloe-100 p-5 text-center">
+                <p class="text-2xl font-display text-aloe-700">−{d.synthese.tourPoitrinePerdu} cm</p>
+                <p class="text-xs text-aloe-400 mt-1">Tour de poitrine</p>
+              </div>
+            )}
+            {d.synthese.tourNombrilPerdu != null && d.synthese.tourNombrilPerdu > 0 && (
+              <div class="rounded-2xl bg-white border border-aloe-100 p-5 text-center">
+                <p class="text-2xl font-display text-aloe-700">−{d.synthese.tourNombrilPerdu} cm</p>
+                <p class="text-xs text-aloe-400 mt-1">Tour de nombril</p>
+              </div>
+            )}
+            {d.synthese.tourTaillePerdu != null && d.synthese.tourTaillePerdu > 0 && (
+              <div class="rounded-2xl bg-white border border-aloe-100 p-5 text-center">
+                <p class="text-2xl font-display text-aloe-700">−{d.synthese.tourTaillePerdu} cm</p>
+                <p class="text-xs text-aloe-400 mt-1">Tour de taille</p>
+              </div>
+            )}
+            {d.synthese.tourBrasPerdu != null && d.synthese.tourBrasPerdu > 0 && (
+              <div class="rounded-2xl bg-white border border-aloe-100 p-5 text-center">
+                <p class="text-2xl font-display text-aloe-700">−{d.synthese.tourBrasPerdu} cm</p>
+                <p class="text-xs text-aloe-400 mt-1">Tour de bras</p>
+              </div>
+            )}
+            {d.synthese.tourCuissePerdu === 0 && (
+              <div class="rounded-2xl bg-aloe-50 border border-aloe-200 p-5 text-center">
+                <p class="text-2xl font-display text-aloe-700">=</p>
+                <p class="text-xs text-aloe-500 mt-1">Tour de cuisse inchangé</p>
+              </div>
+            )}
+          </div>
+
+          <!-- Avis global -->
+          <div class="rounded-3xl bg-white border border-aloe-100 p-8 mb-6">
+            <p class="text-aloe-700 leading-relaxed whitespace-pre-line">{d.synthese.avisGlobal}</p>
+          </div>
+
+          <!-- Positifs / négatifs -->
+          <div class="grid md:grid-cols-2 gap-4 mb-6">
+            {d.synthese.pointsPositifs.length > 0 && (
+              <div class="rounded-2xl bg-aloe-50 border border-aloe-100 p-6">
+                <p class="text-xs font-semibold uppercase tracking-widest text-aloe-600 mb-4">👍 Ce que je retiens</p>
+                <ul class="space-y-2.5">
+                  {d.synthese.pointsPositifs.map((p) => (
+                    <li class="text-sm text-aloe-700 flex gap-2"><span>✓</span><span>{p}</span></li>
+                  ))}
+                </ul>
+              </div>
+            )}
+            {d.synthese.pointsNegatifs.length > 0 && (
+              <div class="rounded-2xl bg-sand/60 border border-aloe-100 p-6">
+                <p class="text-xs font-semibold uppercase tracking-widest text-aloe-600 mb-4">👎 Ce qui a été difficile</p>
+                <ul class="space-y-2.5">
+                  {d.synthese.pointsNegatifs.map((n) => (
+                    <li class="text-sm text-aloe-700 flex gap-2"><span>−</span><span>{n}</span></li>
+                  ))}
+                </ul>
+              </div>
+            )}
+          </div>
+
+          {d.synthese.pourQui && (
+            <div class="rounded-2xl bg-white border border-aloe-100 p-6 mb-4">
+              <p class="text-xs font-semibold uppercase tracking-widest text-aloe-500 mb-2">Pour qui ce programme est fait</p>
+              <p class="text-sm text-aloe-700 leading-relaxed">{d.synthese.pourQui}</p>
+            </div>
+          )}
+
+          {d.synthese.etApres && (
+            <div class="rounded-2xl bg-white border border-aloe-100 p-6 mb-4">
+              <p class="text-xs font-semibold uppercase tracking-widest text-aloe-500 mb-2">Et après ?</p>
+              <p class="text-sm text-aloe-700 leading-relaxed">{d.synthese.etApres}</p>
+            </div>
+          )}
+
+          {d.synthese.recommandation && (
+            <div class="rounded-2xl bg-aloe-800 p-7">
+              <p class="text-xs font-semibold uppercase tracking-widest text-aloe-300 mb-3">Mon mot de la fin</p>
+              <p class="text-cream leading-relaxed">{d.synthese.recommandation}</p>
+            </div>
+          )}
+        </>
+      ) : (
+        <div class="rounded-3xl bg-white border border-dashed border-aloe-200 p-10 text-center">
+          <p class="text-4xl mb-4">📝</p>
+          <h2 class="text-xl text-aloe-900 mb-2 font-display">La synthèse arrive bientôt</h2>
+          <p class="text-aloe-500">
+            Je publierai mon bilan complet une fois les 9 jours terminés — résultats, ce que j'en retiens vraiment, et si je le referais.
+          </p>
+        </div>
+      )}
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════
        POINTS À NE PAS NÉGLIGER
   ══════════════════════════════════════════════ -->
   {d.pointsANePasNegliger.length > 0 && (
@@ -448,53 +580,6 @@ function phaseDuJour(num: number) {
       </div>
     </section>
   )}
-
-  <!-- ══════════════════════════════════════════════
-       SYNTHÈSE FINALE (visible seulement une fois remplie)
-  ══════════════════════════════════════════════ -->
-  <section class="bg-gradient-to-br from-aloe-50 via-cream to-sand py-16">
-    <div class="mx-auto max-w-3xl px-6">
-      {d.synthese?.avisGlobal ? (
-        <>
-          <h2 class="text-3xl text-aloe-900 mb-8 font-display text-center">Bilan après 9 jours</h2>
-
-          <div class="grid grid-cols-2 gap-4 mb-8">
-            {d.synthese.poidsPerdu != null && (
-              <div class="rounded-2xl bg-white border border-aloe-100 p-6 text-center">
-                <p class="text-3xl font-display text-aloe-700">−{d.synthese.poidsPerdu} kg</p>
-                <p class="text-xs text-aloe-400 mt-1">Poids perdu</p>
-              </div>
-            )}
-            {d.synthese.tourTaillePerdu != null && (
-              <div class="rounded-2xl bg-white border border-aloe-100 p-6 text-center">
-                <p class="text-3xl font-display text-aloe-700">−{d.synthese.tourTaillePerdu} cm</p>
-                <p class="text-xs text-aloe-400 mt-1">Tour de taille</p>
-              </div>
-            )}
-          </div>
-
-          <div class="rounded-3xl bg-white border border-aloe-100 p-8 mb-6">
-            <p class="text-aloe-700 leading-relaxed">{d.synthese.avisGlobal}</p>
-          </div>
-
-          {d.synthese.pourQui && (
-            <div class="rounded-2xl bg-aloe-800 p-6 text-center">
-              <p class="text-xs font-semibold uppercase tracking-widest text-aloe-300 mb-2">Pour qui ?</p>
-              <p class="text-cream leading-relaxed">{d.synthese.pourQui}</p>
-            </div>
-          )}
-        </>
-      ) : (
-        <div class="rounded-3xl bg-white border border-dashed border-aloe-200 p-10 text-center">
-          <p class="text-4xl mb-4">📝</p>
-          <h2 class="text-xl text-aloe-900 mb-2 font-display">La synthèse arrive bientôt</h2>
-          <p class="text-aloe-500">
-            Je publierai mon bilan complet une fois les 9 jours terminés — résultats, ce que j'en retiens vraiment, et si je le referais.
-          </p>
-        </div>
-      )}
-    </div>
-  </section>
 
   <!-- ══════════════════════════════════════════════
        AVERTISSEMENT — conformité

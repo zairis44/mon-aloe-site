@@ -122,13 +122,20 @@ const journal = defineCollection({
     pointsANePasNegliger: z.array(z.string()).default([]),
 
     synthese: z.object({
+      photoBalance: z.string().optional(),
+      poidsFinal: z.number().optional(),
       poidsPerdu: z.number().optional(),
+      tourPoitrinePerdu: z.number().optional(),
+      tourNombrilPerdu: z.number().optional(),
       tourTaillePerdu: z.number().optional(),
+      tourCuissePerdu: z.number().optional(),
+      tourBrasPerdu: z.number().optional(),
       avisGlobal: z.string().optional(),
       pointsPositifs: z.array(z.string()).default([]),
       pointsNegatifs: z.array(z.string()).default([]),
       recommandation: z.string().optional(),
       pourQui: z.string().optional(),
+      etApres: z.string().optional(),
     }).optional(),
 
     produitsLies: z.array(z.object({
