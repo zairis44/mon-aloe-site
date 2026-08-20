@@ -102,7 +102,7 @@ const journal = defineCollection({
     }).optional(),
 
     jours: z.array(z.object({
-      numero: z.number().min(1).max(9),
+      numero: z.number().min(1).max(10),
       date: z.coerce.date(),
       titre: z.string(),
       poids: z.number().optional(),
@@ -125,10 +125,19 @@ const journal = defineCollection({
     // Liste globale de conseils pratiques, affichée en encadré dédié
     pointsANePasNegliger: z.array(z.string()).default([]),
 
+    // Meilleures périodes de l'année pour faire une cure
+    periodesPropices: z.array(z.object({
+      titre: z.string(),
+      texte: z.string(),
+      icone: z.string().optional(),
+    })).default([]),
+
     synthese: z.object({
       photoBalance: z.string().optional(),
       poidsFinal: z.number().optional(),
+      poidsJour10: z.number().optional(),
       poidsPerdu: z.number().optional(),
+      suiviUnMois: z.string().optional(),
       tourPoitrinePerdu: z.number().optional(),
       tourNombrilPerdu: z.number().optional(),
       tourTaillePerdu: z.number().optional(),

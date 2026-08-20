@@ -1,0 +1,120 @@
+---
+/**
+ * src/pages/bilan-un-mois-apres-c9.astro
+ * Article de suivi : un mois après la fin de la cure C9
+ * ⚠️ EN ATTENTE — noindex actif tant que le contenu n'est pas publié.
+ *    Le jour de la publication : retirer noindex, remplir la section
+ *    résultats, et soumettre l'URL dans la Search Console.
+ */
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
+const dateFinCure = new Date('2026-08-19');
+const datePublication = new Date('2026-09-19');
+const pageUrl = 'https://espritaloe.fr/bilan-un-mois-apres-c9/';
+
+const formatDate = (d: Date) =>
+  d.toLocaleDateString('fr-FR', { day: 'numeric', month: 'long', year: 'numeric' });
+---
+
+<Layout
+  title="Un mois après mon C9 : le bilan | Esprit Aloé"
+  description="Que reste-t-il des résultats un mois après la fin d'une cure C9 Forever ? Mes mesures réelles, sans filtre. Article en préparation."
+  canonical={pageUrl}
+  noindex={true}
+>
+  <Header />
+
+  <header class="bg-gradient-to-b from-[#2E5E3E] to-[#215B33] py-16">
+    <div class="mx-auto max-w-3xl px-6 text-center">
+      <nav class="text-xs text-aloe-400 mb-8" aria-label="Fil d'Ariane">
+        <ol class="flex items-center justify-center gap-2">
+          <li><a href="/" class="hover:text-aloe-200 transition-colors">Accueil</a></li>
+          <li class="text-aloe-600">›</li>
+          <li><a href="/mon-journal-c9/" class="hover:text-aloe-200 transition-colors">Mon journal C9</a></li>
+          <li class="text-aloe-600">›</li>
+          <li class="text-aloe-300">Bilan à un mois</li>
+        </ol>
+      </nav>
+
+      <span class="inline-flex items-center gap-2 rounded-full bg-white/15 px-4 py-1.5 text-xs font-semibold text-cream uppercase tracking-widest mb-6">
+        📅 Publication prévue vers le {formatDate(datePublication)}
+      </span>
+
+      <h1 class="text-3xl md:text-4xl text-cream leading-tight mb-6 font-display">
+        Un mois après mon C9 : que reste-t-il vraiment ?
+      </h1>
+      <p class="text-lg text-aloe-200 leading-relaxed">
+        C'est la question que tout le monde se pose et à laquelle presque personne ne répond
+        avec des chiffres. J'y répondrai avec mes mesures réelles, quelles qu'elles soient.
+      </p>
+    </div>
+  </header>
+
+  <section class="bg-cream py-16">
+    <div class="mx-auto max-w-2xl px-6">
+      <div class="rounded-3xl bg-white border border-dashed border-aloe-200 p-10 text-center mb-10">
+        <p class="text-4xl mb-4">⏳</p>
+        <h2 class="text-xl text-aloe-900 mb-3 font-display">Article en préparation</h2>
+        <p class="text-aloe-600 leading-relaxed">
+          Ma cure s'est terminée le {formatDate(dateFinCure)}. Je reprendrai exactement les
+          mêmes mesures, dans les mêmes conditions, un mois plus tard — et je publierai
+          les résultats ici, qu'ils soient bons ou non.
+        </p>
+      </div>
+
+      <div class="rounded-2xl bg-[#EDF7F0] border border-[#9CCBA9] p-8 mb-10">
+        <p class="text-xs font-semibold uppercase tracking-widest text-[#3E8C57] mb-4">
+          Le point de départ de ce suivi
+        </p>
+        <div class="grid grid-cols-2 gap-4 mb-5">
+          <div class="rounded-xl bg-white p-4 text-center">
+            <p class="text-2xl font-display text-aloe-800">82,4 kg</p>
+            <p class="text-xs text-aloe-500 mt-1">Avant la cure</p>
+          </div>
+          <div class="rounded-xl bg-white p-4 text-center">
+            <p class="text-2xl font-display text-[#3E8C57]">79,0 kg</p>
+            <p class="text-xs text-aloe-500 mt-1">Au Jour 10</p>
+          </div>
+        </div>
+        <p class="text-sm text-aloe-700 leading-relaxed">
+          Soit 3,4 kg et 15 centimètres cumulés en moins sur l'ensemble des mensurations.
+          La vraie question n'est pas là : elle est de savoir ce qu'il en reste une fois
+          la vie normale reprise.
+        </p>
+      </div>
+
+      <div class="rounded-2xl bg-sand/60 border border-aloe-200 p-7">
+        <p class="text-xs font-semibold uppercase tracking-widest text-aloe-500 mb-3">
+          Ce que contiendra cet article
+        </p>
+        <ul class="space-y-2.5 text-sm text-aloe-700">
+          <li class="flex gap-2"><span>•</span><span>Le poids et les mensurations relevés un mois après, dans les mêmes conditions</span></li>
+          <li class="flex gap-2"><span>•</span><span>Ce que j'ai réellement conservé comme habitudes, et ce que j'ai laissé filer</span></li>
+          <li class="flex gap-2"><span>•</span><span>Si j'ai enchaîné sur un F15 ou non, et pourquoi</span></li>
+          <li class="flex gap-2"><span>•</span><span>Mon avis sur ce qui fait tenir les résultats — ou pas</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-sand/50 py-16">
+    <div class="mx-auto max-w-3xl px-6 text-center">
+      <h2 class="text-2xl text-aloe-900 mb-6 font-display">En attendant</h2>
+      <div class="flex flex-wrap justify-center gap-3">
+        <a href="/mon-journal-c9/" class="rounded-full border border-aloe-200 bg-white px-5 py-2.5 text-sm font-medium text-aloe-600 hover:bg-aloe-50 transition-colors">
+          📓 Relire mon journal C9 jour par jour
+        </a>
+        <a href="/blog/c9-forever-avis/" class="rounded-full border border-aloe-200 bg-white px-5 py-2.5 text-sm font-medium text-aloe-600 hover:bg-aloe-50 transition-colors">
+          💬 Les avis sur le C9 passés au crible
+        </a>
+        <a href="/contact/" class="rounded-full border border-aloe-200 bg-white px-5 py-2.5 text-sm font-medium text-aloe-600 hover:bg-aloe-50 transition-colors">
+          ✉️ Me poser une question
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <Footer />
+</Layout>
