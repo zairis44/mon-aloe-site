@@ -28,3 +28,6 @@ rapports/
 *.key
 *service-account*.json
 .secrets/
+
+# Les analyses concurrentielles sont des instantanes non reproductibles
+!rapports/concurrence/
