@@ -31,6 +31,10 @@
   les 5 `description` > 160 (liste dans le rapport d'audit), hors pages gelées.
 - [ ] **Conclusion manquante** : `aloe-vera-sport-recuperation-musculaire.md` a perdu sa
   section finale quand les faux témoignages ont été retirés → ajouter « Ce qu'il faut retenir ».
+- [ ] **29/08 — 3 seoTitle modifiés** (pulpe d'aloe vera, FAB Active Boost, savon avocat).
+  Positions de départ : pulpe 41 (156 impr), FAB 20 (8 impr), savon 18,9 (8 impr).
+  À remesurer fin septembre via `node scripts/gsc-export.mjs`. Ne rien modifier d'autre
+  sur ces 3 fiches d'ici là. Volumes faibles pour FAB et savon : ne pas conclure sur du bruit.
 - [ ] **FAQ "dangereux"** (déployée le 9 août) : verdict prévu début septembre.
   Page `forever-living-avis-produits-france` **gelée**, ne pas toucher avant la mesure.
 - [ ] **Journal C9** (`/mon-journal-c9/`, live depuis aujourd'hui) : nouvelle fenêtre
