@@ -3,6 +3,23 @@
 
 ## 🔴 Priorité haute — fenêtres de mesure actives
 
+- [ ] **Titre de la page avis — à changer dès le verdict de début septembre.**
+  Analyse concurrentielle complète : `rapports/concurrence/2026-08-29-cluster-avis-dangereux.md`.
+  Constat : la page `/blog/forever-living-avis-produits-france/` est en position 6,4 avec
+  2 169 impressions mais **2,21 % de CTR**, parce que son H1 (« ce que les clients français
+  disent vraiment ») ne correspond pas à la requête n°1 du site (« les produits forever
+  sont-ils dangereux », 229 impressions). Le concurrent en tête reprend la question mot pour mot.
+  Preuve interne : sur « forever avis négatif », où intention et titre coïncident, le CTR monte
+  à 6,52 %. → Réécrire title + meta description autour de la question de la sécurité.
+  Objectif mesuré : 4-5 % de CTR à position équivalente, fenêtre de 4 semaines, ne rien
+  modifier d'autre sur la page pendant la mesure.
+- [ ] **Section sécurité à écrire** sur cette même page : aucun concurrent ne cite le règlement
+  (UE) 2021/468 (interdiction des dérivés hydroxyanthracéniques dans les denrées alimentaires),
+  qui est pourtant le cœur factuel de la question « l'aloe vera est-il dangereux ». Angle
+  réglementaire et vérifiable — pas d'angle médical. **À valider par Rafael avant rédaction.**
+- [ ] **Variante sans tiret** : « les produits forever sont ils dangereux » fait 63 impressions
+  et 0 clic en position 6,3. Faire apparaître cette formulation naturellement dans une question
+  de FAQ de la page.
 - [ ] **Lot technique de l'audit** (rapport complet : `rapports/audit-seo/2026-08-28.md`) :
   entrée de menu « Nutrition » cassée dans `Header.astro` L36-42 et `404.astro` L60 ;
   H1 dupliqué sur les 34 fiches produit (`src/pages/produits/[slug].astro` L230 → `<p>`) ;
@@ -98,6 +115,9 @@ intégralement. Conformité CE 1924/2006 vérifiée.
 **Décision éditoriale** : pas de contenu à angle médical sur le site. La requête « avis médical /
 avis médecin » (≈100 impressions/mois, position 5-8, aucune page dédiée) est **volontairement
 laissée de côté** — Rafael n'est pas médecin et ne souhaite pas se placer sur ce terrain.
+
+**Analyse concurrentielle du cluster avis/dangereux** réalisée le 29 août — rapport dans
+`rapports/concurrence/2026-08-29-cluster-avis-dangereux.md` (priorités septembre ci-dessus).
 
 **Pages gelées : aucune touchée.** `forever-living-avis-produits-france.md`,
 `mon-journal-c9.astro`, `c9-aout-2026.md`, l'article franchise et le bouton « Commander »
