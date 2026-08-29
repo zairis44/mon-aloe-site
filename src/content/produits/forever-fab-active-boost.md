@@ -1,5 +1,5 @@
 ---
-name: "Forever FAB"
+name: "Forever FAB Active Boost"
 reference: "821"
 slug: "forever-fab-active-boost"
 price: 49.9
@@ -9,7 +9,7 @@ images:
 category: "boissons-aloe-vera"
 description: "La boisson énergisante à base d'aloe vera, pensée pour les actifs et les sportifs. Forever FAB associe le gel d'aloe vera, le guarana (caféine naturelle), le complexe de plantes adaptogènes ADX7, la taurine et des vitamines B. Saveur fruitée et pétillante, vegan, sans gluten. Une alternative plus naturelle aux energy drinks classiques. Réservée aux adultes."
 titreDetails: ""
-seoTitle: "Forever FAB – Boisson énergisante aloe vera sport"
+seoTitle: "Forever FAB Active Boost – Boisson énergisante sport"
 seoDescription: "Forever FAB booste énergie et concentration grâce au guarana, aloe vera et ADX7. Boisson vegan, sans gluten, idéale pour sportifs et journées intenses."
 video: ""
 lienCommande: "http://www.foreverliving.fr/ref/330001628607/821"

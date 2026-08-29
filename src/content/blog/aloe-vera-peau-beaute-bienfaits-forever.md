@@ -24,6 +24,8 @@ produitsLies:
     nom: "Aloe MSM Gel"
   - slug: "forever-aloe-liquid-soap"
     nom: "Aloe Liquid Soap"
+  - slug: "forever-aloe-avocado-face-and-body-soap"
+    nom: "Savon Aloe & Avocat Forever"
 articlesLies:
   - slug: "aloe-vera-cheveux-cuir-chevelu-bienfaits"
     titre: "Aloe vera cheveux : bienfaits et soins naturels"

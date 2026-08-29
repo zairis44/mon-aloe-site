@@ -8,7 +8,7 @@ images: []
 category: "boissons-aloe-vera"
 description: "La pulpe d’aloe vera la plus pure du marché, à boire chaque matin pour soutenir votre digestion, votre énergie et vos défenses naturelles. 99,7 % de gel stabilisé, sans conservateur, certifié IASC. Réf. 815."
 titreDetails: "Forever Aloe Vera Gel : 99,7 % de pureté, zéro conservateur"
-seoTitle: "Forever Aloe Vera Gel – Boisson aloe 99,7 %"
+seoTitle: "Pulpe d’aloe vera Forever (Aloe Vera Gel) – 99,7 % pure"
 seoDescription: "Forever Aloe Vera Gel (Réf. 815) : 99,7 % de gel d'aloe vera pur, sans conservateur, riche en vitamine C. La boisson aloe vera la plus vendue au monde."
 video: ""
 lienCommande: "http://www.foreverliving.fr/ref/330001628607/815"
@@ -17,6 +17,8 @@ disponible: true
 faq:
   - question: "Pourquoi le Forever Aloe Vera Gel est-il si réputé ?"
     reponse: "Sa pureté. Vous buvez 99,7 % de gel d’aloe vera, prélevé dans le cœur de la feuille, sans l’écorce qui contient l’aloïne. Forever stabilise ce gel dans les heures qui suivent la récolte, ce qui préserve ses composés actifs. Le produit porte la certification IASC, la référence mondiale pour la qualité de l’aloe vera, et affiche la concentration la plus élevée de la gamme."
+  - question: "Quelle différence entre « pulpe d’aloe vera » et « gel d’aloe vera » ?"
+    reponse: "Aucune : ce sont deux noms du même produit. « Aloe Vera Gel » est l’appellation technique retenue par Forever ; « pulpe d’aloe vera » est le terme courant en français. Dans les deux cas, il s’agit de la chair translucide prélevée au cœur de la feuille, séparée de l’écorce qui contient l’aloïne. Le mot « pulpe » désigne simplement cette partie interne de la feuille, par opposition à l’écorce."
   - question: "Qu’est-ce que je peux attendre d’une cure régulière ?"
     reponse: "Beaucoup de personnes notent un transit plus régulier et moins de ballonnements après deux à trois semaines. Le gel soutient aussi vos défenses naturelles grâce à l’acémannane et à la vitamine C, et cette même vitamine C aide à réduire la fatigue. Les effets s’installent avec la régularité, pas en un jour."
   - question: "Quand et comment le boire ?"

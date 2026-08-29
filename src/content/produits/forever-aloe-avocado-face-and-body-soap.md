@@ -9,7 +9,7 @@ images:
 category: "cremes-et-gels"
 description: "Le savon qui nettoie sans dessécher. Riche en huile d'avocat et en aloe vera, le Forever Aloe Avocado Soap nettoie le visage et le corps tout en préservant l'hydratation naturelle de la peau. L'avocat nourrit, l'aloe vera apaise. Convient à tous les types de peau, même sensibles. Sans parabènes ni sulfates."
 titreDetails: "Forever Aloe Avocado Face & Body Soap : la douceur naturelle de l’avocat et de l’Aloe vera pour votre peau"
-seoTitle: "Forever Aloe Avocado Face & Body Soap – Hydratation et douceur"
+seoTitle: "Savon aloe vera avocat Forever – Visage & corps"
 seoDescription: "Forever Aloe Avocado Face & Body Soap : savon hydratant à l’avocat et Aloe vera pour visage et corps. Nettoyage doux, peau nourrie et apaisée."
 video: ""
 lienCommande: "http://www.foreverliving.fr/ref/330001628607/284"
