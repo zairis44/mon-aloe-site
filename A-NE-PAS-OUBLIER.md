@@ -1,8 +1,19 @@
 # Esprit Aloé — À ne pas oublier
-*Mise à jour : 15 août 2026*
+*Mise à jour : 28 août 2026*
 
 ## 🔴 Priorité haute — fenêtres de mesure actives
 
+- [ ] **Lot technique de l'audit** (rapport complet : `rapports/audit-seo/2026-08-28.md`) :
+  entrée de menu « Nutrition » cassée dans `Header.astro` L36-42 et `404.astro` L60 ;
+  H1 dupliqué sur les 34 fiches produit (`src/pages/produits/[slug].astro` L230 → `<p>`) ;
+  23 `lienCommande` en `http://` à passer en `https://` ; compteur « 25 produits » faux (34) ;
+  image manquante `public/images/recettes/shaker-fraises-chocolat.webp`.
+- [ ] **CTR, pas position.** Search Console 28/07→25/08 : 51 clics, 3 207 impressions,
+  **CTR global 1,59 %** alors que le site est en position 4-8 sur ses requêtes principales.
+  Le problème est le clic, pas le classement → réécrire les 9 `title` > 60 caractères et
+  les 5 `description` > 160 (liste dans le rapport d'audit), hors pages gelées.
+- [ ] **Conclusion manquante** : `aloe-vera-sport-recuperation-musculaire.md` a perdu sa
+  section finale quand les faux témoignages ont été retirés → ajouter « Ce qu'il faut retenir ».
 - [ ] **FAQ "dangereux"** (déployée le 9 août) : verdict prévu début septembre.
   Page `forever-living-avis-produits-france` **gelée**, ne pas toucher avant la mesure.
 - [ ] **Journal C9** (`/mon-journal-c9/`, live depuis aujourd'hui) : nouvelle fenêtre
@@ -16,6 +27,15 @@
 
 ## 🟠 Priorité moyenne
 
+- [ ] **Fiches produit invisibles** : toutes en position 40+ dans la GSC. Pas d'optimisation
+  ponctuelle à faire tant que le problème est structurel — à traiter comme un chantier à part.
+- [ ] **Doublon www** : `www.espritaloe.fr/` et `espritaloe.fr/` apparaissent séparément dans
+  la GSC. Le canonical est correct (Google consolidera), mais une redirection 301 au niveau
+  du domaine Vercel serait plus propre. Non urgent.
+- [ ] **`.gitattributes`** avec `* text=auto eol=lf` : le passage sur Windows provoque des
+  avertissements CRLF sur tout le repo, qui produiront un jour un diff illisible.
+- [ ] Page Suisse orpheline et `/recettes-c9/` quasi-orpheline : correctifs de maillage
+  rapides, mais **5 impressions et 0 impression** respectivement — l'audit les surévaluait.
 - [ ] **Franchise cluster** / requête navigationnelle "forever" : re-évaluation
   prévue fin septembre (fenêtre insuffisante avant cette date).
 - [ ] **Collecter de vrais avis clients** pour les fiches les plus vues sans avis
@@ -37,6 +57,54 @@
 - [ ] **Bouton "Commander" du menu principal** : volontairement laissé tel quel
   (pas de produit précis associé) pendant qu'on observe les clics sortants vers
   Forever via le tracking GA4 mis en place aujourd'hui.
+
+## ✅ Fait le 28 août 2026 (mise en place des agents + passe conformité)
+
+**Environnement de travail (nouveau)**
+- Site désormais développé **sous Windows** (fin du travail sous Ubuntu), repo cloné dans
+  `C:\Users\rafae\OneDrive\Desktop\SiteWeb\mon-aloe-site`
+- VS Code + extension Claude Code + CLI v2.1.251 ; config dans `.vscode/`
+  (extensions recommandées, tâches en un clic pour build / agents / export GSC)
+- **5 sous-agents** dans `.claude/agents/` : `seo-content`, `astro-dev`, `fiches-produits`,
+  `analytics`, `concurrence`. Chacun lit CE FICHIER en premier et ne touche pas aux pages gelées.
+- Agent planifié Windows : `scripts/agent-run.ps1` + `scripts/install-taches.ps1`
+  (missions audit-seo / veille / concurrence / analytics). **Pas encore installé** — à activer
+  seulement quand les rapports manuels auront prouvé leur utilité.
+
+**Search Console branchée**
+- `scripts/gsc-export.mjs` (zéro dépendance npm) exporte requêtes, pages, croisement
+  page × requête et évolution quotidienne dans `data/analytics/`
+- Compte de service Google `lecteur-gsc@espritaloe-seo.iam.gserviceaccount.com`, autorisé en
+  lecture dans la Search Console ; clé JSON **hors du repo** dans `C:\Users\rafae\.secrets\`
+- Config dans `.env` (ignoré par git) ; procédure complète dans `GSC-SETUP.md`
+
+**Conformité — corrigé**
+- **Avis clients fictifs supprimés** dans 3 fichiers : `index.astro` (Sylvie M. / Karim B. /
+  Élodie R.), `aloe-vera-stress-sommeil-naturel.md`, `aloe-vera-sport-recuperation-musculaire.md`.
+  Sur l'accueil, remplacés par un encart renvoyant vers `/mon-journal-c9/` (vécu réel documenté).
+  → Risque DGCCRF écarté, et cohérence avec un positionnement entièrement fondé sur la confiance.
+- **Allégations de revenus retirées** de `devenir-distributeur-forever-living.astro` :
+  « 500 à 2000 € par mois » supprimé, « 9,3 Mds$ » non sourçable remplacé, plusieurs formulations
+  alignées sur la prudence de la page Suisse.
+
+**6 articles tronqués complétés** (troncatures antérieures, présentes dans le dépôt d'origine —
+elles étaient visibles en production) : `aloe-vera-stress-sommeil-naturel`,
+`aloe-vera-cheveux-cuir-chevelu-bienfaits`, `aloe-vera-systeme-immunitaire-defenses-naturelles`,
+`forever-freedom-aloe-vera-articulations-mobilite`,
+`perdre-du-poids-naturellement-forever-programmes-minceur`, `aloe-vera-peau-beaute-bienfaits-forever`.
+Deux d'entre elles coupaient **au milieu d'une mise en garde santé** — avertissements rétablis
+intégralement. Conformité CE 1924/2006 vérifiée.
+
+**Décision éditoriale** : pas de contenu à angle médical sur le site. La requête « avis médical /
+avis médecin » (≈100 impressions/mois, position 5-8, aucune page dédiée) est **volontairement
+laissée de côté** — Rafael n'est pas médecin et ne souhaite pas se placer sur ce terrain.
+
+**Pages gelées : aucune touchée.** `forever-living-avis-produits-france.md`,
+`mon-journal-c9.astro`, `c9-aout-2026.md`, l'article franchise et le bouton « Commander »
+n'ont reçu aucune modification. Le lien interne vers la page en mesure a été conservé.
+
+**Risque signalé, à trancher mi-septembre** : `c9-forever-avis.md` cible le mot-clé suivi
+dans la fenêtre de mesure du journal C9 — à aligner une fois le verdict rendu.
 
 ## ✅ Fait le 15 août 2026 (session complète C9 + conversion)
 
