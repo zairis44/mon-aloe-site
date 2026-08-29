@@ -80,4 +80,12 @@ L'hydratation est fondamentale — visez 2 à 3 litres d'eau par jour pendant le
 
 **Les résultats sont-ils durables ?** Ils le sont si vous maintenez des habitudes alimentaires raisonnables après le programme. Le C9 est un tremplin, pas une solution permanente à lui seul.
 
-**Le 
+**Le C9 convient-il à tout le monde ?** Non. Les programmes minceur Forever sont déconseillés aux femmes enceintes ou allaitantes, aux adolescents, ainsi qu'aux personnes souffrant d'une pathologie chronique ou suivant un traitement médical. En cas de diabète, de trouble du comportement alimentaire ou de doute sur votre état de santé, demandez l'avis de votre médecin avant de commencer. Un programme de ce type accompagne une démarche de rééquilibrage alimentaire, il ne remplace ni un suivi ni un traitement médical.
+
+## Ce qu'il faut retenir
+
+Le C9 et le DX4 ne sont pas des régimes miracles : ce sont des programmes structurés de quelques jours qui associent gel d'aloe vera, apports protéinés et compléments ciblés pour relancer de bonnes habitudes. Le C9 (9 jours) vise un changement de fond ; le DX4 (4 jours) sert de remise à zéro rapide ou de préparation à un C9.
+
+Ce que vous mettez en place après le programme compte davantage que les chiffres de la balance pendant la cure. Hydratation, marche quotidienne, respect du guide fourni et accompagnement d'un distributeur disponible font la vraie différence sur les résultats.
+
+Aucune perte de poids chiffrée n'est garantie, et les résultats varient d'une personne à l'autre. Pour savoir quel programme correspond à votre situation, [contactez-moi](/contact/) : je vous accompagne gratuitement pendant toute la durée de la cure.

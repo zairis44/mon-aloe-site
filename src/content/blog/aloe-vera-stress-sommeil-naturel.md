@@ -70,12 +70,12 @@ Le **[Mini Aloe Argi+](/produits/mini-aloe-argi-plus/)** est le format nomade de
 
 **Le soir** : 30 ml de gel d'aloe vera dilué dans de l'eau tiède, 30 minutes avant le dîner. Apaise le système digestif avant le coucher. Éteignez les écrans 1 heure avant de dormir — la lumière bleue bloque la production de mélatonine.
 
-## Ce que disent les utilisateurs
-
-*"J'étais épuisée mentalement depuis des mois et je dormais très mal. Depuis ma cure d'aloe vera, je me réveille enfin reposée et j'ai retrouvé une vraie sérénité au quotidien."* — Céline, 44 ans
-
-*"Le travail était très intense cette année. Rafael m'a conseillé l'Aloe Vera Gel combiné à l'ARGI+. En trois semaines, les tensions avaient nettement diminué et mon sommeil s'était amélioré."* — Marc, 51 ans
-
 ## Ce qu'il faut retenir
 
-L'aloe vera Forever n'est pas un sédatif. C'est un soutien nu
+L'aloe vera Forever n'est pas un sédatif. C'est un soutien nutritionnel du système nerveux : il apporte les vitamines B et le magnésium que le stress consomme en excès, aide à apaiser l'axe intestin-cerveau et contribue à réduire la fatigue physique et mentale. Les effets ne sont pas immédiats comme ceux d'un somnifère : ils se construisent sur plusieurs semaines de prise régulière, à raison de 60 ml le matin à jeun.
+
+Pour de vrais résultats, l'aloe vera se combine avec une hygiène de vie cohérente : horaires de sommeil réguliers, écrans et caféine limités en fin de journée, hydratation suffisante et activité physique. C'est l'ensemble qui fait la différence, pas un produit isolé.
+
+Si votre stress ou vos troubles du sommeil s'installent durablement, s'accompagnent d'une anxiété importante ou retentissent sur votre quotidien, parlez-en à votre médecin. Les compléments Forever accompagnent le confort et la vitalité au quotidien : ils ne remplacent ni un avis ni un traitement médical.
+
+Un doute sur le produit adapté à votre situation ? [Contactez-moi](/contact/) pour un conseil personnalisé.

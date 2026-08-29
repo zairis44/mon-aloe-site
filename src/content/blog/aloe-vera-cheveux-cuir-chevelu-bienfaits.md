@@ -88,4 +88,10 @@ Si vos ongles se dédoublent en même temps que vos cheveux s'affinent, le signa
 
 ## Ce qu'il faut retenir
 
-L'aloe vera n'est pas un miracle capillaire qui transforme des cheveux abîmés en une nuit. C'est une approc
+L'aloe vera n'est pas un miracle capillaire qui transforme des cheveux abîmés en une nuit. C'est une approche de fond : il apaise le cuir chevelu, hydrate la fibre, assainit les follicules et, par voie interne, apporte des nutriments utiles à la kératine. Les résultats se jugent sur plusieurs semaines, pas sur une application.
+
+Le plus efficace reste de combiner les deux voies : l'application locale d'[Aloe Vera Gelly](/produits/aloe-gelly-forever-gel-apaisant/) sur le cuir chevelu et les longueurs, et une cure interne de [Forever Aloe Vera Gel](/produits/forever-pulpe-daloe-vera/) pour agir sur la qualité du cheveu à la racine. Si les ongles se dédoublent en même temps, le [Forever Marine Collagen](/produits/forever-marine-collagen/) complète utilement la cure sur un mois minimum.
+
+Enfin, l'aloe vera n'agit pas sur une chute de cheveux d'origine médicale ou hormonale : en cas de chute importante, brutale ou qui se prolonge, consultez un dermatologue. Les produits Forever accompagnent le confort du cuir chevelu et la beauté des cheveux au quotidien : ils ne remplacent pas un avis médical.
+
+Des questions sur les produits adaptés à votre type de cheveux ? [Contactez-moi](/contact/) pour un conseil personnalisé.

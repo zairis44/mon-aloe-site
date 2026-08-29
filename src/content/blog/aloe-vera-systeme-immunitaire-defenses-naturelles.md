@@ -84,4 +84,14 @@ L'aloe vera Forever s'intègre dans cette approche globale comme un renforcement
 
 **Combien de temps avant de ressentir les effets ?** Entre 3 et 6 semaines de consommation régulière pour les effets immunitaires. Les effets digestifs et énergétiques se manifestent souvent plus rapidement.
 
-**L'aloe vera est-il compatible avec mes médicaments ?** Dans la grande majorité des cas, oui. Si vous êtes sous traitement lourd (chimiothérapie, immunosuppresseurs), consultez votre 
+**L'aloe vera est-il compatible avec mes médicaments ?** Dans la grande majorité des cas, oui. Si vous êtes sous traitement lourd (chimiothérapie, immunosuppresseurs), sous anticoagulants ou sous traitement contre le diabète, demandez l'avis de votre médecin ou de votre pharmacien avant de commencer une cure : lui seul peut vérifier l'absence d'interaction avec votre situation.
+
+**Les enfants peuvent-ils en prendre ?** À partir de 6 ans, une dose réduite (15 à 30 ml) est envisageable ponctuellement. Pour les plus jeunes, ainsi que pour les femmes enceintes ou allaitantes, demandez systématiquement l'avis d'un professionnel de santé.
+
+## Ce qu'il faut retenir
+
+L'aloe vera Forever apporte dans un même produit plusieurs nutriments utiles aux défenses naturelles — en particulier la vitamine C et le zinc, qui contribuent au fonctionnement normal du système immunitaire, ainsi que des vitamines B qui aident à réduire la fatigue. Ce n'est pas un bouclier contre les infections, mais un soutien nutritionnel régulier qui prend tout son sens aux changements de saison et dans les périodes de fatigue.
+
+Il agit d'autant mieux qu'il s'inscrit dans une hygiène de vie cohérente : sommeil suffisant, alimentation variée, activité physique modérée et gestion du stress. Comptez 60 ml le matin à jeun, sur au moins quatre à six semaines. Aucun complément ne remplace un avis ni un traitement médical : en cas de fièvre persistante, d'infections à répétition ou de doute sur votre état de santé, consultez votre médecin.
+
+Besoin d'aide pour choisir votre cure ? [Contactez-moi](/contact/), je vous oriente selon votre profil.

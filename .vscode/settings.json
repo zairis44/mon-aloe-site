@@ -1,0 +1,23 @@
+{
+  "terminal.integrated.defaultProfile.windows": "PowerShell",
+  "files.eol": "\n",
+  "files.exclude": {
+    "**/node_modules": true,
+    "**/.astro": true,
+    "**/dist": true
+  },
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/.astro": true,
+    "**/dist": true,
+    "**/rapports": true,
+    "**/package-lock.json": true
+  },
+  "[astro]": { "editor.defaultFormatter": "astro-build.astro-vscode" },
+  "[markdown]": { "editor.wordWrap": "on", "editor.quickSuggestions": { "other": false } },
+  "editor.formatOnSave": false,
+  "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.patterns": {
+    "package.json": "package-lock.json, astro.config.mjs, vercel.json, .gitignore"
+  }
+}

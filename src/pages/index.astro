@@ -71,23 +71,6 @@ const benefices = [
     lien: "/blog/aloe-vera-systeme-immunitaire-defenses-naturelles/",
   },
 ];
-const avis = [
-  {
-    texte: "Je bois la pulpe d'aloe vera tous les matins depuis 3 mois, ma digestion s'est nettement améliorée.",
-    auteur: "Sylvie M.",
-    produit: "Forever Aloe Vera Gel",
-  },
-  {
-    texte: "Le programme C9 m'a vraiment aidée à reprendre de bonnes habitudes. Conseils au top.",
-    auteur: "Karim B.",
-    produit: "Programme C9",
-  },
-  {
-    texte: "Livraison rapide et produits de qualité. Je recommande sans hésiter.",
-    auteur: "Élodie R.",
-    produit: "Forever Freedom",
-  },
-];
 const schemaFAQ = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
@@ -290,32 +273,27 @@ const schemaFAQ = {
     </div>
   </section>
   <!-- ══════════════════════════════════════════════
-       AVIS CLIENTS
-       Correctif contraste : text-aloe-400 → text-aloe-600
-       et label "Ils nous font confiance" : text-aloe-500 → text-aloe-700
+       MON RETOUR D'EXPÉRIENCE
+       Remplace l'ancienne section "Avis clients" : témoignages
+       non vérifiables retirés (conformité). Renvoie vers le journal
+       C9, retour d'expérience réel et documenté jour par jour.
   ══════════════════════════════════════════════ -->
   <section class="bg-cream py-24">
-    <div class="mx-auto max-w-6xl px-6">
-      <div class="text-center mb-14">
-        <!-- Correctif contraste -->
-        <span class="text-xs font-semibold uppercase tracking-widest text-aloe-700">Ils nous font confiance</span>
-        <h2 class="text-4xl text-aloe-900 mt-2">Avis clients</h2>
-      </div>
-      <div class="grid md:grid-cols-3 gap-8">
-        {avis.map((a) => (
-          <figure class="rounded-2xl bg-white border border-aloe-100 p-8">
-            <div class="text-clay text-lg mb-3">★★★★★</div>
-            <blockquote class="text-sm text-aloe-700 leading-relaxed mb-4">"{a.texte}"</blockquote>
-            <figcaption class="text-sm">
-              <span class="font-semibold text-aloe-800">{a.auteur}</span>
-              <!-- Correctif contraste : text-aloe-400 → text-aloe-600 -->
-              <span class="text-aloe-600 text-xs"> — à propos de {a.produit}</span>
-            </figcaption>
-          </figure>
-        ))}
-      </div>
-      <div class="text-center mt-12">
-        <a href="/blog/forever-living-avis-produits-france/" class="rounded-full border border-aloe-300 px-8 py-3.5 text-sm font-semibold text-aloe-700 hover:bg-aloe-50 transition-colors">
+    <div class="mx-auto max-w-4xl px-6 text-center">
+      <span class="text-xs font-semibold uppercase tracking-widest text-aloe-700">Mon expérience</span>
+      <h2 class="text-4xl text-aloe-900 mt-2 mb-6">J'ai testé le programme C9, jour par jour</h2>
+      <p class="text-lg text-aloe-700 leading-relaxed max-w-2xl mx-auto mb-8">
+        Plutôt que des témoignages anonymes, je documente mon propre parcours : mensurations
+        de départ, ressenti quotidien, photos et bilan chiffré tout au long des 9 jours de la cure.
+      </p>
+      <a
+        href="/mon-journal-c9/"
+        class="inline-flex items-center gap-2 rounded-full bg-aloe-600 hover:bg-aloe-700 px-8 py-3.5 text-sm font-semibold text-cream transition-colors"
+      >
+        Lire mon journal C9 complet →
+      </a>
+      <div class="mt-8">
+        <a href="/blog/forever-living-avis-produits-france/" class="text-sm font-semibold text-aloe-600 hover:text-aloe-700 underline">
           Forever Living est-il fiable ? Lire l'avis complet →
         </a>
       </div>

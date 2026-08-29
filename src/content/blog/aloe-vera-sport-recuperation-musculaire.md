@@ -76,8 +76,4 @@ Les enzymes digestives de l'aloe vera (amylase, lipase) optimisent l'absorption 
 
 **Après l'effort** (dans les 30 minutes) : 60 ml de Forever Aloe Vera Gel pour l'hydratation et la réduction inflammatoire. Application de l'Aloe MSM Gel en local sur les zones sollicitées (mollets, genoux, épaules).
 
-**Au quotidien** (jours de repos) : 60 ml de gel d'aloe vera le matin à jeun pour la régénération cellulaire continue. Forever Freedom le matin si douleurs articulaires persistantes.
-
-## Ce que disent les sportifs
-
-*"J'avais des douleurs chroniques aux genoux depuis ma reprise du running. Depuis que je prends Forever Freedom chaque jour, j'ai retrouvé une mobilité quasi normale et mes séances 
+**Au quotidien** (jours de repos) : 60 ml de gel d'aloe vera le matin à jeun pour la régénération cellulaire continue. Forever Freedom le matin si douleurs articulaires persistantes. 

@@ -96,4 +96,12 @@ Une routine cohérente à l'aloe vera maximise les résultats sur la durée :
 
 **Combien de temps avant de voir des résultats ?** Les effets apaisants et hydratants sont immédiats. Pour les bénéfices anti-âge et régénérants, comptez 4 à 6 semaines d'utilisation régulière. Si vous ajoutez une cure de [collagène marin](/produits/forever-marine-collagen/) en parallèle, raisonnez plutôt sur trois mois.
 
-**L'aloe vera aide-t-il contre l'acné ?
+**L'aloe vera aide-t-il contre l'acné ?** Il ne remplace pas un traitement dermatologique, mais il aide à apaiser les rougeurs et l'inconfort des peaux à imperfections. Sa texture non grasse hydrate sans obstruer les pores, et son action apaisante calme les zones irritées par les soins asséchants. Pour une acné installée ou inflammatoire, l'avis d'un dermatologue reste indispensable.
+
+## Ce qu'il faut retenir
+
+L'aloe vera est l'un des rares actifs naturels à agir sur plusieurs plans à la fois : hydratation en profondeur, apaisement immédiat des irritations, soutien de la régénération cutanée et protection antioxydante au quotidien. Le [Aloe Vera Gelly](/produits/aloe-gelly-forever-gel-apaisant/) couvre l'essentiel des besoins, la [Aloe Propolis Crème](/produits/forever-aloe-propolis-creme/) prend le relais sur les peaux sèches, et le [Forever Marine Collagen](/produits/forever-marine-collagen/) complète l'approche par voie interne quand la préoccupation porte sur la fermeté.
+
+Comme pour tout soin, la régularité prime : quelques semaines d'application quotidienne valent mieux qu'un usage ponctuel. Et si une réaction cutanée persiste, s'aggrave ou vous inquiète, demandez l'avis d'un dermatologue — un cosmétique accompagne le confort de la peau, il ne remplace pas un avis médical.
+
+Une question sur le produit adapté à votre type de peau ? [Contactez-moi](/contact/) pour un conseil personnalisé.

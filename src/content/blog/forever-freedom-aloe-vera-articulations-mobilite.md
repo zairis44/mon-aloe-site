@@ -74,4 +74,12 @@ Pour les douleurs articulaires ponctuelles ou post-effort, l'association avec l'
 
 Forever Freedom n'est pas adapté aux personnes allergiques aux crustacés (la glucosamine est d'origine crustacée), aux végétariens stricts, ni aux femmes enceintes. En cas de traitement anticoagulant, consultez votre médecin avant de commencer.
 
-Ce n'est pas un médicament et il ne remplace pas un traitement médical p
+Ce n'est pas un médicament et il ne remplace pas un traitement médical prescrit par votre médecin. Si vous ressentez des douleurs articulaires persistantes, intenses ou accompagnées d'un gonflement, consultez un professionnel de santé avant d'entamer une cure : un complément alimentaire accompagne le confort articulaire, il ne se substitue ni à un diagnostic ni à une prise en charge médicale.
+
+## Ce qu'il faut retenir
+
+Forever Freedom réunit, dans une base de gel d'aloe vera, trois actifs de référence du confort articulaire — glucosamine, chondroïtine et MSM — auxquels s'ajoute la vitamine C, qui contribue à la formation normale du collagène. C'est une formule pensée pour les sportifs, les actifs qui sentent les premières raideurs et les seniors qui souhaitent entretenir leur mobilité.
+
+Les effets sur le confort se ressentent en général après quatre à six semaines, et une cure de trois à six mois est conseillée pour un bénéfice sur la durée. La dose de référence est de 90 ml par jour, en deux prises. Pour les inconforts ponctuels, l'association avec l'[Aloe MSM Gel](/produits/forever-aloe-msm-gel/) en application locale complète bien l'action interne.
+
+Vous ne savez pas si Forever Freedom est adapté à votre situation ? [Contactez-moi](/contact/), on fait le point ensemble.
