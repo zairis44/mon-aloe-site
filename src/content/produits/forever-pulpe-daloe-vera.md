@@ -14,19 +14,6 @@ video: ""
 lienCommande: "http://www.foreverliving.fr/ref/330001628607/815"
 featured: true
 disponible: true
-avis:
-  - texte: "Je bois la pulpe d'aloe vera chaque matin depuis 3 mois. Ma digestion s'est nettement améliorée et je me sens moins ballonnée au quotidien. Je ne m'en passe plus."
-    auteur: "Sylvie M."
-    ville: "Loire-Atlantique"
-    note: 5
-  - texte: "Produit certifié et de qualité. Les effets sur mon transit se sont fait sentir après 2 semaines. Rafael m'a bien guidée pour le dosage. Livraison rapide."
-    auteur: "Marie-Claire T."
-    ville: "Nantes"
-    note: 5
-  - texte: "J'étais sceptique au départ mais après 6 semaines de cure, mon confort digestif s'est vraiment amélioré. Je le recommande à toute ma famille."
-    auteur: "Thierry D."
-    ville: "Paris"
-    note: 5
 faq:
   - question: "Pourquoi le Forever Aloe Vera Gel est-il si réputé ?"
     reponse: "Sa pureté. Vous buvez 99,7 % de gel d’aloe vera, prélevé dans le cœur de la feuille, sans l’écorce qui contient l’aloïne. Forever stabilise ce gel dans les heures qui suivent la récolte, ce qui préserve ses composés actifs. Le produit porte la certification IASC, la référence mondiale pour la qualité de l’aloe vera, et affiche la concentration la plus élevée de la gamme."

@@ -28,7 +28,7 @@ articlesLies:
 draft: false
 ---
 
-Les douleurs articulaires touchent bien plus de personnes qu'on ne le pense : sportifs qui encaissent des milliers d'impacts par an, actifs passés 40 ans qui ressentent les premières raideurs matinales, seniors qui voient leur mobilité se réduire progressivement. En France, plus de 10 millions de personnes vivent avec de l'arthrose. Les solutions naturelles sérieuses restent rares — Forever Freedom en est une.
+Les douleurs articulaires touchent bien plus de personnes qu'on ne le pense : sportifs qui encaissent des milliers d'impacts par an, actifs passés 40 ans qui ressentent les premières raideurs matinales, seniors qui voient leur mobilité se réduire progressivement. En France, plus de 10 millions de personnes vivent avec de l'arthrose. Les solutions naturelles sérieuses restent rares — [Forever Freedom, la boisson à l'aloe vera pensée pour les articulations](/produits/forever-freedom-confort-articulaire/) en est une.
 
 ## Ce que contient Forever Freedom
 

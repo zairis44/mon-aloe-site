@@ -20,6 +20,10 @@ produitsLies:
     nom: "Aloe Propolis Crème"
   - slug: "forever-marine-collagen"
     nom: "Forever Marine Collagen"
+  - slug: "forever-aloe-msm-gel"
+    nom: "Aloe MSM Gel"
+  - slug: "forever-aloe-liquid-soap"
+    nom: "Aloe Liquid Soap"
 articlesLies:
   - slug: "aloe-vera-cheveux-cuir-chevelu-bienfaits"
     titre: "Aloe vera cheveux : bienfaits et soins naturels"

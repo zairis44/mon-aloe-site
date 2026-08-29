@@ -18,6 +18,8 @@ produitsLies:
     nom: "Forever Aloe Vera Gel"
   - slug: "forever-argi-pls"
     nom: "Forever ARGI+"
+  - slug: "mini-aloe-argi-plus"
+    nom: "Mini Aloe Argi+"
 articlesLies:
   - slug: "aloe-vera-digestion-bienfaits"
     titre: "Aloe vera digestion : 5 effets concrets"

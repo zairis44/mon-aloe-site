@@ -18,6 +18,12 @@ produitsLies:
     nom: "Forever Freedom"
   - slug: "forever-argi-pls"
     nom: "Forever ARGI+"
+  - slug: "forever-pulpe-daloe-vera"
+    nom: "Forever Aloe Vera Gel"
+  - slug: "forever-aloe-msm-gel"
+    nom: "Forever Aloe MSM Gel"
+  - slug: "forever-fab-active-boost"
+    nom: "Forever FAB"
 articlesLies:
   - slug: "forever-freedom-aloe-vera-articulations-mobilite"
     titre: "Forever Freedom : soin articulaire aloe vera"

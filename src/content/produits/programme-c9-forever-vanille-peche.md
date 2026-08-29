@@ -14,19 +14,6 @@ video: ""
 lienCommande: "http://www.foreverliving.fr/ref/330001628607/629"
 featured: true
 disponible: true
-avis:
-  - texte: "J'ai perdu 3,5 kg en 9 jours et surtout retrouvé une vraie légèreté digestive. Les 2 premiers jours sont difficiles mais après c'est incroyable. Je l'ai refait 3 mois plus tard."
-    auteur: "Émilie R."
-    ville: "Lyon"
-    note: 5
-  - texte: "Le programme C9 m'a donné le coup de pouce dont j'avais besoin après les fêtes. Rafael m'a accompagnée tout au long des 9 jours. Conseils au top, résultats au rendez-vous."
-    auteur: "Karim B."
-    ville: "Bordeaux"
-    note: 5
-  - texte: "Honnêtement je ne croyais pas trop aux programmes détox mais là c'est bluffant. Moins 4 kg, ventre plat et beaucoup plus d'énergie. Je recommande à 100%."
-    auteur: "Sandrine P."
-    ville: "Toulouse"
-    note: 5
 faq:
   - question: "C'est quoi, le programme C9 ?"
     reponse: "Une cure de 9 jours qui combine gel d'aloe vera, shakes protéinés, compléments ciblés, un plan alimentaire et un guide d'exercices. L'idée n'est pas de vous affamer mais de relancer votre digestion, d'alléger l'organisme et de vous remettre en mouvement, pour repartir sur de meilleures habitudes."

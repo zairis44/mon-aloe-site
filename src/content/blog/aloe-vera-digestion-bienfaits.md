@@ -75,8 +75,6 @@ Le **[Forever Aloe Vera Gel](/produits/forever-pulpe-daloe-vera/)** (Réf. 815) 
 
 Le **[Forever Aloe Berry Nectar](/produits/forever-aloe-berry-nectar/)** associe l'aloe vera à la canneberge. Je le recommande aux personnes qui ont aussi des fragilités urinaires, car la canneberge soutient le confort des voies urinaires en parallèle.
 
-Le **[Forever Freedom](/produits/forever-freedom-confort-articulaire/)** convient aux personnes actives qui souhaitent soutenir à la fois leur digestion et leurs articulations dans une seule boisson quotidienne.
-
 ## Comment prendre l'aloe vera pour la digestion
 
 Pour des résultats optimaux, voici le protocole que je recommande :

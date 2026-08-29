@@ -18,6 +18,8 @@ produitsLies:
     nom: "Programme C9 Vanille-Pêche"
   - slug: "programme-dx4-forever"
     nom: "Programme DX4 Forever"
+  - slug: "programme-c9-forever-chocolat-peche"
+    nom: "Programme C9 Chocolat-Pêche"
 articlesLies:
   - slug: "programme-c9-forever-guide-cure-detox-9-jours"
     titre: "Programme C9 Forever : guide complet détox"

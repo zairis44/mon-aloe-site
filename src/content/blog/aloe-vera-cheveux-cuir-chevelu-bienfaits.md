@@ -20,6 +20,8 @@ produitsLies:
     nom: "Forever Aloe Liquid Soap"
   - slug: "forever-marine-collagen"
     nom: "Forever Marine Collagen"
+  - slug: "forever-pulpe-daloe-vera"
+    nom: "Forever Aloe Vera Gel"
 articlesLies:
   - slug: "aloe-vera-peau-beaute-bienfaits-forever"
     titre: "Aloe vera pour la peau : guide complet"
