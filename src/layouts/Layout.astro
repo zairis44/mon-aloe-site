@@ -13,6 +13,7 @@ import '@fontsource/mulish/500.css';
 import '@fontsource/mulish/600.css';
 import '@fontsource/mulish/700.css';
 import PopupRemise from '../components/PopupRemise.astro';
+import AnalyticsConsent from '../components/AnalyticsConsent.astro';
 
 export interface Props {
   title?: string;
@@ -99,14 +100,6 @@ const schemaGraph = {
     <!-- Slot pour JSON-LD spécifiques aux pages (FAQPage, Product, Article…) -->
     <slot name="head" />
 
-    <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BNF9DV82DN"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-BNF9DV82DN');
-    </script>
   </head>
   <body>
     <slot />
@@ -114,20 +107,6 @@ const schemaGraph = {
     <!-- Popup promo -15% -->
     <PopupRemise />
 
-    <!-- Suivi des clics sortants vers Forever (compteur simple via GA4) -->
-    <script>
-      document.addEventListener('DOMContentLoaded', () => {
-        document.querySelectorAll('a[href*="foreverliving.fr"]').forEach((lien) => {
-          lien.addEventListener('click', () => {
-            if (typeof gtag === 'function') {
-              gtag('event', 'click_lien_forever', {
-                page_path: window.location.pathname,
-                link_url: lien.getAttribute('href'),
-              });
-            }
-          });
-        });
-      });
-    </script>
+    <AnalyticsConsent />
   </body>
 </html>

@@ -1,6 +1,19 @@
 # Esprit Aloé — À ne pas oublier
 *Mise à jour : 28 août 2026*
 
+## Livraison du 13 septembre 2026 — commande, maillage et mesure
+
+Autorisation de Rafael dans Codex : modifier GitHub et publier les corrections vérifiées sur Vercel.
+
+- Page Commander : boutique officielle et sortie du site explicites, choix du canal avant les étapes, suppression des horaires contradictoires et engagements non vérifiés. Meta recentrée sur le parcours de commande.
+- Cinq liens contextuels ajoutés entre pages hors gel ; FAQ Loire-Atlantique alignée sur la commande dans la boutique Forever (visible et JSON-LD).
+- Analytics : chargement seulement après accord, choix accepter/refuser enregistré 180 jours, accès permanent aux préférences et retrait. Le suivi des clics partage désormais la même fonction que l'initialisation ; les destinations sont vérifiées par domaine.
+- Confidentialité : texte ajusté à ce fonctionnement. Ceci n'est pas un audit juridique complet.
+- Validation : build de 68 pages ; tests navigateur avant consentement, refus, acceptation, un événement sortant, retrait ; contrôle mobile. Requêtes Google bloquées pendant les tests pour éviter les faux événements.
+- Mesure : le changement de marquage affecte toutes les pages. Ouvrir une nouvelle référence GA4 à la mise en ligne ; ne pas comparer directement les compteurs avant/après comme un gain SEO. Réception effective dans la propriété GA4 encore à confirmer après connexion.
+- Gels : aucun contenu/title/meta des pages sous observation modifié. Le gabarit H1 reste inchangé pour préserver les fiches gelées. Nutrition possède déjà une redirection Vercel vers le catalogue ; pas de changement sur cette base.
+- Tarifs et délais de la page Livraison, promotions, redirection de l'ancien domaine : vérification officielle/technique toujours à reprendre ; aucun tarif inventé ni DNS modifié.
+
 ## 🔴 Priorité haute — fenêtres de mesure actives
 
 - [ ] **Titre de la page avis — à changer dès le verdict de début septembre.**

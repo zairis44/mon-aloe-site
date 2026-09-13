@@ -1,0 +1,155 @@
+<section id="analytics-consent" class="analytics-consent" aria-labelledby="analytics-consent-title" hidden>
+  <div>
+    <h2 id="analytics-consent-title">Mesure d’audience</h2>
+    <p>Acceptez-vous Google Analytics pour mesurer les visites et les clics vers la boutique Forever ?
+      Vous pouvez refuser et continuer à utiliser le site.
+      <a href="/confidentialite/">En savoir plus</a>.
+    </p>
+  </div>
+  <div class="analytics-actions">
+    <button type="button" data-analytics-choice="denied">Refuser</button>
+    <button type="button" data-analytics-choice="granted">Accepter</button>
+  </div>
+</section>
+<div class="analytics-preferences">
+  <button type="button" id="analytics-preferences" aria-controls="analytics-consent" aria-expanded="false">
+    Gérer mes cookies de mesure d’audience
+  </button>
+</div>
+
+<script>
+  const measurementId = 'G-BNF9DV82DN';
+  const storageKey = 'espritaloe_analytics_consent_v1';
+  const maxAge = 180 * 24 * 60 * 60 * 1000;
+  const banner = document.getElementById('analytics-consent');
+  const preferences = document.getElementById('analytics-preferences');
+  const analyticsWindow = window as Window & { dataLayer?: unknown[] };
+  const flags = window as unknown as Record<string, unknown>;
+  let consent: 'granted' | 'denied' | null = null;
+  let loaded = false;
+  let returnFocus: HTMLElement | null = null;
+
+  try {
+    const saved = JSON.parse(localStorage.getItem(storageKey) || 'null');
+    if (saved && (saved.choice === 'granted' || saved.choice === 'denied') &&
+      Number.isFinite(saved.at) && saved.at <= Date.now() && Date.now() - saved.at < maxAge) {
+      consent = saved.choice;
+    }
+  } catch { /* Unavailable storage means a fresh choice, never implicit consent. */ }
+
+  function gtag(..._args: unknown[]) {
+    (analyticsWindow.dataLayer ||= []).push(arguments);
+  }
+
+  function loadAnalytics() {
+    if (loaded || consent !== 'granted') return;
+    loaded = true;
+    flags[`ga-disable-${measurementId}`] = false;
+    gtag('consent', 'default', {
+      analytics_storage: 'granted', ad_storage: 'denied',
+      ad_user_data: 'denied', ad_personalization: 'denied',
+    });
+    gtag('js', new Date());
+    gtag('config', measurementId, {
+      allow_google_signals: false,
+      allow_ad_personalization_signals: false,
+      page_location: location.origin + location.pathname,
+      cookie_expires: 180 * 24 * 60 * 60,
+      cookie_update: false,
+    });
+    const script = document.createElement('script');
+    script.async = true;
+    script.src = `https://www.googletagmanager.com/gtag/js?id=${measurementId}`;
+    document.head.append(script);
+  }
+
+  function removeAnalyticsCookies() {
+    const names = document.cookie.split(';').map(part => part.trim().split('=')[0])
+      .filter(name => name === '_ga' || name.startsWith('_ga_') || name === '_gid' || name.startsWith('_gat'));
+    const parts = location.hostname.split('.');
+    const domains = ['', ...parts.map((_, i) => parts.slice(i).join('.'))];
+    for (const name of names) {
+      for (const domain of domains) {
+        document.cookie = `${name}=; Max-Age=0; Path=/; SameSite=Lax${domain ? `; Domain=${domain}` : ''}`;
+      }
+    }
+  }
+
+  function showBanner(focus = false) {
+    if (!banner) return;
+    banner.hidden = false;
+    preferences?.setAttribute('aria-expanded', 'true');
+    if (focus) banner.querySelector<HTMLButtonElement>('button')?.focus();
+  }
+
+  preferences?.addEventListener('click', () => {
+    returnFocus = preferences;
+    showBanner(true);
+  });
+  banner?.querySelectorAll<HTMLButtonElement>('[data-analytics-choice]').forEach(button => {
+    button.addEventListener('click', () => {
+      const choice = button.dataset.analyticsChoice;
+      if (choice !== 'granted' && choice !== 'denied') return;
+      consent = choice;
+      try { localStorage.setItem(storageKey, JSON.stringify({ choice, at: Date.now() })); } catch { /* Session-only choice. */ }
+      banner.hidden = true;
+      preferences?.setAttribute('aria-expanded', 'false');
+      (returnFocus || preferences)?.focus();
+      if (choice === 'granted') loadAnalytics();
+      else {
+        flags[`ga-disable-${measurementId}`] = true;
+        removeAnalyticsCookies();
+        if (loaded) {
+          gtag('consent', 'update', { analytics_storage: 'denied', ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied' });
+          // Reload without the Google script to stop previously installed listeners.
+          location.reload();
+        }
+      }
+    });
+  });
+
+  document.addEventListener('click', event => {
+    if (consent !== 'granted' || !(event.target instanceof Element)) return;
+    const link = event.target.closest<HTMLAnchorElement>('a[href]');
+    if (!link) return;
+    const url = new URL(link.href, location.href);
+    if (url.protocol !== 'https:' && url.protocol !== 'http:') return;
+    if (url.hostname !== 'foreverliving.fr' && !url.hostname.endsWith('.foreverliving.fr')) return;
+    gtag('event', 'click_lien_forever', {
+      page_path: location.pathname,
+      link_url: url.origin + url.pathname,
+      transport_type: 'beacon',
+    });
+  });
+
+  if (consent === 'granted') loadAnalytics();
+  else {
+    flags[`ga-disable-${measurementId}`] = true;
+    removeAnalyticsCookies();
+    if (consent === null) showBanner();
+  }
+</script>
+
+<style>
+  .analytics-consent[hidden] { display: none; }
+  .analytics-consent {
+    position: fixed; inset: auto 1rem 1rem; z-index: 200;
+    display: flex; align-items: center; gap: 1.5rem; flex-wrap: wrap;
+    padding: 1.25rem; background: var(--color-cream, #f7f4ec);
+    color: var(--color-aloe-900, #1a3123); border: 1px solid var(--color-aloe-300, #8bb892);
+    border-radius: 1rem; box-shadow: 0 6px 28px #0002;
+    max-height: 80vh; overflow: auto;
+  }
+  .analytics-consent > div:first-child { flex: 1 1 24rem; }
+  h2 { font-size: 1.1rem; font-weight: 600; margin-bottom: .4rem; }
+  p { font-size: .9rem; line-height: 1.5; }
+  a { text-decoration: underline; }
+  .analytics-actions { display: flex; gap: .75rem; flex-wrap: wrap; }
+  .analytics-actions button {
+    padding: .7rem 1.3rem; border: 1px solid currentColor; border-radius: 2rem;
+    background: var(--color-aloe-800, #1f3c29); color: white; cursor: pointer; font: inherit;
+  }
+  button:focus-visible, a:focus-visible { outline: 3px solid #c97f52; outline-offset: 3px; }
+  .analytics-preferences { text-align: center; padding: .75rem 1rem; background: var(--color-cream, #f7f4ec); }
+  .analytics-preferences button { cursor: pointer; font-size: .8rem; text-decoration: underline; color: var(--color-aloe-800, #1f3c29); }
+</style>

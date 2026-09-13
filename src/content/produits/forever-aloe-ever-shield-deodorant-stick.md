@@ -48,6 +48,8 @@ Vous avez la peau sensible, vous vous épilez ou vous rasez les aisselles, ou vo
 
 Une fine couche sous chaque aisselle, sur peau propre et sèche, le matin. Vous pouvez l'appliquer immédiatement après le rasage ou l'épilation, sans attendre.
 
+Pour votre premier achat d'Ever-Shield, consultez les [étapes de commande sur la boutique Forever Living](/commander/).
+
 ## Une question ?
 
 Appelez-moi ou écrivez-moi. Je vous conseille les produits d'hygiène Forever adaptés à votre peau.
