@@ -144,11 +144,21 @@
   h2 { font-size: 1.1rem; font-weight: 600; margin-bottom: .4rem; }
   p { font-size: .9rem; line-height: 1.5; }
   a { text-decoration: underline; }
-  .analytics-actions { display: flex; gap: .75rem; flex-wrap: wrap; }
+  .analytics-actions { display: flex; align-items: center; gap: .75rem; flex-wrap: wrap; }
   .analytics-actions button {
+    min-height: 44px;
     padding: .7rem 1.3rem; border: 1px solid currentColor; border-radius: 2rem;
     background: var(--color-aloe-800, #1f3c29); color: white; cursor: pointer; font: inherit;
   }
+  .analytics-actions button[data-analytics-choice="denied"] {
+    padding-inline: .75rem; border-color: transparent;
+    background: transparent; color: var(--color-aloe-800, #1f3c29);
+    font-size: .875rem; text-decoration: underline; text-underline-offset: .2em;
+  }
+  .analytics-actions button[data-analytics-choice="denied"]:hover {
+    background: var(--color-aloe-100, #e5eee6);
+  }
+  .analytics-actions button[data-analytics-choice="granted"] { font-weight: 600; }
   button:focus-visible, a:focus-visible { outline: 3px solid #c97f52; outline-offset: 3px; }
   .analytics-preferences { text-align: center; padding: .75rem 1rem; background: var(--color-cream, #f7f4ec); }
   .analytics-preferences button { cursor: pointer; font-size: .8rem; text-decoration: underline; color: var(--color-aloe-800, #1f3c29); }
