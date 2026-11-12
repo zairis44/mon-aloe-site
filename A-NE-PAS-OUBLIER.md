@@ -1,6 +1,12 @@
 # Esprit Aloé — À ne pas oublier
 *Mise à jour : 28 août 2026*
 
+## Lot K du 12 novembre 2026 — accessibilité et dimensions d'images
+
+- Pied de page : titres `h4` → `h3` (plus de saut de niveau après les `h2`), aucun changement visuel.
+- Nouveau `src/lib/imgSize.ts` : lit les dimensions réelles des images de `public/` au build (sharp) et renseigne `width`/`height` sur le journal C9 (23 images + bandeau sticky), les recettes C9, le bandeau journal du blog et les vignettes de `/produits/`. Pour une nouvelle page : `sizesIn(data)` ou `imgSize(src)`.
+- **Image manquante** : `public/images/recettes/shaker-fraises-chocolat.webp` est référencée par la recette `shaker-fraises-chocolat` mais le fichier n'existe pas (image cassée sur /recettes-c9/). À fournir par Rafael (ou retirer le champ `image` de la recette).
+
 ## Lot J du 12 novembre 2026 — corrections de l'audit crawl
 
 - Lien « Nutrition » supprimé (menu, pages catégorie, 404) : la catégorie n'existe pas, `/produits/nutrition/` redirigeait vers `/produits/` (la redirection reste dans vercel.json pour d'anciens liens externes).

@@ -10,6 +10,7 @@ import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import { foreverHref, FOREVER_REL } from '../lib/forever';
+import { sizesIn } from '../lib/imgSize';
 import { getCollection, render } from 'astro:content';
 
 const tousLesJournaux = await getCollection('journal');
@@ -21,6 +22,7 @@ if (!entry) {
 
 const { Content } = await render(entry);
 const d = entry.data;
+const tailles = await sizesIn(d);
 
 const TOTAL_JOURS = 9;
 const jourActuel = d.jours.filter((j) => j.numero <= TOTAL_JOURS).length;
@@ -395,6 +397,8 @@ function phaseDuJour(num: number) {
                   {jour.photos.map((photo) => (
                     <img
                       src={photo.src}
+                      width={tailles[photo.src]?.width}
+                      height={tailles[photo.src]?.height}
                       alt={photo.legende ?? `${jour.titre} — programme C9 Forever, journal de Rafael Avenard`}
                       class="w-auto max-h-[420px] mx-auto rounded-2xl border border-white"
                       loading="lazy"
@@ -435,6 +439,8 @@ function phaseDuJour(num: number) {
                   {jour.infoDuJour.photo && (
                     <img
                       src={jour.infoDuJour.photo}
+                      width={tailles[jour.infoDuJour.photo]?.width}
+                      height={tailles[jour.infoDuJour.photo]?.height}
                       alt={`${jour.infoDuJour.titre} — programme C9 Forever Living`}
                       class="mt-4 w-auto max-h-[300px] mx-auto rounded-xl border"
                       style={`border-color: ${phase.couleurBordure};`}
@@ -481,6 +487,8 @@ function phaseDuJour(num: number) {
                   {d.synthese.photoBalance && (
                     <img
                       src={d.synthese.photoBalance}
+                      width={tailles[d.synthese.photoBalance]?.width}
+                      height={tailles[d.synthese.photoBalance]?.height}
                       alt="Balance avant et après le programme C9 Forever : 82,4 kg au départ"
                       class="w-auto max-h-[220px] rounded-2xl border-2 border-white/30"
                       loading="lazy"
@@ -721,7 +729,7 @@ function phaseDuJour(num: number) {
       <details class="cta-sticky__details">
         <summary class="cta-sticky__resume">
           {produitC9.data.image && (
-            <img src={produitC9.data.image} alt={produitC9.data.name} class="cta-sticky__image" />
+            <img src={produitC9.data.image} width={tailles[produitC9.data.image]?.width ?? 1024} height={tailles[produitC9.data.image]?.height ?? 940} alt={produitC9.data.name} class="cta-sticky__image" />
           )}
           <div class="cta-sticky__texte">
             <span class="cta-sticky__nom">{produitC9.data.name}</span>
