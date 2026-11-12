@@ -1,6 +1,10 @@
 # Esprit Aloé — À ne pas oublier
 *Mise à jour : 28 août 2026*
 
+## Lot D2 du 12 novembre 2026 — encadré blog
+
+- `src/pages/blog/index.astro` : encadré « Aloe vera à boire : est-ce dangereux ? » sous l'encadré du journal C9 (lien vers l'article sécurité). Retirer le bloc quand l'article ne sera plus à mettre en avant.
+
 ## Lot D du 12 novembre 2026 — article sécurité « aloe vera à boire danger »
 
 - Nouvel article `aloe-vera-a-boire-danger-contre-indications` (requête informationnelle à fort volume, sert de preuve d'honnêteté / E-E-A-T). Sources citées : communiqué DGS/DGCCRF (2 août 2018), note ANSES 2018-SA-0188, avis EFSA 2018. Pas de prétention santé ; renvoi vers le médecin ; IASC décrite comme association du secteur.
