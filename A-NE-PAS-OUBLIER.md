@@ -1,6 +1,13 @@
 # Esprit Aloé — À ne pas oublier
 *Mise à jour : 28 août 2026*
 
+## Lot M du 12 novembre 2026 — article « Forever Living : pyramidal ou légal ? »
+
+- Nouvel article `forever-living-pyramidal-ou-legal` : grille de lecture (art. L122-15 Code de la consommation, sanctions L132-19/20, code de conduite FVD déc. 2021), 7 questions avant de s'inscrire, FAQ de 5 questions. Transparence : le texte dit que Rafael est parrain et a un intérêt.
+- Liens de parrainage : lien boutique avec ID (`sponsored`), page /devenir-distributeur-forever-living/ et /contact/.
+- **À confirmer par Rafael** (faits écrits « à ma connaissance ») : adhésion « quelques dizaines d'euros avec kit de démarrage », pas de droit d'entrée élevé, pas de stock obligatoire. Aucune promesse de revenu.
+- Pas d'image : à choisir (champ `image` du frontmatter). Pas de lien retour depuis les articles existants (mesure en cours).
+
 ## Lot L du 12 novembre 2026 — image de la recette shaker fraises
 
 - `public/images/recettes/shaker-fraises-chocolat.webp` ajoutée (1200 × 800, 33 Ko, choisie par Rafael) : l'image manquante de `/recettes-c9/` est corrigée. Alt réécrit pour décrire ce que la photo montre (un shaker rose aux fraises, pas chocolaté).
