@@ -1,5 +1,5 @@
 ---
-name: "Aloe Gelly Forever : Gel d'Aloe Vera Pur à 84% | Apaisant & Cicatrisant"
+name: "Aloe Gelly Forever : Gel d'Aloe Vera Pur à 84% | Apaisant"
 reference: "61"
 slug: "aloe-gelly-forever-gel-apaisant"
 price: 24.4

@@ -44,7 +44,7 @@ Sa composition unique — vitamines A, C, E et B12, enzymes protéolytiques, min
 
 ### Apaisement du cuir chevelu irrité
 
-Les personnes souffrant de démangeaisons, de psoriasis du cuir chevelu, de dermatite séborrhéique ou simplement d'irritations liées à des produits trop agressifs trouvent dans l'aloe vera un soulagement naturel rapide. Ses propriétés anti-inflammatoires et antimicrobiennes calment l'inflammation sans perturber le film hydrolipidique naturel du cuir chevelu.
+En cas d'irritations liées à des produits trop agressifs ou de cuir chevelu qui tiraille, beaucoup de personnes apprécient la texture fraîche du gel d'aloe vera, qui s'applique facilement et ne laisse pas de film gras. En cas de démangeaisons persistantes, de plaques ou de pellicules importantes, consultez un médecin ou un dermatologue : l'aloe vera n'est pas un traitement.
 
 ### Hydratation de la fibre capillaire
 

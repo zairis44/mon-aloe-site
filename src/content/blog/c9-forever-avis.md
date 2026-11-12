@@ -112,7 +112,7 @@ Trois erreurs reviennent systématiquement :
 
 C'est une objection sur le **modèle de distribution**, pas sur le produit. Les deux méritent d'être distingués.
 
-Forever Living distribue effectivement ses produits via un réseau de distributeurs indépendants. Cela peut légitimement déplaire. Mais les certifications qui concernent les produits — IASC pour la pureté de l'aloe vera, Kosher, Halal — sont délivrées par des organismes externes et indépendants, et portent sur ce que contient le coffret, pas sur la façon dont il est vendu.
+Forever Living distribue effectivement ses produits via un réseau de distributeurs indépendants. Cela peut légitimement déplaire. Mais les certifications qui concernent les produits — IASC pour la pureté de l'aloe vera, Kosher, Halal — portent sur ce que contient le coffret, pas sur la façon dont il est vendu. Une précision utile : l'IASC est une association professionnelle du secteur de l'aloe vera, dont Forever Living est membre fondateur. C'est un sceau de qualité du secteur, pas un contrôle public.
 
 J'ai détaillé le fonctionnement réel du réseau dans un [article dédié sur la franchise et la vente directe](/blog/forever-living-franchise-ou-vente-directe/), si le sujet vous intéresse.
 

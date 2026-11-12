@@ -7,9 +7,9 @@ image: "/images/produits/forever-aloe-msm-gel.webp"
 images: []
 category: "cremes-et-gels"
 description: "Le gel à appliquer après le sport ou sur une zone tendue. Le Forever Aloe MSM Gel associe l'aloe vera stabilisé au MSM (soufre organique) et à des extraits d'arbre à thé, saule et romarin. Texture légère, non grasse, qui pénètre vite et laisse une sensation de fraîcheur. Vegan, certifié IASC."
-titreDetails: "Forever Aloe MSM Gel : soulagement ciblé pour muscles, articulations et peau"
-seoTitle: "Forever Aloe MSM Gel – Apaisant & anti-inflammatoire naturel"
-seoDescription: "Forever Aloe MSM Gel : gel non gras à l’Aloe vera et MSM. Apaise rapidement muscles, articulations et peau irritée. Vegan, certifié et sans traces."
+titreDetails: "Forever Aloe MSM Gel : le gel multi-usages pour muscles, articulations et peau"
+seoTitle: "Forever Aloe MSM Gel – Gel apaisant au MSM et à l'aloe vera"
+seoDescription: "Forever Aloe MSM Gel : gel non gras à l’aloe vera et au MSM, à appliquer après le sport ou sur une zone tendue. Vegan, certifié IASC, sans traces."
 video: ""
 lienCommande: "http://www.foreverliving.fr/ref/330001628607/205"
 faq:

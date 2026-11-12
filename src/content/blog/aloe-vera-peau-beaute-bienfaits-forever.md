@@ -56,7 +56,7 @@ Les composés actifs de l'aloe vera (bradykinase, polysaccharides) calment rapid
 
 ### Soutien à la régénération cellulaire
 
-L'aloe vera stimule la production de collagène et d'acide hyaluronique, deux molécules fondamentales pour la régénération de la peau. Appliqué régulièrement sur de petites plaies, brûlures légères ou zones abîmées, il accélère la guérison tout en réduisant le risque de cicatrices visibles.
+Le gel d'aloe vera est apprécié pour sa texture fraîche et hydratante, appliquée sur une peau qui tiraille ou après une exposition au soleil. Il ne soigne pas les plaies ni les brûlures : en cas de blessure, de brûlure sérieuse ou de cicatrice, demandez conseil à un professionnel de santé.
 
 ### Action anti-âge au quotidien
 
