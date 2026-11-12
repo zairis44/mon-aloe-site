@@ -3,6 +3,7 @@ title: "FBO Forever : qu'est-ce qu'un Forever Business Owner ?"
 seoTitle: "FBO Forever Living : définition et rôle"
 description: "FBO signifie Forever Business Owner : le statut de distributeur indépendant Forever Living. Différence avec un client, niveaux, statut VDI et inscription."
 pubDate: 2026-06-11
+updatedDate: 2026-11-12
 author: "Rafael Avenard"
 category: "guides"
 tags:

@@ -3,6 +3,7 @@ title: "C9 Forever avis : les critiques sont-elles fondées ? Mon bilan après 1
 seoTitle: "C9 Forever avis : critiques fondées ou non ?"
 description: "Avis négatifs, effet yo-yo, prix, faim : chaque critique du programme C9 Forever examinée. Mes résultats réels après 10 cures, chiffres et photos à l'appui."
 pubDate: 2026-08-19
+updatedDate: 2026-11-12
 author: "Rafael Avenard"
 category: "programmes-detox"
 tags:

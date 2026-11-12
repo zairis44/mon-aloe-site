@@ -3,6 +3,7 @@ title: "Forever Freedom : le soin articulaire à base d'aloe vera — pour qui, 
 seoTitle: "Forever Freedom : articulations et mobilité"
 description: "Glucosamine, chondroïtine, MSM et aloe vera : ce que contient Forever Freedom, à qui il s'adresse et comment l'intégrer à votre routine."
 pubDate: 2026-03-23
+updatedDate: 2026-11-12
 author: "Rafael Avenard"
 category: "bien-etre"
 tags:
@@ -75,6 +76,14 @@ Pour les douleurs articulaires ponctuelles ou post-effort, l'association avec l'
 Forever Freedom n'est pas adapté aux personnes allergiques aux crustacés (la glucosamine est d'origine crustacée), aux végétariens stricts, ni aux femmes enceintes. En cas de traitement anticoagulant, consultez votre médecin avant de commencer.
 
 Ce n'est pas un médicament et il ne remplace pas un traitement médical prescrit par votre médecin. Si vous ressentez des douleurs articulaires persistantes, intenses ou accompagnées d'un gonflement, consultez un professionnel de santé avant d'entamer une cure : un complément alimentaire accompagne le confort articulaire, il ne se substitue ni à un diagnostic ni à une prise en charge médicale.
+
+## Ce que disent les sources officielles
+
+Le NCCIH ne présente pas l'aloe vera comme un traitement des douleurs articulaires et rappelle que les preuves solides sont rares. Forever Freedom est un complément alimentaire : il ne remplace pas un traitement médical. En cas de douleur persistante, consultez un médecin, et vérifiez les allergènes sur l'étiquette avant d'acheter. Par précaution, la prise orale d'aloe vera est déconseillée pendant la grossesse et l'allaitement, et un avis médical est nécessaire si vous prenez un médicament. Les autorités sanitaires françaises (ANSES) ont aussi alerté en 2018 sur la consommation de préparations contenant des dérivés hydroxyanthracéniques (aloïne), présents dans la couche externe de la feuille : c'est pourquoi il faut choisir un produit qui précise sa teneur.
+
+Sources :
+- [NCCIH (National Center for Complementary and Integrative Health), « Aloe Vera: Usefulness and Safety »](https://www.nccih.nih.gov/health/aloe-vera), mise à jour de février 2025.
+- [ANSES, note d'appui scientifique et technique n° 2018-SA-0188](https://www.anses.fr/fr/system/files/NUT2018SA0188.pdf?download=1), 2 novembre 2018.
 
 ## Ce qu'il faut retenir
 

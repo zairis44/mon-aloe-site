@@ -3,6 +3,7 @@ title: "Aloe vera pour la peau : guide complet des bienfaits et produits Forever
 seoTitle: "Aloe vera peau : bienfaits et soins naturels"
 description: "Hydratation, apaisement, anti-âge : ce que l'aloe vera fait vraiment pour votre peau et quels produits Forever utiliser selon votre type cutané."
 pubDate: 2026-03-23
+updatedDate: 2026-11-12
 author: "Rafael Avenard"
 category: "beaute"
 tags:
@@ -93,6 +94,13 @@ Une routine cohérente à l'aloe vera maximise les résultats sur la durée :
 **Le soir** : utilisez la Aloe Propolis Crème sur les zones sèches ou sensibles. La peau se régénère principalement pendant le sommeil — c'est le moment le plus favorable pour les soins réparateurs.
 
 **En cas de besoin** : le Aloe Vera Gelly peut être appliqué à tout moment sur n'importe quelle zone irritée. Conservé au réfrigérateur, il offre un effet fraîcheur encore plus apaisant sur les coups de soleil et les réactions cutanées.
+
+## Ce que disent les sources officielles sur l'aloe vera et la peau
+
+Le NCCIH, l'agence américaine de référence sur les approches complémentaires, indique que l'aloe vera appliqué sur la peau est en général bien toléré, avec parfois des brûlures, démangeaisons ou éruptions. Pour les brûlures, des recherches cliniques suggèrent qu'il pourrait accélérer la cicatrisation et réduire la douleur. Pour l'acné, deux petites études vont dans le même sens quand le gel est associé à d'autres traitements. Pour l'eczéma, les données sont jugées insuffisantes. Dans tous les cas, les preuves viennent surtout de petites études : un gel cosmétique ne remplace pas l'avis d'un médecin sur une peau irritée ou une pathologie cutanée, et un test sur le pli du coude reste conseillé.
+
+Sources :
+- [NCCIH (National Center for Complementary and Integrative Health), « Aloe Vera: Usefulness and Safety »](https://www.nccih.nih.gov/health/aloe-vera), mise à jour de février 2025.
 
 ## Questions fréquentes
 

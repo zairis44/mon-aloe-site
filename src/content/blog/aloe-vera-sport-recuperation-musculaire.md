@@ -3,6 +3,7 @@ title: "Aloe vera et sport : accélérer la récupération musculaire naturellem
 seoTitle: "Aloe vera sport : récupération musculaire"
 description: "Courbatures, fatigue après l'effort : comment intégrer l'aloe vera Forever à la routine des sportifs et quels produits choisir."
 pubDate: 2026-03-26
+updatedDate: 2026-11-12
 author: "Rafael Avenard"
 category: "sport"
 tags:
@@ -83,3 +84,11 @@ Les enzymes digestives de l'aloe vera (amylase, lipase) optimisent l'absorption 
 **Après l'effort** (dans les 30 minutes) : 60 ml de Forever Aloe Vera Gel pour l'hydratation et la réduction inflammatoire. Application de l'Aloe MSM Gel en local sur les zones sollicitées (mollets, genoux, épaules).
 
 **Au quotidien** (jours de repos) : 60 ml de gel d'aloe vera le matin à jeun pour la régénération cellulaire continue. Forever Freedom le matin si douleurs articulaires persistantes. 
+
+## Ce que disent les sources officielles
+
+Le NCCIH précise que, pour l'aloe vera, les preuves solides sont rares et que la plupart des usages sont peu documentés. Je n'ai pas connaissance d'étude solide démontrant un effet de l'aloe vera sur la récupération musculaire : ce que je décris ici relève de mon expérience de sportif et de la composition des produits, pas d'une preuve clinique. Par précaution, la prise orale d'aloe vera est déconseillée pendant la grossesse et l'allaitement, et un avis médical est nécessaire si vous prenez un médicament. Les autorités sanitaires françaises (ANSES) ont aussi alerté en 2018 sur la consommation de préparations contenant des dérivés hydroxyanthracéniques (aloïne), présents dans la couche externe de la feuille : c'est pourquoi il faut choisir un produit qui précise sa teneur.
+
+Sources :
+- [NCCIH (National Center for Complementary and Integrative Health), « Aloe Vera: Usefulness and Safety »](https://www.nccih.nih.gov/health/aloe-vera), mise à jour de février 2025.
+- [ANSES, note d'appui scientifique et technique n° 2018-SA-0188](https://www.anses.fr/fr/system/files/NUT2018SA0188.pdf?download=1), 2 novembre 2018.

@@ -3,6 +3,7 @@ title: "Aloe vera et stress : retrouver sérénité et sommeil naturellement"
 seoTitle: "Aloe vera stress : sommeil et sérénité"
 description: "Fatigue mentale, insomnies, tension constante : comment les vitamines B et le magnésium de l'aloe vera Forever soutiennent votre système nerveux."
 pubDate: 2026-03-26
+updatedDate: 2026-11-12
 author: "Rafael Avenard"
 category: "bien-etre"
 tags:
@@ -71,6 +72,14 @@ Le **[Mini Aloe Argi+](/produits/mini-aloe-argi-plus/)** est le format nomade de
 **En journée** : hydratation régulière (minimum 1,5 litre d'eau). La déshydratation même légère amplifie les réactions de stress. Évitez la caféine après 14h — elle perturbe la qualité du sommeil.
 
 **Le soir** : 30 ml de gel d'aloe vera dilué dans de l'eau tiède, 30 minutes avant le dîner. Apaise le système digestif avant le coucher. Éteignez les écrans 1 heure avant de dormir — la lumière bleue bloque la production de mélatonine.
+
+## Ce que disent les sources officielles
+
+Le NCCIH indique que, pour l'aloe vera, les preuves solides sont rares et que la plupart des usages restent peu documentés. Aucune source officielle que je connaisse ne présente l'aloe vera comme un traitement du stress ou des troubles du sommeil : si vous dormez mal depuis plusieurs semaines ou si votre stress vous pèse, parlez-en à un professionnel de santé. Par précaution, la prise orale d'aloe vera est déconseillée pendant la grossesse et l'allaitement, et un avis médical est nécessaire si vous prenez un médicament. Les autorités sanitaires françaises (ANSES) ont aussi alerté en 2018 sur la consommation de préparations contenant des dérivés hydroxyanthracéniques (aloïne), présents dans la couche externe de la feuille : c'est pourquoi il faut choisir un produit qui précise sa teneur.
+
+Sources :
+- [NCCIH (National Center for Complementary and Integrative Health), « Aloe Vera: Usefulness and Safety »](https://www.nccih.nih.gov/health/aloe-vera), mise à jour de février 2025.
+- [ANSES, note d'appui scientifique et technique n° 2018-SA-0188](https://www.anses.fr/fr/system/files/NUT2018SA0188.pdf?download=1), 2 novembre 2018.
 
 ## Ce qu'il faut retenir
 

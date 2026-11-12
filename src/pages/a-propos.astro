@@ -18,8 +18,15 @@ const schemaPerson = {
   name: "À propos — Rafael Avenard, distributeur Forever Living",
   mainEntity: {
     "@type": "Person",
+    "@id": `${siteUrl}/a-propos/#rafael-avenard`,
     name: "Rafael Avenard",
     jobTitle: "Distributeur Indépendant Forever Living Products",
+    worksFor: { "@id": `${siteUrl}/#organization` },
+    address: { "@type": "PostalAddress", addressRegion: "Loire-Atlantique", addressCountry: "FR" },
+    sameAs: [
+      "https://www.facebook.com/RafaelAvenardDistributeurForever",
+      "https://maps.app.goo.gl/tBmMFpfawmBnbyzF6",
+    ],
     description: "Passionné de bien-être naturel, Rafael accompagne ses clients dans leur démarche santé grâce aux produits Forever Living depuis plusieurs années.",
     telephone: "+33677352226",
     email: "contact@espritaloe.fr",

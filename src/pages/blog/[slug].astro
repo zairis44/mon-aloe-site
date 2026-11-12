@@ -45,6 +45,7 @@ const schemaArticle = {
   dateModified: (updatedDate ?? pubDate).toISOString(),
   author: {
     "@type": "Person",
+    "@id": `${siteUrl}/a-propos/#rafael-avenard`,
     name: author,
     url: `${siteUrl}/a-propos/`,
   },

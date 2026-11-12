@@ -1,6 +1,14 @@
 # Esprit Aloé — À ne pas oublier
 *Mise à jour : 28 août 2026*
 
+## Lot N du 12 novembre 2026 — GEO : sources, dates, llms.txt, identité
+
+- 7 articles (peau, cheveux, sport, stress/sommeil, immunité, articulations, perte de poids) : section « Ce que disent les sources officielles » (NCCIH, févr. 2025 ; ANSES 2018 pour l'oral). Texte volontairement prudent : « preuves solides rares », pas de promesse.
+- `updatedDate: 2026-11-12` sur ces 7 articles + 5 retouchés plus tôt (c9-avis, fbo, programme-c9, digestion, avis-produits). Mesure : lire ces pages séparément dans Search Console.
+- `public/llms.txt` créé (liste des 15 articles : à regénérer à chaque nouvel article).
+- Identité : Person `@id` (#rafael-avenard) partagé entre /a-propos/, les articles et l'Organization (founder) ; sameAs Facebook + fiche Google (Maps) sur l'Organization et la Person.
+- Reste : sources externes pour les articles C9, fbo, franchise, avis (non faits : sujets peu « scientifiques »).
+
 ## Lot M3 du 12 novembre 2026 — réponses Forever dans l'article « pyramidal ou légal »
 
 - Article `forever-living-pyramidal-ou-legal` : section « Mes réponses aux 7 questions » (tableau) + 2 FAQ (stock/minimum d'achat, arrêter).
