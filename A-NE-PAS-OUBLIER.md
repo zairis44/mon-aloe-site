@@ -6,7 +6,7 @@
 - Nouvel article `forever-living-pyramidal-ou-legal` : grille de lecture (art. L122-15 Code de la consommation, sanctions L132-19/20, code de conduite FVD déc. 2021), 7 questions avant de s'inscrire, FAQ de 5 questions. Transparence : le texte dit que Rafael est parrain et a un intérêt.
 - Liens de parrainage : lien boutique avec ID (`sponsored`), page /devenir-distributeur-forever-living/ et /contact/.
 - **À confirmer par Rafael** (faits écrits « à ma connaissance ») : adhésion « quelques dizaines d'euros avec kit de démarrage », pas de droit d'entrée élevé, pas de stock obligatoire. Aucune promesse de revenu.
-- Pas d'image : à choisir (champ `image` du frontmatter). Pas de lien retour depuis les articles existants (mesure en cours).
+- Image ajoutée (choisie par Rafael) : `public/images/blog/forever-living-pyramidal-ou-legal.webp`, 1200 × 600, 62 Ko. Le formulaire visible est un document d'assurance en anglais (« Insurance policy ») : sans incidence SEO, mais à remplacer par une photo de contrat en français si possible. Pas de lien retour depuis les articles existants (mesure en cours).
 
 ## Lot L du 12 novembre 2026 — image de la recette shaker fraises
 

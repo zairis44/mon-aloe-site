@@ -12,6 +12,8 @@ tags:
   - "vente directe forever living"
   - "marketing de réseau france"
   - "forever living légal"
+image: "/images/blog/forever-living-pyramidal-ou-legal.webp"
+imageAlt: "Deux personnes examinent un contrat papier posé sur une table, un stylo à la main, avec un ordinateur portable à côté"
 articlesLies:
   - slug: "forever-living-franchise-ou-vente-directe"
     titre: "Forever Living est-il une franchise ?"
