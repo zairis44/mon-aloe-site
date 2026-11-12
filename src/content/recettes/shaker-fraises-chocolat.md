@@ -4,7 +4,7 @@ slug: "shaker-fraises-chocolat"
 categorie: "shaker"
 description: "La découverte qui m'a sauvé un soir de lassitude, au Jour 6 de ma cure. Un simple sachet de fraises surgelées transforme complètement le shake."
 image: "/images/recettes/shaker-fraises-chocolat.webp"
-imageAlt: "Shaker Forever Lite Ultra chocolat aux fraises surgelées, recette C9"
+imageAlt: "Verre de shaker aux fraises avec une paille rayée et des fraises coupées, recette du programme C9"
 tempsPreparation: "3 minutes"
 portions: "1 shaker"
 ingredients:

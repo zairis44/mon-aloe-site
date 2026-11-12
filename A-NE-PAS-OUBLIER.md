@@ -1,6 +1,10 @@
 # Esprit Aloé — À ne pas oublier
 *Mise à jour : 28 août 2026*
 
+## Lot L du 12 novembre 2026 — image de la recette shaker fraises
+
+- `public/images/recettes/shaker-fraises-chocolat.webp` ajoutée (1200 × 800, 33 Ko, choisie par Rafael) : l'image manquante de `/recettes-c9/` est corrigée. Alt réécrit pour décrire ce que la photo montre (un shaker rose aux fraises, pas chocolaté).
+
 ## Lot K du 12 novembre 2026 — accessibilité et dimensions d'images
 
 - Pied de page : titres `h4` → `h3` (plus de saut de niveau après les `h2`), aucun changement visuel.
