@@ -16,7 +16,7 @@ export interface Besoin {
   attention?: string;         // précaution affichée sous la liste
   produits: [slug: string, phrase: string][];
   guides: string[];           // slugs d'articles du blog
-  lienExtra?: { href: string; label: string };
+  liensExtra?: { href: string; label: string }[];
 }
 
 export const BESOINS: Besoin[] = [
@@ -32,6 +32,7 @@ export const BESOINS: Besoin[] = [
       ['forever-pulpe-daloe-vera', 'La base de la gamme : le gel d’aloe vera à boire, sans arôme.'],
       ['forever-aloe-vera-4pack', 'Un coffret de quatre bouteilles pour goûter avant de choisir.'],
       ['forever-aloe-mango', 'Une boisson à l’aloe vera au goût mangue, pour ceux qui préfèrent le fruité.'],
+      ['forever-4-pack-mix', 'L’autre coffret de la gamme, pour comparer les saveurs.'],
     ],
     guides: ['aloe-vera-a-boire-danger-contre-indications', 'forever-living-avis-produits-france'],
   },
@@ -110,6 +111,25 @@ export const BESOINS: Besoin[] = [
       ['programme-dx4-forever', 'Une version courte de 4 jours, plus concentrée.'],
     ],
     guides: ['programme-c9-forever-guide-cure-detox-9-jours', 'c9-forever-avis'],
-    lienExtra: { href: '/mon-journal-c9/', label: 'Lire mon journal du C9, jour par jour' },
+    liensExtra: [
+      { href: '/mon-journal-c9/', label: 'Lire mon journal du C9, jour par jour' },
+      { href: '/recettes-c9/', label: 'Recettes pour accompagner les 9 jours' },
+    ],
+  },
+  {
+    id: 'quotidien',
+    titre: 'Hygiène et soins du quotidien',
+    court: 'Quotidien',
+    intro:
+      'Quelques produits à l’aloe vera pour la routine de tous les jours : bouche, douche, déodorant. Les plus simples à tester si vous voulez essayer la marque sans changer vos habitudes.',
+    attention:
+      'Comme pour tout produit au contact de la peau, faites un test sur le pli du coude avant le premier usage.',
+    produits: [
+      ['forever-bright-toothgel', 'Un dentifrice gel à l’aloe vera et à la propolis, sans fluor.'],
+      ['forever-aloe-ever-shield-deodorant-stick', 'Un déodorant en stick à l’aloe vera.'],
+      ['forever-aloe-liquid-soap', 'Un savon liquide doux pour le corps.'],
+      ['forever-aloe-avocado-face-and-body-soap', 'Un savon à l’avocat pour le visage et le corps.'],
+    ],
+    guides: [],
   },
 ];

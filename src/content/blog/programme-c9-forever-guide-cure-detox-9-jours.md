@@ -1,6 +1,6 @@
 ---
 title: "Programme C9 Forever : le guide complet de la cure détox 9 jours"
-seoTitle: "Programme C9 Forever : guide complet cure détox"
+seoTitle: "Programme C9 Forever : guide de la cure détox"
 description: "Programme C9 Forever : contenu du coffret, déroulement des 9 jours, résultats attendus et conseils pour réussir votre cure détox aloe vera."
 pubDate: 2026-05-15
 author: "Rafael Avenard"

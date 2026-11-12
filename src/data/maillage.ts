@@ -261,6 +261,7 @@ export const GUIDES_CATEGORIE: Record<string, string[]> = {
   'boissons-aloe-vera': [
     'aloe-vera-digestion-bienfaits',
     'aloe-vera-systeme-immunitaire-defenses-naturelles',
+    'aloe-vera-a-boire-danger-contre-indications',
     'forever-living-avis-produits-france',
   ],
   'programmes-detox': [

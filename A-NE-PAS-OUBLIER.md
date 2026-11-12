@@ -1,6 +1,16 @@
 # Esprit Aloé — À ne pas oublier
 *Mise à jour : 28 août 2026*
 
+## Lot J du 12 novembre 2026 — corrections de l'audit crawl
+
+- Lien « Nutrition » supprimé (menu, pages catégorie, 404) : la catégorie n'existe pas, `/produits/nutrition/` redirigeait vers `/produits/` (la redirection reste dans vercel.json pour d'anciens liens externes).
+- Fiches produit : un seul `<h1>` dans le DOM (le titre mobile est un `<p role="heading" aria-level="1">`). Touche toutes les fiches, y compris Pulpe, FAB et savon (mesure : la structure change au 12/11, pas le texte).
+- Liens boutique du journal C9 et de la page Loire-Atlantique : https + `sponsored` (via `src/lib/forever.ts`). Plus aucun lien Forever sans sponsored dans le build.
+- Page Suisse : lien depuis `/devenir-distributeur-forever-living/` (elle n'avait aucun lien entrant).
+- Maillage : article « produits Forever dangereux » ajouté aux guides de la catégorie boissons ; page « Trouver mon produit » : 4-Pack Mix, recettes C9 et nouveau besoin « Hygiène et soins du quotidien » (toothgel, déodorant, savons).
+- Titres : `/commander/` (48 car.) et guide C9 (59 car.) sous 60. L'article avis (73 car.) volontairement laissé : à décider après l'analyse avant/après GSC.
+- Reste : titres de pied de page en h4 (saut de niveau, accessibilité), images sans width/height (journal C9 surtout).
+
 ## Lot I du 12 novembre 2026 — menu desktop
 
 - `src/components/Header.astro` : le menu complet ne s'affiche qu'à partir de 1280 px (`xl`) ; en dessous, burger. Avec le lien « Trouver mon produit », les liens passaient à la ligne à 1000 px. Ajout de `whitespace-nowrap` sur logo, liens et boutons, espacements resserrés. Vérifié en captures à 390, 1000, 1100, 1280 et 1440 px, sans débordement horizontal.
