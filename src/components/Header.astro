@@ -52,10 +52,10 @@ const links = [
 ---
 
 <header class="sticky top-0 z-50 bg-cream/90 backdrop-blur-md border-b border-aloe-100">
-  <nav class="mx-auto max-w-6xl px-6 h-18 flex items-center justify-between py-3">
+  <nav class="mx-auto max-w-6xl px-6 h-18 flex items-center justify-between gap-6 py-3">
 
     <!-- Logo -->
-    <a href="/" class="flex items-center gap-2 group">
+    <a href="/" class="flex shrink-0 items-center gap-2 group whitespace-nowrap">
       <span class="text-2xl">🌿</span>
       <span class="font-display text-xl text-aloe-800 leading-tight">
         Esprit Aloé<br />
@@ -64,13 +64,13 @@ const links = [
     </a>
 
     <!-- Navigation desktop -->
-    <ul class="hidden md:flex items-center gap-8">
+    <ul class="hidden xl:flex items-center gap-5">
 
       <!-- Dropdown Produits -->
       <li class="relative group">
         <a
           href="/produits/"
-          class="flex items-center gap-1 text-sm font-medium text-aloe-700 hover:text-aloe-500 transition-colors"
+          class="flex items-center gap-1 whitespace-nowrap text-sm font-medium text-aloe-700 hover:text-aloe-500 transition-colors"
         >
           Produits
           <svg class="w-3.5 h-3.5 transition-transform duration-200 group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -106,7 +106,7 @@ const links = [
         <li>
           <a
             href={link.href}
-            class="text-sm font-medium text-aloe-700 hover:text-aloe-500 transition-colors"
+            class="whitespace-nowrap text-sm font-medium text-aloe-700 hover:text-aloe-500 transition-colors"
           >
             {link.label}
           </a>
@@ -114,10 +114,10 @@ const links = [
       ))}
 
       <!-- Bouton Devenir Distributeur — distinct, séparé visuellement -->
-      <li class="ml-2">
+      <li class="ml-1 mr-1">
         <a
           href="/devenir-distributeur-forever-living/"
-          class="inline-flex items-center gap-1.5 rounded-full border-2 border-clay text-clay hover:bg-clay hover:text-cream px-4 py-2 text-sm font-semibold transition-colors"
+          class="inline-flex items-center gap-1.5 whitespace-nowrap rounded-full border-2 border-clay text-clay hover:bg-clay hover:text-cream px-4 py-2 text-sm font-semibold transition-colors"
         >
           🌿 Devenir distributeur
         </a>
@@ -125,13 +125,13 @@ const links = [
     </ul>
 
     <!-- CTA desktop + burger mobile -->
-    <div class="flex items-center gap-3">
+    <div class="flex shrink-0 items-center gap-3">
       <!-- Bouton Commander (desktop) — boutique Forever directe -->
       <a
         href={boutiqueUrl}
         target="_blank"
         rel="sponsored noopener noreferrer"
-        class="hidden md:inline-flex items-center gap-1.5 rounded-full bg-aloe-600 px-5 py-2.5 text-sm font-semibold text-cream hover:bg-aloe-700 transition-colors"
+        class="hidden xl:inline-flex items-center gap-1.5 whitespace-nowrap rounded-full bg-aloe-600 px-5 py-2.5 text-sm font-semibold text-cream hover:bg-aloe-700 transition-colors"
       >
         🛒 Commander
       </a>
@@ -139,7 +139,7 @@ const links = [
       <!-- Burger menu (mobile) -->
       <button
         id="burger"
-        class="md:hidden flex flex-col gap-1.5 p-2"
+        class="xl:hidden flex flex-col gap-1.5 p-2"
         aria-label="Ouvrir le menu"
         aria-expanded="false"
       >
@@ -151,7 +151,7 @@ const links = [
   </nav>
 
   <!-- Menu mobile -->
-  <div id="mobile-menu" class="hidden md:hidden border-t border-aloe-100 bg-cream">
+  <div id="mobile-menu" class="hidden xl:hidden border-t border-aloe-100 bg-cream">
     <div class="mx-auto max-w-6xl px-6 py-4 space-y-1">
 
       <!-- 🛒 Commander EN PREMIER — bouton de conversion prioritaire -->

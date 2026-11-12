@@ -1,6 +1,11 @@
 # Esprit Aloé — À ne pas oublier
 *Mise à jour : 28 août 2026*
 
+## Lot I du 12 novembre 2026 — menu desktop
+
+- `src/components/Header.astro` : le menu complet ne s'affiche qu'à partir de 1280 px (`xl`) ; en dessous, burger. Avec le lien « Trouver mon produit », les liens passaient à la ligne à 1000 px. Ajout de `whitespace-nowrap` sur logo, liens et boutons, espacements resserrés. Vérifié en captures à 390, 1000, 1100, 1280 et 1440 px, sans débordement horizontal.
+- Si on ajoute un lien au menu : retester à 1280 px.
+
 ## Lot H du 12 novembre 2026 — page « Trouver mon produit »
 
 - Nouvelle page `/quel-produit-forever-choisir/` (menu : « Trouver mon produit », en première position) : 6 besoins (débuter, digestion, énergie, sport et articulations, peau et soins, programmes), 19 cartes produit, guides liés, précautions. Données uniquement dans `src/data/besoins.ts` (une faute de slug fait échouer le build). Pas de prix sur la page.
