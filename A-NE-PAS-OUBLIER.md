@@ -1,6 +1,15 @@
 # Esprit Aloé — À ne pas oublier
 *Mise à jour : 28 août 2026*
 
+## Lot A du 12 novembre 2026 — maillage interne produits ↔ guides
+
+- Nouveau `src/data/maillage.ts` : une seule source pour (1) `PAGES_GELEES`, (2) les associations produit → produits avec leur phrase de contexte, (3) les guides par catégorie. Une faute de slug fait échouer le build avec un message clair.
+- Fiche produit : deux blocs en bas de page, « Pour aller plus loin » (articles dont `produitsLies` cite la fiche, détectés automatiquement ; sinon guides de la catégorie) et « À associer avec ce produit » (`ProduitsAssocies.astro`). Pages catégorie : « Nos guides pour bien choisir » (`GuidesLies.astro`).
+- **Fiches gelées sans bloc de maillage** : `forever-pulpe-daloe-vera`, `forever-fab-active-boost`, `forever-aloe-avocado-face-and-body-soap` (seoTitle du 29/08, remesure à confirmer). Pour les ouvrir : supprimer la ligne dans `PAGES_GELEES`.
+- Liens boutique Forever : `src/lib/forever.ts` force le https (les `lienCommande` en http:// du frontmatter sont corrigés au rendu) et ajoute `rel="sponsored noopener noreferrer"` sur CtaCommander, Header, Commander, PopupRemise. Le suivi GA4 `click_lien_forever` repose sur le domaine : inchangé.
+- Reste hors lot : 6 liens boutique écrits dans le corps de pages/articles (avis Forever, journal C9, page Loire-Atlantique, fiche Logic Gel Hydratant), dont 4 en http://.
+- Mesure : le changement touche 34 fiches/catégories hors gel. Noter la date de mise en ligne pour la lecture GSC.
+
 ## Livraison du 13 septembre 2026 — commande, maillage et mesure
 
 Autorisation de Rafael dans Codex : modifier GitHub et publier les corrections vérifiées sur Vercel.

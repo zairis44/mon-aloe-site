@@ -10,6 +10,9 @@ import Layout from '../../layouts/Layout.astro';
 import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
 import CtaCommander from '../../components/CtaCommander.astro';
+import ProduitsAssocies from '../../components/ProduitsAssocies.astro';
+import GuidesLies from '../../components/GuidesLies.astro';
+import { PAGES_GELEES } from '../../data/maillage';
 
 export async function getStaticPaths() {
   const produits = await getCollection('produits');
@@ -32,6 +35,8 @@ function getYouTubeId(url) {
 const videoId = d.video ? getYouTubeId(d.video) : null;
 const siteUrl = 'https://espritaloe.fr';
 const produitUrl = `${siteUrl}/produits/${d.slug}/`;
+// Fiches sous fenêtre de mesure : pas de bloc de maillage (voir src/data/maillage.ts)
+const afficherMaillage = !PAGES_GELEES.has(d.slug);
 
 // Labels catégorie
 const categoryLabels: Record<string, string> = {
@@ -419,6 +424,9 @@ const seoDescription = d.seoDescription ?? d.description;
       )}
     </div>
   </section>
+
+  {afficherMaillage && <GuidesLies produit={d.slug} categorie={d.category} />}
+  {afficherMaillage && <ProduitsAssocies slug={d.slug} />}
 
   <!-- ══════════════════════════════════════════════
        SECTION CATÉGORIE — navigation

@@ -6,7 +6,9 @@
  * 2. Appel téléphonique
  * 3. Formulaire de contact
  * Zéro JS — natif <details>/<summary>.
+ * Lien Forever : https forcé et rel="sponsored" (src/lib/forever.ts).
  */
+import { foreverHref, FOREVER_REL } from '../lib/forever';
 export interface Props {
   lienCommande?: string;
   fullWidth?: boolean;
@@ -26,6 +28,8 @@ const {
   telephoneAffiche = '06 77 35 22 26',
   contactHref = '/contact/',
 } = Astro.props;
+
+const hrefForever = foreverHref(lienCommande);
 ---
 
 <details class:list={['cta-commander', fullWidth && 'cta-commander--full', size === 'sm' && 'cta-commander--sm']}>
@@ -35,7 +39,7 @@ const {
   </summary>
   <div class="cta-commander__options">
     {lienCommande && (
-      <a href={lienCommande} target="_blank" rel="noopener noreferrer" class="cta-commander__option cta-commander__option--primary">
+      <a href={hrefForever} target="_blank" rel={FOREVER_REL} class="cta-commander__option cta-commander__option--primary">
         🛒 Commander sur Forever
       </a>
     )}

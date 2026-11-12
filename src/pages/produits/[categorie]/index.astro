@@ -3,6 +3,7 @@ import Layout from '../../../layouts/Layout.astro';
 import Header from '../../../components/Header.astro';
 import Footer from '../../../components/Footer.astro';
 import CtaCommander from '../../../components/CtaCommander.astro';
+import GuidesLies from '../../../components/GuidesLies.astro';
 import { getCollection } from 'astro:content';
 
 export async function getStaticPaths() {
@@ -208,6 +209,8 @@ const schemaItemList = {
       )}
     </div>
   </section>
+
+  <GuidesLies categorie={categorie} titre="Nos guides pour bien choisir" />
 
   <!-- Autres catégories -->
   <section class="bg-sand/50 py-12">
