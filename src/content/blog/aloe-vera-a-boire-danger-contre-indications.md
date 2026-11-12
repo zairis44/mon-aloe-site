@@ -11,7 +11,8 @@ tags:
   - "aloe vera effets secondaires"
   - "aloïne latex aloe vera"
   - "jus d'aloe vera sécurité"
-imageAlt: "Bouteille de jus d'aloe vera à boire et feuille d'aloe vera coupée"
+image: "/images/blog/aloe-vera-a-boire-danger.webp"
+imageAlt: "Quatre boissons Forever à l'aloe vera : Aloe Peaches, Aloe Vera Gel, Aloe Berry Nectar et Aloe Mango"
 produitsLies:
   - slug: "forever-pulpe-daloe-vera"
     nom: "Forever Aloe Vera Gel"
