@@ -4,7 +4,6 @@ Allow: /
 # Pages légales inutiles pour l'indexation
 Disallow: /mentions-legales
 Disallow: /confidentialite
-Disallow: /livraison
 
 # Sitemap
 Sitemap: https://espritaloe.fr/sitemap-index.xml

@@ -1,6 +1,12 @@
 # Esprit Aloé — À ne pas oublier
 *Mise à jour : 28 août 2026*
 
+## Lot E du 12 novembre 2026 — sitemap et robots.txt
+
+- `astro.config.mjs` : `/bilan-un-mois-apres-c9/` exclu du sitemap (noindex) — **retirer la ligne du filtre le jour de la publication du bilan** ; `/livraison/` de nouveau dans le sitemap ; `lastmod` réel pour les 14 articles (updatedDate sinon pubDate), aucun lastmod pour les autres pages ; `changefreq`/`priority` supprimés.
+- `public/robots.txt` : `Disallow: /livraison` retiré (page de réassurance livraison/retours désormais crawlable). Les pages légales restent bloquées.
+- Penser à renseigner `updatedDate` dans le frontmatter d'un article quand on le modifie en profondeur : c'est ce qui alimente son lastmod.
+
 ## Lot D2 du 12 novembre 2026 — encadré blog
 
 - `src/pages/blog/index.astro` : encadré « Aloe vera à boire : est-ce dangereux ? » sous l'encadré du journal C9 (lien vers l'article sécurité). Retirer le bloc quand l'article ne sera plus à mettre en avant.
