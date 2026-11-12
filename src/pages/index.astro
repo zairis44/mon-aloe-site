@@ -11,6 +11,7 @@
 import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import { BESOINS } from '../data/besoins';
 import { getCollection } from 'astro:content';
 // ── Produits phares depuis la collection ────────────────────────────────────
 let produitsPhares = [];
@@ -183,6 +184,30 @@ const schemaFAQ = {
       </div>
     </div>
   </section>
+  <!-- ══════════════════════════════════════════════
+       TROUVER MON PRODUIT — entrée par le besoin (données : src/data/besoins.ts)
+  ══════════════════════════════════════════════ -->
+  <section class="bg-white py-16" aria-labelledby="trouver-produit-titre">
+    <div class="mx-auto max-w-6xl px-6 text-center">
+      <h2 id="trouver-produit-titre" class="text-3xl md:text-4xl text-aloe-900 mb-3">Quel produit Forever choisir ?</h2>
+      <p class="text-aloe-600 max-w-2xl mx-auto mb-8">
+        Plus de trente produits, c’est beaucoup. Partez de votre besoin, je vous indique par où commencer.
+      </p>
+      <ul class="flex flex-wrap justify-center gap-3 mb-8">
+        {BESOINS.map((b) => (
+          <li>
+            <a href={`/quel-produit-forever-choisir/#${b.id}`} class="inline-flex rounded-full border border-aloe-200 bg-cream px-5 py-2.5 text-sm font-medium text-aloe-700 hover:border-aloe-400 hover:text-aloe-900 transition-colors">
+              {b.court}
+            </a>
+          </li>
+        ))}
+      </ul>
+      <a href="/quel-produit-forever-choisir/" class="inline-flex items-center rounded-full bg-aloe-600 px-8 py-3.5 text-sm font-semibold text-cream hover:bg-aloe-700 transition-colors">
+        Trouver mon produit →
+      </a>
+    </div>
+  </section>
+
   <!-- ══════════════════════════════════════════════
        PRODUITS PHARES
        Correctif : h3 → h2 dans les articles produit

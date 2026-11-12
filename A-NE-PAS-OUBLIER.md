@@ -1,6 +1,14 @@
 # Esprit Aloé — À ne pas oublier
 *Mise à jour : 28 août 2026*
 
+## Lot H du 12 novembre 2026 — page « Trouver mon produit »
+
+- Nouvelle page `/quel-produit-forever-choisir/` (menu : « Trouver mon produit », en première position) : 6 besoins (débuter, digestion, énergie, sport et articulations, peau et soins, programmes), 19 cartes produit, guides liés, précautions. Données uniquement dans `src/data/besoins.ts` (une faute de slug fait échouer le build). Pas de prix sur la page.
+- Accueil : section « Quel produit Forever choisir ? » avec 6 liens ancrés (avant « Produits phares »).
+- Liens vers des fiches gelées (pulpe, FAB) : ajoutés uniquement en entrant (aucune modification des fiches).
+- Pour ajuster : modifier `besoins.ts` (ajouter « cheveux », « minceur », etc.).
+- Mesure : nouvelle page + lien dans le menu = tous les gabarits changent au 12/11 (menu sur toutes les pages).
+
 ## Lot G du 12 novembre 2026 — redirection www
 
 - GSC montrait `https://www.espritaloe.fr/` indexée en parallèle (387 impressions). `vercel.json` : redirection 301 de `www.espritaloe.fr/*` vers `https://espritaloe.fr/*`, en première règle. Si Vercel (Settings > Domains) fait déjà cette redirection, la règle est sans effet.
