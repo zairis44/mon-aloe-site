@@ -28,7 +28,7 @@ articlesLies:
     titre: "Aloe vera digestion : 5 effets concrets"
 faq:
   - question: "Les produits Forever sont-ils fiables ?"
-    reponse: "Oui sur le plan de la fabrication : la gamme boissons est certifiée IASC par un organisme indépendant, avec audits et analyses en laboratoire réguliers, et Forever Living contrôle sa filière de la culture de l'aloe vera à la mise en bouteille. La fiabilité des effets dépend ensuite de la régularité : comptez 4 semaines minimum pour évaluer honnêtement un produit."
+    reponse: "Oui sur le plan de la fabrication : la gamme boissons est certifiée IASC, l'association professionnelle du secteur dont Forever Living est membre fondateur, sur la base d'audits et d'analyses en laboratoire, et Forever Living contrôle sa filière de la culture de l'aloe vera à la mise en bouteille. La fiabilité des effets dépend ensuite de la régularité : comptez 4 semaines minimum pour évaluer honnêtement un produit."
   - question: "Les produits Forever sont-ils dangereux ?"
     reponse: "Non, dans le cadre d'un usage normal : ce sont des compléments alimentaires et des cosmétiques, pas des médicaments. La pulpe des boissons est extraite sans l'écorce de la feuille, qui contient l'aloïne (le composé laxatif et irritant de l'aloe vera brut). Respectez les doses indiquées et demandez l'avis de votre médecin si vous êtes enceinte, allaitante ou sous traitement médical."
   - question: "Forever Living est-il une arnaque ?"
@@ -70,9 +70,9 @@ Beaucoup de marques vendent des boissons "à l'aloe vera" qui contiennent en ré
 
 ### La certification IASC — la référence mondiale
 
-L'IASC (International Aloe Science Council) est l'organisme indépendant qui certifie la pureté et la qualité des produits à base d'aloe vera. Forever Living est l'un des fondateurs de cet organisme et fait certifier l'ensemble de sa gamme boissons.
+L'IASC (International Aloe Science Council) est l'association professionnelle du secteur de l'aloe vera : elle délivre un sceau de qualité aux produits qui passent ses contrôles. Forever Living est l'un des membres fondateurs de cet organisme et fait certifier l'ensemble de sa gamme boissons.
 
-Cette certification implique des contrôles réguliers, des audits indépendants et des analyses en laboratoire. Ce n'est pas un label marketing créé par l'entreprise elle-même — c'est une reconnaissance externe vérifiable.
+Ce sceau s'appuie sur des analyses en laboratoire et des audits de conformité. Il faut toutefois le lire pour ce qu'il est : une certification portée par une association du secteur, dont Forever fait partie, et non par une autorité publique. Elle atteste de la conformité des produits aux critères de l'IASC ; elle ne remplace pas un contrôle des autorités sanitaires.
 
 ### Kosher, Halal, vegan, sans tests animaux
 
@@ -120,7 +120,7 @@ Si vous souhaitez un résultat plus rapide et structuré, le **[Programme C9](/p
 
 ## Questions fréquentes sur Forever Living en France
 
-**Les produits Forever sont-ils fiables ?** Oui, sur le plan de la fabrication : la gamme boissons est certifiée IASC par un organisme indépendant (audits et analyses en laboratoire réguliers), et l'entreprise contrôle toute sa filière, de la culture de l'aloe vera au Texas et aux Canaries jusqu'à la mise en bouteille. La fiabilité des effets, elle, dépend surtout de votre régularité : comptez 4 semaines minimum de consommation quotidienne pour évaluer honnêtement un produit.
+**Les produits Forever sont-ils fiables ?** Oui, sur le plan de la fabrication : la gamme boissons est certifiée IASC, association professionnelle du secteur dont Forever Living est membre fondateur (audits et analyses en laboratoire), et l'entreprise contrôle toute sa filière, de la culture de l'aloe vera au Texas et aux Canaries jusqu'à la mise en bouteille. La fiabilité des effets, elle, dépend surtout de votre régularité : comptez 4 semaines minimum de consommation quotidienne pour évaluer honnêtement un produit.
 
 **Les produits Forever sont-ils dangereux ?** Non, dans le cadre d'un usage normal. Ce sont des compléments alimentaires et des cosmétiques, pas des médicaments : ils ne soignent aucune maladie et ne remplacent ni une alimentation équilibrée ni un traitement en cours. La pulpe utilisée dans les boissons est extraite sans l'écorce de la feuille — c'est elle qui contient l'aloïne, le composé laxatif et irritant de l'aloe vera brut. Les précautions habituelles s'appliquent : respectez les doses indiquées sur chaque produit, et demandez l'avis de votre médecin si vous êtes enceinte, allaitante, sous traitement médical ou concerné par une pathologie chronique. C'est le bon réflexe avant toute cure, quel que soit le complément.
 
