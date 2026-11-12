@@ -41,11 +41,11 @@ Ce qui le distingue des compléments synthétiques : il agit en douceur sur l'en
 
 ### Apaisement de la muqueuse intestinale
 
-L'acemannane forme un film protecteur sur la paroi intestinale. Cette action apaisante intéresse particulièrement les personnes souffrant de côlon irritable, de gastrite ou de remontées acides. Contrairement aux médicaments anti-acides qui neutralisent l'acide gastrique, l'aloe vera soutient naturellement l'équilibre de l'environnement digestif.
+Parmi les composés de la pulpe, l'acemannane est le polysaccharide le plus cité à propos du confort digestif. L'aloe vera ne remplace pas un traitement : en cas de troubles digestifs persistants, de brûlures d'estomac fréquentes ou de reflux, parlez-en à votre médecin avant de commencer une cure.
 
-### Régulation du transit dans les deux sens
+### Un confort de transit au quotidien
 
-C'est l'une des particularités de la pulpe pure : elle régule le transit aussi bien en cas de constipation que de transit trop rapide. Les polysaccharides de l'aloe vera agissent comme régulateurs naturels, sans effet laxatif brutal. Les personnes qui alternent entre les deux problèmes, comme dans le syndrome de l'intestin irritable, y trouvent souvent un meilleur équilibre.
+Beaucoup de personnes qui boivent la pulpe pure chaque matin rapportent un transit plus confortable après quelques semaines. Les boissons Forever écartent l'aloïne de l'écorce, le composé à l'origine de l'effet laxatif de l'aloe vera brut. Si vous avez un trouble digestif installé, comme un syndrome de l'intestin irritable, demandez l'avis de votre médecin avant de commencer.
 
 ### Soutien du microbiote intestinal
 
@@ -119,7 +119,7 @@ Le Forever Aloe Vera Gel à 99,7 % de pulpe est le plus indiqué pour les ballon
 
 ## En résumé
 
-L'aloe vera Forever agit en profondeur sur l'ensemble du système digestif : il apaise la muqueuse, régule le transit, nourrit le microbiote et limite les ballonnements. Pour en tirer le meilleur, choisissez une pulpe pure de qualité, respectez une prise quotidienne le matin à jeun, et laissez à votre corps quelques semaines pour répondre.
+La pulpe d'aloe vera Forever fait partie des gestes simples que beaucoup de personnes intègrent à leur routine matinale pour leur confort digestif. Pour en tirer le meilleur, choisissez une pulpe pure de qualité, respectez une prise quotidienne le matin à jeun, et laissez à votre corps quelques semaines pour répondre.
 
 Un doute sur le produit adapté à votre situation ? Je vous conseille gratuitement selon votre profil. Appelez-moi au 06 77 35 22 26 ou passez par la page [contact](/contact/). Et quand vous êtes prêt, retrouvez tout le nécessaire pour démarrer votre cure sur la page [commander](/commander/).
 

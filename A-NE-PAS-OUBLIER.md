@@ -1,6 +1,15 @@
 # Esprit Aloé — À ne pas oublier
 *Mise à jour : 28 août 2026*
 
+## Lot B du 12 novembre 2026 — confiance et conformité
+
+- IASC : présentée comme association professionnelle du secteur dont Forever est membre fondateur (plus « organisme indépendant »). Corrigé sur `notre-aloe`, `c9-forever-avis`. Anthraquinones : « présentes dans l'écorce, écartées de la pulpe des boissons ».
+- Allégations santé retirées (pathologies, détox, stimulation immunitaire, « régule le transit », cicatrisant, arthrose…) : `notre-aloe` (6 bienfaits), articles digestion, sport, articulations Freedom, cheveux, peau ; fiches Aloe Mango, Aloe Gelly (nom sans « Cicatrisant »), Aloe MSM Gel (seoTitle/description).
+- Meta description de l'accueil : n'affirme plus de choses sur le site officiel ; mentionne distributeur indépendant et livraison 48–72h.
+- **Pages gelées NON touchées** : article `forever-living-avis-produits-france`, fiche `forever-pulpe-daloe-vera`, journal C9. Corrections prêtes dans `scripts/lot-b-pages-gelees.py` (assertions, à lancer à la fin des fenêtres de mesure).
+- Reste en backlog : autres formulations santé (microbiote/enzymes, « régénération cellulaire », argi-pls, « clarté mentale » C9), 6 liens boutique dans les corps de texte sans sponsored, titres >60 car., descriptions >160, H1 accueil.
+- Mesure : noter la date de mise en ligne pour la lecture GSC.
+
 ## Lot A du 12 novembre 2026 — maillage interne produits ↔ guides
 
 - Nouveau `src/data/maillage.ts` : une seule source pour (1) `PAGES_GELEES`, (2) les associations produit → produits avec leur phrase de contexte, (3) les guides par catégorie. Une faute de slug fait échouer le build avec un message clair.

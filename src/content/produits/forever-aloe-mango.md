@@ -37,7 +37,7 @@ Le goût neutre du gel d'aloe vera pur ne vous emballe pas, mais vous voulez ses
 
 ## L'aloe vera adouci par la mangue
 
-La boisson associe le gel d'aloe vera Forever, certifié IASC, à l'extrait naturel de mangue. La mangue apporte du bêta-carotène (précurseur de la vitamine A), de la vitamine C et des antioxydants qui protègent les cellules du stress oxydatif. L'aloe vera reste la base active : il soutient la digestion, régule le transit et hydrate en profondeur grâce à ses polysaccharides et ses enzymes.
+La boisson associe le gel d'aloe vera Forever, certifié IASC, à l'extrait naturel de mangue. La mangue apporte du bêta-carotène (précurseur de la vitamine A), de la vitamine C et des antioxydants naturels. L'aloe vera reste la base de la boisson, avec ses polysaccharides et ses enzymes.
 
 ## Pour qui
 
