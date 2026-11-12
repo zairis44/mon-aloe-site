@@ -1,6 +1,11 @@
 # Esprit Aloé — À ne pas oublier
 *Mise à jour : 28 août 2026*
 
+## Lot B2 du 12 novembre 2026 — pages gelées corrigées (IASC, allégations)
+
+- Appliqué sur : article `forever-living-avis-produits-france` (IASC ×4), fiche `forever-pulpe-daloe-vera` (description, seoDescription sans « plus vendue au monde », FAQ, caractéristiques, texte IASC), journal C9 (ligne IASC). Gel levé à la demande de Rafael le 12/11.
+- Mesure : ces pages ont changé de contenu et de seoDescription le 12/11 — fenêtre de lecture GSC à rouvrir à cette date.
+
 ## Lot B du 12 novembre 2026 — confiance et conformité
 
 - IASC : présentée comme association professionnelle du secteur dont Forever est membre fondateur (plus « organisme indépendant »). Corrigé sur `notre-aloe`, `c9-forever-avis`. Anthraquinones : « présentes dans l'écorce, écartées de la pulpe des boissons ».
