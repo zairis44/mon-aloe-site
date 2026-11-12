@@ -11,7 +11,7 @@ category: "boissons-aloe-vera"
 description: "Le jus d'aloe vera pensé pour vos articulations. Forever Freedom réunit glucosamine, chondroïtine et MSM dans une boisson saveur orange, pour soutenir votre mobilité au quotidien. Idéal si vous êtes actif, sportif, ou si vous sentez vos articulations vous rappeler à l'ordre."
 titreDetails: ""
 seoTitle: "Forever Freedom – Aloe vera glucosamine MSM"
-seoDescription: "Forever Freedom® : jus d'aloe vera enrichi en glucosamine, chondroïtine et MSM pour soutenir vos articulations au quotidien. Mobilité, confort et flexibilité naturels."
+seoDescription: "Forever Freedom® : jus d'aloe vera enrichi en glucosamine, chondroïtine et MSM, pour le confort de vos articulations au quotidien."
 video: "https://www.youtube.com/watch?v=QmxkBeO4ObA"
 lienCommande: "http://www.foreverliving.fr/ref/330001628607/196"
 featured: true

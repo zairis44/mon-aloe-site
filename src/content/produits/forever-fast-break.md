@@ -9,8 +9,8 @@ images:
 category: "sport-et-fitness"
 description: "La barre énergétique saveur beurre de cacahuète et chocolat, pensée pour l'effort. 11 g de protéines par barre, des glucides à libération en deux temps, des vitamines et minéraux. L'en-cas pratique des sportifs et des actifs. Boîte de 12 barres de 56 g, sans gluten, végétarien."
 titreDetails: "Forever Fast Break : la barre énergétique protéinée pour sportifs"
-seoTitle: "Forever Fast Break – Barre énergétique protéinée beurre de cacahuète | Forever Living"
-seoDescription: "Forever Fast Break : barre énergétique Forever Living à la saveur beurre de cacahuète et chocolat. 11 g de protéines, double libération d'énergie, sans gluten. Boîte de 12 barres."
+seoTitle: "Forever Fast Break – Barre protéinée beurre de cacahuète"
+seoDescription: "Forever Fast Break : barre énergétique saveur beurre de cacahuète et chocolat. 11 g de protéines, double libération d'énergie, sans gluten. Boîte de 12."
 video: ""
 lienCommande: "https://www.foreverliving.fr/ref/330001628607/520"
 featured: false

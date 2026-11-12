@@ -9,8 +9,8 @@ images:
 category: "cremes-et-gels"
 description: "Le geste apaisant à garder dans la salle de bain. L'Aloe Gelly Forever, c'est du gel d'aloe vera stabilisé pur, à appliquer sur un coup de soleil, une zone épilée ou une peau qui tiraille. Texture fraîche, non grasse, qui pénètre vite. Sans parfum ni alcool, pour toute la famille."
 titreDetails: "Forever Aloe Vera Gelly : le soin multi-usage à l’Aloe vera ultra-pur"
-seoTitle: "Forever Aloe Vera Gelly – Gel apaisant et hydratant 100 % aloe"
-seoDescription: "Forever Aloe Vera Gelly : gel apaisant riche à base d’Aloe vera stabilisé. Hydratation immédiate, calme les irritations, usage visage, corps, cheveux."
+seoTitle: "Forever Aloe Vera Gelly – Gel apaisant 100 % aloe"
+seoDescription: "Forever Aloe Vera Gelly : gel riche à base d’aloe vera stabilisé. Hydratant et apaisant, pour le visage, le corps et les cheveux."
 video: "https://www.youtube.com/watch?v=-gx_PkubVtc"
 lienCommande: "http://www.foreverliving.fr/ref/330001628607/61"
 faq:

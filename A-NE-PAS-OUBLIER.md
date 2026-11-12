@@ -1,6 +1,13 @@
 # Esprit Aloé — À ne pas oublier
 *Mise à jour : 28 août 2026*
 
+## Lot C du 12 novembre 2026 — nettoyage titres / descriptions / liens boutique
+
+- 15 pages : titres ramenés à ≤ 60 caractères et descriptions à ≤ 160 (c9-forever-avis, fbo, contact, devenir-distributeur, loire-atlantique, livraison, fiches Gelly, Bright Toothgel, Fast Break, Essence Tonifiante, Gel Hydratant Logic, ARGI+, Freedom). Retrait de « circulation » (ARGI+) et « calme les irritations » (Gelly) dans les meta.
+- Liens boutique du corps : `rel="sponsored noopener noreferrer"` sur l'article avis et la fiche Gel Hydratant (https).
+- Non touchés volontairement : titre de l'article avis (73 car., changé le 29/09 → mesure), guide C9 (61) et /commander (61) à 1 caractère près.
+- Mesure : changements de titres au 12/11 — à noter pour la lecture GSC (15 pages en même temps : lire page par page).
+
 ## Lot B du 12 novembre 2026 — confiance et conformité
 
 - IASC : présentée comme association professionnelle du secteur dont Forever est membre fondateur (plus « organisme indépendant »). Corrigé sur `notre-aloe`, `c9-forever-avis`. Anthraquinones : « présentes dans l'écorce, écartées de la pulpe des boissons ».
