@@ -1,6 +1,12 @@
 # Esprit Aloé — À ne pas oublier
 *Mise à jour : 28 août 2026*
 
+## Lot F du 12 novembre 2026 — article sécurité recentré sur « produits Forever dangereux »
+
+- Données GSC (3 mois) : « les produits forever sont-ils dangereux » = 820 impressions (+200 variante), position ~6, CTR 1,8 %. L'article `aloe-vera-a-boire-danger-contre-indications` est recentré : seoTitle « Les produits Forever sont-ils dangereux ? », nouvelle section H2 + question FAQ en tête, description et tags mis à jour. Slug inchangé.
+- Risque de cannibalisation avec l'article avis (qui répond déjà à cette requête via sa FAQ) : surveiller dans la GSC quelle page ressort pour cette requête avant d'ajouter un lien retour depuis l'article avis.
+- Mesure : date du 12/11 (titre modifié le jour même de la demande d'indexation).
+
 ## Lot E du 12 novembre 2026 — sitemap et robots.txt
 
 - `astro.config.mjs` : `/bilan-un-mois-apres-c9/` exclu du sitemap (noindex) — **retirer la ligne du filtre le jour de la publication du bilan** ; `/livraison/` de nouveau dans le sitemap ; `lastmod` réel pour les 14 articles (updatedDate sinon pubDate), aucun lastmod pour les autres pages ; `changefreq`/`priority` supprimés.
