@@ -3,6 +3,7 @@ title: "Aloe vera pour les cheveux : bienfaits, application et produits Forever"
 seoTitle: "Aloe vera cheveux : bienfaits et soins Forever"
 description: "Chute de cheveux, cuir chevelu irrité, pointes sèches : comment l'aloe vera agit sur la santé capillaire et quels produits Forever utiliser."
 pubDate: 2026-04-05
+updatedDate: 2026-11-12
 author: "Rafael Avenard"
 category: "beaute"
 tags:
@@ -87,6 +88,13 @@ Si vos ongles se dédoublent en même temps que vos cheveux s'affinent, le signa
 **Ongles cassants et cheveux qui manquent de densité** : ajoutez une dosette quotidienne de [Forever Marine Collagen](/produits/forever-marine-collagen/) à la cure interne, sur un mois minimum.
 
 **Cheveux ternes et sans brillance** : quelques gouttes d'Aloe Vera Gelly sur les cheveux humides comme soin sans rinçage. Sa texture légère ne colle pas et restitue de la brillance naturelle.
+
+## Ce que disent les sources officielles
+
+L'aloe vera est surtout étudié pour la peau. Le NCCIH rappelle que, sur la peau, il est en général bien toléré, avec parfois des irritations ou des démangeaisons, et que les preuves cliniques sont limitées à quelques indications. Pour le cuir chevelu et les cheveux, je n'ai pas connaissance d'étude solide qui permette d'affirmer un résultat : il s'agit d'un soin d'usage courant, pas d'un traitement. Faites un test sur le pli du coude avant le premier usage et consultez un médecin en cas de chute de cheveux inhabituelle ou de cuir chevelu irrité.
+
+Sources :
+- [NCCIH (National Center for Complementary and Integrative Health), « Aloe Vera: Usefulness and Safety »](https://www.nccih.nih.gov/health/aloe-vera), mise à jour de février 2025.
 
 ## Ce qu'il faut retenir
 

@@ -3,6 +3,7 @@ title: "Perdre du poids avec Forever : C9, DX4 — quel programme choisir ?"
 seoTitle: "Perdre du poids Forever : C9 ou DX4"
 description: "C9 ou DX4 : comparatif des programmes minceur Forever Living, ce qu'ils contiennent, comment ils fonctionnent et lequel choisir selon votre objectif."
 pubDate: 2026-03-23
+updatedDate: 2026-11-12
 author: "Rafael Avenard"
 category: "programmes-detox"
 tags:
@@ -75,6 +76,14 @@ Sa durée réduite le rend plus accessible pour les personnes qui ne peuvent pas
 Quelques principes qui font la différence dans les retours des utilisateurs :
 
 L'hydratation est fondamentale — visez 2 à 3 litres d'eau par jour pendant le programme. Le mouvement quotidien aide l'élimination — 30 minutes de marche suffisent. Suivez le guide nutritionnel fourni dans le coffret plutôt que d'improviser. Et ne sous-estimez pas l'accompagnement : les meilleurs résultats sont obtenus par les personnes qui peuvent poser leurs questions à un distributeur disponible pendant toute la durée du programme.
+
+## Ce que disent les sources officielles sur l'aloe vera et le poids
+
+Le NCCIH mentionne une petite étude portant sur un gel d'aloe vera spécifique pris pendant 8 semaines, avec une diminution modeste du poids et de la masse grasse chez des adultes en surpoids ou obèses, diabétiques ou prédiabétiques. Ce n'est pas une preuve solide et on n'en déduit aucun résultat garanti : un programme n'est pas un traitement et ne remplace pas un suivi médical. Par précaution, la prise orale d'aloe vera est déconseillée pendant la grossesse et l'allaitement, et un avis médical est nécessaire si vous prenez un médicament. Les autorités sanitaires françaises (ANSES) ont aussi alerté en 2018 sur la consommation de préparations contenant des dérivés hydroxyanthracéniques (aloïne), présents dans la couche externe de la feuille : c'est pourquoi il faut choisir un produit qui précise sa teneur.
+
+Sources :
+- [NCCIH (National Center for Complementary and Integrative Health), « Aloe Vera: Usefulness and Safety »](https://www.nccih.nih.gov/health/aloe-vera), mise à jour de février 2025.
+- [ANSES, note d'appui scientifique et technique n° 2018-SA-0188](https://www.anses.fr/fr/system/files/NUT2018SA0188.pdf?download=1), 2 novembre 2018.
 
 ## Questions fréquentes
 

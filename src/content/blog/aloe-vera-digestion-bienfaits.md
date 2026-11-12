@@ -3,7 +3,7 @@ title: "Aloe vera et digestion : 5 effets concrets sur votre confort intestinal"
 seoTitle: "Aloe vera digestion : 5 bienfaits prouvés"
 description: "Ballonnements, transit difficile, inconfort après les repas : comment l'aloe vera Forever agit sur votre digestion et quel produit choisir."
 pubDate: 2026-03-26
-updatedDate: 2026-07-12
+updatedDate: 2026-11-12
 author: "Rafael Avenard"
 category: "bien-etre"
 tags:
