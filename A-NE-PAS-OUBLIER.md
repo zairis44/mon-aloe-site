@@ -1,6 +1,13 @@
 # Esprit Aloé — À ne pas oublier
 *Mise à jour : 28 août 2026*
 
+## Lot D du 12 novembre 2026 — article sécurité « aloe vera à boire danger »
+
+- Nouvel article `aloe-vera-a-boire-danger-contre-indications` (requête informationnelle à fort volume, sert de preuve d'honnêteté / E-E-A-T). Sources citées : communiqué DGS/DGCCRF (2 août 2018), note ANSES 2018-SA-0188, avis EFSA 2018. Pas de prétention santé ; renvoi vers le médecin ; IASC décrite comme association du secteur.
+- Maillage : l'article renvoie vers l'avis Forever, la fiche Pulpe, le guide digestion, /notre-aloe/ et /contact/. La fiche Pulpe (gelée) n'affiche pas de bloc retour (PAGES_GELEES). Les autres articles n'ont pas été modifiés (pas de lien retour ajouté, pour ne pas toucher de page en mesure).
+- Pas d'image : à choisir par Rafael (champ `image` à ajouter dans le frontmatter).
+- À faire plus tard : liens retour depuis `aloe-vera-digestion-bienfaits` et l'article avis quand la mesure sera close.
+
 ## Lot C du 12 novembre 2026 — nettoyage titres / descriptions / liens boutique
 
 - 15 pages : titres ramenés à ≤ 60 caractères et descriptions à ≤ 160 (c9-forever-avis, fbo, contact, devenir-distributeur, loire-atlantique, livraison, fiches Gelly, Bright Toothgel, Fast Break, Essence Tonifiante, Gel Hydratant Logic, ARGI+, Freedom). Retrait de « circulation » (ARGI+) et « calme les irritations » (Gelly) dans les meta.
