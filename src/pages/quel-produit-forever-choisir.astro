@@ -110,7 +110,7 @@ const schemaBreadcrumb = {
           </p>
         )}
 
-        {(s.articlesLies.length > 0 || s.lienExtra) && (
+        {(s.articlesLies.length > 0 || s.liensExtra) && (
           <ul class="space-y-2 text-sm">
             {s.articlesLies.map((a) => (
               <li>
@@ -119,13 +119,13 @@ const schemaBreadcrumb = {
                 </a>
               </li>
             ))}
-            {s.lienExtra && (
+            {s.liensExtra?.map((l) => (
               <li>
-                <a href={s.lienExtra.href} class="font-semibold text-aloe-600 hover:text-aloe-800 transition-colors">
-                  {s.lienExtra.label} →
+                <a href={l.href} class="font-semibold text-aloe-600 hover:text-aloe-800 transition-colors">
+                  {l.label} →
                 </a>
               </li>
-            )}
+            ))}
           </ul>
         )}
       </div>

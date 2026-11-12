@@ -9,6 +9,7 @@
 import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import { foreverHref, FOREVER_REL } from '../lib/forever';
 import { getCollection, render } from 'astro:content';
 
 const tousLesJournaux = await getCollection('journal');
@@ -731,7 +732,7 @@ function phaseDuJour(num: number) {
 
         <div class="cta-sticky__options">
           {produitC9.data.lienCommande && (
-            <a href={produitC9.data.lienCommande} target="_blank" rel="noopener noreferrer" class="cta-sticky__option cta-sticky__option--primary">
+            <a href={foreverHref(produitC9.data.lienCommande)} target="_blank" rel={FOREVER_REL} class="cta-sticky__option cta-sticky__option--primary">
               🛒 Commander directement sur Forever
             </a>
           )}
