@@ -9,8 +9,8 @@ images:
 category: "sport-et-fitness"
 description: "La L-arginine en stick nomade pour soutenir circulation, énergie et récupération. Forever ARGI+ apporte 5 g d'arginine par dose, des vitamines C, D, B6, B12 et K2, et des extraits de fruits antioxydants. Saveur fruits rouges, à diluer dans l'eau. Pour les sportifs amateurs comme confirmés."
 titreDetails: "Forever ARGI+™ : L-arginine, vitamines et antioxydants pour une circulation optimale et des performances accrues"
-seoTitle: "Forever ARGI+ – L-Arginine énergie et circulation"
-seoDescription: "Forever ARGI+™ associe 5 g d’arginine et des vitamines C, D, B6, B12 et K2. Stick nomade pour meilleure circulation, énergie et récupération. Saveur fruits rouges."
+seoTitle: "Forever ARGI+ – L-Arginine en stick, énergie et récupération"
+seoDescription: "Forever ARGI+™ associe 5 g d’arginine et des vitamines C, D, B6, B12 et K2. Stick nomade pour l’énergie et la récupération. Saveur fruits rouges."
 video: ""
 lienCommande: "http://www.foreverliving.fr/ref/330001628607/473"
 faq:

@@ -9,8 +9,8 @@ images:
 category: "cremes-et-gels"
 description: "L'étape qui prépare la peau à mieux recevoir vos soins. L'Essence Tonifiante Logic associe l'aloe vera certifié IASC, l'acide hyaluronique, le concombre et le thé vert. Elle hydrate, tonifie et illumine sans alcool. Plus de 98 % d'ingrédients d'origine naturelle, certifiée Dermatest. 73 ml."
 titreDetails: "Forever Logic Essence Tonifiante : le soin visage naturel qui illumine"
-seoTitle: "Forever Logic Essence Tonifiante – Soin visage Aloe Vera 98% naturel | Esprit Aloé"
-seoDescription: "L'Essence Tonifiante Logic by Forever hydrate, tonifie et illumine votre peau. 98% naturel, Aloe Vera + acide hyaluronique + concombre. Certifiée Dermatest®. Peau sensible. 73 ml."
+seoTitle: "Forever Logic Essence Tonifiante – Soin visage Aloe Vera"
+seoDescription: "L'Essence Tonifiante Logic by Forever hydrate, tonifie et illumine la peau. Aloe vera, acide hyaluronique, concombre. Certifiée Dermatest®. 73 ml."
 video: ""
 lienCommande: "https://www.foreverliving.fr/ref/330001628607/668"
 featured: false

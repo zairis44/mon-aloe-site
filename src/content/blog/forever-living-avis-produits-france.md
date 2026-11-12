@@ -136,7 +136,7 @@ Si vous souhaitez un résultat plus rapide et structuré, le **[Programme C9](/p
   <p class="text-lg font-semibold text-aloe-900 mb-2">Prêt à commander ?</p>
   <p class="text-sm text-aloe-600 mb-6">Livraison 48–72h en France · Satisfait ou remboursé 30 jours · Certifié IASC</p>
   <div class="flex flex-wrap items-center justify-center gap-4">
-    <a href="https://www.foreverliving.fr/ref/330001628607/" target="_blank" rel="noopener noreferrer" class="rounded-full bg-aloe-600 px-8 py-3.5 text-sm font-semibold text-cream hover:bg-aloe-700 transition-colors">
+    <a href="https://www.foreverliving.fr/ref/330001628607/" target="_blank" rel="sponsored noopener noreferrer" class="rounded-full bg-aloe-600 px-8 py-3.5 text-sm font-semibold text-cream hover:bg-aloe-700 transition-colors">
       🛒 Accéder à la boutique Forever Living
     </a>
     <a href="/produits/" class="rounded-full border border-aloe-300 px-8 py-3.5 text-sm font-semibold text-aloe-700 hover:bg-aloe-50 transition-colors">
