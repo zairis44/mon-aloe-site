@@ -1,6 +1,12 @@
 # Esprit Aloé — À ne pas oublier
 *Mise à jour : 28 août 2026*
 
+## Lot M3 du 12 novembre 2026 — réponses Forever dans l'article « pyramidal ou légal »
+
+- Article `forever-living-pyramidal-ou-legal` : section « Mes réponses aux 7 questions » (tableau) + 2 FAQ (stock/minimum d'achat, arrêter).
+- Réponses fournies par Rafael : pas de stock nécessaire, pas de minimum d'achat, on arrête quand on veut en ne commandant plus.
+- Encore à confirmer : coût exact et contenu du kit, document d'information sur les revenus, adhésion FVD, expérience personnelle, lien d'inscription distributeur distinct du lien boutique.
+
 ## Lot M du 12 novembre 2026 — article « Forever Living : pyramidal ou légal ? »
 
 - Nouvel article `forever-living-pyramidal-ou-legal` : grille de lecture (art. L122-15 Code de la consommation, sanctions L132-19/20, code de conduite FVD déc. 2021), 7 questions avant de s'inscrire, FAQ de 5 questions. Transparence : le texte dit que Rafael est parrain et a un intérêt.
