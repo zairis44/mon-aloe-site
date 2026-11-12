@@ -28,8 +28,12 @@ faq:
     reponse: "La vente pyramidale (ou « boule de neige ») est interdite par l'article L122-15 du Code de la consommation. La vente directe, elle, est un secteur encadré et légal : le statut le plus courant est celui de vendeur à domicile indépendant (VDI). Ce qui fait la différence, c'est que la rémunération vient des ventes de produits à des clients, pas du simple fait de recruter."
   - question: "Faut-il recruter pour gagner de l'argent chez Forever ?"
     reponse: "Les règles de la Fédération de la vente directe précisent qu'aucun revenu ne peut être versé pour une simple action de recrutement. Vous pouvez donc vous contenter de vendre et de consommer les produits. Si une personne vous affirme que recruter est la seule voie, c'est un signal d'alerte."
+  - question: "Faut-il acheter du stock ou un minimum de produits chaque mois ?"
+    reponse: "D'après mon expérience de distributeur Forever, non : il n'y a pas de stock nécessaire et pas de minimum d'achat. On commande au fur et à mesure des besoins de ses clients. Vérifiez néanmoins les conditions de votre contrat avant de signer : c'est lui qui fait foi."
   - question: "Combien coûte l'inscription comme distributeur ?"
     reponse: "À ma connaissance, l'inscription coûte quelques dizaines d'euros avec un kit de démarrage, sans droit d'entrée élevé et sans stock obligatoire. Vérifiez toujours les montants à jour dans votre contrat avant de payer : c'est le document qui fait foi."
+  - question: "Comment arrête-t-on quand on ne veut plus être distributeur ?"
+    reponse: "D'après mon expérience, on arrête quand on veut : il suffit de ne plus passer de commandes, sans durée d'engagement. Pour les formalités exactes (résiliation écrite, remboursement), lisez les conditions de votre contrat."
   - question: "Peut-on perdre de l'argent comme distributeur ?"
     reponse: "Oui. Les revenus varient fortement d'une personne à l'autre et dépendent des efforts et de la clientèle de chacun. Ne comptez pas sur un revenu : considérez l'inscription comme un test, avec un budget que vous acceptez de ne pas récupérer."
 ---
@@ -85,9 +89,19 @@ Que ce soit chez Forever ou ailleurs, voici ce que je vérifierais, contrat en m
 6. **Quel est le revenu moyen réel ?** Une entreprise sérieuse doit pouvoir vous remettre un document d'information sur les revenus, pas seulement des témoignages de réussite.
 7. **La personne qui me parraine est-elle claire sur ses propres intérêts ?** Un parrain qui promet des gains rapides ou vous presse de signer est un signal d'alerte.
 
-## Et Forever Living ?
+## Et Forever Living ? Mes réponses aux 7 questions
 
-Forever Living est une entreprise de vente directe : un distributeur achète les produits à prix remisé et les vend à ses clients. D'après ce que j'ai constaté en tant que distributeur, l'adhésion coûte quelques dizaines d'euros avec un kit de démarrage, sans droit d'entrée élevé, et il n'y a pas de stock obligatoire : on commande au fur et à mesure des ventes. Ce sont des éléments que je vous invite à **vérifier vous-même** dans le contrat et la documentation officielle de Forever avant de payer, car c'est ce document qui fait foi, pas mon article.
+Forever Living est une entreprise de vente directe : un distributeur achète les produits à prix remisé et les vend à ses clients. Voici ce que je constate en tant que distributeur, question par question. Ce sont des **constats personnels** : le contrat et la documentation officielle de Forever font foi, pas mon article.
+
+| Question | Ce que je constate | À vérifier dans le contrat |
+|---|---|---|
+| 1. Combien pour commencer ? | Quelques dizaines d'euros avec un kit de démarrage, pas de droit d'entrée élevé. | Le montant exact et le contenu du kit au moment de votre inscription. |
+| 2. Stock obligatoire ? | **Non** : pas de stock nécessaire. On commande au fur et à mesure des besoins de ses clients. La garantie de reprise du stock prévue par la loi se pose donc moins, puisqu'il n'y a pas de stock imposé. | Qu'aucune clause ne vous impose un stock ou un achat de démarrage au-delà du kit. |
+| 3. D'où viennent les revenus ? | Des produits que vous vendez (et que votre équipe vend, si vous en avez une). | Le plan de rémunération officiel : lisez-le en entier. |
+| 4. Puis-je arrêter facilement ? | **Oui** : on arrête quand on veut, il suffit de ne plus passer de commandes. | Les conditions de résiliation et de rétractation écrites dans votre contrat. |
+| 5. Achats mensuels obligatoires ? | **Non** : pas de minimum d'achat. | Qu'aucune condition d'achat n'est liée aux commissions ou à votre statut. |
+| 6. Quel revenu moyen ? | Je n'ai pas de chiffre officiel à vous citer ici. | Le document d'information sur les revenus que Forever doit pouvoir vous remettre. |
+| 7. Mon parrain est-il transparent ? | Je vous ai dit au début que j'ai un intérêt à vous voir vous inscrire. | Qu'on ne vous promet aucun gain et qu'on ne vous presse pas. |
 
 Deux limites honnêtes :
 
