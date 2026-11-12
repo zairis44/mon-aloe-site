@@ -1,0 +1,73 @@
+---
+/**
+ * src/components/GuidesLies.astro
+ * Bloc « Pour aller plus loin » : articles du blog liés à une fiche produit
+ * ou à une catégorie. Zéro JS, aucune saisie manuelle pour les fiches :
+ *
+ *   - Fiche produit  : articles dont le frontmatter `produitsLies` cite la fiche
+ *                      (détectés automatiquement, du plus récent au plus ancien).
+ *                      À défaut, guides de la catégorie (maillage.ts → GUIDES_CATEGORIE).
+ *   - Page catégorie : guides de la catégorie.
+ */
+import { getCollection } from 'astro:content';
+import { GUIDES_CATEGORIE } from '../data/maillage';
+
+export interface Props {
+  /** Slug de la fiche produit (mode fiche). */
+  produit?: string;
+  /** Slug de catégorie (mode catégorie, ou repli pour une fiche sans article). */
+  categorie?: string;
+  titre?: string;
+  max?: number;
+}
+
+const { produit, categorie, titre = 'Pour aller plus loin', max = 3 } = Astro.props;
+
+const articles = await getCollection('blog', ({ data }) => !data.draft);
+const parId = new Map(articles.map((a) => [a.id, a]));
+const date = (a: (typeof articles)[number]) => (a.data.updatedDate ?? a.data.pubDate).getTime();
+
+let retenus: typeof articles = [];
+
+if (produit) {
+  retenus = articles
+    .filter((a) => a.data.produitsLies.some((p) => p.slug === produit))
+    .sort((a, b) => date(b) - date(a));
+}
+
+if (retenus.length === 0 && categorie) {
+  retenus = (GUIDES_CATEGORIE[categorie] ?? []).map((id) => {
+    const a = parId.get(id);
+    if (!a) {
+      throw new Error(`maillage.ts : l'article « ${id} » (GUIDES_CATEGORIE → ${categorie}) n'existe pas dans src/content/blog.`);
+    }
+    return a;
+  });
+}
+
+retenus = retenus.slice(0, max);
+---
+
+{retenus.length > 0 && (
+  <section class="bg-cream py-14 border-t border-aloe-100" aria-labelledby="guides-lies-titre">
+    <div class="mx-auto max-w-6xl px-6">
+      <h2 id="guides-lies-titre" class="text-2xl text-aloe-900 mb-8">{titre}</h2>
+      <ul class="grid gap-5 md:grid-cols-3">
+        {retenus.map((a) => (
+          <li>
+            <a
+              href={`/blog/${a.id}/`}
+              class="group flex h-full flex-col rounded-2xl border border-aloe-100 bg-white p-6 transition-all hover:border-aloe-300 hover:shadow-sm"
+            >
+              <span class="mb-2 text-sm font-semibold leading-snug text-aloe-800 group-hover:text-aloe-600">
+                {a.data.title}
+              </span>
+              <span class="text-xs leading-relaxed text-aloe-500 line-clamp-3">{a.data.description}</span>
+              <span class="mt-4 text-xs font-semibold text-aloe-600">Lire le guide →</span>
+            </a>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </section>
+)}
