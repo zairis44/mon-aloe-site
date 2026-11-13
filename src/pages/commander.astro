@@ -9,6 +9,9 @@
 import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import { getCollection } from 'astro:content';
+import { PRODUITS_RECOMMANDES } from '../data/recommandes';
+import { foreverHref, FOREVER_REL } from '../lib/forever';
 
 const boutiqueUrl = "https://www.foreverliving.fr/ref/330001628607/";
 
@@ -95,6 +98,21 @@ const modesCommande = [
     badge: null,
   },
 ];
+
+const tousProduits = await getCollection('produits');
+const recommandes = PRODUITS_RECOMMANDES.map(({ slug, note }) => {
+  const p = tousProduits.find((x) => x.data.slug === slug);
+  if (!p) throw new Error(`Produit recommandé introuvable : ${slug}`);
+  return {
+    slug,
+    note,
+    nom: p.data.name,
+    nomCourt: p.data.name.split(' – ')[0],
+    image: p.data.image || null,
+    prix: `${p.data.price.toFixed(2).replace('.', ',')} €`,
+    lien: foreverHref(p.data.lienCommande) ?? '/contact/',
+  };
+});
 
 const faq = [
   {
@@ -199,6 +217,37 @@ const schemaFAQ = {
         <p class="mt-2 text-sm text-aloe-600">
           Première commande ? Voyez s'il y a un <a href="/code-promo-forever/" class="underline underline-offset-4 hover:text-aloe-900">code promo Forever en cours</a> avant de valider votre panier.
         </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       RECOMMANDER EN 1 CLIC (Lot V4)
+  ══════════════════════════════════════════ -->
+  <section class="bg-cream py-16" aria-labelledby="titre-recommandes">
+    <div class="mx-auto max-w-6xl px-6">
+      <div class="mb-10">
+        <span class="text-xs font-semibold uppercase tracking-widest text-aloe-500">Déjà client ?</span>
+        <h2 id="titre-recommandes" class="text-3xl md:text-4xl text-aloe-900 mt-2">Recommander en 1 clic</h2>
+        <p class="text-aloe-600 mt-3 max-w-2xl">Les produits que je recommande le plus souvent. Le bouton ouvre directement le produit sur la boutique Forever.</p>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-5 gap-5">
+        {recommandes.map((r) => (
+          <div class="flex flex-col rounded-2xl bg-white border border-aloe-100 p-5">
+            <a href={`/produits/${r.slug}/`} class="block aspect-square mb-4">
+              {r.image ? (
+                <img src={r.image} alt={r.nom} width="300" height="300" loading="lazy" class="w-full h-full object-contain" />
+              ) : (
+                <span class="flex w-full h-full items-center justify-center text-5xl">🌿</span>
+              )}
+            </a>
+            <h3 class="text-base text-aloe-800 leading-snug mb-1">{r.nomCourt}</h3>
+            <p class="text-xs text-aloe-500 mb-3 flex-1">{r.note}</p>
+            <p class="font-display text-lg text-aloe-900 mb-3">{r.prix}</p>
+            <a href={r.lien} target="_blank" rel={FOREVER_REL} class="inline-flex justify-center rounded-full bg-aloe-600 px-4 py-2.5 text-sm font-semibold text-cream hover:bg-aloe-700 transition-colors">Commander</a>
+            <a href={`/produits/${r.slug}/`} class="mt-2 text-center text-xs font-semibold text-aloe-600 hover:text-aloe-800">Voir la fiche</a>
+          </div>
+        ))}
       </div>
     </div>
   </section>

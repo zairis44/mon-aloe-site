@@ -10,6 +10,7 @@
  */
 import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
+import BandeauOffre from '../components/BandeauOffre.astro';
 import Footer from '../components/Footer.astro';
 import { BESOINS } from '../data/besoins';
 import { getCollection } from 'astro:content';
@@ -109,6 +110,7 @@ const schemaFAQ = {
 >
   <script type="application/ld+json" set:html={JSON.stringify(schemaFAQ)} slot="head" />
   <Header />
+  <BandeauOffre />
   <!-- ══════════════════════════════════════════════
        HERO
   ══════════════════════════════════════════════ -->

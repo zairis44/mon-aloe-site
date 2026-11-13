@@ -8,6 +8,7 @@
 import { getCollection, render } from 'astro:content';
 import Layout from '../../layouts/Layout.astro';
 import Header from '../../components/Header.astro';
+import BandeauOffre from '../../components/BandeauOffre.astro';
 import Footer from '../../components/Footer.astro';
 import CtaCommander from '../../components/CtaCommander.astro';
 import ProduitsAssocies from '../../components/ProduitsAssocies.astro';
@@ -171,6 +172,7 @@ const seoDescription = d.seoDescription ?? d.description;
   )}
 
   <Header />
+  <BandeauOffre />
 
   <!-- ══════════════════════════════════════════════
        FIL D'ARIANE + EN-TÊTE
