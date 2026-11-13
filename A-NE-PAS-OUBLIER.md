@@ -1,6 +1,13 @@
 # Esprit Aloé — À ne pas oublier
 *Mise à jour : 13 novembre 2026*
 
+## Lot R du 13 novembre 2026 — title de l'accueil + différenciation danger / avis (validé par Rafael)
+
+- **Accueil** : title « Forever Living — Commander les Produits Aloe Vera en France » → « Forever Living : distributeur et commande d'aloe vera en France » (cible : « distributeur forever living » ×4, positions 17–18, SD 12). FAQ C9 de l'accueil (visible + JSON-LD) sans « nettoyer l'organisme / relancer le métabolisme ». **Mesure de l'accueil : repart du 13/11.**
+- **Danger / avis** : l'article avis ne garde qu'une réponse courte à « dangereux ? » et renvoie vers l'article danger (premier lien avis → danger, ancre exacte). Le title et la meta de l'avis ne changent pas.
+- L'article danger a un nouveau H1 (« … Aloïne, ANSES et précautions », pour ne plus chevaucher « aloe vera à boire », visé par l'autre article) et un encadré « En bref » en tête, qui donne la réponse directe (vise l'extrait optimisé).
+- À surveiller dans GSC : la page qui sort sur « les produits forever sont ils dangereux » (avis en position 8 avant le lot R). Si l'avis perd la requête sans que l'article danger la reprenne sous 3–4 semaines, remettre la réponse longue dans l'avis.
+
 ## Lot Q du 13 novembre 2026 — premières données Ubersuggest
 
 - Données complètes : `rapports/mots-cles/2026-11-13-donnees-ubersuggest.md`. Semrush : pas d'unités d'API. Ubersuggest gratuit : 3 recherches par jour.
