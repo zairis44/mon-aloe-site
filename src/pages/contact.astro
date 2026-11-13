@@ -3,7 +3,10 @@
  * src/pages/contact.astro
  * Page contact — Esprit Aloé
  * Formulaire Formspree via fetch() → confirmation inline, pas de redirection
- * Schema.org : ContactPage
+ * Schema.org : ContactPage + FAQPage
+ * Lot U (13/11/2026) : accès rapide appel/SMS/email (remplace la carte Google
+ * non consentie), aide par sujet (pré-sélection du formulaire), déroulé après
+ * le message, rencontre locale, FAQ.
  */
 import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
@@ -14,7 +17,7 @@ const schemaContact = {
   "@type": "ContactPage",
   name: "Contactez Esprit Aloé — Distributeur Forever Living",
   url: "https://espritaloe.fr/contact/",
-  description: "Contactez Rafael Avenard, distributeur Forever Living Products en France. Disponible 7j/7 pour vous conseiller.",
+  description: "Contactez Rafael Avenard, distributeur indépendant Forever Living Products à Saint-Joachim (Loire-Atlantique). Disponible 7j/7 pour vous conseiller.",
   mainEntity: {
     "@type": "Person",
     name: "Rafael Avenard",
@@ -22,8 +25,98 @@ const schemaContact = {
     telephone: "+33677352226",
     email: "contact@espritaloe.fr",
     url: "https://espritaloe.fr/contact/",
+    address: {
+      "@type": "PostalAddress",
+      addressLocality: "Saint-Joachim",
+      postalCode: "44720",
+      addressRegion: "Loire-Atlantique",
+      addressCountry: "FR",
+    },
     sameAs: ["https://www.facebook.com/RafaelAvenardDistributeurForever"],
   },
+};
+
+const aides = [
+  {
+    icone: "🔎",
+    titre: "Choisir un produit",
+    texte: "Boisson, programme, soin ou complément : on part de vos habitudes et de vos attentes pour trouver le bon produit, sans en acheter dix.",
+    lien: "/quel-produit-forever-choisir/",
+    lienTexte: "Trouver mon produit",
+    sujet: "Conseils produits",
+  },
+  {
+    icone: "🛒",
+    titre: "Passer commande",
+    texte: "Un souci sur la boutique Forever, une question sur la livraison ou sur l'offre du moment ? Je vous guide jusqu'à la validation.",
+    lien: "/commander/",
+    lienTexte: "Voir comment commander",
+    sujet: "Commander un produit",
+  },
+  {
+    icone: "🗓️",
+    titre: "Programme C9 ou DX4",
+    texte: "Organisation des journées, choix de la saveur, suite du programme : je réponds à vos questions avant et pendant le programme.",
+    lien: "/blog/programme-c9-forever-guide-cure-detox-9-jours/",
+    lienTexte: "Lire le guide du C9",
+    sujet: "Programme C9 / DX4",
+  },
+  {
+    icone: "🌿",
+    titre: "Devenir distributeur",
+    texte: "Comment ça marche, combien ça coûte pour démarrer, à quoi ressemble le quotidien : on en parle simplement, sans engagement.",
+    lien: "/devenir-distributeur-forever-living/",
+    lienTexte: "Découvrir l'activité",
+    sujet: "Devenir distributeur",
+  },
+];
+
+const etapes = [
+  {
+    titre: "Je lis votre message",
+    texte: "Je vous réponds sous 24 h, par e-mail ou par téléphone si vous m'avez laissé votre numéro.",
+  },
+  {
+    titre: "On fait le point ensemble",
+    texte: "Quelques questions sur vos habitudes et ce que vous cherchez, pour vous orienter vers les bons produits, ou vers aucun si rien ne vous convient.",
+  },
+  {
+    titre: "Vous commandez quand vous voulez",
+    texte: "Sur la boutique officielle Forever, avec livraison en point relais ou à domicile. En Loire-Atlantique, remise en main propre possible sur rendez-vous.",
+  },
+];
+
+const faq = [
+  {
+    q: "Sous combien de temps répondez-vous ?",
+    r: "Je réponds à chaque message sous 24 heures, souvent bien plus vite. Pour une question urgente sur une commande, le plus rapide reste de m'appeler ou de m'envoyer un SMS au 06 77 35 22 26.",
+  },
+  {
+    q: "Dois-je passer par vous pour commander ?",
+    r: "Non. Vous commandez directement sur la boutique officielle Forever Living, en ligne, quand vous le souhaitez. Me contacter avant est utile si vous hésitez entre plusieurs produits ou si vous voulez être accompagné(e) pendant un programme.",
+  },
+  {
+    q: "Peut-on se rencontrer ?",
+    r: "Oui, sur rendez-vous, autour de Saint-Joachim : Brière, presqu'île guérandaise, Saint-Nazaire, Pontchâteau. Je peux aussi vous remettre une commande en main propre. Ailleurs en France, on échange par téléphone et la commande est livrée chez vous ou en point relais.",
+  },
+  {
+    q: "Pouvez-vous me conseiller sur un problème de santé ?",
+    r: "Non : je suis distributeur, pas professionnel de santé. Je vous aide à choisir parmi les produits Forever selon vos habitudes et vos goûts. En cas de traitement, de grossesse, d'allaitement ou de question médicale, demandez d'abord l'avis de votre médecin ou de votre pharmacien.",
+  },
+  {
+    q: "Que faire en cas de problème avec une commande ?",
+    r: "Écrivez-moi en précisant la date de la commande et le produit concerné : je vous aide à trouver la bonne démarche auprès de Forever Living. Les conditions de livraison et de retour sont détaillées sur la page Livraison.",
+  },
+];
+
+const schemaFAQ = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faq.map((f) => ({
+    "@type": "Question",
+    name: f.q,
+    acceptedAnswer: { "@type": "Answer", text: f.r },
+  })),
 };
 
 const sujets = [
@@ -38,11 +131,12 @@ const sujets = [
 ---
 
 <Layout
-  title="Contactez votre distributeur Forever Living | Esprit Aloé"
-  description="Contactez Rafael Avenard, distributeur Forever Living Products en Loire-Atlantique. Disponible 7j/7 au 06 77 35 22 26 pour vous conseiller sur l'aloe vera."
+  title="Contacter un distributeur Forever Living | Esprit Aloé"
+  description="Une question sur un produit Forever, une commande ou le programme C9 ? Contactez Rafael, distributeur indépendant en Loire-Atlantique : réponse sous 24 h, 7j/7."
   canonical="https://espritaloe.fr/contact/"
 >
   <script type="application/ld+json" set:html={JSON.stringify(schemaContact)} slot="head" />
+  <script type="application/ld+json" set:html={JSON.stringify(schemaFAQ)} slot="head" />
 
   <Header />
 
@@ -59,33 +153,58 @@ const sujets = [
             <li class="text-aloe-700 font-medium">Contact</li>
           </ol>
         </nav>
-        <h1 class="text-5xl text-aloe-900 mb-4">Contactez-nous</h1>
+        <h1 class="text-4xl md:text-5xl text-aloe-900 mb-4">Contacter votre distributeur Forever</h1>
         <p class="text-lg text-aloe-600 max-w-xl leading-relaxed">
-          Une question sur un produit, une commande ou les programmes détox ?
-          Rafael est disponible <strong>7j/7</strong> pour vous répondre.
+          Une question sur un produit, une commande ou le programme C9 ?
+          Je m'appelle Rafael et je vous réponds <strong>7j/7</strong>, sous 24&nbsp;h.
         </p>
         <p class="mt-5 text-sm text-aloe-500 leading-relaxed max-w-lg">
-          Basé en Loire-Atlantique, j'interviens dans toute la région Pays de la Loire :
-          <span class="font-medium text-aloe-700">Nantes, Saint-Nazaire, Donges, Savenay, La Baule-Escoublac,
-          Pornic, Ancenis, Saint-Herblain, Rezé, Châteaubriant, Pontchâteau</span>
-          et partout en France grâce à la livraison en 48–72h.
+          Distributeur indépendant basé à <span class="font-medium text-aloe-700">Saint-Joachim</span>,
+          en Brière : rendez-vous possibles autour de Saint-Nazaire, Guérande, La Baule et Pontchâteau,
+          et conseil par téléphone partout en France.
+          <a href="/distributeur-forever-living-loire-atlantique/" class="underline hover:text-aloe-700">Votre distributeur en Loire-Atlantique →</a>
         </p>
       </div>
 
-      <!-- Droite : carte Google Maps -->
-      <div class="rounded-3xl overflow-hidden shadow-xl border border-aloe-100 h-72 md:h-80">
-        <iframe
-          src="https://maps.google.com/maps?q=Loire-Atlantique,France&z=9&output=embed&hl=fr"
-          width="100%"
-          height="100%"
-          style="border:0; display:block;"
-          allowfullscreen
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-          title="Distributeur Forever Living Loire-Atlantique — Esprit Aloé"
-        ></iframe>
+      <!-- Droite : accès rapide (remplace la carte Google, chargée sans consentement) -->
+      <div class="rounded-3xl bg-white shadow-xl border border-aloe-100 p-6 md:p-8">
+        <p class="text-xs uppercase tracking-widest text-aloe-400 mb-5">Le plus rapide pour me joindre</p>
+        <div class="space-y-3">
+          <a href="tel:+33677352226" class="flex items-center gap-4 rounded-2xl bg-aloe-700 text-cream px-5 py-4 hover:bg-aloe-800 transition-colors">
+            <span class="text-2xl" aria-hidden="true">📞</span>
+            <span><span class="block font-semibold">Appeler Rafael</span><span class="block text-sm text-aloe-200">06 77 35 22 26</span></span>
+          </a>
+          <a href="sms:+33677352226" class="flex items-center gap-4 rounded-2xl border border-aloe-200 px-5 py-4 text-aloe-800 hover:bg-aloe-50 transition-colors">
+            <span class="text-2xl" aria-hidden="true">💬</span>
+            <span><span class="block font-semibold">Envoyer un SMS</span><span class="block text-sm text-aloe-500">Je vous rappelle quand vous voulez</span></span>
+          </a>
+          <a href="mailto:contact@espritaloe.fr" class="flex items-center gap-4 rounded-2xl border border-aloe-200 px-5 py-4 text-aloe-800 hover:bg-aloe-50 transition-colors">
+            <span class="text-2xl" aria-hidden="true">✉️</span>
+            <span><span class="block font-semibold">Écrire un e-mail</span><span class="block text-sm text-aloe-500">contact@espritaloe.fr</span></span>
+          </a>
+        </div>
+        <a href="#formulaire" class="mt-5 inline-block text-sm font-semibold text-aloe-600 hover:text-aloe-800">Ou remplir le formulaire ↓</a>
       </div>
 
+    </div>
+  </section>
+
+  <!-- Aide par sujet -->
+  <section class="bg-cream pt-16" aria-labelledby="titre-aide">
+    <div class="mx-auto max-w-6xl px-6">
+      <h2 id="titre-aide" class="text-2xl md:text-3xl text-aloe-900 mb-2">Pour quoi me contacter ?</h2>
+      <p class="text-aloe-600 mb-8 max-w-2xl">Choisissez votre sujet : le formulaire sera pré-rempli. Vous pouvez aussi trouver la réponse directement sur le site.</p>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+        {aides.map((a) => (
+          <div class="flex flex-col rounded-2xl bg-white border border-aloe-100 p-6">
+            <p class="text-3xl mb-3" aria-hidden="true">{a.icone}</p>
+            <h3 class="text-lg text-aloe-800 mb-2">{a.titre}</h3>
+            <p class="text-sm text-aloe-600 leading-relaxed mb-5 flex-1">{a.texte}</p>
+            <a href="#formulaire" data-sujet={a.sujet} class="js-sujet inline-flex justify-center rounded-full bg-aloe-600 px-4 py-2.5 text-sm font-semibold text-cream hover:bg-aloe-700 transition-colors">Poser ma question</a>
+            <a href={a.lien} class="mt-3 text-center text-sm font-semibold text-aloe-600 hover:text-aloe-800">{a.lienTexte} →</a>
+          </div>
+        ))}
+      </div>
     </div>
   </section>
 
@@ -95,7 +214,7 @@ const sujets = [
 
       <!-- ── Formulaire ──────────────────────────────────────────── -->
       <div>
-        <h2 class="text-2xl text-aloe-800 mb-8">Envoyez-nous un message</h2>
+        <h2 id="formulaire" class="text-2xl text-aloe-800 mb-8 scroll-mt-24">Envoyez-moi un message</h2>
 
         <form id="contact-form" class="space-y-5" novalidate>
 
@@ -254,7 +373,7 @@ const sujets = [
               <span class="text-lg">📍</span>
               <div>
                 <p class="text-xs text-aloe-400 uppercase tracking-wide">Zone</p>
-                <p class="font-semibold">Loire-Atlantique — Pays de la Loire</p>
+                <p class="font-semibold">Saint-Joachim — Loire-Atlantique</p>
               </div>
             </li>
             <li class="flex items-center gap-3">
@@ -262,6 +381,15 @@ const sujets = [
               <div>
                 <p class="text-xs text-aloe-400 uppercase tracking-wide">Disponibilité</p>
                 <p class="font-semibold">7j/7 — Réponse sous 24h</p>
+              </div>
+            </li>
+            <li class="flex items-center gap-3">
+              <span class="text-lg">👍</span>
+              <div>
+                <p class="text-xs text-aloe-400 uppercase tracking-wide">Facebook</p>
+                <a href="https://www.facebook.com/RafaelAvenardDistributeurForever" rel="noopener" target="_blank" class="font-semibold hover:text-aloe-300 transition-colors">
+                  Rafael Avenard Distributeur Forever
+                </a>
               </div>
             </li>
           </ul>
@@ -282,8 +410,8 @@ const sujets = [
             <p class="text-xs text-aloe-500 mt-1">Ans d'expertise</p>
           </div>
           <div class="rounded-2xl bg-aloe-50 border border-aloe-100 p-5 text-center">
-            <p class="text-2xl font-display text-aloe-700">FR</p>
-            <p class="text-xs text-aloe-500 mt-1">Livraison France</p>
+            <p class="text-2xl font-display text-aloe-700">48–72h</p>
+            <p class="text-xs text-aloe-500 mt-1">Livraison partout en France</p>
           </div>
         </div>
 
@@ -306,6 +434,44 @@ const sujets = [
     </div>
   </section>
 
+  <!-- Après votre message -->
+  <section class="bg-sand/60 py-16" aria-labelledby="titre-etapes">
+    <div class="mx-auto max-w-6xl px-6">
+      <h2 id="titre-etapes" class="text-2xl md:text-3xl text-aloe-900 mb-8">Que se passe-t-il après votre message ?</h2>
+      <ol class="grid md:grid-cols-3 gap-6">
+        {etapes.map((e, i) => (
+          <li class="rounded-2xl bg-white border border-aloe-100 p-6">
+            <span class="inline-flex w-9 h-9 items-center justify-center rounded-full bg-aloe-600 text-cream font-semibold mb-4">{i + 1}</span>
+            <h3 class="text-lg text-aloe-800 mb-2">{e.titre}</h3>
+            <p class="text-sm text-aloe-600 leading-relaxed">{e.texte}</p>
+          </li>
+        ))}
+      </ol>
+      <p class="mt-6 text-sm text-aloe-600">
+        Aucune obligation d'achat : poser une question ne vous engage à rien.
+        Tarifs et délais de livraison : <a href="/livraison/" class="font-semibold underline hover:text-aloe-800">page Livraison</a>.
+      </p>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="bg-cream py-16" aria-labelledby="titre-faq">
+    <div class="mx-auto max-w-3xl px-6">
+      <h2 id="titre-faq" class="text-2xl md:text-3xl text-aloe-900 mb-8">Questions fréquentes</h2>
+      <div class="space-y-3">
+        {faq.map((f) => (
+          <details class="group rounded-2xl bg-white border border-aloe-100 px-6 py-4">
+            <summary class="cursor-pointer list-none flex justify-between items-center gap-4 font-semibold text-aloe-800">
+              {f.q}
+              <span class="text-aloe-400 transition-transform group-open:rotate-45 text-xl" aria-hidden="true">+</span>
+            </summary>
+            <p class="mt-3 text-sm text-aloe-600 leading-relaxed">{f.r}</p>
+          </details>
+        ))}
+      </div>
+    </div>
+  </section>
+
   <Footer />
 </Layout>
 
@@ -316,6 +482,15 @@ const sujets = [
   const btn       = document.getElementById("submit-btn") as HTMLButtonElement | null;
   const confirm   = document.getElementById("confirmation") as HTMLElement | null;
   const errBox    = document.getElementById("form-error") as HTMLElement | null;
+
+  // Cartes « Poser ma question » : pré-sélectionne l'objet puis place le curseur dans le message
+  const select = document.getElementById("sujet") as HTMLSelectElement | null;
+  document.querySelectorAll<HTMLAnchorElement>(".js-sujet").forEach((a) => {
+    a.addEventListener("click", () => {
+      if (select && a.dataset.sujet) select.value = a.dataset.sujet;
+      setTimeout(() => (document.getElementById("nom") as HTMLInputElement | null)?.focus({ preventScroll: true }), 400);
+    });
+  });
 
   form?.addEventListener("submit", async (e) => {
     e.preventDefault();
