@@ -55,6 +55,8 @@ const categoryIcons: Record<string, string> = {
   'nutrition': '🌱',
 };
 
+// Le sceau IASC porte sur la teneur en aloe vera : pas de mention pour les compléments sans aloe
+const sansAloe = d.category === 'nutrition' && !/aloe/i.test(d.name);
 const catLabel = categoryLabels[d.category] ?? d.category;
 const catIcon  = categoryIcons[d.category] ?? '🌿';
 
@@ -157,7 +159,7 @@ const seoDescription = d.seoDescription ?? d.description;
 <Layout
   title={seoTitle}
   description={seoDescription}
-  image={d.image}
+  image={d.image || undefined}
   canonical={produitUrl}
 >
   <!-- JSON-LD injectés dans <head> -->
@@ -327,10 +329,12 @@ const seoDescription = d.seoDescription ?? d.description;
         <!-- Signaux de confiance -->
         <div class="rounded-2xl bg-aloe-800 p-5 text-cream">
           <ul class="space-y-3 text-sm">
-            <li class="flex items-center gap-3">
-              <span class="text-aloe-300">✓</span>
-              <span>Certifié IASC — Aloe vera garanti pur</span>
-            </li>
+            {!sansAloe && (
+              <li class="flex items-center gap-3">
+                <span class="text-aloe-300">✓</span>
+                <span>Certifié IASC — Aloe vera garanti pur</span>
+              </li>
+            )}
             <li class="flex items-center gap-3">
               <span class="text-aloe-300">✓</span>
               <span>Livraison France 48–72h</span>
@@ -375,7 +379,7 @@ const seoDescription = d.seoDescription ?? d.description;
       <CtaCommander lienCommande={d.lienCommande} size="sm" label="Commander" />
     </div>
     <div class="flex items-center justify-center gap-4 px-4 pb-2 border-t border-aloe-50">
-      <span class="text-[10px] text-aloe-400">✓ Certifié IASC</span>
+      {!sansAloe && <span class="text-[10px] text-aloe-400">✓ Certifié IASC</span>}
       <span class="text-[10px] text-aloe-400">✓ Livraison 48–72h</span>
       <span class="text-[10px] text-aloe-400">✓ Remboursé 30j</span>
     </div>

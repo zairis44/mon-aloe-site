@@ -1,6 +1,18 @@
 # Esprit Aloé — À ne pas oublier
 *Mise à jour : 13 novembre 2026*
 
+## Lot T du 13 novembre 2026 — catalogue, catégorie Nutrition, 8 fiches, page locale (suite à l'analyse d'aloeveragel.fr)
+
+- **Concurrent aloeveragel.fr** (WordPress) : 97 fiches produit, ~110 pages locales « distributeur Forever Living + département/ville » (pages satellites, à ne pas copier), une quinzaine de guides, blog figé depuis 2023.
+- **`/produits/`** : title « Catalogue Forever Living : tous les produits », H1 « Le catalogue Forever Living », intro avec nombre de produits automatique. Descriptions détox et nutrition corrigées.
+- **Nouvelle catégorie `/produits/nutrition/`** (existait dans le code, masquée faute de produits) : config + bloc « Comment choisir un complément Forever ? », liens dans le menu Produits et le pied de page.
+- **8 nouvelles fiches** (données : API foreverliving.fr du 13/11 : prix client, composition, posologie, précautions officielles) : Arctic Sea (376), Forever Daily (439), Bee Pollen (26), Absorbent-C (48), ImmuBlend (355), Royal Jelly (36), Lycium Plus (72) en nutrition ; Aloe Lèvres (22) en beauté. Seules les allégations autorisées (vitamines, minéraux, EPA/DHA) ; aucune allégation pour pollen, gelée royale, goji, champignons.
+  - **Images à fournir par Rafael** : champ `image` vide (emoji en attendant). Déposer `public/images/produits/<slug>.webp` et renseigner `image: "/images/produits/<slug>.webp"`.
+- **Fiche produit** : le badge « Certifié IASC — Aloe vera garanti pur » n'apparaît plus sur les compléments sans aloe (catégorie nutrition sans « aloe » dans le nom). `image` vide → image OG par défaut.
+- **Page `/distributeur-forever-living-loire-atlantique/`** (existait déjà) : recentrée sur Saint-Joachim / Brière / Saint-Nazaire / Guérande, adresse ville + code postal dans le JSON-LD, nouvelle section « se rencontrer » (remise en main propre sur rendez-vous, déjà annoncée sur la page), nombre de produits automatique, « certifié » → « indépendant ».
+- À vérifier par Rafael : le site Forever affiche « Livraison OFFERTE à partir de 50 € » (bandeau du 13/11) alors que nos pages disent relais gratuit dès 150 €. Promo temporaire ou nouvelle règle ?
+- Écartés : Multi-Maca (allégations libido/ménopause non autorisées, précaution cancer du sein) et Active Pro-B (le mot « probiotique » est lui-même une allégation santé pour la DGCCRF).
+
 ## Lot S du 13 novembre 2026 — audit Ubersuggest (score 91/100) et PageSpeed
 
 - **CLS sur ordinateur** : PageSpeed mesurait 0,211 (seuil Google : 0,1). Cause : le bandeau de consentement apparaissait avant le chargement des polices, puis changeait de hauteur, ancré en bas, ce qui le faisait bouger. Correctif dans `AnalyticsConsent.astro` : le bandeau s'affiche après `document.fonts.ready` (au plus 1,5 s). Mesure locale : 0,219 → 0,002 (article avis), 0,183 → 0,002 (fiche pulpe).
