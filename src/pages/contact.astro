@@ -18,7 +18,7 @@ const schemaContact = {
   "@type": "ContactPage",
   name: "Contactez Esprit Aloé — Distributeur Forever Living",
   url: "https://espritaloe.fr/contact/",
-  description: "Contactez Rafael Avenard, distributeur indépendant Forever Living Products à Saint-Joachim (Loire-Atlantique). Disponible 7j/7 pour vous conseiller.",
+  description: "Contactez Rafael Avenard, distributeur indépendant Forever Living Products à Saint-Joachim (Loire-Atlantique). Conseil du lundi au samedi, commande en ligne 7j/7.",
   mainEntity: {
     "@type": "Person",
     name: "Rafael Avenard",
@@ -91,7 +91,7 @@ const etapes = [
 const faq = [
   {
     q: "Sous combien de temps répondez-vous ?",
-    r: "Je réponds à chaque message sous 24 heures, souvent bien plus vite. Pour une question urgente sur une commande, le plus rapide reste de m'appeler ou de m'envoyer un SMS au 06 77 35 22 26.",
+    r: "Je réponds à chaque message sous 24 heures du lundi au samedi, souvent bien plus vite. Un message envoyé le dimanche est traité le lundi. Pour une question urgente sur une commande, le plus rapide reste de m'appeler ou de m'envoyer un SMS au 06 77 35 22 26.",
   },
   {
     q: "Dois-je passer par vous pour commander ?",
@@ -134,7 +134,7 @@ const sujets = [
 
 <Layout
   title="Contacter un distributeur Forever Living | Esprit Aloé"
-  description="Une question sur un produit Forever, une commande ou le programme C9 ? Contactez Rafael, distributeur indépendant en Loire-Atlantique : réponse sous 24 h, 7j/7."
+  description="Une question sur un produit Forever, une commande ou le programme C9 ? Contactez Rafael, distributeur indépendant en Loire-Atlantique : réponse sous 24 h du lundi au samedi."
   canonical="https://espritaloe.fr/contact/"
 >
   <script type="application/ld+json" set:html={JSON.stringify(schemaContact)} slot="head" />
@@ -158,7 +158,7 @@ const sujets = [
         <h1 class="text-4xl md:text-5xl text-aloe-900 mb-4">Contacter votre distributeur Forever</h1>
         <p class="text-lg text-aloe-600 max-w-xl leading-relaxed">
           Une question sur un produit, une commande ou le programme C9 ?
-          Je m'appelle Rafael et je vous réponds <strong>7j/7</strong>, sous 24&nbsp;h.
+          Je m'appelle Rafael et je vous réponds <strong>du lundi au samedi</strong>, sous 24&nbsp;h. La commande en ligne, elle, reste ouverte 7j/7.
         </p>
         <p class="mt-5 text-sm text-aloe-500 leading-relaxed max-w-lg">
           Distributeur indépendant basé à <span class="font-medium text-aloe-700">Saint-Joachim</span>,
@@ -311,7 +311,7 @@ const sujets = [
           </div>
 
           <p class="text-xs text-aloe-400 text-center">
-            Réponse garantie sous 24h · Vos données ne sont jamais revendues
+            Réponse sous 24h du lundi au samedi · Vos données ne sont jamais revendues
           </p>
         </form>
 
@@ -382,7 +382,8 @@ const sujets = [
               <span class="text-lg">🕐</span>
               <div>
                 <p class="text-xs text-aloe-400 uppercase tracking-wide">Disponibilité</p>
-                <p class="font-semibold">7j/7 — Réponse sous 24h</p>
+                <p class="font-semibold">Lun.–ven. 8h–19h · sam. 9h–16h</p>
+                <p class="text-sm text-aloe-300">Commande en ligne 7j/7</p>
               </div>
             </li>
             <li class="flex items-center gap-3">

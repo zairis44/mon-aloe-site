@@ -1,6 +1,13 @@
 # Esprit Aloé — À ne pas oublier
 *Mise à jour : 13 novembre 2026*
 
+## Correctif du 13 novembre 2026 — horaires (« 7j/7 »)
+
+- Décision de Rafael : les horaires de conseil sont ceux de la fiche Google (lun.–ven. 8h–19h, sam. 9h–16h, fermé le dimanche) ; seule la **commande en ligne** est 7j/7.
+- Tous les « disponible 7j/7 » / « conseiller 7j/7 » remplacés (accueil, contact, À propos, livraison, page locale, fiches, blog, catalogue, meta par défaut). Page contact : horaires détaillés, réponse « sous 24 h du lundi au samedi ».
+- Schéma LocalBusiness de la page Loire-Atlantique : horaires d'ouverture + adresse complète, identiques à la fiche Google.
+- **Réflexe** : ne plus écrire « disponible 7j/7 » pour Rafael ; « commande en ligne 7j/7 » est correct.
+
 ## Lot V7 du 13 novembre 2026 — infos de Rafael (avis Google, mentions légales, ancienneté, coût de démarrage)
 
 - **Avis Google** : `src/data/avis.ts` renseigné (lien direct « écrire un avis », place ID `ChIJnzdjPxUjcKARxSHWCBVjCao`). Bouton sur toutes les fiches sans avis + lien dans les coordonnées de /contact/. La fiche Google n'a encore aucun avis (13/11).

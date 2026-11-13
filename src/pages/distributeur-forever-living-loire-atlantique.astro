@@ -29,8 +29,13 @@ const schemaLocalBusiness = {
   email: "contact@espritaloe.fr",
   image: `${siteUrl}/images/hero-aloe-vera.webp`,
   priceRange: "€€",
+  openingHoursSpecification: [
+    { "@type": "OpeningHoursSpecification", dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], opens: "08:00", closes: "19:00" },
+    { "@type": "OpeningHoursSpecification", dayOfWeek: "Saturday", opens: "09:00", closes: "16:00" },
+  ],
   address: {
     "@type": "PostalAddress",
+    streetAddress: "98 rue de Bais",
     addressLocality: "Saint-Joachim",
     postalCode: "44720",
     addressRegion: "Pays de la Loire",
@@ -91,7 +96,7 @@ const schemaFAQ = {
 
 <Layout
   title="Distributeur Forever Living Loire-Atlantique | Esprit Aloé"
-  description="Rafael Avenard, distributeur Forever Living en Loire-Atlantique. Produits aloe vera certifiés IASC livrés à Nantes et partout en France. Conseils gratuits 7j/7."
+  description="Rafael Avenard, distributeur Forever Living en Loire-Atlantique. Produits aloe vera certifiés IASC livrés à Nantes et partout en France. Conseils gratuits du lundi au samedi."
   canonical={pageUrl}
 >
   <script type="application/ld+json" set:html={JSON.stringify(schemaLocalBusiness)} slot="head" />
@@ -148,13 +153,13 @@ const schemaFAQ = {
         <p class="text-aloe-700 leading-relaxed mb-6">
           Son approche : écouter votre situation, comprendre vos objectifs et vous orienter vers
           les produits réellement adaptés — sans vous vendre ce dont vous n'avez pas besoin.
-          Disponible 7j/7 par téléphone ou e-mail.
+          Joignable du lundi au samedi par téléphone ou e-mail ; commande en ligne 7j/7.
         </p>
         <ul class="space-y-2 text-sm text-aloe-700">
           <li class="flex items-center gap-2"><span class="text-aloe-500">✓</span> Distributeur indépendant Forever Living Products</li>
           <li class="flex items-center gap-2"><span class="text-aloe-500">✓</span> Conseil personnalisé gratuit avant achat</li>
           <li class="flex items-center gap-2"><span class="text-aloe-500">✓</span> Suivi après commande inclus</li>
-          <li class="flex items-center gap-2"><span class="text-aloe-500">✓</span> Disponible 7j/7 au 06 77 35 22 26</li>
+          <li class="flex items-center gap-2"><span class="text-aloe-500">✓</span> Joignable du lundi au samedi au 06 77 35 22 26</li>
         </ul>
       </div>
       <div class="rounded-3xl bg-aloe-800 p-10 text-cream">
