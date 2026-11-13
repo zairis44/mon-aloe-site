@@ -1,6 +1,15 @@
 # Esprit Aloé — À ne pas oublier
 *Mise à jour : 13 novembre 2026*
 
+## Lot U du 13 novembre 2026 — page contact enrichie
+
+- **Hero** : H1 « Contacter votre distributeur Forever », Saint-Joachim/Brière mis en avant (la liste de villes Pornic, Ancenis, Châteaubriant… est retirée, cohérence avec la page locale) + lien vers `/distributeur-forever-living-loire-atlantique/`.
+- **Carte Google Maps supprimée** : elle montrait seulement le département et chargeait Google (cookies) sans consentement. Remplacée par trois accès rapides : appel, SMS, e-mail.
+- **« Pour quoi me contacter ? »** : 4 cartes (produit, commande, C9/DX4, devenir distributeur), chacune avec un lien vers la page du site qui répond déjà et un bouton qui pré-remplit l'objet du formulaire (petit script, testé).
+- **« Que se passe-t-il après votre message ? »** (3 étapes) et **FAQ** de 5 questions avec schéma FAQPage. Une question rappelle que Rafael n'est pas professionnel de santé.
+- Coordonnées : zone « Saint-Joachim », lien Facebook ; schéma ContactPage avec adresse (Saint-Joachim 44720).
+- Title « Contacter un distributeur Forever Living | Esprit Aloé », meta description réécrite. Mesure de la page à repartir du 13/11.
+
 ## Correctif du 13 novembre 2026 — redirection Nutrition
 
 - `vercel.json` contenait une ancienne redirection 301 `/produits/nutrition/` → `/produits/` (de l'époque où la catégorie n'avait pas de page). Vercel l'appliquait avant la page créée au Lot T : le menu Nutrition renvoyait vers le catalogue. Redirection supprimée.
