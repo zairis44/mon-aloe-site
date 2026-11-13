@@ -107,7 +107,7 @@ const recommandes = PRODUITS_RECOMMANDES.map(({ slug, note }) => {
     slug,
     note,
     nom: p.data.name,
-    nomCourt: p.data.name.split(' – ')[0],
+    nomCourt: p.data.name.split(/ – | : | \| /)[0],
     image: p.data.image || null,
     prix: `${p.data.price.toFixed(2).replace('.', ',')} €`,
     lien: foreverHref(p.data.lienCommande) ?? '/contact/',
@@ -231,7 +231,7 @@ const schemaFAQ = {
         <h2 id="titre-recommandes" class="text-3xl md:text-4xl text-aloe-900 mt-2">Recommander en 1 clic</h2>
         <p class="text-aloe-600 mt-3 max-w-2xl">Les produits que je recommande le plus souvent. Le bouton ouvre directement le produit sur la boutique Forever.</p>
       </div>
-      <div class="grid sm:grid-cols-2 lg:grid-cols-5 gap-5">
+      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
         {recommandes.map((r) => (
           <div class="flex flex-col rounded-2xl bg-white border border-aloe-100 p-5">
             <a href={`/produits/${r.slug}/`} class="block aspect-square mb-4">
