@@ -11,6 +11,7 @@
 import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import { LIEN_AVIS_GOOGLE } from '../data/avis';
 
 const schemaContact = {
   "@context": "https://schema.org",
@@ -27,6 +28,7 @@ const schemaContact = {
     url: "https://espritaloe.fr/contact/",
     address: {
       "@type": "PostalAddress",
+      streetAddress: "98 rue de Bais",
       addressLocality: "Saint-Joachim",
       postalCode: "44720",
       addressRegion: "Loire-Atlantique",
@@ -389,6 +391,15 @@ const sujets = [
                 <p class="text-xs text-aloe-400 uppercase tracking-wide">Facebook</p>
                 <a href="https://www.facebook.com/RafaelAvenardDistributeurForever" rel="noopener" target="_blank" class="font-semibold hover:text-aloe-300 transition-colors">
                   Rafael Avenard Distributeur Forever
+                </a>
+              </div>
+            </li>
+            <li class="flex items-center gap-3">
+              <span class="text-lg">★</span>
+              <div>
+                <p class="text-xs text-aloe-400 uppercase tracking-wide">Déjà client ?</p>
+                <a href={LIEN_AVIS_GOOGLE} rel="noopener" target="_blank" class="font-semibold hover:text-aloe-300 transition-colors">
+                  Laisser un avis Google
                 </a>
               </div>
             </li>

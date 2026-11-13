@@ -1,6 +1,16 @@
 # Esprit Aloé — À ne pas oublier
 *Mise à jour : 13 novembre 2026*
 
+## Lot V7 du 13 novembre 2026 — infos de Rafael (avis Google, mentions légales, ancienneté, coût de démarrage)
+
+- **Avis Google** : `src/data/avis.ts` renseigné (lien direct « écrire un avis », place ID `ChIJnzdjPxUjcKARxSHWCBVjCao`). Bouton sur toutes les fiches sans avis + lien dans les coordonnées de /contact/. La fiche Google n'a encore aucun avis (13/11).
+- **Mentions légales** : adresse pro (98 rue de Bais, 44720 Saint-Joachim), directeur de la publication, date de mise à jour. Pas de SIRET (Rafael : pas nécessaire pour l'instant).
+- **Adresse complète** ajoutée aux schémas Person (À propos) et ContactPage, identique à la fiche Google (cohérence NAP).
+- **Ancienneté : depuis 2016**, début avec le C9 conseillé par son ostéopathe. Mis à jour : À propos (paragraphe « tout a commencé par un produit »), Devenir distributeur, articles franchise et avis.
+- **Coût de démarrage** : plusieurs packs, le premier à **345 €**, qui contient l'équivalent de plus de 345 € en produits. Remplace « adhésion symbolique » / « quelques dizaines d'euros » sur Devenir distributeur et dans les articles franchise et pyramidal.
+- **À trancher** : la fiche Google affiche des horaires (lun.–ven. 8h–19h, sam. 9h–16h, fermé le dimanche) alors que le site dit « 7j/7 » partout.
+- **Produits les plus recommandés par Rafael** (pour le Lot V4 « Recommander en 1 clic ») : Programme C9, pulpe à la pêche, Aloe Gelly, déodorant, shampoing, Aloe Cooling Lotion. Le shampoing et la Cooling Lotion n'ont pas encore de fiche.
+
 ## Lot V1 du 13 novembre 2026 — conformité et confiance (suite de l'audit 6 personas)
 
 - Audit complet : `rapports/ux/2026-11-13-audit-6-personas.md` (6 personas, plan V1 à V9).

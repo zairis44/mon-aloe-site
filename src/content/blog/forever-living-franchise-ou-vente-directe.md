@@ -26,7 +26,7 @@ draft: false
 
 Non, Forever Living n'est pas une franchise. C'est un réseau de vente directe : vous vous inscrivez comme distributeur indépendant, sans droit d'entrée à cinq chiffres, sans local commercial et sans contrat de durée. Si vous avez tapé "franchise Forever Living" dans Google, vous cherchiez sans doute à savoir comment ouvrir votre activité avec la marque. Cet article compare les deux modèles point par point, pour que vous sachiez dans quoi vous mettez les pieds.
 
-Je suis distributeur Forever en Loire-Atlantique depuis plusieurs années. Voici comment le modèle fonctionne, vu de l'intérieur.
+Je suis distributeur Forever en Loire-Atlantique depuis 2016. Voici comment le modèle fonctionne, vu de l'intérieur.
 
 ## Franchise et vente directe : deux modèles que tout oppose
 
@@ -38,7 +38,7 @@ Le comparatif tient en quelques lignes :
 
 | | Franchise classique | Distributeur Forever |
 |---|---|---|
-| Investissement de départ | 10 000 à 100 000 € et plus | Quelques dizaines d'euros d'adhésion |
+| Investissement de départ | 10 000 à 100 000 € et plus | Un premier pack de produits dès 345 € |
 | Local commercial | Obligatoire, aux normes de l'enseigne | Aucun |
 | Engagement | Contrat de 5 à 10 ans | Aucune durée imposée |
 | Redevances | Pourcentage du chiffre d'affaires | Aucune |
@@ -78,6 +78,6 @@ Le risque financier résume bien l'écart entre les deux mondes : un franchisé 
 
 ## En résumé
 
-Forever Living ne propose pas de franchise et n'en a jamais proposé. Le modèle est celui de la vente directe : une adhésion symbolique, aucun local, aucun engagement, une marque mondiale et une logistique fournies. Vous y gagnez la liberté et la légèreté financière, vous y perdez la clientèle "automatique" d'un emplacement commercial. À vous de construire la vôtre, et c'est là que l'accompagnement d'un parrain fait la différence.
+Forever Living ne propose pas de franchise et n'en a jamais proposé. Le modèle est celui de la vente directe : un premier pack de produits dès 345 €, aucun local, aucun engagement, une marque mondiale et une logistique fournies. Vous y gagnez la liberté et la légèreté financière, vous y perdez la clientèle "automatique" d'un emplacement commercial. À vous de construire la vôtre, et c'est là que l'accompagnement d'un parrain fait la différence.
 
 Envie de voir si ce modèle correspond à votre projet ? La page <a href="/devenir-distributeur-forever-living/">devenir distributeur Forever Living</a> détaille les étapes concrètes, et je réponds à vos questions au 06 77 35 22 26. Un appel de 20 minutes, sans engagement.

@@ -80,7 +80,7 @@ Les produits Forever Living sont également certifiés Kosher et Halal, ce qui i
 
 ## Les avis clients en France : ce qui revient le plus souvent
 
-En plusieurs années de distribution en Loire-Atlantique, j'ai accompagné des dizaines de clients. Voici les retours les plus fréquents, positifs comme négatifs.
+Depuis 2016, en distribuant Forever en Loire-Atlantique, j'ai accompagné des dizaines de clients. Voici les retours les plus fréquents, positifs comme négatifs.
 
 ### Ce que les clients apprécient
 
