@@ -26,7 +26,7 @@ export async function getStaticPaths() {
 const { categorie } = Astro.params;
 const { produits } = Astro.props as { produits: any[] };
 
-const config: Record<string, { label: string; icon: string; desc: string; couleur: string }> = {
+const config: Record<string, { label: string; icon: string; desc: string; couleur: string; guide?: string }> = {
   'boissons-aloe-vera': {
     label: "Boissons Aloe Vera",
     icon: "🥤",
@@ -36,14 +36,36 @@ const config: Record<string, { label: string; icon: string; desc: string; couleu
   'programmes-detox': {
     label: "Programmes Détox",
     icon: "🔄",
-    desc: "Le C9 (9 jours) et DX4 (4 jours) pour relancer naturellement votre métabolisme.",
+    desc: "Les programmes C9 (9 jours), DX4 (4 jours) et F15 (15 jours) pour cadrer votre alimentation, avec un objectif de perte de poids.",
     couleur: "from-sand to-aloe-50",
+    guide: `
+      <h2>C9, DX4 ou F15 : lequel choisir ?</h2>
+      <p>Ces trois programmes associent des boissons à l'aloe vera, des shakes protéinés, des compléments et une alimentation encadrée. Ce qui les distingue, c'est leur durée et leur place dans votre parcours.</p>
+      <ul>
+        <li><strong>Le programme C9 (9 jours)</strong> est le plus connu et le plus complet : un guide jour par jour, une phase plus stricte au début, puis la réintroduction des repas. C'est le point de départ classique. Tout est détaillé dans le <a href="/blog/programme-c9-forever-guide-cure-detox-9-jours/">guide du programme C9</a>, et vous pouvez suivre ma propre cure dans <a href="/mon-journal-c9/">mon journal C9</a>.</li>
+        <li><strong>Le programme DX4 (4 jours)</strong> est plus court : il convient si vous voulez une coupure brève plutôt qu'un programme de plus d'une semaine.</li>
+        <li><strong>Les programmes F15 (15 jours)</strong> prennent le relais après le C9, en trois niveaux (Débutant, Intermédiaire, Avancé), pour installer de nouvelles habitudes dans la durée.</li>
+      </ul>
+      <p>Un mot sur le terme « détox » : votre foie et vos reins éliminent les déchets en permanence, sans cure. Ce que ces programmes changent, c'est votre alimentation pendant quelques jours, dans un cadre précis.</p>
+      <p><strong>Grossesse, allaitement, diabète, traitement en cours :</strong> demandez l'avis de votre médecin avant de commencer. Et si vous hésitez entre deux programmes, <a href="/contact/">écrivez-moi</a> : je vous aide à choisir selon votre objectif.</p>
+    `,
   },
   'sport-et-fitness': {
     label: "Sport & Fitness",
     icon: "💪",
-    desc: "Compléments naturels pour vos performances et votre récupération musculaire.",
+    desc: "Shakes, barres et compléments pour accompagner vos entraînements et votre récupération.",
     couleur: "from-aloe-100 to-aloe-200",
+    guide: `
+      <h2>Quel produit pour votre pratique ?</h2>
+      <p>Ces produits accompagnent une routine d'entraînement. Ils ne remplacent ni une alimentation suffisante, ni l'hydratation, ni le sommeil, qui restent la base de la récupération.</p>
+      <ul>
+        <li><strong>Forever Lite Ultra</strong> (vanille ou chocolat) : un shake protéiné en poudre, pratique après la séance ou en collation quand le temps manque.</li>
+        <li><strong>Forever Fast Break</strong> : une barre à emporter, pour une collation avant ou après l'effort.</li>
+        <li><strong>Forever ARGI+</strong> : 5 g de L-arginine par stick, avec des vitamines B6, B12 et C qui contribuent à réduire la fatigue. Sans caféine. Déconseillé pendant la grossesse, l'allaitement et sous anticoagulant.</li>
+        <li><strong>Forever Therm</strong> : des comprimés au thé vert et au guarana, avec des vitamines. Il contient de la caféine : à éviter le soir et si vous y êtes sensible.</li>
+      </ul>
+      <p>Pour le confort articulaire, le <a href="/produits/forever-freedom-confort-articulaire/">Forever Freedom</a> se trouve dans les boissons aloe vera. Pour savoir comment les sportifs intègrent l'aloe vera à leur routine, lisez <a href="/blog/aloe-vera-sport-recuperation-musculaire/">Aloe vera et sport</a>. Vous hésitez ? <a href="/contact/">Écrivez-moi</a>, je vous conseille selon votre sport.</p>
+    `,
   },
   'cremes-et-gels': {
     label: "Beauté & Bien-être",
@@ -204,6 +226,12 @@ const schemaItemList = {
     </div>
   </section>
 
+  {info.guide && (
+    <section class="bg-white py-14">
+      <div class="guide-categorie mx-auto max-w-3xl px-6 text-aloe-700 leading-relaxed" set:html={info.guide} />
+    </section>
+  )}
+
   <GuidesLies categorie={categorie} titre="Nos guides pour bien choisir" />
 
   <!-- Autres catégories -->
@@ -230,3 +258,11 @@ const schemaItemList = {
 
   <Footer />
 </Layout>
+
+<style>
+  .guide-categorie :global(h2) { font-size: 1.75rem; color: var(--color-aloe-900, #1a3123); margin-bottom: 1rem; }
+  .guide-categorie :global(p) { margin-bottom: 1rem; }
+  .guide-categorie :global(ul) { list-style: disc; padding-left: 1.25rem; margin-bottom: 1rem; }
+  .guide-categorie :global(li) { margin-bottom: .6rem; }
+  .guide-categorie :global(a) { text-decoration: underline; text-underline-offset: 3px; color: var(--color-aloe-800, #1f3c29); }
+</style>
