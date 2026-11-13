@@ -6,17 +6,17 @@ price: 30.49
 image: "/images/produits/forever-lite-ultra-vanille.webp"
 images: []
 category: "sport-et-fitness"
-description: "Le shake protéiné végétal saveur vanille, pour la satiété, l'énergie et la gestion du poids. 17 g de protéines de soja pour environ 90 kcal par portion, enrichi du complexe Aminotein, de vitamines et de fibres. À boire en shake, smoothie ou substitut de repas léger. Sans gluten, végétarien."
-titreDetails: "Forever Lite Ultra™ Vanille : le shake protéiné végétal complet pour gérer son poids naturellement"
+description: "Le shake protéiné végétal saveur vanille : 17 g de protéines de soja pour environ 90 kcal par portion, avec des vitamines, des minéraux et des fibres. À boire en shake ou en smoothie, au petit-déjeuner ou après le sport. Sans gluten, végétarien."
+titreDetails: "Forever Lite Ultra™ Vanille : le shake protéiné végétal"
 seoTitle: "Forever Lite Ultra Vanille – Shake protéiné"
-seoDescription: "Forever Lite Ultra Vanille : shake protéiné végétal, 17 g de protéines, vitamines et fibres. Satiété, gestion de poids et bien-être au quotidien."
+seoDescription: "Forever Lite Ultra Vanille : shake protéiné végétal, 17 g de protéines de soja, vitamines et fibres. Les protéines contribuent au maintien de la masse musculaire."
 video: ""
 lienCommande: "http://www.foreverliving.fr/ref/330001628607/470"
 faq:
   - question: "Peut-il remplacer un repas ?"
-    reponse: "Il peut servir de substitut de repas léger dans le cadre d'un régime équilibré, notamment en cure de perte de poids. Pour une nutrition complète, complétez-le avec un fruit ou des aliments solides."
+    reponse: "Il est surtout utilisé comme petit-déjeuner rapide ou collation protéinée, et il fait partie des programmes C9 et F15, qui encadrent les repas. En dehors de ces programmes, complétez-le avec un fruit ou des aliments solides pour un repas complet."
   - question: "Quelles vitamines apporte-t-il ?"
-    reponse: "Les vitamines A, C, D, B6 et B12 soutiennent les défenses naturelles, le tonus et le métabolisme énergétique. Le zinc et le sélénium aident à protéger les cellules du stress oxydatif."
+    reponse: "Les vitamines B6, B12 et C contribuent à réduire la fatigue et au fonctionnement normal du système immunitaire ; la vitamine D aussi contribue au fonctionnement normal du système immunitaire. Le zinc contribue à protéger les cellules contre le stress oxydatif."
   - question: "Adapté aux régimes végétariens ou sans gluten ?"
     reponse: "Oui, la formule est végétale (protéine de soja) et sans gluten. Elle contient du soja, à éviter en cas d'allergie spécifique."
   - question: "Convient-il aux intolérants au lactose ?"
@@ -25,9 +25,9 @@ faq:
     reponse: "La prise de compléments protéinés pendant la grossesse ou l'allaitement demande toujours un avis médical préalable. Même naturel et végétal, ce produit doit s'inscrire dans des besoins nutritionnels spécifiques à ces périodes. Demandez l'avis de votre médecin ou de votre sage-femme avant d'en consommer."
 caracteristiques:
   - titre: "Ce que la formule apporte"
-    contenu: "Des protéines végétales de soja et le complexe Aminotein pour optimiser leur assimilation, dans une formule qui soutient la satiété. Un apport complet de vitamines (A, C, D, B6, B12), de zinc et de sélénium accompagne les défenses naturelles, le métabolisme et l'énergie. À environ 90 kcal la portion, il s'inscrit dans un régime hypocalorique ou équilibré."
+    contenu: "Des protéines végétales de soja et le complexe Aminotein. Les protéines contribuent au maintien et à l'augmentation de la masse musculaire. Un apport de vitamines (A, C, D, B6, B12) et de zinc, qui contribuent notamment au fonctionnement normal du système immunitaire. Environ 90 kcal la portion."
   - titre: "Comment l'utiliser"
-    contenu: "Versez une dose (25 g) dans 240 ml d'eau, de lait écrémé ou de boisson végétale. Mélangez au shaker ou au blender. Prenez-le une à deux fois par jour, de préférence le matin ou après l'effort pour la récupération. Sans gluten, contient du soja. Refermez le sachet et conservez au frais et au sec."
+    contenu: "Versez une dose (25 g) dans 240 ml d'eau, de lait écrémé ou de boisson végétale. Mélangez au shaker ou au blender. Prenez-le une à deux fois par jour, par exemple le matin ou après l'effort. Sans gluten, contient du soja. Refermez le sachet et conservez au frais et au sec."
   - titre: "Composition et format"
     contenu: "Sachet de 375 g (environ 15 portions). Isolat de protéine de soja, fructose, fibres prébiotiques (FOS), complexe Aminotein, huile de carthame, lécithine de soja, arôme naturel de vanille, complexe de vitamines et minéraux (A, D3, C, B3, B6, B12, folate, zinc, manganèse, sélénium). Adapté aux régimes végétariens, contient du soja."
 ---
@@ -36,7 +36,7 @@ Vous cherchez un shake protéiné polyvalent pour vos petits-déjeuners, vos col
 
 ## Un shake protéiné complet
 
-La base est l'isolat de protéine de soja, associé au complexe Aminotein pour une bonne absorption des acides aminés. Chaque portion de 25 g apporte 17 g de protéines pour environ 90 kcal, avec peu de sucres et peu de matières grasses. Les vitamines A, C, D, B6, B12, le zinc et le sélénium soutiennent l'immunité et l'énergie, et les fibres prébiotiques (FOS) accompagnent la satiété et l'équilibre intestinal.
+La base est l'isolat de protéine de soja, associé au complexe Aminotein. Chaque portion de 25 g apporte 17 g de protéines pour environ 90 kcal, avec peu de sucres et peu de matières grasses. Les protéines contribuent au maintien et à l'augmentation de la masse musculaire. Les vitamines B6, B12 et C contribuent à réduire la fatigue, et la formule contient aussi des fibres (FOS).
 
 ## Pour qui
 

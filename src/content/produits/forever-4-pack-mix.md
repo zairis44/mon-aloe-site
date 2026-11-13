@@ -9,14 +9,14 @@ category: "boissons-aloe-vera"
 description: "Le coffret 4 saveurs pour découvrir les boissons aloe vera Forever ou varier les plaisirs. Quatre bouteilles de 830 ml : Aloe Vera Gel (original), Aloe Mango, Aloe Berry Nectar et Aloe Peaches. Plus de 90 % de gel pur dans chacune. Sans gluten, vegan. Idéal pour les familles ou pour alterner les goûts dans la semaine."
 titreDetails: "Forever 4‑Pack Mix™ : le coffret découverte 4 saveurs pour débuter votre cure aloe vera"
 seoTitle: "Forever 4-Pack Mix – Coffret aloe vera 4 saveurs"
-seoDescription: "Testez 4 saveurs d’aloe vera Forever avec le 4‑Pack Mix™ : gel pur à 90 %, fruits naturels, sans gluten. Hydratation, digestion et plaisir au quotidien."
+seoDescription: "Testez 4 saveurs d’aloe vera Forever avec le 4‑Pack Mix™ : gel pur à 90 %, fruits naturels, sans gluten. L'aloe vera aide à soutenir la digestion."
 video: ""
 lienCommande: "http://www.foreverliving.fr/ref/330001628607/8234"
 faq:
   - question: "Que contient le coffret ?"
     reponse: "Quatre boissons aloe vera Forever : l'originale (Aloe Vera Gel), la mangue (Aloe Mango), les fruits rouges (Aloe Berry Nectar) et la pêche (Aloe Peaches). Chacune associe le gel d'aloe vera pur à des fruits naturels, pour des goûts et des nuances de bienfaits variés."
   - question: "Est-ce un bon choix pour une cure bien-être ?"
-    reponse: "Oui. C'est une façon agréable d'intégrer l'aloe vera à votre routine en alternant les saveurs selon les moments : digestion, vitalité, hydratation ou soutien des défenses naturelles. La variété aide aussi à tenir une cure sans lassitude."
+    reponse: "Oui. C'est une façon agréable d'intégrer l'aloe vera à votre routine en alternant les saveurs. La variété aide aussi à tenir dans la durée sans lassitude."
   - question: "Pourquoi varier les saveurs ?"
     reponse: "Chaque fruit apporte ses nuances : la mangue est riche en bêta-carotène, les fruits rouges en antioxydants, la pêche reste douce pour la digestion. En alternant, vous variez la palette de nutriments tout en gardant la base aloe vera commune."
   - question: "Peut-on l'offrir en cadeau ?"
@@ -25,7 +25,7 @@ faq:
     reponse: "Chacune des 4 bouteilles contient 830 ml, soit la même contenance que les grandes bouteilles individuelles de la gamme. Seule la présentation en coffret diffère. C'est l'avantage par rapport au 4 Pack (4 × 330 ml), qui propose lui des mini-bouteilles au format nomade."
 caracteristiques:
   - titre: "Ce que le coffret apporte"
-    contenu: "Chaque bouteille offre les bienfaits de l'aloe vera pur (plus de 90 % de gel stabilisé) : hydratation, soutien de la digestion, apaisement intestinal. Les arômes ajoutent leurs nuances : bêta-carotène pour la mangue, antioxydants pour les fruits rouges, douceur pour la pêche. Alterner les saveurs varie la palette nutritionnelle et soutient les défenses naturelles, tout en prolongeant le plaisir au fil de la semaine."
+    contenu: "Chaque bouteille apporte du gel d'aloe vera stabilisé, qui aide à soutenir la digestion et contribue aux défenses naturelles de l'organisme, et de la vitamine C, qui contribue au fonctionnement normal du système immunitaire. Les fruits ajoutent leurs saveurs : mangue, fruits rouges, pêche, ou nature pour l'original."
   - titre: "Comment le consommer"
     contenu: "Secouez avant de servir. Au quotidien, buvez 60 à 90 ml, purs ou dilués dans un verre d'eau, un jus ou un smoothie, de préférence le matin à jeun ou autour des repas. Une fois ouverte, gardez chaque bouteille au réfrigérateur et finissez-la sous 30 jours. Un coffret à partager en famille ou à savourer selon vos envies."
   - titre: "Composition et format"
@@ -36,7 +36,7 @@ Vous hésitez entre les différentes boissons aloe vera Forever, ou vous aimez v
 
 ## Quatre saveurs, une même base
 
-Le coffret réunit l'Aloe Vera Gel original, l'Aloe Mango, l'Aloe Berry Nectar et l'Aloe Peaches, chacune en bouteille de 830 ml avec plus de 90 % de gel d'aloe vera stabilisé certifié IASC. Toutes partagent les bienfaits de base de l'aloe vera (digestion, hydratation, défenses naturelles), avec les nuances propres à chaque fruit. Sans gluten, sans lactose, vegan, sans conservateur.
+Le coffret réunit l'Aloe Vera Gel original, l'Aloe Mango, l'Aloe Berry Nectar et l'Aloe Pêche, avec du gel d'aloe vera stabilisé certifié IASC. Toutes aident à soutenir la digestion grâce à l'aloe vera, avec chacune sa saveur. Sans gluten, vegan, sans conservateur.
 
 ## Pour qui
 

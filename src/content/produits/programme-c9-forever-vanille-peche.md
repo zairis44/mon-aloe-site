@@ -9,7 +9,7 @@ category: "programmes-detox"
 description: "La cure de 9 jours qui relance votre organisme : gel d'aloe vera, shakes vanille-pêche et compléments ciblés, avec un guide jour par jour. Pensée pour repartir sur de bonnes bases, sans frustration. Accompagnement personnalisé par Rafael, distributeur Forever en Loire-Atlantique."
 titreDetails: "Le Programme C9 Forever : Votre Cure Détox Complète de 9 Jours"
 seoTitle: "Programme C9 Vanille Pêche – Détox minceur 9j"
-seoDescription: "Programme C9 Vanille-Pêche : cure détox 9 jours. Aloe vera, shakes protéinés, compléments ciblés. Perdez 2 à 5 kg naturellement. Livraison France."
+seoDescription: "Programme C9 Vanille-Pêche : 9 jours pour encadrer votre alimentation avec un objectif de perte de poids. Aloe vera, shakes protéinés, compléments et guide. Livraison France."
 video: ""
 lienCommande: "http://www.foreverliving.fr/ref/330001628607/629"
 featured: true
@@ -18,7 +18,7 @@ faq:
   - question: "C'est quoi, le programme C9 ?"
     reponse: "Une cure de 9 jours qui combine gel d'aloe vera, shakes protéinés, compléments ciblés, un plan alimentaire et un guide d'exercices. L'idée n'est pas de vous affamer mais de relancer votre digestion, d'alléger l'organisme et de vous remettre en mouvement, pour repartir sur de meilleures habitudes."
   - question: "Est-ce que je vais perdre du poids ?"
-    reponse: "Beaucoup de personnes perdent entre 2 et 5 kg sur les 9 jours, en partie de l'eau et des toxines. Les résultats varient d'une personne à l'autre et tiennent surtout à ce que vous gardez ensuite : le C9 sert de déclic, pas de solution miracle. Associé à un peu d'activité physique, il pose des bases que vous prolongez après la cure."
+    reponse: "Le C9 encadre votre alimentation pendant 9 jours, avec un objectif de perte de poids. Je ne vous promets pas de chiffre : les résultats varient d'une personne à l'autre et tiennent surtout à ce que vous gardez ensuite. Mes propres mesures, sur ma dixième cure, sont dans mon journal C9. Pour prolonger la démarche, certains enchaînent ensuite sur le programme F15."
   - question: "Je débute totalement, c'est jouable ?"
     reponse: "Oui. Le guide propose des exercices simples, marche, étirements, renforcement léger, adaptés à tous les niveaux et sans matériel. Vous calez les séances dans votre journée comme vous pouvez. Le but reste la régularité douce, pas la performance."
   - question: "Peut-on refaire le C9 plusieurs fois par an ?"
@@ -27,14 +27,14 @@ faq:
     reponse: "Le C9 est déconseillé pendant la grossesse et l'allaitement, aux mineurs, et aux personnes diabétiques ou sous traitement médical lourd sans avis du médecin. Si vous avez un suivi, parlez-en d'abord à votre médecin. Appelez-moi au 06 77 35 22 26 et je vous oriente vers le programme le plus adapté à votre situation."
 caracteristiques:
   - titre: "Ce que vous vivez sur les 9 jours"
-    contenu: "Vous démarrez chaque journée avec le gel d'aloe vera, puis suivez le plan jour par jour : compléments fournis, shakes vanille-pêche et repas légers. La saveur fruitée aide à tenir sans lassitude. Au fil des jours, le transit se régule, les ballonnements diminuent et l'énergie revient. La plupart des gens situent le tournant autour du troisième jour."
+    contenu: "Vous démarrez chaque journée avec le gel d'aloe vera, qui aide à soutenir la digestion, puis suivez le plan jour par jour : compléments fournis, shakes vanille-pêche et repas légers. La saveur fruitée aide à tenir sans lassitude. Les deux premiers jours sont les plus exigeants ; ensuite, le rythme s'installe."
   - titre: "Comment se déroule la cure"
-    contenu: "Le programme avance en deux temps sur 9 jours, avec le gel d'aloe matin et soir et les compléments selon le calendrier fourni. Vous suivez le plan alimentaire (petites et grandes portions) et le guide d'activité physique : marche, cardio doux, étirements. Buvez au moins 3 litres d'eau par jour pour soutenir l'élimination. Adaptez les portions à votre corpulence."
+    contenu: "Le programme avance en deux temps sur 9 jours, avec le gel d'aloe vera matin et soir et les compléments selon le calendrier fourni. Vous suivez le plan alimentaire et le guide d'activité physique : marche, cardio doux, étirements. Buvez au moins 3 litres d'eau par jour. Adaptez les portions à votre corpulence."
   - titre: "Plus qu'une détox, un nouveau départ"
-    contenu: "Le C9 remet le corps en mouvement autant qu'il allège l'alimentation. Le guide vous encourage à bouger dès les premiers jours, à votre rythme : marche rapide, renforcement léger, étirements. Cette reprise en douceur soutient l'élimination, réveille le métabolisme et oxygène les tissus. Combinée à une alimentation légère et à une bonne hydratation, elle agit comme un tremplin vers une routine durable, où le mental suit le corps."
+    contenu: "Le C9 vous fait bouger autant qu'il cadre l'alimentation. Le guide vous encourage à marcher et à faire du renforcement léger dès les premiers jours, à votre rythme. C'est souvent ce qui reste après les 9 jours : de nouvelles habitudes, plus qu'un chiffre sur la balance."
 ---
 
-Vous voulez repartir sur de bonnes bases après une période de relâche, sans vous lancer dans un régime drastique. Le Programme C9 dure 9 jours et tient dans une boîte : tout ce qu'il faut pour relancer votre digestion et retrouver de l'énergie.
+Vous voulez repartir sur de bonnes bases après une période de relâche, sans vous lancer dans un régime drastique. Le Programme C9 dure 9 jours et tient dans une boîte : tout ce qu'il faut pour encadrer votre alimentation, avec un objectif de perte de poids.
 
 ## Une cure clé en main
 
@@ -42,7 +42,7 @@ Le C9 (pour Clean 9) réunit le gel d'aloe vera stabilisé certifié IASC, des s
 
 ## Pour qui
 
-Vous sortez des fêtes, d'une période chargée, ou vous sentez le besoin d'un coup de reset digestif. Vous voulez perdre les premiers kilos qui résistent et casser les mauvaises habitudes. Le C9 s'adresse à vous, que vous soyez sportif ou que vous repreniez le mouvement de zéro.
+Vous sortez des fêtes ou d'une période chargée, et vous voulez reprendre de bonnes habitudes alimentaires avec un cadre clair. Le C9 s'adresse à vous, que vous soyez sportif ou que vous repreniez le mouvement de zéro.
 
 ## Ce qu'il faut savoir avant de se lancer
 
