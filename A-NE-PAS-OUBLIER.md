@@ -6,6 +6,11 @@
 - 10 mots-clés où le site est absent, priorisés : `rapports/mots-cles/2026-11-13-10-mots-cles.md`. Volumes estimés sans outil dédié (à recalibrer avec Semrush/Ubersuggest si branché).
 - Ordre conseillé : VDI aloe vera → comment boire la pulpe → code promo Forever → après C9 / F15 → DX4.
 
+## Recherche de mots-clés du 13 novembre 2026
+
+- 10 mots-clés où le site est absent, priorisés : `rapports/mots-cles/2026-11-13-10-mots-cles.md`. Volumes estimés sans outil dédié (à recalibrer avec Semrush/Ubersuggest si branché).
+- Ordre conseillé : VDI aloe vera → comment boire la pulpe → code promo Forever → après C9 / F15 → DX4.
+
 ## Lot O du 13 novembre 2026 — allégations santé restantes dans le corps des articles
 
 - 8 articles nettoyés (corps de texte, H1, H2, FAQ ; **aucun seoTitle ni meta description touché**) : sport, digestion, immunité, stress/sommeil, peau, cheveux, guide C9, perte de poids.
