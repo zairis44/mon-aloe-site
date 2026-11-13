@@ -323,6 +323,7 @@ const seoDescription = d.seoDescription ?? d.description;
           <div class="border-t border-aloe-100 pt-5 mb-6">
             <p class="text-xs text-aloe-400 uppercase tracking-wide mb-1">Prix TTC</p>
             <p class="text-4xl font-display text-aloe-700">{d.price.toFixed(2)} <span class="text-xl">€</span></p>
+            {d.coutJour && <p class="text-sm font-medium text-aloe-600 mt-1">Soit {d.coutJour}</p>}
             <p class="text-xs text-aloe-400 mt-1">Livraison offerte dès 150 €</p>
           </div>
 

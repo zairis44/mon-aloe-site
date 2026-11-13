@@ -3,6 +3,7 @@ name: "Programme F15 Débutant Chocolat – 15 jours pour ancrer vos habitudes"
 reference: "529"
 slug: "programme-f15-debutant-chocolat"
 price: 181.74
+coutJour: 'environ 12 € par jour sur 15 jours'
 image: "/images/produits/programme-f15-debutant-chocolat.webp"
 images: []
 category: "programmes-detox"

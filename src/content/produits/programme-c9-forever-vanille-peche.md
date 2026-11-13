@@ -3,6 +3,7 @@ name: "Programme C9 Forever Vanille Pêche – Cure détox 9 jours"
 reference: "629"
 slug: "programme-c9-forever-vanille-peche"
 price: 152.42
+coutJour: 'environ 17 € par jour sur 9 jours'
 image: "/images/produits/programme-c9-forever-vanille-peche.webp"
 images: []
 category: "programmes-detox"

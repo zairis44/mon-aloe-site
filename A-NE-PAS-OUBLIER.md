@@ -1,6 +1,13 @@
 # Esprit Aloé — À ne pas oublier
 *Mise à jour : 13 novembre 2026*
 
+## Lot V3 du 13 novembre 2026 — prix par jour et comparatif des boissons
+
+- **Nouveau champ `coutJour`** (schéma `produits`), affiché sous le prix des fiches (« Soit environ … »). Renseigné pour : pulpe, Pêche, Berry Nectar, Mango (2,25 à 3,35 € par jour à 60–90 ml), Freedom (≈ 4,60 € à 90 ml), C9 ×2 (≈ 17 €/jour sur 9 jours), F15 ×6 (≈ 12 €/jour sur 15 jours), FAB (≈ 4,30 € la canette). **À recalculer si un prix change.**
+- **FAB** : prix corrigé 49,90 → 51,93 € (boutique Forever, 13/11).
+- **Comparatif des boissons** sur `/produits/boissons-aloe-vera/` : goût, part d'aloe vera (99,7 / 84,5 / 90,7 / 86 %, étiquettes Forever), prix, coût par jour, pour qui ; conseil de choix et lien vers le 4-Pack Mix.
+- Pas de coût par jour pour DX4, Argi+, Lite Ultra et les compléments : contenances ou posologies non vérifiées.
+
 ## Photos du 13 novembre 2026 — mises en scène des 10 nouvelles fiches (PR #40)
 
 - Les 10 photos ajoutées le 13/11 (8 Nutrition, shampoing, Cooling Lotion) sont des mises en scène : photo officielle Forever détourée, posée sur une surface plane d'un décor choisi par Rafael, avec profondeur de champ (net au pied du produit, flou croissant vers le fond), étalonnage sur la lumière de la scène, ombre de contact, reflet sur marbre et parquet, grain commun.

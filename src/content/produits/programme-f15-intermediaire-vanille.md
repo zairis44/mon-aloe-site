@@ -3,6 +3,7 @@ name: "Programme F15 Intermédiaire Vanille – 15 jours pour franchir un palier
 reference: "532"
 slug: "programme-f15-intermediaire-vanille"
 price: 181.74
+coutJour: 'environ 12 € par jour sur 15 jours'
 image: "/images/produits/programme-f15-intermediaire-vanille.webp"
 images: []
 category: "programmes-detox"

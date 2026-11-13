@@ -3,6 +3,7 @@ name: Forever Aloe Mango
 reference: '836'
 slug: forever-aloe-mango
 price: 37.29
+coutJour: 'environ 2,25 à 3,35 € par jour (60 à 90 ml)'
 image: /images/produits/forever-aloe-mango.webp
 images:
 - /images/produits/forever-aloe-mango-2.webp

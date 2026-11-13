@@ -3,6 +3,7 @@ name: "Programme F15 Avancé Chocolat – 15 jours pour affiner et performer"
 reference: "537"
 slug: "programme-f15-avance-chocolat"
 price: 181.74
+coutJour: 'environ 12 € par jour sur 15 jours'
 image: "/images/produits/programme-f15-avance-chocolat.webp"
 images: []
 category: "programmes-detox"
