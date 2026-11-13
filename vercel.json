@@ -12,16 +12,6 @@
       "permanent": true
     },
     {
-      "source": "/produits/nutrition",
-      "destination": "/produits/",
-      "permanent": true
-    },
-    {
-      "source": "/produits/nutrition/",
-      "destination": "/produits/",
-      "permanent": true
-    },
-    {
       "source": "/produits/dentifrice-forever-bright-toothgel",
       "destination": "/produits/forever-bright-toothgel/",
       "permanent": true

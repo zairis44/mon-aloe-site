@@ -1,6 +1,12 @@
 # Esprit Aloé — À ne pas oublier
 *Mise à jour : 13 novembre 2026*
 
+## Correctif du 13 novembre 2026 — redirection Nutrition
+
+- `vercel.json` contenait une ancienne redirection 301 `/produits/nutrition/` → `/produits/` (de l'époque où la catégorie n'avait pas de page). Vercel l'appliquait avant la page créée au Lot T : le menu Nutrition renvoyait vers le catalogue. Redirection supprimée.
+- Une 301 est gardée en cache par le navigateur : tester en navigation privée. Google recrawlera seul ; demander l'indexation de `/produits/nutrition/` dans la Search Console accélère la prise en compte.
+- **Réflexe** : avant de créer une page, vérifier que son URL n'est pas une `source` dans `vercel.json`.
+
 ## Lot T du 13 novembre 2026 — catalogue, catégorie Nutrition, 8 fiches, page locale (suite à l'analyse d'aloeveragel.fr)
 
 - **Concurrent aloeveragel.fr** (WordPress) : 97 fiches produit, ~110 pages locales « distributeur Forever Living + département/ville » (pages satellites, à ne pas copier), une quinzaine de guides, blog figé depuis 2023.
