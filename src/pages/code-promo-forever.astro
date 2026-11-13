@@ -1,0 +1,218 @@
+---
+/**
+ * src/pages/code-promo-forever.astro
+ * Page « Code promo Forever » — offre en cours + façons de payer moins cher.
+ * L'offre vient de src/data/offres.ts. Après la date de fin, un petit script
+ * masque le bloc de l'offre et affiche « pas de code en cours » (pas de rebuild
+ * nécessaire). Penser à mettre à jour la meta description à la fin de l'offre.
+ */
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { OFFRE_EN_COURS, LIEN_BOUTIQUE } from '../data/offres';
+
+const offre = OFFRE_EN_COURS;
+
+const etapes = [
+  { num: "1", titre: "Ouvrez la boutique Forever", texte: "Passez par le lien de cette page : il vous inscrit comme client rattaché à un distributeur qui pourra vous conseiller." },
+  { num: "2", titre: "Créez votre compte client", texte: `Le code ${offre.code} est réservé aux nouveaux clients : il faut créer un compte, pas se connecter à un compte existant.` },
+  { num: "3", titre: `Remplissez votre panier dès ${offre.minimum}`, texte: `La réduction s'applique à partir de ${offre.minimum} d'achat.` },
+  { num: "4", titre: `Saisissez ${offre.code} au paiement`, texte: "Dans le champ code promo, en majuscules. La remise s'affiche avant la validation de la commande." },
+];
+
+const faq = [
+  {
+    q: `Jusqu'à quand le code ${offre.code} est-il valable ?`,
+    r: `Jusqu'au ${offre.finTexte} inclus. Après cette date, il ne fonctionne plus.`,
+  },
+  {
+    q: `Le code ${offre.code} fonctionne-t-il si j'ai déjà un compte Forever ?`,
+    r: `Non. Il est réservé aux ${offre.public}. Si vous êtes déjà client, contactez-moi : je vous indique les offres auxquelles vous avez droit.`,
+  },
+  {
+    q: "Y a-t-il un minimum d'achat ?",
+    r: `Oui, ${offre.minimum}. En dessous, la remise ne s'applique pas.`,
+  },
+  {
+    q: "Le code est-il cumulable avec une autre offre ?",
+    r: "Non, une seule offre par commande.",
+  },
+  {
+    q: "Mon code ne fonctionne pas, que faire ?",
+    r: `Vérifiez qu'il est écrit en majuscules, que votre panier atteint ${offre.minimum} et que vous créez un nouveau compte. Si le problème persiste, appelez-moi au 06 77 35 22 26 : on regarde ensemble.`,
+  },
+  {
+    q: "Pourquoi certains sites affichent-ils un « code promo Forever » qui est une suite de chiffres ?",
+    r: "Il s'agit en général du numéro d'un distributeur, pas d'une réduction. Il vous rattache à ce distributeur, mais ne baisse pas le prix. Les vraies réductions sont des codes ponctuels comme celui de cette page.",
+  },
+];
+
+const schemaFAQ = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faq.map(({ q, r }) => ({
+    "@type": "Question",
+    name: q,
+    acceptedAnswer: { "@type": "Answer", text: r },
+  })),
+};
+---
+
+<Layout
+  title="Code promo Forever : l'offre du moment | Esprit Aloé"
+  description="Code promo Forever Black Friday : −15 % pour les nouveaux clients dès 50 € d'achat, jusqu'au 30 novembre. Mode d'emploi et astuces pour payer moins cher."
+  canonical="https://espritaloe.fr/code-promo-forever/"
+>
+  <script type="application/ld+json" set:html={JSON.stringify(schemaFAQ)} slot="head" />
+
+  <Header />
+
+  <!-- EN-TÊTE -->
+  <section class="bg-gradient-to-br from-aloe-50 via-cream to-sand py-14">
+    <div class="mx-auto max-w-4xl px-6">
+      <nav class="text-xs text-aloe-400 mb-6" aria-label="Fil d'Ariane">
+        <ol class="flex items-center gap-2">
+          <li><a href="/" class="hover:text-aloe-600 transition-colors">Accueil</a></li>
+          <li>›</li>
+          <li class="text-aloe-700 font-medium">Code promo Forever</li>
+        </ol>
+      </nav>
+      <h1 class="text-4xl text-aloe-900 mb-4">Code promo Forever : l'offre du moment</h1>
+      <p class="text-lg text-aloe-600 max-w-2xl">
+        Je suis Rafael, distributeur indépendant Forever en Loire-Atlantique. Sur cette page,
+        je tiens à jour le code de réduction en cours sur la boutique Forever, et les autres
+        façons honnêtes de payer moins cher.
+      </p>
+    </div>
+  </section>
+
+  <!-- OFFRE EN COURS -->
+  <section class="bg-cream py-14">
+    <div class="mx-auto max-w-4xl px-6">
+      <div id="offre-active" data-debut={offre.debut} data-fin={offre.fin}
+           class="rounded-3xl bg-[#141414] text-white p-8 md:p-10 text-center">
+        <span class="inline-block rounded-full bg-[#d4a64a] text-[#141414] text-xs font-semibold uppercase tracking-widest px-4 py-1.5 mb-5">
+          {offre.nom}
+        </span>
+        <h2 class="text-3xl md:text-4xl text-white mb-3">−{offre.remise} sur votre première commande</h2>
+        <p class="text-[#d6d6d6] mb-6 max-w-xl mx-auto">
+          Pour les {offre.public}, dès {offre.minimum} d'achat, jusqu'au {offre.finTexte} inclus.
+        </p>
+        <div class="inline-flex items-center gap-4 rounded-xl border-2 border-dashed border-[#d4a64a] bg-[#1f1f1f] px-6 py-4 mb-6">
+          <span class="font-mono text-2xl font-bold tracking-wider">{offre.code}</span>
+          <button type="button" id="copier-code" data-code={offre.code}
+                  class="rounded-lg bg-[#d4a64a] px-3 py-1.5 text-xs font-semibold text-[#141414]">
+            Copier
+          </button>
+        </div>
+        <div>
+          <a href={LIEN_BOUTIQUE} target="_blank" rel="sponsored noopener noreferrer"
+             class="inline-flex items-center gap-2 rounded-full bg-[#d4a64a] px-8 py-4 text-sm font-semibold text-[#141414] hover:bg-[#e6bc63] transition-colors">
+            Ouvrir la boutique Forever
+          </a>
+        </div>
+        <p class="text-xs text-[#a3a3a3] mt-6 max-w-xl mx-auto">{offre.conditions}</p>
+      </div>
+
+      <div id="offre-terminee" hidden class="rounded-3xl bg-white border border-aloe-100 p-8 text-center">
+        <h2 class="text-2xl text-aloe-900 mb-3">Pas de code promo en cours pour le moment</h2>
+        <p class="text-aloe-600 max-w-xl mx-auto">
+          La dernière offre est terminée. Je mets cette page à jour dès qu'une nouvelle réduction est disponible.
+          En attendant, les astuces ci-dessous restent valables, et vous pouvez
+          <a href="/contact/" class="underline text-aloe-700">me demander</a> s'il existe une offre pour votre situation.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- MODE D'EMPLOI -->
+  <section class="bg-sand/50 py-16">
+    <div class="mx-auto max-w-4xl px-6">
+      <h2 class="text-3xl text-aloe-900 mb-8 text-center">Comment utiliser le code {offre.code}</h2>
+      <ol class="grid md:grid-cols-2 gap-5">
+        {etapes.map((e) => (
+          <li class="rounded-2xl bg-white border border-aloe-100 p-6">
+            <span class="text-xs font-semibold uppercase tracking-widest text-clay">Étape {e.num}</span>
+            <h3 class="text-lg text-aloe-900 mt-1 mb-2">{e.titre}</h3>
+            <p class="text-sm text-aloe-600 leading-relaxed">{e.texte}</p>
+          </li>
+        ))}
+      </ol>
+    </div>
+  </section>
+
+  <!-- AUTRES ASTUCES -->
+  <section class="bg-cream py-16">
+    <div class="mx-auto max-w-3xl px-6">
+      <h2 class="text-3xl text-aloe-900 mb-6">Les autres façons de payer moins cher</h2>
+      <div class="space-y-5 text-aloe-700 leading-relaxed">
+        <p>
+          <strong>Regroupez vos achats pour la livraison.</strong> En point relais, la livraison coûte 8 € sous 50 €,
+          4 € entre 50 et 150 €, et devient gratuite à partir de 150 €. Deux commandes regroupées en une peuvent vous
+          faire économiser les frais. Le détail est sur la page <a href="/livraison/" class="underline text-aloe-800">livraison</a>.
+        </p>
+        <p>
+          <strong>Choisissez le bon format.</strong> Les packs, comme le
+          <a href="/produits/forever-aloe-vera-4pack/" class="underline text-aloe-800">4 Pack</a>, permettent de goûter
+          plusieurs saveurs avant d'acheter de grandes bouteilles. Et si vous ne savez pas par où commencer, la page
+          <a href="/quel-produit-forever-choisir/" class="underline text-aloe-800">trouver mon produit</a> évite les achats inutiles.
+        </p>
+        <p>
+          <strong>Clients fidèles :</strong> Forever envoie aussi des offres par e-mail à ses clients inscrits.
+          Gardez votre adresse à jour sur votre compte.
+        </p>
+        <p>
+          <strong>Si vous consommez beaucoup</strong>, le statut de distributeur donne accès à des prix remisés,
+          sans stock ni minimum d'achat. Ce n'est pas un code promo, c'est une inscription : tout est expliqué sur la page
+          <a href="/devenir-distributeur-forever-living/" class="underline text-aloe-800">devenir distributeur</a>.
+        </p>
+        <p>
+          <strong>Méfiez-vous des sites de codes promo.</strong> Beaucoup affichent un « code Forever » qui est en réalité
+          le numéro d'un distributeur. Il ne fait pas baisser le prix.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="bg-sand/50 py-16">
+    <div class="mx-auto max-w-3xl px-6">
+      <h2 class="text-3xl text-aloe-900 mb-8 text-center">Questions fréquentes</h2>
+      <dl class="space-y-4">
+        {faq.map(({ q, r }) => (
+          <div class="rounded-2xl bg-white border border-aloe-100 p-6">
+            <dt class="font-semibold text-aloe-800 mb-2">{q}</dt>
+            <dd class="text-sm text-aloe-600 leading-relaxed">{r}</dd>
+          </div>
+        ))}
+      </dl>
+      <p class="text-center text-sm text-aloe-500 mt-8">
+        Une question ? Appelez-moi au <a href="tel:+33677352226" class="underline text-aloe-700">06 77 35 22 26</a>
+        ou passez par la page <a href="/contact/" class="underline text-aloe-700">contact</a>.
+      </p>
+    </div>
+  </section>
+
+  <Footer />
+</Layout>
+
+<script>
+  // Bascule automatique à la fin de l'offre + bouton copier
+  const bloc = document.getElementById('offre-active');
+  const fin = Date.parse(bloc?.dataset.fin || '');
+  const debut = Date.parse(bloc?.dataset.debut || '');
+  const maintenant = Date.now();
+  if (bloc && ((fin && maintenant > fin) || (debut && maintenant < debut))) {
+    bloc.hidden = true;
+    const termine = document.getElementById('offre-terminee');
+    if (termine) termine.hidden = false;
+  }
+  const bouton = document.getElementById('copier-code');
+  bouton?.addEventListener('click', () => {
+    const code = bouton.getAttribute('data-code') || '';
+    navigator.clipboard?.writeText(code).then(() => {
+      bouton.textContent = 'Copié !';
+      setTimeout(() => { bouton.textContent = 'Copier'; }, 2000);
+    });
+  });
+</script>
