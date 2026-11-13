@@ -1,5 +1,21 @@
 # Esprit Aloé — À ne pas oublier
-*Mise à jour : 28 août 2026*
+*Mise à jour : 13 novembre 2026*
+
+## Lot O du 13 novembre 2026 — allégations santé restantes dans le corps des articles
+
+- 8 articles nettoyés (corps de texte, H1, H2, FAQ ; **aucun seoTitle ni meta description touché**) : sport, digestion, immunité, stress/sommeil, peau, cheveux, guide C9, perte de poids.
+- Retiré : anti-inflammatoire / réduction inflammatoire, régénération cellulaire, « pénètre dans les 3 couches de la peau », stimulation de la pousse, propolis « cicatrisante », élimination des toxines, « relance le métabolisme », clarté mentale, acémannane « immunostimulant », zinc / vitamines B / magnésium présentés comme apportés par la pulpe (quantités négligeables), « sans interaction médicamenteuse connue », dose enfant à partir de 6 ans.
+- Gardé et assumé : vitamine C de la pulpe (allégations autorisées : immunité, fatigue, système nerveux), vitamines B6/B12 de l'ARGI+, zinc/biotine du Marine Collagen.
+- Article sport : section « Ce qu'il faut retenir » ajoutée (ligne du backlog close). H1 : « quelle place dans la récupération musculaire ? ».
+- Digestion : méta-analyse 2018 replacée dans son contexte (3 petits essais ; Davis 2006 sans différence significative).
+- H1 modifiés : sport, digestion, immunité, stress. Ancres `articlesLies` et `public/llms.txt` alignées (article avis et article Freedom : seul le texte d'une ancre de lien change).
+- Mesure : ces pages avaient déjà changé le 12/11 ; le lot O décale leur début de mesure au 13/11 (un jour).
+- **À décider par Rafael (titres/metas gelés, donc pas touchés)** :
+  - seoTitle digestion « Aloe vera digestion : 5 bienfaits prouvés » : « prouvés » est faux et contredit l'article. Proposition : « Aloe vera et digestion : ce qu'on peut en attendre ».
+  - Meta stress (« vitamines B et magnésium de l'aloe vera ») et meta immunité (« vitamines C et zinc ») : décrivent un contenu qui n'existe plus.
+  - Meta cheveux (« chute de cheveux ») et peau (« anti-âge… ce que l'aloe vera fait vraiment ») : à adoucir.
+  - Dose de pulpe : la fiche dit 30–60 ml/jour, l'article digestion 60–90 ml. Donner la dose de l'étiquette pour aligner tout le site.
+- Reste en backlog : allégations dans les **fiches produit** (Therm « thermogenèse », ARGI+ « circulation optimale », FAB « hydratation cellulaire », Freedom « entretiennent le cartilage »…) : lot dédié, fiche par fiche.
 
 ## Lot N du 12 novembre 2026 — GEO : sources, dates, llms.txt, identité
 

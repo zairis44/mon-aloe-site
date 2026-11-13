@@ -25,7 +25,7 @@ articlesLies:
   - slug: "perdre-du-poids-naturellement-forever-programmes-minceur"
     titre: "Perdre du poids Forever : C9 ou DX4 ?"
   - slug: "aloe-vera-digestion-bienfaits"
-    titre: "Aloe vera digestion : 5 effets concrets"
+    titre: "Aloe vera et digestion : 5 points à connaître"
 faq:
   - question: "Les produits Forever sont-ils fiables ?"
     reponse: "Oui sur le plan de la fabrication : la gamme boissons est certifiée IASC, l'association professionnelle du secteur dont Forever Living est membre fondateur, sur la base d'audits et d'analyses en laboratoire, et Forever Living contrôle sa filière de la culture de l'aloe vera à la mise en bouteille. La fiabilité des effets dépend ensuite de la régularité : comptez 4 semaines minimum pour évaluer honnêtement un produit."
