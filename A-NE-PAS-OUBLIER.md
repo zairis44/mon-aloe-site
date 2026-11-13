@@ -14,7 +14,7 @@
 - **Bandeau « Offre du moment »** (`src/components/BandeauOffre.astro`) sous l'en-tête de l'accueil et des fiches produit. Il lit `offres.ts` comme le popup : non rendu au build si l'offre est finie, retiré dans le navigateur avant `debut` et après `fin` (testé au 01/12 : absent). Rien à faire le 1er décembre pour le masquer ; il réapparaîtra tout seul avec la prochaine offre saisie dans `offres.ts`.
 - **« Recommander en 1 clic »** sur /commander/ : les produits que Rafael recommande le plus (`src/data/recommandes.ts`), avec lien direct vers le produit sur la boutique Forever (rel sponsored, suivi GA4 inchangé) et lien vers la fiche.
 - **Nouvelle fiche** : Shampoing Aloe-Jojoba (réf. 640, 26,84 €, catégorie Beauté & Bien-être), photo officielle retouchée.
-- **En attente** : Aloe Cooling Lotion, introuvable sous ce nom sur foreverliving.fr. Demander la référence à Rafael, puis créer la fiche et l'ajouter à `recommandes.ts` (6e produit).
+- **Fait (Lot V4b)** : fiche Forever Aloe Cooling Lotion (réf. 564, 17,98 €, lien fourni par Rafael), ajoutée comme 6e produit de `recommandes.ts`. Textes cosmétiques sans promesse de soin (Forever écrit « soulage les inconforts articulaires », non repris).
 
 ## Correctif du 13 novembre 2026 — horaires (« 7j/7 »)
 
