@@ -3,7 +3,7 @@ name: Forever Lycium Plus – Baie de goji et réglisse
 reference: '72'
 slug: forever-lycium-plus
 price: 48.67
-image: ''
+image: '/images/produits/forever-lycium-plus.webp'
 category: nutrition
 description: Des comprimés qui associent un extrait de baie de goji (lycium) à un extrait de racine de réglisse. 1 comprimé 2 à 3 fois par jour. 100 comprimés.
 titreDetails: 'Forever Lycium Plus : baie de goji et réglisse'

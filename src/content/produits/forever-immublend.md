@@ -3,7 +3,7 @@ name: Forever ImmuBlend – Vitamines C et D3, zinc et champignons
 reference: '355'
 slug: forever-immublend
 price: 31.42
-image: ''
+image: '/images/produits/forever-immublend.webp'
 category: nutrition
 description: Un comprimé par jour qui associe vitamine C, vitamine D3 et zinc à des champignons maitaké et shiitaké et à de la lactoferrine. 60 comprimés.
 titreDetails: 'Forever ImmuBlend : vitamines C et D3, zinc et champignons'

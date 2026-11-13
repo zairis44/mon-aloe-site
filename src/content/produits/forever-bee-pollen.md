@@ -3,7 +3,7 @@ name: Forever Bee Pollen – Pollen d'abeille et miel
 reference: '26'
 slug: forever-bee-pollen
 price: 22.48
-image: ''
+image: '/images/produits/forever-bee-pollen.webp'
 category: nutrition
 description: Des comprimés de pollen d'abeille et de miel, avec une pointe de gelée royale. 3 comprimés par jour pendant les repas. 100 comprimés.
 titreDetails: 'Forever Bee Pollen : le pollen d''abeille en comprimés'

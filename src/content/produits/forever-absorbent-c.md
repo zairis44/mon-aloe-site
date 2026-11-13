@@ -3,7 +3,7 @@ name: Forever Absorbent-C – Vitamine C à croquer
 reference: '48'
 slug: forever-absorbent-c
 price: 25.9
-image: ''
+image: '/images/produits/forever-absorbent-c.webp'
 category: nutrition
 description: Un comprimé à croquer de vitamine C, avec du son d'avoine, du miel et des bioflavonoïdes d'agrumes. 1 comprimé par jour, le matin. 100 comprimés.
 titreDetails: 'Absorbent-C : la vitamine C en comprimé à croquer'

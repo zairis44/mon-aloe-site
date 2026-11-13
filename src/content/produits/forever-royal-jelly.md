@@ -3,7 +3,7 @@ name: Forever Royal Jelly – Gelée royale à croquer
 reference: '36'
 slug: forever-royal-jelly
 price: 48.61
-image: ''
+image: '/images/produits/forever-royal-jelly.webp'
 category: nutrition
 description: Des comprimés à croquer de gelée royale lyophilisée, au goût d'orange. 1 à 2 comprimés par jour. 60 comprimés.
 titreDetails: 'Forever Royal Jelly : la gelée royale en comprimés à croquer'

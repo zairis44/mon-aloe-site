@@ -3,7 +3,7 @@ name: Forever Aloe Lèvres – Stick à lèvres aloe vera et jojoba
 reference: '22'
 slug: forever-aloe-levres
 price: 5.72
-image: ''
+image: '/images/produits/forever-aloe-levres.webp'
 category: cremes-et-gels
 description: 'Le stick à lèvres de Forever : aloe vera, huile de jojoba et cires d''abeille, de candelilla et de carnauba pour hydrater et protéger les lèvres du froid et du vent.'
 titreDetails: 'Aloe Lèvres : le stick hydratant à l''aloe vera et au jojoba'

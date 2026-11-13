@@ -3,7 +3,7 @@ name: Forever Daily – Multivitamines et minéraux
 reference: '439'
 slug: forever-daily
 price: 23.17
-image: ''
+image: '/images/produits/forever-daily.webp'
 category: nutrition
 description: Un multivitamines et minéraux en 2 comprimés par jour, avec des extraits de fruits et légumes et de l'aloe vera. 60 comprimés, soit un mois.
 titreDetails: 'Forever Daily : vitamines et minéraux en 2 comprimés par jour'

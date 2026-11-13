@@ -3,7 +3,7 @@ name: Forever Arctic Sea – Oméga-3 EPA et DHA
 reference: '376'
 slug: forever-arctic-sea
 price: 45.63
-image: ''
+image: '/images/produits/forever-arctic-sea.webp'
 category: nutrition
 description: Des capsules d'oméga-3 (EPA et DHA) issus d'huiles de poisson et de calamar, avec de l'huile d'olive vierge extra. Pour compléter l'alimentation quand on mange peu de poissons gras. 120 capsules.
 titreDetails: 'Forever Arctic Sea : les oméga-3 EPA et DHA en capsules'
