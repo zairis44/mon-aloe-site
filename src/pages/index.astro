@@ -34,21 +34,21 @@ if (produitsPhares.length === 0) {
   produitsPhares = [
     {
       nom: "Forever Aloe Vera Gel",
-      desc: "La pulpe pure à boire, 99,7% d'aloe vera stabilisé pour le confort digestif.",
+      desc: "La pulpe pure à boire, 99,7% d'aloe vera stabilisé, pour votre routine du matin.",
       prix: "37,29 €",
       slug: "forever-pulpe-daloe-vera",
       tag: "Best-seller",
     },
     {
       nom: "Programme C9 — Détox 9 jours",
-      desc: "Programme de 9 jours pour repartir sur de bonnes bases et se sentir léger.",
+      desc: "Programme de 9 jours qui encadre votre alimentation, avec un objectif de perte de poids.",
       prix: "152,42 €",
       slug: "programme-c9-forever-vanille-peche",
       tag: "Programme",
     },
     {
       nom: "Forever Freedom",
-      desc: "Boisson aloe vera enrichie en glucosamine et MSM pour le confort articulaire.",
+      desc: "Boisson aloe vera saveur orange, avec glucosamine, chondroïtine et MSM.",
       prix: "50,89 €",
       slug: "forever-freedom-confort-articulaire",
       tag: "Articulations",
@@ -57,18 +57,18 @@ if (produitsPhares.length === 0) {
 }
 const benefices = [
   {
-    titre: "Hydratation profonde",
-    texte: "L'aloe vera apaise et nourrit la peau en profondeur grâce à ses polysaccharides naturels.",
+    titre: "Une peau hydratée",
+    texte: "Gels, crèmes et savons à l'aloe vera : des soins simples qui aident à garder la peau hydratée et laissent une sensation de fraîcheur.",
     lien: "/blog/aloe-vera-peau-beaute-bienfaits-forever/",
   },
   {
-    titre: "Confort digestif",
-    texte: "La pulpe soutient un transit équilibré et apaise les muqueuses intestinales.",
+    titre: "Un rituel du matin",
+    texte: "Un verre de pulpe d'aloe vera à jeun, avant le petit-déjeuner : un geste simple que beaucoup de personnes gardent dans leur routine bien-être.",
     lien: "/blog/aloe-vera-digestion-bienfaits/",
   },
   {
-    titre: "Tonus & Immunité",
-    texte: "Vitamines A, B, C et E pour accompagner vos défenses naturelles au quotidien.",
+    titre: "De la vitamine C",
+    texte: "La pulpe Forever contient de la vitamine C, qui contribue au fonctionnement normal du système immunitaire et à réduire la fatigue.",
     lien: "/blog/aloe-vera-systeme-immunitaire-defenses-naturelles/",
   },
 ];
@@ -124,8 +124,8 @@ const schemaFAQ = {
           du bien
         </h1>
         <p class="text-xl text-aloe-700 leading-relaxed max-w-lg mb-8">
-          Des produits Forever Living certifiés IASC pour prendre soin de votre digestion,
-          votre peau et votre vitalité au quotidien.
+          Des produits Forever Living certifiés IASC pour prendre soin de vous au quotidien :
+          boissons à l'aloe vera, soins de la peau, programmes.
           Livrés partout en France en 48–72h.
         </p>
         <div class="flex flex-wrap gap-4 mb-8">
@@ -170,7 +170,7 @@ const schemaFAQ = {
       <div class="grid md:grid-cols-3 gap-6">
         {benefices.map((b) => (
           <div class="rounded-2xl bg-white/60 border border-aloe-100 p-8">
-            <h2 class="text-xl text-aloe-800 mb-2">{b.titre}</h2>
+            <h3 class="text-xl text-aloe-800 mb-2">{b.titre}</h3>
             <p class="text-sm text-aloe-600 leading-relaxed mb-3">{b.texte}</p>
             <a
               href={b.lien}
