@@ -20,23 +20,23 @@ faq:
   - question: "Quelle différence entre « pulpe d’aloe vera » et « gel d’aloe vera » ?"
     reponse: "Aucune : ce sont deux noms du même produit. « Aloe Vera Gel » est l’appellation technique retenue par Forever ; « pulpe d’aloe vera » est le terme courant en français. Dans les deux cas, il s’agit de la chair translucide prélevée au cœur de la feuille, séparée de l’écorce qui contient l’aloïne. Le mot « pulpe » désigne simplement cette partie interne de la feuille, par opposition à l’écorce."
   - question: "Qu’est-ce que je peux attendre d’une cure régulière ?"
-    reponse: "Beaucoup de personnes adoptent la pulpe pour leur confort digestif et leur routine du matin. La vitamine C contribue au fonctionnement normal du système immunitaire et aide à réduire la fatigue. Les effets s’installent avec la régularité, pas en un jour."
+    reponse: "Une routine simple à tenir. La pulpe contient de la vitamine C, qui contribue au fonctionnement normal du système immunitaire, à réduire la fatigue et à un métabolisme énergétique normal. Beaucoup de personnes l’apprécient surtout pour le rituel du matin : c’est la régularité qui compte."
   - question: "Quand et comment le boire ?"
-    reponse: "Comptez 60 à 90 ml par jour, le matin à jeun, un quart d’heure avant le petit-déjeuner. Buvez-le pur ou allongé d’eau, et secouez la bouteille avant de servir. Le matin à jeun reste le meilleur moment : l’aloe vera agit alors directement sur la muqueuse intestinale. Tenez la cure quatre à six semaines pour juger des effets."
+    reponse: "Comptez 60 à 90 ml par jour, le matin à jeun, un quart d’heure avant le petit-déjeuner. Buvez-le pur ou allongé d’eau, et secouez la bouteille avant de servir. Le matin à jeun reste le moment le plus pratique pour en faire une habitude. Comptez quatre à six semaines de régularité pour vous faire votre propre avis."
   - question: "L'aloe vera Forever peut-il aider à perdre du poids ?"
-    reponse: "Pas directement. Le gel ne fait pas maigrir, mais il régule le transit, limite les ballonnements et améliore l'absorption des nutriments. Sur un programme comme le C9 et avec une alimentation équilibrée, il accompagne donc bien une démarche minceur et aide à réduire la rétention d'eau."
+    reponse: "Non, pas à lui seul : aucune boisson ne fait maigrir. Le gel est en revanche la boisson de base des programmes C9 et F15, qui encadrent l'alimentation avec un objectif de perte de poids. C'est l'ensemble du programme qui compte : les repas, les shakes et l'activité physique."
   - question: "Le Forever Aloe Vera Gel est-il adapté aux femmes enceintes ?"
-    reponse: "Par précaution, on déconseille le gel d'aloe vera par voie orale pendant la grossesse et l'allaitement, car l'aloïne peut stimuler les contractions utérines. En dehors de ces périodes, il est bien toléré. Au moindre doute, parlez-en à votre médecin avant de commencer une cure."
+    reponse: "Par précaution, l'aloe vera à boire est déconseillé pendant la grossesse et l'allaitement. Si vous suivez un traitement ou au moindre doute, demandez l'avis de votre médecin ou de votre pharmacien avant de commencer."
 caracteristiques:
   - titre: "Ce que la pulpe change au quotidien"
-    contenu: "Vous buvez la même plante utilisée depuis des siècles, sous une forme prête à l’emploi. Le gel concentre vitamines A, B, C et E, des minéraux comme le zinc, le magnésium et le sélénium, des enzymes digestives et des acides aminés. L’acémannane est son polysaccharide principal. Beaucoup de personnes l’adoptent pour le confort digestif et la routine bien-être du matin."
+    contenu: "Vous buvez la pulpe intérieure de la feuille, une plante utilisée depuis des siècles, sous une forme prête à l’emploi. L’acémannane est son polysaccharide principal. Forever y ajoute de la vitamine C, qui protège le gel sans conservateur et contribue au fonctionnement normal du système immunitaire et à réduire la fatigue. Beaucoup de personnes l’adoptent pour la routine bien-être du matin."
   - titre: "Comment l’intégrer dans votre matinée"
-    contenu: "Versez 60 à 90 ml dans un grand verre, pur ou allongé de 240 ml d’eau, un quart d’heure avant de manger. Si le goût neutre vous rebute, ajoutez-le à un smoothie. Après le sport, il accompagne aussi la récupération. La clé tient en un mot : la régularité. Comptez quatre à six semaines pour mesurer les effets."
+    contenu: "Versez 60 à 90 ml dans un grand verre, pur ou allongé de 240 ml d’eau, un quart d’heure avant de manger. Si le goût neutre vous rebute, ajoutez-le à un smoothie. La clé tient en un mot : la régularité."
   - titre: "Utilisation et conservation"
     contenu: "Avant ouverture, la bouteille se garde à température ambiante, à l’abri du soleil. Une fois ouverte, placez-la au réfrigérateur, en dessous de 7 °C, et finissez-la sous 30 jours. Secouez toujours avant de servir. Tenez-la à l’écart de la chaleur, qui dégrade les actifs."
 ---
 
-Vous cherchez une boisson simple à intégrer le matin, qui prenne soin de votre digestion sans bouleverser vos habitudes. Le Forever Aloe Vera Gel répond à ce besoin avec la pulpe d’aloe vera la plus concentrée de la gamme.
+Vous cherchez un geste simple à intégrer le matin, sans bouleverser vos habitudes ? Le Forever Aloe Vera Gel est la pulpe d’aloe vera la plus concentrée de la gamme : 99,7 % de gel, sans arôme ajouté.
 
 ## La boisson de base de toute cure aloe vera
 
@@ -46,13 +46,13 @@ Le produit convient à une large palette de régimes : sans gluten, vegan, cashe
 
 ## À qui il s’adresse
 
-Vous digérez parfois mal, vous vous sentez ballonné après les repas, ou vous traversez des périodes où l’énergie manque. Cette pulpe vous concerne. Elle s’adresse aussi à celles et ceux qui veulent simplement entretenir leur bien-être avec un geste quotidien facile à tenir.
+Vous voulez une routine du matin facile à tenir. Vous débutez avec l’aloe vera et préférez commencer par le produit le plus simple. Ou vous préparez un programme comme le C9, dont cette pulpe est la base. Sa vitamine C contribue à réduire la fatigue et au fonctionnement normal du système immunitaire.
 
 ## Pourquoi commencer par celui-là
 
 Sa neutralité de goût en fait la base idéale d’une cure. Si vous débutez avec l’aloe vera Forever, c’est le point de départ logique avant d’explorer les versions fruitées comme l’Aloe Berry Nectar ou l’Aloe Mango. Vous gardez la concentration maximale, sans arôme ajouté.
 
-Pour creuser le sujet, lisez nos guides sur [les bienfaits de l’aloe vera sur la digestion](/blog/aloe-vera-digestion-bienfaits/) et sur [l’aloe vera et les défenses naturelles](/blog/aloe-vera-systeme-immunitaire-defenses-naturelles/).
+Pour creuser le sujet, lisez nos guides sur [l’aloe vera et la digestion](/blog/aloe-vera-digestion-bienfaits/) et sur [l’aloe vera et les défenses naturelles](/blog/aloe-vera-systeme-immunitaire-defenses-naturelles/).
 
 ## Une question avant de vous lancer ?
 

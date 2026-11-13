@@ -1,6 +1,18 @@
 # Esprit Aloé — À ne pas oublier
 *Mise à jour : 13 novembre 2026*
 
+## Lot V1 du 13 novembre 2026 — conformité et confiance (suite de l'audit 6 personas)
+
+- Audit complet : `rapports/ux/2026-11-13-audit-6-personas.md` (6 personas, plan V1 à V9).
+- **Accueil** : bloc « Les bienfaits au quotidien » réécrit avec des allégations autorisées uniquement (« Une peau hydratée », « Un rituel du matin », « De la vitamine C » : immunité + fatigue). Hero sans « prendre soin de votre digestion ». Titres des cartes passés en h3.
+- **Freedom** : description (affichée sur l'accueil et en meta) sans « soutenir votre mobilité ». Le reste de la fiche Freedom relève du Lot V2.
+- **Fiche pulpe** : intro, « À qui il s'adresse », FAQ (poids, moment, grossesse) et caractéristiques réécrites. Supprimés : transit, ballonnements, absorption, rétention d'eau, muqueuse intestinale, récupération sportive, « vitamines A, B, C, E, zinc, magnésium, sélénium, enzymes ». Vérifié sur l'étiquette Forever (réf. 815) : seule la vitamine C est déclarée (ajoutée). Allégations utilisées : immunité, fatigue, métabolisme énergétique.
+- **Notre Aloé** : « vitamines du groupe B présentes dans la pulpe » remplacé par la vitamine C ; carte « Confort digestif » renommée « Polysaccharides ».
+- **À propos** : « améliorer votre digestion, retrouver de l'énergie » reformulé.
+- **Devenir distributeur** : texte provisoire « Photo à venir » supprimé, remplacé par un encart « D'où viennent les revenus » (3 sources, équipe facultative). « Les produits se vendent parce qu'ils fonctionnent… effets réels » reformulé.
+- **Journal C9** : « on laisse le corps éliminer » retiré.
+- **Fiches produit sans avis** : plus d'étoiles ★★★★★ pleines. Titre « Vous utilisez ce produit ? », bouton vers /contact/. **À compléter** : `src/data/avis.ts` → `LIEN_AVIS_GOOGLE` (lien « Demander des avis » de la fiche Google Business) ; le bouton « Laisser un avis Google » apparaît alors sur toutes les fiches.
+
 ## Lot U du 13 novembre 2026 — page contact enrichie
 
 - **Hero** : H1 « Contacter votre distributeur Forever », Saint-Joachim/Brière mis en avant (la liste de villes Pornic, Ancenis, Châteaubriant… est retirée, cohérence avec la page locale) + lien vers `/distributeur-forever-living-loire-atlantique/`.

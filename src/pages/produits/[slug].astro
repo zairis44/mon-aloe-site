@@ -13,6 +13,7 @@ import CtaCommander from '../../components/CtaCommander.astro';
 import ProduitsAssocies from '../../components/ProduitsAssocies.astro';
 import GuidesLies from '../../components/GuidesLies.astro';
 import { PAGES_GELEES } from '../../data/maillage';
+import { LIEN_AVIS_GOOGLE } from '../../data/avis';
 
 export async function getStaticPaths() {
   const produits = await getCollection('produits');
@@ -388,8 +389,8 @@ const seoDescription = d.seoDescription ?? d.description;
   <section class="bg-cream py-16">
     <div class="mx-auto max-w-6xl px-6">
       <div class="text-center mb-10">
-        <span class="text-xs font-semibold uppercase tracking-widest text-aloe-500">Ils ont testé</span>
-        <h2 class="text-3xl text-aloe-900 mt-2">Ce qu'ils en disent</h2>
+        <span class="text-xs font-semibold uppercase tracking-widest text-aloe-500">{d.avis?.length > 0 ? 'Ils ont testé' : 'Votre avis'}</span>
+        <h2 class="text-3xl text-aloe-900 mt-2">{d.avis?.length > 0 ? "Ce qu'ils en disent" : 'Vous utilisez ce produit ?'}</h2>
       </div>
 
       {d.avis?.length > 0 ? (
@@ -414,16 +415,21 @@ const seoDescription = d.seoDescription ?? d.description;
           )}
         </>
       ) : (
-        <div class="text-center py-10">
-          <div class="text-clay text-3xl mb-4">★★★★★</div>
-          <p class="text-aloe-600 text-lg mb-2">Soyez les premiers à laisser votre avis</p>
-          <p class="text-aloe-400 text-sm mb-6">Vous avez essayé ce produit ? Partagez votre expérience.</p>
-          <a
-            href="tel:+33677352226"
-            class="inline-flex items-center gap-2 rounded-full border border-aloe-300 px-6 py-3 text-sm font-semibold text-aloe-700 hover:bg-aloe-50 transition-colors"
-          >
-            📞 Contacter Rafael — 06 77 35 22 26
-          </a>
+        <div class="text-center py-6 max-w-xl mx-auto">
+          <p class="text-aloe-600 mb-6">
+            Aucun avis n'est encore publié sur cette page. Racontez-moi votre expérience :
+            avec votre accord, je publierai les retours reçus, positifs comme négatifs.
+          </p>
+          <div class="flex flex-wrap justify-center gap-3">
+            {LIEN_AVIS_GOOGLE && (
+              <a href={LIEN_AVIS_GOOGLE} target="_blank" rel="noopener" class="inline-flex items-center gap-2 rounded-full bg-aloe-600 px-6 py-3 text-sm font-semibold text-cream hover:bg-aloe-700 transition-colors">
+                ★ Laisser un avis Google
+              </a>
+            )}
+            <a href="/contact/" class="inline-flex items-center gap-2 rounded-full border border-aloe-300 px-6 py-3 text-sm font-semibold text-aloe-700 hover:bg-aloe-50 transition-colors">
+              ✉️ Donner mon avis à Rafael
+            </a>
+          </div>
         </div>
       )}
     </div>

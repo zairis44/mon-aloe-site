@@ -41,6 +41,11 @@ const avantages = [
     titre: "Comment sont construits les revenus",
     texte: "Tu gagnes sur chaque vente directe — une commission sur le prix de vente au détail. Tu bénéficies aussi de bonus liés au volume de ventes et, si tu le souhaites, d'une équipe que tu accompagnes à ton tour. Il n'y a aucune obligation de recruter : beaucoup de distributeurs réussissent très bien en se concentrant uniquement sur les ventes clients.",
     photo: null,
+    encart: [
+      ["Vos ventes", "une commission sur le prix de vente au détail"],
+      ["Le volume", "des bonus liés au volume de ventes"],
+      ["Une équipe", "facultatif : tu n'es jamais obligé de recruter"],
+    ],
     alt: "Entreprendre avec Forever Living et construire ses revenus",
     sens: "droite",
   },
@@ -224,7 +229,7 @@ const schemaWebPage = {
         Avant de devenir distributeur, j'avais les mêmes questions que toi. Est-ce que ça marche vraiment ? Combien de temps ça prend ? Est-ce que je vais devoir harceler mes amis pour vendre des produits ?
       </p>
       <p class="text-lg text-aloe-700 leading-relaxed">
-        La réalité : les produits Forever se vendent parce qu'ils fonctionnent. Mes clients reviennent parce qu'ils constatent des effets réels. Je n'ai jamais eu à "forcer" une vente. Ce qui prend du temps, c'est de construire la confiance — et ça, je t'explique comment faire.
+        La réalité : les produits Forever se vendent parce qu'ils plaisent. Mes clients reviennent parce qu'ils les utilisent au quotidien et les retrouvent facilement. Je n'ai jamais eu à "forcer" une vente. Ce qui prend du temps, c'est de construire la confiance — et ça, je t'explique comment faire.
       </p>
     </div>
   </section>
@@ -258,11 +263,19 @@ const schemaWebPage = {
                 />
               </div>
             ) : (
-              <div class="aspect-square rounded-3xl bg-gradient-to-br from-aloe-50 to-aloe-100 border-2 border-dashed border-aloe-200 flex flex-col items-center justify-center text-center p-8">
-                <span class="text-5xl mb-4">🌿</span>
-                <p class="text-sm font-semibold text-aloe-600">Photo à venir</p>
-                <p class="text-xs text-aloe-400 mt-2 leading-relaxed">Une belle image arrive bientôt<br />pour illustrer cette section</p>
-              </div>
+              item.encart ? (
+                <div class="rounded-3xl bg-aloe-800 text-cream p-8 md:p-10 shadow-lg">
+                  <p class="text-xs uppercase tracking-widest text-aloe-300 mb-6">D'où viennent les revenus</p>
+                  <ol class="space-y-5">
+                    {item.encart.map(([t, d], k) => (
+                      <li class="flex gap-4">
+                        <span class="flex-shrink-0 w-9 h-9 rounded-full bg-aloe-600 flex items-center justify-center font-semibold">{k + 1}</span>
+                        <span><span class="block font-semibold text-lg">{t}</span><span class="block text-sm text-aloe-200">{d}</span></span>
+                      </li>
+                    ))}
+                  </ol>
+                </div>
+              ) : null
             )}
           </div>
 
