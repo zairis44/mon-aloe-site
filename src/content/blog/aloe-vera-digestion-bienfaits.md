@@ -1,7 +1,7 @@
 ---
 title: "Aloe vera et digestion : 5 points à connaître pour votre confort"
-seoTitle: "Aloe vera digestion : 5 bienfaits prouvés"
-description: "Ballonnements, transit difficile, inconfort après les repas : comment l'aloe vera Forever agit sur votre digestion et quel produit choisir."
+seoTitle: "Aloe vera digestion : bienfaits et limites"
+description: "Ballonnements, transit difficile, inconfort après les repas : ce qu'on peut attendre de l'aloe vera Forever, ce que disent les études et quel produit choisir."
 pubDate: 2026-03-26
 updatedDate: 2026-11-13
 author: "Rafael Avenard"
@@ -79,7 +79,7 @@ Le **[Forever Aloe Berry Nectar](/produits/forever-aloe-berry-nectar/)** associe
 
 Voici la façon de faire que je conseille :
 
-- **Dose** : 60 à 90 ml par jour
+- **Dose** : 30 à 60 ml par jour
 - **Moment** : le matin à jeun, 15 à 30 minutes avant le petit-déjeuner
 - **Comment** : pur ou dilué dans un grand verre d'eau à température ambiante
 - **Durée** : comptez au moins 4 semaines avant de juger si cela vous convient
@@ -111,7 +111,7 @@ La pulpe pure, sans aloïne, ne provoque pas d'effet laxatif. Quelques personnes
 
 ### Peut-on boire de l'aloe vera tous les jours ?
 
-Oui. Une prise quotidienne de 60 à 90 ml convient à une consommation au long cours, en respectant les précautions ci-dessus (grossesse, allaitement, traitement en cours).
+Oui. Une prise quotidienne de 30 à 60 ml convient à une consommation au long cours, en respectant les précautions ci-dessus (grossesse, allaitement, traitement en cours).
 
 ### Quel aloe vera choisir pour les ballonnements ?
 
@@ -157,7 +157,7 @@ Un doute sur le produit adapté à votre situation ? Je vous conseille gratuitem
       "name": "Peut-on boire de l'aloe vera tous les jours ?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Oui. Une prise quotidienne de 60 à 90 ml convient à une consommation au long cours, en respectant les précautions ci-dessus (grossesse, allaitement, traitement en cours)."
+        "text": "Oui. Une prise quotidienne de 30 à 60 ml convient à une consommation au long cours, en respectant les précautions ci-dessus (grossesse, allaitement, traitement en cours)."
       }
     },
     {

@@ -1,7 +1,7 @@
 ---
 title: "Aloe vera et immunité : ce qu'il faut savoir avant une cure"
 seoTitle: "Aloe vera immunité : défenses naturelles"
-description: "Acemannane, vitamines C et zinc : les composants de l'aloe vera Forever qui soutiennent votre système immunitaire et comment les intégrer au quotidien."
+description: "Aloe vera et immunité : ce que dit la recherche, ce qu'apporte vraiment une cure de pulpe Forever riche en vitamine C, et les habitudes qui comptent le plus."
 pubDate: 2026-03-23
 updatedDate: 2026-11-13
 author: "Rafael Avenard"

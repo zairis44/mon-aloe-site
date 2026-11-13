@@ -1,7 +1,7 @@
 ---
 title: "Aloe vera et stress : quelle place dans une routine plus sereine ?"
 seoTitle: "Aloe vera stress : sommeil et sérénité"
-description: "Fatigue mentale, insomnies, tension constante : comment les vitamines B et le magnésium de l'aloe vera Forever soutiennent votre système nerveux."
+description: "Stress, sommeil agité, fatigue : ce que l'aloe vera Forever peut apporter à votre routine, ce qu'il n'apporte pas, et une routine concrète pour mieux dormir."
 pubDate: 2026-03-26
 updatedDate: 2026-11-13
 author: "Rafael Avenard"
