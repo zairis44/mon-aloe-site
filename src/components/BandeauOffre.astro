@@ -1,0 +1,45 @@
+---
+/**
+ * src/components/BandeauOffre.astro
+ * Bandeau discret « Offre du moment », sous l'en-tête (accueil + fiches produit).
+ * Source : src/data/offres.ts (OFFRE_EN_COURS), comme le popup.
+ *
+ * - Rendu au build seulement si la date de fin n'est pas dépassée.
+ * - Vérifié aussi dans le navigateur : masqué avant `debut` et après `fin`,
+ *   sans rebuild le jour de la fin.
+ */
+import { OFFRE_EN_COURS } from '../data/offres';
+
+const o = OFFRE_EN_COURS;
+const encoreValide = Date.now() <= Date.parse(o.fin);
+const sombre = o.theme === 'blackfriday';
+---
+
+{encoreValide && (
+  <div
+    id="bandeau-offre"
+    data-debut={o.debut}
+    data-fin={o.fin}
+    class:list={[
+      'text-center text-sm px-4 py-2.5',
+      sombre ? 'bg-[#141414] text-[#f3e3bd]' : 'bg-aloe-700 text-cream',
+    ]}
+  >
+    <a href="/code-promo-forever/" class="hover:underline underline-offset-4">
+      <strong class={sombre ? 'text-[#d4a64a]' : ''}>{o.nom}</strong> :
+      −{o.remise} sur votre première commande avec le code
+      <strong class="tracking-wide">{o.code}</strong>, dès {o.minimum}, jusqu'au {o.finTexte.replace(/ \d{4}$/, '')}.
+      <span class="whitespace-nowrap font-semibold">Voir l'offre →</span>
+    </a>
+  </div>
+)}
+
+<script>
+  const b = document.getElementById('bandeau-offre');
+  if (b) {
+    const now = Date.now();
+    const debut = Date.parse(b.dataset.debut || '');
+    const fin = Date.parse(b.dataset.fin || '');
+    if ((debut && now < debut) || (fin && now > fin)) b.remove();
+  }
+</script>
