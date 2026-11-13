@@ -1,6 +1,20 @@
 # Esprit Aloé — À ne pas oublier
 *Mise à jour : 13 novembre 2026*
 
+## Photos du 13 novembre 2026 — mises en scène des 10 nouvelles fiches (PR #40)
+
+- Les 10 photos ajoutées le 13/11 (8 Nutrition, shampoing, Cooling Lotion) sont des mises en scène : photo officielle Forever détourée, posée sur une surface plane d'un décor choisi par Rafael, avec profondeur de champ (net au pied du produit, flou croissant vers le fond), étalonnage sur la lumière de la scène, ombre de contact, reflet sur marbre et parquet, grain commun.
+- Décors (photos de Rafael, Téléchargements) : `cuisine.jpg` table en marbre (Arctic Sea, Absorbent-C, Royal Jelly, Bee Pollen), `cuisine 2.jpg` plan de travail (Daily, ImmuBlend, Lycium Plus), `salle de bain.jpg` (shampoing), `salle de bain 2.jpg` (Aloe Lèvres), `salle de sport.jpg` parquet (Cooling Lotion). `cuisine 3.jpg` non utilisée.
+- Script : `scripts/scene2.py` (hors repo) — `compose(décor, point de pose, côté du recadrage, position du point, photo produit)`. Première version jugée « trop retouchée » par Rafael : la clé est le cadrage serré sur la surface et le flou progressif.
+
+## Lot V2 du 13 novembre 2026 — allégations des fiches boissons, sport et programmes
+
+- **Source de référence** : tableau officiel DGCCRF des allégations utilisables (`liste-des-allegations-de-sante-utilisables.xlsx`, onglet 2). Allégations « en attente » de l'aloe vera, utilisables sous la responsabilité de l'opérateur : santé gastro-intestinale (« aide à soutenir la digestion », « soutient le fonctionnement de l'intestin », ID 3721/3947/3957/3958), défenses immunitaires (« contribue aux défenses naturelles », ID 1996), peau (ID 1995), fatigue (ID 2634). Thé vert : contrôle du poids / métabolisme des lipides (ID 2716, 3698). Guarana : vitalité, vigilance (ID 2062, 2375). **Aucune** allégation pour : arginine, glucosamine, chondroïtine, MSM, cranberry.
+- **Décision de Rafael** : on réutilise ces formulations « en attente » (récupère le vocabulaire digestion) ; jamais « ballonnements », « transit régulé », « muqueuses », « rétention d'eau », « élimine les toxines », ni chiffres de kilos promis.
+- **Fiches réécrites** : Argi+, Therm, Freedom, FAB, Mini Aloe Argi+, Berry Nectar, Aloe Pêche, Aloe Mango (FAQ, caractéristiques, corps, meta). **Fiches corrigées** : pulpe (digestion réintégrée), C9 vanille et chocolat (plus de « 2 à 5 kg », renvoi au journal), DX4 (plus de « toxines », choline et fonction hépatique), Marine Collagen, Fast Break, Lite Ultra vanille et choco (allégation protéines / masse musculaire), 4-Pack, 4-Pack Mix.
+- Menu : sous-titre Sport « Performance & récupération » → « Shakes, barres & compléments ».
+- **Reste à faire (lot cosmétiques)** : Aloe Gelly (« petites brûlures, piqûres d'insectes »), Aloe MSM Gel (« soulagement immédiat », tensions musculaires), Propolis Crème (« réparatrices »), Bright Toothgel (gencives). Ce sont des cosmétiques : les allégations à visée thérapeutique y sont interdites aussi. Noms des programmes C9 (« Cure détox 9 jours ») conservés pour l'instant.
+
 ## Lot V4 du 13 novembre 2026 — offre visible, recommander en 1 clic, fiche shampoing
 
 - **Bandeau « Offre du moment »** (`src/components/BandeauOffre.astro`) sous l'en-tête de l'accueil et des fiches produit. Il lit `offres.ts` comme le popup : non rendu au build si l'offre est finie, retiré dans le navigateur avant `debut` et après `fin` (testé au 01/12 : absent). Rien à faire le 1er décembre pour le masquer ; il réapparaîtra tout seul avec la prochaine offre saisie dans `offres.ts`.

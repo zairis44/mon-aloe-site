@@ -9,30 +9,30 @@ category: "programmes-detox"
 description: "La cure C9 de 9 jours, version shakes chocolat. Même programme complet que le C9 vanille-pêche (gel d'aloe vera, compléments ciblés, guide jour par jour), avec des shakes au goût chocolat pour les gourmands. Pour relancer votre digestion et repartir sur de bonnes bases. Accompagnement personnalisé par Rafael."
 titreDetails: "Programme C9 Forever Chocolat-Pêche : votre cure détox complète en 9 jours"
 seoTitle: "Programme C9 Chocolat Pêche – Détox 9 jours"
-seoDescription: "Programme C9 Forever Chocolat-Pêche : cure détox 9 jours. Aloe vera, shakes protéinés, compléments ciblés. Perdez du poids naturellement. Livraison France."
+seoDescription: "Programme C9 Forever Chocolat-Pêche : 9 jours pour encadrer votre alimentation avec un objectif de perte de poids. Aloe vera, shakes protéinés chocolat, compléments et guide. Livraison France."
 video: ""
 lienCommande: "http://www.foreverliving.fr/ref/330001628607/475"
 faq:
   - question: "Quelle différence avec le C9 Vanille-Pêche ?"
     reponse: "La saveur des shakes Forever Lite Ultra, rien d'autre. Cette version propose des shakes chocolat, idéals si vous préférez un goût gourmand. Le reste (gel d'aloe vera, Forever Therm, Fiber, Garcinia Plus, guide) est strictement identique aux deux versions. Le choix se fait au goût."
   - question: "Combien de poids peut-on perdre ?"
-    reponse: "Beaucoup perdent 2 à 5 kg sur les 9 jours, surtout de l'eau et des toxines. Les résultats varient selon les personnes et tiennent surtout à ce que vous gardez ensuite. Pour prolonger l'effet, certains enchaînent sur le programme F15 après le C9."
+    reponse: "Le C9 encadre votre alimentation pendant 9 jours, avec un objectif de perte de poids. Je ne vous promets pas de chiffre : les résultats varient d'une personne à l'autre et tiennent surtout à ce que vous gardez ensuite. Mes propres mesures, sur ma dixième cure, sont dans mon journal C9. Pour prolonger la démarche, certains enchaînent ensuite sur le programme F15."
   - question: "Adapté aux débutants ?"
     reponse: "Oui. Le guide propose des exercices pour tous les niveaux : marche rapide, étirements, renforcement léger, sans matériel. Le programme convient aussi bien aux sportifs qu'aux personnes qui reprennent le mouvement."
 caracteristiques:
   - titre: "Comment agit le programme"
-    contenu: "Le C9 joue sur trois leviers en même temps : l'aloe vera soutient la digestion et l'élimination, les shakes protéinés rééquilibrent l'apport nutritionnel, et Forever Therm accompagne le métabolisme. Cette approche d'ensemble vise une perte de poids progressive plutôt qu'un régime brutal."
+    contenu: "Le C9 joue sur trois leviers en même temps : l'aloe vera, qui aide à soutenir la digestion, les shakes protéinés, qui structurent les repas, et Forever Therm, dont le thé vert contribue au contrôle du poids. Cette approche d'ensemble vise une démarche progressive plutôt qu'un régime brutal."
   - titre: "Le déroulé jour par jour"
     contenu: "Jours 1-2 (allègement) : gel d'aloe vera, shakes et compléments. Jours 3-9 (rééquilibrage) : un repas équilibré réintroduit chaque jour selon le guide. Buvez au moins 3 litres d'eau par jour. Ajoutez une activité douce, 30 minutes de marche ou les exercices du guide."
   - titre: "Résultats et accompagnement"
-    contenu: "En moyenne : 2 à 5 kg perdus, moins de ballonnements, un regain d'énergie souvent autour du 3e jour. Livraison rapide en France. Accompagnement personnalisé par Rafael Avenard, distributeur Forever en Loire-Atlantique, joignable au 06 77 35 22 26."
+    contenu: "Je ne vous promets pas de chiffre : chacun réagit différemment. Mes propres mesures, jour par jour, sont dans mon journal C9. Livraison rapide en France. Accompagnement personnalisé par Rafael Avenard, distributeur Forever en Loire-Atlantique, joignable au 06 77 35 22 26."
 ---
 
 Vous voulez faire un C9 mais le goût vanille des shakes ne vous tente pas. Cette version chocolat règle la question : exactement le même programme de 9 jours, avec des shakes gourmands au cacao.
 
 ## Le C9, version chocolat
 
-Le coffret réunit le gel d'aloe vera stabilisé, les shakes Forever Lite Ultra saveur chocolat (environ 90 kcal, 17 g de protéines), Forever Therm pour le métabolisme, Forever Fiber pour la satiété et le transit, Forever Garcinia Plus, et un guide nutrition et sport complet. Vous suivez le plan jour après jour, sans rien avoir à improviser.
+Le coffret réunit le gel d'aloe vera stabilisé, les shakes Forever Lite Ultra saveur chocolat (environ 90 kcal, 17 g de protéines), Forever Therm, Forever Fiber, Forever Garcinia Plus, et un guide nutrition et sport complet. Vous suivez le plan jour après jour, sans rien avoir à improviser.
 
 ## Pour qui
 

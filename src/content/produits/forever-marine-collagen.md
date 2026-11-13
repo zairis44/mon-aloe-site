@@ -19,9 +19,9 @@ faq:
   - question: "À quoi sert Forever Marine Collagen ?"
     reponse: "Il accompagne une routine beauté de l'intérieur. Chaque dosette apporte 3 000 mg de peptides de collagène marin hydrolysé, avec de la vitamine C qui contribue à la formation normale du collagène, du zinc qui participe au maintien d'une peau, de cheveux et d'ongles normaux, et de la biotine. C'est un complément alimentaire : il vient en soutien d'une alimentation équilibrée, il ne la remplace pas."
   - question: "D'où vient le collagène et quel est son goût ?"
-    reponse: "Le collagène provient de poisson issu d'une pêche responsable, pas de crustacés ni de coquillages. Les peptides sont hydrolysés, donc découpés en très petites molécules que l'organisme assimile facilement. Côté goût, la dosette a une saveur fruitée acidulée, portée par le jus de pomme et l'acérola. Elle se boit directement, sans préparation."
+    reponse: "Le collagène provient de poisson, pas de crustacés ni de coquillages. Les peptides sont hydrolysés, c'est-à-dire découpés en petits fragments. Côté goût, la dosette a une saveur fruitée acidulée, portée par le jus de pomme et l'acérola. Elle se boit directement, sans préparation."
   - question: "Comment prendre les sachets et à quel moment ?"
-    reponse: "Un sachet de 15 ml par jour, pur ou dilué dans un verre d'eau, un jus ou de la pulpe d'aloe vera. Beaucoup préfèrent le soir ou le matin à jeun, pour une meilleure assimilation. L'essentiel reste la régularité : mieux vaut une prise quotidienne à heure fixe qu'une prise parfaite un jour sur deux."
+    reponse: "Un sachet de 15 ml par jour, pur ou dilué dans un verre d'eau, un jus ou de la pulpe d'aloe vera, au moment qui vous arrange. L'essentiel reste la régularité : une prise quotidienne, à heure fixe, s'oublie moins."
   - question: "Combien de temps dure une cure et au bout de combien de temps voit-on quelque chose ?"
     reponse: "Une boîte de 30 sachets couvre un mois. Pour les cheveux et les ongles, un mois donne déjà des repères. Pour la peau, comptez plutôt trois boîtes, soit une cure de trois mois, renouvelable une à deux fois par an. La peau se renouvelle lentement, les résultats se jugent sur la durée et varient d'une personne à l'autre."
   - question: "Y a-t-il des contre-indications ?"
@@ -35,13 +35,13 @@ caracteristiques:
     contenu: "Boîte de 30 sachets de 15 ml, soit une cure d'un mois. Sans gluten, édulcoré à l'érythritol et aux glycosides de stévia. Contient du poisson. À conserver dans un endroit frais et sec. Déconseillé aux enfants, adolescents, femmes enceintes ou désireuses de l'être et aux fumeurs."
 ---
 
-Vos ongles cassent, vos cheveux ont perdu de la densité, votre peau tire un peu plus qu'avant. La production naturelle de collagène ralentit dès 25 ans, et l'alimentation seule en apporte rarement assez. Forever Marine Collagen répond à ce besoin sous une forme simple : une dosette par jour, à boire en cinq secondes.
+Vous voulez une routine beauté qui passe aussi par l'assiette, sans contrainte. Forever Marine Collagen tient en une dosette par jour, à boire en cinq secondes, avec de la vitamine C qui contribue à la formation normale de collagène pour assurer la fonction normale de la peau, et du zinc et de la biotine qui contribuent au maintien de cheveux et d'une peau normaux.
 
 ## Pourquoi une dosette liquide plutôt qu'une poudre
 
 Le collagène en poudre demande un dosage, un liquide, un shaker et souvent un goût à faire passer. Ici, la formule est déjà liquide et dosée : 15 ml, 3 000 mg de peptides marins hydrolysés, une saveur fruitée acidulée qui vient du jus de pomme et de l'acérola. Vous la buvez directement au sachet ou vous la diluez, au choix. C'est ce qui fait la différence sur trois mois de cure : le geste tient parce qu'il ne demande aucun effort.
 
-Les peptides sont hydrolysés, c'est-à-dire découpés en fragments courts que l'organisme absorbe plus facilement que du collagène brut. La source est marine, issue de poisson de pêche responsable, sans crustacés ni coquillages.
+Les peptides sont hydrolysés, c'est-à-dire découpés en fragments courts. La source est marine, issue de poisson, sans crustacés ni coquillages.
 
 ## Pour qui
 
@@ -55,7 +55,7 @@ Aucun complément ne compense un manque de sommeil, une exposition solaire non p
 
 ## Comment l'associer
 
-La dosette se dilue très bien dans la [pulpe d'aloe vera Forever](/produits/forever-pulpe-daloe-vera/) : une seule prise le matin, deux produits. Si vos articulations vous préoccupent autant que votre peau, [Forever Freedom](/produits/forever-freedom-confort-articulaire/) travaille sur ce terrain de façon complémentaire.
+La dosette se dilue très bien dans la [pulpe d'aloe vera Forever](/produits/forever-pulpe-daloe-vera/) : une seule prise le matin, deux produits.
 
 ## Combien de temps pour juger
 
