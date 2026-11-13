@@ -31,7 +31,7 @@ faq:
   - question: "Faut-il acheter du stock ou un minimum de produits chaque mois ?"
     reponse: "D'après mon expérience de distributeur Forever, non : il n'y a pas de stock nécessaire et pas de minimum d'achat. On commande au fur et à mesure des besoins de ses clients. Vérifiez néanmoins les conditions de votre contrat avant de signer : c'est lui qui fait foi."
   - question: "Combien coûte l'inscription comme distributeur ?"
-    reponse: "À ma connaissance, l'inscription coûte quelques dizaines d'euros avec un kit de démarrage, sans droit d'entrée élevé et sans stock obligatoire. Vérifiez toujours les montants à jour dans votre contrat avant de payer : c'est le document qui fait foi."
+    reponse: "On démarre en achetant un pack de produits : il en existe plusieurs, le premier coûte 345 € et contient l'équivalent de plus de 345 € en produits. Pas de stock obligatoire. Vérifiez toujours les montants à jour dans votre contrat avant de payer : c'est le document qui fait foi."
   - question: "Comment arrête-t-on quand on ne veut plus être distributeur ?"
     reponse: "D'après mon expérience, on arrête quand on veut : il suffit de ne plus passer de commandes, sans durée d'engagement. Pour les formalités exactes (résiliation écrite, remboursement), lisez les conditions de votre contrat."
   - question: "Peut-on perdre de l'argent comme distributeur ?"
@@ -95,7 +95,7 @@ Forever Living est une entreprise de vente directe : un distributeur achète les
 
 | Question | Ce que je constate | À vérifier dans le contrat |
 |---|---|---|
-| 1. Combien pour commencer ? | Quelques dizaines d'euros avec un kit de démarrage, pas de droit d'entrée élevé. | Le montant exact et le contenu du kit au moment de votre inscription. |
+| 1. Combien pour commencer ? | Un premier pack de produits à 345 €, qui contient l'équivalent de plus de 345 € en produits. | Le montant exact et le contenu du kit au moment de votre inscription. |
 | 2. Stock obligatoire ? | **Non** : pas de stock nécessaire. On commande au fur et à mesure des besoins de ses clients. La garantie de reprise du stock prévue par la loi se pose donc moins, puisqu'il n'y a pas de stock imposé. | Qu'aucune clause ne vous impose un stock ou un achat de démarrage au-delà du kit. |
 | 3. D'où viennent les revenus ? | Des produits que vous vendez (et que votre équipe vend, si vous en avez une). | Le plan de rémunération officiel : lisez-le en entier. |
 | 4. Puis-je arrêter facilement ? | **Oui** : on arrête quand on veut, il suffit de ne plus passer de commandes. | Les conditions de résiliation et de rétractation écrites dans votre contrat. |
