@@ -27,7 +27,7 @@ const categories = [
     slug: "programmes-detox",
     label: "Programmes Détox",
     icon: "🔄",
-    desc: "Cures complètes pour repartir sur de bonnes bases. Le C9 (9 jours) et DX4 (4 jours) pour relancer votre métabolisme naturellement.",
+    desc: "Des programmes structurés pour cadrer votre alimentation : C9 (9 jours), DX4 (4 jours) et F15 (15 jours), avec un objectif de perte de poids.",
     couleur: "from-sand to-aloe-50",
     produitPhare: "Programme C9",
     image: "/images/categories/programmes-detox.webp",
@@ -54,9 +54,9 @@ const categories = [
     slug: "nutrition",
     label: "Nutrition",
     icon: "🌱",
-    desc: "Compléments alimentaires naturels certifiés IASC pour soutenir votre santé au quotidien.",
+    desc: "Compléments alimentaires Forever : vitamines, oméga-3, produits de la ruche et plantes, pour compléter une alimentation variée.",
     couleur: "from-aloe-50 to-cream",
-    produitPhare: "Forever Lite Ultra",
+    produitPhare: "Forever Daily",
     image: "/images/categories/nutrition.webp",
   },
 ].map((cat) => ({ ...cat, nbProduits: compter(cat.slug) }))
@@ -65,8 +65,8 @@ const categories = [
 ---
 
 <Layout
-  title="Tous les produits Aloe Vera Forever Living | Esprit Aloé"
-  description="Toute la gamme Forever Living : boissons aloe vera, programmes C9 & DX4, soins beauté, compléments sportifs et nutrition. Certifié IASC. Livraison France."
+  title="Catalogue Forever Living : tous les produits | Esprit Aloé"
+  description="Le catalogue Forever Living en France : boissons aloe vera, programmes C9, DX4 et F15, soins, compléments sportifs et nutrition. Prix et livraison 48–72h."
   canonical="https://espritaloe.fr/produits/"
 >
   <Header />
@@ -80,10 +80,11 @@ const categories = [
           <li class="text-aloe-700 font-medium">Produits</li>
         </ol>
       </nav>
-      <h1 class="text-5xl text-aloe-900 mb-4">Toute la gamme<br />Forever Living</h1>
+      <h1 class="text-5xl text-aloe-900 mb-4">Le catalogue<br />Forever Living</h1>
       <p class="text-lg text-aloe-600 max-w-xl">
-        Des produits naturels à base d'Aloe Vera certifiés IASC, pour chaque besoin de bien-être.
-        Livrés partout en France en 48–72h.
+        Les {tousLesProduits.length} produits Forever que je conseille le plus, classés par gamme : boissons à l'aloe vera,
+        programmes, soins, sport et nutrition. Chaque fiche donne le prix, la composition et les conseils d'utilisation.
+        Commande sur la boutique officielle Forever, livrée partout en France en 48–72h.
       </p>
     </div>
   </section>
