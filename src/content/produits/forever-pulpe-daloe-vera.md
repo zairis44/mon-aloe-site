@@ -22,7 +22,7 @@ faq:
   - question: "Qu’est-ce que je peux attendre d’une cure régulière ?"
     reponse: "Beaucoup de personnes adoptent la pulpe pour leur confort digestif et leur routine du matin. La vitamine C contribue au fonctionnement normal du système immunitaire et aide à réduire la fatigue. Les effets s’installent avec la régularité, pas en un jour."
   - question: "Quand et comment le boire ?"
-    reponse: "Comptez 30 à 60 ml par jour, le matin à jeun, un quart d’heure avant le petit-déjeuner. Buvez-le pur ou allongé d’eau, et secouez la bouteille avant de servir. Le matin à jeun reste le meilleur moment : l’aloe vera agit alors directement sur la muqueuse intestinale. Tenez la cure quatre à six semaines pour juger des effets."
+    reponse: "Comptez 60 à 90 ml par jour, le matin à jeun, un quart d’heure avant le petit-déjeuner. Buvez-le pur ou allongé d’eau, et secouez la bouteille avant de servir. Le matin à jeun reste le meilleur moment : l’aloe vera agit alors directement sur la muqueuse intestinale. Tenez la cure quatre à six semaines pour juger des effets."
   - question: "L'aloe vera Forever peut-il aider à perdre du poids ?"
     reponse: "Pas directement. Le gel ne fait pas maigrir, mais il régule le transit, limite les ballonnements et améliore l'absorption des nutriments. Sur un programme comme le C9 et avec une alimentation équilibrée, il accompagne donc bien une démarche minceur et aide à réduire la rétention d'eau."
   - question: "Le Forever Aloe Vera Gel est-il adapté aux femmes enceintes ?"
@@ -31,7 +31,7 @@ caracteristiques:
   - titre: "Ce que la pulpe change au quotidien"
     contenu: "Vous buvez la même plante utilisée depuis des siècles, sous une forme prête à l’emploi. Le gel concentre vitamines A, B, C et E, des minéraux comme le zinc, le magnésium et le sélénium, des enzymes digestives et des acides aminés. L’acémannane est son polysaccharide principal. Beaucoup de personnes l’adoptent pour le confort digestif et la routine bien-être du matin."
   - titre: "Comment l’intégrer dans votre matinée"
-    contenu: "Versez 30 à 60 ml dans un grand verre, pur ou allongé de 240 ml d’eau, un quart d’heure avant de manger. Si le goût neutre vous rebute, ajoutez-le à un smoothie. Après le sport, il accompagne aussi la récupération. La clé tient en un mot : la régularité. Comptez quatre à six semaines pour mesurer les effets."
+    contenu: "Versez 60 à 90 ml dans un grand verre, pur ou allongé de 240 ml d’eau, un quart d’heure avant de manger. Si le goût neutre vous rebute, ajoutez-le à un smoothie. Après le sport, il accompagne aussi la récupération. La clé tient en un mot : la régularité. Comptez quatre à six semaines pour mesurer les effets."
   - titre: "Utilisation et conservation"
     contenu: "Avant ouverture, la bouteille se garde à température ambiante, à l’abri du soleil. Une fois ouverte, placez-la au réfrigérateur, en dessous de 7 °C, et finissez-la sous 30 jours. Secouez toujours avant de servir. Tenez-la à l’écart de la chaleur, qui dégrade les actifs."
 ---

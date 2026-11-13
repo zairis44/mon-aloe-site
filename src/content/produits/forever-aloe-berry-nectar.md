@@ -27,7 +27,7 @@ caracteristiques:
   - titre: "Ce que le Berry Nectar apporte"
     contenu: "Avec 90,7 % de gel d'aloe vera, cette boisson hydrate les cellules, régule la digestion et apaise les inconforts intestinaux. Les jus de cranberry, pomme et framboise l'enrichissent en antioxydants, en vitamines C et B et en composés végétaux protecteurs. Cette association soutient vos défenses naturelles et protège les cellules du stress oxydatif."
   - titre: "Comment le consommer"
-    contenu: "Secouez avant de servir. Comptez environ 240 ml par jour, purs ou en doses de 30 à 60 ml dans un verre d'eau, un jus ou un smoothie. À boire de préférence avant ou après les repas. Une fois ouvert, conservez au frais et finissez sous 30 jours."
+    contenu: "Secouez avant de servir. Comptez 60 à 90 ml par jour, purs ou allongés d'eau, un jus ou un smoothie. À boire de préférence avant ou après les repas. Une fois ouvert, conservez au frais et finissez sous 30 jours."
   - titre: "Composition et format"
     contenu: "Bouteille de 1 L. Contient du gel d'aloe vera stabilisé (90,7 %), des jus concentrés de cranberry, pomme et framboise, des acidifiants naturels et de la vitamine C antioxydante. Sans gluten, sans lactose, vegan, sans arôme ni conservateur artificiel."
 ---
@@ -44,7 +44,7 @@ Vous voulez les bénéfices d'une cure d'aloe vera sans boire du gel pur tous le
 
 ## Comment l'intégrer
 
-30 à 60 ml par jour, à jeun le matin ou autour des repas, purs ou allongés d'eau. Vous pouvez aussi l'alterner avec le Forever Aloe Vera Gel pour varier les saveurs sur une même cure.
+60 à 90 ml par jour, à jeun le matin ou autour des repas, purs ou allongés d'eau. Vous pouvez aussi l'alterner avec le Forever Aloe Vera Gel pour varier les saveurs sur une même cure.
 
 Pour comprendre l'action de fond, lisez nos guides sur [l'aloe vera et la digestion](/blog/aloe-vera-digestion-bienfaits/) et sur [l'aloe vera et les défenses naturelles](/blog/aloe-vera-systeme-immunitaire-defenses-naturelles/).
 

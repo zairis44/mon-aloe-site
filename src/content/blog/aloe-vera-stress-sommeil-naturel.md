@@ -55,7 +55,7 @@ Le **[Forever ARGI+](/produits/forever-argi-pls/)** apporte, en plus de 5 g d'ar
 
 ## Les produits Forever pour une routine anti-stress
 
-Le **[Forever Aloe Vera Gel](/produits/forever-pulpe-daloe-vera/)** est la base : 30 à 60 ml chaque matin à jeun. C'est le produit à privilégier si vous démarrez.
+Le **[Forever Aloe Vera Gel](/produits/forever-pulpe-daloe-vera/)** est la base : 60 à 90 ml chaque matin à jeun. C'est le produit à privilégier si vous démarrez.
 
 Le **[Forever ARGI+](/produits/forever-argi-pls/)** complète la routine pour les périodes chargées : un stick dans 240 ml d'eau, dans la journée. Déconseillé pendant la grossesse et l'allaitement, et sous anticoagulant.
 
@@ -63,7 +63,7 @@ Le **[Mini Aloe Argi+](/produits/mini-aloe-argi-plus/)** est le format nomade, p
 
 ## Une routine concrète pour retrouver la sérénité
 
-**Le matin** : 30 à 60 ml de Forever Aloe Vera Gel à jeun. Si la journée s'annonce chargée, ajoutez un stick ARGI+ dans 240 ml d'eau.
+**Le matin** : 60 à 90 ml de Forever Aloe Vera Gel à jeun. Si la journée s'annonce chargée, ajoutez un stick ARGI+ dans 240 ml d'eau.
 
 **En journée** : buvez régulièrement de l'eau et évitez la caféine après 14 h, qui perturbe le sommeil. Quelques minutes de marche à l'extérieur aident à couper.
 
@@ -79,7 +79,7 @@ Sources :
 
 ## Ce qu'il faut retenir
 
-L'aloe vera Forever n'est pas un sédatif. C'est une boisson de routine, enrichie en vitamine C, qui contribue au fonctionnement normal du système nerveux et à la réduction de la fatigue. Elle trouve sa place dans un rituel du matin, à raison de 30 à 60 ml à jeun, pas comme une solution au stress.
+L'aloe vera Forever n'est pas un sédatif. C'est une boisson de routine, enrichie en vitamine C, qui contribue au fonctionnement normal du système nerveux et à la réduction de la fatigue. Elle trouve sa place dans un rituel du matin, à raison de 60 à 90 ml à jeun, pas comme une solution au stress.
 
 Ce qui compte le plus, c'est une hygiène de vie cohérente : horaires de sommeil réguliers, écrans et caféine limités en fin de journée, hydratation suffisante et activité physique. C'est l'ensemble qui fait la différence, pas un produit isolé.
 

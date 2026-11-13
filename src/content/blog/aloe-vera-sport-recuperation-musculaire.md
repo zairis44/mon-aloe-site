@@ -63,7 +63,7 @@ Le **[Forever ARGI+](/produits/forever-argi-pls/)** apporte 5 g de L-arginine pa
 
 ## Les produits Forever pour les sportifs
 
-**[Forever Aloe Vera Gel](/produits/forever-pulpe-daloe-vera/)** : la base. 30 à 60 ml par jour, par exemple après la séance, dans votre routine d'hydratation.
+**[Forever Aloe Vera Gel](/produits/forever-pulpe-daloe-vera/)** : la base. 60 à 90 ml par jour, par exemple après la séance, dans votre routine d'hydratation.
 
 **[Forever Freedom](/produits/forever-freedom-confort-articulaire/)** : pour les pratiquants de sports d'impact qui veulent une formule pensée pour le confort articulaire. Glucosamine, chondroïtine, MSM et aloe vera, 90 ml par jour en deux prises.
 
@@ -77,7 +77,7 @@ Le **[Forever ARGI+](/produits/forever-argi-pls/)** apporte 5 g de L-arginine pa
 
 **Avant l'effort** (30 minutes avant) : 1 stick Forever ARGI+ dans 240 ml d'eau ou de jus d'aloe vera. Pour une séance longue, et si vous tolérez la caféine : 1 canette Forever FAB.
 
-**Après l'effort** : de l'eau, un repas ou une collation qui apporte des protéines et des glucides, et, si vous le souhaitez, 30 à 60 ml de Forever Aloe Vera Gel. L'Aloe MSM Gel en massage sur les zones sollicitées (mollets, genoux, épaules).
+**Après l'effort** : de l'eau, un repas ou une collation qui apporte des protéines et des glucides, et, si vous le souhaitez, 60 à 90 ml de Forever Aloe Vera Gel. L'Aloe MSM Gel en massage sur les zones sollicitées (mollets, genoux, épaules).
 
 **Les jours de repos** : la pulpe le matin à jeun, un quart d'heure avant le petit-déjeuner. Forever Freedom matin et soir si vous suivez une cure. Si une douleur articulaire persiste, consultez plutôt que d'augmenter les doses.
 
