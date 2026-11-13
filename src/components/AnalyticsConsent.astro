@@ -126,7 +126,14 @@
   else {
     flags[`ga-disable-${measurementId}`] = true;
     removeAnalyticsCookies();
-    if (consent === null) showBanner();
+    if (consent === null) {
+      // Affiche le bandeau une fois les polices chargées : sinon son texte
+      // se recompose au chargement de Fraunces/Mulish, le bandeau (ancré en bas)
+      // change de hauteur et Google compte un décalage de mise en page (CLS ≈ 0,2).
+      const fontsReady = document.fonts?.ready ?? Promise.resolve();
+      const timeout = new Promise(resolve => setTimeout(resolve, 1500));
+      Promise.race([fontsReady, timeout]).then(() => showBanner());
+    }
   }
 </script>
 

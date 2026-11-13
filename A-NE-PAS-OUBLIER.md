@@ -1,6 +1,13 @@
 # Esprit Aloé — À ne pas oublier
 *Mise à jour : 13 novembre 2026*
 
+## Lot S du 13 novembre 2026 — audit Ubersuggest (score 91/100) et PageSpeed
+
+- **CLS sur ordinateur** : PageSpeed mesurait 0,211 (seuil Google : 0,1). Cause : le bandeau de consentement apparaissait avant le chargement des polices, puis changeait de hauteur, ancré en bas, ce qui le faisait bouger. Correctif dans `AnalyticsConsent.astro` : le bandeau s'affiche après `document.fonts.ready` (au plus 1,5 s). Mesure locale : 0,219 → 0,002 (article avis), 0,183 → 0,002 (fiche pulpe).
+- **Contenu trop court** (< 200 mots) sur `/produits/programmes-detox/` et `/produits/sport-et-fitness/` : ajout d'un bloc « lequel choisir ? » (champ `guide` dans la config de `[categorie]/index.astro`), sans allégation. Descriptions de ces deux catégories corrigées (plus de « relancer votre métabolisme » ni de « performances »).
+- Ignoré volontairement : title de l'avis à 73 caractères (page gelée), pages bloquées (bilan C9 en noindex, pages légales : voulu), « URL non optimisées » (faux positifs).
+- **Le projet Ubersuggest suit encore monaloeverabienetre.fr** (ancien domaine) : ses suggestions de mots-clés portent sur l'ancien site. Rafael doit le basculer sur espritaloe.fr (plan gratuit = 1 projet).
+
 ## Lot R du 13 novembre 2026 — title de l'accueil + différenciation danger / avis (validé par Rafael)
 
 - **Accueil** : title « Forever Living — Commander les Produits Aloe Vera en France » → « Forever Living : distributeur et commande d'aloe vera en France » (cible : « distributeur forever living » ×4, positions 17–18, SD 12). FAQ C9 de l'accueil (visible + JSON-LD) sans « nettoyer l'organisme / relancer le métabolisme ». **Mesure de l'accueil : repart du 13/11.**
