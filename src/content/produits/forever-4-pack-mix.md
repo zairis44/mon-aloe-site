@@ -27,7 +27,7 @@ caracteristiques:
   - titre: "Ce que le coffret apporte"
     contenu: "Chaque bouteille offre les bienfaits de l'aloe vera pur (plus de 90 % de gel stabilisé) : hydratation, soutien de la digestion, apaisement intestinal. Les arômes ajoutent leurs nuances : bêta-carotène pour la mangue, antioxydants pour les fruits rouges, douceur pour la pêche. Alterner les saveurs varie la palette nutritionnelle et soutient les défenses naturelles, tout en prolongeant le plaisir au fil de la semaine."
   - titre: "Comment le consommer"
-    contenu: "Secouez avant de servir. Au quotidien, buvez 30 à 60 ml, purs ou dilués dans un verre d'eau, un jus ou un smoothie, de préférence le matin à jeun ou autour des repas. Une fois ouverte, gardez chaque bouteille au réfrigérateur et finissez-la sous 30 jours. Un coffret à partager en famille ou à savourer selon vos envies."
+    contenu: "Secouez avant de servir. Au quotidien, buvez 60 à 90 ml, purs ou dilués dans un verre d'eau, un jus ou un smoothie, de préférence le matin à jeun ou autour des repas. Une fois ouverte, gardez chaque bouteille au réfrigérateur et finissez-la sous 30 jours. Un coffret à partager en famille ou à savourer selon vos envies."
   - titre: "Composition et format"
     contenu: "Quatre bouteilles de 830 ml. Chaque saveur contient plus de 90 % de gel d'aloe vera stabilisé, du jus de fruits naturel adapté (mangue, cranberry, pomme, pêche), des acidifiants naturels, de la vitamine C antioxydante et des épaississants naturels. Sans gluten, sans lactose, vegan, sans arômes artificiels ni conservateurs."
 ---
@@ -44,7 +44,7 @@ Vous débutez avec l'aloe vera et voulez tester avant de vous engager sur une sa
 
 ## Comment l'intégrer
 
-30 à 60 ml par jour, le matin à jeun ou autour des repas, en alternant les saveurs au fil de la semaine. Gardez chaque bouteille ouverte au frais.
+60 à 90 ml par jour, le matin à jeun ou autour des repas, en alternant les saveurs au fil de la semaine. Gardez chaque bouteille ouverte au frais.
 
 Pour comprendre l'action de fond, lisez nos guides sur [la digestion](/blog/aloe-vera-digestion-bienfaits/) et sur [les défenses naturelles](/blog/aloe-vera-systeme-immunitaire-defenses-naturelles/).
 

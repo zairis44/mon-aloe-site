@@ -21,14 +21,14 @@ faq:
   - question: "Combien de temps se conserve la bouteille ouverte ?"
     reponse: "Une fois ouverte, gardez-la au frais et finissez-la sous 30 jours pour préserver ses qualités. Secouez avant chaque service."
   - question: "Convient-il aux personnes diabétiques ?"
-    reponse: "Il ne contient pas de sucre ajouté, mais reste naturellement sucré par les fruits. Si vous êtes diabétique ou sous traitement, parlez-en à votre médecin avant d'en boire, car l'aloe vera peut influencer la glycémie. Les doses modérées, 30 à 60 ml par jour, sont en général bien tolérées."
+    reponse: "Il ne contient pas de sucre ajouté, mais reste naturellement sucré par les fruits. Si vous êtes diabétique ou sous traitement, parlez-en à votre médecin avant d'en boire, car l'aloe vera peut influencer la glycémie. Respectez la dose de 60 à 90 ml par jour."
   - question: "Et pendant la grossesse ?"
     reponse: "Par précaution, on déconseille l'aloe vera par voie orale pendant la grossesse et l'allaitement. Les femmes enceintes ou allaitantes évitent donc ce produit et posent leurs questions à leur médecin. Cette consigne vaut pour toutes les boissons à base de gel d'aloe vera Forever."
 caracteristiques:
   - titre: "Ce que l'Aloe Mango apporte"
     contenu: "L'aloe vera et la mangue forment un duo complémentaire. Le gel d'aloe vera stabilisé hydrate les cellules, soutient la flore digestive et accompagne le confort intestinal. La mangue apporte vitamines A et C, antioxydantes, qui participent au maintien des défenses naturelles. L'ensemble aide aussi à limiter les sensations de ballonnement. Sans sucre ajouté, c'est une option intéressante si vous surveillez votre alimentation."
   - titre: "Comment le consommer"
-    contenu: "Secouez avant l'emploi. Buvez 30 à 60 ml par jour, purs ou allongés d'eau, de jus ou dans un smoothie pour varier. Servez-le frais : il est particulièrement agréable en été ou après une séance de sport."
+    contenu: "Secouez avant l'emploi. Buvez 60 à 90 ml par jour, purs ou allongés d'eau, de jus ou dans un smoothie pour varier. Servez-le frais : il est particulièrement agréable en été ou après une séance de sport."
   - titre: "Composition et format"
     contenu: "Bouteille de 830 ml. Contient du gel d'aloe vera stabilisé, de l'extrait et de la purée de mangue, du jus concentré de citron, de l'acide citrique et de la vitamine C antioxydante. Sans gluten, sans lactose, sans soja, sans arôme ni conservateur artificiel. Adapté à un régime vegan."
 ---
@@ -45,7 +45,7 @@ Vous débutez avec l'aloe vera et cherchez une entrée en matière agréable. Vo
 
 ## Comment l'intégrer
 
-En cure matinale, 30 à 60 ml à jeun dans un grand verre d'eau. Ou tout au long de la journée, frais, comme boisson plaisir. Pensez à le finir dans les 30 jours après ouverture.
+En cure matinale, 60 à 90 ml à jeun dans un grand verre d'eau. Ou tout au long de la journée, frais, comme boisson plaisir. Pensez à le finir dans les 30 jours après ouverture.
 
 Pour comprendre l'action de fond de l'aloe vera, lisez nos guides sur [la digestion](/blog/aloe-vera-digestion-bienfaits/) et sur [les défenses naturelles](/blog/aloe-vera-systeme-immunitaire-defenses-naturelles/).
 

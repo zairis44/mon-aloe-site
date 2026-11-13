@@ -55,7 +55,7 @@ On lit souvent que l'aloe vera apporte du zinc ou des vitamines B en quantité u
 
 ## Les produits Forever recommandés
 
-Le **[Forever Aloe Vera Gel](/produits/forever-pulpe-daloe-vera/)** est la base d'une cure de saison : 30 à 60 ml par jour, le matin à jeun, pendant quatre à six semaines. C'est la formule la plus simple de la gamme, enrichie en vitamine C.
+Le **[Forever Aloe Vera Gel](/produits/forever-pulpe-daloe-vera/)** est la base d'une cure de saison : 60 à 90 ml par jour, le matin à jeun, pendant quatre à six semaines. C'est la formule la plus simple de la gamme, enrichie en vitamine C.
 
 Le **[Forever Aloe Vera 4 Pack](/produits/forever-aloe-vera-4pack/)** permet de démarrer une cure en variant les saveurs (gel pur, berry nectar, pêche, mangue). Chaque bouteille contient plus de 80 % de gel stabilisé certifié IASC.
 
@@ -65,7 +65,7 @@ Le **[Mini Aloe Argi+](/produits/mini-aloe-argi-plus/)** apporte de l'arginine e
 
 ### La cure de saison
 
-Les changements de saison (septembre-octobre, mars-avril) sont un bon moment pour une cure de 4 à 6 semaines : 30 à 60 ml de gel Forever le matin à jeun, chaque jour.
+Les changements de saison (septembre-octobre, mars-avril) sont un bon moment pour une cure de 4 à 6 semaines : 60 à 90 ml de gel Forever le matin à jeun, chaque jour.
 
 ### La routine quotidienne
 
@@ -95,6 +95,6 @@ Sources :
 
 L'aloe vera Forever apporte dans un même produit surtout de la vitamine C, qui contribue au fonctionnement normal du système immunitaire et aide à réduire la fatigue. Ce n'est pas un bouclier contre les infections : c'est une boisson de routine, qui trouve sa place aux changements de saison, à côté des habitudes qui comptent vraiment.
 
-Ces habitudes restent la base : sommeil suffisant, alimentation variée, activité physique modérée et gestion du stress. Pour une cure, comptez 30 à 60 ml le matin à jeun, sur quatre à six semaines. Aucun complément ne remplace un avis ni un traitement médical : en cas de fièvre persistante, d'infections à répétition ou de doute sur votre état de santé, consultez votre médecin.
+Ces habitudes restent la base : sommeil suffisant, alimentation variée, activité physique modérée et gestion du stress. Pour une cure, comptez 60 à 90 ml le matin à jeun, sur quatre à six semaines. Aucun complément ne remplace un avis ni un traitement médical : en cas de fièvre persistante, d'infections à répétition ou de doute sur votre état de santé, consultez votre médecin.
 
 Besoin d'aide pour choisir votre cure ? [Contactez-moi](/contact/), je vous oriente selon votre profil.

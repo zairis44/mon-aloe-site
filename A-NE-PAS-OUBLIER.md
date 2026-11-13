@@ -13,9 +13,8 @@
 - **Décisions de Rafael du 13/11 (lot O2, même jour)** :
   - seoTitle digestion : « 5 bienfaits prouvés » → « Aloe vera digestion : bienfaits et limites » (garde « aloe vera digestion » et « bienfaits ») ; meta description adoucie en même temps. **Mesure digestion : repart du 13/11.**
   - Metas stress et immunité réécrites pour décrire le contenu réel. **Mesure : repart du 13/11.**
-  - Dose de pulpe alignée sur 30–60 ml/jour (article digestion : texte + FAQ + JSON-LD).
+  - Dose des boissons aloe vera alignée sur **60–90 ml/jour** partout (correction de Rafael) : articles sport, digestion (texte, FAQ, JSON-LD), immunité, stress ; fiches Pulpe, Mango, Berry Nectar, 4-Pack Mix, Aloe Pêche (qui disait 90–120 ml). Hors champ : protocole C9 (120 ml matin et soir) et Freedom (90 ml).
 - Encore à adoucir plus tard : metas cheveux (« chute de cheveux ») et peau (« anti-âge… ce que l'aloe vera fait vraiment »).
-- Incohérence de dose dans les fiches (lot fiches) : Aloe Pêche dit 90–120 ml dans la FAQ et 60–90 ml dans le texte ; 4-Pack dit 60–90 ml. À vérifier sur l'étiquette de chaque boisson.
 - Reste en backlog : allégations dans les **fiches produit** (Therm « thermogenèse », ARGI+ « circulation optimale », FAB « hydratation cellulaire », Freedom « entretiennent le cartilage »…) : lot dédié, fiche par fiche.
 
 ## Lot N du 12 novembre 2026 — GEO : sources, dates, llms.txt, identité

@@ -16,7 +16,7 @@ faq:
   - question: "Quels sont les bienfaits de l'Aloe Vera Pêche ?"
     reponse: "Sa force vient du gel d'aloe vera (84,5 %), riche en acémannane, reconnu pour apaiser et équilibrer la digestion. La purée de pêche ajoute vitamines, antioxydants et une touche fruitée. Vous hydratez votre organisme, vous soutenez vos défenses naturelles et vous donnez un coup de boost à votre énergie."
   - question: "Quelle quantité par jour ?"
-    reponse: "Comptez 30 à 40 ml, trois fois par jour, soit 90 à 120 ml au total. Buvez-le pur ou dilué dans un verre d'eau ou de jus, selon votre goût. Secouez avant chaque prise pour bien répartir les nutriments."
+    reponse: "Comptez 60 à 90 ml par jour, en une ou deux prises. Buvez-le pur ou dilué dans un verre d'eau ou de jus, selon votre goût. Secouez avant chaque prise pour bien répartir les nutriments."
   - question: "Y a-t-il des contre-indications ?"
     reponse: "La boisson est bien tolérée. Un excès peut entraîner de légers effets digestifs. Pendant la grossesse, l'allaitement ou en cas de pathologie, demandez l'avis d'un professionnel. Et respectez la dose quotidienne conseillée."
   - question: "Peut-on l'associer à d'autres produits Forever ?"
@@ -27,7 +27,7 @@ caracteristiques:
   - titre: "Aloe vera et pêche, ce qu'ils apportent ensemble"
     contenu: "L'aloe vera contient de l'acémannane, un polysaccharide reconnu pour soutenir l'immunité et apaiser la digestion. La purée de pêche, riche en antioxydants, en fibres solubles et en vitamines A et C, renforce la vitalité cellulaire et aide à lutter contre le stress oxydatif. Ce duo soutient l'équilibre digestif, renforce vos barrières naturelles et donne un coup de boost quotidien à votre énergie."
   - titre: "Comment l'intégrer au quotidien"
-    contenu: "Boire 90 à 120 ml par jour, répartis sur 2 à 3 prises, suffit à apporter à votre organisme les nutriments du gel d'aloe vera. Vous soutenez votre digestion et vous vous hydratez en profondeur. Facile à glisser dans la journée, cette boisson remplace avantageusement un jus sucré, avec une texture fluide et un goût doux."
+    contenu: "Boire 60 à 90 ml par jour, en une ou deux prises, suffit à apporter à votre organisme les nutriments du gel d'aloe vera. Vous soutenez votre digestion et vous vous hydratez en profondeur. Facile à glisser dans la journée, cette boisson remplace avantageusement un jus sucré, avec une texture fluide et un goût doux."
   - titre: "Format, conservation, geste responsable"
     contenu: "Conditionnée en Tetra Pak écoresponsable, la boisson garde sa fraîcheur sans conservateur. Après ouverture, gardez-la au réfrigérateur et finissez-la sous 30 jours. Le format d'un litre couvre environ 8 à 10 jours de cure, de quoi installer une habitude saine et durable."
 ---
