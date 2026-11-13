@@ -3,6 +3,7 @@ name: Forever Freedom
 reference: '196'
 slug: forever-freedom-confort-articulaire
 price: 50.89
+coutJour: 'environ 4,60 € par jour (90 ml)'
 image: /images/produits/forever-freedom-confort-articulaire-2.webp
 images:
 - /images/produits/forever-freedom-confort-articulaire-3.webp

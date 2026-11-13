@@ -3,6 +3,7 @@ name: "Programme F15 Intermédiaire Chocolat – 15 jours pour franchir un palie
 reference: "533"
 slug: "programme-f15-intermediaire-chocolat"
 price: 181.74
+coutJour: 'environ 12 € par jour sur 15 jours'
 image: "/images/produits/programme-f15-intermediaire-chocolat.webp"
 images: []
 category: "programmes-detox"

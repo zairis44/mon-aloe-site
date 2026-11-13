@@ -32,6 +32,26 @@ const config: Record<string, { label: string; icon: string; desc: string; couleu
     icon: "🥤",
     desc: "Pulpe d'aloe vera pure, boissons enrichies et coffrets pour votre bien-être intérieur.",
     couleur: "from-aloe-50 to-aloe-100",
+    guide: `
+      <h2>Quelle boisson aloe vera choisir ?</h2>
+      <p>Toutes ces boissons partent du gel d'aloe vera Forever. L'aloe vera aide à soutenir la digestion ; la vitamine C ajoutée contribue au fonctionnement normal du système immunitaire. Ce qui change d'une bouteille à l'autre, c'est le goût, la part d'aloe vera et ce qui l'accompagne.</p>
+      <div class="table-wrap">
+      <table>
+        <thead><tr><th>Boisson</th><th>Goût</th><th>Aloe vera</th><th>Prix</th><th>Par jour*</th><th>Pour qui</th></tr></thead>
+        <tbody>
+          <tr><td><a href="/produits/forever-pulpe-daloe-vera/">Forever Aloe Vera Gel</a></td><td>Nature</td><td>99,7 %</td><td>37,29 €</td><td>2,25 – 3,35 €</td><td>Pour débuter, base des programmes C9 et F15</td></tr>
+          <tr><td><a href="/produits/forever-aloe-vera-peche-bien-etre/">Aloe Pêche</a></td><td>Pêche, doux</td><td>84,5 %</td><td>37,29 €</td><td>2,25 – 3,35 €</td><td>Si le goût nature ne vous tente pas</td></tr>
+          <tr><td><a href="/produits/forever-aloe-berry-nectar/">Aloe Berry Nectar</a></td><td>Cranberry et pomme</td><td>90,7 %</td><td>37,29 €</td><td>2,25 – 3,35 €</td><td>Pour un goût fruité et acidulé</td></tr>
+          <tr><td><a href="/produits/forever-aloe-mango/">Aloe Mango</a></td><td>Mangue</td><td>86 %</td><td>37,29 €</td><td>2,25 – 3,35 €</td><td>Pour un goût plus exotique</td></tr>
+          <tr><td><a href="/produits/forever-freedom-confort-articulaire/">Forever Freedom</a></td><td>Orange</td><td>Base aloe vera + glucosamine, chondroïtine, MSM</td><td>50,89 €</td><td>≈ 4,60 €</td><td>Personnes actives</td></tr>
+          <tr><td><a href="/produits/forever-fab-active-boost/">FAB Active Boost</a></td><td>Fruité, pétillant, avec caféine</td><td>Base aloe vera</td><td>51,93 € les 12</td><td>≈ 4,30 € / canette</td><td>Adultes actifs, ponctuellement</td></tr>
+        </tbody>
+      </table>
+      </div>
+      <p class="note">* Bouteilles d'un litre, sur la base de 60 à 90 ml par jour (90 ml pour Freedom). Prix de la boutique Forever en novembre 2026.</p>
+      <p>Mon conseil : si vous débutez, prenez le goût qui vous donne envie d'en boire tous les jours. C'est la régularité qui compte. Vous hésitez ? Le <a href="/produits/forever-4-pack-mix/">4-Pack Mix</a> permet de goûter quatre saveurs, ou <a href="/contact/">écrivez-moi</a>.</p>
+      <p><strong>Grossesse, allaitement :</strong> par précaution, l'aloe vera à boire est déconseillé pendant ces périodes.</p>
+    `,
   },
   'programmes-detox': {
     label: "Programmes Détox",
@@ -282,4 +302,10 @@ const schemaItemList = {
   .guide-categorie :global(ul) { list-style: disc; padding-left: 1.25rem; margin-bottom: 1rem; }
   .guide-categorie :global(li) { margin-bottom: .6rem; }
   .guide-categorie :global(a) { text-decoration: underline; text-underline-offset: 3px; color: var(--color-aloe-800, #1f3c29); }
+  .guide-categorie :global(.table-wrap) { overflow-x: auto; margin: 0 -0.25rem 1rem; }
+  .guide-categorie :global(table) { width: 100%; min-width: 640px; border-collapse: collapse; font-size: .875rem; background: #fff; border-radius: 1rem; overflow: hidden; }
+  .guide-categorie :global(th) { text-align: left; background: var(--color-aloe-800, #1f3c29); color: #fff; font-weight: 600; padding: .6rem .75rem; }
+  .guide-categorie :global(td) { padding: .6rem .75rem; border-top: 1px solid var(--color-aloe-100, #e3ece4); vertical-align: top; }
+  .guide-categorie :global(td:nth-child(4)), .guide-categorie :global(td:nth-child(5)) { white-space: nowrap; }
+  .guide-categorie :global(.note) { font-size: .8rem; color: var(--color-aloe-500, #5b7d64); }
 </style>

@@ -3,6 +3,7 @@ name: Forever Aloe Vera Pêche
 reference: '877'
 slug: forever-aloe-vera-peche-bien-etre
 price: 37.29
+coutJour: 'environ 2,25 à 3,35 € par jour (60 à 90 ml)'
 image: /images/produits/forever-aloe-vera-peche-bien-etre.webp
 images: []
 category: boissons-aloe-vera

@@ -3,6 +3,7 @@ name: Forever Aloe Vera Gel – Pulpe d’aloe vera pure à 99,7 %
 reference: '815'
 slug: forever-pulpe-daloe-vera
 price: 37.29
+coutJour: 'environ 2,25 à 3,35 € par jour (60 à 90 ml)'
 image: /images/produits/forever-pulpe-daloe-vera.webp
 images: []
 category: boissons-aloe-vera

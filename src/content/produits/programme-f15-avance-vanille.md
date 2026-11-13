@@ -3,6 +3,7 @@ name: "Programme F15 Avancé Vanille – 15 jours pour affiner et performer"
 reference: "536"
 slug: "programme-f15-avance-vanille"
 price: 181.74
+coutJour: 'environ 12 € par jour sur 15 jours'
 image: "/images/produits/programme-f15-avance-vanille.webp"
 images: []
 category: "programmes-detox"

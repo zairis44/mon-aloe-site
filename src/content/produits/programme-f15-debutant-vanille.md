@@ -3,6 +3,7 @@ name: "Programme F15 Débutant Vanille – 15 jours pour ancrer vos habitudes"
 reference: "528"
 slug: "programme-f15-debutant-vanille"
 price: 181.74
+coutJour: 'environ 12 € par jour sur 15 jours'
 image: "/images/produits/programme-f15-debutant-vanille.webp"
 images: []
 category: "programmes-detox"

@@ -3,6 +3,7 @@ name: Forever Aloe Berry Nectar
 reference: '834'
 slug: forever-aloe-berry-nectar
 price: 37.29
+coutJour: 'environ 2,25 à 3,35 € par jour (60 à 90 ml)'
 image: /images/produits/forever-aloe-berry-nectar.webp
 images: []
 category: boissons-aloe-vera

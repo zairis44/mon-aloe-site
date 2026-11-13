@@ -8,6 +8,8 @@ const produits = defineCollection({
     reference: z.string().optional(),
     slug: z.string(),
     price: z.number(),
+    /** Repère de coût affiché sous le prix, ex. « environ 2,25 à 3,35 € par jour (60 à 90 ml) » */
+    coutJour: z.string().optional(),
     image: z.string(),
     images: z.array(z.string()).optional(),
     category: z.string(),
