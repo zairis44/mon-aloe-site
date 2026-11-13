@@ -1,6 +1,14 @@
 # Esprit Aloé — À ne pas oublier
 *Mise à jour : 13 novembre 2026*
 
+## Lot Q du 13 novembre 2026 — premières données Ubersuggest
+
+- Données complètes : `rapports/mots-cles/2026-11-13-donnees-ubersuggest.md`. Semrush : pas d'unités d'API. Ubersuggest gratuit : 3 recherches par jour.
+- **Article `comment-boire-pulpe-aloe-vera` retargeté sur « aloe vera à boire » (2 900/mois, SD 17) et « jus aloe vera » (1 300, SD 16)** : nouveaux title, H1, description et tags, plus une section « Quels bienfaits attendre du jus d'aloe vera ? » (sans allégation). Le slug reste le même.
+- **Fiche pulpe** : le seoTitle devient « Forever Aloe Vera Gel : pulpe d'aloe vera à boire » (cible : ~3 500/mois en positions 42–48). **La mesure de la fiche repart du 13/11.**
+- Correction du rapport du matin : « comment boire aloe vera » = 10/mois, « code promo forever » et « vente aloe vera domicile » sans volume mesurable.
+- **À valider par Rafael** : le title de l'accueil (proposition dans le rapport) et la cannibalisation danger/avis.
+
 ## Lot P du 13 novembre 2026 — Black Friday + 3 nouvelles pages (mots-clés n° 1, 2, 3)
 
 - **Offre Black Friday** : code `BLACKFRIDAY`, −15 %, nouveaux clients, dès 50 €, jusqu'au dimanche 30/11/2026 23:59. Source unique : `src/data/offres.ts` (OFFRE_EN_COURS).
