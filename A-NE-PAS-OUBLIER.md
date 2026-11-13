@@ -1,6 +1,24 @@
 # Esprit Aloé — À ne pas oublier
 *Mise à jour : 13 novembre 2026*
 
+## Lot P du 13 novembre 2026 — Black Friday + 3 nouvelles pages (mots-clés n° 1, 2, 3)
+
+- **Offre Black Friday** : code `BLACKFRIDAY`, −15 %, nouveaux clients, dès 50 €, jusqu'au dimanche 30/11/2026 23:59. Source unique : `src/data/offres.ts` (OFFRE_EN_COURS).
+- **Popup** (`PopupRemise.astro`) : version Black Friday (fond noir, accents dorés), lit `offres.ts`. Ne s'affiche qu'entre `debut` et `fin` (contrôle dans le navigateur) : **à partir du 1er décembre, plus de popup** tant qu'une nouvelle offre n'est pas saisie dans `offres.ts`. BIENVENUE15 n'est plus affiché. Délai de réaffichage de 7 jours compté par code.
+- **Nouvelle page `/code-promo-forever/`** : offre en cours, mode d'emploi, autres façons de payer moins cher, FAQ (JSON-LD FAQPage). Bascule seule sur « pas de code en cours » après la date de fin. Lien ajouté depuis `/commander/`.
+  - **À faire le 1er décembre** : remplacer la meta description (elle cite le Black Friday) et saisir la prochaine offre dans `offres.ts`.
+- **Nouvel article `vente-a-domicile-aloe-vera-vdi`** (mot-clé n° 1) : statut VDI, mandataire / acheteur-revendeur, vente en ligne via la boutique Forever uniquement, aucune promesse de revenu. Sources : Bpifrance Création, L-Expert-comptable.
+- **Nouvel article `comment-boire-pulpe-aloe-vera`** (mot-clé n° 2) : dose 60–90 ml, moment, pur/dilué, durée, conservation, précautions.
+- FAQ visibles en markdown + champ `faq` (le gabarit blog n'affiche pas le champ `faq`, il ne sert qu'au JSON-LD).
+- `public/llms.txt` mis à jour (page code promo + 2 articles).
+- Pas encore de liens entrants depuis les autres articles vers les 2 nouveaux articles (pages en mesure) : à ajouter après la lecture GSC.
+- Images : aucune (à choisir par Rafael, champ `image` du frontmatter).
+
+## Recherche de mots-clés du 13 novembre 2026
+
+- 10 mots-clés où le site est absent, priorisés : `rapports/mots-cles/2026-11-13-10-mots-cles.md`. Volumes estimés sans outil dédié (à recalibrer avec Semrush/Ubersuggest si branché).
+- Ordre conseillé : VDI aloe vera → comment boire la pulpe → code promo Forever → après C9 / F15 → DX4.
+
 ## Lot O du 13 novembre 2026 — allégations santé restantes dans le corps des articles
 
 - 8 articles nettoyés (corps de texte, H1, H2, FAQ ; **aucun seoTitle ni meta description touché**) : sport, digestion, immunité, stress/sommeil, peau, cheveux, guide C9, perte de poids.
