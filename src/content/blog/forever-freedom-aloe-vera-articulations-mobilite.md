@@ -23,7 +23,7 @@ articlesLies:
   - slug: "aloe-vera-sport-recuperation-musculaire"
     titre: "Aloe vera et sport : récupération musculaire"
   - slug: "aloe-vera-digestion-bienfaits"
-    titre: "Aloe vera digestion : 5 effets concrets"
+    titre: "Aloe vera et digestion : 5 points à connaître"
   - slug: "forever-living-avis-produits-france"
     titre: "Forever Living avis France : les vrais retours"
 draft: false
