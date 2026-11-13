@@ -1,5 +1,5 @@
 ---
-title: "Les produits Forever sont-ils dangereux ? Aloe vera à boire : précautions"
+title: "Les produits Forever sont-ils dangereux ? Aloïne, ANSES et précautions"
 seoTitle: "Les produits Forever sont-ils dangereux ?"
 description: "Les produits Forever sont-ils dangereux ? Latex, aloïne, avis de l'ANSES, précautions et personnes à qui demander conseil. Le point sans exagérer."
 pubDate: 2026-11-12
@@ -37,6 +37,8 @@ faq:
   - question: "Comment reconnaître une boisson d'aloe vera de qualité ?"
     reponse: "Regardez le pourcentage de gel ou de pulpe d'aloe vera, la mention que l'écorce est écartée, la liste des ingrédients, la présence d'un sceau de qualité du secteur (comme l'IASC) et les précautions d'emploi inscrites sur l'étiquette. Un sceau sectoriel n'est pas un contrôle des autorités publiques : il se lit comme un repère parmi d'autres."
 ---
+
+> **En bref** : il n'existe pas de danger établi propre aux produits Forever Living. Le risque identifié par les autorités sanitaires concerne le latex de la feuille d'aloe vera (aloïne), que les boissons à base de pulpe écartent. Comme pour tout complément, respectez la dose et demandez l'avis de votre médecin si vous êtes enceinte, allaitante ou sous traitement.
 
 « Les produits Forever sont-ils dangereux ? » C'est une question que je reçois régulièrement, et elle est légitime. Elle recouvre en réalité celle de l'aloe vera à boire en général. On trouve sur internet des articles qui parlent de risques de cancer et d'autres qui présentent l'aloe vera comme une plante sans le moindre inconvénient. La réalité est entre les deux : il y a un point précis à connaître, et il suffit de comprendre d'où il vient pour s'y retrouver.
 
