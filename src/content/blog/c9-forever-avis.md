@@ -108,7 +108,7 @@ Si vous êtes capable de structurer seul votre alimentation et de vous y tenir, 
 
 **Un point qui m'agace, en revanche** : le shaker n'est pas fourni dans le coffret. Pour ce prix, c'est étonnant. Prévoyez le vôtre.
 
-**Et si vous changez d'avis ?** Les conditions générales de Forever France prévoient 14 jours de rétractation après réception du coffret. Quand vous passez par un distributeur, c'est lui qui gère votre satisfaction et votre remboursement : si le C9 ne vous convient pas, [contactez-moi](/contact/) avec votre numéro de commande. Le détail est dans [mon article sur les avis Forever](/blog/forever-living-avis-produits-france/).
+**Et si le C9 ne vous convient pas ?** Les [conditions générales de vente de Forever France](https://www.foreverliving.fr/FR/fr/corporate/cgu-cgv) prévoient une garantie « satisfait ou remboursé » de 30 jours à compter de la réception : remplacement ou remboursement au choix, le retour étant à vos frais. [Contactez-moi](/contact/) avec votre numéro de commande et je m'occupe de la demande. Le détail est dans [mon article sur les avis Forever](/blog/forever-living-avis-produits-france/).
 
 ## Critique n°4 : « Ça ne marche pas »
 
