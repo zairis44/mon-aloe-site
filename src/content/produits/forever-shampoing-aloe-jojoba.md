@@ -44,6 +44,8 @@ L'aloe vera n'est pas un simple argument d'étiquette ici : c'est le premier ing
 
 Pour celles et ceux qui se lavent les cheveux souvent et veulent un shampoing qui ne les dessèche pas. Pour les familles qui préfèrent un seul flacon dans la douche. Et pour les habitués des soins Forever qui cherchent la suite logique de l'[Aloe Gelly](/produits/aloe-gelly-forever-gel-apaisant/) ou du [savon liquide](/produits/forever-aloe-liquid-soap/).
 
+Pour le démêlage, complétez avec l'[Après-Shampoing Aloe-Jojoba](/produits/forever-apres-shampoing-aloe-jojoba/).
+
 ## Mon conseil
 
 C'est l'un des produits que je recommande le plus souvent : un geste du quotidien, que l'on rachète sans y penser. Pour aller plus loin sur le sujet, lisez notre article sur [l'aloe vera pour les cheveux et le cuir chevelu](/blog/aloe-vera-cheveux-cuir-chevelu-bienfaits/).

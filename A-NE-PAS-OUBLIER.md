@@ -1,6 +1,14 @@
 # Esprit Aloé — À ne pas oublier
 *Mise à jour : 13 novembre 2026*
 
+## Nouveaux produits du 14 novembre 2026 — 5 fiches (49 produits au total)
+
+- **Après-Shampoing Aloe-Jojoba** (réf. 641, 29,26 €), **Aloe Body Wash** (646, 28,31 €), **Aloe Body Lotion** (647, 28,08 €) : catégorie Beauté & Bien-être, photos mises en scène dans les décors salle de bain de Rafael (`scene2.py`). La fiche shampoing renvoie maintenant vers l'après-shampoing.
+- **Programme C9 Berry Vanille** (625) et **C9 Berry Chocolat** (626), 152,42 € : version à l'Aloe Berry Nectar. Photos sur fond blanc (le coffret porte une pastille flottante, inadaptée à une mise en scène). Textes distincts des C9 Pêche (pas de contenu dupliqué), sans chiffre de kilos.
+- Contenu du coffret repris de la boutique Forever : 2 Aloe Berry Nectar, 1 Lite Ultra, 18 Therm, 36 Forever Lean, 9 Fiber, livret numérique. La description Forever du C9 Berry Chocolat parle par erreur de « pulpes d'Aloe vera » et de shake vanille : la fiche suit le nom du produit et la pastille de la boîte (Berry Nectar + chocolat).
+- **Non encore ajoutés** (repérés sur la boutique) : Huile Capillaire (642), Aloe Moisturizing Lotion (63), Gentleman's Pride (70), Aloe First (40), Sérum Hydratant (618), Protecting Day Lotion SPF 20 (645), Crème Régénératrice (650), Activateur Aloès (612), Forever Focus (622), iVision (624), parfums Alofa (643) et Malosi (644).
+- **À revoir** : la description de la fiche C9 Vanille Pêche dit encore « relance votre organisme » et son nom « Cure détox 9 jours ».
+
 ## Lot V8 du 14 novembre 2026 — Devenir distributeur : « L'essentiel en 30 secondes »
 
 - Encadré sous le haut de page : pour démarrer (premier pack à 345 €), temps à prévoir, revenus (aucun garanti, recruter facultatif), prise de contact.
