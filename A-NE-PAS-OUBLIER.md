@@ -1,6 +1,14 @@
 # Esprit Aloé — À ne pas oublier
 *Mise à jour : 13 novembre 2026*
 
+## C9 du 14 novembre 2026 — six versions et correctif de référence
+
+- Information de Rafael : chaque C9 existe en déclinaisons boisson × shake. Références boutique Forever : **475** nature vanille, **476** nature chocolat, **629** pêche vanille, **630** pêche chocolat, **625** berry vanille, **626** berry chocolat (152,42 € chacune).
+- 🔴 **Correctif** : la fiche C9 Chocolat Pêche portait la référence 475 (C9 nature vanille) : le bouton Commander menait au mauvais produit. Corrigée en 630.
+- Nouvelles fiches : `programme-c9-forever-vanille` (475) et `programme-c9-forever-chocolat` (476). Le site a les six versions (51 produits).
+- « Forever Garcinia Plus » remplacé par « Forever Lean » dans les fiches C9 Pêche (contenu actuel du coffret selon la boutique).
+- Guide de la catégorie Programmes : mention des six versions.
+
 ## Nouveaux produits du 14 novembre 2026 — 5 fiches (49 produits au total)
 
 - **Après-Shampoing Aloe-Jojoba** (réf. 641, 29,26 €), **Aloe Body Wash** (646, 28,31 €), **Aloe Body Lotion** (647, 28,08 €) : catégorie Beauté & Bien-être, photos mises en scène dans les décors salle de bain de Rafael (`scene2.py`). La fiche shampoing renvoie maintenant vers l'après-shampoing.

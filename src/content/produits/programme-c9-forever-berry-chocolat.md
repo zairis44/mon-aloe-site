@@ -43,7 +43,7 @@ Le C9 encadre votre alimentation pendant 9 jours, avec un objectif de perte de p
 
 ## Pour bien choisir
 
-Berry Nectar ou Pêche, vanille ou chocolat : prenez ce que vous aurez plaisir à boire neuf jours de suite. Il existe aussi la version [Berry Vanille](/produits/programme-c9-forever-berry-vanille/) et les versions à l'Aloe Pêche, [vanille](/produits/programme-c9-forever-vanille-peche/) ou [chocolat](/produits/programme-c9-forever-chocolat-peche/).
+Berry Nectar ou Pêche, vanille ou chocolat : prenez ce que vous aurez plaisir à boire neuf jours de suite. Il existe aussi la version [Berry Vanille](/produits/programme-c9-forever-berry-vanille/) les versions au gel nature ([vanille](/produits/programme-c9-forever-vanille/) ou [chocolat](/produits/programme-c9-forever-chocolat/)) et les versions à l'Aloe Pêche, [vanille](/produits/programme-c9-forever-vanille-peche/) ou [chocolat](/produits/programme-c9-forever-chocolat-peche/).
 
 ## Avant de vous lancer
 
