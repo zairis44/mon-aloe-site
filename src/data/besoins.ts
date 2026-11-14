@@ -38,10 +38,10 @@ export const BESOINS: Besoin[] = [
   },
   {
     id: 'digestion',
-    titre: 'Confort digestif et routine du matin',
+    titre: 'Digestion et routine du matin',
     court: 'Digestion',
     intro:
-      'L’aloe vera à boire s’intègre facilement à une routine quotidienne. Les boissons de la gamme se distinguent surtout par le goût : nature, canneberge-pomme, pêche ou mangue.',
+      'L’aloe vera aide à soutenir la digestion et s’intègre facilement à une routine quotidienne. Les boissons de la gamme se distinguent surtout par le goût : nature, canneberge-pomme, pêche ou mangue.',
     attention:
       'En cas de maladie digestive, de grossesse, d’allaitement ou de traitement en cours, demandez l’avis d’un professionnel de santé avant de commencer.',
     produits: [
@@ -68,15 +68,15 @@ export const BESOINS: Besoin[] = [
   },
   {
     id: 'sport-articulations',
-    titre: 'Sport et confort articulaire',
-    court: 'Sport et articulations',
+    titre: 'Sport et vie active',
+    court: 'Sport',
     intro:
-      'Pour les personnes actives : une boisson à l’aloe vera enrichie en glucosamine, chondroïtine et MSM, un gel à appliquer localement après l’effort et du collagène marin à boire.',
+      'Pour les personnes actives : une boisson à l’aloe vera enrichie en glucosamine, chondroïtine et MSM, un gel de massage pour l’après-effort et du collagène marin à boire.',
     attention:
       'En cas de douleur persistante, consultez un médecin. Vérifiez les allergènes sur l’étiquette avant d’acheter un complément.',
     produits: [
       ['forever-freedom-confort-articulaire', 'Une boisson aloe vera avec glucosamine, chondroïtine et MSM, saveur orange.'],
-      ['forever-aloe-msm-gel', 'Un gel non gras à l’aloe vera et au MSM, à appliquer sur une zone tendue.'],
+      ['forever-aloe-msm-gel', 'Un gel de massage non gras, à l’aloe vera et au MSM.'],
       ['forever-marine-collagen', 'Du collagène marin en dosettes, avec vitamine C, zinc et biotine.'],
     ],
     guides: ['forever-freedom-aloe-vera-articulations-mobilite', 'aloe-vera-sport-recuperation-musculaire'],
