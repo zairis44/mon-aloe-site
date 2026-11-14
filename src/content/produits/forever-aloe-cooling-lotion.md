@@ -46,7 +46,7 @@ Pour les sportifs qui aiment un massage rafraîchissant après l'effort, et pour
 
 ## Mon conseil
 
-C'est l'un des produits que je recommande le plus souvent, notamment aux sportifs. Elle se glisse dans un sac de sport et complète bien une routine à base d'aloe vera, comme l'[Aloe Gelly](/produits/aloe-gelly-forever-gel-apaisant/). Pour le contexte sportif, lisez notre article sur [l'aloe vera et le sport](/blog/aloe-vera-sport-recuperation-musculaire/).
+C'est l'un des produits que je recommande le plus souvent, notamment aux sportifs. Elle se glisse dans un sac de sport et complète bien une routine à base d'aloe vera, comme l'[Aloe Gelly](/produits/aloe-gelly-forever-gel-apaisant/). Pour savoir lequel prendre selon la situation, consultez notre [comparatif Gelly, MSM Gel et Cooling Lotion](/blog/aloe-vera-gelly-utilisation/). Pour le contexte sportif, lisez notre article sur [l'aloe vera et le sport](/blog/aloe-vera-sport-recuperation-musculaire/).
 
 ## Une question avant de commander ?
 

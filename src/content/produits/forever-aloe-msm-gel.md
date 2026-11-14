@@ -46,7 +46,7 @@ Vous faites du sport, vous avez un métier physique, ou vous aimez simplement un
 
 Sur peau propre, massez doucement, autant de fois que vous le souhaitez. Les sportifs l'associent souvent au Forever Freedom, bu chaque jour.
 
-Pour le contexte sportif, lisez notre article sur [l'aloe vera et le sport](/blog/aloe-vera-sport-recuperation-musculaire/).
+Pour le contexte sportif, lisez notre article sur [l'aloe vera et le sport](/blog/aloe-vera-sport-recuperation-musculaire/). Vous hésitez avec l'Aloe Vera Gelly ? Notre [guide d'utilisation de l'Aloe Vera Gelly](/blog/aloe-vera-gelly-utilisation/) compare les deux gels.
 
 ## Une question sur votre routine ?
 
