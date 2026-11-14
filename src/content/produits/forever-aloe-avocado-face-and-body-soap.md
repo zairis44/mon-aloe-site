@@ -19,7 +19,7 @@ faq:
   - question: "Y a-t-il des parfums ou colorants artificiels ?"
     reponse: "Non. Il dégage une fragrance subtile et naturelle, sans parfum de synthèse ni colorant agressif. Une expérience douce qui nettoie sans irriter."
   - question: "Respecte-t-il le pH de la peau ?"
-    reponse: "Oui, son pH doux respecte la barrière cutanée. Il nettoie sans perturber le film hydrolipidique, ce qui évite rougeurs, sécheresse et inconfort après la douche."
+    reponse: "Oui, son pH doux respecte la barrière cutanée. Il nettoie sans perturber le film hydrolipidique, ce qui limite la sensation de tiraillement après la douche."
   - question: "Est-il vraiment hydratant ?"
     reponse: "C'est un soin lavant, pas un détergent. L'huile d'avocat, riche en lipides, et l'aloe vera préservent l'humidité naturelle de la peau sans éliminer ses huiles protectrices. La peau reste douce et confortable, sans tiraillement."
   - question: "Visage et corps ?"
@@ -37,7 +37,7 @@ Votre savon habituel laisse la peau qui tiraille après la douche. Le Forever Al
 
 ## L'avocat et l'aloe vera réunis
 
-Le savon associe l'huile d'avocat, riche en acides gras essentiels et en vitamines A, D et E, qui nourrit en profondeur et aide à restaurer la barrière cutanée, au gel d'aloe vera, apaisant et régénérant. Ensemble, ils nettoient sans décaper et laissent la peau douce. Pas de parabènes, pas de sulfates, pas de colorant artificiel.
+Le savon associe l'huile d'avocat, riche en acides gras essentiels et en vitamines A, D et E, qui nourrit la peau, au gel d'aloe vera, hydratant. Ensemble, ils nettoient sans décaper et laissent la peau douce. Pas de parabènes, pas de sulfates, pas de colorant artificiel.
 
 ## Pour qui
 

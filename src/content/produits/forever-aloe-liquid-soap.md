@@ -20,7 +20,7 @@ faq:
   - question: "Hydrate-t-il vraiment ?"
     reponse: "Oui. L'aloe vera, les esters de jojoba et l'huile d'argan nettoient en préservant les huiles naturelles de la peau. Pas de sensation de tiraillement ni de film sec après le lavage."
   - question: "Apaise-t-il les peaux sujettes aux rougeurs ?"
-    reponse: "L'arnica et l'aloe vera calment les rougeurs et apportent une sensation apaisante, utile après une exposition, un rasage ou par temps froid."
+    reponse: "L'arnica et l'aloe vera font partie de la formule, pensée pour laver sans dessécher. Ce savon nettoie en douceur ; il ne traite pas les rougeurs."
   - question: "Peut-on l'utiliser comme gel douche ?"
     reponse: "Oui, sa texture douce permet un usage polyvalent : gel douche ou nettoyage du corps. Il nettoie efficacement tout en respectant le pH et le confort de la peau."
   - question: "Laisse-t-il un résidu gras ?"
@@ -38,7 +38,7 @@ Un savon qui nettoie vraiment mais qui laisse la peau souple, sans la décaper :
 
 ## Quatre actifs nourrissants
 
-La base lavante reste douce, enrichie en gel d'aloe vera stabilisé qui respecte l'équilibre cutané. Les esters de jojoba forment un voile protecteur. L'huile d'argan, riche en acides gras et en vitamine E, nourrit et renforce l'épiderme. L'arnica apaise les peaux fatiguées ou sensibilisées. Sa mousse fine et perlée enveloppe la peau sans la dessécher.
+La base lavante reste douce, enrichie en gel d'aloe vera stabilisé qui respecte l'équilibre cutané. Les esters de jojoba forment un voile protecteur. L'huile d'argan, riche en acides gras et en vitamine E, nourrit la peau. L'arnica complète la formule. Sa mousse fine et perlée enveloppe la peau sans la dessécher.
 
 ## Pour qui
 

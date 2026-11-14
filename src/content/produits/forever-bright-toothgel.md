@@ -18,9 +18,9 @@ faq:
   - question: "Convient-il aux enfants ?"
     reponse: "Oui. Sa formule sans fluor le rend adapté aux enfants, même en cas d'ingestion accidentelle. Sa texture douce et son goût de menthe les encouragent à prendre de bonnes habitudes. Gardez une surveillance jusqu'à 6 ans."
   - question: "Comment agit la propolis sur les gencives ?"
-    reponse: "La propolis a des propriétés apaisantes et purifiantes naturelles. Elle aide à calmer les irritations et à entretenir des gencives saines au quotidien."
+    reponse: "La propolis est un produit de la ruche, associé ici à l'aloe vera. Ce dentifrice nettoie en douceur ; il ne soigne pas les gencives. En cas de saignement ou de gencives douloureuses, consultez votre dentiste."
   - question: "Contient-il du fluor ?"
-    reponse: "Non, il est sans fluor. C'est une alternative pensée pour celles et ceux qui cherchent un dentifrice plus naturel et doux pour les gencives."
+    reponse: "Non, il est sans fluor. Le fluor aide à prévenir les caries : si vous choisissez un dentifrice sans fluor, parlez-en à votre dentiste, en particulier pour les enfants."
   - question: "Aide-t-il à garder des dents nettes ?"
     reponse: "Sans agents abrasifs agressifs, l'action de l'aloe vera et de la propolis aide à entretenir des dents propres et un sourire net, en respectant l'émail."
   - question: "Est-il efficace contre la mauvaise haleine ?"
@@ -38,11 +38,11 @@ Vous cherchez un dentifrice plus naturel, sans fluor, doux pour des gencives sen
 
 ## L'aloe vera associé à la propolis
 
-Le gel réunit l'aloe vera stabilisé, apaisant, et la propolis récoltée par les abeilles, réputée pour son action purifiante sur les gencives. Sans fluor, sans gluten, parfumé à la menthe poivrée et verte, il laisse une haleine fraîche sans agresser. Il respecte l'émail et convient particulièrement aux bouches sensibles ou sujettes aux gencives irritées.
+Le gel réunit l'aloe vera stabilisé et la propolis récoltée par les abeilles. Sans fluor, sans gluten, parfumé à la menthe poivrée et verte, il nettoie en douceur et laisse une haleine fraîche.
 
 ## Pour qui
 
-Vous avez les gencives sensibles, vous évitez le fluor, ou vous voulez un dentifrice que toute la famille peut utiliser, enfants compris. Ce gel coche ces cases. Une astuce : un tube dure longtemps, car une noisette suffit.
+Vous cherchez un dentifrice doux, sans fluor, au goût de menthe, pour toute la famille. Une astuce : un tube dure longtemps, car une noisette suffit.
 
 ## Comment l'utiliser
 

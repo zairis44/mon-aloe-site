@@ -21,7 +21,7 @@ faq:
   - question: "Comment l'utiliser dans ma routine ?"
     reponse: "Matin et soir, après le nettoyage du visage. Versez quelques gouttes dans la paume ou sur un coton, puis tapotez sur le visage et le cou en évitant le contour des yeux. Laissez pénétrer avant votre soin hydratant. Son absorption rapide la rend pratique même en routine express."
   - question: "Convient-elle aux peaux sensibles ?"
-    reponse: "C'est son terrain de prédilection. Sans parfum, sans alcool, à plus de 98 % d'ingrédients d'origine naturelle, elle est testée sous contrôle dermatologique et certifiée Dermatest. Le concombre et l'aloe vera apaisent rougeurs et irritations, ce qui la rend adaptée aux peaux réactives."
+    reponse: "C'est son terrain de prédilection. Sans parfum, sans alcool, à plus de 98 % d'ingrédients d'origine naturelle, elle est testée sous contrôle dermatologique et certifiée Dermatest. Sa formule douce la rend adaptée aux peaux réactives."
   - question: "Est-elle vegan et certifiée ?"
     reponse: "Oui : vegan, certifiée Halal, Kasher, IASC et Dermatest Excellent. Une formule clean, sans compromis sur l'efficacité."
 caracteristiques:
