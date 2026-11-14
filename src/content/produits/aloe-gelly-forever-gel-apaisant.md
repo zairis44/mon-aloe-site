@@ -45,7 +45,7 @@ Vous passez du temps au soleil, vous vous épilez ou vous rasez, vous avez la pe
 
 ## Comment l'utiliser
 
-Appliquez localement sur peau propre, autant de fois que nécessaire. Au réfrigérateur, l'effet frais est encore plus net après le soleil. Il sert aussi de base hydratante avant une crème plus riche, ou de masque express pour le cuir chevelu.
+Appliquez localement sur peau propre, autant de fois que nécessaire. Au réfrigérateur, l'effet frais est encore plus net après le soleil. Il sert aussi de base hydratante avant une crème plus riche, ou de masque express pour le cuir chevelu. Rasage, piqûres, mains sèches, après le sport : retrouvez [les 8 façons d'utiliser l'Aloe Vera Gelly au quotidien](/blog/aloe-vera-gelly-utilisation/), avec la bonne quantité pour chaque usage.
 
 Pour aller plus loin sur l'aloe vera et la peau, lisez notre [guide des bienfaits de l'aloe vera sur la peau](/blog/aloe-vera-peau-beaute-bienfaits-forever/).
 

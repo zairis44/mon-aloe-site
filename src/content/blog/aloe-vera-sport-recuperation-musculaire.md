@@ -26,6 +26,8 @@ produitsLies:
   - slug: "forever-fab-active-boost"
     nom: "Forever FAB"
 articlesLies:
+  - slug: "aloe-vera-gelly-utilisation"
+    titre: "Aloe Vera Gelly : 8 usages au quotidien"
   - slug: "forever-freedom-aloe-vera-articulations-mobilite"
     titre: "Forever Freedom : soin articulaire aloe vera"
   - slug: "aloe-vera-stress-sommeil-naturel"
@@ -77,7 +79,7 @@ Le **[Forever ARGI+](/produits/forever-argi-pls/)** apporte 5 g de L-arginine pa
 
 **Avant l'effort** (30 minutes avant) : 1 stick Forever ARGI+ dans 240 ml d'eau ou de jus d'aloe vera. Pour une séance longue, et si vous tolérez la caféine : 1 canette Forever FAB.
 
-**Après l'effort** : de l'eau, un repas ou une collation qui apporte des protéines et des glucides, et, si vous le souhaitez, 60 à 90 ml de Forever Aloe Vera Gel. L'Aloe MSM Gel en massage sur les zones sollicitées (mollets, genoux, épaules).
+**Après l'effort** : de l'eau, un repas ou une collation qui apporte des protéines et des glucides, et, si vous le souhaitez, 60 à 90 ml de Forever Aloe Vera Gel. L'Aloe MSM Gel en massage sur les zones sollicitées (mollets, genoux, épaules). Après la douche, si vos cuisses ou vos talons ont chauffé à cause des frottements, l'[Aloe Vera Gelly appliqué sur les zones de frottement](/blog/aloe-vera-gelly-utilisation/) apporte une sensation de fraîcheur sur une peau intacte.
 
 **Les jours de repos** : la pulpe le matin à jeun, un quart d'heure avant le petit-déjeuner. Forever Freedom matin et soir si vous suivez une cure. Si une douleur articulaire persiste, consultez plutôt que d'augmenter les doses.
 

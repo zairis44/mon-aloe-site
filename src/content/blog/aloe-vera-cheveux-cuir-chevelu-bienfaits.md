@@ -24,6 +24,8 @@ produitsLies:
   - slug: "forever-pulpe-daloe-vera"
     nom: "Forever Aloe Vera Gel"
 articlesLies:
+  - slug: "aloe-vera-gelly-utilisation"
+    titre: "Aloe Vera Gelly : 8 usages au quotidien"
   - slug: "aloe-vera-peau-beaute-bienfaits-forever"
     titre: "Aloe vera pour la peau : guide complet"
   - slug: "aloe-vera-stress-sommeil-naturel"
@@ -63,7 +65,7 @@ Sa texture légère hydrate les cuirs chevelus secs sans graisser les cuirs chev
 
 ### En soin du cuir chevelu : Aloe Vera Gelly
 
-Le **[Aloe Vera Gelly](/produits/aloe-gelly-forever-gel-apaisant/)** à 84 % d'aloe vera pur est le soin de base pour le cuir chevelu irrité. Appliquez-le directement sur le cuir chevelu sec ou légèrement humide, massez doucement pendant 5 minutes, laissez poser 15 à 20 minutes, puis rincez. La régularité (1 à 2 fois par semaine) est clé pour des résultats durables.
+Le **[Aloe Vera Gelly](/produits/aloe-gelly-forever-gel-apaisant/)** à 84 % d'aloe vera pur est le soin de base pour le cuir chevelu irrité. Appliquez-le directement sur le cuir chevelu sec ou légèrement humide, massez doucement pendant 5 minutes, laissez poser 15 à 20 minutes, puis rincez. La régularité (1 à 2 fois par semaine) est clé pour des résultats durables. Le même tube sert aussi sur la peau : voyez les [autres utilisations de l'Aloe Vera Gelly](/blog/aloe-vera-gelly-utilisation/).
 
 ### Pour le nettoyage quotidien : Forever Aloe Liquid Soap
 

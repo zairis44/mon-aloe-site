@@ -28,6 +28,8 @@ produitsLies:
   - slug: "forever-aloe-avocado-face-and-body-soap"
     nom: "Savon Aloe & Avocat Forever"
 articlesLies:
+  - slug: "aloe-vera-gelly-utilisation"
+    titre: "Aloe Vera Gelly : 8 usages au quotidien"
   - slug: "aloe-vera-cheveux-cuir-chevelu-bienfaits"
     titre: "Aloe vera cheveux : bienfaits et soins naturels"
   - slug: "aloe-vera-digestion-bienfaits"
@@ -67,7 +69,7 @@ L'aloe vera contient des vitamines C et E, des antioxydants. Une peau bien hydra
 
 ### Pour les soins quotidiens : Aloe Vera Gelly
 
-Le **[Aloe Vera Gelly](/produits/aloe-gelly-forever-gel-apaisant/)** contient 84 % de gel d'aloe vera pur. Sa texture légère et non grasse le rend polyvalent : base hydratante avant la crème de jour, soin apaisant immédiat après exposition au soleil, geste ciblé sur les zones qui tiraillent. Convient à tous les types de peau, y compris les peaux grasses ou à imperfections, grâce à sa texture non grasse.
+Le **[Aloe Vera Gelly](/produits/aloe-gelly-forever-gel-apaisant/)** contient 84 % de gel d'aloe vera pur. Sa texture légère et non grasse le rend polyvalent : base hydratante avant la crème de jour, soin apaisant immédiat après exposition au soleil, geste ciblé sur les zones qui tiraillent. Convient à tous les types de peau, y compris les peaux grasses ou à imperfections, grâce à sa texture non grasse. Pour chaque situation (soleil, rasage, piqûre, masque express), consultez notre guide [Aloe Vera Gelly : comment l'utiliser](/blog/aloe-vera-gelly-utilisation/).
 
 ### Pour les peaux sèches et abîmées : Aloe Propolis Crème
 
