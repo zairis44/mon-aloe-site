@@ -34,7 +34,7 @@ faq:
   - question: "Forever Living est-il une arnaque ?"
     reponse: "Non. L'entreprise existe depuis 1978, ses produits sont certifiés IASC et vendus dans 160 pays. Le modèle MLM de distribution peut prêter à confusion, mais il ne remet pas en cause la qualité des produits."
   - question: "Les produits sont-ils remboursables ?"
-    reponse: "Oui. Les conditions générales de Forever France prévoient un droit de rétractation de 14 jours à compter du lendemain de la réception des produits, sans justification. Quand vous achetez via un distributeur, c'est lui qui gère votre satisfaction et votre remboursement avec le service après-vente Forever : si un produit ne vous convient pas dans les 30 jours, contactez-moi et je m'en occupe."
+    reponse: "Oui. Les conditions générales de vente de Forever France prévoient une garantie « satisfait ou remboursé » de 30 jours à compter de la réception de la commande : vous choisissez le remplacement ou le remboursement, après avoir renvoyé les produits à vos frais. Pour en profiter, il suffit de contacter votre distributeur. S'y ajoute le droit de rétractation de 14 jours prévu par la loi."
   - question: "Faut-il devenir distributeur pour acheter ?"
     reponse: "Non. Vous pouvez acheter en tant que client sans aucun engagement ni abonnement. Si la distribution vous intéresse en revanche, tout est détaillé sur la page devenir distributeur Forever Living."
   - question: "Où acheter les produits Forever Living en France ?"
@@ -131,9 +131,14 @@ Si vous souhaitez un résultat plus rapide et structuré, le **[Programme C9](/p
 
 ## Retour et remboursement : comment ça se passe vraiment
 
-Les conditions générales de Forever France prévoient un **droit de rétractation de 14 jours** à compter du lendemain de la réception de vos produits, sans avoir à vous justifier ni à payer de pénalité. Pour l'exercer, vous contactez votre distributeur et remplissez le formulaire de rétractation.
+Les [conditions générales de vente de Forever France](https://www.foreverliving.fr/FR/fr/corporate/cgu-cgv) prévoient deux protections distinctes.
 
-Au-delà, Forever met en avant une **garantie de satisfaction de 30 jours**. Quand vous achetez via un distributeur, c'est lui qui est responsable de votre satisfaction : c'est donc moi qui gère votre demande et qui la transmets au service après-vente Forever. Concrètement, si un produit ne vous convient pas, [écrivez-moi](/contact/) ou appelez-moi au 06 77 35 22 26 dans les 30 jours en indiquant votre numéro de commande.
+- **La garantie « satisfait ou remboursé » de 30 jours** (article 8.2), qui court à partir de la réception de votre commande. Vous choisissez entre le remplacement et le remboursement du produit. Seule condition pratique : le retour du produit est à vos frais.
+- **Le droit de rétractation de 14 jours** prévu par la loi (article 9), à compter du lendemain de la réception, sans justification ni pénalité.
+
+Dans les deux cas, la démarche passe par votre distributeur. Si un produit ne vous convient pas, [écrivez-moi](/contact/) ou appelez-moi au 06 77 35 22 26 avec votre numéro de commande : je m'occupe de la demande auprès de Forever et je vous indique où renvoyer le produit.
+
+Les produits restent par ailleurs couverts par les garanties légales de deux ans (conformité et vices cachés), comme tout achat en France.
 
 ## Questions fréquentes sur Forever Living en France
 
@@ -143,7 +148,7 @@ Au-delà, Forever met en avant une **garantie de satisfaction de 30 jours**. Qua
 
 **Forever Living est-il une arnaque ?** Non. L'entreprise existe depuis 1978, ses produits sont certifiés IASC et vendus dans 160 pays. Le modèle MLM de distribution peut prêter à confusion, mais il ne remet pas en cause la qualité des produits.
 
-**Les produits sont-ils remboursables ?** Oui. Vous disposez de 14 jours de rétractation après réception (conditions générales de Forever France), et d'une garantie de satisfaction de 30 jours gérée par votre distributeur. Le détail est dans la section « Retour et remboursement » ci-dessus.
+**Les produits sont-ils remboursables ?** Oui. Les conditions générales de Forever France prévoient une garantie « satisfait ou remboursé » de 30 jours après réception : remplacement ou remboursement au choix, retour à vos frais. Le détail est dans la section « Retour et remboursement » ci-dessus.
 
 **Faut-il devenir distributeur pour acheter ?** Non. Vous pouvez acheter en tant que client sans aucun engagement ni abonnement. Si la distribution vous intéresse en revanche, tout est détaillé sur la page [devenir distributeur Forever Living](/devenir-distributeur-forever-living/).
 
