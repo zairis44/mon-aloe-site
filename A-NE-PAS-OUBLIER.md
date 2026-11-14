@@ -1,6 +1,13 @@
 # Esprit Aloé — À ne pas oublier
 *Mise à jour : 13 novembre 2026*
 
+## Lot V6 du 14 novembre 2026 — accueil réordonné
+
+- Nouvel ordre : hero → « Quel produit Forever choisir ? » → produits phares → journal C9 (preuve) → Pourquoi l'aloe vera → bienfaits → devenir distributeur → FAQ. Le sélecteur par besoin passe du 3e au 2e écran sur mobile (avant : après les bienfaits). Aucun texte modifié, seulement l'ordre des blocs.
+- Bouton « Voir toute la gamme » : nombre de produits calculé (affichait 25, il y en a 44). Sur-titre des bienfaits : « Au quotidien ».
+- Title, H1 et meta inchangés : la mesure de l'accueil (Lot R) n'est pas réinitialisée.
+- **À revoir (lot suivant)** : « concentre vitamines, minéraux et acides aminés essentiels », « +40 ans d'expertise », FAQ « tous certifiés IASC, Kosher et Halal » ; puces « Digestion », « Énergie », « Sport et articulations » du sélecteur.
+
 ## Correctif du 14 novembre 2026 — Mini Aloe Argi+ et F15
 
 - Confirmé par Rafael : Mini Aloe Argi+ est un pack mini-briques de gel d'aloe vera + sticks ARGI+, pas un flacon enrichi en arginine. Fiche réécrite (quantités non indiquées : l'API Forever ne renvoie pas ce pack).
