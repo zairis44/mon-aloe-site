@@ -1,5 +1,15 @@
 # Esprit Aloé — À ne pas oublier
-*Mise à jour : 13 novembre 2026*
+*Mise à jour : 14 novembre 2026*
+
+## Lot W du 14 novembre 2026 — pages avis renforcées (veille concurrentielle)
+
+- Contexte : aloe-vera-pour-tous.com a publié le 5/11 « C9 Forever avis négatif » et le 7/11 « Les produits Forever sont-ils fiables ? », sur le cluster avis/danger. Veille complète : doc projet `claude/veille-concurrentielle.md` (4 concurrents : aloe-vera-pour-tous, aloeveragel, aloeveraforever, ghaloe). Plan d'action validé par Rafael le 14/11.
+- **Décision de Rafael : appliquer tout maintenant**, même si la mesure des deux pages (ouverte les 12–13/11) repart. **Mesure de `forever-living-avis-produits-france` et `c9-forever-avis` : repart du 14/11.** Title, seoTitle et meta description inchangés.
+- **Article avis Forever** : encadré « En bref : mon verdict » en tête (fabrication, prix par jour, 4 semaines, modèle de vente, déclaration d'intérêt) ; allégations retirées (« ballonnements réduits, transit régularisé », « 2 à 5 kg en 9 jours », « réduction des ballonnements », « meilleure récupération après l'effort », « réduction des petites irritations ») ; énergie rattachée aux vitamines B6/B12 de l'ARGI+ (lien vers la fiche) ; nouvelle section « Retour et remboursement » ; FAQ garantie (visible + JSON-LD) réécrite.
+- **Article C9 avis** : encadré « En bref : mon verdict » ; plus de fourchette « 2 à 5 kg » (FAQ visible + JSON-LD), seuls les chiffres de Rafael restent ; paragraphe « Et si vous changez d'avis ? » sous la critique du prix.
+- **Garantie, sources** : CGV Forever France (direct.foreverliving.fr) → rétractation 14 jours à compter du lendemain de la réception, via le FBO et le formulaire ; Company Policy Forever France (janv. 2025) → en cas d'achat via un FBO, le FBO est responsable de la satisfaction du client (échange, remboursement). La garantie 30 jours est présentée comme gérée par Rafael.
+- **À confirmer par Rafael** : accepte-t-il un remboursement sur produit entamé dans les 30 jours ? Si oui, l'écrire dans la section garantie (argument fort, aucun concurrent ne le précise clairement).
+- **Toujours en suspens** : mentions « Kosher et Halal » (avis + C9 avis), laissées en l'état sur décision de Rafael.
 
 ## C9 du 14 novembre 2026 — six versions et correctif de référence
 
