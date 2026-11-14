@@ -1,6 +1,14 @@
 # Esprit Aloé — À ne pas oublier
 *Mise à jour : 13 novembre 2026*
 
+## Accueil du 14 novembre 2026 — formulations (décisions de Rafael)
+
+- « +40 ans d'expertise » → « 1978 — Forever, depuis » (accueil et contact) : le chiffre désigne Forever, pas Rafael (2016).
+- FAQ « certifiés ? » (texte + schéma) : limitée à ce qu'on sait, le sceau IASC des boissons à l'aloe vera. « Kosher et Halal » et « sans tests sur les animaux » retirés de l'accueil faute de source.
+- « concentre vitamines, minéraux et acides aminés » → pulpe « riche en polysaccharides ».
+- Choix par besoin (`besoins.ts`) : « Confort digestif » → « Digestion » (allégation en attente ajoutée), « Sport et confort articulaire » → « Sport et vie active », MSM Gel décrit comme gel de massage. Les ancres (`#sport-articulations`…) ne changent pas.
+- **Reste** : l'article avis (`forever-living-avis-produits-france`, lignes 77–101) et `c9-forever-avis` affirment encore « Kosher, Halal ». Page la plus visitée : à traiter à part, avec une source ou en retirant la mention. La fiche Essence tonifiante mentionne Halal/Kasher (probablement repris de l'étiquette, à vérifier).
+
 ## Lot cosmétiques du 14 novembre 2026 — promesses de soin retirées
 
 - Règle : un cosmétique hydrate, nettoie, rafraîchit, laisse une sensation de confort ; il ne soigne pas (brûlures, piqûres, rougeurs, cicatrices, muscles, articulations, gencives).
