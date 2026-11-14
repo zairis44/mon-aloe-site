@@ -1,6 +1,12 @@
 # Esprit Aloé — À ne pas oublier
 *Mise à jour : 13 novembre 2026*
 
+## Lot V5 du 14 novembre 2026 — page Sport
+
+- Catégorie Sport & Fitness : bloc « Aussi utilisés par les sportifs » (FAB, Mini Aloe Argi+, Freedom, Aloe Cooling Lotion), via la table `AUSSI` de `src/pages/produits/[categorie]/index.astro` (réutilisable pour d'autres catégories).
+- Guide : routine type « avant / pendant / après / au quotidien » avec liens vers les fiches ; « confort articulaire » retiré ; description de catégorie élargie.
+- **À vérifier** : la photo de Mini Aloe Argi+ montre des mini-briques de gel d'aloe vera et des sticks ARGI+, alors que la fiche décrit un flacon de 60 ml enrichi en arginine. Confirmer la composition réelle avec Rafael et corriger la fiche.
+
 ## Lot V3 du 13 novembre 2026 — prix par jour et comparatif des boissons
 
 - **Nouveau champ `coutJour`** (schéma `produits`), affiché sous le prix des fiches (« Soit environ … »). Renseigné pour : pulpe, Pêche, Berry Nectar, Mango (2,25 à 3,35 € par jour à 60–90 ml), Freedom (≈ 4,60 € à 90 ml), C9 ×2 (≈ 17 €/jour sur 9 jours), F15 ×6 (≈ 12 €/jour sur 15 jours), FAB (≈ 4,30 € la canette). **À recalculer si un prix change.**
