@@ -1,6 +1,6 @@
 ---
 name: "Programme C9 Forever Chocolat Pêche – Cure détox 9 jours"
-reference: "475"
+reference: "630"
 slug: "programme-c9-forever-chocolat-peche"
 price: 152.42
 coutJour: 'environ 17 € par jour sur 9 jours'
@@ -12,7 +12,7 @@ titreDetails: "Programme C9 Forever Chocolat-Pêche : votre cure détox complèt
 seoTitle: "Programme C9 Chocolat Pêche – Détox 9 jours"
 seoDescription: "Programme C9 Forever Chocolat-Pêche : 9 jours pour encadrer votre alimentation avec un objectif de perte de poids. Aloe vera, shakes protéinés chocolat, compléments et guide. Livraison France."
 video: ""
-lienCommande: "http://www.foreverliving.fr/ref/330001628607/475"
+lienCommande: "http://www.foreverliving.fr/ref/330001628607/630"
 faq:
   - question: "Quelle différence avec le C9 Vanille-Pêche ?"
     reponse: "La saveur des shakes Forever Lite Ultra, rien d'autre. Cette version propose des shakes chocolat, idéals si vous préférez un goût gourmand. Le reste (gel d'aloe vera, Forever Therm, Fiber, Garcinia Plus, guide) est strictement identique aux deux versions. Le choix se fait au goût."
@@ -33,7 +33,7 @@ Vous voulez faire un C9 mais le goût vanille des shakes ne vous tente pas. Cett
 
 ## Le C9, version chocolat
 
-Le coffret réunit le gel d'aloe vera stabilisé, les shakes Forever Lite Ultra saveur chocolat (environ 90 kcal, 17 g de protéines), Forever Therm, Forever Fiber, Forever Garcinia Plus, et un guide nutrition et sport complet. Vous suivez le plan jour après jour, sans rien avoir à improviser.
+Le coffret réunit le gel d'aloe vera stabilisé, les shakes Forever Lite Ultra saveur chocolat (environ 90 kcal, 17 g de protéines), Forever Therm, Forever Fiber, Forever Lean, et un guide nutrition et sport complet. Vous suivez le plan jour après jour, sans rien avoir à improviser.
 
 ## Pour qui
 
