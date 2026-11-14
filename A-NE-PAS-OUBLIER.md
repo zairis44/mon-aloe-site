@@ -1,6 +1,12 @@
 # Esprit Aloé — À ne pas oublier
 *Mise à jour : 13 novembre 2026*
 
+## Lot V8 du 14 novembre 2026 — Devenir distributeur : « L'essentiel en 30 secondes »
+
+- Encadré sous le haut de page : pour démarrer (premier pack à 345 €), temps à prévoir, revenus (aucun garanti, recruter facultatif), prise de contact.
+- **Position de Rafael sur le temps** : pas de temps minimum ; plus on y consacre de temps, plus l'activité est bénéfique. Il préfère en parler lors d'un rendez-vous téléphonique ou physique : ne pas publier d'estimation d'heures ni d'exemple de revenu chiffré.
+- Bouton d'appel fixe en bas d'écran mobile non fait (risque de chevauchement avec le bandeau cookies).
+
 ## Accueil du 14 novembre 2026 — formulations (décisions de Rafael)
 
 - « +40 ans d'expertise » → « 1978 — Forever, depuis » (accueil et contact) : le chiffre désigne Forever, pas Rafael (2016).
