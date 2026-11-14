@@ -1,0 +1,148 @@
+---
+/**
+ * src/pages/glossaire/index.astro — /glossaire/
+ * Index des ingrédients : pages dédiées en cartes, définitions courtes en liste.
+ * Schema.org : DefinedTermSet + BreadcrumbList
+ */
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import { entreesGlossaire, STATUTS, urlEntree, lettre } from '../../data/glossaire';
+
+const siteUrl = 'https://espritaloe.fr';
+const pageUrl = `${siteUrl}/glossaire/`;
+
+const entrees = await entreesGlossaire();
+const dediees = entrees.filter((e) => e.data.pageDediee);
+const courtes = entrees.filter((e) => !e.data.pageDediee);
+
+// Lettres présentes, pour l'accès rapide (première occurrence de chaque lettre = ancre)
+const lettres = [...new Set(entrees.map((e) => lettre(e.data.nom)))];
+const premiereParLettre = new Map<string, string>();
+for (const e of [...dediees, ...courtes]) {
+  const l = lettre(e.data.nom);
+  if (!premiereParLettre.has(l)) premiereParLettre.set(l, e.id);
+}
+
+const nbProduits = (n: number) => (n === 0 ? '' : n === 1 ? 'Dans 1 produit' : `Dans ${n} produits`);
+
+const schemaSet = {
+  '@context': 'https://schema.org',
+  '@type': 'DefinedTermSet',
+  '@id': `${pageUrl}#glossaire`,
+  name: 'Glossaire des ingrédients Forever',
+  url: pageUrl,
+  inLanguage: 'fr-FR',
+  hasDefinedTerm: entrees.map((e) => ({
+    '@type': 'DefinedTerm',
+    name: e.data.nom,
+    description: e.data.resume,
+    url: `${siteUrl}${urlEntree(e)}`,
+  })),
+};
+
+const schemaBreadcrumb = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Accueil', item: `${siteUrl}/` },
+    { '@type': 'ListItem', position: 2, name: 'Glossaire', item: pageUrl },
+  ],
+};
+---
+
+<Layout
+  title="Glossaire des ingrédients Forever : composition et réglementation | Esprit Aloé"
+  description="Aloïne, acémannane, MSM, propolis, gelée royale : ce que contiennent les produits Forever et ce que la réglementation française permet d'en dire."
+  canonical={pageUrl}
+>
+  <script type="application/ld+json" set:html={JSON.stringify(schemaSet)} slot="head" />
+  <script type="application/ld+json" set:html={JSON.stringify(schemaBreadcrumb)} slot="head" />
+
+  <Header />
+
+  <main class="bg-cream">
+    <div class="mx-auto max-w-6xl px-6 pt-10 pb-20">
+      <nav class="text-sm text-aloe-500 mb-8" aria-label="Fil d'Ariane">
+        <ol class="flex items-center gap-2">
+          <li><a href="/" class="hover:text-aloe-700 transition-colors">Accueil</a></li>
+          <li aria-hidden="true">›</li>
+          <li class="text-aloe-700">Glossaire</li>
+        </ol>
+      </nav>
+
+      <div class="flex flex-wrap items-end justify-between gap-10">
+        <div class="flex-[1_1_560px] min-w-0">
+          <p class="text-xs font-semibold uppercase tracking-widest text-aloe-500 mb-3">Glossaire</p>
+          <h1 class="text-4xl md:text-5xl text-aloe-900 leading-tight mb-5">Glossaire des ingrédients Forever</h1>
+          <p class="text-lg text-aloe-700 leading-relaxed max-w-2xl">
+            Ce que contient chaque produit, d'où vient chaque ingrédient, et ce que la réglementation française permet d'en dire. Quand la loi n'autorise aucune promesse, je vous le dis.
+          </p>
+        </div>
+        <div class="flex-[0_1_340px] rounded-2xl bg-white border border-sand p-6">
+          <p class="text-sm font-semibold text-aloe-900 mb-4">Lire les pastilles</p>
+          <ul class="space-y-3 text-sm text-aloe-700">
+            {Object.entries(STATUTS).map(([, s]) => (
+              <li class="flex flex-wrap items-center gap-2">
+                <span class={`rounded-full px-2.5 py-1 text-xs font-semibold ${s.classes}`}>{s.label}</span>
+                <span>{s.legende}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+
+      <nav aria-label="Accès par lettre" class="mt-10 mb-10 flex flex-wrap gap-2 rounded-2xl bg-white border border-sand p-3">
+        {lettres.map((l) => {
+          const cible = premiereParLettre.get(l);
+          return (
+            <a href={`#${cible}`} class="flex h-11 min-w-11 items-center justify-center rounded-xl bg-aloe-50 px-3 font-semibold text-aloe-800 hover:bg-aloe-100 transition-colors">{l}</a>
+          );
+        })}
+      </nav>
+
+      <h2 class="text-3xl text-aloe-900 mb-6">Les ingrédients clés</h2>
+      <ul class="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+        {dediees.map((e) => (
+          <li id={e.id} class="scroll-mt-24">
+            <a href={`/glossaire/${e.id}/`} class="group flex h-full flex-col gap-3 rounded-2xl border border-sand bg-white p-6 transition-all hover:border-aloe-300 hover:shadow-sm">
+              <span class={`self-start rounded-full px-2.5 py-1 text-xs font-semibold ${STATUTS[e.data.statut].classes}`}>{STATUTS[e.data.statut].label}</span>
+              <span class="font-display text-2xl text-aloe-900 group-hover:text-aloe-700 transition-colors">{e.data.nom}</span>
+              <span class="text-sm text-aloe-700 leading-relaxed">{e.data.resume}</span>
+              {nbProduits(e.data.produits.length) && (
+                <span class="mt-auto text-xs font-semibold text-aloe-500">{nbProduits(e.data.produits.length)} →</span>
+              )}
+            </a>
+          </li>
+        ))}
+      </ul>
+
+      {courtes.length > 0 && (
+        <>
+          <h2 class="text-3xl text-aloe-900 mt-16 mb-2">Autres ingrédients</h2>
+          <p class="text-aloe-600 mb-6">Définitions courtes, sans page dédiée.</p>
+          <dl class="rounded-2xl border border-sand bg-white px-6">
+            {courtes.map((e) => (
+              <div id={e.id} class="scroll-mt-24 flex flex-wrap gap-x-6 gap-y-2 border-b border-sand py-5 last:border-0">
+                <dt class="flex-[0_0_200px] font-semibold text-aloe-900">{e.data.nom}</dt>
+                <dd class="flex-[1_1_420px] text-sm text-aloe-700 leading-relaxed">
+                  {e.data.resume}
+                  {e.data.statutDetail && <span class="block mt-1 text-xs text-aloe-500">{e.data.statutDetail}</span>}
+                </dd>
+                <dd class="self-start">
+                  <span class={`rounded-full px-2.5 py-1 text-xs font-semibold ${STATUTS[e.data.statut].classes}`}>{STATUTS[e.data.statut].label}</span>
+                </dd>
+              </div>
+            ))}
+          </dl>
+        </>
+      )}
+
+      <p class="mt-8 text-xs text-aloe-500 leading-relaxed max-w-3xl">
+        Source des statuts : <a href="https://www.economie.gouv.fr/dgccrf/les-fiches-pratiques/allegations-nutritionnelles-et-de-sante-ne-vous-faites-pas-avoir" class="underline hover:text-aloe-700" rel="noopener">tableau des allégations de santé utilisables, DGCCRF</a>. Ces informations ne remplacent pas l'avis d'un médecin ou d'un pharmacien.
+      </p>
+    </div>
+  </main>
+
+  <Footer />
+</Layout>

@@ -1,0 +1,41 @@
+---
+/**
+ * src/components/IngredientsCles.astro
+ * Bloc « Ingrédients clés » d'une fiche produit, construit à partir du glossaire :
+ * toute entrée dont le champ `produits` cite la fiche apparaît ici. Rien à saisir
+ * dans les fiches. Les pages dédiées passent en premier.
+ */
+import { entreesGlossaire, urlEntree } from '../data/glossaire';
+
+export interface Props {
+  /** Slug de la fiche produit. */
+  produit: string;
+  max?: number;
+}
+
+const { produit, max = 6 } = Astro.props;
+
+const entrees = (await entreesGlossaire())
+  .filter((e) => e.data.produits.includes(produit))
+  .sort((a, b) => Number(b.data.pageDediee) - Number(a.data.pageDediee))
+  .slice(0, max);
+---
+
+{entrees.length > 0 && (
+  <section class="mt-12" aria-labelledby="ingredients-cles-titre">
+    <div class="flex flex-wrap items-baseline justify-between gap-3 mb-5">
+      <h2 id="ingredients-cles-titre" class="text-2xl text-aloe-900">Ingrédients clés</h2>
+      <a href="/glossaire/" class="text-sm font-semibold text-aloe-600 hover:text-aloe-800">Tout le glossaire →</a>
+    </div>
+    <ul class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+      {entrees.map((e) => (
+        <li>
+          <a href={urlEntree(e)} class="flex h-full flex-col gap-2 rounded-2xl bg-aloe-50 border border-aloe-100 p-5 hover:border-aloe-300 transition-colors">
+            <span class="font-semibold text-aloe-900">{e.data.nom}</span>
+            <span class="text-sm text-aloe-600 leading-relaxed">{e.data.resume}</span>
+          </a>
+        </li>
+      ))}
+    </ul>
+  </section>
+)}

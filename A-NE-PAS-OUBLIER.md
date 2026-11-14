@@ -1,6 +1,15 @@
 # Esprit Aloé — À ne pas oublier
 *Mise à jour : 14 novembre 2026*
 
+## Lot X du 14 novembre 2026 — glossaire des ingrédients
+
+- Nouvelle rubrique **/glossaire/** (structure validée par Rafael sur maquette le 14/11) : collection `src/content/glossaire/` (1 fichier par ingrédient), pages `src/pages/glossaire/index.astro` et `[slug].astro`, outils `src/data/glossaire.ts`, bloc `src/components/IngredientsCles.astro` sur les fiches produit (sous les caractéristiques, **masqué sur les fiches de PAGES_GELEES**), lien « Glossaire des ingrédients » dans le pied de page, section dans `public/llms.txt`.
+- 8 pages dédiées : aloïne, aloe vera stabilisé, acémannane, MSM, propolis, arginine, gelée royale, glucosamine et chondroïtine. 7 définitions courtes sur l'index : allantoïne, coenzyme Q10, guarana, huile de jojoba, thé vert, vitamine C, vitamines B6 et B12.
+- Statuts vérifiés le 14/11 dans le tableau DGCCRF (xlsx officiel) : aucune allégation pour propolis, gelée royale seule (seuls des mélanges pollen + gelée royale y figurent), CoQ10, MSM, arginine, glucosamine. Avis EFSA cités : glucosamine 2009/2011/2012, MSM 2009, arginine 2011.
+- Ajouter un ingrédient : créer `src/content/glossaire/<slug>.md` (`pageDediee: true` + corps pour une page, sinon définition courte). Un slug produit ou article faux fait échouer le build.
+- **À surveiller** : arrêt de la Cour de justice dans l'affaire **C-38/25 P** (aloe et dérivés hydroxyanthracéniques, conclusions de l'avocate générale le 10/09/2026). Mettre à jour `/glossaire/aloine/` dès l'arrêt, et envisager une mise à jour de l'article dangers.
+- Pistes : lier les articles existants vers le glossaire (aloïne dans l'article dangers, acémannane dans l'article digestion) une fois leurs fenêtres de mesure terminées ; nouvelles entrées (camomille, collagène marin, pollen, miel).
+
 ## Lot W du 14 novembre 2026 — pages avis renforcées (veille concurrentielle)
 
 - Contexte : aloe-vera-pour-tous.com a publié le 5/11 « C9 Forever avis négatif » et le 7/11 « Les produits Forever sont-ils fiables ? », sur le cluster avis/danger. Veille complète : doc projet `claude/veille-concurrentielle.md` (4 concurrents : aloe-vera-pour-tous, aloeveragel, aloeveraforever, ghaloe). Plan d'action validé par Rafael le 14/11.

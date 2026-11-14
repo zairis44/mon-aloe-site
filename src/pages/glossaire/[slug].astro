@@ -1,0 +1,184 @@
+---
+/**
+ * src/pages/glossaire/[slug].astro — /glossaire/<ingrédient>/
+ * Page dédiée d'un ingrédient (entrées avec pageDediee: true uniquement).
+ * Schema.org : DefinedTerm + BreadcrumbList (+ FAQPage si faq renseignée)
+ */
+import { getCollection, render } from 'astro:content';
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import { entreesGlossaire, STATUTS } from '../../data/glossaire';
+
+export async function getStaticPaths() {
+  const entrees = await entreesGlossaire();
+  return entrees
+    .filter((e) => e.data.pageDediee)
+    .map((entree) => ({ params: { slug: entree.id }, props: { entree } }));
+}
+
+const { entree } = Astro.props;
+const { Content } = await render(entree);
+const d = entree.data;
+
+const siteUrl = 'https://espritaloe.fr';
+const pageUrl = `${siteUrl}/glossaire/${entree.id}/`;
+const statut = STATUTS[d.statut];
+
+const tousProduits = await getCollection('produits');
+const produits = d.produits
+  .map((slug) => tousProduits.find((p) => p.data.slug === slug))
+  .filter((p) => p !== undefined)
+  .map((p) => ({ slug: p.data.slug, nom: p.data.name.split(/\s[–—-]\s/)[0] }));
+
+const dateMaj = d.updatedDate ?? d.pubDate;
+
+const schemaTerm = {
+  '@context': 'https://schema.org',
+  '@type': 'DefinedTerm',
+  '@id': `${pageUrl}#terme`,
+  name: d.nom,
+  alternateName: d.autresNoms.length ? d.autresNoms : undefined,
+  description: d.resume,
+  url: pageUrl,
+  inDefinedTermSet: `${siteUrl}/glossaire/#glossaire`,
+};
+
+const schemaBreadcrumb = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Accueil', item: `${siteUrl}/` },
+    { '@type': 'ListItem', position: 2, name: 'Glossaire', item: `${siteUrl}/glossaire/` },
+    { '@type': 'ListItem', position: 3, name: d.nom, item: pageUrl },
+  ],
+};
+
+const schemaFAQ = d.faq && d.faq.length > 0 ? {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: d.faq.map((item) => ({
+    '@type': 'Question',
+    name: item.question,
+    acceptedAnswer: { '@type': 'Answer', text: item.reponse },
+  })),
+} : null;
+
+const titre = d.seoTitle ?? `${d.nom} : définition et réglementation`;
+---
+
+<Layout
+  title={`${titre} | Esprit Aloé`}
+  description={d.description ?? d.resume}
+  canonical={pageUrl}
+>
+  <script type="application/ld+json" set:html={JSON.stringify(schemaTerm)} slot="head" />
+  <script type="application/ld+json" set:html={JSON.stringify(schemaBreadcrumb)} slot="head" />
+  {schemaFAQ && <script type="application/ld+json" set:html={JSON.stringify(schemaFAQ)} slot="head" />}
+
+  <Header />
+
+  <main class="bg-cream">
+    <div class="mx-auto max-w-6xl px-6 pt-10 pb-20">
+      <nav class="text-sm text-aloe-500 mb-8" aria-label="Fil d'Ariane">
+        <ol class="flex flex-wrap items-center gap-2">
+          <li><a href="/" class="hover:text-aloe-700 transition-colors">Accueil</a></li>
+          <li aria-hidden="true">›</li>
+          <li><a href="/glossaire/" class="hover:text-aloe-700 transition-colors">Glossaire</a></li>
+          <li aria-hidden="true">›</li>
+          <li class="text-aloe-700">{d.nom}</li>
+        </ol>
+      </nav>
+
+      <div class="grid gap-12 lg:grid-cols-[1fr_320px] items-start">
+        <article class="min-w-0">
+          <span class={`inline-block rounded-full px-3 py-1 text-xs font-semibold mb-4 ${statut.classes}`}>{statut.label}</span>
+          <h1 class="text-4xl md:text-5xl text-aloe-900 leading-tight mb-4">{d.nom}</h1>
+          {d.autresNoms.length > 0 && (
+            <p class="text-sm text-aloe-500 mb-6">Aussi appelé : {d.autresNoms.join(', ')}</p>
+          )}
+          <p class="text-lg text-aloe-700 leading-relaxed mb-8 max-w-[680px]">{d.resume}</p>
+
+          {d.statutDetail && (
+            <div class="not-prose mb-10 max-w-[680px] rounded-2xl bg-white border border-sand p-6">
+              <p class="text-xs font-semibold uppercase tracking-widest text-aloe-500 mb-2">Ce que la réglementation permet de dire</p>
+              <p class="text-sm text-aloe-800 leading-relaxed">{d.statutDetail}</p>
+            </div>
+          )}
+
+          <div class="article-body max-w-[680px]">
+            <Content />
+          </div>
+
+          {d.faq && d.faq.length > 0 && (
+            <section class="mt-12 max-w-[680px]" aria-labelledby="faq-titre">
+              <h2 id="faq-titre" class="text-2xl text-aloe-900 mb-5">Questions fréquentes</h2>
+              <div class="space-y-3">
+                {d.faq.map((item) => (
+                  <details class="group rounded-2xl bg-white border border-sand p-5">
+                    <summary class="cursor-pointer font-semibold text-aloe-900">{item.question}</summary>
+                    <p class="mt-3 text-sm text-aloe-700 leading-relaxed">{item.reponse}</p>
+                  </details>
+                ))}
+              </div>
+            </section>
+          )}
+
+          {d.sources.length > 0 && (
+            <section class="mt-12 max-w-[680px]" aria-labelledby="sources-titre">
+              <h2 id="sources-titre" class="text-lg text-aloe-900 mb-3">Sources</h2>
+              <ul class="space-y-2 text-sm text-aloe-600">
+                {d.sources.map((s) => (
+                  <li><a href={s.url} class="underline hover:text-aloe-800" rel="noopener">{s.titre}</a></li>
+                ))}
+              </ul>
+            </section>
+          )}
+
+          <p class="mt-10 text-xs text-aloe-500">
+            Rédigé par <a href="/a-propos/" class="underline hover:text-aloe-700">Rafael Avenard</a>, distributeur Forever depuis 2016 · Mis à jour le {dateMaj.toLocaleDateString('fr-FR', { day: 'numeric', month: 'long', year: 'numeric' })}
+          </p>
+        </article>
+
+        <aside class="space-y-5 lg:sticky lg:top-24">
+          {produits.length > 0 && (
+            <div class="rounded-2xl bg-white border border-sand p-6">
+              <p class="text-sm font-semibold text-aloe-900 mb-2">Produits concernés</p>
+              {d.produitsIntro && <p class="text-sm text-aloe-600 mb-4 leading-relaxed">{d.produitsIntro}</p>}
+              <ul class="space-y-2">
+                {produits.map((p) => (
+                  <li>
+                    <a href={`/produits/${p.slug}/`} class="flex min-h-11 items-center justify-between gap-3 rounded-xl bg-aloe-50 px-4 py-2.5 text-sm font-semibold text-aloe-800 hover:bg-aloe-100 transition-colors">
+                      <span>{p.nom}</span><span aria-hidden="true">→</span>
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
+
+          {d.articlesLies.length > 0 && (
+            <div class="rounded-2xl bg-white border border-sand p-6">
+              <p class="text-sm font-semibold text-aloe-900 mb-3">Pour aller plus loin</p>
+              <ul class="space-y-3 text-sm leading-snug">
+                {d.articlesLies.map((a) => (
+                  <li><a href={`/blog/${a.slug}/`} class="text-aloe-700 underline hover:text-aloe-900">{a.titre}</a></li>
+                ))}
+              </ul>
+            </div>
+          )}
+
+          <div class="rounded-2xl bg-aloe-800 p-6 text-cream">
+            <p class="font-display text-xl mb-2">Une question sur un ingrédient ?</p>
+            <p class="text-sm text-aloe-200 mb-5 leading-relaxed">Je vous réponds personnellement, du lundi au samedi.</p>
+            <a href="/contact/" class="inline-flex min-h-11 items-center rounded-full bg-cream px-5 text-sm font-semibold text-aloe-800 hover:bg-white transition-colors">Me contacter</a>
+          </div>
+
+          <a href="/glossaire/" class="block text-center text-sm font-semibold text-aloe-600 hover:text-aloe-800">← Tout le glossaire</a>
+        </aside>
+      </div>
+    </div>
+  </main>
+
+  <Footer />
+</Layout>

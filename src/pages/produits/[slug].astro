@@ -13,6 +13,7 @@ import Footer from '../../components/Footer.astro';
 import CtaCommander from '../../components/CtaCommander.astro';
 import ProduitsAssocies from '../../components/ProduitsAssocies.astro';
 import GuidesLies from '../../components/GuidesLies.astro';
+import IngredientsCles from '../../components/IngredientsCles.astro';
 import { PAGES_GELEES } from '../../data/maillage';
 import { LIEN_AVIS_GOOGLE } from '../../data/avis';
 
@@ -264,6 +265,9 @@ const seoDescription = d.seoDescription ?? d.description;
             ))}
           </div>
         )}
+
+        <!-- Ingrédients clés (glossaire) — absent des fiches gelées -->
+        {afficherMaillage && <IngredientsCles produit={d.slug} />}
 
         <!-- Vidéo YouTube si définie -->
         {videoId && (

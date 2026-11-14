@@ -186,4 +186,43 @@ const recettes = defineCollection({
   }),
 });
 
-export const collections = { produits, blog, journal, recettes };
+// ── Collection "glossaire" ───────────────────────────────────────
+// Un fichier = un ingrédient. `pageDediee: true` → page /glossaire/<id>/
+// (corps Markdown obligatoire) ; sinon simple définition sur /glossaire/.
+// `produits` : slugs des fiches qui contiennent l'ingrédient. Le bloc
+// « Ingrédients clés » des fiches se construit à partir de ce champ.
+// Une faute de slug fait échouer le build (voir src/data/glossaire.ts).
+const glossaire = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/glossaire' }),
+  schema: z.object({
+    nom: z.string(),
+    autresNoms: z.array(z.string()).default([]),
+    /** 1 à 2 phrases : carte de l'index, bloc des fiches, définition courte. */
+    resume: z.string(),
+    statut: z.enum(['autorisee', 'en-attente', 'aucune', 'a-eviter', 'cosmetique']),
+    /** Précision affichée sous la pastille (allégations exactes, n° DGCCRF…). */
+    statutDetail: z.string().optional(),
+    pageDediee: z.boolean().default(false),
+    seoTitle: z.string().optional(),
+    description: z.string().optional(),
+    pubDate: z.coerce.date(),
+    updatedDate: z.coerce.date().optional(),
+    produits: z.array(z.string()).default([]),
+    /** Texte au-dessus de la liste de produits (sidebar de la page dédiée). */
+    produitsIntro: z.string().optional(),
+    articlesLies: z.array(z.object({
+      slug: z.string(),
+      titre: z.string(),
+    })).default([]),
+    sources: z.array(z.object({
+      titre: z.string(),
+      url: z.string().url(),
+    })).default([]),
+    faq: z.array(z.object({
+      question: z.string(),
+      reponse: z.string(),
+    })).optional(),
+  }),
+});
+
+export const collections = { produits, blog, journal, recettes, glossaire };
