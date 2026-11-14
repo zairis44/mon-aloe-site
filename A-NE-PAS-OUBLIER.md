@@ -1,6 +1,16 @@
 # Esprit Aloé — À ne pas oublier
 *Mise à jour : 13 novembre 2026*
 
+## Lot cosmétiques du 14 novembre 2026 — promesses de soin retirées
+
+- Règle : un cosmétique hydrate, nettoie, rafraîchit, laisse une sensation de confort ; il ne soigne pas (brûlures, piqûres, rougeurs, cicatrices, muscles, articulations, gencives).
+- **Aloe Gelly** : plus de « petites brûlures, piqûres d'insectes », « calme la sensation de brûlure », « calme les démangeaisons » ; usages « après le soleil / après l'épilation », renvoi au pharmacien si besoin.
+- **Aloe MSM Gel** : devient « gel de massage » (nom, titres, FAQ, texte) ; plus de « soulagement immédiat », muscles, articulations, tissus conjonctifs.
+- **Propolis Crème** : plus de « réparatrice », « cicatrices », « calme les irritations » ; mention allergie aux produits de la ruche.
+- **Bright Toothgel** : plus d'action sur les gencives ; rappel honnête sur l'absence de fluor (en parler au dentiste, surtout pour les enfants).
+- Retouches : savon liquide (arnica), savon avocat, déodorant, Essence tonifiante.
+- Slug `aloe-gelly-forever-gel-apaisant` conservé (URL indexée).
+
 ## Lot V6 du 14 novembre 2026 — accueil réordonné
 
 - Nouvel ordre : hero → « Quel produit Forever choisir ? » → produits phares → journal C9 (preuve) → Pourquoi l'aloe vera → bienfaits → devenir distributeur → FAQ. Le sélecteur par besoin passe du 3e au 2e écran sur mobile (avant : après les bienfaits). Aucun texte modifié, seulement l'ordre des blocs.

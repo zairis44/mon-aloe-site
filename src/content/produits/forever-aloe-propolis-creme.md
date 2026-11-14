@@ -8,21 +8,21 @@ images:
   - "/images/produits/forever-aloe-propolis-creme-2.webp"
   - "/images/produits/forever-aloe-propolis-creme-3.webp"
 category: "cremes-et-gels"
-description: "La crème riche pour les peaux qui tirent. La Forever Aloe Propolis Crème associe le gel d'aloe vera à la propolis et à la camomille pour nourrir, apaiser et protéger. Pensée pour les peaux sèches, sensibles ou abîmées, elle s'utilise sur le visage, le cou et le corps, sans laisser de film gras."
-titreDetails: "Forever Aloe Propolis Crème : la crème réparatrice aux bienfaits naturels"
+description: "La crème riche pour les peaux qui tirent. La Forever Aloe Propolis Crème associe le gel d'aloe vera à la propolis et à la camomille pour nourrir, apaiser et protéger. Pensée pour les peaux sèches ou sensibles, elle s'utilise sur le visage, le cou et le corps, sans laisser de film gras."
+titreDetails: "Forever Aloe Propolis Crème : la crème riche à l'aloe vera et à la propolis"
 seoTitle: "Forever Aloe Propolis Crème – Nourrit, apaise & protège"
 seoDescription: "Forever Aloe Propolis Crème : riche crème nourrissante à l’Aloe vera et propolis. Apaise, hydrate en profondeur, protège les peaux sèches et sensibles."
 video: ""
 lienCommande: "http://www.foreverliving.fr/ref/330001628607/51"
 faq:
   - question: "À quelles peaux s'adresse cette crème ?"
-    reponse: "Aux peaux sèches, sensibles, irritées ou matures. Elle apaise les rougeurs, hydrate en profondeur et renforce la barrière cutanée, ce qui rend souplesse et confort même aux zones les plus fragiles, comme le visage ou les mains."
+    reponse: "Aux peaux sèches, sensibles ou matures. Elle hydrate, nourrit et laisse la peau souple et confortable, y compris sur les zones qui tiraillent comme le visage ou les mains."
   - question: "Visage et corps, les deux ?"
     reponse: "Oui. Sa formule riche et douce s'utilise sur le visage, le cou, les mains, les coudes ou toute zone sèche. Elle pénètre sans effet gras et nourrit en profondeur, avec une sensation de confort qui dure."
   - question: "La propolis risque-t-elle d'irriter ?"
-    reponse: "Au contraire. Associée à l'aloe vera et à la camomille, la propolis calme les irritations grâce à ses propriétés réparatrices. Elle purifie légèrement la peau sans la dessécher et aide à unifier le teint, tout en apportant douceur et confort."
+    reponse: "La propolis est un produit de la ruche : si vous êtes allergique aux produits de la ruche, évitez cette crème. Sinon, elle est en général bien tolérée ; testez d'abord sur une petite zone si votre peau est réactive."
   - question: "Aide-t-elle sur les marques et cicatrices légères ?"
-    reponse: "Son apport en vitamines A, C et E, combiné à l'action de l'aloe vera, soutient la régénération de la peau. Elle aide à estomper les marques légères et à unifier le teint, tout en redonnant éclat et souplesse."
+    reponse: "C'est une crème hydratante, pas un soin médical : elle ne fait pas disparaître une cicatrice. Une peau bien hydratée paraît en revanche plus souple et plus lisse. Pour une cicatrice qui vous gêne, demandez conseil à un dermatologue."
   - question: "Est-elle comédogène ?"
     reponse: "Elle convient à la majorité des types de peau. Bien que nourrissante, elle ne laisse pas de film gras et n'obstrue pas les pores. Sur une peau très grasse ou acnéique, appliquez-en une petite quantité, uniquement sur les zones sèches."
 caracteristiques:
@@ -38,7 +38,7 @@ Votre peau tiraille, marque le froid ou réagit au moindre soin trop agressif. L
 
 ## L'aloe vera renforcé par la propolis
 
-La crème réunit le gel d'aloe vera stabilisé, apaisant et hydratant, et la propolis, réputée pour son action protectrice et réparatrice. Les vitamines A, E et C protègent la peau des agressions extérieures et soutiennent sa régénération. La camomille et l'allantoïne accentuent l'effet calmant, ce qui en fait un bon allié des peaux réactives et des zones fragiles : visage, mains, coudes.
+La crème réunit le gel d'aloe vera stabilisé, hydratant, et la propolis, un produit de la ruche. S'y ajoutent les vitamines A, E et C, la camomille et l'allantoïne. Le résultat : une crème riche, qui laisse une sensation de confort sur les zones qui tiraillent : visage, mains, coudes.
 
 ## Pour qui
 

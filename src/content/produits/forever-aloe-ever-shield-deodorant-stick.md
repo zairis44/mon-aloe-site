@@ -22,7 +22,7 @@ faq:
   - question: "Laisse-t-il des traces sur les vêtements ?"
     reponse: "Non, il est formulé pour ne pas tacher les textiles. Sa texture fine s'absorbe sans résidu visible, même après une journée active ou sous des vêtements ajustés."
   - question: "Convient-il aux peaux sensibles ?"
-    reponse: "Oui. L'aloe vera et la formule douce le rendent bien toléré, même après une épilation ou un rasage. Il apaise les rougeurs tout en apportant une hydratation discrète, sans gêne cutanée."
+    reponse: "Oui. Sans alcool ni sels d'aluminium, il est bien toléré, même après une épilation ou un rasage."
   - question: "Tient-il toute la journée ?"
     reponse: "Oui, il protège durablement des odeurs, même en cas d'activité physique ou de forte chaleur. L'aloe vera ajoute fraîcheur et douceur, pour une sensation de propreté qui dure."
 caracteristiques:
