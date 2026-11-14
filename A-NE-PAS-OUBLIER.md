@@ -1,11 +1,15 @@
 # Esprit Aloé — À ne pas oublier
 *Mise à jour : 13 novembre 2026*
 
+## Correctif du 14 novembre 2026 — Mini Aloe Argi+ et F15
+
+- Confirmé par Rafael : Mini Aloe Argi+ est un pack mini-briques de gel d'aloe vera + sticks ARGI+, pas un flacon enrichi en arginine. Fiche réécrite (quantités non indiquées : l'API Forever ne renvoie pas ce pack).
+- **F15** : Rafael ne l'a pas encore fait, il prévoit de l'essayer en janvier après un C9. L'article « Après le C9 » (V9) attend son retour d'expérience.
+
 ## Lot V5 du 14 novembre 2026 — page Sport
 
 - Catégorie Sport & Fitness : bloc « Aussi utilisés par les sportifs » (FAB, Mini Aloe Argi+, Freedom, Aloe Cooling Lotion), via la table `AUSSI` de `src/pages/produits/[categorie]/index.astro` (réutilisable pour d'autres catégories).
 - Guide : routine type « avant / pendant / après / au quotidien » avec liens vers les fiches ; « confort articulaire » retiré ; description de catégorie élargie.
-- **À vérifier** : la photo de Mini Aloe Argi+ montre des mini-briques de gel d'aloe vera et des sticks ARGI+, alors que la fiche décrit un flacon de 60 ml enrichi en arginine. Confirmer la composition réelle avec Rafael et corriger la fiche.
 
 ## Lot V3 du 13 novembre 2026 — prix par jour et comparatif des boissons
 
