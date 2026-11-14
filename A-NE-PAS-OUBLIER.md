@@ -1,6 +1,11 @@
 # Esprit Aloé — À ne pas oublier
 *Mise à jour : 13 novembre 2026*
 
+## Correctif du 14 novembre 2026 — Mini Aloe Argi+ et F15
+
+- Confirmé par Rafael : Mini Aloe Argi+ est un pack mini-briques de gel d'aloe vera + sticks ARGI+, pas un flacon enrichi en arginine. Fiche réécrite (quantités non indiquées : l'API Forever ne renvoie pas ce pack).
+- **F15** : Rafael ne l'a pas encore fait, il prévoit de l'essayer en janvier après un C9. L'article « Après le C9 » (V9) attend son retour d'expérience.
+
 ## Lot V3 du 13 novembre 2026 — prix par jour et comparatif des boissons
 
 - **Nouveau champ `coutJour`** (schéma `produits`), affiché sous le prix des fiches (« Soit environ … »). Renseigné pour : pulpe, Pêche, Berry Nectar, Mango (2,25 à 3,35 € par jour à 60–90 ml), Freedom (≈ 4,60 € à 90 ml), C9 ×2 (≈ 17 €/jour sur 9 jours), F15 ×6 (≈ 12 €/jour sur 15 jours), FAB (≈ 4,30 € la canette). **À recalculer si un prix change.**

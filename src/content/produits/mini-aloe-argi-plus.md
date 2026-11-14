@@ -7,48 +7,48 @@ image: /images/produits/mini-aloe-argi-plus.webp
 images:
 - /images/produits/mini-aloe-argi-plus-2.webp
 category: boissons-aloe-vera
-description: 'Le format nomade qui réunit gel d''aloe vera et arginine. Mini Aloe Argi+ se glisse dans un sac : voyage, travail, sport. L''aloe vera aide à soutenir la digestion. Un bon moyen de découvrir l''aloe vera avant un grand format.'
+description: Un pack découverte qui réunit des mini-briques de Forever Aloe Vera Gel et des sticks Forever ARGI+. Format nomade pour le sport, le travail ou les voyages, et bon moyen d'essayer les deux produits avant les grands formats.
 titreDetails: 'Mini Aloe Argi+™ : le format compact pour profiter de l''aloe vera et de l''arginine partout'
-seoTitle: Mini Aloe Argi+ – Aloe vera et arginine en format nomade
-seoDescription: 'Mini Aloe Argi+™ : gel d''aloe vera stabilisé enrichi en arginine, en format nomade. L''aloe vera aide à soutenir la digestion. Idéal pour découvrir l''aloe vera.'
+seoTitle: Mini Aloe Argi+ – Pack mini gel d'aloe vera et sticks ARGI+
+seoDescription: 'Mini Aloe Argi+ : pack de mini-briques de gel d''aloe vera et de sticks ARGI+. L''aloe vera aide à soutenir la digestion ; les vitamines B6 et B12 d''ARGI+ contribuent à réduire la fatigue.'
 video: ''
 lienCommande: http://www.foreverliving.fr/ref/330001628607/71633
 faq:
-- question: Que fait l'arginine dans ce produit ?
-  reponse: L'arginine est un acide aminé, ajouté ici au gel d'aloe vera. Aucune allégation de santé n'est autorisée en Europe pour l'arginine seule. C'est l'aloe vera de la formule qui aide à soutenir la digestion.
-- question: Le petit format est-il vraiment utile ?
-  reponse: Oui. Il se glisse dans un sac et convient aux voyages ou aux journées chargées, sans avoir à acheter une grande bouteille. C'est aussi un bon moyen de découvrir l'aloe vera.
-- question: Quelle conservation après ouverture ?
-  reponse: Conservez-le au réfrigérateur et finissez-le sous 30 jours.
-- question: Peut-on en donner aux enfants ?
-  reponse: Non, il est destiné aux adultes. Pour toute question concernant un enfant, demandez l'avis de votre médecin ou de votre pharmacien.
-- question: Différence avec Forever ARGI+ en sticks ?
-  reponse: Le Mini Aloe Argi+ est un gel d'aloe vera prêt à boire, enrichi en arginine. Forever ARGI+ est une poudre en sticks à diluer, plus concentrée en arginine (5 g par stick) et complétée de vitamines. Le stick vise davantage les sportifs.
+- question: Que contient le pack ?
+  reponse: Des mini-briques de Forever Aloe Vera Gel, la pulpe d'aloe vera à 99,7 %, et des sticks Forever ARGI+ (L-arginine et vitamines). Le détail des quantités figure sur la boutique Forever au moment de la commande.
+- question: Comment utiliser les deux ensemble ?
+  reponse: Beaucoup versent un stick d'ARGI+ directement dans une mini-brique de gel d'aloe vera, ou dans un verre d'eau, avant l'entraînement ou le matin. Un stick par jour suffit.
+- question: Pourquoi choisir ce pack plutôt que les grands formats ?
+  reponse: Pour essayer les deux produits sans acheter une bouteille d'un litre et une boîte complète d'ARGI+. Les mini-briques se glissent aussi facilement dans un sac.
+- question: Y a-t-il des précautions ?
+  reponse: ARGI+ est déconseillé aux femmes enceintes ou allaitantes et aux enfants ; en cas de traitement (notamment anticoagulant ou pour la tension) ou de problème cardiaque, demandez l'avis de votre médecin. Par précaution, l'aloe vera à boire est aussi déconseillé pendant la grossesse et l'allaitement.
+- question: Quelle conservation ?
+  reponse: Les mini-briques se conservent à température ambiante avant ouverture. Une fois ouvertes, gardez-les au frais et buvez-les rapidement.
 caracteristiques:
-- titre: Ce que la formule apporte
-  contenu: Le gel d'aloe vera Forever, qui aide à soutenir la digestion, et de l'arginine, un acide aminé. Un format pensé pour les personnes qui bougent beaucoup.
+- titre: Ce que contient le pack
+  contenu: 'Des mini-briques de Forever Aloe Vera Gel : l''aloe vera aide à soutenir la digestion, et la vitamine C ajoutée contribue au fonctionnement normal du système immunitaire. Des sticks Forever ARGI+ : 5 g de L-arginine par stick, avec des vitamines B6 et B12 qui contribuent à réduire la fatigue.'
 - titre: Comment l'utiliser
-  contenu: Secouez avant usage. Prenez 15 à 30 ml par jour, pur ou dilué dans un verre d'eau ou de jus, de préférence le matin. Conservez au frais après ouverture et finissez-le sous 30 jours.
-- titre: Composition et format
-  contenu: Gel d'aloe vera stabilisé, arginine, extraits végétaux, acide citrique, vitamine C. La liste exacte figure sur l'emballage.
+  contenu: Un stick d'ARGI+ par jour, dilué dans une mini-brique de gel d'aloe vera ou dans 240 ml d'eau. Le gel d'aloe vera se boit aussi seul, de préférence le matin.
+- titre: Pour qui
+  contenu: Pour découvrir les deux produits, ou pour avoir un format de poche les jours de sport, de déplacement ou de travail chargé.
 ---
 
-Vous voulez l'aloe vera au quotidien, mais une grande bouteille ne suit pas vos déplacements. Le Mini Aloe Argi+ se glisse dans n'importe quel sac.
+Vous voulez essayer le gel d'aloe vera et ARGI+ sans vous engager sur les grands formats ? Le Mini Aloe Argi+ réunit les deux dans un pack facile à emporter.
 
-## L'aloe vera et l'arginine en format de poche
+## Deux produits dans un même pack
 
-Le flacon réunit le gel d'aloe vera stabilisé, qui aide à soutenir la digestion, et l'arginine, un acide aminé.
+Les mini-briques de Forever Aloe Vera Gel contiennent la pulpe d'aloe vera à 99,7 %, qui aide à soutenir la digestion. Les sticks ARGI+ apportent 5 g de L-arginine et des vitamines, dont B6 et B12, qui contribuent à réduire la fatigue.
 
 ## Pour qui
 
-Vous voyagez, vous enchaînez des journées chargées, ou vous voulez découvrir l'aloe vera avant d'acheter un grand format. Ce petit format vous convient.
+Vous faites du sport, vous voyagez, ou vous voulez simplement goûter avant d'acheter le [gel d'aloe vera](/produits/forever-pulpe-daloe-vera/) en litre ou la boîte complète de [Forever ARGI+](/produits/forever-argi-pls/).
 
 ## Comment l'utiliser
 
-15 à 30 ml par jour, de préférence le matin, pur ou dilué. Une fois ouvert, à garder au frais et à finir sous 30 jours.
+Un stick par jour, dans une mini-brique de gel ou dans un verre d'eau, avant l'effort ou le matin.
 
-Pour en savoir plus sur l'aloe vera, lisez nos guides sur [la digestion](/blog/aloe-vera-digestion-bienfaits/) et sur [les défenses naturelles](/blog/aloe-vera-systeme-immunitaire-defenses-naturelles/).
+Pour le contexte sportif, lisez notre article sur [l'aloe vera et le sport](/blog/aloe-vera-sport-recuperation-musculaire/).
 
 ## Une question ?
 
-Appelez-moi ou écrivez-moi. Je vous oriente vers le format d'aloe vera le plus adapté à votre mode de vie.
+Appelez-moi ou écrivez-moi. Je vous aide à choisir entre le pack et les grands formats.
