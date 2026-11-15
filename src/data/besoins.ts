@@ -106,8 +106,8 @@ export const BESOINS: Besoin[] = [
     attention:
       'Un programme n’est pas un traitement. Demandez l’avis d’un professionnel de santé si vous êtes enceinte, si vous allaitez ou si vous suivez un traitement.',
     produits: [
-      ['programme-c9-forever-vanille-peche', 'Le programme de 9 jours, shakes vanille-pêche, avec guide jour par jour.'],
-      ['programme-c9-forever-chocolat-peche', 'Le même programme, avec des shakes au chocolat.'],
+      ['programme-c9-forever-vanille-peche', 'Le programme de 9 jours avec guide jour par jour, en 6 versions (aloe nature, pêche ou berry ; shake vanille ou chocolat).'],
+      ['programme-f15-debutant-vanille', 'La suite possible : 15 jours pour ancrer les habitudes prises pendant le C9.'],
       ['programme-dx4-forever', 'Une version courte de 4 jours, plus concentrée.'],
     ],
     guides: ['programme-c9-forever-guide-cure-detox-9-jours', 'c9-forever-avis'],

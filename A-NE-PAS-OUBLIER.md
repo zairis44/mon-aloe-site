@@ -1,6 +1,15 @@
 # Esprit Aloé — À ne pas oublier
 *Mise à jour : 15 novembre 2026 (migration de l'ancien domaine terminée)*
 
+## Lot AB du 15 novembre 2026 — une page par programme (décision de Rafael), Bing, bilan C9
+
+- **Fusion des pages saveurs** (audit : 94–96 % de texte commun) : 14 fiches → 5. Pages gardées (URL inchangées, les plus liées) : `programme-c9-forever-vanille-peche` (6 versions : aloe pêche / nature / Berry Nectar × shake vanille / chocolat), `programme-f15-debutant-vanille`, `programme-f15-intermediaire-vanille`, `programme-f15-avance-vanille` (vanille / chocolat), `forever-lite-ultra-vanille` (vanille / chocolat). Noms, title, meta et textes rendus neutres en saveur.
+- Nouveau champ `variantes` (saveur, reference, price, lienCommande, image) dans `content.config.ts`. Le gabarit fiche affiche « Choisissez votre version » (un lien de commande Forever par version, `rel="sponsored"`) et publie un **ProductGroup** + `hasVariant` (une offre par référence).
+- **9 fiches supprimées**, redirigées en 301 vers leur page principale (`vercel.json`, avec et sans `/`) ; les règles de l'ancien domaine qui visaient ces fiches pointent directement sur la page principale (un seul saut). Liens internes, `maillage.ts`, `besoins.ts`, `recommandes.ts` et `produitsLies` des articles mis à jour (hrefs seulement dans les articles en mesure : texte inchangé). 103 → 94 pages.
+- **Ajouter une saveur** : une entrée de plus dans `variantes` de la page principale (pas de nouveau fichier).
+- **Bing Webmaster Tools** : compte créé par Rafael (connexion Google), sitemap `https://espritaloe.fr/sitemap-index.xml` soumis le 15/11. **IndexNow** : clé `public/485bd7ec5f9cad7bacf57427ff613aed.txt`, script `npm run indexnow` (toutes les URL du sitemap, ou `npm run indexnow -- /chemin/`) **à lancer après chaque déploiement important**.
+- **/bilan-un-mois-apres-c9/** : le lien depuis le journal C9 est masqué (`BILAN_PUBLIE = false` dans `mon-journal-c9.astro`) tant que la page est en noindex. À la publication : passer à `true`, retirer le noindex et la ligne de filtre du sitemap dans `astro.config.mjs`.
+
 ## Lot AA du 15 novembre 2026 — corrections rapides de l'audit SEO / IA
 
 - **CLS desktop** (0,211 dans PageSpeed) : polices de secours « Fraunces Fallback » (Georgia) et « Mulish Fallback » (Arial) aux dimensions des vraies polices (size-adjust / ascent / descent calculés avec fontTools sur les fichiers woff2), dans `src/styles/global.css` ; préchargement de `fraunces-latin-500` et `mulish-latin-400` dans `Layout.astro`. Mesure locale : CLS 0,002. **À retester dans PageSpeed (desktop) après déploiement.**

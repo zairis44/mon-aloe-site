@@ -188,12 +188,12 @@ Commencez par les redirections et la fusion des pages : ce sont deux changements
 
 **Ce mois-ci**
 
-- [ ] Fusionner les pages saveurs C9, F15 et Lite Ultra ; rediriger les variantes en 301 ; passer en ProductGroup
+- [x] Fusionner les pages saveurs C9, F15 et Lite Ultra ; rediriger les variantes en 301 ; passer en ProductGroup *(15/11 : 14 fiches → 5, voir Lot AB)*
 - [ ] Attribuer une requête cible à chaque page C9 et les lier entre elles avec ces ancres
 - [~] Ajouter logo, adresse et parentOrganization au schéma ; corriger sameAs *(15/11 : email, adresse et parentOrganization faits ; logo et sameAs en attente des fichiers/URL de Rafael)*
 - [x] Harmoniser le nombre de produits sur l'accueil *(15/11 : nombre calculé automatiquement)* — allégations : décision de Rafael (nov. 2026) de garder les allégations « en attente » DGCCRF, pas de changement
-- [ ] Soumettre le sitemap à Bing Webmaster Tools ; activer IndexNow
-- [ ] Trancher pour /bilan-un-mois-apres-c9/ : publier ou retirer les liens
+- [x] Soumettre le sitemap à Bing Webmaster Tools ; activer IndexNow *(15/11 : sitemap soumis ; IndexNow via `npm run indexnow` après déploiement)*
+- [x] Trancher pour /bilan-un-mois-apres-c9/ : publier ou retirer les liens *(15/11 : liens masqués jusqu'à la publication, constante `BILAN_PUBLIE`)*
 
 **Les trois prochains mois**
 

@@ -76,7 +76,7 @@ const schemaBreadcrumb = {
 const labelProgramme = d.programme === 'vanille-peche' ? 'Vanille-Pêche' : 'Chocolat-Pêche';
 const slugProduitLie = d.programme === 'vanille-peche'
   ? 'programme-c9-forever-vanille-peche'
-  : 'programme-c9-forever-chocolat-peche';
+  : 'programme-c9-forever-vanille-peche';
 
 // Produit lié — récupéré directement depuis la collection produits
 // (même image et prix que la fiche produit, pas de nouveau fichier à gérer)
@@ -140,6 +140,9 @@ function phaseDuJour(num: number) {
   if (num === 10) return PHASE_APRES;
   return PHASES.find((p) => p.jours.includes(num)) ?? PHASES[0];
 }
+// Lien vers /bilan-un-mois-apres-c9/ masqué tant que la page est en noindex (décision de Rafael, 15/11/2026).
+// À la publication : passer à true, retirer le noindex de la page et la ligne de filtre dans astro.config.mjs.
+const BILAN_PUBLIE = false;
 ---
 
 <Layout
@@ -583,9 +586,11 @@ function phaseDuJour(num: number) {
             <div class="rounded-2xl bg-sand/60 border border-aloe-200 p-6 mb-6">
               <p class="text-xs font-semibold uppercase tracking-widest text-aloe-500 mb-2">📅 Rendez-vous dans un mois</p>
               <p class="text-sm text-aloe-700 leading-relaxed mb-5">{d.synthese.suiviUnMois}</p>
-              <a href="/bilan-un-mois-apres-c9/" class="inline-flex items-center gap-2 rounded-full border border-aloe-400 bg-white px-5 py-2.5 text-sm font-semibold text-aloe-700 hover:bg-aloe-50 transition-colors">
-                Voir la page du bilan à un mois →
-              </a>
+              {BILAN_PUBLIE && (
+                <a href="/bilan-un-mois-apres-c9/" class="inline-flex items-center gap-2 rounded-full border border-aloe-400 bg-white px-5 py-2.5 text-sm font-semibold text-aloe-700 hover:bg-aloe-50 transition-colors">
+                  Voir la page du bilan à un mois →
+                </a>
+              )}
             </div>
           )}
 

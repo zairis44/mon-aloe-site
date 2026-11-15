@@ -952,7 +952,7 @@
           }
         }
       ],
-      "destination": "https://espritaloe.fr/produits/forever-lite-ultra-choco/",
+      "destination": "https://espritaloe.fr/produits/forever-lite-ultra-vanille/",
       "permanent": true
     },
     {
@@ -1144,7 +1144,7 @@
           }
         }
       ],
-      "destination": "https://espritaloe.fr/produits/programme-c9-forever-berry-chocolat/",
+      "destination": "https://espritaloe.fr/produits/programme-c9-forever-vanille-peche/",
       "permanent": true
     },
     {
@@ -1160,7 +1160,7 @@
           }
         }
       ],
-      "destination": "https://espritaloe.fr/produits/programme-c9-forever-berry-vanille/",
+      "destination": "https://espritaloe.fr/produits/programme-c9-forever-vanille-peche/",
       "permanent": true
     },
     {
@@ -1176,7 +1176,7 @@
           }
         }
       ],
-      "destination": "https://espritaloe.fr/produits/programme-c9-forever-chocolat/",
+      "destination": "https://espritaloe.fr/produits/programme-c9-forever-vanille-peche/",
       "permanent": true
     },
     {
@@ -1192,7 +1192,7 @@
           }
         }
       ],
-      "destination": "https://espritaloe.fr/produits/programme-c9-forever-chocolat-peche/",
+      "destination": "https://espritaloe.fr/produits/programme-c9-forever-vanille-peche/",
       "permanent": true
     },
     {
@@ -1208,7 +1208,7 @@
           }
         }
       ],
-      "destination": "https://espritaloe.fr/produits/programme-c9-forever-vanille/",
+      "destination": "https://espritaloe.fr/produits/programme-c9-forever-vanille-peche/",
       "permanent": true
     },
     {
@@ -1256,7 +1256,7 @@
           }
         }
       ],
-      "destination": "https://espritaloe.fr/produits/programme-f15-avance-chocolat/",
+      "destination": "https://espritaloe.fr/produits/programme-f15-avance-vanille/",
       "permanent": true
     },
     {
@@ -1288,7 +1288,7 @@
           }
         }
       ],
-      "destination": "https://espritaloe.fr/produits/programme-f15-debutant-chocolat/",
+      "destination": "https://espritaloe.fr/produits/programme-f15-debutant-vanille/",
       "permanent": true
     },
     {
@@ -1320,7 +1320,7 @@
           }
         }
       ],
-      "destination": "https://espritaloe.fr/produits/programme-f15-intermediaire-chocolat/",
+      "destination": "https://espritaloe.fr/produits/programme-f15-intermediaire-vanille/",
       "permanent": true
     },
     {
@@ -2215,6 +2215,96 @@
     {
       "source": "/catalogue-forever-2025",
       "destination": "/catalogue-forever/",
+      "permanent": true
+    },
+    {
+      "source": "/produits/programme-c9-forever-vanille",
+      "destination": "/produits/programme-c9-forever-vanille-peche/",
+      "permanent": true
+    },
+    {
+      "source": "/produits/programme-c9-forever-vanille/",
+      "destination": "/produits/programme-c9-forever-vanille-peche/",
+      "permanent": true
+    },
+    {
+      "source": "/produits/programme-c9-forever-chocolat",
+      "destination": "/produits/programme-c9-forever-vanille-peche/",
+      "permanent": true
+    },
+    {
+      "source": "/produits/programme-c9-forever-chocolat/",
+      "destination": "/produits/programme-c9-forever-vanille-peche/",
+      "permanent": true
+    },
+    {
+      "source": "/produits/programme-c9-forever-chocolat-peche",
+      "destination": "/produits/programme-c9-forever-vanille-peche/",
+      "permanent": true
+    },
+    {
+      "source": "/produits/programme-c9-forever-chocolat-peche/",
+      "destination": "/produits/programme-c9-forever-vanille-peche/",
+      "permanent": true
+    },
+    {
+      "source": "/produits/programme-c9-forever-berry-vanille",
+      "destination": "/produits/programme-c9-forever-vanille-peche/",
+      "permanent": true
+    },
+    {
+      "source": "/produits/programme-c9-forever-berry-vanille/",
+      "destination": "/produits/programme-c9-forever-vanille-peche/",
+      "permanent": true
+    },
+    {
+      "source": "/produits/programme-c9-forever-berry-chocolat",
+      "destination": "/produits/programme-c9-forever-vanille-peche/",
+      "permanent": true
+    },
+    {
+      "source": "/produits/programme-c9-forever-berry-chocolat/",
+      "destination": "/produits/programme-c9-forever-vanille-peche/",
+      "permanent": true
+    },
+    {
+      "source": "/produits/programme-f15-debutant-chocolat",
+      "destination": "/produits/programme-f15-debutant-vanille/",
+      "permanent": true
+    },
+    {
+      "source": "/produits/programme-f15-debutant-chocolat/",
+      "destination": "/produits/programme-f15-debutant-vanille/",
+      "permanent": true
+    },
+    {
+      "source": "/produits/programme-f15-intermediaire-chocolat",
+      "destination": "/produits/programme-f15-intermediaire-vanille/",
+      "permanent": true
+    },
+    {
+      "source": "/produits/programme-f15-intermediaire-chocolat/",
+      "destination": "/produits/programme-f15-intermediaire-vanille/",
+      "permanent": true
+    },
+    {
+      "source": "/produits/programme-f15-avance-chocolat",
+      "destination": "/produits/programme-f15-avance-vanille/",
+      "permanent": true
+    },
+    {
+      "source": "/produits/programme-f15-avance-chocolat/",
+      "destination": "/produits/programme-f15-avance-vanille/",
+      "permanent": true
+    },
+    {
+      "source": "/produits/forever-lite-ultra-choco",
+      "destination": "/produits/forever-lite-ultra-vanille/",
+      "permanent": true
+    },
+    {
+      "source": "/produits/forever-lite-ultra-choco/",
+      "destination": "/produits/forever-lite-ultra-vanille/",
       "permanent": true
     }
   ]

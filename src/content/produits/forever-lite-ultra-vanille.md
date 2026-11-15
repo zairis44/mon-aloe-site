@@ -1,15 +1,15 @@
 ---
-name: "Forever Lite Ultra vanille"
+name: "Forever Lite Ultra – vanille ou chocolat"
 reference: "470"
 slug: "forever-lite-ultra-vanille"
 price: 30.49
 image: "/images/produits/forever-lite-ultra-vanille.webp"
 images: []
 category: "sport-et-fitness"
-description: "Le shake protéiné végétal saveur vanille : 17 g de protéines de soja pour environ 90 kcal par portion, avec des vitamines, des minéraux et des fibres. À boire en shake ou en smoothie, au petit-déjeuner ou après le sport. Sans gluten, végétarien."
-titreDetails: "Forever Lite Ultra™ Vanille : le shake protéiné végétal"
-seoTitle: "Forever Lite Ultra Vanille – Shake protéiné"
-seoDescription: "Forever Lite Ultra Vanille : shake protéiné végétal, 17 g de protéines de soja, vitamines et fibres. Les protéines contribuent au maintien de la masse musculaire."
+description: "Le shake protéiné végétal, vanille ou chocolat : 17 g de protéines de soja pour environ 90 kcal par portion, avec des vitamines, des minéraux et des fibres. À boire en shake ou en smoothie, au petit-déjeuner ou après le sport. Sans gluten, végétarien."
+titreDetails: "Forever Lite Ultra™ : le shake protéiné végétal"
+seoTitle: "Forever Lite Ultra – Shake protéiné vanille ou chocolat"
+seoDescription: "Forever Lite Ultra, vanille ou chocolat : shake protéiné végétal, 17 g de protéines de soja, vitamines et fibres. Les protéines contribuent au maintien de la masse musculaire."
 video: ""
 lienCommande: "http://www.foreverliving.fr/ref/330001628607/470"
 faq:
@@ -29,10 +29,21 @@ caracteristiques:
   - titre: "Comment l'utiliser"
     contenu: "Versez une dose (25 g) dans 240 ml d'eau, de lait écrémé ou de boisson végétale. Mélangez au shaker ou au blender. Prenez-le une à deux fois par jour, par exemple le matin ou après l'effort. Sans gluten, contient du soja. Refermez le sachet et conservez au frais et au sec."
   - titre: "Composition et format"
-    contenu: "Sachet de 375 g (environ 15 portions). Isolat de protéine de soja, fructose, fibres prébiotiques (FOS), complexe Aminotein, huile de carthame, lécithine de soja, arôme naturel de vanille, complexe de vitamines et minéraux (A, D3, C, B3, B6, B12, folate, zinc, manganèse, sélénium). Adapté aux régimes végétariens, contient du soja."
+    contenu: "Sachet de 375 g (environ 15 portions). Isolat de protéine de soja, fructose, fibres prébiotiques (FOS), complexe Aminotein, huile de carthame, lécithine de soja, arôme naturel de vanille ou de chocolat selon la version, complexe de vitamines et minéraux (A, D3, C, B3, B6, B12, folate, zinc, manganèse, sélénium). Adapté aux régimes végétariens, contient du soja."
+variantes:
+  - saveur: "Vanille"
+    reference: "470"
+    price: 30.49
+    lienCommande: "https://www.foreverliving.fr/ref/330001628607/470"
+    image: "/images/produits/forever-lite-ultra-vanille.webp"
+  - saveur: "Chocolat"
+    reference: "471"
+    price: 30.49
+    lienCommande: "https://www.foreverliving.fr/ref/330001628607/471"
+    image: "/images/produits/forever-lite-ultra-choco.webp"
 ---
 
-Vous cherchez un shake protéiné polyvalent pour vos petits-déjeuners, vos collations ou un programme minceur. Le Forever Lite Ultra vanille remplit ce rôle, avec un goût neutre qui se marie à beaucoup de préparations.
+Vous cherchez un shake protéiné polyvalent pour vos petits-déjeuners, vos collations ou un programme minceur. Le Forever Lite Ultra remplit ce rôle, en version vanille ou chocolat.
 
 ## Un shake protéiné complet
 
@@ -40,7 +51,7 @@ La base est l'isolat de protéine de soja, associé au complexe Aminotein. Chaqu
 
 ## Pour qui
 
-Vous suivez une démarche de gestion du poids, vous voulez un petit-déjeuner rapide et protéiné, ou une collation après le sport. Ce shake vous convient. Sa saveur vanille se prête bien aux smoothies et aux recettes. Il fait partie du [Programme C9](/produits/programme-c9-forever-vanille-peche/).
+Vous suivez une démarche de gestion du poids, vous voulez un petit-déjeuner rapide et protéiné, ou une collation après le sport. Ce shake vous convient. La vanille se prête bien aux smoothies et aux recettes ; le chocolat plaît aux gourmands. Il fait partie du [Programme C9](/produits/programme-c9-forever-vanille-peche/).
 
 ## Comment l'utiliser
 

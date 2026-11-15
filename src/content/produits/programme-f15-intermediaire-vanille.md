@@ -1,5 +1,5 @@
 ---
-name: "Programme F15 Intermédiaire Vanille – 15 jours pour franchir un palier"
+name: "Programme F15 Intermédiaire – 15 jours pour franchir un palier"
 reference: "532"
 slug: "programme-f15-intermediaire-vanille"
 price: 181.74
@@ -7,10 +7,10 @@ coutJour: 'environ 12 € par jour sur 15 jours'
 image: "/images/produits/programme-f15-intermediaire-vanille.webp"
 images: []
 category: "programmes-detox"
-description: "La suite logique du C9, pour celles et ceux qui ont déjà une pratique sportive régulière et des repères nutritionnels. 15 jours pour stabiliser vos résultats, structurer votre alimentation et installer une routine sportive accessible. Shakes vanille, compléments ciblés et guide progressif. Accompagnement personnalisé par Rafael."
+description: "La suite logique du C9, pour celles et ceux qui ont déjà une pratique sportive régulière et des repères nutritionnels. 15 jours pour stabiliser vos résultats, structurer votre alimentation et installer une routine sportive accessible. Shakes vanille ou chocolat, compléments ciblés et guide progressif. Accompagnement personnalisé par Rafael."
 titreDetails: "Programme F15 Intermédiaire : consolider ce que le C9 a lancé"
-seoTitle: "Programme F15 Intermédiaire Vanille – Après le C9"
-seoDescription: "Programme F15 Intermédiaire Vanille : 15 jours pour stabiliser vos résultats après le C9. Nutrition, sport et compléments Forever. Livraison France."
+seoTitle: "Programme F15 Intermédiaire Forever – Après le C9"
+seoDescription: "Programme F15 Intermédiaire (vanille ou chocolat) : 15 jours pour stabiliser vos résultats après le C9. Nutrition, sport et compléments Forever. Livraison France."
 video: ""
 lienCommande: "https://www.foreverliving.fr/ref/330001628607/532"
 faq:
@@ -24,11 +24,22 @@ faq:
     reponse: "C'est possible et c'est même la suite prévue par Forever. Certains préfèrent toutefois laisser passer quelques jours pour voir si les habitudes prises tiennent naturellement. Les deux approches se défendent : l'essentiel est de ne pas revenir brutalement aux anciennes habitudes."
 caracteristiques:
   - titre: "Ce que contient le coffret"
-    contenu: "Deux pulpes d'aloe vera stabilisées, Forever Therm (30 comprimés), Forever Fiber (15 sachets), une poche de Forever Lite Ultra saveur vanille pour 15 doses, et le livret d'accompagnement Intermédiaire avec le planning nutritionnel et le programme d'exercices adapté à votre niveau."
+    contenu: "Deux pulpes d'aloe vera stabilisées, Forever Therm (30 comprimés), Forever Fiber (15 sachets), une poche de Forever Lite Ultra (vanille ou chocolat, au choix) pour 15 doses, et le livret d'accompagnement Intermédiaire avec le planning nutritionnel et le programme d'exercices adapté à votre niveau."
   - titre: "Comment se déroulent les 15 jours"
     contenu: "Le programme avance en deux phases. La première structure l'alimentation et réintroduit progressivement le mouvement. La seconde consolide, avec des séances un peu plus soutenues et une autonomie croissante sur les repas. Le guide indique quoi faire chaque jour, sans rien laisser à l'improvisation."
   - titre: "Pourquoi le niveau Intermédiaire"
     contenu: "Il suppose une pratique déjà installée, de l'ordre de deux à trois séances par semaine, et quelques repères nutritionnels. Les séances sont plus longues et plus soutenues, et le plan alimentaire vous laisse choisir davantage. C'est le niveau le plus fréquent après un premier F15 Débutant."
+variantes:
+  - saveur: "Shake vanille"
+    reference: "532"
+    price: 181.74
+    lienCommande: "https://www.foreverliving.fr/ref/330001628607/532"
+    image: "/images/produits/programme-f15-intermediaire-vanille.webp"
+  - saveur: "Shake chocolat"
+    reference: "533"
+    price: 181.74
+    lienCommande: "https://www.foreverliving.fr/ref/330001628607/533"
+    image: "/images/produits/programme-f15-intermediaire-chocolat.webp"
 ---
 
 Vous venez de terminer un C9, ou vous cherchez un cadre plus progressif qu'une cure courte. Le F15 s'étale sur 15 jours et vise autre chose : non pas un déclic, mais des habitudes qui tiennent.

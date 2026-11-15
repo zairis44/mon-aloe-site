@@ -1,5 +1,5 @@
 ---
-name: "Programme C9 Forever Vanille Pêche – Cure détox 9 jours"
+name: "Programme C9 Forever – 9 jours, 6 versions au choix"
 reference: "629"
 slug: "programme-c9-forever-vanille-peche"
 price: 152.42
@@ -7,10 +7,10 @@ coutJour: 'environ 17 € par jour sur 9 jours'
 image: "/images/produits/programme-c9-forever-vanille-peche.webp"
 images: []
 category: "programmes-detox"
-description: "La cure de 9 jours qui relance votre organisme : gel d'aloe vera, shakes vanille-pêche et compléments ciblés, avec un guide jour par jour. Pensée pour repartir sur de bonnes bases, sans frustration. Accompagnement personnalisé par Rafael, distributeur Forever en Loire-Atlantique."
+description: "Le programme de 9 jours pour encadrer votre alimentation, avec un objectif de perte de poids : gel d'aloe vera, shakes protéinés, compléments ciblés et guide jour par jour. Six versions au choix : aloe nature, pêche ou Berry Nectar, shake vanille ou chocolat. Accompagnement personnalisé par Rafael, distributeur Forever en Loire-Atlantique."
 titreDetails: "Le Programme C9 Forever : Votre Cure Détox Complète de 9 Jours"
-seoTitle: "Programme C9 Vanille Pêche – Détox minceur 9j"
-seoDescription: "Programme C9 Vanille-Pêche : 9 jours pour encadrer votre alimentation avec un objectif de perte de poids. Aloe vera, shakes protéinés, compléments et guide. Livraison France."
+seoTitle: "Programme C9 Forever : la cure de 9 jours (6 versions)"
+seoDescription: "Programme C9 Forever : 9 jours pour encadrer votre alimentation, avec un objectif de perte de poids. Aloe vera, shakes, compléments et guide. 6 versions au choix."
 video: ""
 lienCommande: "http://www.foreverliving.fr/ref/330001628607/629"
 featured: true
@@ -28,18 +28,53 @@ faq:
     reponse: "Le C9 est déconseillé pendant la grossesse et l'allaitement, aux mineurs, et aux personnes diabétiques ou sous traitement médical lourd sans avis du médecin. Si vous avez un suivi, parlez-en d'abord à votre médecin. Appelez-moi au 06 77 35 22 26 et je vous oriente vers le programme le plus adapté à votre situation."
 caracteristiques:
   - titre: "Ce que vous vivez sur les 9 jours"
-    contenu: "Vous démarrez chaque journée avec le gel d'aloe vera, qui aide à soutenir la digestion, puis suivez le plan jour par jour : compléments fournis, shakes vanille-pêche et repas légers. La saveur fruitée aide à tenir sans lassitude. Les deux premiers jours sont les plus exigeants ; ensuite, le rythme s'installe."
+    contenu: "Vous démarrez chaque journée avec le gel d'aloe vera, qui aide à soutenir la digestion, puis suivez le plan jour par jour : compléments fournis, shakes et repas légers. Avec six combinaisons de saveurs, vous choisissez celle qui vous aidera à tenir sans lassitude. Les deux premiers jours sont les plus exigeants ; ensuite, le rythme s'installe."
   - titre: "Comment se déroule la cure"
     contenu: "Le programme avance en deux temps sur 9 jours, avec le gel d'aloe vera matin et soir et les compléments selon le calendrier fourni. Vous suivez le plan alimentaire et le guide d'activité physique : marche, cardio doux, étirements. Buvez au moins 3 litres d'eau par jour. Adaptez les portions à votre corpulence."
   - titre: "Plus qu'une détox, un nouveau départ"
     contenu: "Le C9 vous fait bouger autant qu'il cadre l'alimentation. Le guide vous encourage à marcher et à faire du renforcement léger dès les premiers jours, à votre rythme. C'est souvent ce qui reste après les 9 jours : de nouvelles habitudes, plus qu'un chiffre sur la balance."
+variantes:
+  - saveur: "Aloe pêche + shake vanille"
+    reference: "629"
+    price: 152.42
+    lienCommande: "https://www.foreverliving.fr/ref/330001628607/629"
+    image: "/images/produits/programme-c9-forever-vanille-peche.webp"
+  - saveur: "Aloe pêche + shake chocolat"
+    reference: "630"
+    price: 152.42
+    lienCommande: "https://www.foreverliving.fr/ref/330001628607/630"
+    image: "/images/produits/programme-c9-forever-chocolat-peche.webp"
+  - saveur: "Aloe nature + shake vanille"
+    reference: "475"
+    price: 152.42
+    lienCommande: "https://www.foreverliving.fr/ref/330001628607/475"
+    image: "/images/produits/programme-c9-forever-vanille.webp"
+  - saveur: "Aloe nature + shake chocolat"
+    reference: "476"
+    price: 152.42
+    lienCommande: "https://www.foreverliving.fr/ref/330001628607/476"
+    image: "/images/produits/programme-c9-forever-chocolat.webp"
+  - saveur: "Aloe Berry Nectar + shake vanille"
+    reference: "625"
+    price: 152.42
+    lienCommande: "https://www.foreverliving.fr/ref/330001628607/625"
+    image: "/images/produits/programme-c9-forever-berry-vanille.webp"
+  - saveur: "Aloe Berry Nectar + shake chocolat"
+    reference: "626"
+    price: 152.42
+    lienCommande: "https://www.foreverliving.fr/ref/330001628607/626"
+    image: "/images/produits/programme-c9-forever-berry-chocolat.webp"
 ---
 
 Vous voulez repartir sur de bonnes bases après une période de relâche, sans vous lancer dans un régime drastique. Le Programme C9 dure 9 jours et tient dans une boîte : tout ce qu'il faut pour encadrer votre alimentation, avec un objectif de perte de poids.
 
 ## Une cure clé en main
 
-Le C9 (pour Clean 9) réunit le gel d'aloe vera stabilisé certifié IASC, des shakes protéinés vanille-pêche, des compléments ciblés (Forever Therm, Forever Fiber, Garcinia Plus) et un guide nutrition et sport complet. Vous n'avez rien à calculer ni à improviser : le programme indique quoi prendre, quoi manger et comment bouger, jour après jour.
+Le C9 (pour Clean 9) réunit le gel d'aloe vera stabilisé certifié IASC, des shakes protéinés (vanille ou chocolat), des compléments ciblés (Forever Therm, Forever Fiber, Garcinia Plus) et un guide nutrition et sport complet. Vous n'avez rien à calculer ni à improviser : le programme indique quoi prendre, quoi manger et comment bouger, jour après jour.
+
+## Six versions, un seul programme
+
+Le contenu et le déroulé sont les mêmes dans les six versions ; seules les saveurs changent. Vous choisissez la boisson d'aloe vera (nature, pêche ou Aloe Berry Nectar) et le shake (vanille ou chocolat). La version aloe pêche et shake vanille est la plus demandée. Pas sûr de votre choix ? Demandez-moi : je vous dis ce que préfèrent les personnes que j'accompagne.
 
 ## Pour qui
 

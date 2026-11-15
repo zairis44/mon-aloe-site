@@ -1,5 +1,5 @@
 ---
-name: "Programme F15 Avancé Vanille – 15 jours pour affiner et performer"
+name: "Programme F15 Avancé – 15 jours pour affiner et performer"
 reference: "536"
 slug: "programme-f15-avance-vanille"
 price: 181.74
@@ -7,10 +7,10 @@ coutJour: 'environ 12 € par jour sur 15 jours'
 image: "/images/produits/programme-f15-avance-vanille.webp"
 images: []
 category: "programmes-detox"
-description: "La suite logique du C9, pour les pratiquants confirmés qui maîtrisent déjà l'entraînement et l'équilibre alimentaire. 15 jours pour stabiliser vos résultats, structurer votre alimentation et installer une routine sportive accessible. Shakes vanille, compléments ciblés et guide progressif. Accompagnement personnalisé par Rafael."
+description: "La suite logique du C9, pour les pratiquants confirmés qui maîtrisent déjà l'entraînement et l'équilibre alimentaire. 15 jours pour stabiliser vos résultats, structurer votre alimentation et installer une routine sportive accessible. Shakes vanille ou chocolat, compléments ciblés et guide progressif. Accompagnement personnalisé par Rafael."
 titreDetails: "Programme F15 Avancé : consolider ce que le C9 a lancé"
-seoTitle: "Programme F15 Avancé Vanille – Après le C9"
-seoDescription: "Programme F15 Avancé Vanille : 15 jours pour stabiliser vos résultats après le C9. Nutrition, sport et compléments Forever. Livraison France."
+seoTitle: "Programme F15 Avancé Forever – Après le C9"
+seoDescription: "Programme F15 Avancé (vanille ou chocolat) : 15 jours pour stabiliser vos résultats après le C9. Nutrition, sport et compléments Forever. Livraison France."
 video: ""
 lienCommande: "https://www.foreverliving.fr/ref/330001628607/536"
 faq:
@@ -24,11 +24,22 @@ faq:
     reponse: "C'est possible et c'est même la suite prévue par Forever. Certains préfèrent toutefois laisser passer quelques jours pour voir si les habitudes prises tiennent naturellement. Les deux approches se défendent : l'essentiel est de ne pas revenir brutalement aux anciennes habitudes."
 caracteristiques:
   - titre: "Ce que contient le coffret"
-    contenu: "Deux pulpes d'aloe vera stabilisées, Forever Therm (30 comprimés), Forever Fiber (15 sachets), une poche de Forever Lite Ultra saveur vanille pour 15 doses, et le livret d'accompagnement Avancé avec le planning nutritionnel et le programme d'exercices adapté à votre niveau."
+    contenu: "Deux pulpes d'aloe vera stabilisées, Forever Therm (30 comprimés), Forever Fiber (15 sachets), une poche de Forever Lite Ultra (vanille ou chocolat, au choix) pour 15 doses, et le livret d'accompagnement Avancé avec le planning nutritionnel et le programme d'exercices adapté à votre niveau."
   - titre: "Comment se déroulent les 15 jours"
     contenu: "Le programme avance en deux phases. La première structure l'alimentation et réintroduit progressivement le mouvement. La seconde consolide, avec des séances un peu plus soutenues et une autonomie croissante sur les repas. Le guide indique quoi faire chaque jour, sans rien laisser à l'improvisation."
   - titre: "Pourquoi le niveau Avancé"
     contenu: "Il s'adresse aux pratiquants réguliers et autonomes. Les séances sont exigeantes en intensité comme en volume, et le suivi nutritionnel plus fin. Choisissez-le en fonction de votre pratique réelle, pas de vos objectifs : la régularité prime sur l'intensité."
+variantes:
+  - saveur: "Shake vanille"
+    reference: "536"
+    price: 181.74
+    lienCommande: "https://www.foreverliving.fr/ref/330001628607/536"
+    image: "/images/produits/programme-f15-avance-vanille.webp"
+  - saveur: "Shake chocolat"
+    reference: "537"
+    price: 181.74
+    lienCommande: "https://www.foreverliving.fr/ref/330001628607/537"
+    image: "/images/produits/programme-f15-avance-chocolat.webp"
 ---
 
 Vous venez de terminer un C9, ou vous cherchez un cadre plus progressif qu'une cure courte. Le F15 s'étale sur 15 jours et vise autre chose : non pas un déclic, mais des habitudes qui tiennent.

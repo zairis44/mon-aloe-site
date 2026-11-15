@@ -6,7 +6,7 @@
 
  */
 export const PRODUITS_RECOMMANDES: { slug: string; note: string }[] = [
-  { slug: 'programme-c9-forever-vanille-peche', note: 'Le programme de 9 jours (existe aussi en chocolat)' },
+  { slug: 'programme-c9-forever-vanille-peche', note: 'Le programme de 9 jours (6 versions : aloe et shake au choix)' },
   { slug: 'forever-aloe-vera-peche-bien-etre', note: 'La pulpe d’aloe vera, version pêche' },
   { slug: 'aloe-gelly-forever-gel-apaisant', note: 'Le gel d’aloe vera multi-usages' },
   { slug: 'forever-aloe-ever-shield-deodorant-stick', note: 'Le déodorant sans sels d’aluminium' },
