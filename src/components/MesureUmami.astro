@@ -1,0 +1,49 @@
+---
+/**
+ * src/components/MesureUmami.astro
+ * Mesure d'audience sans cookie (Umami Cloud), active pour tous les visiteurs.
+ *
+ * Cadre : exemption de consentement CNIL pour la mesure d'audience
+ * (lignes directrices du 04/07/2025, grille d'auto-évaluation). Conditions tenues ici :
+ *   - finalité unique : statistiques de fréquentation d'espritaloe.fr, pour Esprit Aloé seul ;
+ *   - aucun cookie, aucun identifiant stocké dans le navigateur, pas de suivi entre sites ;
+ *   - données agrégées et anonymes (pages vues, clics vers la boutique, page d'origine) ;
+ *   - conservation limitée (6 mois sur l'offre gratuite) ;
+ *   - le réglage « Ne pas me suivre » du navigateur est respecté.
+ * Ne rien ajouter ici qui sorte de ce cadre (enregistrement de session, identifiant
+ * utilisateur, données de formulaire) : ça demanderait un consentement.
+ *
+ * GA4 reste séparé, derrière le bandeau (AnalyticsConsent.astro).
+ * Domaine limité à espritaloe.fr : les aperçus Vercel et le local ne sont pas comptés.
+ */
+const UMAMI_WEBSITE_ID = '62867fb8-5df6-4924-837f-5a651f9ff781';
+---
+<script
+  is:inline
+  defer
+  src="https://cloud.umami.is/script.js"
+  data-website-id={UMAMI_WEBSITE_ID}
+  data-domains="espritaloe.fr"
+  data-do-not-track="true"
+></script>
+
+<script is:inline>
+  // Clics vers la boutique Forever : un événement « clic-boutique » par clic,
+  // avec la page d'origine et l'adresse du lien (sans paramètres).
+  document.addEventListener('click', function (event) {
+    var target = event.target;
+    if (!(target instanceof Element)) return;
+    var link = target.closest('a[href]');
+    if (!link) return;
+    var url;
+    try { url = new URL(link.href, location.href); } catch (e) { return; }
+    if (url.protocol !== 'https:' && url.protocol !== 'http:') return;
+    if (url.hostname !== 'foreverliving.fr' && !url.hostname.endsWith('.foreverliving.fr')) return;
+    if (window.umami && typeof window.umami.track === 'function') {
+      window.umami.track('clic-boutique', {
+        page: location.pathname,
+        lien: url.origin + url.pathname,
+      });
+    }
+  }, { capture: true });
+</script>

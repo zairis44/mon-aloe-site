@@ -1,6 +1,14 @@
 # Esprit Aloé — À ne pas oublier
 *Mise à jour : 15 novembre 2026 (migration de l'ancien domaine terminée)*
 
+## Lot AF du 15 novembre 2026 (soir) — Umami, mesure sans cookie
+
+- **Umami Cloud** (compte créé par Rafael, offre gratuite Hobby : 100K événements/mois, 1 site, 6 mois d'historique). Composant `src/components/MesureUmami.astro`, chargé dans le `<head>` de `Layout.astro` pour **tous** les visiteurs, sans bandeau. `data-domains="espritaloe.fr"` (aperçus Vercel et local non comptés), `data-do-not-track="true"`.
+- Événement **`clic-boutique`** (page d'origine + lien sans paramètres) sur tout clic vers foreverliving.fr. Tableau de bord : cloud.umami.is → site → Événements.
+- Cadre : exemption de consentement CNIL (lignes directrices du 04/07/2025, grille d'auto-évaluation ; plus de liste officielle depuis le 1er janvier 2026). Ne rien activer dans Umami qui sorte de la mesure d'audience (enregistrement de session, identifiant utilisateur…).
+- **GA4 inchangé**, toujours derrière le bandeau (le Consent Mode avancé a été écarté : hors exemption CNIL, et la modélisation exige ~1 000 événements refusés/jour).
+- Page `/confidentialite/` : section « Statistiques de fréquentation sans cookie (Umami) », mention en 2 et 7, date « novembre 2026 ». **À compléter** : région d'hébergement Umami (UE ?) à confirmer par Rafael.
+
 ## Lot AE du 15 novembre 2026 (soir) — Instagram, GA4, maillage
 
 - **Instagram** : compte @esprit.aloe créé par Rafael (https://www.instagram.com/esprit.aloe/). Ajouté au `sameAs` (Layout, contact, à propos, page Loire-Atlantique) et en bloc sous Facebook sur `/contact/`. Reste côté Instagram : compte pro Entreprise, champ Nom, bio avec « Entrepreneur indépendant partenaire Forever Living Products », lien en bio `https://espritaloe.fr/?utm_source=instagram&utm_medium=social&utm_campaign=bio`, 3 posts épinglés. Pas de « Forever » ni « C9 » dans le @ ou le champ Nom (compliance Forever).
