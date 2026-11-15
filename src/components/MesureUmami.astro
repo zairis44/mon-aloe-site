@@ -18,6 +18,17 @@
  */
 const UMAMI_WEBSITE_ID = '62867fb8-5df6-4924-837f-5a651f9ff781';
 ---
+<script is:inline>
+  // Exclure ses propres visites : ouvrir une fois https://espritaloe.fr/?stats=off
+  // dans chaque navigateur (?stats=on pour réactiver). Exécuté avant le script Umami,
+  // donc la visite qui porte le paramètre n'est pas comptée non plus.
+  try {
+    var choixStats = new URLSearchParams(location.search).get('stats');
+    if (choixStats === 'off') localStorage.setItem('umami.disabled', '1');
+    if (choixStats === 'on') localStorage.removeItem('umami.disabled');
+  } catch (e) { /* stockage indisponible : rien à faire */ }
+</script>
+
 <script
   is:inline
   defer

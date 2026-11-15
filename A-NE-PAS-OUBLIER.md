@@ -7,7 +7,7 @@
 - Événement **`clic-boutique`** (page d'origine + lien sans paramètres) sur tout clic vers foreverliving.fr. Tableau de bord : cloud.umami.is → site → Événements.
 - Cadre : exemption de consentement CNIL (lignes directrices du 04/07/2025, grille d'auto-évaluation ; plus de liste officielle depuis le 1er janvier 2026). Ne rien activer dans Umami qui sorte de la mesure d'audience (enregistrement de session, identifiant utilisateur…).
 - **GA4 inchangé**, toujours derrière le bandeau (le Consent Mode avancé a été écarté : hors exemption CNIL, et la modélisation exige ~1 000 événements refusés/jour).
-- Page `/confidentialite/` : section « Statistiques de fréquentation sans cookie (Umami) », mention en 2 et 7, date « novembre 2026 ». Région d'hébergement Umami : **UE** (confirmé par Rafael le 15/11), mentionnée sur la page. Visites de Rafael exclues via `localStorage umami.disabled=1` (navigateur intégré Claude fait le 15/11 ; à refaire sur chaque navigateur/appareil : Chrome Mac, PC Windows, téléphone).
+- Page `/confidentialite/` : section « Statistiques de fréquentation sans cookie (Umami) », mention en 2 et 7, date « novembre 2026 ». Région d'hébergement Umami : **UE** (confirmé par Rafael le 15/11), mentionnée sur la page. Exclure ses propres visites : ouvrir une fois `https://espritaloe.fr/?stats=off` dans chaque navigateur (`?stats=on` pour réactiver) → pose `localStorage umami.disabled=1`. Fait le 15/11 dans le navigateur intégré Claude ; reste Chrome Mac, PC Windows, téléphone.
 
 ## Lot AE du 15 novembre 2026 (soir) — Instagram, GA4, maillage
 
