@@ -1,5 +1,5 @@
 # Esprit Aloé — À ne pas oublier
-*Mise à jour : 15 novembre 2026*
+*Mise à jour : 15 novembre 2026 (migration de l'ancien domaine terminée)*
 
 ## Lot Z du 15 novembre 2026 — page /catalogue-forever/ (reprise de l'ancienne page catalogue)
 
@@ -22,6 +22,13 @@
   3. Attendre le certificat SSL (Vercel affiche « Valid Configuration »), puis tester : `curl -sI https://monaloeverabienetre.fr/product/forever-therm` → `301` + `location: https://espritaloe.fr/produits/forever-therm/`.
   4. Search Console, propriété monaloeverabienetre.fr → Paramètres → Changement d'adresse → espritaloe.fr.
   5. Garder l'ancien domaine (et ces règles) **au moins 1 an**, idéalement tant que le domaine est payé.
+- **✅ Migration terminée le 15/11/2026 (faite par Claude dans le navigateur, validée par Rafael)** :
+  - Vercel : `monaloeverabienetre.fr` et `www.monaloeverabienetre.fr` ajoutés au projet, Production, sans redirection (la case « Redirect apex to www » cochée par défaut a été retirée). Les deux en « Valid Configuration ».
+  - OVH, zone de monaloeverabienetre.fr : redirection web OVH supprimée (A 213.186.33.5 ×2 et TXT « 4|https://espritaloe.fr » ×2) ; ajout de `A @ 216.198.79.1` et `CNAME www 079c675197933fae.vercel-dns-017.com.`. Mails intacts (MX, SPF, DKIM ×2, autoconfig, autodiscover, SRV ×3), TXT google-site-verification conservé.
+  - Tests HTTPS réels OK : `/product/forever-therm` → fiche, `/post/…` → article, `/category/…` → catégorie, `/devenir-distributeur-forever` → page distributeur, `/catalogue-forever-2025` → `/catalogue-forever/`, page inconnue et `http://` → accueil.
+  - Search Console : changement d'adresse monaloeverabienetre.fr → espritaloe.fr **lancé le 15/11/2026** (« Ce site est en cours de migration »). Seul avertissement : `http://` et `http://www.` pointent vers la même cible (l'accueil), normal. **Ne jamais cliquer sur « Annuler la migration ».**
+- **🔴 Rappel — vers le 6–13 décembre 2026 : vérifier le transfert.** Dans la GSC : (1) propriété monaloeverabienetre.fr → les impressions doivent baisser ; (2) espritaloe.fr → Pages : les anciennes URL ne doivent pas apparaître en erreur, et les pages cibles (fiches, articles) doivent rester indexées ; (3) Inspection d'URL sur 2–3 anciennes URL (« Page avec redirection » attendu). Si une ancienne URL tombe en 404 ou sur l'accueil alors qu'une page équivalente existe, ajouter la règle dans `vercel.json`.
+- Garder le domaine monaloeverabienetre.fr (renouvellement auto prévu en mai 2027) et ses règles au moins 1 an.
 - Ajouter une page plus tard : si son URL existait sur l'ancien site, ajouter la ligne dans le CSV et relancer la génération (ou ajouter la règle à la main **avant** les filets de sécurité).
 
 ## Lot X du 14 novembre 2026 — glossaire des ingrédients
