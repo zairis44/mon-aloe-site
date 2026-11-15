@@ -1,5 +1,19 @@
 # Esprit Aloé — À ne pas oublier
-*Mise à jour : 14 novembre 2026*
+*Mise à jour : 15 novembre 2026*
+
+## Lot Y du 15 novembre 2026 — redirections 301 de monaloeverabienetre.fr, page par page
+
+- `vercel.json` : 136 règles réservées à l'hôte `monaloeverabienetre.fr` / `www.monaloeverabienetre.fr` (condition `has` → `host` → `inc`), placées juste après la règle www d'espritaloe. Elles n'ont **aucun effet sur espritaloe.fr**.
+- Source : `redirections-webflow-final.csv` (export de l'ancien site), corrigé : `/devenir-distributeur-forever` → `/devenir-distributeur-forever-living/` (au lieu de `/a-propos/`) ; dentifrice → `/produits/forever-bright-toothgel/` directement (l'ancienne cible était elle-même redirigée : 2 sauts). Ajout automatique de `/product/<slug>`, `/post/<slug>`, `/category/<slug>` pour chaque fiche, article et catégorie actuels.
+- Filets de sécurité, dans cet ordre : `/robots.txt`, `/sitemap.xml` → `sitemap-index.xml`, `/product/*` et `/category/*` → `/produits/`, `/post/*` → `/blog/`, tout le reste → accueil. Toujours en 301, en un seul saut.
+- Ancien guide `redirections-webflow.md` (saisie dans Webflow) : **obsolète**, Webflow n'héberge plus rien.
+- **Les règles ne s'activent qu'une fois l'ancien domaine branché sur Vercel** (aujourd'hui le DNS pointe sur le service de redirection OVH, qui échoue en HTTPS) :
+  1. Vercel → projet → Settings → Domains → ajouter `monaloeverabienetre.fr` et `www.monaloeverabienetre.fr`, **« Connect to an environment » = Production, sans l'option « Redirect to another domain »** (sinon Vercel redirige vers la même URL sur espritaloe.fr et les correspondances produit sont perdues).
+  2. OVH → zone DNS de monaloeverabienetre.fr : désactiver la redirection web OVH, puis A `@` et CNAME `www` vers les valeurs affichées par Vercel. **Ne pas toucher** MX, autoconfig, autodiscover, les deux `_domainkey` (mails actifs).
+  3. Attendre le certificat SSL (Vercel affiche « Valid Configuration »), puis tester : `curl -sI https://monaloeverabienetre.fr/product/forever-therm` → `301` + `location: https://espritaloe.fr/produits/forever-therm/`.
+  4. Search Console, propriété monaloeverabienetre.fr → Paramètres → Changement d'adresse → espritaloe.fr.
+  5. Garder l'ancien domaine (et ces règles) **au moins 1 an**, idéalement tant que le domaine est payé.
+- Ajouter une page plus tard : si son URL existait sur l'ancien site, ajouter la ligne dans le CSV et relancer la génération (ou ajouter la règle à la main **avant** les filets de sécurité).
 
 ## Lot X du 14 novembre 2026 — glossaire des ingrédients
 

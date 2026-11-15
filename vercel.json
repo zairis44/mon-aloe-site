@@ -12,6 +12,2182 @@
       "permanent": true
     },
     {
+      "source": "/category/bien-etre",
+      "has": [
+        {
+          "type": "host",
+          "value": {
+            "inc": [
+              "monaloeverabienetre.fr",
+              "www.monaloeverabienetre.fr"
+            ]
+          }
+        }
+      ],
+      "destination": "https://espritaloe.fr/produits/cremes-et-gels/",
+      "permanent": true
+    },
+    {
+      "source": "/category/boissons-aloe-vera",
+      "has": [
+        {
+          "type": "host",
+          "value": {
+            "inc": [
+              "monaloeverabienetre.fr",
+              "www.monaloeverabienetre.fr"
+            ]
+          }
+        }
+      ],
+      "destination": "https://espritaloe.fr/produits/boissons-aloe-vera/",
+      "permanent": true
+    },
+    {
+      "source": "/category/cremes-et-gels",
+      "has": [
+        {
+          "type": "host",
+          "value": {
+            "inc": [
+              "monaloeverabienetre.fr",
+              "www.monaloeverabienetre.fr"
+            ]
+          }
+        }
+      ],
+      "destination": "https://espritaloe.fr/produits/cremes-et-gels/",
+      "permanent": true
+    },
+    {
+      "source": "/category/lespulpes",
+      "has": [
+        {
+          "type": "host",
+          "value": {
+            "inc": [
+              "monaloeverabienetre.fr",
+              "www.monaloeverabienetre.fr"
+            ]
+          }
+        }
+      ],
+      "destination": "https://espritaloe.fr/produits/boissons-aloe-vera/",
+      "permanent": true
+    },
+    {
+      "source": "/category/nutrition",
+      "has": [
+        {
+          "type": "host",
+          "value": {
+            "inc": [
+              "monaloeverabienetre.fr",
+              "www.monaloeverabienetre.fr"
+            ]
+          }
+        }
+      ],
+      "destination": "https://espritaloe.fr/produits/nutrition/",
+      "permanent": true
+    },
+    {
+      "source": "/category/programme-fitness-forever",
+      "has": [
+        {
+          "type": "host",
+          "value": {
+            "inc": [
+              "monaloeverabienetre.fr",
+              "www.monaloeverabienetre.fr"
+            ]
+          }
+        }
+      ],
+      "destination": "https://espritaloe.fr/produits/programmes-detox/",
+      "permanent": true
+    },
+    {
+      "source": "/category/programmes-detox",
+      "has": [
+        {
+          "type": "host",
+          "value": {
+            "inc": [
+              "monaloeverabienetre.fr",
+              "www.monaloeverabienetre.fr"
+            ]
+          }
+        }
+      ],
+      "destination": "https://espritaloe.fr/produits/programmes-detox/",
+      "permanent": true
+    },
+    {
+      "source": "/category/pulpe-aloe-vera-forever",
+      "has": [
+        {
+          "type": "host",
+          "value": {
+            "inc": [
+              "monaloeverabienetre.fr",
+              "www.monaloeverabienetre.fr"
+            ]
+          }
+        }
+      ],
+      "destination": "https://espritaloe.fr/produits/boissons-aloe-vera/",
+      "permanent": true
+    },
+    {
+      "source": "/category/sport-et-fitness",
+      "has": [
+        {
+          "type": "host",
+          "value": {
+            "inc": [
+              "monaloeverabienetre.fr",
+              "www.monaloeverabienetre.fr"
+            ]
+          }
+        }
+      ],
+      "destination": "https://espritaloe.fr/produits/sport-et-fitness/",
+      "permanent": true
+    },
+    {
+      "source": "/post/aloe-vera-a-boire-danger-contre-indications",
+      "has": [
+        {
+          "type": "host",
+          "value": {
+            "inc": [
+              "monaloeverabienetre.fr",
+              "www.monaloeverabienetre.fr"
+            ]
+          }
+        }
+      ],
+      "destination": "https://espritaloe.fr/blog/aloe-vera-a-boire-danger-contre-indications/",
+      "permanent": true
+    },
+    {
+      "source": "/post/aloe-vera-cheveux-cuir-chevelu-bienfaits",
+      "has": [
+        {
+          "type": "host",
+          "value": {
+            "inc": [
+              "monaloeverabienetre.fr",
+              "www.monaloeverabienetre.fr"
+            ]
+          }
+        }
+      ],
+      "destination": "https://espritaloe.fr/blog/aloe-vera-cheveux-cuir-chevelu-bienfaits/",
+      "permanent": true
+    },
+    {
+      "source": "/post/aloe-vera-digestion-bienfaits",
+      "has": [
+        {
+          "type": "host",
+          "value": {
+            "inc": [
+              "monaloeverabienetre.fr",
+              "www.monaloeverabienetre.fr"
+            ]
+          }
+        }
+      ],
+      "destination": "https://espritaloe.fr/blog/aloe-vera-digestion-bienfaits/",
+      "permanent": true
+    },
+    {
+      "source": "/post/aloe-vera-gelly-utilisation",
+      "has": [
+        {
+          "type": "host",
+          "value": {
+            "inc": [
+              "monaloeverabienetre.fr",
+              "www.monaloeverabienetre.fr"
+            ]
+          }
+        }
+      ],
+      "destination": "https://espritaloe.fr/blog/aloe-vera-gelly-utilisation/",
+      "permanent": true
+    },
+    {
+      "source": "/post/aloe-vera-peau-beaute-bienfaits-forever",
+      "has": [
+        {
+          "type": "host",
+          "value": {
+            "inc": [
+              "monaloeverabienetre.fr",
+              "www.monaloeverabienetre.fr"
+            ]
+          }
+        }
+      ],
+      "destination": "https://espritaloe.fr/blog/aloe-vera-peau-beaute-bienfaits-forever/",
+      "permanent": true
+    },
+    {
+      "source": "/post/aloe-vera-sport-recuperation-musculaire",
+      "has": [
+        {
+          "type": "host",
+          "value": {
+            "inc": [
+              "monaloeverabienetre.fr",
+              "www.monaloeverabienetre.fr"
+            ]
+          }
+        }
+      ],
+      "destination": "https://espritaloe.fr/blog/aloe-vera-sport-recuperation-musculaire/",
+      "permanent": true
+    },
+    {
+      "source": "/post/aloe-vera-stress-sommeil-naturel",
+      "has": [
+        {
+          "type": "host",
+          "value": {
+            "inc": [
+              "monaloeverabienetre.fr",
+              "www.monaloeverabienetre.fr"
+            ]
+          }
+        }
+      ],
+      "destination": "https://espritaloe.fr/blog/aloe-vera-stress-sommeil-naturel/",
+      "permanent": true
+    },
+    {
+      "source": "/post/aloe-vera-systeme-immunitaire-defenses-naturelles",
+      "has": [
+        {
+          "type": "host",
+          "value": {
+            "inc": [
+              "monaloeverabienetre.fr",
+              "www.monaloeverabienetre.fr"
+            ]
+          }
+        }
+      ],
+      "destination": "https://espritaloe.fr/blog/aloe-vera-systeme-immunitaire-defenses-naturelles/",
+      "permanent": true
+    },
+    {
+      "source": "/post/c9-forever-avis",
+      "has": [
+        {
+          "type": "host",
+          "value": {
+            "inc": [
+              "monaloeverabienetre.fr",
+              "www.monaloeverabienetre.fr"
+            ]
+          }
+        }
+      ],
+      "destination": "https://espritaloe.fr/blog/c9-forever-avis/",
+      "permanent": true
+    },
+    {
+      "source": "/post/comment-boire-pulpe-aloe-vera",
+      "has": [
+        {
+          "type": "host",
+          "value": {
+            "inc": [
+              "monaloeverabienetre.fr",
+              "www.monaloeverabienetre.fr"
+            ]
+          }
+        }
+      ],
+      "destination": "https://espritaloe.fr/blog/comment-boire-pulpe-aloe-vera/",
+      "permanent": true
+    },
+    {
+      "source": "/post/fbo-forever-living-comment-ca-marche",
+      "has": [
+        {
+          "type": "host",
+          "value": {
+            "inc": [
+              "monaloeverabienetre.fr",
+              "www.monaloeverabienetre.fr"
+            ]
+          }
+        }
+      ],
+      "destination": "https://espritaloe.fr/blog/fbo-forever-living-comment-ca-marche/",
+      "permanent": true
+    },
+    {
+      "source": "/post/forever-freedom-aloe-vera-articulations-mobilite",
+      "has": [
+        {
+          "type": "host",
+          "value": {
+            "inc": [
+              "monaloeverabienetre.fr",
+              "www.monaloeverabienetre.fr"
+            ]
+          }
+        }
+      ],
+      "destination": "https://espritaloe.fr/blog/forever-freedom-aloe-vera-articulations-mobilite/",
+      "permanent": true
+    },
+    {
+      "source": "/post/forever-living-avis-produits-france",
+      "has": [
+        {
+          "type": "host",
+          "value": {
+            "inc": [
+              "monaloeverabienetre.fr",
+              "www.monaloeverabienetre.fr"
+            ]
+          }
+        }
+      ],
+      "destination": "https://espritaloe.fr/blog/forever-living-avis-produits-france/",
+      "permanent": true
+    },
+    {
+      "source": "/post/forever-living-franchise-ou-vente-directe",
+      "has": [
+        {
+          "type": "host",
+          "value": {
+            "inc": [
+              "monaloeverabienetre.fr",
+              "www.monaloeverabienetre.fr"
+            ]
+          }
+        }
+      ],
+      "destination": "https://espritaloe.fr/blog/forever-living-franchise-ou-vente-directe/",
+      "permanent": true
+    },
+    {
+      "source": "/post/forever-living-pyramidal-ou-legal",
+      "has": [
+        {
+          "type": "host",
+          "value": {
+            "inc": [
+              "monaloeverabienetre.fr",
+              "www.monaloeverabienetre.fr"
+            ]
+          }
+        }
+      ],
+      "destination": "https://espritaloe.fr/blog/forever-living-pyramidal-ou-legal/",
+      "permanent": true
+    },
+    {
+      "source": "/post/les-bienfaits-de-la-pulpe-aloe-vera-pour-les-chevaux",
+      "has": [
+        {
+          "type": "host",
+          "value": {
+            "inc": [
+              "monaloeverabienetre.fr",
+              "www.monaloeverabienetre.fr"
+            ]
+          }
+        }
+      ],
+      "destination": "https://espritaloe.fr/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/post/perdre-du-poids-naturellement-forever-programmes-minceur",
+      "has": [
+        {
+          "type": "host",
+          "value": {
+            "inc": [
+              "monaloeverabienetre.fr",
+              "www.monaloeverabienetre.fr"
+            ]
+          }
+        }
+      ],
+      "destination": "https://espritaloe.fr/blog/perdre-du-poids-naturellement-forever-programmes-minceur/",
+      "permanent": true
+    },
+    {
+      "source": "/post/programme-c9-forever-guide-cure-detox-9-jours",
+      "has": [
+        {
+          "type": "host",
+          "value": {
+            "inc": [
+              "monaloeverabienetre.fr",
+              "www.monaloeverabienetre.fr"
+            ]
+          }
+        }
+      ],
+      "destination": "https://espritaloe.fr/blog/programme-c9-forever-guide-cure-detox-9-jours/",
+      "permanent": true
+    },
+    {
+      "source": "/post/vente-a-domicile-aloe-vera-vdi",
+      "has": [
+        {
+          "type": "host",
+          "value": {
+            "inc": [
+              "monaloeverabienetre.fr",
+              "www.monaloeverabienetre.fr"
+            ]
+          }
+        }
+      ],
+      "destination": "https://espritaloe.fr/blog/vente-a-domicile-aloe-vera-vdi/",
+      "permanent": true
+    },
+    {
+      "source": "/product/aloe-gelly-forever-gel-apaisant",
+      "has": [
+        {
+          "type": "host",
+          "value": {
+            "inc": [
+              "monaloeverabienetre.fr",
+              "www.monaloeverabienetre.fr"
+            ]
+          }
+        }
+      ],
+      "destination": "https://espritaloe.fr/produits/aloe-gelly-forever-gel-apaisant/",
+      "permanent": true
+    },
+    {
+      "source": "/product/aloe-vera-forever-gelly-hydratez-votre-peau",
+      "has": [
+        {
+          "type": "host",
+          "value": {
+            "inc": [
+              "monaloeverabienetre.fr",
+              "www.monaloeverabienetre.fr"
+            ]
+          }
+        }
+      ],
+      "destination": "https://espritaloe.fr/produits/aloe-gelly-forever-gel-apaisant/",
+      "permanent": true
+    },
+    {
+      "source": "/product/creme-aloe-propolis",
+      "has": [
+        {
+          "type": "host",
+          "value": {
+            "inc": [
+              "monaloeverabienetre.fr",
+              "www.monaloeverabienetre.fr"
+            ]
+          }
+        }
+      ],
+      "destination": "https://espritaloe.fr/produits/forever-aloe-propolis-creme/",
+      "permanent": true
+    },
+    {
+      "source": "/product/dentifrice-forever-bright-toothgel",
+      "has": [
+        {
+          "type": "host",
+          "value": {
+            "inc": [
+              "monaloeverabienetre.fr",
+              "www.monaloeverabienetre.fr"
+            ]
+          }
+        }
+      ],
+      "destination": "https://espritaloe.fr/produits/forever-bright-toothgel/",
+      "permanent": true
+    },
+    {
+      "source": "/product/forever-4-pack-mix",
+      "has": [
+        {
+          "type": "host",
+          "value": {
+            "inc": [
+              "monaloeverabienetre.fr",
+              "www.monaloeverabienetre.fr"
+            ]
+          }
+        }
+      ],
+      "destination": "https://espritaloe.fr/produits/forever-4-pack-mix/",
+      "permanent": true
+    },
+    {
+      "source": "/product/forever-absorbent-c",
+      "has": [
+        {
+          "type": "host",
+          "value": {
+            "inc": [
+              "monaloeverabienetre.fr",
+              "www.monaloeverabienetre.fr"
+            ]
+          }
+        }
+      ],
+      "destination": "https://espritaloe.fr/produits/forever-absorbent-c/",
+      "permanent": true
+    },
+    {
+      "source": "/product/forever-aloe-avocado-face-and-body-soap",
+      "has": [
+        {
+          "type": "host",
+          "value": {
+            "inc": [
+              "monaloeverabienetre.fr",
+              "www.monaloeverabienetre.fr"
+            ]
+          }
+        }
+      ],
+      "destination": "https://espritaloe.fr/produits/forever-aloe-avocado-face-and-body-soap/",
+      "permanent": true
+    },
+    {
+      "source": "/product/forever-aloe-berry-nectar",
+      "has": [
+        {
+          "type": "host",
+          "value": {
+            "inc": [
+              "monaloeverabienetre.fr",
+              "www.monaloeverabienetre.fr"
+            ]
+          }
+        }
+      ],
+      "destination": "https://espritaloe.fr/produits/forever-aloe-berry-nectar/",
+      "permanent": true
+    },
+    {
+      "source": "/product/forever-aloe-body-lotion",
+      "has": [
+        {
+          "type": "host",
+          "value": {
+            "inc": [
+              "monaloeverabienetre.fr",
+              "www.monaloeverabienetre.fr"
+            ]
+          }
+        }
+      ],
+      "destination": "https://espritaloe.fr/produits/forever-aloe-body-lotion/",
+      "permanent": true
+    },
+    {
+      "source": "/product/forever-aloe-body-wash",
+      "has": [
+        {
+          "type": "host",
+          "value": {
+            "inc": [
+              "monaloeverabienetre.fr",
+              "www.monaloeverabienetre.fr"
+            ]
+          }
+        }
+      ],
+      "destination": "https://espritaloe.fr/produits/forever-aloe-body-wash/",
+      "permanent": true
+    },
+    {
+      "source": "/product/forever-aloe-cooling-lotion",
+      "has": [
+        {
+          "type": "host",
+          "value": {
+            "inc": [
+              "monaloeverabienetre.fr",
+              "www.monaloeverabienetre.fr"
+            ]
+          }
+        }
+      ],
+      "destination": "https://espritaloe.fr/produits/forever-aloe-cooling-lotion/",
+      "permanent": true
+    },
+    {
+      "source": "/product/forever-aloe-ever-shield-deodorant-stick",
+      "has": [
+        {
+          "type": "host",
+          "value": {
+            "inc": [
+              "monaloeverabienetre.fr",
+              "www.monaloeverabienetre.fr"
+            ]
+          }
+        }
+      ],
+      "destination": "https://espritaloe.fr/produits/forever-aloe-ever-shield-deodorant-stick/",
+      "permanent": true
+    },
+    {
+      "source": "/product/forever-aloe-levres",
+      "has": [
+        {
+          "type": "host",
+          "value": {
+            "inc": [
+              "monaloeverabienetre.fr",
+              "www.monaloeverabienetre.fr"
+            ]
+          }
+        }
+      ],
+      "destination": "https://espritaloe.fr/produits/forever-aloe-levres/",
+      "permanent": true
+    },
+    {
+      "source": "/product/forever-aloe-liquid-soap",
+      "has": [
+        {
+          "type": "host",
+          "value": {
+            "inc": [
+              "monaloeverabienetre.fr",
+              "www.monaloeverabienetre.fr"
+            ]
+          }
+        }
+      ],
+      "destination": "https://espritaloe.fr/produits/forever-aloe-liquid-soap/",
+      "permanent": true
+    },
+    {
+      "source": "/product/forever-aloe-mango",
+      "has": [
+        {
+          "type": "host",
+          "value": {
+            "inc": [
+              "monaloeverabienetre.fr",
+              "www.monaloeverabienetre.fr"
+            ]
+          }
+        }
+      ],
+      "destination": "https://espritaloe.fr/produits/forever-aloe-mango/",
+      "permanent": true
+    },
+    {
+      "source": "/product/forever-aloe-msm-gel",
+      "has": [
+        {
+          "type": "host",
+          "value": {
+            "inc": [
+              "monaloeverabienetre.fr",
+              "www.monaloeverabienetre.fr"
+            ]
+          }
+        }
+      ],
+      "destination": "https://espritaloe.fr/produits/forever-aloe-msm-gel/",
+      "permanent": true
+    },
+    {
+      "source": "/product/forever-aloe-propolis-creme",
+      "has": [
+        {
+          "type": "host",
+          "value": {
+            "inc": [
+              "monaloeverabienetre.fr",
+              "www.monaloeverabienetre.fr"
+            ]
+          }
+        }
+      ],
+      "destination": "https://espritaloe.fr/produits/forever-aloe-propolis-creme/",
+      "permanent": true
+    },
+    {
+      "source": "/product/forever-aloe-vera-4pack",
+      "has": [
+        {
+          "type": "host",
+          "value": {
+            "inc": [
+              "monaloeverabienetre.fr",
+              "www.monaloeverabienetre.fr"
+            ]
+          }
+        }
+      ],
+      "destination": "https://espritaloe.fr/produits/forever-aloe-vera-4pack/",
+      "permanent": true
+    },
+    {
+      "source": "/product/forever-aloe-vera-peche-bien-etre",
+      "has": [
+        {
+          "type": "host",
+          "value": {
+            "inc": [
+              "monaloeverabienetre.fr",
+              "www.monaloeverabienetre.fr"
+            ]
+          }
+        }
+      ],
+      "destination": "https://espritaloe.fr/produits/forever-aloe-vera-peche-bien-etre/",
+      "permanent": true
+    },
+    {
+      "source": "/product/forever-apres-shampoing-aloe-jojoba",
+      "has": [
+        {
+          "type": "host",
+          "value": {
+            "inc": [
+              "monaloeverabienetre.fr",
+              "www.monaloeverabienetre.fr"
+            ]
+          }
+        }
+      ],
+      "destination": "https://espritaloe.fr/produits/forever-apres-shampoing-aloe-jojoba/",
+      "permanent": true
+    },
+    {
+      "source": "/product/forever-arctic-sea",
+      "has": [
+        {
+          "type": "host",
+          "value": {
+            "inc": [
+              "monaloeverabienetre.fr",
+              "www.monaloeverabienetre.fr"
+            ]
+          }
+        }
+      ],
+      "destination": "https://espritaloe.fr/produits/forever-arctic-sea/",
+      "permanent": true
+    },
+    {
+      "source": "/product/forever-argi-pls",
+      "has": [
+        {
+          "type": "host",
+          "value": {
+            "inc": [
+              "monaloeverabienetre.fr",
+              "www.monaloeverabienetre.fr"
+            ]
+          }
+        }
+      ],
+      "destination": "https://espritaloe.fr/produits/forever-argi-pls/",
+      "permanent": true
+    },
+    {
+      "source": "/product/forever-argi-plus",
+      "has": [
+        {
+          "type": "host",
+          "value": {
+            "inc": [
+              "monaloeverabienetre.fr",
+              "www.monaloeverabienetre.fr"
+            ]
+          }
+        }
+      ],
+      "destination": "https://espritaloe.fr/produits/forever-argi-pls/",
+      "permanent": true
+    },
+    {
+      "source": "/product/forever-bee-pollen",
+      "has": [
+        {
+          "type": "host",
+          "value": {
+            "inc": [
+              "monaloeverabienetre.fr",
+              "www.monaloeverabienetre.fr"
+            ]
+          }
+        }
+      ],
+      "destination": "https://espritaloe.fr/produits/forever-bee-pollen/",
+      "permanent": true
+    },
+    {
+      "source": "/product/forever-bright-toothgel",
+      "has": [
+        {
+          "type": "host",
+          "value": {
+            "inc": [
+              "monaloeverabienetre.fr",
+              "www.monaloeverabienetre.fr"
+            ]
+          }
+        }
+      ],
+      "destination": "https://espritaloe.fr/produits/forever-bright-toothgel/",
+      "permanent": true
+    },
+    {
+      "source": "/product/forever-daily",
+      "has": [
+        {
+          "type": "host",
+          "value": {
+            "inc": [
+              "monaloeverabienetre.fr",
+              "www.monaloeverabienetre.fr"
+            ]
+          }
+        }
+      ],
+      "destination": "https://espritaloe.fr/produits/forever-daily/",
+      "permanent": true
+    },
+    {
+      "source": "/product/forever-fab-active-boost",
+      "has": [
+        {
+          "type": "host",
+          "value": {
+            "inc": [
+              "monaloeverabienetre.fr",
+              "www.monaloeverabienetre.fr"
+            ]
+          }
+        }
+      ],
+      "destination": "https://espritaloe.fr/produits/forever-fab-active-boost/",
+      "permanent": true
+    },
+    {
+      "source": "/product/forever-fast-break",
+      "has": [
+        {
+          "type": "host",
+          "value": {
+            "inc": [
+              "monaloeverabienetre.fr",
+              "www.monaloeverabienetre.fr"
+            ]
+          }
+        }
+      ],
+      "destination": "https://espritaloe.fr/produits/forever-fast-break/",
+      "permanent": true
+    },
+    {
+      "source": "/product/forever-freedom-confort-articulaire",
+      "has": [
+        {
+          "type": "host",
+          "value": {
+            "inc": [
+              "monaloeverabienetre.fr",
+              "www.monaloeverabienetre.fr"
+            ]
+          }
+        }
+      ],
+      "destination": "https://espritaloe.fr/produits/forever-freedom-confort-articulaire/",
+      "permanent": true
+    },
+    {
+      "source": "/product/forever-immublend",
+      "has": [
+        {
+          "type": "host",
+          "value": {
+            "inc": [
+              "monaloeverabienetre.fr",
+              "www.monaloeverabienetre.fr"
+            ]
+          }
+        }
+      ],
+      "destination": "https://espritaloe.fr/produits/forever-immublend/",
+      "permanent": true
+    },
+    {
+      "source": "/product/forever-lite-ultra-choco",
+      "has": [
+        {
+          "type": "host",
+          "value": {
+            "inc": [
+              "monaloeverabienetre.fr",
+              "www.monaloeverabienetre.fr"
+            ]
+          }
+        }
+      ],
+      "destination": "https://espritaloe.fr/produits/forever-lite-ultra-choco/",
+      "permanent": true
+    },
+    {
+      "source": "/product/forever-lite-ultra-vanille",
+      "has": [
+        {
+          "type": "host",
+          "value": {
+            "inc": [
+              "monaloeverabienetre.fr",
+              "www.monaloeverabienetre.fr"
+            ]
+          }
+        }
+      ],
+      "destination": "https://espritaloe.fr/produits/forever-lite-ultra-vanille/",
+      "permanent": true
+    },
+    {
+      "source": "/product/forever-logic-aloe-essence-tonifiante",
+      "has": [
+        {
+          "type": "host",
+          "value": {
+            "inc": [
+              "monaloeverabienetre.fr",
+              "www.monaloeverabienetre.fr"
+            ]
+          }
+        }
+      ],
+      "destination": "https://espritaloe.fr/produits/forever-logic-aloe-essence-tonifiante/",
+      "permanent": true
+    },
+    {
+      "source": "/product/forever-logic-aloe-gel-hydratant",
+      "has": [
+        {
+          "type": "host",
+          "value": {
+            "inc": [
+              "monaloeverabienetre.fr",
+              "www.monaloeverabienetre.fr"
+            ]
+          }
+        }
+      ],
+      "destination": "https://espritaloe.fr/produits/forever-logic-aloe-gel-hydratant/",
+      "permanent": true
+    },
+    {
+      "source": "/product/forever-logic-aloe-gel-nettoyant",
+      "has": [
+        {
+          "type": "host",
+          "value": {
+            "inc": [
+              "monaloeverabienetre.fr",
+              "www.monaloeverabienetre.fr"
+            ]
+          }
+        }
+      ],
+      "destination": "https://espritaloe.fr/produits/forever-logic-aloe-gel-nettoyant/",
+      "permanent": true
+    },
+    {
+      "source": "/product/forever-lycium-plus",
+      "has": [
+        {
+          "type": "host",
+          "value": {
+            "inc": [
+              "monaloeverabienetre.fr",
+              "www.monaloeverabienetre.fr"
+            ]
+          }
+        }
+      ],
+      "destination": "https://espritaloe.fr/produits/forever-lycium-plus/",
+      "permanent": true
+    },
+    {
+      "source": "/product/forever-marine-collagen",
+      "has": [
+        {
+          "type": "host",
+          "value": {
+            "inc": [
+              "monaloeverabienetre.fr",
+              "www.monaloeverabienetre.fr"
+            ]
+          }
+        }
+      ],
+      "destination": "https://espritaloe.fr/produits/forever-marine-collagen/",
+      "permanent": true
+    },
+    {
+      "source": "/product/forever-pulpe-daloe-vera",
+      "has": [
+        {
+          "type": "host",
+          "value": {
+            "inc": [
+              "monaloeverabienetre.fr",
+              "www.monaloeverabienetre.fr"
+            ]
+          }
+        }
+      ],
+      "destination": "https://espritaloe.fr/produits/forever-pulpe-daloe-vera/",
+      "permanent": true
+    },
+    {
+      "source": "/product/forever-royal-jelly",
+      "has": [
+        {
+          "type": "host",
+          "value": {
+            "inc": [
+              "monaloeverabienetre.fr",
+              "www.monaloeverabienetre.fr"
+            ]
+          }
+        }
+      ],
+      "destination": "https://espritaloe.fr/produits/forever-royal-jelly/",
+      "permanent": true
+    },
+    {
+      "source": "/product/forever-shampoing-aloe-jojoba",
+      "has": [
+        {
+          "type": "host",
+          "value": {
+            "inc": [
+              "monaloeverabienetre.fr",
+              "www.monaloeverabienetre.fr"
+            ]
+          }
+        }
+      ],
+      "destination": "https://espritaloe.fr/produits/forever-shampoing-aloe-jojoba/",
+      "permanent": true
+    },
+    {
+      "source": "/product/forever-therm",
+      "has": [
+        {
+          "type": "host",
+          "value": {
+            "inc": [
+              "monaloeverabienetre.fr",
+              "www.monaloeverabienetre.fr"
+            ]
+          }
+        }
+      ],
+      "destination": "https://espritaloe.fr/produits/forever-therm/",
+      "permanent": true
+    },
+    {
+      "source": "/product/mini-aloe-argi-plus",
+      "has": [
+        {
+          "type": "host",
+          "value": {
+            "inc": [
+              "monaloeverabienetre.fr",
+              "www.monaloeverabienetre.fr"
+            ]
+          }
+        }
+      ],
+      "destination": "https://espritaloe.fr/produits/mini-aloe-argi-plus/",
+      "permanent": true
+    },
+    {
+      "source": "/product/programme-c9-forever-berry-chocolat",
+      "has": [
+        {
+          "type": "host",
+          "value": {
+            "inc": [
+              "monaloeverabienetre.fr",
+              "www.monaloeverabienetre.fr"
+            ]
+          }
+        }
+      ],
+      "destination": "https://espritaloe.fr/produits/programme-c9-forever-berry-chocolat/",
+      "permanent": true
+    },
+    {
+      "source": "/product/programme-c9-forever-berry-vanille",
+      "has": [
+        {
+          "type": "host",
+          "value": {
+            "inc": [
+              "monaloeverabienetre.fr",
+              "www.monaloeverabienetre.fr"
+            ]
+          }
+        }
+      ],
+      "destination": "https://espritaloe.fr/produits/programme-c9-forever-berry-vanille/",
+      "permanent": true
+    },
+    {
+      "source": "/product/programme-c9-forever-chocolat",
+      "has": [
+        {
+          "type": "host",
+          "value": {
+            "inc": [
+              "monaloeverabienetre.fr",
+              "www.monaloeverabienetre.fr"
+            ]
+          }
+        }
+      ],
+      "destination": "https://espritaloe.fr/produits/programme-c9-forever-chocolat/",
+      "permanent": true
+    },
+    {
+      "source": "/product/programme-c9-forever-chocolat-peche",
+      "has": [
+        {
+          "type": "host",
+          "value": {
+            "inc": [
+              "monaloeverabienetre.fr",
+              "www.monaloeverabienetre.fr"
+            ]
+          }
+        }
+      ],
+      "destination": "https://espritaloe.fr/produits/programme-c9-forever-chocolat-peche/",
+      "permanent": true
+    },
+    {
+      "source": "/product/programme-c9-forever-vanille",
+      "has": [
+        {
+          "type": "host",
+          "value": {
+            "inc": [
+              "monaloeverabienetre.fr",
+              "www.monaloeverabienetre.fr"
+            ]
+          }
+        }
+      ],
+      "destination": "https://espritaloe.fr/produits/programme-c9-forever-vanille/",
+      "permanent": true
+    },
+    {
+      "source": "/product/programme-c9-forever-vanille-peche",
+      "has": [
+        {
+          "type": "host",
+          "value": {
+            "inc": [
+              "monaloeverabienetre.fr",
+              "www.monaloeverabienetre.fr"
+            ]
+          }
+        }
+      ],
+      "destination": "https://espritaloe.fr/produits/programme-c9-forever-vanille-peche/",
+      "permanent": true
+    },
+    {
+      "source": "/product/programme-dx4-forever",
+      "has": [
+        {
+          "type": "host",
+          "value": {
+            "inc": [
+              "monaloeverabienetre.fr",
+              "www.monaloeverabienetre.fr"
+            ]
+          }
+        }
+      ],
+      "destination": "https://espritaloe.fr/produits/programme-dx4-forever/",
+      "permanent": true
+    },
+    {
+      "source": "/product/programme-f15-avance-chocolat",
+      "has": [
+        {
+          "type": "host",
+          "value": {
+            "inc": [
+              "monaloeverabienetre.fr",
+              "www.monaloeverabienetre.fr"
+            ]
+          }
+        }
+      ],
+      "destination": "https://espritaloe.fr/produits/programme-f15-avance-chocolat/",
+      "permanent": true
+    },
+    {
+      "source": "/product/programme-f15-avance-vanille",
+      "has": [
+        {
+          "type": "host",
+          "value": {
+            "inc": [
+              "monaloeverabienetre.fr",
+              "www.monaloeverabienetre.fr"
+            ]
+          }
+        }
+      ],
+      "destination": "https://espritaloe.fr/produits/programme-f15-avance-vanille/",
+      "permanent": true
+    },
+    {
+      "source": "/product/programme-f15-debutant-chocolat",
+      "has": [
+        {
+          "type": "host",
+          "value": {
+            "inc": [
+              "monaloeverabienetre.fr",
+              "www.monaloeverabienetre.fr"
+            ]
+          }
+        }
+      ],
+      "destination": "https://espritaloe.fr/produits/programme-f15-debutant-chocolat/",
+      "permanent": true
+    },
+    {
+      "source": "/product/programme-f15-debutant-vanille",
+      "has": [
+        {
+          "type": "host",
+          "value": {
+            "inc": [
+              "monaloeverabienetre.fr",
+              "www.monaloeverabienetre.fr"
+            ]
+          }
+        }
+      ],
+      "destination": "https://espritaloe.fr/produits/programme-f15-debutant-vanille/",
+      "permanent": true
+    },
+    {
+      "source": "/product/programme-f15-intermediaire-chocolat",
+      "has": [
+        {
+          "type": "host",
+          "value": {
+            "inc": [
+              "monaloeverabienetre.fr",
+              "www.monaloeverabienetre.fr"
+            ]
+          }
+        }
+      ],
+      "destination": "https://espritaloe.fr/produits/programme-f15-intermediaire-chocolat/",
+      "permanent": true
+    },
+    {
+      "source": "/product/programme-f15-intermediaire-vanille",
+      "has": [
+        {
+          "type": "host",
+          "value": {
+            "inc": [
+              "monaloeverabienetre.fr",
+              "www.monaloeverabienetre.fr"
+            ]
+          }
+        }
+      ],
+      "destination": "https://espritaloe.fr/produits/programme-f15-intermediaire-vanille/",
+      "permanent": true
+    },
+    {
+      "source": "/product/savon-aloe-avocat-forever",
+      "has": [
+        {
+          "type": "host",
+          "value": {
+            "inc": [
+              "monaloeverabienetre.fr",
+              "www.monaloeverabienetre.fr"
+            ]
+          }
+        }
+      ],
+      "destination": "https://espritaloe.fr/produits/forever-aloe-avocado-face-and-body-soap/",
+      "permanent": true
+    },
+    {
+      "source": "/product/stick-deodorant-aloes-forever",
+      "has": [
+        {
+          "type": "host",
+          "value": {
+            "inc": [
+              "monaloeverabienetre.fr",
+              "www.monaloeverabienetre.fr"
+            ]
+          }
+        }
+      ],
+      "destination": "https://espritaloe.fr/produits/forever-aloe-ever-shield-deodorant-stick/",
+      "permanent": true
+    },
+    {
+      "source": "/",
+      "has": [
+        {
+          "type": "host",
+          "value": {
+            "inc": [
+              "monaloeverabienetre.fr",
+              "www.monaloeverabienetre.fr"
+            ]
+          }
+        }
+      ],
+      "destination": "https://espritaloe.fr/",
+      "permanent": true
+    },
+    {
+      "source": "/4pack-boisson-forever-aloe-vera",
+      "has": [
+        {
+          "type": "host",
+          "value": {
+            "inc": [
+              "monaloeverabienetre.fr",
+              "www.monaloeverabienetre.fr"
+            ]
+          }
+        }
+      ],
+      "destination": "https://espritaloe.fr/produits/forever-aloe-vera-4pack/",
+      "permanent": true
+    },
+    {
+      "source": "/Forever-Aloe-Mango",
+      "has": [
+        {
+          "type": "host",
+          "value": {
+            "inc": [
+              "monaloeverabienetre.fr",
+              "www.monaloeverabienetre.fr"
+            ]
+          }
+        }
+      ],
+      "destination": "https://espritaloe.fr/produits/forever-aloe-mango/",
+      "permanent": true
+    },
+    {
+      "source": "/aloe-liquid-soap-forever",
+      "has": [
+        {
+          "type": "host",
+          "value": {
+            "inc": [
+              "monaloeverabienetre.fr",
+              "www.monaloeverabienetre.fr"
+            ]
+          }
+        }
+      ],
+      "destination": "https://espritaloe.fr/produits/forever-aloe-liquid-soap/",
+      "permanent": true
+    },
+    {
+      "source": "/aloe-propolis-creme-forever",
+      "has": [
+        {
+          "type": "host",
+          "value": {
+            "inc": [
+              "monaloeverabienetre.fr",
+              "www.monaloeverabienetre.fr"
+            ]
+          }
+        }
+      ],
+      "destination": "https://espritaloe.fr/produits/forever-aloe-propolis-creme/",
+      "permanent": true
+    },
+    {
+      "source": "/blog",
+      "has": [
+        {
+          "type": "host",
+          "value": {
+            "inc": [
+              "monaloeverabienetre.fr",
+              "www.monaloeverabienetre.fr"
+            ]
+          }
+        }
+      ],
+      "destination": "https://espritaloe.fr/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/blog-collection",
+      "has": [
+        {
+          "type": "host",
+          "value": {
+            "inc": [
+              "monaloeverabienetre.fr",
+              "www.monaloeverabienetre.fr"
+            ]
+          }
+        }
+      ],
+      "destination": "https://espritaloe.fr/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/catalogue",
+      "has": [
+        {
+          "type": "host",
+          "value": {
+            "inc": [
+              "monaloeverabienetre.fr",
+              "www.monaloeverabienetre.fr"
+            ]
+          }
+        }
+      ],
+      "destination": "https://espritaloe.fr/produits/",
+      "permanent": true
+    },
+    {
+      "source": "/catalogue-forever-2025",
+      "has": [
+        {
+          "type": "host",
+          "value": {
+            "inc": [
+              "monaloeverabienetre.fr",
+              "www.monaloeverabienetre.fr"
+            ]
+          }
+        }
+      ],
+      "destination": "https://espritaloe.fr/produits/",
+      "permanent": true
+    },
+    {
+      "source": "/collections",
+      "has": [
+        {
+          "type": "host",
+          "value": {
+            "inc": [
+              "monaloeverabienetre.fr",
+              "www.monaloeverabienetre.fr"
+            ]
+          }
+        }
+      ],
+      "destination": "https://espritaloe.fr/produits/",
+      "permanent": true
+    },
+    {
+      "source": "/contact",
+      "has": [
+        {
+          "type": "host",
+          "value": {
+            "inc": [
+              "monaloeverabienetre.fr",
+              "www.monaloeverabienetre.fr"
+            ]
+          }
+        }
+      ],
+      "destination": "https://espritaloe.fr/contact/",
+      "permanent": true
+    },
+    {
+      "source": "/creme-aloe-propolis",
+      "has": [
+        {
+          "type": "host",
+          "value": {
+            "inc": [
+              "monaloeverabienetre.fr",
+              "www.monaloeverabienetre.fr"
+            ]
+          }
+        }
+      ],
+      "destination": "https://espritaloe.fr/produits/forever-aloe-propolis-creme/",
+      "permanent": true
+    },
+    {
+      "source": "/dentifrice-forever-brigh-toothgel",
+      "has": [
+        {
+          "type": "host",
+          "value": {
+            "inc": [
+              "monaloeverabienetre.fr",
+              "www.monaloeverabienetre.fr"
+            ]
+          }
+        }
+      ],
+      "destination": "https://espritaloe.fr/produits/forever-bright-toothgel/",
+      "permanent": true
+    },
+    {
+      "source": "/dentifrice-forever-bright-toothgel",
+      "has": [
+        {
+          "type": "host",
+          "value": {
+            "inc": [
+              "monaloeverabienetre.fr",
+              "www.monaloeverabienetre.fr"
+            ]
+          }
+        }
+      ],
+      "destination": "https://espritaloe.fr/produits/forever-bright-toothgel/",
+      "permanent": true
+    },
+    {
+      "source": "/deodorant-forever",
+      "has": [
+        {
+          "type": "host",
+          "value": {
+            "inc": [
+              "monaloeverabienetre.fr",
+              "www.monaloeverabienetre.fr"
+            ]
+          }
+        }
+      ],
+      "destination": "https://espritaloe.fr/produits/forever-aloe-ever-shield-deodorant-stick/",
+      "permanent": true
+    },
+    {
+      "source": "/devenir-distributeur-forever",
+      "has": [
+        {
+          "type": "host",
+          "value": {
+            "inc": [
+              "monaloeverabienetre.fr",
+              "www.monaloeverabienetre.fr"
+            ]
+          }
+        }
+      ],
+      "destination": "https://espritaloe.fr/devenir-distributeur-forever-living/",
+      "permanent": true
+    },
+    {
+      "source": "/forever-aloe-avocado-face-and-body-soap",
+      "has": [
+        {
+          "type": "host",
+          "value": {
+            "inc": [
+              "monaloeverabienetre.fr",
+              "www.monaloeverabienetre.fr"
+            ]
+          }
+        }
+      ],
+      "destination": "https://espritaloe.fr/produits/forever-aloe-avocado-face-and-body-soap/",
+      "permanent": true
+    },
+    {
+      "source": "/forever-aloe-berry-nectar",
+      "has": [
+        {
+          "type": "host",
+          "value": {
+            "inc": [
+              "monaloeverabienetre.fr",
+              "www.monaloeverabienetre.fr"
+            ]
+          }
+        }
+      ],
+      "destination": "https://espritaloe.fr/produits/forever-aloe-berry-nectar/",
+      "permanent": true
+    },
+    {
+      "source": "/forever-aloe-ever-shield-deodorant-stick",
+      "has": [
+        {
+          "type": "host",
+          "value": {
+            "inc": [
+              "monaloeverabienetre.fr",
+              "www.monaloeverabienetre.fr"
+            ]
+          }
+        }
+      ],
+      "destination": "https://espritaloe.fr/produits/forever-aloe-ever-shield-deodorant-stick/",
+      "permanent": true
+    },
+    {
+      "source": "/forever-aloe-liquid-soap",
+      "has": [
+        {
+          "type": "host",
+          "value": {
+            "inc": [
+              "monaloeverabienetre.fr",
+              "www.monaloeverabienetre.fr"
+            ]
+          }
+        }
+      ],
+      "destination": "https://espritaloe.fr/produits/forever-aloe-liquid-soap/",
+      "permanent": true
+    },
+    {
+      "source": "/forever-aloe-mango",
+      "has": [
+        {
+          "type": "host",
+          "value": {
+            "inc": [
+              "monaloeverabienetre.fr",
+              "www.monaloeverabienetre.fr"
+            ]
+          }
+        }
+      ],
+      "destination": "https://espritaloe.fr/produits/forever-aloe-mango/",
+      "permanent": true
+    },
+    {
+      "source": "/forever-aloe-msm-gel",
+      "has": [
+        {
+          "type": "host",
+          "value": {
+            "inc": [
+              "monaloeverabienetre.fr",
+              "www.monaloeverabienetre.fr"
+            ]
+          }
+        }
+      ],
+      "destination": "https://espritaloe.fr/produits/forever-aloe-msm-gel/",
+      "permanent": true
+    },
+    {
+      "source": "/forever-aloe-propolis-creme",
+      "has": [
+        {
+          "type": "host",
+          "value": {
+            "inc": [
+              "monaloeverabienetre.fr",
+              "www.monaloeverabienetre.fr"
+            ]
+          }
+        }
+      ],
+      "destination": "https://espritaloe.fr/produits/forever-aloe-propolis-creme/",
+      "permanent": true
+    },
+    {
+      "source": "/forever-aloe-vera-4pack",
+      "has": [
+        {
+          "type": "host",
+          "value": {
+            "inc": [
+              "monaloeverabienetre.fr",
+              "www.monaloeverabienetre.fr"
+            ]
+          }
+        }
+      ],
+      "destination": "https://espritaloe.fr/produits/forever-aloe-vera-4pack/",
+      "permanent": true
+    },
+    {
+      "source": "/forever-aloe-vera-berry-nectar",
+      "has": [
+        {
+          "type": "host",
+          "value": {
+            "inc": [
+              "monaloeverabienetre.fr",
+              "www.monaloeverabienetre.fr"
+            ]
+          }
+        }
+      ],
+      "destination": "https://espritaloe.fr/produits/forever-aloe-berry-nectar/",
+      "permanent": true
+    },
+    {
+      "source": "/forever-aloe-vera-mangue",
+      "has": [
+        {
+          "type": "host",
+          "value": {
+            "inc": [
+              "monaloeverabienetre.fr",
+              "www.monaloeverabienetre.fr"
+            ]
+          }
+        }
+      ],
+      "destination": "https://espritaloe.fr/produits/forever-aloe-mango/",
+      "permanent": true
+    },
+    {
+      "source": "/forever-aloe-vera-peche",
+      "has": [
+        {
+          "type": "host",
+          "value": {
+            "inc": [
+              "monaloeverabienetre.fr",
+              "www.monaloeverabienetre.fr"
+            ]
+          }
+        }
+      ],
+      "destination": "https://espritaloe.fr/produits/forever-aloe-vera-peche-bien-etre/",
+      "permanent": true
+    },
+    {
+      "source": "/forever-aloe-vera-peche-bien-etre",
+      "has": [
+        {
+          "type": "host",
+          "value": {
+            "inc": [
+              "monaloeverabienetre.fr",
+              "www.monaloeverabienetre.fr"
+            ]
+          }
+        }
+      ],
+      "destination": "https://espritaloe.fr/produits/forever-aloe-vera-peche-bien-etre/",
+      "permanent": true
+    },
+    {
+      "source": "/forever-argi",
+      "has": [
+        {
+          "type": "host",
+          "value": {
+            "inc": [
+              "monaloeverabienetre.fr",
+              "www.monaloeverabienetre.fr"
+            ]
+          }
+        }
+      ],
+      "destination": "https://espritaloe.fr/produits/forever-argi-pls/",
+      "permanent": true
+    },
+    {
+      "source": "/forever-argi-plus",
+      "has": [
+        {
+          "type": "host",
+          "value": {
+            "inc": [
+              "monaloeverabienetre.fr",
+              "www.monaloeverabienetre.fr"
+            ]
+          }
+        }
+      ],
+      "destination": "https://espritaloe.fr/produits/forever-argi-pls/",
+      "permanent": true
+    },
+    {
+      "source": "/forever-bright-toothgel",
+      "has": [
+        {
+          "type": "host",
+          "value": {
+            "inc": [
+              "monaloeverabienetre.fr",
+              "www.monaloeverabienetre.fr"
+            ]
+          }
+        }
+      ],
+      "destination": "https://espritaloe.fr/produits/forever-bright-toothgel/",
+      "permanent": true
+    },
+    {
+      "source": "/forever-fab",
+      "has": [
+        {
+          "type": "host",
+          "value": {
+            "inc": [
+              "monaloeverabienetre.fr",
+              "www.monaloeverabienetre.fr"
+            ]
+          }
+        }
+      ],
+      "destination": "https://espritaloe.fr/produits/forever-fab-active-boost/",
+      "permanent": true
+    },
+    {
+      "source": "/forever-fab-active-boost",
+      "has": [
+        {
+          "type": "host",
+          "value": {
+            "inc": [
+              "monaloeverabienetre.fr",
+              "www.monaloeverabienetre.fr"
+            ]
+          }
+        }
+      ],
+      "destination": "https://espritaloe.fr/produits/forever-fab-active-boost/",
+      "permanent": true
+    },
+    {
+      "source": "/forever-freedom",
+      "has": [
+        {
+          "type": "host",
+          "value": {
+            "inc": [
+              "monaloeverabienetre.fr",
+              "www.monaloeverabienetre.fr"
+            ]
+          }
+        }
+      ],
+      "destination": "https://espritaloe.fr/produits/forever-freedom-confort-articulaire/",
+      "permanent": true
+    },
+    {
+      "source": "/forever-freedom-confort-articulaire",
+      "has": [
+        {
+          "type": "host",
+          "value": {
+            "inc": [
+              "monaloeverabienetre.fr",
+              "www.monaloeverabienetre.fr"
+            ]
+          }
+        }
+      ],
+      "destination": "https://espritaloe.fr/produits/forever-freedom-confort-articulaire/",
+      "permanent": true
+    },
+    {
+      "source": "/gel-forever-bright-tooth",
+      "has": [
+        {
+          "type": "host",
+          "value": {
+            "inc": [
+              "monaloeverabienetre.fr",
+              "www.monaloeverabienetre.fr"
+            ]
+          }
+        }
+      ],
+      "destination": "https://espritaloe.fr/produits/forever-bright-toothgel/",
+      "permanent": true
+    },
+    {
+      "source": "/lespulpes",
+      "has": [
+        {
+          "type": "host",
+          "value": {
+            "inc": [
+              "monaloeverabienetre.fr",
+              "www.monaloeverabienetre.fr"
+            ]
+          }
+        }
+      ],
+      "destination": "https://espritaloe.fr/produits/boissons-aloe-vera/",
+      "permanent": true
+    },
+    {
+      "source": "/mentions-legales",
+      "has": [
+        {
+          "type": "host",
+          "value": {
+            "inc": [
+              "monaloeverabienetre.fr",
+              "www.monaloeverabienetre.fr"
+            ]
+          }
+        }
+      ],
+      "destination": "https://espritaloe.fr/mentions-legales/",
+      "permanent": true
+    },
+    {
+      "source": "/msm-forever-gel-peau-confort-articulaire",
+      "has": [
+        {
+          "type": "host",
+          "value": {
+            "inc": [
+              "monaloeverabienetre.fr",
+              "www.monaloeverabienetre.fr"
+            ]
+          }
+        }
+      ],
+      "destination": "https://espritaloe.fr/produits/forever-aloe-msm-gel/",
+      "permanent": true
+    },
+    {
+      "source": "/notre-aloe",
+      "has": [
+        {
+          "type": "host",
+          "value": {
+            "inc": [
+              "monaloeverabienetre.fr",
+              "www.monaloeverabienetre.fr"
+            ]
+          }
+        }
+      ],
+      "destination": "https://espritaloe.fr/notre-aloe/",
+      "permanent": true
+    },
+    {
+      "source": "/politique-de-confidentialite",
+      "has": [
+        {
+          "type": "host",
+          "value": {
+            "inc": [
+              "monaloeverabienetre.fr",
+              "www.monaloeverabienetre.fr"
+            ]
+          }
+        }
+      ],
+      "destination": "https://espritaloe.fr/confidentialite/",
+      "permanent": true
+    },
+    {
+      "source": "/pulpe-aloe-vera-forever",
+      "has": [
+        {
+          "type": "host",
+          "value": {
+            "inc": [
+              "monaloeverabienetre.fr",
+              "www.monaloeverabienetre.fr"
+            ]
+          }
+        }
+      ],
+      "destination": "https://espritaloe.fr/produits/boissons-aloe-vera/",
+      "permanent": true
+    },
+    {
+      "source": "/savon-aloe-avocat-forever",
+      "has": [
+        {
+          "type": "host",
+          "value": {
+            "inc": [
+              "monaloeverabienetre.fr",
+              "www.monaloeverabienetre.fr"
+            ]
+          }
+        }
+      ],
+      "destination": "https://espritaloe.fr/produits/forever-aloe-avocado-face-and-body-soap/",
+      "permanent": true
+    },
+    {
+      "source": "/savon-corps-et-visage-forever",
+      "has": [
+        {
+          "type": "host",
+          "value": {
+            "inc": [
+              "monaloeverabienetre.fr",
+              "www.monaloeverabienetre.fr"
+            ]
+          }
+        }
+      ],
+      "destination": "https://espritaloe.fr/produits/forever-aloe-avocado-face-and-body-soap/",
+      "permanent": true
+    },
+    {
+      "source": "/stick-deodorant-aloes-forever",
+      "has": [
+        {
+          "type": "host",
+          "value": {
+            "inc": [
+              "monaloeverabienetre.fr",
+              "www.monaloeverabienetre.fr"
+            ]
+          }
+        }
+      ],
+      "destination": "https://espritaloe.fr/produits/forever-aloe-ever-shield-deodorant-stick/",
+      "permanent": true
+    },
+    {
+      "source": "/robots.txt",
+      "has": [
+        {
+          "type": "host",
+          "value": {
+            "inc": [
+              "monaloeverabienetre.fr",
+              "www.monaloeverabienetre.fr"
+            ]
+          }
+        }
+      ],
+      "destination": "https://espritaloe.fr/robots.txt",
+      "permanent": true
+    },
+    {
+      "source": "/sitemap.xml",
+      "has": [
+        {
+          "type": "host",
+          "value": {
+            "inc": [
+              "monaloeverabienetre.fr",
+              "www.monaloeverabienetre.fr"
+            ]
+          }
+        }
+      ],
+      "destination": "https://espritaloe.fr/sitemap-index.xml",
+      "permanent": true
+    },
+    {
+      "source": "/product/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": {
+            "inc": [
+              "monaloeverabienetre.fr",
+              "www.monaloeverabienetre.fr"
+            ]
+          }
+        }
+      ],
+      "destination": "https://espritaloe.fr/produits/",
+      "permanent": true
+    },
+    {
+      "source": "/category/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": {
+            "inc": [
+              "monaloeverabienetre.fr",
+              "www.monaloeverabienetre.fr"
+            ]
+          }
+        }
+      ],
+      "destination": "https://espritaloe.fr/produits/",
+      "permanent": true
+    },
+    {
+      "source": "/post/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": {
+            "inc": [
+              "monaloeverabienetre.fr",
+              "www.monaloeverabienetre.fr"
+            ]
+          }
+        }
+      ],
+      "destination": "https://espritaloe.fr/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": {
+            "inc": [
+              "monaloeverabienetre.fr",
+              "www.monaloeverabienetre.fr"
+            ]
+          }
+        }
+      ],
+      "destination": "https://espritaloe.fr/",
+      "permanent": true
+    },
+    {
       "source": "/produits/dentifrice-forever-bright-toothgel",
       "destination": "/produits/forever-bright-toothgel/",
       "permanent": true
