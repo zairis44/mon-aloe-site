@@ -18,9 +18,7 @@
 // Retirer une ligne = la fiche reçoit les blocs de maillage au prochain build.
 // Raison du gel (A-NE-PAS-OUBLIER.md) : seoTitle modifié le 29/08, remesure à faire.
 export const PAGES_GELEES = new Set<string>([
-  'forever-pulpe-daloe-vera',
-  'forever-fab-active-boost',
-  'forever-aloe-avocado-face-and-body-soap',
+  // Dégelées le 15/11/2026 (pulpe, FAB, savon avocat) : plus aucune fiche gelée.
 ]);
 
 // ── 2. Associations produit → produits ─────────────────────────────────────

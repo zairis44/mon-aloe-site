@@ -7,7 +7,7 @@
 - **PageSpeed desktop** retesté par Rafael après le correctif CLS du lot AA : OK.
 - **GA4** : `click_lien_forever` arrivait bien (visible dans Admin → Événements récents) mais n'était pas marqué. **Passé en événement clé le 15/11** → visible dans Rapports → Engagement → Événements clés sous 24–48 h. Pages d'origine et liens cliqués : dimensions prédéfinies « Chemin de la page » et « URL du lien » (pas de dimension personnalisée nécessaire). Limite : 15 utilisateurs GA4 sur 28 jours (bandeau de consentement), à lire comme une tendance, pas un total.
 - **Maillage** : page Suisse (1 seul lien entrant) → + lien depuis `/a-propos/` et l'article franchise (paragraphe VDI). `/recettes-c9/` (2 liens entrants) → + lien depuis l'article minceur (section jours 3 à 9) et la fiche C9. Aucune page en mesure touchée.
-- ⚠️ `PAGES_GELEES` (maillage.ts) bloque toujours les blocs de maillage sur pulpe, FAB et savon avocat (gel du 29/08, remesure prévue fin septembre) : à dégeler si la mesure est faite ou abandonnée.
+- `PAGES_GELEES` (maillage.ts) vidé le 15/11 sur décision de Rafael : pulpe, FAB et savon avocat reçoivent à nouveau les blocs « produits associés » et guides.
 
 ## Lot AD du 15 novembre 2026 (soir) — article comparatif « pulpe d'aloe vera : comparatif des marques »
 
