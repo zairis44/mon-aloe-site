@@ -66,6 +66,8 @@ La contrepartie est honnête : la marque ne vous garantit aucun client. En franc
 
 La vente directe est un secteur encadré par le Code de la consommation, et le statut le plus courant pour démarrer est celui de VDI, Vendeur à Domicile Indépendant. Ce statut se cumule avec un emploi salarié, des études ou une retraite, et vos démarches déclaratives restent légères. Rien à voir avec la création d'une société qu'exige une franchise.
 
+Le statut de VDI est propre à la France. Si vous habitez en Suisse, le cadre administratif change, mais Forever Living y est implanté et le parrainage à distance fonctionne : voyez [comment devenir distributeur Forever Living en Suisse](/devenir-distributeur-forever-living-suisse/).
+
 Autre garde-fou qui distingue un réseau sérieux : chez Forever Living, la progression d'un distributeur repose sur ses ventes de produits, pas sur le recrutement d'autres distributeurs. Vous pouvez développer votre activité sans jamais parrainer personne.
 
 ## Franchise ou distribution Forever : pour qui ?

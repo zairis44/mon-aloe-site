@@ -51,7 +51,7 @@ Les jours 1 et 2 sont les plus stricts. L'alimentation solide est limitée et re
 
 ### Les jours 3 à 9
 
-Le programme s'assouplit progressivement avec l'introduction de repas légers structurés autour des protéines, légumes et bonnes graisses. Les compléments accompagnent cette phase : Forever Therm (thé vert, guarana, vitamines), Forever Fiber (fibres) et Garcinia Plus (Garcinia cambogia, chrome).
+Le programme s'assouplit progressivement avec l'introduction de repas légers structurés autour des protéines, légumes et bonnes graisses. Les compléments accompagnent cette phase : Forever Therm (thé vert, guarana, vitamines), Forever Fiber (fibres) et Garcinia Plus (Garcinia cambogia, chrome). Pour composer ces repas légers, j'ai réuni des [recettes compatibles avec le programme C9](/recettes-c9/).
 
 ### Résultats observés
 

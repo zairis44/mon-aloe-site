@@ -84,7 +84,7 @@ Vous sortez des fêtes ou d'une période chargée, et vous voulez reprendre de b
 
 Les deux premiers jours demandent un peu de volonté, le temps que le corps s'adapte. Ensuite, la plupart des gens décrivent une vraie légèreté. La règle d'or : boire beaucoup d'eau et respecter le plan. Et garder en tête que le résultat se joue surtout après, dans ce que vous conservez de ces 9 jours.
 
-Pour aller plus loin, lisez notre [guide complet du programme C9](/blog/programme-c9-forever-guide-cure-detox-9-jours/), notre article sur [comment perdre du poids naturellement avec les programmes Forever](/blog/perdre-du-poids-naturellement-forever-programmes-minceur/), ou suivez [mon journal C9 en cours](/mon-journal-c9/), où je documente ma 10e cure jour après jour.
+Pour aller plus loin, lisez notre [guide complet du programme C9](/blog/programme-c9-forever-guide-cure-detox-9-jours/), notre article sur [comment perdre du poids naturellement avec les programmes Forever](/blog/perdre-du-poids-naturellement-forever-programmes-minceur/), ou suivez [mon journal C9 en cours](/mon-journal-c9/), où je documente ma 10e cure jour après jour. Pour les repas des jours 3 à 9, piochez dans les [recettes du programme C9](/recettes-c9/).
 
 ## Vous hésitez sur le bon programme ?
 
