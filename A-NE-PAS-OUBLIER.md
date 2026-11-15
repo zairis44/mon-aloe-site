@@ -1,6 +1,13 @@
 # Esprit Aloé — À ne pas oublier
 *Mise à jour : 15 novembre 2026 (migration de l'ancien domaine terminée)*
 
+## Lot AC du 15 novembre 2026 (soir) — réponses directes sous les titres-questions, suivi IA
+
+- **Réponses directes (audit IA, point 2)** : passage en revue des H2 en forme de question. La plupart commencent déjà par la réponse. Repris : FBO « Pourquoi Business Owner… » (réponse en première phrase) et « Client ou FBO : quelle différence ? » (réponse de ~50 mots avant la liste) ; Freedom « Pour qui… » (phrase de synthèse + renvoi à l'avis médical). `updatedDate: 2026-11-15` sur ces 2 articles (**mesure : repart du 15/11**).
+- **Non touchés volontairement (en mesure)** : avis Forever, avis C9, dangers, digestion, pyramide, comment boire la pulpe, VDI, Gelly, guide C9 (attend la répartition des requêtes C9).
+- **⚠️ À trancher par Rafael** : l'article Freedom annonce « premiers effets sur le confort articulaire après 4 à 6 semaines » et « bénéfice structurel sur le cartilage » avec une cure de 3 à 6 mois. Aucune allégation n'est autorisée ni en attente pour la glucosamine (tableau DGCCRF vérifié le 14/11) : formulation à risque.
+- **Suivi IA Ubersuggest** (10 questions max, toutes utilisées) : remplacement de 3 questions peu atteignables (2 sur les soins du visage, 1 générique articulations) par « Qui est distributeur Forever Living en Loire-Atlantique ? », « Le programme C9 de Forever Living fonctionne-t-il vraiment ? Quels sont les avis ? », « Forever Living est-il une pyramide ou une activité de vente légale ? ». Gemini : non suivi par l'abonnement actuel (`aisv_gemini_answers_tracked: false`), pas activable par l'outil. Mise à jour des réponses : mensuelle.
+
 ## Lot AB du 15 novembre 2026 — une page par programme (décision de Rafael), Bing, bilan C9
 
 - **Fusion des pages saveurs** (audit : 94–96 % de texte commun) : 14 fiches → 5. Pages gardées (URL inchangées, les plus liées) : `programme-c9-forever-vanille-peche` (6 versions : aloe pêche / nature / Berry Nectar × shake vanille / chocolat), `programme-f15-debutant-vanille`, `programme-f15-intermediaire-vanille`, `programme-f15-avance-vanille` (vanille / chocolat), `forever-lite-ultra-vanille` (vanille / chocolat). Noms, title, meta et textes rendus neutres en saveur.
