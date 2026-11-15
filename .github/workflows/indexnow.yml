@@ -1,0 +1,26 @@
+# Prévient Bing (IndexNow) après chaque mise en ligne réussie sur Vercel.
+# Vercel déclare ses déploiements à GitHub ; on réagit seulement à « Production » réussi.
+# Seules les pages touchées par le commit déployé sont envoyées (tout le site si un
+# élément commun change : gabarit, composants, styles, données, redirections).
+name: IndexNow après déploiement
+
+on:
+  deployment_status:
+
+jobs:
+  indexnow:
+    if: github.event.deployment_status.state == 'success' && github.event.deployment.environment == 'Production'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.deployment.sha }}
+          fetch-depth: 2
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Pages modifiées → IndexNow
+        run: |
+          FICHIERS=$(git diff --name-only HEAD^1 HEAD || true)
+          echo "Fichiers du commit déployé :"; echo "$FICHIERS"
+          node scripts/indexnow.mjs --fichiers $FICHIERS
