@@ -1,0 +1,386 @@
+---
+/**
+ * src/pages/catalogue-forever.astro
+ * Page « Catalogue Forever » : reprend le déroulé de l'ancienne page
+ * monaloeverabienetre.fr/catalogue-forever-2025 (Webflow), adapté au site actuel.
+ *
+ * Intention visée : « catalogue forever (2026) / feuilleter le catalogue ».
+ * La page /produits/ reste la liste de la boutique (prix, fiches) : ici on présente
+ * le catalogue officiel Forever et on renvoie vers nos fiches.
+ *
+ * À mettre à jour chaque année : ANNEE_CATALOGUE (title, H1, textes).
+ * Images : aucune image ajoutée hors photos des fiches produit (Rafael choisit les visuels).
+ */
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import CtaCommander from '../components/CtaCommander.astro';
+import { getCollection } from 'astro:content';
+import { FOREVER_REL } from '../lib/forever';
+import { PRODUITS_RECOMMANDES } from '../data/recommandes';
+
+const siteUrl = 'https://espritaloe.fr';
+const ANNEE_CATALOGUE = 2026;
+/** Catalogue officiel Forever France (consultation en ligne, pas de PDF proposé par Forever). */
+const URL_CATALOGUE = 'https://ecat.foreverliving.fr/fra/';
+/** Vidéo de l'ancienne page : « De la plante au produit jusqu'à nous ». */
+const VIDEO_ID = '1ShcuSgEFFU';
+
+const tous = (await getCollection('produits')).filter((p) => p.data.disponible !== false);
+const ordreRecommandes = PRODUITS_RECOMMANDES.map((r) => r.slug);
+
+/** 4 produits par gamme : d'abord ceux que Rafael recommande, puis les produits phares. */
+function produitsDe(categorie: string, selection?: string[]) {
+  if (selection) {
+    return selection
+      .map((sl) => tous.find((p) => p.data.slug === sl))
+      .filter((p): p is (typeof tous)[number] => Boolean(p))
+      .map(carte);
+  }
+  const rang = (slug: string, featured: boolean) => {
+    const i = ordreRecommandes.indexOf(slug);
+    return i >= 0 ? i : featured ? 100 : 200;
+  };
+  return tous
+    .filter((p) => p.data.category === categorie)
+    .sort((a, b) => rang(a.data.slug, a.data.featured) - rang(b.data.slug, b.data.featured) || a.data.name.localeCompare(b.data.name, 'fr'))
+    .slice(0, 4)
+    .map(carte);
+}
+
+function carte(p: (typeof tous)[number]) {
+  return {
+    slug: p.data.slug,
+    nom: p.data.name.split(/\s[–—:]\s/)[0],
+    prix: p.data.price.toLocaleString('fr-FR', { style: 'currency', currency: 'EUR' }),
+    image: p.data.image,
+  };
+}
+
+const gammes = [
+  {
+    categorie: 'boissons-aloe-vera',
+    titre: 'Boissons à l’aloe vera',
+    accroche: 'La base de la gamme Forever, et souvent le point de départ d’une routine bien-être.',
+    texte: 'Les boissons à la pulpe d’aloe vera se boivent chaque jour, 60 à 90 ml, nature ou aromatisées. L’aloe vera aide à soutenir la digestion. Dans le catalogue, vous trouverez notamment :',
+    liste: [
+      'la pulpe d’aloe vera à 99,7 %, à boire le matin ;',
+      'des versions aux fruits : pêche, mangue, cranberry ;',
+      'des coffrets de 4 bouteilles pour faire une cure ou varier les goûts.',
+    ],
+    bouton: 'Voir les boissons aloe vera',
+  },
+  {
+    categorie: 'programmes-detox',
+    titre: 'Programmes C9, DX4 et F15',
+    accroche: 'Des programmes clés en main pour cadrer votre alimentation sur quelques jours.',
+    texte: 'Chaque programme réunit les boissons, les compléments et un guide jour par jour :',
+    liste: [
+      'le C9, sur 9 jours, le plus demandé ;',
+      'le DX4, sur 4 jours, pour une remise en route courte ;',
+      'le F15, sur 15 jours, en trois niveaux, pour prolonger après le C9.',
+    ],
+    bouton: 'Voir les programmes',
+    // Un produit par programme plutôt que quatre parfums du C9.
+    selection: ['programme-c9-forever-vanille-peche', 'programme-dx4-forever', 'programme-f15-debutant-vanille', 'programme-f15-intermediaire-vanille'],
+  },
+  {
+    categorie: 'cremes-et-gels',
+    titre: 'Soins beauté & bien-être',
+    accroche: 'Une large gamme de soins à l’aloe vera pour la peau, le corps et les cheveux.',
+    texte: 'Ces cosmétiques hydratent, nettoient et laissent une sensation de fraîcheur sur la peau :',
+    liste: [
+      'gels d’aloe vera et crèmes pour le visage et le corps ;',
+      'soins du visage de la gamme Logic ;',
+      'hygiène du quotidien : savons, déodorant, shampoing, dentifrice.',
+    ],
+    bouton: 'Voir les soins beauté',
+  },
+  {
+    categorie: 'sport-et-fitness',
+    titre: 'Sport & fitness',
+    accroche: 'Des boissons et des compléments pour accompagner vos entraînements.',
+    texte: 'Pour les sportifs réguliers comme pour ceux qui reprennent :',
+    liste: [
+      'des boissons à préparer avant ou pendant l’effort (FAB, ARGI+) ;',
+      'des shakes Lite Ultra et des barres Fast Break pour les collations ;',
+      'Forever Therm, à associer à une alimentation équilibrée.',
+    ],
+    bouton: 'Voir la gamme sport',
+  },
+  {
+    categorie: 'nutrition',
+    titre: 'Compléments nutritionnels',
+    accroche: 'Vitamines, oméga-3, produits de la ruche et plantes.',
+    texte: 'Ils complètent une alimentation variée, sans la remplacer :',
+    liste: [
+      'multivitamines et vitamine C (Forever Daily, Absorbent-C) ;',
+      'oméga-3 (Arctic Sea) ;',
+      'produits de la ruche : pollen, gelée royale.',
+    ],
+    bouton: 'Voir les compléments',
+  },
+]
+  .map((g) => ({ ...g, produits: produitsDe(g.categorie, (g as { selection?: string[] }).selection) }))
+  .filter((g) => g.produits.length > 0);
+
+const atouts = [
+  { icon: '🌍', titre: 'Des produits responsables', texte: 'Culture sans pesticides, écorce des feuilles réutilisée comme fertilisant.' },
+  { icon: '🏅', titre: 'Une pulpe reconnue pour sa qualité', texte: 'Produits certifiés par l’IASC, l’association internationale du secteur de l’aloe vera.' },
+  { icon: '🌿', titre: 'La star des aloe vera', texte: 'L’Aloe Barbadensis Miller, cultivé, récolté et transformé par Forever.' },
+];
+
+const schemaBreadcrumb = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Accueil', item: `${siteUrl}/` },
+    { '@type': 'ListItem', position: 2, name: 'Produits', item: `${siteUrl}/produits/` },
+    { '@type': 'ListItem', position: 3, name: `Catalogue Forever ${ANNEE_CATALOGUE}`, item: `${siteUrl}/catalogue-forever/` },
+  ],
+};
+---
+
+<Layout
+  title={`Catalogue Forever ${ANNEE_CATALOGUE} : feuilleter le catalogue officiel`}
+  description={`Feuilletez le catalogue Forever Living ${ANNEE_CATALOGUE} en ligne : boissons aloe vera, programmes C9, soins, sport et nutrition. Commandez ensuite avec votre distributeur.`}
+  canonical={`${siteUrl}/catalogue-forever/`}
+>
+  <script slot="head" type="application/ld+json" set:html={JSON.stringify(schemaBreadcrumb)} />
+  <Header />
+
+  <!-- ══════════════════════════════════════════
+       BANDEAU — titre centré sur fond vert (comme l'ancien site)
+  ══════════════════════════════════════════ -->
+  <section class="bg-aloe-800 text-cream py-20">
+    <div class="mx-auto max-w-4xl px-6 text-center">
+      <nav class="text-xs text-aloe-300 mb-6" aria-label="Fil d'Ariane">
+        <ol class="flex items-center justify-center gap-2">
+          <li><a href="/" class="hover:text-cream transition-colors">Accueil</a></li>
+          <li>›</li>
+          <li><a href="/produits/" class="hover:text-cream transition-colors">Produits</a></li>
+          <li>›</li>
+          <li class="text-cream font-medium">Catalogue Forever</li>
+        </ol>
+      </nav>
+      <h1 class="text-5xl md:text-6xl text-cream leading-tight mb-5">Catalogue Forever {ANNEE_CATALOGUE}</h1>
+      <p class="text-xl text-aloe-100">Consulter le catalogue Forever Living</p>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       INTRO + BOUTON CATALOGUE
+  ══════════════════════════════════════════ -->
+  <section class="bg-cream py-20">
+    <div class="mx-auto max-w-3xl px-6 text-center">
+      <h2 class="text-3xl md:text-4xl text-aloe-900 mb-6">
+        Catalogue Forever {ANNEE_CATALOGUE} : les produits à l’aloe vera pour votre bien-être et votre beauté
+      </h2>
+      <p class="text-aloe-700 leading-relaxed mb-4">
+        Bienvenue sur la page du catalogue Forever {ANNEE_CATALOGUE}. Vous pouvez y feuilleter le catalogue
+        Forever Living et découvrir l’ensemble des produits à base d’aloe vera : boissons, soins du corps,
+        programmes C9 et DX4, compléments nutritionnels, gamme sport…
+      </p>
+      <p class="text-aloe-700 leading-relaxed mb-8">
+        👉 Ouvrez le catalogue en ligne avec le bouton ci-dessous, puis revenez ici pour commander auprès
+        de votre distributeur Forever : je réponds à vos questions avant l’achat.
+      </p>
+      <a
+        href={URL_CATALOGUE}
+        target="_blank"
+        rel={FOREVER_REL}
+        class="inline-block rounded-full bg-aloe-700 px-8 py-4 text-sm font-semibold text-cream hover:bg-aloe-800 transition-colors"
+      >
+        Feuilleter le catalogue Forever ↗
+      </a>
+      <p class="text-xs text-aloe-500 mt-4">Le catalogue s’ouvre sur le site officiel de Forever Living France.</p>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       QUE CONTIENT LE CATALOGUE ?
+  ══════════════════════════════════════════ -->
+  <section class="bg-aloe-50 py-16">
+    <div class="mx-auto max-w-3xl px-6">
+      <h2 class="text-3xl text-aloe-900 mb-5">Que contient le catalogue Forever {ANNEE_CATALOGUE} ?</h2>
+      <p class="text-aloe-700 leading-relaxed mb-4">
+        Le catalogue Forever rassemble en un seul document toutes les références de la marque
+        Forever Living Products, avec leur description et leur référence.
+      </p>
+      <p class="text-aloe-700 leading-relaxed mb-8">
+        Vous y trouvez des produits pour le bien-être au quotidien, la forme, la beauté et la nutrition,
+        avec toujours une place centrale donnée à l’aloe vera. Ci-dessous, je vous présente les grandes gammes
+        et les produits que je conseille le plus souvent.
+      </p>
+      <div class="flex flex-wrap gap-3">
+        <a
+          href={URL_CATALOGUE}
+          target="_blank"
+          rel={FOREVER_REL}
+          class="rounded-full bg-aloe-700 px-7 py-3 text-sm font-semibold text-cream hover:bg-aloe-800 transition-colors"
+        >
+          Consulter le catalogue ↗
+        </a>
+        <a
+          href="/produits/"
+          class="rounded-full border border-aloe-300 px-7 py-3 text-sm font-semibold text-aloe-800 hover:border-aloe-500 transition-colors"
+        >
+          Voir les prix sur la boutique
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       GAMMES — texte + bouton catégorie + fiches produit
+  ══════════════════════════════════════════ -->
+  {gammes.map((g, i) => (
+    <section class:list={['py-16', i % 2 === 0 ? 'bg-cream' : 'bg-sand/40']}>
+      <div class="mx-auto max-w-6xl px-6">
+        <div class="max-w-3xl mb-10">
+          <h2 class="text-3xl text-aloe-900 mb-3">{g.titre}</h2>
+          <p class="text-lg text-aloe-600 italic mb-4">{g.accroche}</p>
+          <p class="text-aloe-700 leading-relaxed mb-3">{g.texte}</p>
+          <ul class="list-disc pl-5 text-aloe-700 leading-relaxed space-y-1 mb-6">
+            {g.liste.map((l) => <li>{l}</li>)}
+          </ul>
+          <a
+            href={`/produits/${g.categorie}/`}
+            class="inline-block rounded-full bg-aloe-700 px-7 py-3 text-sm font-semibold text-cream hover:bg-aloe-800 transition-colors"
+          >
+            {g.bouton} →
+          </a>
+        </div>
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-5">
+          {g.produits.map((p) => (
+            <a
+              href={`/produits/${p.slug}/`}
+              class="group flex flex-col rounded-2xl bg-white border border-aloe-100 overflow-hidden hover:shadow-lg transition-shadow"
+            >
+              <div class="aspect-square bg-aloe-50 overflow-hidden">
+                <img
+                  src={p.image}
+                  alt={p.nom}
+                  width="400"
+                  height="400"
+                  loading="lazy"
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+              </div>
+              <div class="p-4 flex flex-col flex-1">
+                <h3 class="text-sm font-semibold text-aloe-800 leading-snug mb-2 group-hover:text-aloe-600 transition-colors">{p.nom}</h3>
+                <p class="mt-auto text-sm text-aloe-600">{p.prix}</p>
+              </div>
+            </a>
+          ))}
+        </div>
+      </div>
+    </section>
+  ))}
+
+  <!-- ══════════════════════════════════════════
+       QUALITÉ — fond vert, texte blanc + vidéo de l'ancienne page
+  ══════════════════════════════════════════ -->
+  <section class="bg-aloe-800 text-cream py-20">
+    <div class="mx-auto max-w-6xl px-6 grid md:grid-cols-2 gap-12 items-center">
+      <div>
+        <h2 class="text-3xl md:text-4xl text-cream mb-6">Un contrôle continu de la qualité de la pulpe d’aloe vera</h2>
+        <p class="text-aloe-100 leading-relaxed mb-4">
+          Forever cultive ses plants d’aloe vera dans des conditions climatiques adaptées, dans ses propres plantations.
+        </p>
+        <p class="text-aloe-100 leading-relaxed mb-4">
+          Les feuilles sont cueillies à la main pour éviter de les abîmer, puis acheminées aussitôt vers les usines
+          situées à proximité des cultures.
+        </p>
+        <p class="text-aloe-100 leading-relaxed mb-6">
+          Le gel d’aloe vera est ensuite contrôlé à chaque étape, et les produits portent le sceau de l’IASC.
+        </p>
+        <a href="/notre-aloe/" class="text-sm font-semibold text-cream underline underline-offset-4 hover:text-aloe-200">
+          De la plante à la bouteille : en savoir plus →
+        </a>
+      </div>
+      <div class="video-facade relative aspect-video rounded-3xl overflow-hidden bg-aloe-900 shadow-xl">
+        <button
+          type="button"
+          class="absolute inset-0 w-full h-full flex flex-col items-center justify-center gap-3 text-cream hover:bg-aloe-700/40 transition-colors"
+          data-video={VIDEO_ID}
+          aria-label="Lire la vidéo : De la plante au produit jusqu’à nous"
+        >
+          <span class="flex items-center justify-center w-16 h-16 rounded-full bg-cream text-aloe-800 text-2xl" aria-hidden="true">▶</span>
+          <span class="text-sm font-semibold">De la plante au produit jusqu’à nous</span>
+          <span class="text-xs text-aloe-300">Vidéo YouTube, chargée au clic</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       3 ATOUTS (pictos de l'ancien site)
+  ══════════════════════════════════════════ -->
+  <section class="bg-cream py-16">
+    <div class="mx-auto max-w-5xl px-6 grid sm:grid-cols-3 gap-6">
+      {atouts.map((a) => (
+        <div class="rounded-2xl bg-white border border-aloe-100 p-7 text-center">
+          <span class="text-4xl block mb-4" aria-hidden="true">{a.icon}</span>
+          <h3 class="font-semibold text-aloe-800 mb-2">{a.titre}</h3>
+          <p class="text-sm text-aloe-600 leading-relaxed">{a.texte}</p>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       DEVENIR DISTRIBUTEUR (section FBO de l'ancien site)
+  ══════════════════════════════════════════ -->
+  <section class="bg-aloe-50 py-16">
+    <div class="mx-auto max-w-3xl px-6 text-center">
+      <h2 class="text-3xl text-aloe-900 mb-5">Vous aimez ces produits ? Devenez distributeur Forever</h2>
+      <p class="text-aloe-700 leading-relaxed mb-8">
+        En tant que distributeur Forever, vous bénéficiez de formations (webinaires, événements, fiches produits)
+        pour progresser en vente et en marketing, et d’un parrain qui vous accompagne. Sans stock à acheter
+        ni minimum de commande.
+      </p>
+      <a
+        href="/devenir-distributeur-forever-living/"
+        class="inline-block rounded-full border border-aloe-400 px-8 py-3.5 text-sm font-semibold text-aloe-800 hover:border-aloe-600 transition-colors"
+      >
+        Découvrir l’activité de distributeur →
+      </a>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       APPEL FINAL — commander / poser une question
+  ══════════════════════════════════════════ -->
+  <section class="bg-aloe-800 text-cream py-16">
+    <div class="mx-auto max-w-4xl px-6 text-center">
+      <h2 class="text-3xl text-cream mb-4">Un produit du catalogue vous intéresse ?</h2>
+      <p class="text-aloe-100 mb-8 max-w-xl mx-auto">
+        Retrouvez-le dans la boutique avec son prix, ou contactez-moi : je vous aide à choisir et à passer commande.
+      </p>
+      <div class="flex flex-wrap gap-4 justify-center items-start">
+        <a href="/produits/" class="rounded-full bg-cream px-8 py-3.5 text-sm font-semibold text-aloe-800 hover:bg-aloe-100 transition-colors">
+          Voir tous les produits
+        </a>
+        <CtaCommander label="Me contacter" />
+      </div>
+    </div>
+  </section>
+
+  <Footer />
+</Layout>
+
+<script>
+  // Vidéo « façade » : l'iframe YouTube n'est chargée qu'au clic (performance + aucun cookie avant action).
+  document.querySelectorAll<HTMLButtonElement>('.video-facade button[data-video]').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const iframe = document.createElement('iframe');
+      iframe.src = `https://www.youtube-nocookie.com/embed/${btn.dataset.video}?autoplay=1`;
+      iframe.title = 'De la plante au produit jusqu’à nous';
+      iframe.allow = 'accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture';
+      iframe.allowFullscreen = true;
+      iframe.className = 'absolute inset-0 w-full h-full';
+      btn.replaceWith(iframe);
+    });
+  });
+</script>

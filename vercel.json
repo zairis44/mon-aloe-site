@@ -1496,7 +1496,7 @@
           }
         }
       ],
-      "destination": "https://espritaloe.fr/produits/",
+      "destination": "https://espritaloe.fr/catalogue-forever/",
       "permanent": true
     },
     {
@@ -1512,7 +1512,7 @@
           }
         }
       ],
-      "destination": "https://espritaloe.fr/produits/",
+      "destination": "https://espritaloe.fr/catalogue-forever/",
       "permanent": true
     },
     {
@@ -2205,6 +2205,16 @@
     {
       "source": "/produits/programme-detox/",
       "destination": "/produits/programmes-detox/",
+      "permanent": true
+    },
+    {
+      "source": "/catalogue",
+      "destination": "/catalogue-forever/",
+      "permanent": true
+    },
+    {
+      "source": "/catalogue-forever-2025",
+      "destination": "/catalogue-forever/",
       "permanent": true
     }
   ]

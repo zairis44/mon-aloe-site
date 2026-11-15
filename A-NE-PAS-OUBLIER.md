@@ -1,6 +1,15 @@
 # Esprit Aloé — À ne pas oublier
 *Mise à jour : 15 novembre 2026*
 
+## Lot Z du 15 novembre 2026 — page /catalogue-forever/ (reprise de l'ancienne page catalogue)
+
+- Nouvelle page `src/pages/catalogue-forever.astro`, même déroulé que l'ancienne `monaloeverabienetre.fr/catalogue-forever-2025` (lue dans Webflow le 15/11) : bandeau vert, intro + bouton vers le catalogue officiel (`https://ecat.foreverliving.fr/fra/`, pas de PDF proposé par Forever), « Que contient le catalogue ? », 5 gammes (texte + bouton catégorie + 4 fiches), bloc qualité + vidéo « De la plante au produit jusqu'à nous » (chargée au clic, youtube-nocookie), 3 pictos, bloc distributeur, appel final. Fil d'Ariane + JSON-LD BreadcrumbList. Lien ajouté dans le pied de page (Produits > Catalogue Forever).
+- Textes de l'ancienne page remis aux règles actuelles : plus de « stimuler le métabolisme / charge psychique » ; seule allégation : « L'aloe vera aide à soutenir la digestion » ; cosmétiques = hydratent, nettoient, sensation de fraîcheur.
+- Fiches affichées : produits recommandés par Rafael (`src/data/recommandes.ts`) puis produits phares ; programmes = sélection fixe (C9, DX4, F15 ×2).
+- Redirections 301 : `/catalogue` et `/catalogue-forever-2025` → `/catalogue-forever/`, depuis l'ancien domaine **et** sur espritaloe.fr.
+- **Chaque année** : changer `ANNEE_CATALOGUE` en tête de la page (title, H1, textes) quand le nouveau catalogue Forever sort.
+- **Décision de Rafael (15/11) : « catalogue » est réservé à `/catalogue-forever/`.** `/produits/` : title « Produits Forever Living : toute la gamme aloe vera », H1 « Tous les produits Forever Living », meta « Tous les produits Forever Living en France… », lien vers `/catalogue-forever/` sous l'intro. Page Loire-Atlantique : bouton « Voir tous les produits ». **Mesure de `/produits/` : repart du 15/11.**
+
 ## Lot Y du 15 novembre 2026 — redirections 301 de monaloeverabienetre.fr, page par page
 
 - `vercel.json` : 136 règles réservées à l'hôte `monaloeverabienetre.fr` / `www.monaloeverabienetre.fr` (condition `has` → `host` → `inc`), placées juste après la règle www d'espritaloe. Elles n'ont **aucun effet sur espritaloe.fr**.
