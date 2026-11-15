@@ -51,6 +51,12 @@ const schemaGraph = {
       "@id": `${Astro.site}#organization`,
       name: "Esprit Aloé",
       url: Astro.site,
+      logo: {
+        "@type": "ImageObject",
+        url: new URL("/logo.png", Astro.site).href,
+        width: 512,
+        height: 512,
+      },
       contactPoint: {
         "@type": "ContactPoint",
         telephone: "+33677352226",
@@ -82,6 +88,8 @@ const schemaGraph = {
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <!-- Polices des titres et du texte : préchargées pour limiter le décalage de mise en page (CLS) -->
     <link rel="preload" href={frauncesTitres} as="font" type="font/woff2" crossorigin />
     <link rel="preload" href={mulishTexte} as="font" type="font/woff2" crossorigin />
