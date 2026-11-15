@@ -8,7 +8,7 @@
 - Fiches affichées : produits recommandés par Rafael (`src/data/recommandes.ts`) puis produits phares ; programmes = sélection fixe (C9, DX4, F15 ×2).
 - Redirections 301 : `/catalogue` et `/catalogue-forever-2025` → `/catalogue-forever/`, depuis l'ancien domaine **et** sur espritaloe.fr.
 - **Chaque année** : changer `ANNEE_CATALOGUE` en tête de la page (title, H1, textes) quand le nouveau catalogue Forever sort.
-- **À surveiller (cannibalisation)** : `/produits/` a pour title « Catalogue Forever Living : tous les produits ». Si Google alterne les deux pages sur « catalogue forever », retirer « Catalogue » du title de `/produits/` (décision à prendre avec Rafael).
+- **Décision de Rafael (15/11) : « catalogue » est réservé à `/catalogue-forever/`.** `/produits/` : title « Produits Forever Living : toute la gamme aloe vera », H1 « Tous les produits Forever Living », meta « Tous les produits Forever Living en France… », lien vers `/catalogue-forever/` sous l'intro. Page Loire-Atlantique : bouton « Voir tous les produits ». **Mesure de `/produits/` : repart du 15/11.**
 
 ## Lot Y du 15 novembre 2026 — redirections 301 de monaloeverabienetre.fr, page par page
 
