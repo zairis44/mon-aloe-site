@@ -12,6 +12,8 @@ import '@fontsource/mulish/400.css';
 import '@fontsource/mulish/500.css';
 import '@fontsource/mulish/600.css';
 import '@fontsource/mulish/700.css';
+import frauncesTitres from '@fontsource/fraunces/files/fraunces-latin-500-normal.woff2?url';
+import mulishTexte from '@fontsource/mulish/files/mulish-latin-400-normal.woff2?url';
 import PopupRemise from '../components/PopupRemise.astro';
 import AnalyticsConsent from '../components/AnalyticsConsent.astro';
 
@@ -55,6 +57,15 @@ const schemaGraph = {
         contactType: "customer service",
         availableLanguage: "French",
       },
+      email: "contact@espritaloe.fr",
+      address: {
+        "@type": "PostalAddress",
+        streetAddress: "98 rue de Bais",
+        addressLocality: "Saint-Joachim",
+        postalCode: "44720",
+        addressRegion: "Pays de la Loire",
+        addressCountry: "FR",
+      },
       founder: { "@id": `${Astro.site}a-propos/#rafael-avenard` },
       sameAs: [
         "https://www.facebook.com/RafaelAvenardDistributeurForever",
@@ -71,6 +82,9 @@ const schemaGraph = {
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <!-- Polices des titres et du texte : préchargées pour limiter le décalage de mise en page (CLS) -->
+    <link rel="preload" href={frauncesTitres} as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href={mulishTexte} as="font" type="font/woff2" crossorigin />
     <meta name="generator" content={Astro.generator} />
 
     <!-- SEO -->

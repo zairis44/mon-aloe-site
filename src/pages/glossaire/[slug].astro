@@ -65,10 +65,12 @@ const schemaFAQ = d.faq && d.faq.length > 0 ? {
 } : null;
 
 const titre = d.seoTitle ?? `${d.nom} : définition et réglementation`;
+// Suffixe de marque seulement s'il tient dans ~65 caractères (sinon Google tronque le titre).
+const titreComplet = `${titre} | Esprit Aloé`.length > 65 ? titre : `${titre} | Esprit Aloé`;
 ---
 
 <Layout
-  title={`${titre} | Esprit Aloé`}
+  title={titreComplet}
   description={d.description ?? d.resume}
   canonical={pageUrl}
 >

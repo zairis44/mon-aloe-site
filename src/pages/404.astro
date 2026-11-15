@@ -5,8 +5,8 @@ import Footer from '../components/Footer.astro';
 ---
 
 <Layout
-  title="Page en construction | Esprit Aloé"
-  description="Cette page arrive bientôt. Découvrez dès maintenant nos produits Aloe Vera Forever Living."
+  title="Page introuvable | Esprit Aloé"
+  description="Cette page n’existe pas ou a changé d’adresse. Retrouvez les produits Forever Living, le guide du programme C9 et le blog."
   noindex={true}
 >
   <Header />
@@ -14,15 +14,15 @@ import Footer from '../components/Footer.astro';
   <section class="bg-gradient-to-br from-aloe-50 via-cream to-sand min-h-[70vh] flex items-center">
     <div class="mx-auto max-w-2xl px-6 py-20 text-center">
 
-      <span class="text-7xl mb-8 block animate-bounce">🌿</span>
+      <span class="text-7xl mb-8 block" aria-hidden="true">🌿</span>
 
       <h1 class="text-4xl md:text-5xl text-aloe-900 mb-4">
-        Page en construction
+        Page introuvable
       </h1>
 
       <p class="text-lg text-aloe-600 leading-relaxed mb-10">
-        Cette page est bientôt disponible. En attendant, découvrez
-        nos produits Aloe Vera ou contactez-nous directement.
+        Cette page n’existe pas ou a changé d’adresse. Voici les pages
+        les plus consultées pour retrouver ce que vous cherchiez.
       </p>
 
       <div class="flex flex-wrap gap-4 justify-center mb-14">
@@ -31,6 +31,18 @@ import Footer from '../components/Footer.astro';
           class="rounded-full bg-aloe-600 px-7 py-3.5 text-sm font-semibold text-cream hover:bg-aloe-700 transition-colors"
         >
           Voir les produits
+        </a>
+        <a
+          href="/blog/programme-c9-forever-guide-cure-detox-9-jours/"
+          class="rounded-full border border-aloe-300 px-7 py-3.5 text-sm font-semibold text-aloe-700 hover:bg-aloe-50 transition-colors"
+        >
+          Guide du programme C9
+        </a>
+        <a
+          href="/blog/"
+          class="rounded-full border border-aloe-300 px-7 py-3.5 text-sm font-semibold text-aloe-700 hover:bg-aloe-50 transition-colors"
+        >
+          Le blog
         </a>
         <a
           href="/contact/"
@@ -57,6 +69,8 @@ import Footer from '../components/Footer.astro';
             { href: "/produits/programmes-detox/", label: "🔄 Programmes Détox" },
             { href: "/produits/sport-et-fitness/", label: "💪 Sport & Fitness" },
             { href: "/produits/cremes-et-gels/", label: "🧴 Beauté" },
+            { href: "/produits/nutrition/", label: "🌱 Nutrition" },
+            { href: "/catalogue-forever/", label: "📖 Catalogue Forever" },
           ].map((cat) => (
             <a
               href={cat.href}

@@ -1,8 +1,28 @@
 @import "tailwindcss";
 
+/* Polices de secours aux mêmes dimensions que Fraunces / Mulish (calcul fontTools,
+   nov. 2026) : pendant le chargement, le texte occupe déjà la bonne place,
+   donc pas de saut de mise en page quand la vraie police arrive (CLS). */
+@font-face {
+  font-family: "Fraunces Fallback";
+  src: local("Georgia");
+  size-adjust: 105.05%;
+  ascent-override: 93.09%;
+  descent-override: 24.27%;
+  line-gap-override: 0%;
+}
+@font-face {
+  font-family: "Mulish Fallback";
+  src: local("Arial"), local("Helvetica");
+  size-adjust: 103.9%;
+  ascent-override: 96.73%;
+  descent-override: 24.06%;
+  line-gap-override: 0%;
+}
+
 @theme {
-  --font-display: "Fraunces", Georgia, serif;
-  --font-body: "Mulish", -apple-system, sans-serif;
+  --font-display: "Fraunces", "Fraunces Fallback", Georgia, serif;
+  --font-body: "Mulish", "Mulish Fallback", -apple-system, sans-serif;
 
   --color-aloe-50: #f1f6f1;
   --color-aloe-100: #dceadd;

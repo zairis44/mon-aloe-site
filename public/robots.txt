@@ -1,9 +1,8 @@
 User-agent: *
 Allow: /
 
-# Pages légales inutiles pour l'indexation
-Disallow: /mentions-legales
-Disallow: /confidentialite
+# Les pages légales ne sont pas bloquées ici : elles portent un noindex,
+# que Google ne peut lire que s'il a le droit d'explorer la page.
 
 # Sitemap
 Sitemap: https://espritaloe.fr/sitemap-index.xml

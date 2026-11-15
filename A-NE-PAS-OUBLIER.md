@@ -1,6 +1,15 @@
 # Esprit Aloé — À ne pas oublier
 *Mise à jour : 15 novembre 2026 (migration de l'ancien domaine terminée)*
 
+## Lot AA du 15 novembre 2026 — corrections rapides de l'audit SEO / IA
+
+- **CLS desktop** (0,211 dans PageSpeed) : polices de secours « Fraunces Fallback » (Georgia) et « Mulish Fallback » (Arial) aux dimensions des vraies polices (size-adjust / ascent / descent calculés avec fontTools sur les fichiers woff2), dans `src/styles/global.css` ; préchargement de `fraunces-latin-500` et `mulish-latin-400` dans `Layout.astro`. Mesure locale : CLS 0,002. **À retester dans PageSpeed (desktop) après déploiement.**
+- **robots.txt** : plus de `Disallow` sur les pages légales (elles ont un noindex, que Google doit pouvoir lire).
+- **404** : « Page introuvable » (au lieu de « Page en construction »), liens vers produits, guide C9, blog, contact, catégories (dont Nutrition) et catalogue.
+- **Données structurées** : Organization avec email et adresse ; LocalBusiness (page Loire-Atlantique) rattaché par `parentOrganization`. Logo et `sameAs` complets : en attente (fichier logo et URL des profils à fournir par Rafael).
+- **Accueil** : « Plus de trente produits » → nombre calculé automatiquement (51) ; `fetchpriority="high"` sur le visuel principal. Pas de changement de title/meta/H1.
+- **Glossaire** : titres sous ~65 caractères (le suffixe « | Esprit Aloé » saute s'il fait dépasser). Title de l'article avis (73 car.) : non touché, page en mesure.
+
 ## Lot Z du 15 novembre 2026 — page /catalogue-forever/ (reprise de l'ancienne page catalogue)
 
 - Nouvelle page `src/pages/catalogue-forever.astro`, même déroulé que l'ancienne `monaloeverabienetre.fr/catalogue-forever-2025` (lue dans Webflow le 15/11) : bandeau vert, intro + bouton vers le catalogue officiel (`https://ecat.foreverliving.fr/fra/`, pas de PDF proposé par Forever), « Que contient le catalogue ? », 5 gammes (texte + bouton catégorie + 4 fiches), bloc qualité + vidéo « De la plante au produit jusqu'à nous » (chargée au clic, youtube-nocookie), 3 pictos, bloc distributeur, appel final. Fil d'Ariane + JSON-LD BreadcrumbList. Lien ajouté dans le pied de page (Produits > Catalogue Forever).

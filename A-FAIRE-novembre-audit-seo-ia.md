@@ -180,18 +180,18 @@ Commencez par les redirections et la fusion des pages : ce sont deux changements
 
 **Cette semaine**
 
-- [ ] Servir monaloeverabienetre.fr en HTTPS via Vercel et ajouter la table de 301
-- [ ] Lancer le changement d'adresse dans la Search Console
-- [ ] Corriger le CLS desktop (préchargement de police + police de repli) et retester dans PageSpeed
-- [ ] Supprimer les deux lignes `Disallow` du robots.txt
-- [ ] Renommer la page 404 et y ajouter des liens
+- [x] Servir monaloeverabienetre.fr en HTTPS via Vercel et ajouter la table de 301 *(fait le 15/11 : PR #56, domaine branché sur Vercel, DNS OVH)*
+- [x] Lancer le changement d'adresse dans la Search Console *(fait le 15/11 ; vérification programmée le 8/12)*
+- [x] Corriger le CLS desktop (préchargement de police + police de repli) *(fait le 15/11)* — [ ] retester dans PageSpeed après déploiement
+- [x] Supprimer les deux lignes `Disallow` du robots.txt *(15/11)*
+- [x] Renommer la page 404 et y ajouter des liens *(15/11 : « Page introuvable », liens guide C9, blog, catalogue, nutrition)*
 
 **Ce mois-ci**
 
 - [ ] Fusionner les pages saveurs C9, F15 et Lite Ultra ; rediriger les variantes en 301 ; passer en ProductGroup
 - [ ] Attribuer une requête cible à chaque page C9 et les lier entre elles avec ces ancres
-- [ ] Ajouter logo, adresse et parentOrganization au schéma ; corriger sameAs
-- [ ] Harmoniser le nombre de produits sur l'accueil (51) et la formulation des allégations dans les FAQ produits
+- [~] Ajouter logo, adresse et parentOrganization au schéma ; corriger sameAs *(15/11 : email, adresse et parentOrganization faits ; logo et sameAs en attente des fichiers/URL de Rafael)*
+- [x] Harmoniser le nombre de produits sur l'accueil *(15/11 : nombre calculé automatiquement)* — allégations : décision de Rafael (nov. 2026) de garder les allégations « en attente » DGCCRF, pas de changement
 - [ ] Soumettre le sitemap à Bing Webmaster Tools ; activer IndexNow
 - [ ] Trancher pour /bilan-un-mois-apres-c9/ : publier ou retirer les liens
 
