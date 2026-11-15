@@ -3,7 +3,7 @@ title: "FBO Forever : qu'est-ce qu'un Forever Business Owner ?"
 seoTitle: "FBO Forever Living : définition et rôle"
 description: "FBO signifie Forever Business Owner : le statut de distributeur indépendant Forever Living. Différence avec un client, niveaux, statut VDI et inscription."
 pubDate: 2026-06-11
-updatedDate: 2026-11-12
+updatedDate: 2026-11-15
 author: "Rafael Avenard"
 category: "guides"
 tags:
@@ -31,15 +31,15 @@ Cet article explique ce que recouvre le statut, ce qui distingue un FBO d'un sim
 
 ## Pourquoi "Business Owner" et pas "vendeur" ?
 
-Forever Living a remplacé le terme "distributeur" par FBO il y a une dizaine d'années, et le choix des mots dit quelque chose du modèle. Un FBO ne signe pas de contrat de travail avec Forever Living : il possède sa propre activité. Il choisit ses horaires, sa zone, ses canaux de vente et l'intensité de son engagement. Forever fournit les produits, la logistique de livraison, la plateforme de commande en ligne et la formation. Le FBO construit le reste : sa clientèle.
+Parce qu'un FBO n'est pas un salarié : il ne signe pas de contrat de travail avec Forever Living, il possède sa propre activité. Forever a remplacé le terme "distributeur" par FBO il y a une dizaine d'années, et le choix des mots dit quelque chose du modèle. Il choisit ses horaires, sa zone, ses canaux de vente et l'intensité de son engagement. Forever fournit les produits, la logistique de livraison, la plateforme de commande en ligne et la formation. Le FBO construit le reste : sa clientèle.
 
 Dans les faits, les termes FBO, distributeur et revendeur désignent la même chose. Sur ce site, j'utilise les trois.
 
 ## Client ou FBO : quelle différence ?
 
-Un client achète les produits au prix public, soit en boutique en ligne via un distributeur, soit directement. Il consomme, point final.
+La différence tient à une inscription. Le client achète les produits au prix public, en ligne via un distributeur ou directement, et les consomme. Le FBO s'inscrit auprès de Forever Living avec un parrain : il achète avec une remise, peut revendre les produits en gardant la marge et accède au plan de rémunération.
 
-Un FBO s'inscrit auprès de Forever Living avec un parrain et obtient trois choses que le client n'a pas :
+Concrètement, le FBO obtient trois choses que le client n'a pas :
 
 - **Une remise sur tous ses achats**, de 15 % à l'inscription jusqu'à 30 % avec ses premiers volumes. Certains s'inscrivent d'ailleurs uniquement pour consommer moins cher, sans jamais revendre. C'est permis.
 - **Le droit de revendre** les produits et d'encaisser la marge entre prix remisé et prix public.

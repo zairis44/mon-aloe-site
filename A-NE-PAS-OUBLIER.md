@@ -1,6 +1,21 @@
 # Esprit Aloé — À ne pas oublier
 *Mise à jour : 15 novembre 2026 (migration de l'ancien domaine terminée)*
 
+## Lot AD du 15 novembre 2026 (soir) — article comparatif « pulpe d'aloe vera : comparatif des marques »
+
+- **Nouvel article** `src/content/blog/pulpe-aloe-vera-comparatif-marques.md` (audit IA, levier n° 1 : contenu comparatif citable). 6 produits à plus de 99 % d'aloe vera, 1 L : Forever Aloe Vera Gel, Pur Aloé gel et jus bio, Superdiet gel bio, MKL gel bio, Nat&Form jus bio. Critères : teneur, forme, bio, IASC, additifs, prix au litre, coût par jour à 60–90 ml.
+- **Conformité (publicité comparative, art. L122-1 Code de la consommation)** : déclaration d'intérêt en tête, données vérifiables avec sources et date de relevé (15/11/2026), aucun dénigrement, verdict par critère (Forever n'est pas présenté comme le meilleur en tout : plus cher ×2 à ×3, pas de label bio). Aucune allégation santé.
+- LR non retenu : pas de prix public officiel trouvé en France. Aloïne : on cite le seuil de 1 ppm appliqué par les contrôles DGAL (campagne 2024 : 91 % conformes) ; la base européenne (règl. 2021/468) a été partiellement annulée par le Tribunal de l'UE fin 2024, donc pas de mention d'une règle européenne.
+- **Prix à revérifier tous les 6 mois** (et `updatedDate`) ; prix Forever = celui de la fiche.
+- CSS : les tableaux d'article défilent horizontalement dans leur cadre sur mobile (< 768 px) au lieu d'élargir la page (vaut pour tous les articles avec tableau, texte inchangé).
+- `public/llms.txt` : article ajouté.
+## Lot AC du 15 novembre 2026 (soir) — réponses directes sous les titres-questions, suivi IA
+
+- **Réponses directes (audit IA, point 2)** : passage en revue des H2 en forme de question. La plupart commencent déjà par la réponse. Repris : FBO « Pourquoi Business Owner… » (réponse en première phrase) et « Client ou FBO : quelle différence ? » (réponse de ~50 mots avant la liste) ; Freedom « Pour qui… » (phrase de synthèse + renvoi à l'avis médical). `updatedDate: 2026-11-15` sur ces 2 articles (**mesure : repart du 15/11**).
+- **Non touchés volontairement (en mesure)** : avis Forever, avis C9, dangers, digestion, pyramide, comment boire la pulpe, VDI, Gelly, guide C9 (attend la répartition des requêtes C9).
+- **⚠️ À trancher par Rafael** : l'article Freedom annonce « premiers effets sur le confort articulaire après 4 à 6 semaines » et « bénéfice structurel sur le cartilage » avec une cure de 3 à 6 mois. Aucune allégation n'est autorisée ni en attente pour la glucosamine (tableau DGCCRF vérifié le 14/11) : formulation à risque.
+- **Suivi IA Ubersuggest** (10 questions max, toutes utilisées) : remplacement de 3 questions peu atteignables (2 sur les soins du visage, 1 générique articulations) par « Qui est distributeur Forever Living en Loire-Atlantique ? », « Le programme C9 de Forever Living fonctionne-t-il vraiment ? Quels sont les avis ? », « Forever Living est-il une pyramide ou une activité de vente légale ? ». Gemini : non suivi par l'abonnement actuel (`aisv_gemini_answers_tracked: false`), pas activable par l'outil. Mise à jour des réponses : mensuelle.
+
 ## Lot AB du 15 novembre 2026 — une page par programme (décision de Rafael), Bing, bilan C9
 
 - **Fusion des pages saveurs** (audit : 94–96 % de texte commun) : 14 fiches → 5. Pages gardées (URL inchangées, les plus liées) : `programme-c9-forever-vanille-peche` (6 versions : aloe pêche / nature / Berry Nectar × shake vanille / chocolat), `programme-f15-debutant-vanille`, `programme-f15-intermediaire-vanille`, `programme-f15-avance-vanille` (vanille / chocolat), `forever-lite-ultra-vanille` (vanille / chocolat). Noms, title, meta et textes rendus neutres en saveur.
