@@ -1,5 +1,5 @@
 ---
-name: "Programme F15 Débutant Vanille – 15 jours pour ancrer vos habitudes"
+name: "Programme F15 Débutant – 15 jours pour ancrer vos habitudes"
 reference: "528"
 slug: "programme-f15-debutant-vanille"
 price: 181.74
@@ -7,10 +7,10 @@ coutJour: 'environ 12 € par jour sur 15 jours'
 image: "/images/produits/programme-f15-debutant-vanille.webp"
 images: []
 category: "programmes-detox"
-description: "La suite logique du C9, pensée pour celles et ceux qui reprennent le mouvement de zéro. 15 jours pour stabiliser vos résultats, structurer votre alimentation et installer une routine sportive accessible. Shakes vanille, compléments ciblés et guide progressif. Accompagnement personnalisé par Rafael."
+description: "La suite logique du C9, pensée pour celles et ceux qui reprennent le mouvement de zéro. 15 jours pour stabiliser vos résultats, structurer votre alimentation et installer une routine sportive accessible. Shakes vanille ou chocolat, compléments ciblés et guide progressif. Accompagnement personnalisé par Rafael."
 titreDetails: "Programme F15 Débutant : consolider ce que le C9 a lancé"
-seoTitle: "Programme F15 Débutant Vanille – Après le C9"
-seoDescription: "Programme F15 Débutant Vanille : 15 jours pour stabiliser vos résultats après le C9. Nutrition, sport progressif et compléments Forever. Livraison France."
+seoTitle: "Programme F15 Débutant Forever – Après le C9"
+seoDescription: "Programme F15 Débutant (vanille ou chocolat) : 15 jours pour stabiliser vos résultats après le C9. Nutrition, sport progressif et compléments Forever. Livraison France."
 video: ""
 lienCommande: "https://www.foreverliving.fr/ref/330001628607/528"
 faq:
@@ -24,11 +24,22 @@ faq:
     reponse: "C'est possible et c'est même la suite prévue par Forever. Certains préfèrent toutefois laisser passer quelques jours pour voir si les habitudes prises tiennent naturellement. Les deux approches se défendent : l'essentiel est de ne pas revenir brutalement aux anciennes habitudes."
 caracteristiques:
   - titre: "Ce que contient le coffret"
-    contenu: "Deux pulpes d'aloe vera stabilisées, Forever Therm (30 comprimés), Forever Fiber (15 sachets), une poche de Forever Lite Ultra saveur vanille pour 15 doses, et le livret d'accompagnement Débutant avec le planning nutritionnel et le programme d'exercices adapté à votre niveau."
+    contenu: "Deux pulpes d'aloe vera stabilisées, Forever Therm (30 comprimés), Forever Fiber (15 sachets), une poche de Forever Lite Ultra (vanille ou chocolat, au choix) pour 15 doses, et le livret d'accompagnement Débutant avec le planning nutritionnel et le programme d'exercices adapté à votre niveau."
   - titre: "Comment se déroulent les 15 jours"
     contenu: "Le programme avance en deux phases. La première structure l'alimentation et réintroduit progressivement le mouvement. La seconde consolide, avec des séances un peu plus soutenues et une autonomie croissante sur les repas. Le guide indique quoi faire chaque jour, sans rien laisser à l'improvisation."
   - titre: "Pourquoi le niveau Débutant"
     contenu: "Il ne suppose aucun passé sportif ni connaissance en nutrition. Les séances démarrent doux, sans matériel, et montent en charge à un rythme réaliste. C'est le niveau à choisir si vous reprenez après une longue pause, ou si le C9 était votre premier vrai cadre alimentaire."
+variantes:
+  - saveur: "Shake vanille"
+    reference: "528"
+    price: 181.74
+    lienCommande: "https://www.foreverliving.fr/ref/330001628607/528"
+    image: "/images/produits/programme-f15-debutant-vanille.webp"
+  - saveur: "Shake chocolat"
+    reference: "529"
+    price: 181.74
+    lienCommande: "https://www.foreverliving.fr/ref/330001628607/529"
+    image: "/images/produits/programme-f15-debutant-chocolat.webp"
 ---
 
 Vous venez de terminer un C9, ou vous cherchez un cadre plus progressif qu'une cure courte. Le F15 s'étale sur 15 jours et vise autre chose : non pas un déclic, mais des habitudes qui tiennent.

@@ -16,11 +16,9 @@ image: "/images/blog/programmes-minceur-forever.webp"
 imageAlt: "Programmes minceur C9 et DX4 Forever Living"
 produitsLies:
   - slug: "programme-c9-forever-vanille-peche"
-    nom: "Programme C9 Vanille-Pêche"
+    nom: "Programme C9 Forever"
   - slug: "programme-dx4-forever"
     nom: "Programme DX4 Forever"
-  - slug: "programme-c9-forever-chocolat-peche"
-    nom: "Programme C9 Chocolat-Pêche"
 articlesLies:
   - slug: "programme-c9-forever-guide-cure-detox-9-jours"
     titre: "Programme C9 Forever : guide complet détox"
@@ -45,7 +43,7 @@ Le vrai intérêt des programmes Forever est donc leur cadre : des repas défini
 
 ## Programme C9 : 9 jours pour se remettre à zéro
 
-Le **[Programme C9 Vanille-Pêche](/produits/programme-c9-forever-vanille-peche/)** (et sa version **[Chocolat-Pêche](/produits/programme-c9-forever-chocolat-peche/)**) est le programme phare de Forever Living. Il se déroule sur 9 jours avec un coffret complet qui contient tout ce dont vous avez besoin : gel d'aloe vera (2 x 1L), shakes protéinés Forever Lite Ultra, Forever Therm, Forever Fiber, Forever Garcinia Plus et un guide nutritionnel détaillé jour par jour.
+Le **[Programme C9 Vanille-Pêche](/produits/programme-c9-forever-vanille-peche/)** (et sa version **[Chocolat-Pêche](/produits/programme-c9-forever-vanille-peche/)**) est le programme phare de Forever Living. Il se déroule sur 9 jours avec un coffret complet qui contient tout ce dont vous avez besoin : gel d'aloe vera (2 x 1L), shakes protéinés Forever Lite Ultra, Forever Therm, Forever Fiber, Forever Garcinia Plus et un guide nutritionnel détaillé jour par jour.
 
 ### Les deux premières journées
 

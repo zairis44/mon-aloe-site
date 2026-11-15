@@ -16,9 +16,7 @@ image: "/images/blog/programme-c9-forever.webp"
 imageAlt: "Coffret Programme C9 Forever Living avec les bouteilles d'aloe vera"
 produitsLies:
   - slug: "programme-c9-forever-vanille-peche"
-    nom: "Programme C9 Vanille-Pêche"
-  - slug: "programme-c9-forever-chocolat-peche"
-    nom: "Programme C9 Chocolat-Pêche"
+    nom: "Programme C9 Forever"
   - slug: "forever-pulpe-daloe-vera"
     nom: "Forever Aloe Vera Gel"
 articlesLies:
@@ -127,7 +125,7 @@ Il est déconseillé aux femmes enceintes ou allaitantes, aux personnes sous tra
 Le C9 est disponible en deux saveurs :
 
 - **[C9 Vanille-Pêche](/produits/programme-c9-forever-vanille-peche/)** — la saveur la plus populaire, douce et équilibrée
-- **[C9 Chocolat-Pêche](/produits/programme-c9-forever-chocolat-peche/)** — pour les amateurs de chocolat
+- **[C9 Chocolat-Pêche](/produits/programme-c9-forever-vanille-peche/)** — pour les amateurs de chocolat
 
 Livraison partout en France en 24 à 72h. Je vous accompagne avant, pendant et après votre cure — n'hésitez pas à [me contacter](/contact/) pour des conseils personnalisés avant de commencer.
 

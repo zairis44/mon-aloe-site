@@ -148,7 +148,7 @@ const nbProduits = (await getCollection('produits')).length;
       </div>
       <div class="relative">
         <div class="aspect-square rounded-[2.5rem] overflow-hidden shadow-2xl shadow-aloe-900/20">
-         <img src="/images/hero-aloe-vera.webp" alt="Produits Aloe Vera Forever Living" width="600" height="600" loading="eager" class="w-full h-full object-cover" />
+         <img src="/images/hero-aloe-vera.webp" alt="Produits Aloe Vera Forever Living" width="600" height="600" loading="eager" fetchpriority="high" class="w-full h-full object-cover" />
         </div>
         <div class="absolute -bottom-6 -left-6 bg-cream rounded-2xl px-5 py-4 shadow-xl">
           <p class="text-2xl font-display text-aloe-600">99,7%</p>
@@ -164,7 +164,7 @@ const nbProduits = (await getCollection('produits')).length;
     <div class="mx-auto max-w-6xl px-6 text-center">
       <h2 id="trouver-produit-titre" class="text-3xl md:text-4xl text-aloe-900 mb-3">Quel produit Forever choisir ?</h2>
       <p class="text-aloe-600 max-w-2xl mx-auto mb-8">
-        Plus de trente produits, c’est beaucoup. Partez de votre besoin, je vous indique par où commencer.
+        {nbProduits} produits, c’est beaucoup. Partez de votre besoin, je vous indique par où commencer.
       </p>
       <ul class="flex flex-wrap justify-center gap-3 mb-8">
         {BESOINS.map((b) => (

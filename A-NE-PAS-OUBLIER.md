@@ -1,6 +1,24 @@
 # Esprit Aloé — À ne pas oublier
 *Mise à jour : 15 novembre 2026 (migration de l'ancien domaine terminée)*
 
+## Lot AB du 15 novembre 2026 — une page par programme (décision de Rafael), Bing, bilan C9
+
+- **Fusion des pages saveurs** (audit : 94–96 % de texte commun) : 14 fiches → 5. Pages gardées (URL inchangées, les plus liées) : `programme-c9-forever-vanille-peche` (6 versions : aloe pêche / nature / Berry Nectar × shake vanille / chocolat), `programme-f15-debutant-vanille`, `programme-f15-intermediaire-vanille`, `programme-f15-avance-vanille` (vanille / chocolat), `forever-lite-ultra-vanille` (vanille / chocolat). Noms, title, meta et textes rendus neutres en saveur.
+- Nouveau champ `variantes` (saveur, reference, price, lienCommande, image) dans `content.config.ts`. Le gabarit fiche affiche « Choisissez votre version » (un lien de commande Forever par version, `rel="sponsored"`) et publie un **ProductGroup** + `hasVariant` (une offre par référence).
+- **9 fiches supprimées**, redirigées en 301 vers leur page principale (`vercel.json`, avec et sans `/`) ; les règles de l'ancien domaine qui visaient ces fiches pointent directement sur la page principale (un seul saut). Liens internes, `maillage.ts`, `besoins.ts`, `recommandes.ts` et `produitsLies` des articles mis à jour (hrefs seulement dans les articles en mesure : texte inchangé). 103 → 94 pages.
+- **Ajouter une saveur** : une entrée de plus dans `variantes` de la page principale (pas de nouveau fichier).
+- **Bing Webmaster Tools** : compte créé par Rafael (connexion Google), sitemap `https://espritaloe.fr/sitemap-index.xml` soumis le 15/11. **IndexNow** : clé `public/485bd7ec5f9cad7bacf57427ff613aed.txt`, script `npm run indexnow` (toutes les URL du sitemap, ou `npm run indexnow -- /chemin/`) **à lancer après chaque déploiement important**.
+- **/bilan-un-mois-apres-c9/** : le lien depuis le journal C9 est masqué (`BILAN_PUBLIE = false` dans `mon-journal-c9.astro`) tant que la page est en noindex. À la publication : passer à `true`, retirer le noindex et la ligne de filtre du sitemap dans `astro.config.mjs`.
+
+## Lot AA du 15 novembre 2026 — corrections rapides de l'audit SEO / IA
+
+- **CLS desktop** (0,211 dans PageSpeed) : polices de secours « Fraunces Fallback » (Georgia) et « Mulish Fallback » (Arial) aux dimensions des vraies polices (size-adjust / ascent / descent calculés avec fontTools sur les fichiers woff2), dans `src/styles/global.css` ; préchargement de `fraunces-latin-500` et `mulish-latin-400` dans `Layout.astro`. Mesure locale : CLS 0,002. **À retester dans PageSpeed (desktop) après déploiement.**
+- **robots.txt** : plus de `Disallow` sur les pages légales (elles ont un noindex, que Google doit pouvoir lire).
+- **404** : « Page introuvable » (au lieu de « Page en construction »), liens vers produits, guide C9, blog, contact, catégories (dont Nutrition) et catalogue.
+- **Données structurées** : Organization avec email et adresse ; LocalBusiness (page Loire-Atlantique) rattaché par `parentOrganization`. Logo et `sameAs` complets : en attente (fichier logo et URL des profils à fournir par Rafael).
+- **Accueil** : « Plus de trente produits » → nombre calculé automatiquement (51) ; `fetchpriority="high"` sur le visuel principal. Pas de changement de title/meta/H1.
+- **Glossaire** : titres sous ~65 caractères (le suffixe « | Esprit Aloé » saute s'il fait dépasser). Title de l'article avis (73 car.) : non touché, page en mesure.
+
 ## Lot Z du 15 novembre 2026 — page /catalogue-forever/ (reprise de l'ancienne page catalogue)
 
 - Nouvelle page `src/pages/catalogue-forever.astro`, même déroulé que l'ancienne `monaloeverabienetre.fr/catalogue-forever-2025` (lue dans Webflow le 15/11) : bandeau vert, intro + bouton vers le catalogue officiel (`https://ecat.foreverliving.fr/fra/`, pas de PDF proposé par Forever), « Que contient le catalogue ? », 5 gammes (texte + bouton catégorie + 4 fiches), bloc qualité + vidéo « De la plante au produit jusqu'à nous » (chargée au clic, youtube-nocookie), 3 pictos, bloc distributeur, appel final. Fil d'Ariane + JSON-LD BreadcrumbList. Lien ajouté dans le pied de page (Produits > Catalogue Forever).

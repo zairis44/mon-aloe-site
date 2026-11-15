@@ -28,10 +28,8 @@ faq:
   - question: "Peut-on faire le C9 en travaillant ?"
     reponse: "Oui, et c'est même plus confortable selon moi. Le shaker permet d'emporter ses compléments et de les prendre pendant les pauses, et la journée de travail occupe l'esprit, ce qui aide à gérer les moments de faim. Je trouve personnellement la restriction plus difficile à vivre en vacances, quand on est en famille toute la journée."
 produitsLies:
-  - slug: "programme-c9-forever-chocolat-peche"
-    nom: "Programme C9 Chocolat-Pêche"
   - slug: "programme-c9-forever-vanille-peche"
-    nom: "Programme C9 Vanille-Pêche"
+    nom: "Programme C9 Forever"
   - slug: "programme-f15-debutant-vanille"
     nom: "Programme F15 Débutant — la suite du C9"
 articlesLies:

@@ -18,7 +18,7 @@ produitsLies:
   - slug: "forever-pulpe-daloe-vera"
     nom: "Forever Aloe Vera Gel"
   - slug: "programme-c9-forever-vanille-peche"
-    nom: "Programme C9 Vanille-Pêche"
+    nom: "Programme C9 Forever"
 articlesLies:
   - slug: "programme-c9-forever-guide-cure-detox-9-jours"
     titre: "Programme C9 Forever : guide complet détox"

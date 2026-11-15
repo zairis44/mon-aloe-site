@@ -90,36 +90,25 @@ export const ASSOCIATIONS: Record<string, Association[]> = {
     ['forever-therm', 'Un autre produit de la gamme sport et forme'],
     ['forever-argi-pls', 'Un autre produit de la gamme sport et forme'],
     ['forever-fab-active-boost', 'Une boisson de la gamme active'],
-    ['forever-lite-ultra-vanille', 'Le shake de la gamme, à la vanille'],
+    ['forever-lite-ultra-vanille', 'Le shake protéiné de la gamme, vanille ou chocolat'],
   ],
   'forever-therm': [
     ['forever-fast-break', 'Une barre à emporter pour les journées actives'],
-    ['forever-lite-ultra-vanille', 'Le shake de la gamme, à la vanille'],
+    ['forever-lite-ultra-vanille', 'Le shake protéiné de la gamme, vanille ou chocolat'],
     ['programme-f15-debutant-vanille', 'Un programme de 15 jours pour structurer son rythme'],
   ],
   'forever-lite-ultra-vanille': [
-    ['forever-lite-ultra-choco', 'Le même shake, au chocolat'],
     ['forever-therm', 'Un autre produit de la gamme sport et forme'],
+    ['forever-fast-break', 'Une barre à emporter pour les journées actives'],
     ['programme-f15-debutant-vanille', 'Un programme de 15 jours pour structurer son rythme'],
-  ],
-  'forever-lite-ultra-choco': [
-    ['forever-lite-ultra-vanille', 'Le même shake, à la vanille'],
-    ['forever-therm', 'Un autre produit de la gamme sport et forme'],
-    ['programme-f15-debutant-chocolat', 'Un programme de 15 jours pour structurer son rythme'],
   ],
 
   // Programmes
   'programme-c9-forever-vanille-peche': [
-    ['programme-c9-forever-chocolat-peche', 'Le même programme, saveur chocolat'],
     ['forever-pulpe-daloe-vera', 'La boisson de base à garder après la cure'],
     ['programme-f15-debutant-vanille', 'Une suite possible : 15 jours pour ancrer ses habitudes'],
     ['programme-dx4-forever', 'Un format plus court, sur 4 jours'],
-  ],
-  'programme-c9-forever-chocolat-peche': [
-    ['programme-c9-forever-vanille-peche', 'Le même programme, saveur vanille'],
-    ['forever-pulpe-daloe-vera', 'La boisson de base à garder après la cure'],
-    ['programme-f15-debutant-chocolat', 'Une suite possible : 15 jours pour ancrer ses habitudes'],
-    ['programme-dx4-forever', 'Un format plus court, sur 4 jours'],
+    ['forever-lite-ultra-vanille', 'Le shake du programme, à racheter seul'],
   ],
   'programme-dx4-forever': [
     ['programme-c9-forever-vanille-peche', 'Un format plus long, sur 9 jours'],
@@ -127,36 +116,19 @@ export const ASSOCIATIONS: Record<string, Association[]> = {
     ['programme-f15-debutant-vanille', 'Une suite possible : 15 jours pour ancrer ses habitudes'],
   ],
   'programme-f15-debutant-vanille': [
-    ['programme-f15-debutant-chocolat', 'Le même niveau, saveur chocolat'],
     ['programme-f15-intermediaire-vanille', 'Le niveau suivant'],
     ['programme-c9-forever-vanille-peche', 'Le programme de 9 jours, pour commencer plus court'],
-    ['forever-lite-ultra-vanille', 'Le shake de la gamme, à la vanille'],
-  ],
-  'programme-f15-debutant-chocolat': [
-    ['programme-f15-debutant-vanille', 'Le même niveau, saveur vanille'],
-    ['programme-f15-intermediaire-chocolat', 'Le niveau suivant'],
-    ['programme-c9-forever-chocolat-peche', 'Le programme de 9 jours, pour commencer plus court'],
-    ['forever-lite-ultra-choco', 'Le shake de la gamme, au chocolat'],
+    ['forever-lite-ultra-vanille', 'Le shake du programme, à racheter seul'],
   ],
   'programme-f15-intermediaire-vanille': [
-    ['programme-f15-intermediaire-chocolat', 'Le même niveau, saveur chocolat'],
     ['programme-f15-debutant-vanille', 'Le niveau précédent'],
     ['programme-f15-avance-vanille', 'Le niveau suivant'],
-  ],
-  'programme-f15-intermediaire-chocolat': [
-    ['programme-f15-intermediaire-vanille', 'Le même niveau, saveur vanille'],
-    ['programme-f15-debutant-chocolat', 'Le niveau précédent'],
-    ['programme-f15-avance-chocolat', 'Le niveau suivant'],
+    ['programme-c9-forever-vanille-peche', 'Le programme de 9 jours'],
   ],
   'programme-f15-avance-vanille': [
-    ['programme-f15-avance-chocolat', 'Le même niveau, saveur chocolat'],
     ['programme-f15-intermediaire-vanille', 'Le niveau précédent'],
     ['forever-therm', 'Un produit de la gamme sport et forme'],
-  ],
-  'programme-f15-avance-chocolat': [
-    ['programme-f15-avance-vanille', 'Le même niveau, saveur vanille'],
-    ['programme-f15-intermediaire-chocolat', 'Le niveau précédent'],
-    ['forever-therm', 'Un produit de la gamme sport et forme'],
+    ['programme-c9-forever-vanille-peche', 'Le programme de 9 jours'],
   ],
 
   // Beauté et bien-être
@@ -235,8 +207,7 @@ export const LIBELLES: Record<string, string> = {
   'forever-fab-active-boost': 'FAB Active Boost',
   'forever-fast-break': 'Fast Break',
   'forever-freedom-confort-articulaire': 'Forever Freedom',
-  'forever-lite-ultra-choco': 'Lite Ultra chocolat',
-  'forever-lite-ultra-vanille': 'Lite Ultra vanille',
+  'forever-lite-ultra-vanille': 'Lite Ultra (vanille ou chocolat)',
   'forever-logic-aloe-essence-tonifiante': 'Logic Essence Tonifiante',
   'forever-logic-aloe-gel-hydratant': 'Logic Gel Hydratant',
   'forever-logic-aloe-gel-nettoyant': 'Logic Gel Nettoyant',
@@ -244,15 +215,11 @@ export const LIBELLES: Record<string, string> = {
   'forever-pulpe-daloe-vera': 'Forever Aloe Vera Gel',
   'forever-therm': 'Forever Therm',
   'mini-aloe-argi-plus': 'Mini Aloe Argi+',
-  'programme-c9-forever-chocolat-peche': 'Programme C9 chocolat-pêche',
-  'programme-c9-forever-vanille-peche': 'Programme C9 vanille-pêche',
+  'programme-c9-forever-vanille-peche': 'Programme C9',
   'programme-dx4-forever': 'Programme DX4',
-  'programme-f15-avance-chocolat': 'Programme F15 avancé chocolat',
-  'programme-f15-avance-vanille': 'Programme F15 avancé vanille',
-  'programme-f15-debutant-chocolat': 'Programme F15 débutant chocolat',
-  'programme-f15-debutant-vanille': 'Programme F15 débutant vanille',
-  'programme-f15-intermediaire-chocolat': 'Programme F15 intermédiaire chocolat',
-  'programme-f15-intermediaire-vanille': 'Programme F15 intermédiaire vanille',
+  'programme-f15-avance-vanille': 'Programme F15 Avancé',
+  'programme-f15-debutant-vanille': 'Programme F15 Débutant',
+  'programme-f15-intermediaire-vanille': 'Programme F15 Intermédiaire',
 };
 
 // ── 3. Guides par catégorie ────────────────────────────────────────────────

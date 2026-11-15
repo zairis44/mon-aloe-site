@@ -35,6 +35,15 @@ const produits = defineCollection({
       ville: z.string().optional(),
       note: z.number().min(1).max(5).default(5),
     })).optional(),
+    /** Versions d'un même produit (saveurs…) : une seule page, un lien de commande par version.
+     *  La première version est celle par défaut (reference / price / lienCommande de la fiche). */
+    variantes: z.array(z.object({
+      saveur: z.string(),
+      reference: z.string(),
+      price: z.number(),
+      lienCommande: z.string(),
+      image: z.string().optional(),
+    })).optional(),
   }),
 });
 
