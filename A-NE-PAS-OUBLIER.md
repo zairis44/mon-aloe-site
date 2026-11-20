@@ -12,7 +12,8 @@
   - `OFFRE_PERMANENTE` (offres.ts) sert de secours au popup et au bandeau. Ils l'affichent automatiquement dès qu'aucune offre datée n'est active, à partir du 1/12 après le Black Friday.
   - Pour une future promo : remplacer seulement `OFFRE_EN_COURS`. MYFOREVER reprend la main à la fin de la promo.
   - Fiches produit : encadré « Nouveau client ? −15 %… code MYFOREVER » sous les boutons Commander (`MentionBienvenue.astro`).
-- **Riposte concurrent** : aloe-vera-pour-tous a publié le 20/11 « Comment choisir un conseiller en aloe vera fiable et adapté ? ». Article à écrire avec le vécu de Rafael (en attente de ses réponses).
+- **Riposte concurrent (publiée le 20/11)** : nouvel article `/blog/choisir-distributeur-forever-fiable/` (« Comment choisir un distributeur Forever fiable ? »), écrit à partir des réponses de Rafael. Il répond à l'article d'aloe-vera-pour-tous du 20/11 « Comment choisir un conseiller en aloe vera fiable et adapté ? ». Contenu : prix identiques partout, signes d'un distributeur sérieux, tableau des signaux d'alerte, 5 questions à poser, méthode de Rafael (déplacement dans le 44 pour faire tester les produits, communauté de distributeurs, orienter vers une autre gamme plutôt que vendre un produit inadapté). **Image à choisir par Rafael** (champ `image` vide).
+- **Page Loire-Atlantique** : section « se rencontrer » mise à jour. Rafael se déplace dans tout le 44, Nantes compris, pour faire tester les produits (avant : « Nantes = téléphone »). Ajout de MYFOREVER et d'un lien vers le nouvel article. **Mesure : démarre le 20/11.**
 
 ## Lot AF du 15 novembre 2026 (soir) — Umami, mesure sans cookie
 
