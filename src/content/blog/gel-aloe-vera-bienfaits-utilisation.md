@@ -3,6 +3,7 @@ title: "Gel d'aloe vera : bienfaits, utilisation et comment bien le choisir"
 seoTitle: "Gel d'aloe vera : bienfaits et utilisation"
 description: "Gel d'aloe vera : ce qu'il apporte à la peau, aux cheveux et en boisson, comment l'utiliser, comment lire l'étiquette, et les précautions à connaître."
 pubDate: 2026-11-20
+updatedDate: 2026-11-20
 author: "Rafael Avenard"
 category: "guides"
 image: "/images/blog/gel-aloe-vera-bienfaits-utilisation.webp"
@@ -24,6 +25,12 @@ faq:
     reponse: "Le gel à appliquer est un cosmétique, épaissi pour rester sur la peau. Le gel à boire, qu'on appelle aussi pulpe, est une boisson faite de la chair de la feuille, sans épaississant cosmétique. Ils ne s'échangent pas : on ne boit pas un gel cosmétique."
   - question: "Combien de gel d'aloe vera boire par jour ?"
     reponse: "Pour une pulpe comme le Forever Aloe Vera Gel, je conseille 60 à 90 ml par jour, le matin avant le petit-déjeuner ou en deux prises. Demandez l'avis de votre médecin si vous êtes enceinte, si vous allaitez ou si vous suivez un traitement."
+  - question: "Peut-on boire de l'aloe vera tous les jours ?"
+    reponse: "Oui, une pulpe ou un jus d'aloe vera du commerce, issu de l'intérieur de la feuille, se boit tous les jours à 60 à 90 ml, en cure de quelques semaines ou toute l'année. Ne buvez pas tous les jours le gel d'une feuille du jardin, et demandez l'avis de votre médecin si vous êtes enceinte, si vous allaitez, si vous avez une maladie digestive ou si vous prenez un traitement au long cours."
+  - question: "Est-ce que l'aloe vera se mange ?"
+    reponse: "La pulpe transparente de l'Aloe barbadensis se consomme dans les boissons et les préparations du commerce, débarrassées du latex. La feuille entière, l'écorce et le liquide jaune qu'elle contient ne se mangent pas : ce latex contient de l'aloïne, laxative et irritante. En 2018, la DGS et la DGCCRF ont recommandé d'éviter de consommer les feuilles fraîches achetées pour être cuisinées à la maison, car il est difficile d'en retirer tout le latex."
+  - question: "Pourquoi mon gel d'aloe vera devient-il marron ?"
+    reponse: "Un gel frais, prélevé sur une feuille, s'oxyde au contact de l'air : il jaunit, rosit ou brunit en quelques heures à quelques jours, comme une pomme coupée. Une couleur jaune-brun dès la découpe signale souvent un reste de latex : rincez mieux le gel. Gardez-le au réfrigérateur, dans un pot fermé, et jetez-le au bout de quelques jours ou s'il sent mauvais ou présente des moisissures. Pour un gel du commerce, un changement net de couleur ou d'odeur, ou un tube ouvert depuis plus longtemps que la durée indiquée par le petit pot ouvert sur l'emballage, veut dire qu'il faut le remplacer."
 produitsLies:
   - slug: "aloe-gelly-forever-gel-apaisant"
     nom: "Aloe Vera Gelly"

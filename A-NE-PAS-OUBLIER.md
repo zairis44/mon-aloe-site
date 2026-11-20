@@ -3,6 +3,14 @@
 
 - **/a-propos/ (20/11, demande de Rafael)** : la photo du profil devient le même portrait que `/contact/` (`rafael/rafael-avenard-portrait.webp`, 256 × 256, affiché en 288 × 288 : légèrement agrandi). À remplacer par une version plus grande avec la photo prévue après le coiffeur. L'encadré auteur des articles utilise encore l'ancienne `rafael-avenard.webp`.
 
+## Lot AL du 20 novembre 2026 (soir) — questions Google sans réponse
+
+- **Analyse** : questions les plus posées (Semrush `phrase_questions` « aloe vera » + suggestions Google Ubersuggest sur « aloe vera », « gel aloe vera », « forever living », « c9 forever ») comparées aux ~830 H2/H3 et FAQ du site. Bien couvert : visage, utilisation, moment de prise, danger/effets indésirables, avis médecin, « que choisir », bébé/enfant, yeux, boutons.
+- **Ajouté** (accord de Rafael) : 3 questions dans la FAQ de `/blog/gel-aloe-vera-bienfaits-utilisation/` : « Peut-on boire de l'aloe vera tous les jours ? » (210 + 110/mois), « Est-ce que l'aloe vera se mange ? » (90), « Pourquoi mon gel d'aloe vera devient-il marron ? » (variantes brunit / marron / sent mauvais dans les suggestions Google).
+- **Après le 9/12** : ajouter « Peut-on boire de l'aloe vera tous les jours ? » en FAQ de `comment-boire-pulpe-aloe-vera` (page en mesure).
+- **Non traité, à décider par Rafael** : entretien de la plante (quelle terre ~650/mois, entretenir ~680, où la placer 480, dehors l'hiver 430, bouture ~340, devient marron 170) : beaucoup de trafic, peu d'acheteurs. Questions animaux (chat, chien, cheval) : écartées (vétérinaire).
+- Semrush : 4 000 unités utilisées (dont 2 000 perdues sur « forever », qui ramène des titres de chansons) ; ~15 200 restantes.
+
 ## Lot AK du 20 novembre 2026 (soir) — 3 fiches produit : Lean, Move, Calcium
 
 - **Contexte** : Rafael voulait 3 fiches produit (et non 3 articles, lot AJ : malentendu ; Rafael a décidé le 20/11 de garder les 3 articles).
