@@ -5,6 +5,8 @@ description: "Gel d'aloe vera sur le visage : ce qu'il apporte, comment l'appliq
 pubDate: 2026-11-20
 author: "Rafael Avenard"
 category: "beaute"
+image: "/images/blog/aloe-vera-visage.webp"
+imageAlt: "Soin du visage : une crème blanche appliquée sur le visage et le cou d'une femme allongée, yeux fermés"
 tags:
   - "aloe vera visage"
   - "gel aloe vera visage"

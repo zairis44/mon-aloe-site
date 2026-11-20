@@ -24,7 +24,7 @@
   - `/blog/aloe-vera-coup-de-soleil/` : premiers gestes et signes de consultation d'après Santé.fr (fiche « Coup de soleil (érythème solaire) » du 12/08/2026, citée en source), place du gel, ce qu'il ne fait pas (pas d'indice, pas sur cloques), plante du jardin.
   - `/blog/aloe-vera-visage/` : tableau par type de peau, routine en 3 gestes (Logic Nettoyant, gel, crème), masque express, erreurs à éviter. Renvoie vers l'article peau (en mesure, non modifié) pour les généralités.
 - Ajoutés aux guides de la catégorie crèmes et gels (`maillage.ts`) et à `public/llms.txt`. 101 → 104 pages.
-- **Images** : coup de soleil = photo Pexels choisie par Rafael (dos, cœur de crème sur l'épaule), recadrée en 1200 × 600 (20/11). Crème : 1re photo refusée (feuille de cannabis/CBD, hors sujet) ; 2e photo Pexels (femme en serviette, pot de crème) passée de vertical à 1200 × 600 avec fond mural prolongé sur les côtés. Visage : à fournir.
+- **Images** : coup de soleil = photo Pexels choisie par Rafael (dos, cœur de crème sur l'épaule), recadrée en 1200 × 600 (20/11). Crème : 1re photo refusée (feuille de cannabis/CBD, hors sujet) ; 2e photo Pexels (femme en serviette, pot de crème) passée de vertical à 1200 × 600 avec fond mural prolongé sur les côtés. Visage : photo Pexels choisie par Rafael (soin du visage en institut), recadrée en 1200 × 600 en retirant le logo « lèvres » du t-shirt.
 - **Après le 9/12** : liens depuis l'article peau et l'article Gelly 8 usages vers ces 3 articles.
 - **Mesure : démarre le 20/11.**
 
