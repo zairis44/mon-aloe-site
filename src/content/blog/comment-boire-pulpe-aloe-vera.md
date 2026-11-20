@@ -5,6 +5,8 @@ description: "Aloe vera à boire : pulpe ou jus, combien en boire par jour, à q
 pubDate: 2026-11-13
 author: "Rafael Avenard"
 category: "guides"
+image: "/images/blog/comment-boire-pulpe-aloe-vera.webp"
+imageAlt: "Un verre de boisson à l'aloe vera et un aloès en pot vus de dessus, sur une table blanche"
 tags:
   - "aloe vera à boire"
   - "jus d'aloe vera"
