@@ -140,6 +140,11 @@ export const ASSOCIATIONS: Record<string, Association[]> = {
     ['forever-aloe-msm-gel', 'Un gel de massage après l’effort'],
     ['forever-arctic-sea', 'Les oméga-3 de la gamme'],
   ],
+  'forever-kids': [
+    ['forever-daily', 'Le multivitamines pour les adultes'],
+    ['forever-absorbent-c', 'La vitamine C à croquer de la gamme'],
+    ['forever-arctic-sea', 'Les oméga-3 de la gamme'],
+  ],
   'forever-calcium': [
     ['forever-daily', 'Le multivitamines de la gamme'],
     ['forever-arctic-sea', 'Les oméga-3 de la gamme'],
@@ -231,6 +236,7 @@ export const LIBELLES: Record<string, string> = {
   'forever-aloe-vera-peche-bien-etre': 'Aloe Vera Pêche',
   'forever-argi-pls': 'Forever Argi+',
   'forever-calcium': 'Forever Calcium',
+  'forever-kids': 'Forever Kids',
   'forever-lean': 'Forever Lean',
   'forever-move': 'Forever Move',
   'forever-bee-propolis': 'Bee Propolis',

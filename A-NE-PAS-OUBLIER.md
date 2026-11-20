@@ -14,6 +14,8 @@
 - **Images** (choisies par Rafael, 20/11) : visuels officiels Forever en mise en scène (Move sur tapis de sport, Calcium avec arrosoir et marguerites, Lean sur plan de travail), carrés, webp q80.
 - Associations et libellés dans `maillage.ts` (rien ajouté côté Freedom : fiche en mesure). 104 → 107 pages. **Mesure : démarre le 20/11.**
 
+- **Fiche Forever Kids** (accord de Rafael, 20/11) : `/produits/forever-kids/` (réf. 354, 20,48 €, 120 comprimés à croquer, nutrition, dès 4 ans). Allégations enfants : vitamine D (croissance et développement osseux), fer (développement cognitif) ; B6, B12, C (immunité, fatigue). Mise en garde : ne pas cumuler avec vitamine D ou fer prescrits, boîte hors de portée (excès de fer). Précautions Forever reprises (grossesse, anticoagulants, surcharge en fer, thyroïde, sulfites, polyols). Pas de « tonus / fatigue de l'enfant ». Goût non précisé (Forever annonce fraise, la liste indique un arôme raisin). **Image à fournir par Rafael.**
+
 ## Lot AJ du 20 novembre 2026 (soir) — 3 articles beauté (cocon aloe vera par usage)
 
 - **Choix** (Semrush, base France, 20/11) : « creme aloe vera » 1 600/mois ; « aloe vera coup de soleil » 880 + « aloe vera brulure » 390 + « aloe vera apres soleil » 210 (saisonnier, pic en été : publié maintenant pour être installé avant juin) ; « aloe vera visage » 1 000 + « gel aloe vera visage » 720. Écartés : « propolis bienfaits » (5 400) et « gelée royale bienfaits » (2 400), car doublon avec les pages glossaire et aucune allégation autorisée.
