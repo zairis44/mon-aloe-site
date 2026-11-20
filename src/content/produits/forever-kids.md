@@ -4,7 +4,7 @@ reference: "354"
 slug: "forever-kids"
 price: 20.48
 coutJour: "environ 0,68 € par jour (4 comprimés)"
-image: ""
+image: "/images/produits/forever-kids.webp"
 images: []
 category: "nutrition"
 description: "Des comprimés à croquer avec 12 vitamines, du fer et du zinc, pour les enfants à partir de 4 ans. 4 comprimés par jour. 120 comprimés, soit un mois. Contient des sulfites. Réf. 354."

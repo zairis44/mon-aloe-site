@@ -5,7 +5,7 @@
 
 ## Lot AK du 20 novembre 2026 (soir) — 3 fiches produit : Lean, Move, Calcium
 
-- **Contexte** : Rafael voulait 3 fiches produit (et non 3 articles, lot AJ : malentendu ; les articles restent en ligne en attendant sa décision).
+- **Contexte** : Rafael voulait 3 fiches produit (et non 3 articles, lot AJ : malentendu ; Rafael a décidé le 20/11 de garder les 3 articles).
 - **Choix** : produits absents du site les plus recherchés (Semrush 20/11) : Forever Lean (110/mois), Forever Move (70), Forever Calcium (50). Forever Kids (70) mis de côté : complément pour enfants, accord de Rafael à demander.
 - **Fiches** (données officielles Forever du 20/11) :
   - `/produits/forever-lean/` (réf. 289, 44,49 €, 120 capsules, nutrition). Seule allégation : chrome (glycémie normale, métabolisme des macronutriments). Pas de « piège les graisses / bloque les sucres », pas de chiffre de perte de poids. Précautions grossesse, diabète/traitement glycémie. Comparaison Therm (caféine) / Lean (sans caféine).
@@ -14,7 +14,7 @@
 - **Images** (choisies par Rafael, 20/11) : visuels officiels Forever en mise en scène (Move sur tapis de sport, Calcium avec arrosoir et marguerites, Lean sur plan de travail), carrés, webp q80.
 - Associations et libellés dans `maillage.ts` (rien ajouté côté Freedom : fiche en mesure). 104 → 107 pages. **Mesure : démarre le 20/11.**
 
-- **Fiche Forever Kids** (accord de Rafael, 20/11) : `/produits/forever-kids/` (réf. 354, 20,48 €, 120 comprimés à croquer, nutrition, dès 4 ans). Allégations enfants : vitamine D (croissance et développement osseux), fer (développement cognitif) ; B6, B12, C (immunité, fatigue). Mise en garde : ne pas cumuler avec vitamine D ou fer prescrits, boîte hors de portée (excès de fer). Précautions Forever reprises (grossesse, anticoagulants, surcharge en fer, thyroïde, sulfites, polyols). Pas de « tonus / fatigue de l'enfant ». Goût non précisé (Forever annonce fraise, la liste indique un arôme raisin). **Image à fournir par Rafael.**
+- **Fiche Forever Kids** (accord de Rafael, 20/11) : `/produits/forever-kids/` (réf. 354, 20,48 €, 120 comprimés à croquer, nutrition, dès 4 ans). Allégations enfants : vitamine D (croissance et développement osseux), fer (développement cognitif) ; B6, B12, C (immunité, fatigue). Mise en garde : ne pas cumuler avec vitamine D ou fer prescrits, boîte hors de portée (excès de fer). Précautions Forever reprises (grossesse, anticoagulants, surcharge en fer, thyroïde, sulfites, polyols). Pas de « tonus / fatigue de l'enfant ». Goût non précisé (Forever annonce fraise, la liste indique un arôme raisin). Image choisie par Rafael (visuel officiel Forever, enfants à table), 1200 × 1200.
 
 ## Lot AJ du 20 novembre 2026 (soir) — 3 articles beauté (cocon aloe vera par usage)
 
