@@ -5,6 +5,8 @@ description: "Soleil, rasage, piqûres, mains sèches, cuir chevelu : 8 façons 
 pubDate: 2026-11-14
 author: "Rafael Avenard"
 category: "beaute"
+image: "/images/blog/aloe-vera-gelly-utilisation.webp"
+imageAlt: "Un tube d'Aloe Vera Gelly Forever posé au sol en plein soleil, devant une rue colorée floutée"
 tags:
   - "aloe vera gelly utilisation"
   - "aloe vera gelly forever"
