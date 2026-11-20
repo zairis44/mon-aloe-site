@@ -5,6 +5,8 @@ description: "Vendre de l'aloe vera à domicile : statut VDI, mandataire ou ache
 pubDate: 2026-11-13
 author: "Rafael Avenard"
 category: "guides"
+image: "/images/blog/vente-a-domicile-aloe-vera-vdi.webp"
+imageAlt: "Deux femmes préparent des colis sur une table, à côté d'un ordinateur portable"
 tags:
   - "vente à domicile aloe vera"
   - "vdi aloe vera"
