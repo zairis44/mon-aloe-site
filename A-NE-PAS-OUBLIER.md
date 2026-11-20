@@ -18,7 +18,7 @@
 - **Image ajoutée (choisie par Rafael, 20/11)** : comparatif des pulpes (`pulpe-aloe-vera-comparatif-marques.webp`, recadrage paysage de la photo des 4 boissons Forever).
 - **Image ajoutée (choisie par Rafael, 20/11)** : article Aloe Gelly (`aloe-vera-gelly-utilisation.webp`). Photo carrée passée en 1200 × 600, côtés prolongés en miroir pour garder le tube entier. Texte de l'article non touché (en mesure).
 - **Image ajoutée (choisie par Rafael, 20/11)** : article vente à domicile / VDI (`vente-a-domicile-aloe-vera-vdi.webp`, recadrage 1200 × 600). Texte non touché (en mesure).
-- **Photo de Rafael sur /contact/** (20/11) : portrait provisoire (photo de plage recadrée, sans son ami) à la place de l'emoji 🌿 dans la carte « Rafael Avenard », `public/images/rafael/rafael-avenard-portrait-v2.webp` 256 × 256 (cadre élargi, bras et oreille de l'ami retirés par retouche). **À remplacer** par la photo prévue après le coiffeur.
+- **Photo de Rafael sur /contact/** (20/11) : portrait provisoire (photo de plage recadrée, sans son ami) à la place de l'emoji 🌿 dans la carte « Rafael Avenard », `public/images/rafael/rafael-avenard-portrait.webp` 256 × 256 (premier recadrage, choisi par Rafael). **À remplacer** par la photo prévue après le coiffeur.
 - **Page Loire-Atlantique** : section « se rencontrer » mise à jour. Rafael se déplace dans tout le 44, Nantes compris, pour faire tester les produits (avant : « Nantes = téléphone »). Ajout de MYFOREVER et d'un lien vers le nouvel article. **Mesure : démarre le 20/11.**
 
 ## Lot AF du 15 novembre 2026 (soir) — Umami, mesure sans cookie
