@@ -5,6 +5,8 @@ description: "Gel nature, pêche, Berry Nectar ou mangue : teneur en aloe vera, 
 pubDate: 2026-11-20
 author: "Rafael Avenard"
 category: "guides"
+image: "/images/blog/pulpe-aloe-vera-comparatif-marques.webp"
+imageAlt: "Les quatre boissons aloe vera Forever (Aloe Vera Gel nature, pêche, Berry Nectar, mangue) sur un plan de travail de cuisine"
 tags:
   - "quelle boisson aloe vera forever choisir"
   - "meilleure boisson aloe vera"
