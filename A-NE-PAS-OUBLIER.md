@@ -500,7 +500,7 @@ Autorisation de Rafael dans Codex : modifier GitHub et publier les corrections v
 - [ ] **Collecter de vrais avis clients** pour les fiches les plus vues sans avis
   (déodorant Ever Shield, dentifrice Bright Toothgel, savon liquide). Templates
   SMS/WhatsApp déjà rédigés dans une session précédente.
-- [ ] **Image paysage article franchise** : remplacer l'image carrée 1090×1078 de
+- [x] **Image paysage article franchise** (fait le 20/11) : remplacer l'image carrée 1090×1078 de
   `forever-living-franchise-ou-vente-directe` par un visuel ~1200×600 (ratio 2:1).
 - [ ] **Renforcer l'article digestion** (`aloe-vera-digestion-bienfaits`) : position
   historiquement faible sur "aloe vera digestion", 3e mot-clé du site en volume.
