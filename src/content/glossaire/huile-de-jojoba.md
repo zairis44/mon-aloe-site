@@ -9,4 +9,5 @@ produits:
   - "forever-apres-shampoing-aloe-jojoba"
   - "forever-aloe-levres"
   - "forever-aloe-body-lotion"
+  - "forever-aloe-moisturizing-lotion"
 ---

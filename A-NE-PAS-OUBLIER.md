@@ -1,5 +1,18 @@
 # Esprit Aloé — À ne pas oublier
-*Mise à jour : 20 novembre 2026 (lot AH : fiches Gelly, Propolis, Bee Pollen et article gel d'aloe vera)*
+*Mise à jour : 20 novembre 2026 (lot AI : 3 nouvelles fiches, Aloe First, Crème Aloès, Bee Propolis)*
+
+## Lot AI du 20 novembre 2026 (soir) — 3 nouvelles fiches produit
+
+- **Méthode** : catalogue complet de foreverliving.fr relevé le 20/11 via l'API publique du site (~120 références), comparé aux fiches du site ; volumes Semrush (base France) des produits absents. Retenus : **Aloe First** (« aloe first forever » 110 + 10/mois), **Aloe Moisturizing Lotion / Crème Visage et Corps Aloès** (« aloe moisturizing lotion » 90/mois), **Forever Bee Propolis** (« forever bee propolis » + « forever propolis » 100/mois).
+- **Nouvelles fiches** (données officielles Forever du 20/11 : prix client, contenance, INCI ou composition, mode d'emploi, précautions) :
+  - `/produits/forever-aloe-first/` (réf. 40, 32,50 €, 473 ml, crèmes et gels). ~80 % d'aloe vera (fiche distributeur Forever), propolis, allantoïne, 11 extraits de plantes, pas de parfum dans l'INCI. Précautions ruche + astéracées. Retirés : « réparatrice des peaux lésées », « accélère la réparation des tissus » (allégations de Forever non reprises).
+  - `/produits/forever-aloe-moisturizing-lotion/` (réf. 63, 24,40 €, 118 ml, crèmes et gels). 36 % d'aloe vera, collagène, élastine, acide hyaluronique, abricot, jojoba. Parfum + allergènes déclarés signalés. Pas de promesse anti-âge (collagène = hydratation de surface).
+  - `/produits/forever-bee-propolis/` (réf. 27, 46,96 €, 60 comprimés, nutrition, ~1,57 €/jour). Aucune allégation (propolis : rien d'autorisé ni en attente). Précautions soja / antécédents de cancer du sein (mention Forever), ruche.
+- **Images : aucune** (champ `image` vide, le gabarit gère). **À fournir par Rafael** : photo de chaque produit (photo officielle Forever ou mise en scène).
+- Maillage : associations et libellés dans `maillage.ts` (Aloe First ↔ Gelly / shampoing / Crème Aloès ; Crème Aloès ↔ Gelly / Propolis Crème / Aloe First). Glossaire : propolis (+ Aloe First, Bee Propolis), gelée royale (+ Bee Propolis), allantoïne (+ Aloe First, Crème Aloès), huile de jojoba (+ Crème Aloès), aloe vera stabilisé (+ Aloe First, Crème Aloès). 98 → 101 pages.
+- **Écartés pour l'instant** : Forever Lean (110/mois) : vérifier d'abord dans le tableau DGCCRF si nopal et haricot blanc ont une allégation en attente, sinon fiche limitée à l'allégation du chrome ; Multi-Maca et Active Pro-B (déjà écartés, lot T) ; Forever Kids (70/mois, produit pour enfants : à voir avec Rafael).
+- **Info** : l'Aloe Heat Lotion n'est **pas** vendue par Forever France (absente du catalogue du 20/11) : pas de fiche à créer.
+- **Mesure : démarre le 20/11** pour les 3 fiches.
 
 ## Lot AH du 20 novembre 2026 (soir) — fiches et article tirés de la veille Semrush
 
@@ -9,7 +22,7 @@
 - **Fiche Bee Pollen** : seoTitle « Bee Pollen Forever : pollen d'abeille en comprimés », `coutJour` (~0,68 €/jour), section « Ce que Bee Pollen ne promet pas » (aucune allégation pollen), FAQ Bee Pollen ou Royal Jelly, grossesse/enfants, liens glossaire gelée royale et propolis.
 - **Nouvel article pilier** `/blog/gel-aloe-vera-bienfaits-utilisation/` (« Gel d'aloe vera : bienfaits, utilisation et comment bien le choisir ») : gel à appliquer vs pulpe à boire (tableau), peau, cheveux, boisson (allégation en attente digestion, 60 à 90 ml), tableau besoin → geste → produit, 5 points à lire sur l'étiquette (dont le mythe du « 100 % pur »), plante du jardin, précautions. Renvoie vers les articles détaillés (peau, cheveux, Gelly 8 usages, comment boire, dangers, comparatif). Image choisie par Rafael (photo Pexels verticale d'un plant d'aloe vera, recadrée en 1200 × 600 sur les feuilles, webp). Ajouté aux guides de la catégorie crèmes et gels (`maillage.ts`) et à `public/llms.txt`.
 - **Mesure : démarre le 20/11** pour les fiches Gelly, Propolis, Bee Pollen et le nouvel article.
-- **Non fait volontairement** : fiche Aloe Heat Lotion (n'existe pas sur le site : il faut la photo de Rafael et vérifier la disponibilité en France) ; fiche C9 (cluster C9 en attente : inspection de `/blog/c9-forever-avis/` et répartition des requêtes C9 avant de toucher la fiche) ; aucun lien ajouté depuis les articles en mesure (Gelly 8 usages, peau, cheveux, comment boire) vers le nouvel article : à faire après le bilan du 9/12.
+- **Non fait volontairement** : fiche Aloe Heat Lotion (pas vendue par Forever France, voir lot AI) ; fiche C9 (cluster C9 en attente : inspection de `/blog/c9-forever-avis/` et répartition des requêtes C9 avant de toucher la fiche) ; aucun lien ajouté depuis les articles en mesure (Gelly 8 usages, peau, cheveux, comment boire) vers le nouvel article : à faire après le bilan du 9/12.
 - **À revoir après le 9/12** : l'article Gelly 8 usages dit de rincer le gel sur le cuir chevelu ; la fiche propose aussi un usage sans rinçage en gel coiffant léger (sur cheveux humides, petite dose). Harmoniser si besoin. La FAQ de la fiche C9 contient encore « relancer votre digestion, alléger l'organisme » : à reformuler lors de la prochaine retouche de la fiche.
 
 ## Lot AG du 20 novembre 2026 — outil SEO maison + fiche Freedom

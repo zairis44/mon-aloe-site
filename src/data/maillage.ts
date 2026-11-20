@@ -145,6 +145,16 @@ export const ASSOCIATIONS: Record<string, Association[]> = {
     ['forever-aloe-msm-gel', 'Un autre gel multi-usages de la gamme'],
     ['forever-logic-aloe-gel-hydratant', 'Un soin hydratant pour le visage'],
   ],
+  'forever-aloe-first': [
+    ['aloe-gelly-forever-gel-apaisant', 'Le gel, pour une zone précise'],
+    ['forever-shampoing-aloe-jojoba', 'Le shampoing, pour une routine cheveux complète'],
+    ['forever-aloe-moisturizing-lotion', 'Une crème hydratante à appliquer ensuite'],
+  ],
+  'forever-aloe-moisturizing-lotion': [
+    ['aloe-gelly-forever-gel-apaisant', 'Un gel plus léger, sans parfum'],
+    ['forever-aloe-propolis-creme', 'Une crème plus riche pour les peaux sèches'],
+    ['forever-aloe-first', 'La brume à vaporiser avant la crème'],
+  ],
   'forever-aloe-avocado-face-and-body-soap': [
     ['forever-aloe-liquid-soap', 'Le nettoyant en version liquide'],
     ['forever-logic-aloe-gel-hydratant', 'Un soin hydratant à enchaîner après la toilette'],
@@ -194,6 +204,8 @@ export const LIBELLES: Record<string, string> = {
   'forever-aloe-avocado-face-and-body-soap': 'Savon Aloe Avocado',
   'forever-aloe-berry-nectar': 'Aloe Berry Nectar',
   'forever-aloe-ever-shield-deodorant-stick': 'Déodorant Ever-Shield',
+  'forever-aloe-first': 'Aloe First',
+  'forever-aloe-moisturizing-lotion': 'Crème Aloès (Moisturizing Lotion)',
   'forever-aloe-liquid-soap': 'Savon liquide Aloe',
   'forever-aloe-mango': 'Aloe Mango',
   'forever-aloe-msm-gel': 'Aloe MSM Gel',
@@ -201,6 +213,7 @@ export const LIBELLES: Record<string, string> = {
   'forever-aloe-vera-4pack': 'Aloe Vera 4 Pack',
   'forever-aloe-vera-peche-bien-etre': 'Aloe Vera Pêche',
   'forever-argi-pls': 'Forever Argi+',
+  'forever-bee-propolis': 'Bee Propolis',
   'forever-bright-toothgel': 'Bright Toothgel',
   'forever-fab-active-boost': 'FAB Active Boost',
   'forever-fast-break': 'Fast Break',

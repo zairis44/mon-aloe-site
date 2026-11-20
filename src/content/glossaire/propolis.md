@@ -11,7 +11,9 @@ pubDate: 2026-11-14
 produits:
   - "forever-aloe-propolis-creme"
   - "forever-bright-toothgel"
-produitsIntro: "Soins Forever à la propolis :"
+  - "forever-aloe-first"
+  - "forever-bee-propolis"
+produitsIntro: "Produits Forever à la propolis :"
 articlesLies:
   - slug: "aloe-vera-peau-beaute-bienfaits-forever"
     titre: "Aloe vera pour la peau : guide complet des bienfaits et produits Forever"

@@ -11,6 +11,7 @@ pubDate: 2026-11-14
 produits:
   - "forever-royal-jelly"
   - "forever-bee-pollen"
+  - "forever-bee-propolis"
 produitsIntro: "Produits Forever qui contiennent de la gelée royale :"
 sources:
   - titre: "« Current status of the bioactive properties of royal jelly: a comprehensive review », PubMed Central, 2023"

@@ -8,4 +8,6 @@ produits:
   - "forever-aloe-propolis-creme"
   - "forever-aloe-msm-gel"
   - "forever-aloe-levres"
+  - "forever-aloe-first"
+  - "forever-aloe-moisturizing-lotion"
 ---

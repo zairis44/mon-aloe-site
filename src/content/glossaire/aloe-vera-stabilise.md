@@ -17,6 +17,8 @@ produits:
   - "aloe-gelly-forever-gel-apaisant"
   - "forever-aloe-propolis-creme"
   - "forever-aloe-msm-gel"
+  - "forever-aloe-first"
+  - "forever-aloe-moisturizing-lotion"
 produitsIntro: "Boissons et soins Forever à base de gel d'aloe vera stabilisé :"
 articlesLies:
   - slug: "comment-boire-pulpe-aloe-vera"
