@@ -12,7 +12,7 @@ titreDetails: "Le Programme C9 Forever : Votre Cure Détox Complète de 9 Jours"
 seoTitle: "Programme C9 Forever : la cure de 9 jours (6 versions)"
 seoDescription: "Programme C9 Forever : 9 jours pour encadrer votre alimentation, avec un objectif de perte de poids. Aloe vera, shakes, compléments et guide. 6 versions au choix."
 video: ""
-lienCommande: "http://www.foreverliving.fr/ref/330001628607/629"
+lienCommande: "https://www.foreverliving.fr/ref/330001628607/629"
 featured: true
 disponible: true
 faq:

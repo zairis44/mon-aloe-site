@@ -13,7 +13,7 @@ titreDetails: "Forever Aloe Propolis Crème : composition, utilisation et préca
 seoTitle: "Aloe Propolis Crème Forever : crème aloe vera et propolis"
 seoDescription: "Crème à l'aloe vera et à la propolis Forever pour les peaux sèches qui tiraillent : composition, utilisation, précautions allergie et conseil de distributeur."
 video: ""
-lienCommande: "http://www.foreverliving.fr/ref/330001628607/51"
+lienCommande: "https://www.foreverliving.fr/ref/330001628607/51"
 faq:
   - question: "Que contient la crème Aloe Propolis ?"
     reponse: "Du gel d'aloe vera stabilisé en premier ingrédient, de l'extrait de propolis, de l'extrait de camomille, de l'allantoïne, des vitamines C et E, de la lanoline et des huiles émollientes qui lui donnent sa texture riche. Elle contient aussi un parfum et des conservateurs. La liste complète figure sur le tube et sur la page Forever."

@@ -12,7 +12,7 @@ titreDetails: 'Forever ARGI+™ : L-arginine, vitamines et extraits de fruits'
 seoTitle: Forever ARGI+ – L-arginine et vitamines en stick
 seoDescription: 'Forever ARGI+™ (réf. 473) : 5 g de L-arginine par stick, vitamines C, D, B6, B12 et K. Les vitamines B6 et B12 contribuent à réduire la fatigue. Saveur fruits rouges.'
 video: ''
-lienCommande: http://www.foreverliving.fr/ref/330001628607/473
+lienCommande: https://www.foreverliving.fr/ref/330001628607/473
 faq:
 - question: À quoi sert Forever ARGI+ ?
   reponse: C'est une boisson en stick qui apporte 5 g de L-arginine, un acide aminé, et un cocktail de vitamines. Les vitamines B6, B12 et C contribuent à réduire la fatigue et au fonctionnement normal du système immunitaire. La vitamine C contribue aussi à la formation normale de collagène pour assurer la fonction normale des vaisseaux sanguins. Beaucoup de sportifs l'intègrent à leur routine d'entraînement.

@@ -12,7 +12,7 @@ titreDetails: "Forever Marine Collagen™ : la cure de collagène marin qui se b
 seoTitle: "Forever Marine Collagen – Collagène marin à boire"
 seoDescription: "Forever Marine Collagen : 3 000 mg de collagène marin hydrolysé par dosette, avec vitamine C, zinc et biotine. Cure d'un mois, 30 sachets. Avis et conseils."
 video: "https://www.youtube.com/watch?v=O4YbUmEYvJY"
-lienCommande: "http://www.foreverliving.fr/ref/330001628607/613"
+lienCommande: "https://www.foreverliving.fr/ref/330001628607/613"
 featured: false
 disponible: true
 faq:

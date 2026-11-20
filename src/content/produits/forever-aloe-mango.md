@@ -13,7 +13,7 @@ titreDetails: 'Forever Aloe Mango : l''aloe vera et la mangue'
 seoTitle: Forever Aloe Mango – Jus d’aloe vera à la mangue naturelle
 seoDescription: 'Forever Aloe Mango : boisson à l''aloe vera et à la mangue, avec de la vitamine C. L''aloe vera aide à soutenir la digestion. Fruitée et rafraîchissante.'
 video: https://www.youtube.com/watch?v=uMEAyhzRf54
-lienCommande: http://www.foreverliving.fr/ref/330001628607/836
+lienCommande: https://www.foreverliving.fr/ref/330001628607/836
 faq:
 - question: Qu'apporte l'Aloe Mango ?
   reponse: Le gel d'aloe vera, qui aide à soutenir la digestion et contribue aux défenses naturelles de l'organisme, et de la vitamine C, qui contribue au fonctionnement normal du système immunitaire. La mangue lui donne son goût fruité.

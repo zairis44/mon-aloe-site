@@ -11,7 +11,7 @@ titreDetails: "Forever Aloe MSM Gel : le gel de massage à l'aloe vera"
 seoTitle: "Forever Aloe MSM Gel – Gel de massage à l'aloe vera et au MSM"
 seoDescription: "Forever Aloe MSM Gel : gel non gras à l’aloe vera et au MSM, à appliquer après le sport ou sur une zone tendue. Vegan, certifié IASC, sans traces."
 video: ""
-lienCommande: "http://www.foreverliving.fr/ref/330001628607/205"
+lienCommande: "https://www.foreverliving.fr/ref/330001628607/205"
 faq:
   - question: "À quoi sert l'Aloe MSM Gel ?"
     reponse: "Il associe l'aloe vera, hydratant, au MSM, un composé soufré, et à des extraits végétaux. C'est un gel de massage : il hydrate la peau et laisse une sensation de fraîcheur, appréciée après l'effort. C'est un cosmétique, il ne soigne pas : pour une douleur qui dure, consultez votre médecin."

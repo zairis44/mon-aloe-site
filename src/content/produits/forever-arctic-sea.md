@@ -9,7 +9,7 @@ description: Des capsules d'oméga-3 (EPA et DHA) issus d'huiles de poisson et d
 titreDetails: 'Forever Arctic Sea : les oméga-3 EPA et DHA en capsules'
 seoTitle: 'Forever Arctic Sea : oméga-3 EPA et DHA'
 seoDescription: 'Forever Arctic Sea (réf. 376) : oméga-3 EPA et DHA d''huiles de poisson et de calamar, 120 capsules. Composition, dose, précautions et prix.'
-lienCommande: http://www.foreverliving.fr/ref/330001628607/376
+lienCommande: https://www.foreverliving.fr/ref/330001628607/376
 faq:
 - question: À quoi servent les oméga-3 EPA et DHA ?
   reponse: 'L''EPA et le DHA contribuent à une fonction cardiaque normale, et le DHA au fonctionnement normal du cerveau et au maintien d''une vision normale. Ces effets sont obtenus avec un apport quotidien de 250 mg d''EPA et de DHA. L''organisme en fabrique peu : ils viennent surtout des poissons gras.'

@@ -11,7 +11,7 @@ titreDetails: "Forever Aloe Moisturizing Lotion : composition, utilisation et pr
 seoTitle: "Aloe Moisturizing Lotion Forever : crème visage et corps"
 seoDescription: "Nouveau packaging : Aloe Moisturizing Lotion Forever (ex-Crème Visage et Corps Aloès), 36 % d'aloe vera, collagène et élastine pour le visage et le corps."
 video: ""
-lienCommande: "http://www.foreverliving.fr/ref/330001628607/63"
+lienCommande: "https://www.foreverliving.fr/ref/330001628607/63"
 featured: false
 disponible: true
 faq:

@@ -9,7 +9,7 @@ description: Un comprimé par jour qui associe vitamine C, vitamine D3 et zinc �
 titreDetails: 'Forever ImmuBlend : vitamines C et D3, zinc et champignons'
 seoTitle: 'Forever ImmuBlend : vitamines C, D3 et zinc'
 seoDescription: 'Forever ImmuBlend (réf. 355) : vitamines C et D3, zinc, maitaké, shiitaké et lactoferrine, 1 comprimé par jour. Composition, allergènes et prix.'
-lienCommande: http://www.foreverliving.fr/ref/330001628607/355
+lienCommande: https://www.foreverliving.fr/ref/330001628607/355
 faq:
 - question: Que contient Forever ImmuBlend ?
   reponse: De la vitamine C, de la vitamine D3, du zinc, du mycélium et de l'extrait de maitaké, du mycélium de shiitaké, de la lactoferrine (issue du lait) et des fructo-oligosaccharides.

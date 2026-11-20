@@ -12,7 +12,7 @@ titreDetails: 'Forever Aloe Vera Gel : 99,7 % de pureté, zéro conservateur'
 seoTitle: 'Forever Aloe Vera Gel : pulpe d’aloe vera à boire'
 seoDescription: 'Forever Aloe Vera Gel (Réf. 815) : 99,7 % de gel d''aloe vera pur, sans conservateur, riche en vitamine C. Livraison 48–72h en France.'
 video: ''
-lienCommande: http://www.foreverliving.fr/ref/330001628607/815
+lienCommande: https://www.foreverliving.fr/ref/330001628607/815
 featured: true
 disponible: true
 faq:

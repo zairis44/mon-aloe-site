@@ -10,7 +10,7 @@ description: Des comprimés de pollen d'abeille et de miel, avec une pointe de g
 titreDetails: 'Forever Bee Pollen : composition, dose et précautions'
 seoTitle: 'Bee Pollen Forever : pollen d''abeille en comprimés'
 seoDescription: 'Forever Bee Pollen (réf. 26) : pollen d''abeille, miel et gelée royale en comprimés. Composition, dose, coût par jour et précautions pour les allergiques.'
-lienCommande: http://www.foreverliving.fr/ref/330001628607/26
+lienCommande: https://www.foreverliving.fr/ref/330001628607/26
 faq:
 - question: Que contient Forever Bee Pollen ?
   reponse: Du pollen d'abeille, du miel (12 %) et une petite quantité de gelée royale lyophilisée (0,03 %), avec des antiagglomérants (acides gras, dioxyde de silicium).

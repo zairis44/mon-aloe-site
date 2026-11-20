@@ -12,7 +12,7 @@ titreDetails: 'Forever Aloe Pêche : l''aloe vera et la pêche pour votre routin
 seoTitle: Forever Aloe Vera Pêche – Pulpe d'aloe vera à la pêche
 seoDescription: 'Forever Aloe Pêche : 84,5 % de gel d''aloe vera, purée de pêche et vitamine C. L''aloe vera aide à soutenir la digestion. Sans gluten, vegan.'
 video: ''
-lienCommande: http://www.foreverliving.fr/ref/330001628607/877
+lienCommande: https://www.foreverliving.fr/ref/330001628607/877
 faq:
 - question: Qu'apporte l'Aloe Pêche ?
   reponse: Le gel d'aloe vera (84,5 %), qui aide à soutenir la digestion et contribue aux défenses naturelles de l'organisme, et de la vitamine C, qui contribue au fonctionnement normal du système immunitaire et à réduire la fatigue. La purée de pêche lui donne son goût doux.

@@ -9,7 +9,7 @@ description: Un comprimé à croquer de vitamine C, avec du son d'avoine, du mie
 titreDetails: 'Absorbent-C : la vitamine C en comprimé à croquer'
 seoTitle: 'Forever Absorbent-C : vitamine C à croquer'
 seoDescription: 'Forever Absorbent-C (réf. 48) : vitamine C, son d''avoine, miel et bioflavonoïdes d''agrumes, 1 comprimé à croquer par jour. Précautions et prix.'
-lienCommande: http://www.foreverliving.fr/ref/330001628607/48
+lienCommande: https://www.foreverliving.fr/ref/330001628607/48
 faq:
 - question: À quoi sert la vitamine C ?
   reponse: La vitamine C contribue à réduire la fatigue, au fonctionnement normal du système immunitaire et à protéger les cellules contre le stress oxydatif.

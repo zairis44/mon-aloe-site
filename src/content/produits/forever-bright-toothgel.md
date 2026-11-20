@@ -13,7 +13,7 @@ titreDetails: "Forever Bright Toothgel : un nettoyage bucco-dentaire respectueux
 seoTitle: "Forever Bright Toothgel – Dentifrice aloe & propolis"
 seoDescription: "Forever Bright Toothgel : dentifrice naturel à l'aloe vera et propolis, sans fluor. Nettoyage doux, haleine fraîche, respect des gencives sensibles."
 video: "https://www.youtube.com/watch?v=fhId-IDuuTs"
-lienCommande: "http://www.foreverliving.fr/ref/330001628607/28"
+lienCommande: "https://www.foreverliving.fr/ref/330001628607/28"
 faq:
   - question: "Convient-il aux enfants ?"
     reponse: "Oui. Sa formule sans fluor le rend adapté aux enfants, même en cas d'ingestion accidentelle. Sa texture douce et son goût de menthe les encouragent à prendre de bonnes habitudes. Gardez une surveillance jusqu'à 6 ans."

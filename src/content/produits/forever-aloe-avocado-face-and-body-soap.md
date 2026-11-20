@@ -12,7 +12,7 @@ titreDetails: "Forever Aloe Avocado Face & Body Soap : la douceur naturelle de l
 seoTitle: "Savon aloe vera avocat Forever – Visage & corps"
 seoDescription: "Forever Aloe Avocado Face & Body Soap : savon hydratant à l’avocat et Aloe vera pour visage et corps. Nettoyage doux, peau nourrie et apaisée."
 video: ""
-lienCommande: "http://www.foreverliving.fr/ref/330001628607/284"
+lienCommande: "https://www.foreverliving.fr/ref/330001628607/284"
 faq:
   - question: "Convient-il à tous les types de peau ?"
     reponse: "Oui, il est formulé pour les peaux sèches, grasses, mixtes, sensibles ou normales. L'huile d'avocat nourrit sans obstruer les pores et l'aloe vera apaise les sensibilités. Un bon équilibre pour un usage quotidien sur tous les types de peau."

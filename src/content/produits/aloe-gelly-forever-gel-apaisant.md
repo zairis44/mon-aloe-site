@@ -12,7 +12,7 @@ titreDetails: "Forever Aloe Vera Gelly : composition, utilisation et précaution
 seoTitle: "Aloe Vera Gelly Forever : bienfaits peau et cheveux"
 seoDescription: "Aloe Vera Gelly Forever : gel à 84 % d'aloe vera pour hydrater la peau après le soleil ou l'épilation, et les cheveux en masque ou gel coiffant."
 video: "https://www.youtube.com/watch?v=-gx_PkubVtc"
-lienCommande: "http://www.foreverliving.fr/ref/330001628607/61"
+lienCommande: "https://www.foreverliving.fr/ref/330001628607/61"
 faq:
   - question: "Que contient l'Aloe Vera Gelly ?"
     reponse: "Environ 84 % de gel d'aloe vera stabilisé (Aloe barbadensis), de l'eau, de la glycérine, un épaississant (carbomer) qui lui donne sa texture de gel, de l'allantoïne, des vitamines C et E et des conservateurs. Il ne contient ni parfum ni alcool. Ce n'est donc pas de l'aloe vera pur à 100 % : un gel qui se garde des mois dans un tube a besoin d'un épaississant et de conservateurs. Le produit porte la certification IASC."

@@ -9,7 +9,7 @@ description: 'Le stick à lèvres de Forever : aloe vera, huile de jojoba et cir
 titreDetails: 'Aloe Lèvres : le stick hydratant à l''aloe vera et au jojoba'
 seoTitle: 'Forever Aloe Lèvres : stick à lèvres aloe vera'
 seoDescription: 'Forever Aloe Lèvres (Aloe Lips, réf. 22) : stick à lèvres à l''aloe vera, jojoba et cires naturelles. Hydrate et protège du froid. Composition et prix.'
-lienCommande: http://www.foreverliving.fr/ref/330001628607/22
+lienCommande: https://www.foreverliving.fr/ref/330001628607/22
 faq:
 - question: Aloe Lèvres et Aloe Lips, c'est le même produit ?
   reponse: Oui. Aloe Lips est le nom international du stick, vendu en France sous le nom Aloe Lèvres (réf. 22).

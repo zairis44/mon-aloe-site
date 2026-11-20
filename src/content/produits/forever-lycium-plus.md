@@ -9,7 +9,7 @@ description: Des comprimés qui associent un extrait de baie de goji (lycium) à
 titreDetails: 'Forever Lycium Plus : baie de goji et réglisse'
 seoTitle: 'Forever Lycium Plus : baie de goji et réglisse'
 seoDescription: 'Forever Lycium Plus (réf. 72) : extraits de baie de goji et de racine de réglisse. Dose, précautions (réglisse et hypertension) et prix.'
-lienCommande: http://www.foreverliving.fr/ref/330001628607/72
+lienCommande: https://www.foreverliving.fr/ref/330001628607/72
 faq:
 - question: Que contient Lycium Plus ?
   reponse: Un extrait de baie de goji (Lycium barbarum) et un extrait de racine de réglisse (Glycyrrhiza glabra), en comprimés.

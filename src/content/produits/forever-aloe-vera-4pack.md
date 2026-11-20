@@ -11,7 +11,7 @@ titreDetails: "Forever Aloe Vera 4 Pack : la porte d’entrée idéale dans l’
 seoTitle: "Forever Aloe Vera 4 Pack – Coffret découverte aloe"
 seoDescription: "Forever Aloe Vera 4 Pack (4×330 ml) : 4 saveurs de gel d'aloe vera à 84 % pour débuter. L'aloe vera aide à soutenir la digestion. Livraison France."
 video: ""
-lienCommande: "http://www.foreverliving.fr/ref/330001628607/8154"
+lienCommande: "https://www.foreverliving.fr/ref/330001628607/8154"
 faq:
   - question: "Pour qui est fait ce 4 Pack ?"
     reponse: "Pour les débutants qui veulent tester l'aloe vera avant un format 1 litre, les personnes actives qui emportent leur dose au bureau ou en déplacement, et les familles qui préfèrent une bouteille par personne. Le format 330 ml se glisse partout."

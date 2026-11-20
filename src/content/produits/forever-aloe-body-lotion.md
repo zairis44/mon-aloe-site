@@ -11,7 +11,7 @@ titreDetails: 'Aloe Body Lotion : ce qu''il faut savoir'
 seoTitle: 'Aloe Body Lotion Forever : lait corps hydratant à l''aloe vera'
 seoDescription: 'Aloe Body Lotion Forever (réf. 647, 236 ml) : lait corps à 37,7 % d''aloe vera et huiles végétales. Hydrate, pénètre vite, sans film gras.'
 video: ''
-lienCommande: http://www.foreverliving.fr/ref/330001628607/647
+lienCommande: https://www.foreverliving.fr/ref/330001628607/647
 featured: false
 disponible: true
 faq:

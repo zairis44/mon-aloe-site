@@ -12,7 +12,7 @@ titreDetails: "Forever Move : composition, dose et précautions"
 seoTitle: "Forever Move : coquille d'œuf, curcuma et précautions"
 seoDescription: "Forever Move (réf. 551) : membrane de coquille d'œuf NEM et curcuma BioCurc en capsules. Composition, dose, coût par jour, allergènes et précautions."
 video: ""
-lienCommande: "http://www.foreverliving.fr/ref/330001628607/551"
+lienCommande: "https://www.foreverliving.fr/ref/330001628607/551"
 featured: false
 disponible: true
 faq:

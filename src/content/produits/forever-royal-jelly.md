@@ -9,7 +9,7 @@ description: Des comprimés à croquer de gelée royale lyophilisée, au goût d
 titreDetails: 'Forever Royal Jelly : la gelée royale en comprimés à croquer'
 seoTitle: 'Forever Royal Jelly : gelée royale à croquer'
 seoDescription: 'Forever Royal Jelly (réf. 36) : gelée royale lyophilisée en comprimés à croquer, goût orange. Dose, précautions et prix.'
-lienCommande: http://www.foreverliving.fr/ref/330001628607/36
+lienCommande: https://www.foreverliving.fr/ref/330001628607/36
 faq:
 - question: Qu'est-ce que la gelée royale ?
   reponse: C'est une substance sécrétée par les jeunes abeilles ouvrières pour nourrir les larves et la reine. Forever la propose lyophilisée, en comprimés à croquer.

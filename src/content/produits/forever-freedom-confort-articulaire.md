@@ -14,7 +14,7 @@ titreDetails: ''
 seoTitle: 'Forever Freedom : composition, posologie, effets secondaires'
 seoDescription: 'Forever Freedom : aloe vera, glucosamine, chondroïtine et MSM. Posologie : 90 ml par jour en deux prises. Effets secondaires possibles et précautions.'
 video: https://www.youtube.com/watch?v=QmxkBeO4ObA
-lienCommande: http://www.foreverliving.fr/ref/330001628607/196
+lienCommande: https://www.foreverliving.fr/ref/330001628607/196
 featured: true
 disponible: true
 faq:

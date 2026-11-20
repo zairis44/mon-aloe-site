@@ -12,7 +12,7 @@ titreDetails: "Forever Calcium : composition, dose et précautions"
 seoTitle: "Forever Calcium : calcium, magnésium et vitamine D"
 seoDescription: "Forever Calcium (réf. 206) : calcium, magnésium, vitamine D et oligo-éléments pour le maintien d'une ossature normale. Composition, dose, coût et précautions."
 video: ""
-lienCommande: "http://www.foreverliving.fr/ref/330001628607/206"
+lienCommande: "https://www.foreverliving.fr/ref/330001628607/206"
 featured: false
 disponible: true
 faq:

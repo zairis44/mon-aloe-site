@@ -12,7 +12,7 @@ titreDetails: "Forever Lean : composition, dose et précautions"
 seoTitle: "Forever Lean : nopal, haricot blanc et chrome"
 seoDescription: "Forever Lean (réf. 289) : nopal, haricot blanc et chrome en capsules. Composition, ce qu'on peut en attendre, dose, coût par jour et précautions."
 video: ""
-lienCommande: "http://www.foreverliving.fr/ref/330001628607/289"
+lienCommande: "https://www.foreverliving.fr/ref/330001628607/289"
 featured: false
 disponible: true
 faq:

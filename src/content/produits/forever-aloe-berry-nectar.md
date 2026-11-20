@@ -12,7 +12,7 @@ titreDetails: 'Forever Aloe Berry Nectar : l''aloe vera et les fruits rouges'
 seoTitle: Forever Aloe Berry Nectar – Jus d'aloe vera aux fruits rouges
 seoDescription: 'Forever Aloe Berry Nectar : 90,7 % de gel d''aloe vera, cranberry et pomme, avec de la vitamine C. L''aloe vera aide à soutenir la digestion. Vegan, sans gluten.'
 video: ''
-lienCommande: http://www.foreverliving.fr/ref/330001628607/834
+lienCommande: https://www.foreverliving.fr/ref/330001628607/834
 faq:
 - question: Qu'apporte le Berry Nectar ?
   reponse: La pulpe d'aloe vera, qui aide à soutenir la digestion et contribue aux défenses naturelles de l'organisme, et de la vitamine C, qui contribue au fonctionnement normal du système immunitaire et à réduire la fatigue. Les jus de cranberry et de pomme lui donnent son goût fruité.

@@ -11,7 +11,7 @@ titreDetails: "Shampoing Aloe-Jojoba : ce qu'il faut savoir"
 seoTitle: "Shampoing Aloe-Jojoba Forever : doux, sans sulfates ajoutés"
 seoDescription: "Shampoing Aloe-Jojoba Forever (réf. 640, 296 ml) : aloe vera, huiles de jojoba, de rose musquée et d'argan, sans sulfates ajoutés. Usage quotidien, tous types de cheveux."
 video: ""
-lienCommande: "http://www.foreverliving.fr/ref/330001628607/640"
+lienCommande: "https://www.foreverliving.fr/ref/330001628607/640"
 featured: false
 disponible: true
 faq:

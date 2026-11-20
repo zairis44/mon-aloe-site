@@ -12,7 +12,7 @@ titreDetails: 'Mini Aloe Argi+™ : le format compact pour profiter de l''aloe v
 seoTitle: Mini Aloe Argi+ – Pack mini gel d'aloe vera et sticks ARGI+
 seoDescription: 'Mini Aloe Argi+ : pack de mini-briques de gel d''aloe vera et de sticks ARGI+. L''aloe vera aide à soutenir la digestion ; les vitamines B6 et B12 d''ARGI+ contribuent à réduire la fatigue.'
 video: ''
-lienCommande: http://www.foreverliving.fr/ref/330001628607/71633
+lienCommande: https://www.foreverliving.fr/ref/330001628607/71633
 faq:
 - question: Que contient le pack ?
   reponse: Des mini-briques de Forever Aloe Vera Gel, la pulpe d'aloe vera à 99,7 %, et des sticks Forever ARGI+ (L-arginine et vitamines). Le détail des quantités figure sur la boutique Forever au moment de la commande.

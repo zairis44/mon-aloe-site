@@ -11,7 +11,7 @@ titreDetails: 'Aloe Body Wash : ce qu''il faut savoir'
 seoTitle: 'Aloe Body Wash Forever : gel douche à l''aloe vera, pH neutre'
 seoDescription: 'Aloe Body Wash Forever (réf. 646, 236 ml) : gel douche à l''aloe vera, pH neutre, sans sulfates. Lave en douceur, convient aux peaux sensibles.'
 video: ''
-lienCommande: http://www.foreverliving.fr/ref/330001628607/646
+lienCommande: https://www.foreverliving.fr/ref/330001628607/646
 featured: false
 disponible: true
 faq:

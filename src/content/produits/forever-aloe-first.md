@@ -11,7 +11,7 @@ titreDetails: "Forever Aloe First : composition, utilisation et précautions"
 seoTitle: "Aloe First Forever : brume aloe vera peau et cheveux"
 seoDescription: "Aloe First Forever : brume à l'aloe vera, propolis et 11 extraits de plantes pour hydrater et rafraîchir la peau et les cheveux. Utilisation et précautions."
 video: ""
-lienCommande: "http://www.foreverliving.fr/ref/330001628607/40"
+lienCommande: "https://www.foreverliving.fr/ref/330001628607/40"
 featured: false
 disponible: true
 faq:

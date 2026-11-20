@@ -13,7 +13,7 @@ titreDetails: "Forever Aloe Ever-Shield Stick : déodorant naturel à l’Aloe v
 seoTitle: "Forever Aloe Ever Shield – Déodorant naturel"
 seoDescription: "Forever Aloe Ever Shield Stick : déodorant sans aluminium, à base d’Aloe vera stabilisé. Protection longue durée, non irritant, sans traces sur les vêtements."
 video: ""
-lienCommande: "http://www.foreverliving.fr/ref/330001628607/67"
+lienCommande: "https://www.foreverliving.fr/ref/330001628607/67"
 faq:
   - question: "Est-il vraiment sans aluminium ?"
     reponse: "Oui, il est formulé sans sels d'aluminium. Il respecte le processus naturel de transpiration tout en neutralisant les odeurs. Une solution douce pour celles et ceux qui veulent un produit sain sans renoncer à la fraîcheur."

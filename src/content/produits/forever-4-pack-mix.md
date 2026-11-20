@@ -11,7 +11,7 @@ titreDetails: "Forever 4‑Pack Mix™ : le coffret découverte 4 saveurs pour d
 seoTitle: "Forever 4-Pack Mix – Coffret aloe vera 4 saveurs"
 seoDescription: "Testez 4 saveurs d’aloe vera Forever avec le 4‑Pack Mix™ : gel pur à 90 %, fruits naturels, sans gluten. L'aloe vera aide à soutenir la digestion."
 video: ""
-lienCommande: "http://www.foreverliving.fr/ref/330001628607/8234"
+lienCommande: "https://www.foreverliving.fr/ref/330001628607/8234"
 faq:
   - question: "Que contient le coffret ?"
     reponse: "Quatre boissons aloe vera Forever : l'originale (Aloe Vera Gel), la mangue (Aloe Mango), les fruits rouges (Aloe Berry Nectar) et la pêche (Aloe Peaches). Chacune associe le gel d'aloe vera pur à des fruits naturels, pour des goûts et des nuances de bienfaits variés."

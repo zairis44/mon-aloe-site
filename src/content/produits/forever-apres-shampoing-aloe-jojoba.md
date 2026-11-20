@@ -11,7 +11,7 @@ titreDetails: 'Après-Shampoing Aloe-Jojoba : ce qu''il faut savoir'
 seoTitle: 'Après-Shampoing Aloe-Jojoba Forever : démêle sans alourdir'
 seoDescription: 'Après-Shampoing Aloe-Jojoba Forever (réf. 641, 296 ml) : aloe vera, huiles de jojoba, d''argan et de rose musquée. Démêle, adoucit, fait briller. Sans sulfates.'
 video: ''
-lienCommande: http://www.foreverliving.fr/ref/330001628607/641
+lienCommande: https://www.foreverliving.fr/ref/330001628607/641
 featured: false
 disponible: true
 faq:

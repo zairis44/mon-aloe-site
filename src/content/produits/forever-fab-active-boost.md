@@ -13,7 +13,7 @@ titreDetails: ''
 seoTitle: Forever FAB Active Boost – Boisson énergisante à l'aloe vera
 seoDescription: 'Forever FAB : boisson énergisante à l''aloe vera avec guarana et vitamines B6 et B12, qui contribuent à réduire la fatigue. Contient de la caféine, réservée aux adultes.'
 video: ''
-lienCommande: http://www.foreverliving.fr/ref/330001628607/821
+lienCommande: https://www.foreverliving.fr/ref/330001628607/821
 featured: false
 disponible: true
 faq:

@@ -11,7 +11,7 @@ titreDetails: "Forever Lite Ultra™ : le shake protéiné végétal"
 seoTitle: "Forever Lite Ultra – Shake protéiné vanille ou chocolat"
 seoDescription: "Forever Lite Ultra, vanille ou chocolat : shake protéiné végétal, 17 g de protéines de soja, vitamines et fibres. Les protéines contribuent au maintien de la masse musculaire."
 video: ""
-lienCommande: "http://www.foreverliving.fr/ref/330001628607/470"
+lienCommande: "https://www.foreverliving.fr/ref/330001628607/470"
 faq:
   - question: "Peut-il remplacer un repas ?"
     reponse: "Il est surtout utilisé comme petit-déjeuner rapide ou collation protéinée, et il fait partie des programmes C9 et F15, qui encadrent les repas. En dehors de ces programmes, complétez-le avec un fruit ou des aliments solides pour un repas complet."

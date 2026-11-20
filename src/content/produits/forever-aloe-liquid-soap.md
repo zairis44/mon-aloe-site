@@ -13,7 +13,7 @@ titreDetails: "Forever Aloe Liquid Soap : douceur nettoyante et soin hydratant e
 seoTitle: "Forever Aloe Liquid Soap – Nettoie, apaise et hydrate"
 seoDescription: "Forever Aloe Liquid Soap : savon liquide doux à base d’Aloe vera, jojoba, argan et arnica. Nettoyage délicat, hydratation et apaisement pour toute la famille."
 video: ""
-lienCommande: "http://www.foreverliving.fr/ref/330001628607/633"
+lienCommande: "https://www.foreverliving.fr/ref/330001628607/633"
 faq:
   - question: "Convient-il à toute la famille ?"
     reponse: "Oui. Il est assez doux pour un usage quotidien sur le visage, les mains et le corps. Il nettoie sans dessécher et reste bien toléré par les peaux sensibles comme celles des enfants, tout en gardant la peau souple."

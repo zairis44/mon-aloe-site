@@ -12,7 +12,7 @@ titreDetails: "Forever Kids : composition, dose et précautions"
 seoTitle: "Forever Kids : vitamines à croquer pour enfants"
 seoDescription: "Forever Kids (réf. 354) : 12 vitamines, fer et zinc en comprimés à croquer, dès 4 ans. Composition, dose, coût par jour et précautions à connaître."
 video: ""
-lienCommande: "http://www.foreverliving.fr/ref/330001628607/354"
+lienCommande: "https://www.foreverliving.fr/ref/330001628607/354"
 featured: false
 disponible: true
 faq:

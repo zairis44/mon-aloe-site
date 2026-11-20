@@ -11,7 +11,7 @@ description: "Des comprimés à croquer de propolis, avec du miel, une trace de 
 titreDetails: 'Forever Bee Propolis : composition, dose et précautions'
 seoTitle: 'Forever Bee Propolis : propolis d''abeille en comprimés'
 seoDescription: 'Forever Bee Propolis (réf. 27) : propolis, miel et gelée royale en comprimés à croquer. Composition, dose, coût par jour et précautions (soja, allergies).'
-lienCommande: http://www.foreverliving.fr/ref/330001628607/27
+lienCommande: https://www.foreverliving.fr/ref/330001628607/27
 faq:
 - question: Que contient Forever Bee Propolis ?
   reponse: "De la propolis (avec maltodextrine et farine de caroube comme support), de l'isolat de protéines de soja, du miel, un arôme amande, des agents de texture et de la gelée royale lyophilisée. Il contient du soja."

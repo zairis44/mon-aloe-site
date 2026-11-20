@@ -11,7 +11,7 @@ titreDetails: "Forever Aloe Cooling Lotion : ce qu'il faut savoir"
 seoTitle: "Forever Aloe Cooling Lotion : gel-crème fraîcheur au menthol"
 seoDescription: "Forever Aloe Cooling Lotion (réf. 564, 118 ml) : aloe vera, menthol, eucalyptus et camphre pour un massage rafraîchissant après le sport. Texture légère, effet froid."
 video: ""
-lienCommande: "http://www.foreverliving.fr/ref/330001628607/564"
+lienCommande: "https://www.foreverliving.fr/ref/330001628607/564"
 featured: false
 disponible: true
 faq:

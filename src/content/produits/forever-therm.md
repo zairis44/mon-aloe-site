@@ -12,7 +12,7 @@ titreDetails: 'Forever Therm™ : thé vert, guarana et vitamines pour accompagn
 seoTitle: Forever Therm – Thé vert, guarana et vitamines B
 seoDescription: 'Forever Therm : thé vert et guarana pour accompagner le contrôle du poids, vitamines B qui contribuent à réduire la fatigue. 60 comprimés, vegan.'
 video: ''
-lienCommande: http://www.foreverliving.fr/ref/330001628607/463
+lienCommande: https://www.foreverliving.fr/ref/330001628607/463
 faq:
 - question: À quoi sert Forever Therm ?
   reponse: Il accompagne une démarche de contrôle du poids. Le thé vert contribue au contrôle du poids et soutient le métabolisme des lipides ; le guarana contribue à la vitalité. Les vitamines B et C contribuent à réduire la fatigue et à un métabolisme énergétique normal. Il complète une alimentation équilibrée et une activité physique régulière, il ne les remplace pas.

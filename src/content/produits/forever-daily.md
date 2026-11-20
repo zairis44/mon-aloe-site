@@ -9,7 +9,7 @@ description: Un multivitamines et minéraux en 2 comprimés par jour, avec des e
 titreDetails: 'Forever Daily : vitamines et minéraux en 2 comprimés par jour'
 seoTitle: 'Forever Daily : multivitamines et minéraux'
 seoDescription: 'Forever Daily (réf. 439) : vitamines, minéraux et extraits de fruits et légumes, 2 comprimés par jour. Composition, précautions et prix.'
-lienCommande: http://www.foreverliving.fr/ref/330001628607/439
+lienCommande: https://www.foreverliving.fr/ref/330001628607/439
 faq:
 - question: Que contient Forever Daily ?
   reponse: Douze vitamines, des minéraux (fer, zinc, cuivre, sélénium, iode, manganèse…), un mélange de 20 poudres de fruits et légumes et de la poudre de jus d'aloe vera. La liste complète figure dans la composition.
