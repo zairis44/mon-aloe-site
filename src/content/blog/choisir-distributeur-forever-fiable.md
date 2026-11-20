@@ -11,6 +11,8 @@ tags:
   - "conseiller forever living"
   - "conseiller aloe vera"
   - "acheter forever living"
+image: "/images/blog/choisir-distributeur-forever-fiable.webp"
+imageAlt: "Une femme remplit un bon de commande sur une table, à côté de cartons d'expédition et d'un ordinateur portable"
 produitsLies:
   - slug: "forever-pulpe-daloe-vera"
     nom: "Forever Aloe Vera Gel"
