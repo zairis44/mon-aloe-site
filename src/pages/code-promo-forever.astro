@@ -24,7 +24,7 @@ const etapes = [
 const faq = [
   {
     q: "Existe-t-il une réduction Forever toute l'année ?",
-    r: `Oui : l'offre de bienvenue. Les ${bienvenue.public} ont −${bienvenue.remise} sur ${bienvenue.portee} dès ${bienvenue.minimum} d'achat, à condition de créer leur compte sur la boutique Forever via mon lien. Elle est valable toute l'année, en dehors des promotions ponctuelles, et n'est pas cumulable avec elles.`,
+    r: `Oui : le code ${bienvenue.code}. Les ${bienvenue.public} ont −${bienvenue.remise} sur ${bienvenue.portee} dès ${bienvenue.minimum} d'achat, en saisissant ce code lors de leur inscription sur la boutique Forever. Il est valable toute l'année et n'est pas cumulable avec une promotion ponctuelle.`,
   },
   {
     q: `Jusqu'à quand le code ${offre.code} est-il valable ?`,
@@ -65,7 +65,7 @@ const schemaFAQ = {
 
 <Layout
   title="Code promo Forever : −15 % pour les nouveaux clients | Esprit Aloé"
-  description="Réduction Forever : −15 % sur votre première commande dès 50 €, toute l'année, en créant votre compte via mon lien. Offre du moment et astuces pour payer moins cher."
+  description="Code promo Forever MYFOREVER : −15 % sur votre première commande dès 50 €, toute l'année, pour les nouveaux clients. Mode d'emploi et astuces pour payer moins cher."
   canonical="https://espritaloe.fr/code-promo-forever/"
 >
   <script type="application/ld+json" set:html={JSON.stringify(schemaFAQ)} slot="head" />
@@ -105,7 +105,7 @@ const schemaFAQ = {
         </p>
         <div class="inline-flex items-center gap-4 rounded-xl border-2 border-dashed border-[#d4a64a] bg-[#1f1f1f] px-6 py-4 mb-6">
           <span class="font-mono text-2xl font-bold tracking-wider">{offre.code}</span>
-          <button type="button" id="copier-code" data-code={offre.code}
+          <button type="button" id="copier-code" data-copier data-code={offre.code}
                   class="rounded-lg bg-[#d4a64a] px-3 py-1.5 text-xs font-semibold text-[#141414]">
             Copier
           </button>
@@ -126,13 +126,22 @@ const schemaFAQ = {
         </span>
         <h2 class="text-3xl md:text-4xl text-white mb-3">−{bienvenue.remise} sur {bienvenue.portee}</h2>
         <p class="text-[#d6d6d6] mb-6 max-w-xl mx-auto">
-          Pour les {bienvenue.public}, dès {bienvenue.minimum} d'achat. Pas de code à saisir :
-          créez votre compte sur la boutique Forever en passant par le bouton ci-dessous.
+          Pour les {bienvenue.public}, dès {bienvenue.minimum} d'achat. Créez votre compte sur la boutique Forever
+          avec le bouton ci-dessous, puis saisissez ce code au paiement :
         </p>
+        <div class="inline-flex items-center gap-4 rounded-xl border-2 border-dashed border-[#d4a64a] bg-[#1f1f1f] px-6 py-4 mb-6">
+          <span class="font-mono text-2xl font-bold tracking-wider">{bienvenue.code}</span>
+          <button type="button" data-copier data-code={bienvenue.code}
+                  class="rounded-lg bg-[#d4a64a] px-3 py-1.5 text-xs font-semibold text-[#141414]">
+            Copier
+          </button>
+        </div>
+        <div>
         <a href={LIEN_BOUTIQUE} target="_blank" rel="sponsored noopener noreferrer"
            class="inline-flex items-center gap-2 rounded-full bg-[#d4a64a] px-8 py-4 text-sm font-semibold text-[#141414] hover:bg-[#e6bc63] transition-colors">
           Créer mon compte et profiter de −{bienvenue.remise}
         </a>
+        </div>
         <p class="text-xs text-[#a3a3a3] mt-6 max-w-xl mx-auto">{bienvenue.conditions}</p>
       </div>
     </div>
@@ -220,12 +229,13 @@ const schemaFAQ = {
     const termine = document.getElementById('offre-terminee');
     if (termine) termine.hidden = false;
   }
-  const bouton = document.getElementById('copier-code');
-  bouton?.addEventListener('click', () => {
-    const code = bouton.getAttribute('data-code') || '';
-    navigator.clipboard?.writeText(code).then(() => {
-      bouton.textContent = 'Copié !';
-      setTimeout(() => { bouton.textContent = 'Copier'; }, 2000);
+  document.querySelectorAll<HTMLButtonElement>('[data-copier]').forEach((bouton) => {
+    bouton.addEventListener('click', () => {
+      const code = bouton.getAttribute('data-code') || '';
+      navigator.clipboard?.writeText(code).then(() => {
+        bouton.textContent = 'Copié !';
+        setTimeout(() => { bouton.textContent = 'Copier'; }, 2000);
+      });
     });
   });
 </script>
