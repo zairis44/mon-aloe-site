@@ -12,7 +12,7 @@ tags:
   - "soin naturel peau aloe vera"
   - "forever living peau"
   - "aloe vera hydratation"
-image: "/images/blog/aloe-vera-peau.webp"
+image: "/images/blog/aloe-vera-peau-paysage.webp"
 imageAlt: "Application de gel aloe vera Forever sur la peau"
 produitsLies:
   - slug: "aloe-gelly-forever-gel-apaisant"

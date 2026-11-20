@@ -12,7 +12,7 @@ tags:
   - "défenses naturelles aloe vera"
   - "forever living immunité"
   - "acemannane bienfaits"
-image: "/images/blog/aloe-vera-immunite.webp"
+image: "/images/blog/aloe-vera-immunite-paysage.webp"
 imageAlt: "Boisson aloe vera Forever pour une cure de saison"
 produitsLies:
   - slug: "forever-pulpe-daloe-vera"

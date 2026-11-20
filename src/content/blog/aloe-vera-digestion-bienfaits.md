@@ -12,7 +12,7 @@ tags:
   - "transit intestinal naturel"
   - "gel aloe vera boire"
   - "forever living digestion"
-image: "/images/blog/aloe-vera-digestion.webp"
+image: "/images/blog/aloe-vera-digestion-paysage.webp"
 imageAlt: "Verre de gel d'aloe vera Forever pour le confort digestif"
 produitsLies:
   - slug: "forever-pulpe-daloe-vera"

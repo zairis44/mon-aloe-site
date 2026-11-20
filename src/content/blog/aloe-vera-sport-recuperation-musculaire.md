@@ -12,7 +12,7 @@ tags:
   - "forever living sportif"
   - "aloe vera courbatures"
   - "forever freedom articulations"
-image: "/images/blog/aloe-vera-sport.webp"
+image: "/images/blog/aloe-vera-sport-paysage.webp"
 imageAlt: "Sportif utilisant les produits aloe vera Forever pour la récupération"
 produitsLies:
   - slug: "forever-freedom-confort-articulaire"
