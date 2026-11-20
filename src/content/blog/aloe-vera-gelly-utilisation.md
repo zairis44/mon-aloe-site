@@ -13,7 +13,6 @@ tags:
   - "à quoi sert aloe vera gelly"
   - "gel aloe vera usages"
   - "forever aloe gelly"
-# image: "/images/blog/aloe-vera-gelly-utilisation.webp"
 # imageAlt: "Tube d'Aloe Vera Gelly Forever appliqué sur la peau"
 faq:
   - question: "Peut-on mettre l'Aloe Vera Gelly sur le visage tous les jours ?"
