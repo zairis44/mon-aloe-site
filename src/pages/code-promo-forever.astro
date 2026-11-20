@@ -3,15 +3,16 @@
  * src/pages/code-promo-forever.astro
  * Page « Code promo Forever » — offre en cours + façons de payer moins cher.
  * L'offre vient de src/data/offres.ts. Après la date de fin, un petit script
- * masque le bloc de l'offre et affiche « pas de code en cours » (pas de rebuild
- * nécessaire). Penser à mettre à jour la meta description à la fin de l'offre.
+ * masque le bloc de l'offre et affiche l'offre de bienvenue permanente (pas de
+ * rebuild nécessaire). Title et meta décrivent l'offre de bienvenue : valables toute l'année.
  */
 import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
-import { OFFRE_EN_COURS, LIEN_BOUTIQUE } from '../data/offres';
+import { OFFRE_EN_COURS, OFFRE_BIENVENUE, LIEN_BOUTIQUE } from '../data/offres';
 
 const offre = OFFRE_EN_COURS;
+const bienvenue = OFFRE_BIENVENUE;
 
 const etapes = [
   { num: "1", titre: "Ouvrez la boutique Forever", texte: "Passez par le lien de cette page : il vous inscrit comme client rattaché à un distributeur qui pourra vous conseiller." },
@@ -21,6 +22,10 @@ const etapes = [
 ];
 
 const faq = [
+  {
+    q: "Existe-t-il une réduction Forever toute l'année ?",
+    r: `Oui : l'offre de bienvenue. Les ${bienvenue.public} ont −${bienvenue.remise} sur ${bienvenue.portee} dès ${bienvenue.minimum} d'achat, à condition de créer leur compte sur la boutique Forever via mon lien. Elle est valable toute l'année, en dehors des promotions ponctuelles, et n'est pas cumulable avec elles.`,
+  },
   {
     q: `Jusqu'à quand le code ${offre.code} est-il valable ?`,
     r: `Jusqu'au ${offre.finTexte} inclus. Après cette date, il ne fonctionne plus.`,
@@ -59,8 +64,8 @@ const schemaFAQ = {
 ---
 
 <Layout
-  title="Code promo Forever : l'offre du moment | Esprit Aloé"
-  description="Code promo Forever Black Friday : −15 % pour les nouveaux clients dès 50 € d'achat, jusqu'au 30 novembre. Mode d'emploi et astuces pour payer moins cher."
+  title="Code promo Forever : −15 % pour les nouveaux clients | Esprit Aloé"
+  description="Réduction Forever : −15 % sur votre première commande dès 50 €, toute l'année, en créant votre compte via mon lien. Offre du moment et astuces pour payer moins cher."
   canonical="https://espritaloe.fr/code-promo-forever/"
 >
   <script type="application/ld+json" set:html={JSON.stringify(schemaFAQ)} slot="head" />
@@ -114,13 +119,21 @@ const schemaFAQ = {
         <p class="text-xs text-[#a3a3a3] mt-6 max-w-xl mx-auto">{offre.conditions}</p>
       </div>
 
-      <div id="offre-terminee" hidden class="rounded-3xl bg-white border border-aloe-100 p-8 text-center">
-        <h2 class="text-2xl text-aloe-900 mb-3">Pas de code promo en cours pour le moment</h2>
-        <p class="text-aloe-600 max-w-xl mx-auto">
-          La dernière offre est terminée. Je mets cette page à jour dès qu'une nouvelle réduction est disponible.
-          En attendant, les astuces ci-dessous restent valables, et vous pouvez
-          <a href="/contact/" class="underline text-aloe-700">me demander</a> s'il existe une offre pour votre situation.
+      <!-- Offre de bienvenue permanente : affichée quand aucune promotion datée n'est en cours -->
+      <div id="offre-terminee" hidden class="rounded-3xl bg-[#141414] text-white p-8 md:p-10 text-center">
+        <span class="inline-block rounded-full bg-[#d4a64a] text-[#141414] text-xs font-semibold uppercase tracking-widest px-4 py-1.5 mb-5">
+          Offre de bienvenue, toute l'année
+        </span>
+        <h2 class="text-3xl md:text-4xl text-white mb-3">−{bienvenue.remise} sur {bienvenue.portee}</h2>
+        <p class="text-[#d6d6d6] mb-6 max-w-xl mx-auto">
+          Pour les {bienvenue.public}, dès {bienvenue.minimum} d'achat. Pas de code à saisir :
+          créez votre compte sur la boutique Forever en passant par le bouton ci-dessous.
         </p>
+        <a href={LIEN_BOUTIQUE} target="_blank" rel="sponsored noopener noreferrer"
+           class="inline-flex items-center gap-2 rounded-full bg-[#d4a64a] px-8 py-4 text-sm font-semibold text-[#141414] hover:bg-[#e6bc63] transition-colors">
+          Créer mon compte et profiter de −{bienvenue.remise}
+        </a>
+        <p class="text-xs text-[#a3a3a3] mt-6 max-w-xl mx-auto">{bienvenue.conditions}</p>
       </div>
     </div>
   </section>

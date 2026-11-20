@@ -44,5 +44,19 @@ export const OFFRE_EN_COURS: Offre = {
   theme: 'blackfriday',
 };
 
+/**
+ * Offre de bienvenue permanente (confirmée par Rafael le 20/11/2026) :
+ * −15 % pour les nouveaux clients dès 50 €, en créant son compte via le lien boutique.
+ * Hypothèse retenue faute de précision : valable sur la première commande.
+ */
+export const OFFRE_BIENVENUE = {
+  remise: '15 %',
+  minimum: '50 €',
+  public: 'nouveaux clients',
+  portee: 'votre première commande',
+  conditions:
+    "Offre de bienvenue réservée aux nouveaux clients qui créent leur compte sur la boutique Forever via le lien de cette page, dès 50 € d'achat, sur la première commande. Non cumulable avec une autre offre.",
+};
+
 /** Lien de parrainage vers la boutique officielle Forever */
 export const LIEN_BOUTIQUE = 'https://www.foreverliving.fr/ref/330001628607/';
