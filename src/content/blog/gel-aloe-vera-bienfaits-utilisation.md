@@ -5,6 +5,8 @@ description: "Gel d'aloe vera : ce qu'il apporte à la peau, aux cheveux et en b
 pubDate: 2026-11-20
 author: "Rafael Avenard"
 category: "guides"
+image: "/images/blog/gel-aloe-vera-bienfaits-utilisation.webp"
+imageAlt: "Plant d'aloe vera en pleine terre, feuilles épaisses bordées de petites épines, sous un ciel clair"
 tags:
   - "gel aloe vera bienfaits"
   - "gel d'aloe vera utilisation"
