@@ -129,6 +129,23 @@ export const ASSOCIATIONS: Record<string, Association[]> = {
     ['programme-c9-forever-vanille-peche', 'Le programme de 9 jours'],
   ],
 
+  // Compléments (lot AK)
+  'forever-lean': [
+    ['forever-therm', 'L’autre complément gestion du poids, avec caféine'],
+    ['programme-c9-forever-vanille-peche', 'Le programme encadré de 9 jours'],
+    ['forever-fast-break', 'Une barre pour les petites faims'],
+  ],
+  'forever-move': [
+    ['forever-freedom-confort-articulaire', 'La boisson que Forever propose d’associer'],
+    ['forever-aloe-msm-gel', 'Un gel de massage après l’effort'],
+    ['forever-arctic-sea', 'Les oméga-3 de la gamme'],
+  ],
+  'forever-calcium': [
+    ['forever-daily', 'Le multivitamines de la gamme'],
+    ['forever-arctic-sea', 'Les oméga-3 de la gamme'],
+    ['forever-marine-collagen', 'Une boisson au collagène'],
+  ],
+
   // Beauté et bien-être
   'aloe-gelly-forever-gel-apaisant': [
     ['forever-aloe-msm-gel', 'Un autre gel multi-usages de la gamme'],
@@ -213,6 +230,9 @@ export const LIBELLES: Record<string, string> = {
   'forever-aloe-vera-4pack': 'Aloe Vera 4 Pack',
   'forever-aloe-vera-peche-bien-etre': 'Aloe Vera Pêche',
   'forever-argi-pls': 'Forever Argi+',
+  'forever-calcium': 'Forever Calcium',
+  'forever-lean': 'Forever Lean',
+  'forever-move': 'Forever Move',
   'forever-bee-propolis': 'Bee Propolis',
   'forever-bright-toothgel': 'Bright Toothgel',
   'forever-fab-active-boost': 'FAB Active Boost',

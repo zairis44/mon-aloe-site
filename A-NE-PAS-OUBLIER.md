@@ -1,7 +1,18 @@
 # Esprit Aloé — À ne pas oublier
-*Mise à jour : 20 novembre 2026 (lot AJ : 3 articles beauté, crème, coup de soleil, visage)*
+*Mise à jour : 20 novembre 2026 (lot AK : fiches Lean, Move, Calcium)*
 
 - **/a-propos/ (20/11, demande de Rafael)** : la photo du profil devient le même portrait que `/contact/` (`rafael/rafael-avenard-portrait.webp`, 256 × 256, affiché en 288 × 288 : légèrement agrandi). À remplacer par une version plus grande avec la photo prévue après le coiffeur. L'encadré auteur des articles utilise encore l'ancienne `rafael-avenard.webp`.
+
+## Lot AK du 20 novembre 2026 (soir) — 3 fiches produit : Lean, Move, Calcium
+
+- **Contexte** : Rafael voulait 3 fiches produit (et non 3 articles, lot AJ : malentendu ; les articles restent en ligne en attendant sa décision).
+- **Choix** : produits absents du site les plus recherchés (Semrush 20/11) : Forever Lean (110/mois), Forever Move (70), Forever Calcium (50). Forever Kids (70) mis de côté : complément pour enfants, accord de Rafael à demander.
+- **Fiches** (données officielles Forever du 20/11) :
+  - `/produits/forever-lean/` (réf. 289, 44,49 €, 120 capsules, nutrition). Seule allégation : chrome (glycémie normale, métabolisme des macronutriments). Pas de « piège les graisses / bloque les sucres », pas de chiffre de perte de poids. Précautions grossesse, diabète/traitement glycémie. Comparaison Therm (caféine) / Lean (sans caféine).
+  - `/produits/forever-move/` (réf. 551, 68,95 €, 90 capsules, sport et fitness). Aucune allégation (NEM, curcuma). Précautions : anticoagulants (Forever), allergènes œuf/poisson/soja, prudence ANSES curcuma (foie, vésicule, traitements). Renvoie vers la fiche Freedom (gelée, non modifiée).
+  - `/produits/forever-calcium/` (réf. 206, 35,61 €, 90 comprimés, nutrition). Allégations calcium, vitamine D, magnésium (os, muscles). Manganèse et vitamine C non repris : quantités par dose inconnues. Déconseillé aux moins de 18 ans, usage prolongé déconseillé (Forever).
+- **Images : aucune**, à fournir par Rafael.
+- Associations et libellés dans `maillage.ts` (rien ajouté côté Freedom : fiche en mesure). 104 → 107 pages. **Mesure : démarre le 20/11.**
 
 ## Lot AJ du 20 novembre 2026 (soir) — 3 articles beauté (cocon aloe vera par usage)
 
