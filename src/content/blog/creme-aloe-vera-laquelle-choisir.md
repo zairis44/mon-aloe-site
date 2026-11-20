@@ -5,6 +5,8 @@ description: "Gel, crème, lait ou brume à l'aloe vera : lire la teneur, repér
 pubDate: 2026-11-20
 author: "Rafael Avenard"
 category: "beaute"
+image: "/images/blog/creme-aloe-vera-laquelle-choisir.webp"
+imageAlt: "Femme en serviette après la douche, qui prend de la crème dans un pot du bout des doigts"
 tags:
   - "crème aloe vera"
   - "meilleure crème aloe vera"
