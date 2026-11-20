@@ -4,7 +4,7 @@ reference: '27'
 slug: forever-bee-propolis
 price: 46.96
 coutJour: 'environ 1,57 € par jour (2 comprimés)'
-image: ''
+image: "/images/produits/forever-bee-propolis.webp"
 images: []
 category: nutrition
 description: "Des comprimés à croquer de propolis, avec du miel, une trace de gelée royale et un arôme amande. 2 comprimés par jour. 60 comprimés, soit un mois. Contient du soja."

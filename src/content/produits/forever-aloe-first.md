@@ -3,7 +3,7 @@ name: "Forever Aloe First : brume à l'aloe vera pour la peau et les cheveux"
 reference: "40"
 slug: "forever-aloe-first"
 price: 32.5
-image: ""
+image: "/images/produits/forever-aloe-first.webp"
 images: []
 category: "cremes-et-gels"
 description: "La brume Forever à l'aloe vera, à vaporiser sur le visage, le corps et les cheveux. Environ 80 % de gel d'aloe vera, de la propolis, de l'allantoïne et 11 extraits de plantes, sans parfum dans la liste des ingrédients. Grand flacon spray de 473 ml. Réf. 40."

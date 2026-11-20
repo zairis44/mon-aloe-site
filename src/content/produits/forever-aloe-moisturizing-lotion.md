@@ -3,7 +3,7 @@ name: "Forever Aloe Moisturizing Lotion : crème visage et corps à l'aloe vera"
 reference: "63"
 slug: "forever-aloe-moisturizing-lotion"
 price: 24.4
-image: ""
+image: "/images/produits/forever-aloe-moisturizing-lotion.webp"
 images: []
 category: "cremes-et-gels"
 description: "Nouveau packaging fin 2026. La crème hydratante de tous les jours, aussi appelée Crème Visage et Corps Aloès. 36 % de gel d'aloe vera, du collagène, de l'élastine et des huiles d'abricot et de jojoba, dans une texture fluide qui pénètre vite. Pour le visage, les mains et le corps. Tube de 118 ml. Réf. 63."
@@ -38,7 +38,7 @@ caracteristiques:
     contenu: "Usage externe uniquement. En cas de contact avec les yeux, rincer immédiatement à l'eau claire pendant plusieurs minutes. Contient un parfum et des allergènes déclarés : à éviter si votre peau réagit aux parfums."
 ---
 
-**Nouveauté fin 2026 : nouveau packaging.** La Crème Visage et Corps Aloès de Forever revient sous un nouvel emballage et sous son nom international, Aloe Moisturizing Lotion. C'est la même référence (63).
+**Nouveauté fin 2026 : nouveau packaging.** La Crème Visage et Corps Aloès de Forever revient sous un nouvel emballage et sous son nom international, Aloe Moisturizing Lotion. C'est la même référence (63), dans un tube blanc de 118 ml décoré de gouttes violettes.
 
 Vous voulez une seule crème pour le visage le matin, les mains dans la journée et le corps après la douche, sans texture lourde. L'Aloe Moisturizing Lotion remplit ce rôle : une crème fluide à l'aloe vera, qui hydrate et pénètre vite.
 
