@@ -5,6 +5,8 @@
  * monaloeverabienetre.fr/catalogue-forever-2025 (Webflow), adapté au site actuel.
  *
  * Intention visée : « catalogue forever (2026) / feuilleter le catalogue ».
+ * Lot AM (20/11/2026) : + « liste des produits forever » et « prix produits forever »
+ * (tableau des prix par gamme, FAQ). « produits forever » reste la cible de /produits/.
  * La page /produits/ reste la liste de la boutique (prix, fiches) : ici on présente
  * le catalogue officiel Forever et on renvoie vers nos fiches.
  *
@@ -124,6 +126,57 @@ const gammes = [
   .map((g) => ({ ...g, produits: produitsDe(g.categorie, (g as { selection?: string[] }).selection) }))
   .filter((g) => g.produits.length > 0);
 
+/** Liste complète des produits et prix, par gamme (tableau « Liste des produits Forever et leurs prix »). */
+function prixAffiche(p: (typeof tous)[number]) {
+  const prix = [p.data.price, ...(p.data.variantes ?? []).map((v) => v.price)];
+  const min = Math.min(...prix);
+  const txt = min.toLocaleString('fr-FR', { style: 'currency', currency: 'EUR' });
+  return prix.some((x) => x !== min) ? `dès ${txt}` : txt;
+}
+const listePrix = gammes.map((g) => ({
+  titre: g.titre,
+  categorie: g.categorie,
+  lignes: tous
+    .filter((p) => p.data.category === g.categorie)
+    .sort((a, b) => a.data.name.localeCompare(b.data.name, 'fr'))
+    .map((p) => ({
+      slug: p.data.slug,
+      nom: p.data.name.split(/\s[–—:]\s/)[0],
+      reference: p.data.reference ?? null,
+      prix: prixAffiche(p),
+    })),
+}));
+const nbProduits = listePrix.reduce((n, g) => n + g.lignes.length, 0);
+
+const faq = [
+  {
+    q: `Existe-t-il un catalogue Forever ${ANNEE_CATALOGUE} en PDF ?`,
+    r: 'Forever propose son catalogue à feuilleter en ligne, sur son site officiel, plutôt qu’en PDF à télécharger. Sur cette page, vous trouvez aussi la liste des produits avec leurs prix, gamme par gamme.',
+  },
+  {
+    q: 'Les prix des produits Forever sont-ils les mêmes partout en France ?',
+    r: 'Oui : sur la boutique officielle, les prix publics sont fixés par Forever et identiques quel que soit le distributeur. Le prix qui fait foi est celui affiché dans la boutique au moment de la commande.',
+  },
+  {
+    q: 'Comment commander un produit du catalogue Forever ?',
+    r: 'Notez le nom ou la référence du produit, puis commandez sur la boutique officielle Forever Living avec le lien d’un distributeur. Les étapes, le code de bienvenue et les frais de livraison sont détaillés sur la page Commander.',
+  },
+  {
+    q: 'Quel produit choisir pour commencer ?',
+    r: 'La pulpe d’aloe vera à boire et l’Aloe Vera Gelly sont les deux produits les plus courants pour découvrir la gamme. Si vous hésitez, le guide « Quel produit Forever choisir ? » vous oriente selon votre besoin, ou appelez-moi au 06 77 35 22 26.',
+  },
+];
+
+const schemaFAQ = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faq.map(({ q, r }) => ({
+    '@type': 'Question',
+    name: q,
+    acceptedAnswer: { '@type': 'Answer', text: r },
+  })),
+};
+
 const atouts = [
   { icon: '🌍', titre: 'Des produits responsables', texte: 'Culture sans pesticides, écorce des feuilles réutilisée comme fertilisant.' },
   { icon: '🏅', titre: 'Une pulpe reconnue pour sa qualité', texte: 'Produits certifiés par l’IASC, l’association internationale du secteur de l’aloe vera.' },
@@ -142,11 +195,12 @@ const schemaBreadcrumb = {
 ---
 
 <Layout
-  title={`Catalogue Forever ${ANNEE_CATALOGUE} : feuilleter le catalogue officiel`}
-  description={`Feuilletez le catalogue Forever Living ${ANNEE_CATALOGUE} en ligne : boissons aloe vera, programmes C9, soins, sport et nutrition. Commandez ensuite avec votre distributeur.`}
+  title={`Catalogue Forever ${ANNEE_CATALOGUE} : liste des produits et prix`}
+  description={`Catalogue Forever Living ${ANNEE_CATALOGUE} : feuilletez le catalogue officiel et retrouvez la liste des produits Forever avec leur prix et leur référence, gamme par gamme.`}
   canonical={`${siteUrl}/catalogue-forever/`}
 >
   <script slot="head" type="application/ld+json" set:html={JSON.stringify(schemaBreadcrumb)} />
+  <script slot="head" type="application/ld+json" set:html={JSON.stringify(schemaFAQ)} />
   <Header />
 
   <!-- ══════════════════════════════════════════
@@ -163,8 +217,8 @@ const schemaBreadcrumb = {
           <li class="text-cream font-medium">Catalogue Forever</li>
         </ol>
       </nav>
-      <h1 class="text-5xl md:text-6xl text-cream leading-tight mb-5">Catalogue Forever {ANNEE_CATALOGUE}</h1>
-      <p class="text-xl text-aloe-100">Consulter le catalogue Forever Living</p>
+      <h1 class="text-5xl md:text-6xl text-cream leading-tight mb-5">Catalogue Forever Living {ANNEE_CATALOGUE}</h1>
+      <p class="text-xl text-aloe-100">Le catalogue officiel à feuilleter, et la liste des produits avec leurs prix</p>
     </div>
   </section>
 
@@ -222,10 +276,10 @@ const schemaBreadcrumb = {
           Consulter le catalogue ↗
         </a>
         <a
-          href="/produits/"
+          href="#liste-prix"
           class="rounded-full border border-aloe-300 px-7 py-3 text-sm font-semibold text-aloe-800 hover:border-aloe-500 transition-colors"
         >
-          Voir les prix sur la boutique
+          Voir la liste des prix
         </a>
       </div>
     </div>
@@ -279,6 +333,49 @@ const schemaBreadcrumb = {
   ))}
 
   <!-- ══════════════════════════════════════════
+       LISTE DES PRODUITS ET PRIX (lot AM)
+  ══════════════════════════════════════════ -->
+  <section id="liste-prix" class="bg-aloe-50 py-20 scroll-mt-24">
+    <div class="mx-auto max-w-4xl px-6">
+      <h2 class="text-3xl md:text-4xl text-aloe-900 mb-4">Liste des produits Forever et leurs prix</h2>
+      <p class="text-aloe-700 leading-relaxed mb-10">
+        Les {nbProduits} produits Forever présentés sur ce site, avec leur référence et leur prix public TTC
+        sur la boutique officielle. Le prix qui fait foi est celui affiché dans la boutique au moment de votre commande.
+        Pour passer commande, suivez les <a href="/commander/" class="underline underline-offset-4 text-aloe-800 hover:text-aloe-600">étapes pour commander Forever en ligne</a>.
+      </p>
+      <div class="space-y-10">
+        {listePrix.map((g) => (
+          <div>
+            <h3 class="text-xl font-semibold text-aloe-800 mb-3">
+              <a href={`/produits/${g.categorie}/`} class="hover:text-aloe-600 transition-colors">{g.titre}</a>
+            </h3>
+            <div class="rounded-2xl overflow-hidden border border-aloe-100 bg-white">
+              <table class="w-full text-sm">
+                <thead>
+                  <tr class="bg-aloe-800 text-cream">
+                    <th scope="col" class="text-left px-4 py-3 font-semibold">Produit</th>
+                    <th scope="col" class="text-left px-4 py-3 font-semibold hidden sm:table-cell">Référence</th>
+                    <th scope="col" class="text-right px-4 py-3 font-semibold">Prix</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-aloe-100">
+                  {g.lignes.map((l) => (
+                    <tr>
+                      <td class="px-4 py-3"><a href={`/produits/${l.slug}/`} class="text-aloe-800 hover:text-aloe-600 underline-offset-4 hover:underline">{l.nom}</a></td>
+                      <td class="px-4 py-3 text-aloe-500 hidden sm:table-cell">{l.reference ?? '—'}</td>
+                      <td class="px-4 py-3 text-right text-aloe-800 whitespace-nowrap">{l.prix}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
        QUALITÉ — fond vert, texte blanc + vidéo de l'ancienne page
   ══════════════════════════════════════════ -->
   <section class="bg-aloe-800 text-cream py-20">
@@ -326,6 +423,23 @@ const schemaBreadcrumb = {
           <p class="text-sm text-aloe-600 leading-relaxed">{a.texte}</p>
         </div>
       ))}
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       FAQ (lot AM)
+  ══════════════════════════════════════════ -->
+  <section class="bg-sand/40 py-16">
+    <div class="mx-auto max-w-3xl px-6">
+      <h2 class="text-3xl text-aloe-900 mb-8 text-center">Questions fréquentes sur le catalogue Forever</h2>
+      <dl class="space-y-4">
+        {faq.map(({ q, r }) => (
+          <div class="rounded-2xl bg-white border border-aloe-100 p-6">
+            <dt class="font-semibold text-aloe-800 mb-2">{q}</dt>
+            <dd class="text-sm text-aloe-600 leading-relaxed">{r}</dd>
+          </div>
+        ))}
+      </dl>
     </div>
   </section>
 

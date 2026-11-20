@@ -37,7 +37,7 @@ Dans les faits, les termes FBO, distributeur et revendeur désignent la même ch
 
 ## Client ou FBO : quelle différence ?
 
-La différence tient à une inscription. Le client achète les produits au prix public, en ligne via un distributeur ou directement, et les consomme. Le FBO s'inscrit auprès de Forever Living avec un parrain : il achète avec une remise, peut revendre les produits en gardant la marge et accède au plan de rémunération.
+La différence tient à une inscription. Le client achète les produits au prix public, sur la boutique en ligne officielle, rattaché à un distributeur ([voir comment commander](/commander/)), et les consomme. Le FBO s'inscrit auprès de Forever Living avec un parrain : il achète avec une remise, peut revendre les produits en gardant la marge et accède au plan de rémunération.
 
 Concrètement, le FBO obtient trois choses que le client n'a pas :
 

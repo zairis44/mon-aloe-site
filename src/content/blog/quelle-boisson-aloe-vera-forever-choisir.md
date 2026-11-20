@@ -82,6 +82,6 @@ Les versions fruitées contiennent des fruits, donc des sucres naturels. Si vous
 
 ## En résumé
 
-Pour le maximum d'aloe vera, choisissez le [gel nature](/produits/forever-pulpe-daloe-vera/). Pour démarrer avec plaisir et tenir dans la durée, choisissez la [pêche](/produits/forever-aloe-vera-peche-bien-etre/). Berry Nectar et mangue sont là pour varier.
+Pour le maximum d'aloe vera, choisissez le [gel nature](/produits/forever-pulpe-daloe-vera/). Pour démarrer avec plaisir et tenir dans la durée, choisissez la [pêche](/produits/forever-aloe-vera-peche-bien-etre/). Berry Nectar et mangue sont là pour varier. Les quatre se commandent sur la boutique officielle : voici [comment acheter les produits Forever en France](/commander/).
 
 Vous hésitez encore ? [Écrivez-moi](/contact/) ou appelez-moi au 06 77 35 22 26 : je vous aide à choisir selon vos goûts et votre routine.

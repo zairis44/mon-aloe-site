@@ -1,56 +1,71 @@
 ---
 /**
  * src/pages/commander.astro
- * Page "Comment commander" — Esprit Aloé
- * Objectif : convertir les visiteurs en acheteurs, réduire la friction
- * SEO : longue traîne "commander produits forever living france"
- * Schema.org : HowTo + FAQPage
+ * Page « Acheter et commander Forever Living en France » — Esprit Aloé
+ * Objectif : convertir les visiteurs en acheteurs, réduire la friction.
+ * SEO (lot AM, 20/11/2026) : intention transactionnelle du groupe « Acheter Forever en France »
+ *   « forever commande en ligne », « boutique forever (living) », « acheter produits forever ».
+ *   L'accueil garde « forever living france / distributeur » (page en mesure jusqu'au 9/12).
+ * Schema.org : BreadcrumbList + HowTo + FAQPage
  */
 import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import { getCollection } from 'astro:content';
 import { PRODUITS_RECOMMANDES } from '../data/recommandes';
+import { OFFRE_BIENVENUE } from '../data/offres';
 import { foreverHref, FOREVER_REL } from '../lib/forever';
 
+const siteUrl = "https://espritaloe.fr";
 const boutiqueUrl = "https://www.foreverliving.fr/ref/330001628607/";
+
+const essentiel = [
+  { titre: "Où acheter ?", texte: "Sur la boutique en ligne officielle Forever Living. Forever ne vend pas ses produits en magasin." },
+  { titre: "Avec qui ?", texte: "Chaque client est rattaché à un distributeur. Avec mon lien, c'est moi qui vous accompagne." },
+  { titre: "Première commande", texte: `Code ${OFFRE_BIENVENUE.code} : −${OFFRE_BIENVENUE.remise} dès ${OFFRE_BIENVENUE.minimum}, à la création de votre compte.` },
+  { titre: "Livraison", texte: "Point relais en 48 à 72 h (offerte dès 150 €) ou Chronopost à domicile en J+1." },
+];
 
 const etapes = [
   {
     numero: "01",
-    titre: "Parcourez les produits",
+    titre: "Ouvrez la boutique Forever avec mon lien",
     texte:
-      "Vous connaissez déjà votre produit ? Retrouvez-le dans la boutique Forever. Pour choisir, consultez nos fiches produit ou contactez Rafael au 06 77 35 22 26.",
-    icon: "🌿",
-    lien: "/produits/",
-    labelLien: "Voir les produits",
+      "Le lien ouvre la boutique officielle Forever Living France et vous rattache à moi comme distributeur. Vous gardez ainsi un interlocuteur pour vos questions, avant et après l'achat.",
+    lien: null,
+    labelLien: null,
   },
   {
     numero: "02",
-    titre: "Choisissez votre mode de commande",
+    titre: "Créez votre compte client",
     texte:
-      "Ouvrez la boutique officielle Forever Living pour commander en ligne. Si vous préférez un accompagnement, contactez Rafael par téléphone ou par e-mail pour préparer votre commande.",
-    icon: "🛒",
+      "Première commande : créez un compte avec votre nom, votre e-mail et votre adresse. Déjà client : connectez-vous simplement avec vos identifiants.",
     lien: null,
     labelLien: null,
   },
   {
     numero: "03",
-    titre: "Validez et payez en sécurité",
+    titre: "Ajoutez vos produits au panier",
     texte:
-      "Suivez les instructions de la boutique Forever pour votre compte, la livraison et le règlement. Vérifiez les produits, les frais et le total avant de valider. Pour une commande accompagnée, Rafael vous explique les modalités.",
-    icon: "🔒",
-    lien: null,
-    labelLien: null,
+      "Cherchez le produit par son nom ou par sa gamme. Pour comparer avant de choisir, nos fiches produit détaillent la composition, l'utilisation et le prix de chaque produit.",
+    lien: "/produits/",
+    labelLien: "Comparer les produits",
   },
   {
     numero: "04",
-    titre: "Recevez votre commande",
+    titre: `Saisissez le code ${OFFRE_BIENVENUE.code}`,
     texte:
-      "Consultez les options et les délais de livraison proposés pour votre adresse lors de la commande. Pour une question après votre achat, contactez Rafael avec votre référence de commande.",
-    icon: "📦",
+      `Nouveau client, panier d'au moins ${OFFRE_BIENVENUE.minimum} : saisissez ${OFFRE_BIENVENUE.code} en majuscules dans le champ code promo. La remise de ${OFFRE_BIENVENUE.remise} s'affiche avant la validation.`,
+    lien: "/code-promo-forever/",
+    labelLien: "Conditions du code",
+  },
+  {
+    numero: "05",
+    titre: "Choisissez la livraison et payez",
+    texte:
+      "Point relais ou domicile : les frais s'affichent avant le paiement. Vérifiez le total, réglez sur la boutique sécurisée Forever et gardez votre numéro de commande.",
     lien: "/livraison/",
-    labelLien: "Détails livraison",
+    labelLien: "Tarifs de livraison",
   },
 ];
 
@@ -59,11 +74,11 @@ const modesCommande = [
     icon: "🖥️",
     titre: "Boutique officielle Forever",
     description:
-      "Commandez sur le site officiel Forever Living grâce au lien distributeur de Rafael. Vous quitterez Esprit Aloé pour choisir vos produits et finaliser votre achat sur Forever.",
+      "Commandez sur le site officiel Forever Living grâce à mon lien distributeur. Vous quittez Esprit Aloé pour choisir vos produits et finaliser votre achat sur Forever.",
     avantages: [
       "Accès direct à la boutique officielle",
       "Catalogue et prix affichés par Forever",
-      "Modalités de livraison et de paiement dans la boutique",
+      "Commande en ligne 7j/7",
     ],
     cta: "Ouvrir la boutique Forever France",
     ctaUrl: boutiqueUrl,
@@ -73,11 +88,11 @@ const modesCommande = [
     icon: "📞",
     titre: "Par téléphone",
     description:
-      "Vous hésitez entre plusieurs produits ? Appelez Rafael pour en parler avant de commander et préparer votre achat avec lui.",
+      "Vous hésitez entre plusieurs produits ? Appelez-moi pour en parler avant de commander et préparer votre achat ensemble.",
     avantages: [
       "Conseils personnalisés avant achat",
-      "Idéal si vous hésitez entre plusieurs produits",
-      "Aide pour préparer votre commande",
+      "Du lundi au samedi, aux horaires de conseil",
+      "Aide pour votre première commande",
     ],
     cta: "06 77 35 22 26",
     ctaUrl: "tel:+33677352226",
@@ -87,7 +102,7 @@ const modesCommande = [
     icon: "✉️",
     titre: "Par e-mail",
     description:
-      "Envoyez les noms des produits qui vous intéressent. Rafael vous répondra avec les informations nécessaires pour préparer votre commande.",
+      "Envoyez-moi les noms des produits qui vous intéressent. Je vous réponds avec les informations utiles pour préparer votre commande.",
     avantages: [
       "Échange écrit pour préparer votre achat",
       "Pratique pour les commandes récurrentes",
@@ -97,6 +112,12 @@ const modesCommande = [
     ctaUrl: "mailto:contact@espritaloe.fr",
     badge: null,
   },
+];
+
+const tarifsRelais = [
+  { montant: "Moins de 50 € TTC", frais: "8,00 €" },
+  { montant: "De 50 € à 150 € TTC", frais: "4,00 €" },
+  { montant: "À partir de 150 € TTC", frais: "Offerte" },
 ];
 
 const tousProduits = await getCollection('produits');
@@ -116,38 +137,60 @@ const recommandes = PRODUITS_RECOMMANDES.map(({ slug, note }) => {
 
 const faq = [
   {
-    q: "Dois-je créer un compte pour commander ?",
-    r: "Pour un achat en ligne, suivez les instructions de connexion ou d'inscription affichées par la boutique Forever Living. Si vous avez besoin d'aide, contactez Rafael par téléphone ou par e-mail avant de poursuivre.",
+    q: "Où acheter les produits Forever Living en France ?",
+    r: "Sur la boutique en ligne officielle Forever Living France. Forever ne vend pas ses produits en magasin : vous commandez en ligne, rattaché à un distributeur indépendant qui vous conseille. Avec le lien de cette page, ce distributeur, c'est moi.",
   },
   {
-    q: "Les prix sont-ils les mêmes que sur la boutique officielle Forever ?",
-    r: "Le lien distributeur ouvre la boutique officielle Forever Living. Vous y consultez les prix des produits et le total de votre commande avant de valider votre achat. Rafael peut vous accompagner dans votre choix.",
+    q: "Peut-on commander Forever sans distributeur ?",
+    r: "Non. Sur le site officiel, chaque client est rattaché à un distributeur. Si vous arrivez sans lien, Forever vous oriente vers un distributeur. Passer par mon lien vous évite cette étape et vous donne un contact direct pour vos questions.",
   },
   {
-    q: "Puis-je bénéficier d'une réduction client privilégié ?",
-    r: "Consultez les conditions des offres affichées dans la boutique Forever au moment de votre achat. Rafael peut vous aider à comprendre les modalités du statut client privilégié.",
+    q: "Dois-je créer un compte pour commander en ligne ?",
+    r: "Oui. Pour une première commande, créez votre compte client sur la boutique Forever. Si vous êtes déjà client, connectez-vous avec vos identifiants. En cas de blocage, appelez-moi au 06 77 35 22 26.",
   },
   {
-    q: "Comment savoir quel produit me convient ?",
-    r: "Appelez Rafael au 06 77 35 22 26 pour un conseil personnalisé ou consultez les fiches produit du site pour comparer les usages et les caractéristiques.",
+    q: "Y a-t-il un code promo pour une première commande Forever ?",
+    r: `Oui : le code ${OFFRE_BIENVENUE.code} donne −${OFFRE_BIENVENUE.remise} aux nouveaux clients dès ${OFFRE_BIENVENUE.minimum} d'achat, sur la commande passée à l'inscription. Il n'est pas cumulable avec une autre offre.`,
   },
   {
-    q: "Livrez-vous dans les DOM-TOM ?",
-    r: "Pour une adresse en outre-mer, vérifiez les destinations et les modalités proposées par la boutique Forever Living. Contactez Rafael si vous avez besoin d'aide avant de commander.",
+    q: "Combien coûte la livraison des produits Forever ?",
+    r: "En point relais : 8 € sous 50 €, 4 € de 50 à 150 €, offerte dès 150 € TTC, en 48 à 72 h pour une commande passée avant 12 h 45. À domicile avec Chronopost : 13 €, livraison le lendemain pour une commande passée avant 12 h 45, pas de livraison le samedi.",
+  },
+  {
+    q: "Les prix sont-ils les mêmes que sur le site officiel Forever ?",
+    r: "Oui, puisque vous commandez sur la boutique officielle : les prix et le total sont ceux affichés par Forever. Le distributeur n'ajoute aucun frais.",
+  },
+  {
+    q: "Peut-on acheter Forever sur Amazon ou en pharmacie ?",
+    r: "Forever ne vend pas en pharmacie ni en magasin. Sur Amazon ou d'autres places de marché, vous achetez à un revendeur tiers, pas à Forever : vérifiez qui vend, l'état de l'emballage et la date limite. Sur la boutique officielle, vous recevez les produits directement de Forever.",
+  },
+  {
+    q: "Comment commander depuis la Belgique, la Suisse ou les DOM-TOM ?",
+    r: "Forever gère des boutiques par pays, avec leurs propres prix et frais de livraison. Contactez-moi avant de commander : je vous indique comment commander depuis chez vous.",
   },
   {
     q: "Et si je ne suis pas satisfait(e) ?",
-    r: "Consultez les conditions de retour de Forever Living applicables à votre commande. Rafael peut vous aider à trouver les informations nécessaires pour effectuer votre demande.",
+    r: "Consultez les conditions de retour de Forever Living applicables à votre commande. Je peux vous aider à trouver les informations et à faire votre demande.",
   },
 ];
+
+// ── Schema.org BreadcrumbList ─────────────────────────────────────────────
+const schemaBreadcrumb = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Accueil", item: `${siteUrl}/` },
+    { "@type": "ListItem", position: 2, name: "Commander", item: `${siteUrl}/commander/` },
+  ],
+};
 
 // ── Schema.org HowTo ──────────────────────────────────────────────────────
 const schemaHowTo = {
   "@context": "https://schema.org",
   "@type": "HowTo",
-  name: "Comment commander des produits Forever Living en France",
+  name: "Comment commander des produits Forever Living en ligne en France",
   description:
-    "Étapes pour commander vos produits Forever Living en France via la boutique en ligne, par téléphone ou par e-mail.",
+    "Les 5 étapes pour acheter des produits Forever Living sur la boutique officielle en France, de la création du compte au paiement.",
   step: etapes.map((e, i) => ({
     "@type": "HowToStep",
     position: i + 1,
@@ -169,10 +212,11 @@ const schemaFAQ = {
 ---
 
 <Layout
-  title="Commander Forever Living en France | Esprit Aloé"
-  description="Commandez vos produits sur la boutique officielle Forever Living. Rafael Avenard vous accompagne par téléphone ou e-mail pour préparer votre premier achat."
+  title="Commander Forever en ligne : boutique Forever Living France"
+  description={`Acheter Forever Living en France : la boutique officielle en 5 étapes, le code ${OFFRE_BIENVENUE.code} (−${OFFRE_BIENVENUE.remise} sur la 1re commande) et les frais de livraison.`}
   canonical="https://espritaloe.fr/commander/"
 >
+  <script type="application/ld+json" set:html={JSON.stringify(schemaBreadcrumb)} slot="head" />
   <script type="application/ld+json" set:html={JSON.stringify(schemaHowTo)} slot="head" />
   <script type="application/ld+json" set:html={JSON.stringify(schemaFAQ)} slot="head" />
 
@@ -194,14 +238,14 @@ const schemaFAQ = {
         <span class="inline-block rounded-full bg-aloe-100 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-aloe-700 mb-6">
           Boutique Forever Living — France
         </span>
-        <h1 class="text-5xl md:text-6xl text-aloe-900 leading-tight mb-6">
-          Comment commander<br />
-          <span class="italic text-aloe-500">vos produits ?</span>
+        <h1 class="text-4xl md:text-5xl text-aloe-900 leading-tight mb-6">
+          Acheter et commander les produits
+          <span class="italic text-aloe-500">Forever Living en France</span>
         </h1>
         <p class="text-xl text-aloe-700 leading-relaxed max-w-2xl mb-8">
-          Commandez sur la boutique Forever Living ou contactez Rafael pour préparer votre achat.
-          Vous pouvez <a href="/a-propos/" class="underline underline-offset-4 hover:text-aloe-900">faire connaissance avec Rafael Avenard, distributeur indépendant Forever Living</a>,
-          avant votre première commande.
+          Les produits Forever s'achètent en ligne, sur la boutique officielle Forever Living France.
+          Je suis <a href="/a-propos/" class="underline underline-offset-4 hover:text-aloe-900">Rafael Avenard, distributeur indépendant Forever depuis 2016</a> :
+          voici comment passer commande en quelques minutes, et comment je vous accompagne.
         </p>
         <a
           href={boutiqueUrl}
@@ -214,9 +258,55 @@ const schemaFAQ = {
         <p class="mt-3 text-sm text-aloe-600">
           Vous poursuivrez votre commande sur le site officiel Forever Living dans un nouvel onglet.
         </p>
-        <p class="mt-2 text-sm text-aloe-600">
-          Première commande ? Voyez s'il y a un <a href="/code-promo-forever/" class="underline underline-offset-4 hover:text-aloe-900">code promo Forever en cours</a> avant de valider votre panier.
-        </p>
+      </div>
+
+      <!-- L'essentiel en 30 secondes -->
+      <div class="mt-12 grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        {essentiel.map((e) => (
+          <div class="rounded-2xl bg-white/80 border border-aloe-100 p-5">
+            <p class="text-xs font-semibold uppercase tracking-widest text-aloe-500 mb-2">{e.titre}</p>
+            <p class="text-sm text-aloe-700 leading-relaxed">{e.texte}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       ÉTAPES (HowTo)
+  ══════════════════════════════════════════ -->
+  <section class="bg-cream py-20">
+    <div class="mx-auto max-w-6xl px-6">
+      <div class="text-center mb-14">
+        <span class="text-xs font-semibold uppercase tracking-widest text-aloe-500">Pas à pas</span>
+        <h2 class="text-4xl text-aloe-900 mt-2">Commander Forever en ligne en 5 étapes</h2>
+      </div>
+      <ol class="grid md:grid-cols-2 lg:grid-cols-5 gap-6">
+        {etapes.map((e) => (
+          <li class="rounded-2xl bg-white border border-aloe-100 p-6 flex flex-col">
+            <span class="text-xs font-semibold text-aloe-400 tracking-widest mb-2">Étape {e.numero}</span>
+            <h3 class="text-lg font-semibold text-aloe-800 mb-3 leading-snug">{e.titre}</h3>
+            <p class="text-sm text-aloe-600 leading-relaxed flex-1">{e.texte}</p>
+            {e.lien && (
+              <a
+                href={e.lien}
+                class="mt-5 inline-flex items-center gap-1 text-sm font-semibold text-aloe-600 hover:text-aloe-800 transition-colors"
+              >
+                {e.labelLien} →
+              </a>
+            )}
+          </li>
+        ))}
+      </ol>
+      <div class="text-center mt-10">
+        <a
+          href={boutiqueUrl}
+          target="_blank"
+          rel="sponsored noopener noreferrer"
+          class="inline-flex items-center gap-2 rounded-full bg-aloe-600 px-8 py-4 text-sm font-semibold text-cream hover:bg-aloe-700 transition-colors"
+        >
+          Commencer ma commande
+        </a>
       </div>
     </div>
   </section>
@@ -224,7 +314,7 @@ const schemaFAQ = {
   <!-- ══════════════════════════════════════════
        RECOMMANDER EN 1 CLIC (Lot V4)
   ══════════════════════════════════════════ -->
-  <section class="bg-cream py-16" aria-labelledby="titre-recommandes">
+  <section class="bg-sand/50 py-16" aria-labelledby="titre-recommandes">
     <div class="mx-auto max-w-6xl px-6">
       <div class="mb-10">
         <span class="text-xs font-semibold uppercase tracking-widest text-aloe-500">Déjà client ?</span>
@@ -249,13 +339,18 @@ const schemaFAQ = {
           </div>
         ))}
       </div>
+      <p class="mt-8 text-sm text-aloe-600">
+        Vous cherchez un autre produit ? Parcourez la
+        <a href="/catalogue-forever/" class="underline underline-offset-4 hover:text-aloe-900">liste des produits Forever avec leurs prix</a>
+        ou laissez-vous guider : <a href="/quel-produit-forever-choisir/" class="underline underline-offset-4 hover:text-aloe-900">quel produit Forever choisir</a>.
+      </p>
     </div>
   </section>
 
   <!-- ══════════════════════════════════════════
        3 MODES DE COMMANDE
   ══════════════════════════════════════════ -->
-  <section class="bg-sand/50 py-20">
+  <section class="bg-cream py-20">
     <div class="mx-auto max-w-6xl px-6">
       <div class="text-center mb-14">
         <span class="text-xs font-semibold uppercase tracking-widest text-aloe-500">Choisissez votre façon</span>
@@ -298,59 +393,40 @@ const schemaFAQ = {
   </section>
 
   <!-- ══════════════════════════════════════════
-       ÉTAPES HowTo
+       LIVRAISON (tarifs canoniques, voir /livraison/)
   ══════════════════════════════════════════ -->
-  <section class="bg-cream py-20">
-    <div class="mx-auto max-w-6xl px-6">
-      <div class="text-center mb-14">
-        <span class="text-xs font-semibold uppercase tracking-widest text-aloe-500">Processus de commande</span>
-        <h2 class="text-4xl text-aloe-900 mt-2">En 4 étapes simples</h2>
-      </div>
-      <ol class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-        {etapes.map((e) => (
-          <li class="rounded-2xl bg-white border border-aloe-100 p-7 flex flex-col">
-            <span class="text-3xl mb-4">{e.icon}</span>
-            <span class="text-xs font-semibold text-aloe-400 tracking-widest mb-2">Étape {e.numero}</span>
-            <h3 class="text-lg font-semibold text-aloe-800 mb-3 leading-snug">{e.titre}</h3>
-            <p class="text-sm text-aloe-600 leading-relaxed flex-1">{e.texte}</p>
-            {e.lien && (
-              <a
-                href={e.lien}
-                class="mt-5 inline-flex items-center gap-1 text-sm font-semibold text-aloe-600 hover:text-aloe-800 transition-colors"
-              >
-                {e.labelLien} →
-              </a>
-            )}
-          </li>
-        ))}
-      </ol>
-    </div>
-  </section>
-
-  <!-- ══════════════════════════════════════════
-       BANDEAU LIVRAISON (rappel synthétique)
-  ══════════════════════════════════════════ -->
-  <section class="bg-aloe-800 text-cream py-14">
-    <div class="mx-auto max-w-6xl px-6">
+  <section class="bg-aloe-800 text-cream py-16">
+    <div class="mx-auto max-w-4xl px-6">
       <div class="text-center mb-10">
-        <h2 class="text-3xl text-cream">Livraison et retours</h2>
-        <p class="text-aloe-200 mt-2 text-sm">Vérifiez les modalités applicables à votre commande dans la boutique Forever.</p>
+        <h2 class="text-3xl text-cream">Combien coûte la livraison ?</h2>
+        <p class="text-aloe-200 mt-2 text-sm">Tarifs TTC pour la France métropolitaine. Les frais s'affichent sur la boutique avant le paiement.</p>
       </div>
-      <div class="grid sm:grid-cols-3 gap-6 max-w-3xl mx-auto text-center">
+      <div class="grid md:grid-cols-2 gap-6">
         <div class="rounded-2xl bg-aloe-700/50 p-6">
-          <span class="text-3xl block mb-3">📦</span>
-          <p class="font-semibold text-cream text-sm mb-1">Mode de réception</p>
-          <p class="text-xs text-aloe-200">Consultez les options proposées pour votre adresse.</p>
+          <p class="font-semibold text-cream mb-1">📦 Point relais</p>
+          <p class="text-xs text-aloe-200 mb-4">48 à 72 h pour une commande passée avant 12 h 45, retrait sous 7 jours.</p>
+          <table class="w-full text-sm">
+            <tbody class="divide-y divide-aloe-600">
+              {tarifsRelais.map((t) => (
+                <tr>
+                  <td class="py-2 text-aloe-100">{t.montant}</td>
+                  <td class="py-2 text-right font-semibold text-cream">{t.frais}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
         </div>
         <div class="rounded-2xl bg-aloe-700/50 p-6">
-          <span class="text-3xl block mb-3">🚚</span>
-          <p class="font-semibold text-cream text-sm mb-1">Frais et délais</p>
-          <p class="text-xs text-aloe-200">Vérifiez les frais de livraison et le total avant de valider.</p>
-        </div>
-        <div class="rounded-2xl bg-aloe-700/50 p-6">
-          <span class="text-3xl block mb-3">↩️</span>
-          <p class="font-semibold text-cream text-sm mb-1">Besoin d'aide après l'achat ?</p>
-          <p class="text-xs text-aloe-200">Contactez Rafael avec votre référence de commande.</p>
+          <p class="font-semibold text-cream mb-1">🚚 À domicile, Chronopost</p>
+          <p class="text-xs text-aloe-200 mb-4">Livraison le lendemain pour une commande passée avant 12 h 45, pas de livraison le samedi.</p>
+          <table class="w-full text-sm">
+            <tbody>
+              <tr>
+                <td class="py-2 text-aloe-100">Tarif fixe</td>
+                <td class="py-2 text-right font-semibold text-cream">13,00 €</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
       <div class="text-center mt-8">
@@ -358,21 +434,44 @@ const schemaFAQ = {
           href="/livraison/"
           class="inline-flex items-center gap-2 rounded-full border border-aloe-400 px-6 py-3 text-sm font-semibold text-cream hover:bg-aloe-700 transition-colors"
         >
-          Voir tous les détails livraison →
+          Livraison et retours : tous les détails →
         </a>
       </div>
     </div>
   </section>
 
   <!-- ══════════════════════════════════════════
+       POURQUOI LA BOUTIQUE OFFICIELLE
+  ══════════════════════════════════════════ -->
+  <section class="bg-cream py-16">
+    <div class="mx-auto max-w-3xl px-6">
+      <h2 class="text-3xl text-aloe-900 mb-5">Boutique officielle, Amazon ou revendeur : où acheter Forever ?</h2>
+      <p class="text-aloe-700 leading-relaxed mb-4">
+        Vous trouverez des produits Forever sur des places de marché comme Amazon. Le vendeur est alors un revendeur tiers,
+        pas Forever : le prix, le stockage et la date limite dépendent de lui.
+      </p>
+      <p class="text-aloe-700 leading-relaxed mb-4">
+        Sur la boutique officielle, vous commandez directement à Forever Living France, au prix public, avec la livraison
+        Forever. En passant par un distributeur, vous avez en plus quelqu'un à qui poser vos questions.
+        Pour savoir comment repérer un distributeur sérieux, lisez
+        <a href="/blog/choisir-distributeur-forever-fiable/" class="underline underline-offset-4 text-aloe-800 hover:text-aloe-600">comment choisir un distributeur Forever fiable</a>.
+      </p>
+      <p class="text-aloe-700 leading-relaxed">
+        Vous consommez beaucoup de produits ? Le statut de distributeur donne accès à des prix remisés, sans stock à acheter
+        ni minimum de commande : voyez <a href="/devenir-distributeur-forever-living/" class="underline underline-offset-4 text-aloe-800 hover:text-aloe-600">comment devenir distributeur Forever</a>.
+      </p>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
        FAQ
   ══════════════════════════════════════════ -->
-  <section class="bg-cream py-20">
+  <section class="bg-sand/50 py-20">
     <div class="mx-auto max-w-3xl px-6">
       <div class="text-center mb-12">
-        <h2 class="text-4xl text-aloe-900">Questions fréquentes</h2>
+        <h2 class="text-4xl text-aloe-900">Questions fréquentes sur la commande</h2>
         <p class="text-aloe-500 mt-3 text-sm">
-          Une question non listée ? Contactez Rafael au
+          Une question non listée ? Appelez-moi au
           <a href="tel:+33677352226" class="underline text-aloe-600">06 77 35 22 26</a>.
         </p>
       </div>
@@ -395,7 +494,7 @@ const schemaFAQ = {
       <h2 class="text-3xl text-aloe-900 mb-4">Prêt(e) à passer commande ?</h2>
       <p class="text-aloe-600 leading-relaxed mb-8 text-lg">
         Ouvrez la boutique officielle Forever Living pour finaliser votre achat,
-        ou contactez Rafael pour un conseil avant de choisir.
+        ou contactez-moi pour un conseil avant de choisir.
       </p>
       <div class="flex flex-wrap items-center justify-center gap-4">
         <a

@@ -1,7 +1,19 @@
 # Esprit Aloé — À ne pas oublier
-*Mise à jour : 20 novembre 2026 (lot AK : fiches Lean, Move, Calcium)*
+*Mise à jour : 20 novembre 2026 (lot AM : groupe « Acheter Forever en France »)*
 
 - **/a-propos/ (20/11, demande de Rafael)** : la photo du profil devient le même portrait que `/contact/` (`rafael/rafael-avenard-portrait.webp`, 256 × 256, affiché en 288 × 288 : légèrement agrandi). À remplacer par une version plus grande avec la photo prévue après le coiffeur. L'encadré auteur des articles utilise encore l'ancienne `rafael-avenard.webp`.
+
+## Lot AM du 20 novembre 2026 (soir) — groupe « Acheter Forever en France » (plan validé par Rafael)
+
+- **Constat** (Semrush France, 20/11) : l'accueil porte seul tout le groupe : « forever living » 1 900–2 400/mois (pos. 11), « forever living products france » 1 300 (11), « forever living france » 590 (7-8), « foreverliving france » 480 (17), « forever france » 170 (12), « forever commande en ligne » 140 (8). `/commander/` et `/catalogue-forever/` ne sortaient sur **aucune** requête. Le top 5 est tenu par Forever (foreverliving.fr/.com, Facebook, Instagram, Wikipédia) : objectif réaliste = **1er distributeur**, devant aloeveraforever (page dédiée `/forever-living-products-france/`) et aloe-vera-pour-tous (`/france`, `/commander-vos-produits-forever`).
+- **Découpage par intention** : accueil = « Forever Living France / distributeur » ; `/commander/` = « commander / acheter / boutique en ligne » ; `/catalogue-forever/` = « catalogue / liste des produits / prix » ; `/produits/` garde « produits forever » (390/mois).
+- **`/commander/`** : title « Commander Forever en ligne : boutique Forever Living France », H1 « Acheter et commander les produits Forever Living en France », meta réécrite. Ajouts : encadré « l'essentiel » (où, avec qui, MYFOREVER, livraison), pas-à-pas en 5 étapes (lien, compte, panier, MYFOREVER, livraison et paiement), tarifs de livraison chiffrés (référence canonique), section « boutique officielle, Amazon ou revendeur », FAQ passée de 6 à 9 questions (où acheter, sans distributeur ?, code, livraison, Amazon/pharmacie, Belgique/Suisse/DOM-TOM), schéma BreadcrumbList ajouté. Aucun moyen de paiement ni condition de retour Forever cité (non vérifiés).
+- **`/catalogue-forever/`** : title « Catalogue Forever 2026 : liste des produits et prix », H1 « Catalogue Forever Living 2026 », meta réécrite. Nouvelle section `#liste-prix` : tableau des 49 produits par gamme (nom, référence, prix, lien fiche, « dès » si les versions ont des prix différents), généré depuis la collection produits. FAQ de 4 questions (PDF, prix identiques, commander, débuter) avec schéma FAQPage.
+- **Maillage** (pages hors mesure) : articles « choisir un distributeur fiable » (→ commander + liste des prix), « quelle boisson choisir » (→ commander), « FBO comment ça marche » (→ commander ; correction : le client n'achète pas « directement », il est rattaché à un distributeur), `/code-promo-forever/` (→ commander), `/quel-produit-forever-choisir/` (→ catalogue + commander).
+- **Pas de capture d'écran** dans le pas-à-pas pour l'instant : à ajouter si Rafael envoie des captures de l'inscription sur la boutique.
+- **Mesure : démarre le 20/11** pour `/commander/` et `/catalogue-forever/`. À ajouter à `frozenPages` dans `espritaloe-seo` (non fait : accès au repo refusé dans la session du 20/11 soir).
+- **Après le 9/12 (accueil)** : H1 avec « Forever Living France » (aujourd'hui « L'aloe vera qui vous fait du bien »), title recentré « distributeur Forever Living France » **sans « commande »** (cannibalisation avec `/commander/`), bloc renvoyant vers `/commander/`. Puis `/produits/` sur « produits forever ».
+- **Ensuite** : autorité (liens réels : fiche Google, Facebook, Instagram, partenaires locaux), seul levier pour passer de la 11e place au top 10 sur « forever living » et « forever living products france ».
 
 ## Lot AL du 20 novembre 2026 (soir) — questions Google sans réponse
 

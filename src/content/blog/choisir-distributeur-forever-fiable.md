@@ -41,7 +41,7 @@ Je suis distributeur Forever depuis 2016, en Loire-Atlantique. Je vous donne ici
 
 ## Ce que vous choisissez avec un distributeur
 
-Quand vous commandez avec le lien d'un distributeur, Forever vous livre directement, en point relais ou à domicile. Le distributeur ne touche ni à votre paiement ni à votre colis. Son travail se situe avant et après la commande :
+Quand vous commandez avec le lien d'un distributeur, Forever vous livre directement, en point relais ou à domicile (voici [comment commander Forever en ligne](/commander/), étape par étape). Le distributeur ne touche ni à votre paiement ni à votre colis. Son travail se situe avant et après la commande :
 
 - **avant** : comprendre ce que vous cherchez, vous orienter vers le bon produit, vous dire comment le prendre ;
 - **après** : répondre à vos questions, ajuster si le produit ne vous convient pas, vous éviter des achats inutiles.
@@ -102,6 +102,6 @@ Beaucoup de mes clients commencent par le [Forever Aloe Vera Gel](/produits/fore
 
 ## En résumé
 
-Le prix ne vous aidera pas à choisir : il est le même chez tous les distributeurs Forever. Regardez plutôt l'écoute, l'expérience réelle des produits, la franchise sur les limites et la présence après l'achat. Fuyez la pression, les promesses de santé et le recrutement que vous n'avez pas demandé.
+Le prix ne vous aidera pas à choisir : il est le même chez tous les distributeurs Forever (voyez la [liste des produits Forever et leurs prix](/catalogue-forever/#liste-prix)). Regardez plutôt l'écoute, l'expérience réelle des produits, la franchise sur les limites et la présence après l'achat. Fuyez la pression, les promesses de santé et le recrutement que vous n'avez pas demandé.
 
 Vous voulez en parler ? [Écrivez-moi](/contact/) ou appelez-moi au 06 77 35 22 26. Je vous dirai si je peux vous aider.
