@@ -5,6 +5,8 @@ description: "Aloe vera sur un coup de soleil : les premiers gestes, comment app
 pubDate: 2026-11-20
 author: "Rafael Avenard"
 category: "beaute"
+image: "/images/blog/aloe-vera-coup-de-soleil.webp"
+imageAlt: "Dos d'une femme en maillot, avec un cœur dessiné à la crème sur l'épaule"
 tags:
   - "aloe vera coup de soleil"
   - "aloe vera brûlure"
