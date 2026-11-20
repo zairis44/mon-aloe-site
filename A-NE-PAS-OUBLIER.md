@@ -1,5 +1,16 @@
 # Esprit Aloé — À ne pas oublier
-*Mise à jour : 20 novembre 2026 (lot AI : 3 nouvelles fiches, Aloe First, Crème Aloès, Bee Propolis)*
+*Mise à jour : 20 novembre 2026 (lot AJ : 3 articles beauté, crème, coup de soleil, visage)*
+
+## Lot AJ du 20 novembre 2026 (soir) — 3 articles beauté (cocon aloe vera par usage)
+
+- **Choix** (Semrush, base France, 20/11) : « creme aloe vera » 1 600/mois ; « aloe vera coup de soleil » 880 + « aloe vera brulure » 390 + « aloe vera apres soleil » 210 (saisonnier, pic en été : publié maintenant pour être installé avant juin) ; « aloe vera visage » 1 000 + « gel aloe vera visage » 720. Écartés : « propolis bienfaits » (5 400) et « gelée royale bienfaits » (2 400), car doublon avec les pages glossaire et aucune allégation autorisée.
+- **Nouveaux articles** (catégorie beauté, sans image : **à choisir par Rafael**, 1200 × 600) :
+  - `/blog/creme-aloe-vera-laquelle-choisir/` : textures, lecture d'étiquette (aloe vera en tête, teneur, parfum, alcool), tableau chiffré de la gamme (Gelly, Aloe First, Moisturizing Lotion, Body Lotion, Propolis Crème), conseil par type de peau, Forever ou pharmacie.
+  - `/blog/aloe-vera-coup-de-soleil/` : premiers gestes et signes de consultation d'après Santé.fr (fiche « Coup de soleil (érythème solaire) » du 12/08/2026, citée en source), place du gel, ce qu'il ne fait pas (pas d'indice, pas sur cloques), plante du jardin.
+  - `/blog/aloe-vera-visage/` : tableau par type de peau, routine en 3 gestes (Logic Nettoyant, gel, crème), masque express, erreurs à éviter. Renvoie vers l'article peau (en mesure, non modifié) pour les généralités.
+- Ajoutés aux guides de la catégorie crèmes et gels (`maillage.ts`) et à `public/llms.txt`. 101 → 104 pages.
+- **Après le 9/12** : liens depuis l'article peau et l'article Gelly 8 usages vers ces 3 articles.
+- **Mesure : démarre le 20/11.**
 
 ## Lot AI du 20 novembre 2026 (soir) — 3 nouvelles fiches produit
 

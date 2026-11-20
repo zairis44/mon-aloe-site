@@ -253,6 +253,9 @@ export const GUIDES_CATEGORIE: Record<string, string[]> = {
   ],
   'cremes-et-gels': [
     'gel-aloe-vera-bienfaits-utilisation',
+    'creme-aloe-vera-laquelle-choisir',
+    'aloe-vera-visage',
+    'aloe-vera-coup-de-soleil',
     'aloe-vera-peau-beaute-bienfaits-forever',
     'aloe-vera-cheveux-cuir-chevelu-bienfaits',
   ],
