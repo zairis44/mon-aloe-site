@@ -239,6 +239,7 @@ export const GUIDES_CATEGORIE: Record<string, string[]> = {
     'forever-freedom-aloe-vera-articulations-mobilite',
   ],
   'cremes-et-gels': [
+    'gel-aloe-vera-bienfaits-utilisation',
     'aloe-vera-peau-beaute-bienfaits-forever',
     'aloe-vera-cheveux-cuir-chevelu-bienfaits',
   ],
