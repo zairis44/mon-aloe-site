@@ -5,6 +5,8 @@ description: "Forever, Pur Aloé, Superdiet, MKL, Nat&Form : teneur en aloe vera
 pubDate: 2026-11-15
 author: "Rafael Avenard"
 category: "guides"
+image: "/images/blog/pulpe-aloe-vera-comparatif-marques.webp"
+imageAlt: "Quatre boissons Forever à l'aloe vera (Aloe Vera Gel, pêche, Berry Nectar, mangue) sur un plan de travail, une femme boit un verre en arrière-plan"
 tags:
   - "pulpe d'aloe vera"
   - "meilleure pulpe d'aloe vera"
