@@ -11,8 +11,8 @@ images:
 category: boissons-aloe-vera
 description: 'La boisson à l''aloe vera de la gamme articulations : Forever Freedom réunit glucosamine, chondroïtine et MSM dans une boisson saveur orange. Pour celles et ceux qui bougent beaucoup et veulent un geste simple au quotidien.'
 titreDetails: ''
-seoTitle: Forever Freedom – Aloe vera, glucosamine, chondroïtine, MSM
-seoDescription: 'Forever Freedom® : boisson à l''aloe vera saveur orange avec glucosamine, chondroïtine et MSM. L''aloe vera aide à soutenir la digestion. Flacon d''1 litre.'
+seoTitle: 'Forever Freedom : composition, posologie, effets secondaires'
+seoDescription: 'Forever Freedom : aloe vera, glucosamine, chondroïtine et MSM. Posologie : 90 ml par jour en deux prises. Effets secondaires possibles et précautions.'
 video: https://www.youtube.com/watch?v=QmxkBeO4ObA
 lienCommande: http://www.foreverliving.fr/ref/330001628607/196
 featured: true
@@ -20,9 +20,9 @@ disponible: true
 faq:
 - question: Que contient Forever Freedom ?
   reponse: 'Une base de gel d''aloe vera Forever, de la glucosamine, de la chondroïtine et du MSM (méthylsulfonylméthane), dans une boisson saveur orange. C''est la boisson de la gamme Forever pensée pour les personnes actives. Aucune allégation de santé n''est autorisée en Europe pour la glucosamine, la chondroïtine ou le MSM : je vous décris la composition, pas un effet promis.'
-- question: Quelle est la posologie ?
+- question: Quelle est la posologie de Forever Freedom ?
   reponse: Comptez 90 ml par jour, en deux prises de 45 ml, le matin et le soir. Secouez bien le flacon avant chaque prise. Buvez-le pur ou allongé d'un peu d'eau ou de jus, selon votre goût.
-- question: Y a-t-il des effets indésirables ?
+- question: Forever Freedom a-t-il des effets secondaires ?
   reponse: 'Il est en général bien toléré. Chez les personnes sensibles, une quantité trop importante peut entraîner de légers troubles digestifs : respectez la dose quotidienne. La glucosamine est souvent issue de crustacés : en cas d''allergie, vérifiez l''étiquette. En cas de traitement en cours, de grossesse ou de doute, demandez l''avis de votre médecin ou de votre pharmacien.'
 - question: Combien de temps le prendre ?
   reponse: Ceux qui l'apprécient le prennent sur plusieurs semaines, en routine du matin et du soir. Faites-vous votre propre avis après un ou deux flacons.

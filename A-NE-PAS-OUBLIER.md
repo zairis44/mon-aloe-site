@@ -1,5 +1,13 @@
 # Esprit Aloé — À ne pas oublier
-*Mise à jour : 15 novembre 2026 (migration de l'ancien domaine terminée)*
+*Mise à jour : 20 novembre 2026 (outil SEO maison en place)*
+
+## Lot AG du 20 novembre 2026 — outil SEO maison + fiche Freedom
+
+- **Outil SEO maison** : repo privé `zairis44/espritaloe-seo` (collecte nocturne Search Console, sitemaps des 4 concurrents, Google Suggest ; tableau de bord Vercel protégé). Claude le pilote depuis le chat (doc projet `claude/outil-seo-mode-emploi.md`).
+- **Fiche Forever Freedom** (pas en mesure jusqu'ici) : seoTitle « Forever Freedom : composition, posologie, effets secondaires » et meta réécrite, pour les requêtes « forever freedom posologie » (pos. 8,3) et « forever freedom effet secondaire » (pos. 9). Questions de la FAQ alignées. Allégation « aide à soutenir la digestion » retirée de la meta. **Mesure de la fiche : démarre le 20/11.**
+- **Pages en mesure, à ne pas toucher avant le bilan du 9 décembre** : accueil (13/11), article stress/sommeil (13/11), avis Forever et avis C9 (14/11), `/produits/` et article Freedom (15/11), fiche Freedom (20/11).
+- **À vérifier** : `/blog/c9-forever-avis/` n'a eu aucune impression depuis le 28/10 (30 au total depuis août). Les requêtes C9 sortent sur l'article avis et sur `/blog/`. Inspecter l'URL dans la Search Console (indexée ? canonique choisie par Google ?).
+- **Riposte concurrent** : aloe-vera-pour-tous a publié le 20/11 « Comment choisir un conseiller en aloe vera fiable et adapté ? ». Article à écrire avec le vécu de Rafael (en attente de ses réponses).
 
 ## Lot AF du 15 novembre 2026 (soir) — Umami, mesure sans cookie
 
