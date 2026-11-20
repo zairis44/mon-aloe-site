@@ -1,6 +1,8 @@
 # Esprit Aloé — À ne pas oublier
 *Mise à jour : 20 novembre 2026 (lot AJ : 3 articles beauté, crème, coup de soleil, visage)*
 
+- **/a-propos/ (20/11, demande de Rafael)** : la photo du profil devient le même portrait que `/contact/` (`rafael/rafael-avenard-portrait.webp`, 256 × 256, affiché en 288 × 288 : légèrement agrandi). À remplacer par une version plus grande avec la photo prévue après le coiffeur. L'encadré auteur des articles utilise encore l'ancienne `rafael-avenard.webp`.
+
 ## Lot AJ du 20 novembre 2026 (soir) — 3 articles beauté (cocon aloe vera par usage)
 
 - **Choix** (Semrush, base France, 20/11) : « creme aloe vera » 1 600/mois ; « aloe vera coup de soleil » 880 + « aloe vera brulure » 390 + « aloe vera apres soleil » 210 (saisonnier, pic en été : publié maintenant pour être installé avant juin) ; « aloe vera visage » 1 000 + « gel aloe vera visage » 720. Écartés : « propolis bienfaits » (5 400) et « gelée royale bienfaits » (2 400), car doublon avec les pages glossaire et aucune allégation autorisée.
