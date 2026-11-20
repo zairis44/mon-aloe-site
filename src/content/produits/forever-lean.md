@@ -4,7 +4,7 @@ reference: "289"
 slug: "forever-lean"
 price: 44.49
 coutJour: "environ 0,74 € par jour (2 capsules)"
-image: ""
+image: "/images/produits/forever-lean.webp"
 images: []
 category: "nutrition"
 description: "Un complément en capsules à base de nopal (feuilles de cactus Opuntia), d'extrait de haricot blanc et de chrome. 2 capsules par jour, une demi-heure avant les repas, jusqu'à 4. 120 capsules. Réf. 289."

@@ -4,7 +4,7 @@ reference: "206"
 slug: "forever-calcium"
 price: 35.61
 coutJour: "environ 1,58 € par jour (4 comprimés)"
-image: ""
+image: "/images/produits/forever-calcium.webp"
 images: []
 category: "nutrition"
 description: "Un complément de calcium, magnésium, zinc, manganèse et cuivre, avec des vitamines C et D. Le calcium et la vitamine D contribuent au maintien d'une ossature normale. 4 comprimés par jour. 90 comprimés. Réf. 206."

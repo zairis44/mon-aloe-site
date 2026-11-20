@@ -4,7 +4,7 @@ reference: "551"
 slug: "forever-move"
 price: 68.95
 coutJour: "environ 2,30 € par jour (3 capsules)"
-image: ""
+image: "/images/produits/forever-move.webp"
 images: []
 category: "sport-et-fitness"
 description: "Un complément en capsules qui associe la membrane de coquille d'œuf NEM et un extrait de curcuma BioCurc. 3 capsules par jour. 90 capsules, soit un mois. Contient de l'œuf, du poisson et du soja. Réf. 551."

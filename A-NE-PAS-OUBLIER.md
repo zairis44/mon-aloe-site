@@ -11,7 +11,7 @@
   - `/produits/forever-lean/` (réf. 289, 44,49 €, 120 capsules, nutrition). Seule allégation : chrome (glycémie normale, métabolisme des macronutriments). Pas de « piège les graisses / bloque les sucres », pas de chiffre de perte de poids. Précautions grossesse, diabète/traitement glycémie. Comparaison Therm (caféine) / Lean (sans caféine).
   - `/produits/forever-move/` (réf. 551, 68,95 €, 90 capsules, sport et fitness). Aucune allégation (NEM, curcuma). Précautions : anticoagulants (Forever), allergènes œuf/poisson/soja, prudence ANSES curcuma (foie, vésicule, traitements). Renvoie vers la fiche Freedom (gelée, non modifiée).
   - `/produits/forever-calcium/` (réf. 206, 35,61 €, 90 comprimés, nutrition). Allégations calcium, vitamine D, magnésium (os, muscles). Manganèse et vitamine C non repris : quantités par dose inconnues. Déconseillé aux moins de 18 ans, usage prolongé déconseillé (Forever).
-- **Images : aucune**, à fournir par Rafael.
+- **Images** (choisies par Rafael, 20/11) : visuels officiels Forever en mise en scène (Move sur tapis de sport, Calcium avec arrosoir et marguerites, Lean sur plan de travail), carrés, webp q80.
 - Associations et libellés dans `maillage.ts` (rien ajouté côté Freedom : fiche en mesure). 104 → 107 pages. **Mesure : démarre le 20/11.**
 
 ## Lot AJ du 20 novembre 2026 (soir) — 3 articles beauté (cocon aloe vera par usage)
