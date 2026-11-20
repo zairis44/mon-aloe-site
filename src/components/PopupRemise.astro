@@ -7,27 +7,31 @@
  * et uniquement entre les dates debut et fin de l'offre (vérifiées dans le
  * navigateur : l'offre s'éteint seule le jour J, sans rebuild).
  *
- * L'offre affichée vient de src/data/offres.ts (OFFRE_EN_COURS).
+ * L'offre affichée vient de src/data/offres.ts (OFFRE_EN_COURS par défaut).
+ * Avec `secours`, le popup (offre de bienvenue permanente) ne s'affiche que si
+ * aucune offre datée n'est active.
  */
-import { OFFRE_EN_COURS, LIEN_BOUTIQUE } from '../data/offres';
+import { OFFRE_EN_COURS, LIEN_BOUTIQUE, type Offre } from '../data/offres';
 
 export interface Props {
   ctaLabel?: string;
+  offre?: Offre;
+  secours?: boolean;
 }
 
-const { ctaLabel = "Profiter de l'offre" } = Astro.props;
-const offre = OFFRE_EN_COURS;
+const { ctaLabel = "Profiter de l'offre", offre = OFFRE_EN_COURS, secours = false } = Astro.props;
+const id = `popup-remise-${offre.code.toLowerCase()}`;
 const { code, remise, minimum, conditions, theme, debut, fin, finTexte } = offre;
 const estBlackFriday = theme === 'blackfriday';
 ---
 
-<div id="popup-remise" class:list={["popup-remise", { "popup-remise--blackfriday": estBlackFriday }]} data-debut={debut} data-fin={fin} hidden>
+<div id={id} class:list={["popup-remise", { "popup-remise--blackfriday": estBlackFriday }]} data-debut={debut} data-fin={fin} data-datee={secours ? undefined : ''} hidden>
   <div class="popup-remise__overlay" data-popup-close></div>
-  <div class="popup-remise__card" role="dialog" aria-labelledby="popup-remise-titre" aria-modal="true">
+  <div class="popup-remise__card" role="dialog" aria-labelledby={`${id}-titre`} aria-modal="true">
     <button type="button" class="popup-remise__close" data-popup-close aria-label="Fermer">✕</button>
 
     <span class="popup-remise__badge">{estBlackFriday ? "Black Friday" : "Offre de bienvenue"}</span>
-    <h3 id="popup-remise-titre" class="popup-remise__titre">−{remise} sur votre première commande</h3>
+    <h3 id={`${id}-titre`} class="popup-remise__titre">−{remise} sur votre première commande</h3>
     <p class="popup-remise__texte">
       {estBlackFriday ? `Jusqu'au ${finTexte}, inscrivez-vous` : "Inscrivez-vous"} sur la boutique Forever et profitez de {remise} de réduction dès {minimum} d'achat, avec le code ci-dessous.
     </p>
@@ -45,7 +49,7 @@ const estBlackFriday = theme === 'blackfriday';
   </div>
 </div>
 
-<script define:vars={{ code }}>
+<script define:vars={{ code, id, secours }}>
   (function () {
     const STORAGE_KEY = 'espritaloe_popup_last_shown_' + code;
     const CONVERTED_KEY = 'espritaloe_promo_converted';
@@ -64,8 +68,15 @@ const estBlackFriday = theme === 'blackfriday';
     }
 
     let dejaAffiche = false;
-    const popup = document.getElementById('popup-remise');
+    const popup = document.getElementById(id);
     if (!popup) return;
+
+    // Popup de secours : seulement si aucune offre datée n'est en cours
+    const dansPeriode = (el) => {
+      const d = Date.parse(el.dataset.debut || ''), f = Date.parse(el.dataset.fin || ''), t = Date.now();
+      return !(d && t < d) && !(f && t > f);
+    };
+    if (secours && [...document.querySelectorAll('.popup-remise[data-datee]')].some(dansPeriode)) return;
 
     // Hors période de l'offre : rien à afficher
     const maintenant = Date.now();

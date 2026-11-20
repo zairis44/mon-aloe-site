@@ -8,6 +8,10 @@
 - **Pages en mesure, à ne pas toucher avant le bilan du 9 décembre** : accueil (13/11), article stress/sommeil (13/11), avis Forever et avis C9 (14/11), `/produits/` et article Freedom (15/11), fiche Freedom (20/11).
 - **À vérifier** : `/blog/c9-forever-avis/` n'a eu aucune impression depuis le 28/10 (30 au total depuis août). Les requêtes C9 sortent sur l'article avis et sur `/blog/`. Inspecter l'URL dans la Search Console (indexée ? canonique choisie par Google ?).
 - **Offre de bienvenue permanente** (confirmée par Rafael le 20/11) : **code MYFOREVER**, −15 % dès 50 € pour les nouveaux clients, à leur inscription sur la boutique Forever (commande passée à l'inscription). `OFFRE_BIENVENUE` dans `src/data/offres.ts`. La page `/code-promo-forever/` l'affiche quand aucune promotion datée n'est en cours, donc à partir du 1/12. Title et meta réécrits pour l'offre permanente (« Code promo Forever : −15 % pour les nouveaux clients »). FAQ « réduction toute l'année ». **Mesure de la page : démarre le 20/11.** Contexte : aloeprevention.fr affiche « 15 % permanent dès 30 € » (doc projet `claude/veille-aloeprevention.md`).
+- **MYFOREVER partout** :
+  - `OFFRE_PERMANENTE` (offres.ts) sert de secours au popup et au bandeau. Ils l'affichent automatiquement dès qu'aucune offre datée n'est active, à partir du 1/12 après le Black Friday.
+  - Pour une future promo : remplacer seulement `OFFRE_EN_COURS`. MYFOREVER reprend la main à la fin de la promo.
+  - Fiches produit : encadré « Nouveau client ? −15 %… code MYFOREVER » sous les boutons Commander (`MentionBienvenue.astro`).
 - **Riposte concurrent** : aloe-vera-pour-tous a publié le 20/11 « Comment choisir un conseiller en aloe vera fiable et adapté ? ». Article à écrire avec le vécu de Rafael (en attente de ses réponses).
 
 ## Lot AF du 15 novembre 2026 (soir) — Umami, mesure sans cookie

@@ -59,5 +59,23 @@ export const OFFRE_BIENVENUE = {
     "Code MYFOREVER réservé aux nouveaux clients qui créent leur compte sur la boutique Forever, dès 50 € d'achat, sur la commande passée à l'inscription. Non cumulable avec une autre offre.",
 };
 
+/**
+ * La même offre de bienvenue au format Offre, pour le popup et le bandeau.
+ * Elle sert de « secours » : affichée seulement quand aucune offre datée
+ * (OFFRE_EN_COURS) n'est active, vérifié dans le navigateur.
+ */
+export const OFFRE_PERMANENTE: Offre = {
+  nom: 'Offre de bienvenue',
+  code: OFFRE_BIENVENUE.code,
+  remise: OFFRE_BIENVENUE.remise,
+  minimum: OFFRE_BIENVENUE.minimum,
+  public: 'nouveaux clients de la boutique Forever',
+  debut: '2026-11-20T00:00:00+01:00',
+  fin: '2099-12-31T23:59:59+01:00',
+  finTexte: '',
+  conditions: OFFRE_BIENVENUE.conditions,
+  theme: 'standard',
+};
+
 /** Lien de parrainage vers la boutique officielle Forever */
 export const LIEN_BOUTIQUE = 'https://www.foreverliving.fr/ref/330001628607/';

@@ -11,6 +11,7 @@ import Header from '../../components/Header.astro';
 import BandeauOffre from '../../components/BandeauOffre.astro';
 import Footer from '../../components/Footer.astro';
 import CtaCommander from '../../components/CtaCommander.astro';
+import MentionBienvenue from '../../components/MentionBienvenue.astro';
 import ProduitsAssocies from '../../components/ProduitsAssocies.astro';
 import GuidesLies from '../../components/GuidesLies.astro';
 import IngredientsCles from '../../components/IngredientsCles.astro';
@@ -295,6 +296,7 @@ const seoDescription = d.seoDescription ?? d.description;
           ) : (
             <CtaCommander lienCommande={d.lienCommande} fullWidth label="Commander ce produit" />
           )}
+          <MentionBienvenue />
         </div>
 
         <!-- Contenu Markdown de la fiche -->
@@ -409,6 +411,7 @@ const seoDescription = d.seoDescription ?? d.description;
           ) : (
             <CtaCommander lienCommande={d.lienCommande} fullWidth label="Commander ce produit" />
           )}
+          <MentionBienvenue />
         </div>
 
         <!-- Signaux de confiance -->

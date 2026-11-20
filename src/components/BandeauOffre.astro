@@ -2,44 +2,52 @@
 /**
  * src/components/BandeauOffre.astro
  * Bandeau discret « Offre du moment », sous l'en-tête (accueil + fiches produit).
- * Source : src/data/offres.ts (OFFRE_EN_COURS), comme le popup.
+ * Source : src/data/offres.ts. Priorité à l'offre datée (OFFRE_EN_COURS) ;
+ * en dehors de sa période, l'offre de bienvenue permanente prend le relais.
  *
- * - Rendu au build seulement si la date de fin n'est pas dépassée.
- * - Vérifié aussi dans le navigateur : masqué avant `debut` et après `fin`,
- *   sans rebuild le jour de la fin.
+ * - Au build : seule l'offre active à ce moment-là est visible.
+ * - Dans le navigateur : le choix est refait selon la date du jour,
+ *   sans rebuild le jour de la fin d'une offre.
  */
-import { OFFRE_EN_COURS } from '../data/offres';
+import { OFFRE_EN_COURS, OFFRE_PERMANENTE } from '../data/offres';
 
-const o = OFFRE_EN_COURS;
-const encoreValide = Date.now() <= Date.parse(o.fin);
-const sombre = o.theme === 'blackfriday';
+const maintenant = Date.now();
+const actif = (o: { debut: string; fin: string }) => maintenant >= Date.parse(o.debut) && maintenant <= Date.parse(o.fin);
+const offres = [OFFRE_EN_COURS, OFFRE_PERMANENTE].filter((o) => maintenant <= Date.parse(o.fin));
+const indexVisible = offres.findIndex(actif);
 ---
 
-{encoreValide && (
-  <div
-    id="bandeau-offre"
-    data-debut={o.debut}
-    data-fin={o.fin}
-    class:list={[
-      'text-center text-sm px-4 py-2.5',
-      sombre ? 'bg-[#141414] text-[#f3e3bd]' : 'bg-aloe-700 text-cream',
-    ]}
-  >
-    <a href="/code-promo-forever/" class="hover:underline underline-offset-4">
-      <strong class={sombre ? 'text-[#d4a64a]' : ''}>{o.nom}</strong> :
-      −{o.remise} sur votre première commande avec le code
-      <strong class="tracking-wide">{o.code}</strong>, dès {o.minimum}, jusqu'au {o.finTexte.replace(/ \d{4}$/, '')}.
-      <span class="whitespace-nowrap font-semibold">Voir l'offre →</span>
-    </a>
-  </div>
-)}
+{offres.map((o, i) => {
+  const sombre = o.theme === 'blackfriday';
+  return (
+    <div
+      data-bandeau-offre
+      data-debut={o.debut}
+      data-fin={o.fin}
+      hidden={i !== indexVisible}
+      class:list={[
+        'text-center text-sm px-4 py-2.5',
+        sombre ? 'bg-[#141414] text-[#f3e3bd]' : 'bg-aloe-700 text-cream',
+      ]}
+    >
+      <a href="/code-promo-forever/" class="hover:underline underline-offset-4">
+        <strong class={sombre ? 'text-[#d4a64a]' : ''}>{o.nom}</strong> :
+        −{o.remise} sur votre première commande avec le code
+        <strong class="tracking-wide">{o.code}</strong>, dès {o.minimum}{o.finTexte ? `, jusqu'au ${o.finTexte.replace(/ \d{4}$/, '')}` : ''}.
+        <span class="whitespace-nowrap font-semibold">Voir l'offre →</span>
+      </a>
+    </div>
+  );
+})}
 
 <script>
-  const b = document.getElementById('bandeau-offre');
-  if (b) {
-    const now = Date.now();
+  const bandeaux = [...document.querySelectorAll<HTMLElement>('[data-bandeau-offre]')];
+  const now = Date.now();
+  const actif = (b: HTMLElement) => {
     const debut = Date.parse(b.dataset.debut || '');
     const fin = Date.parse(b.dataset.fin || '');
-    if ((debut && now < debut) || (fin && now > fin)) b.remove();
-  }
+    return !(debut && now < debut) && !(fin && now > fin);
+  };
+  const choisi = bandeaux.find(actif);
+  bandeaux.forEach((b) => (b === choisi ? (b.hidden = false) : b.remove()));
 </script>
