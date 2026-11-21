@@ -1,7 +1,15 @@
 # Esprit Aloé — À ne pas oublier
-*Mise à jour : 21 novembre 2026 (lien de parrainage distributeur)*
+*Mise à jour : 21 novembre 2026 (nouvelles conditions de livraison Forever, parrainage accueil et Suisse)*
 
 - **/a-propos/ (20/11, demande de Rafael)** : la photo du profil devient le même portrait que `/contact/` (`rafael/rafael-avenard-portrait.webp`, 256 × 256, affiché en 288 × 288 : légèrement agrandi). À remplacer par une version plus grande avec la photo prévue après le coiffeur. L'encadré auteur des articles utilise encore l'ancienne `rafael-avenard.webp`.
+
+## Lot AO du 21 novembre 2026 — conditions de livraison Forever + parrainage accueil et Suisse
+
+- **Nouvelles conditions de livraison** (capture de la boutique officielle Forever envoyée par Rafael le 21/11, bandeau « Livraison OFFERTE à partir de 50 € d'achat ») : **point relais 3,90 € sous 50 €, offert dès 50 €**, 48-72 h pour une commande avant 12 h 45, retrait sous 7 jours ; **domicile 13 €**, J+1 avant 12 h 45, pas de livraison le samedi. Remplace l'ancien barème (8 € / 4 € / offert dès 150 €).
+- Corrigé partout : `/livraison/` (meta, encadré, tableau à 2 lignes), `/commander/` (encadré, tableau, FAQ), `/code-promo-forever/` (« regroupez vos achats »), accueil (« Livraison offerte dès 50 € »), toutes les fiches produit (`[slug].astro`, sous le bouton Commander).
+- Bon argument : avec MYFOREVER (dès 50 €), la première commande cumule −15 % et livraison offerte. À exploiter dans les textes si Rafael le souhaite.
+- **Si Forever revient à l'ancien barème** (le bandeau peut être une opération temporaire) : chercher « 3,90 » et « dès 50 € » dans `src/`.
+- **Parrainage** (accord de Rafael, 21/11) : accueil, section « Vous pourriez aussi les vendre » : ligne « Déjà décidé ? Inscrivez-vous en ligne… » sous le bouton (page en mesure : ajout volontaire, title/meta/H1 inchangés). Page Suisse : 3 emplacements comme la page France (en-tête, sous les étapes, CTA final) ; Rafael confirme que le lien `join.foreverliving.fr` vaut pour la Suisse.
 
 ## Lot AN du 21 novembre 2026 — lien de parrainage distributeur
 

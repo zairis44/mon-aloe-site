@@ -23,7 +23,7 @@ const essentiel = [
   { titre: "Où acheter ?", texte: "Sur la boutique en ligne officielle Forever Living. Forever ne vend pas ses produits en magasin." },
   { titre: "Avec qui ?", texte: "Chaque client est rattaché à un distributeur. Avec mon lien, c'est moi qui vous accompagne." },
   { titre: "Première commande", texte: `Code ${OFFRE_BIENVENUE.code} : −${OFFRE_BIENVENUE.remise} dès ${OFFRE_BIENVENUE.minimum}, à la création de votre compte.` },
-  { titre: "Livraison", texte: "Point relais en 48 à 72 h (offerte dès 150 €) ou Chronopost à domicile en J+1." },
+  { titre: "Livraison", texte: "Point relais en 48 à 72 h, offerte dès 50 € d'achat, ou Chronopost à domicile en J+1." },
 ];
 
 const etapes = [
@@ -115,9 +115,8 @@ const modesCommande = [
 ];
 
 const tarifsRelais = [
-  { montant: "Moins de 50 € TTC", frais: "8,00 €" },
-  { montant: "De 50 € à 150 € TTC", frais: "4,00 €" },
-  { montant: "À partir de 150 € TTC", frais: "Offerte" },
+  { montant: "Moins de 50 € d'achat", frais: "3,90 €" },
+  { montant: "À partir de 50 € d'achat", frais: "Offerte" },
 ];
 
 const tousProduits = await getCollection('produits');
@@ -154,7 +153,7 @@ const faq = [
   },
   {
     q: "Combien coûte la livraison des produits Forever ?",
-    r: "En point relais : 8 € sous 50 €, 4 € de 50 à 150 €, offerte dès 150 € TTC, en 48 à 72 h pour une commande passée avant 12 h 45. À domicile avec Chronopost : 13 €, livraison le lendemain pour une commande passée avant 12 h 45, pas de livraison le samedi.",
+    r: "En point relais : 3,90 € sous 50 € d'achat, offerte dès 50 €, en 48 à 72 h pour une commande passée avant 12 h 45. À domicile avec Chronopost : 13 €, livraison le lendemain pour une commande passée avant 12 h 45, pas de livraison le samedi.",
   },
   {
     q: "Les prix sont-ils les mêmes que sur le site officiel Forever ?",
@@ -399,7 +398,7 @@ const schemaFAQ = {
     <div class="mx-auto max-w-4xl px-6">
       <div class="text-center mb-10">
         <h2 class="text-3xl text-cream">Combien coûte la livraison ?</h2>
-        <p class="text-aloe-200 mt-2 text-sm">Tarifs TTC pour la France métropolitaine. Les frais s'affichent sur la boutique avant le paiement.</p>
+        <p class="text-aloe-200 mt-2 text-sm">Conditions affichées par Forever pour la France métropolitaine. Les frais s'affichent sur la boutique avant le paiement.</p>
       </div>
       <div class="grid md:grid-cols-2 gap-6">
         <div class="rounded-2xl bg-aloe-700/50 p-6">

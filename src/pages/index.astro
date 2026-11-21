@@ -12,6 +12,7 @@ import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
 import BandeauOffre from '../components/BandeauOffre.astro';
 import Footer from '../components/Footer.astro';
+import { LIEN_PARRAINAGE, FOREVER_REL } from '../lib/forever';
 import { BESOINS } from '../data/besoins';
 import { getCollection } from 'astro:content';
 // ── Produits phares depuis la collection ────────────────────────────────────
@@ -141,7 +142,7 @@ const nbProduits = (await getCollection('produits')).length;
         </div>
         <ul class="flex flex-wrap gap-x-5 gap-y-2 text-xs text-aloe-600">
           <li>✓ Certifié IASC</li>
-          <li>✓ Livraison offerte dès 150 €</li>
+          <li>✓ Livraison offerte dès 50 €</li>
           <li>✓ Commande en ligne 7j/7</li>
           <li>✓ Satisfait ou remboursé 30j</li>
         </ul>
@@ -349,6 +350,9 @@ const nbProduits = (await getCollection('produits')).length;
       >
         Devenir distributeur ou revendeur Forever Living →
       </a>
+      <p class="mt-5 text-sm text-aloe-300">
+        Déjà décidé ? <a href={LIEN_PARRAINAGE} target="_blank" rel={FOREVER_REL} class="font-semibold text-cream underline underline-offset-4 hover:text-aloe-200">Inscrivez-vous en ligne comme distributeur Forever</a>, avec moi comme parrain.
+      </p>
     </div>
   </section>
   <!-- ══════════════════════════════════════════════
