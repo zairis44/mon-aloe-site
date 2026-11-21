@@ -64,7 +64,7 @@ La contrepartie est honnête : la marque ne vous garantit aucun client. En franc
 
 ## Un cadre légal précis en France
 
-La vente directe est un secteur encadré par le Code de la consommation, et le statut le plus courant pour démarrer est celui de VDI, Vendeur à Domicile Indépendant. Ce statut se cumule avec un emploi salarié, des études ou une retraite, et vos démarches déclaratives restent légères. Rien à voir avec la création d'une société qu'exige une franchise.
+La vente directe est un secteur encadré par le Code de la consommation, et le statut le plus courant pour démarrer est celui de VDI, Vendeur à Domicile Indépendant. Ce statut se cumule avec un emploi salarié, des études ou une retraite, et vos démarches déclaratives restent légères. Pour le détail des démarches, voyez [la vente à domicile et le statut VDI](/blog/vente-a-domicile-aloe-vera-vdi/). Rien à voir avec la création d'une société qu'exige une franchise.
 
 Le statut de VDI est propre à la France. Si vous habitez en Suisse, le cadre administratif change, mais Forever Living y est implanté et le parrainage à distance fonctionne : voyez [comment devenir distributeur Forever Living en Suisse](/devenir-distributeur-forever-living-suisse/).
 

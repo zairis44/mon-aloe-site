@@ -46,7 +46,7 @@ Pour toute la famille, au quotidien, y compris les peaux sensibles. Si vous cher
 
 ## Mon conseil
 
-Associez-le à l'[Aloe Body Lotion](/produits/forever-aloe-body-lotion/) après la douche : les deux forment une routine corps simple.
+Associez-le à l'[Aloe Body Lotion](/produits/forever-aloe-body-lotion/) après la douche : les deux forment une routine corps simple. Pour finir, le [déodorant Aloe Ever-Shield](/produits/forever-aloe-ever-shield-deodorant-stick/) est sans sels d'aluminium ni alcool.
 
 ## Une question avant de commander ?
 

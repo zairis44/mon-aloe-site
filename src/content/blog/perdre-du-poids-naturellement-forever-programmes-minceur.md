@@ -31,7 +31,7 @@ draft: false
 
 Chaque année, des milliers de personnes en France se tournent vers les programmes Forever Living pour se lancer dans une perte de poids. Leur intérêt tient surtout à leur cadre : ils reposent sur une approche cohérente qui combine aloe vera, compléments ciblés, protéines et structure alimentaire — et non sur un régime restrictif isolé.
 
-Ce guide compare les deux programmes principaux pour vous aider à choisir celui qui correspond à votre situation.
+Ce guide compare les deux programmes principaux pour vous aider à choisir celui qui correspond à votre situation. Tous les coffrets sont réunis dans la catégorie [programmes détox et minceur](/produits/programmes-detox/).
 
 ## L'aloe vera dans la perte de poids : son rôle réel
 
@@ -65,9 +65,11 @@ Sa durée réduite le rend plus accessible pour les personnes qui ne peuvent pas
 
 ## Comment choisir entre C9 et DX4 ?
 
-**Choisissez le C9 si** vous souhaitez un changement profond, que vous avez au moins 5 à 10 kg à perdre, ou que vous cherchez à rétablir de bonnes habitudes alimentaires sur la durée. Le C9 est aussi idéal comme point de départ d'une transformation plus longue.
+**Choisissez le C9 si** vous souhaitez un changement profond, que vous avez au moins 5 à 10 kg à perdre, ou que vous cherchez à rétablir de bonnes habitudes alimentaires sur la durée. Le C9 est aussi idéal comme point de départ d'une transformation plus longue : après les 9 jours, les programmes F15 prennent le relais sur 15 jours, en trois niveaux selon votre pratique sportive ([F15 Débutant](/produits/programme-f15-debutant-vanille/), [F15 Intermédiaire](/produits/programme-f15-intermediaire-vanille/) et [F15 Avancé](/produits/programme-f15-avance-vanille/)).
 
 **Choisissez le DX4 si** vous cherchez une détox rapide après une période d'excès, si vous avez peu de temps disponible, ou si vous souhaitez vous préparer à démarrer un C9 dans de meilleures conditions.
+
+**Hors programme**, deux compléments se prennent seuls, dans une démarche de contrôle du poids qui repose toujours sur l'alimentation et l'activité physique : [Forever Therm](/produits/forever-therm/) (thé vert, guarana et café vert, donc de la caféine) et [Forever Lean](/produits/forever-lean/) (nopal, haricot blanc et chrome, sans caféine). Aucun des deux ne fait maigrir à lui seul.
 
 ## Pour maximiser vos résultats
 

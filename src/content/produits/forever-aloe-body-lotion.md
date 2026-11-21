@@ -42,11 +42,11 @@ Le gel d'aloe vera en premier ingrédient, quatre huiles végétales (argan, joj
 
 ## Pour qui
 
-Pour celles et ceux qui veulent un lait corps du quotidien, rapide à appliquer. L'été, elle sert aussi de soin hydratant après le soleil.
+Pour celles et ceux qui veulent un lait corps du quotidien, rapide à appliquer. L'été, elle sert aussi de soin hydratant après le soleil ; pour les bons gestes quand la peau a brûlé, lisez [aloe vera et coup de soleil : comment l'utiliser](/blog/aloe-vera-coup-de-soleil/).
 
 ## Mon conseil
 
-Appliquez-la juste après la douche, quand la peau est bien sèche. Elle complète l'[Aloe Body Wash](/produits/forever-aloe-body-wash/) ; pour une zone précise, gardez plutôt l'[Aloe Gelly](/produits/aloe-gelly-forever-gel-apaisant/).
+Appliquez-la juste après la douche, quand la peau est bien sèche. Elle complète l'[Aloe Body Wash](/produits/forever-aloe-body-wash/) ; pour une zone précise, gardez plutôt l'[Aloe Gelly](/produits/aloe-gelly-forever-gel-apaisant/). En hiver, pensez aussi aux lèvres : le stick [Aloe Lèvres](/produits/forever-aloe-levres/) les hydrate et les protège du froid et du vent.
 
 ## Une question avant de commander ?
 

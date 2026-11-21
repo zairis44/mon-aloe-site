@@ -34,7 +34,7 @@ De la gelée royale lyophilisée, dans un comprimé à croquer édulcoré au sor
 
 ## Pour qui
 
-Pour les amateurs de produits de la ruche qui veulent une forme simple à prendre, en cure aux changements de saison par exemple. À éviter en cas d'allergie aux produits de la ruche.
+Pour les amateurs de produits de la ruche qui veulent une forme simple à prendre, en cure aux changements de saison par exemple. À éviter en cas d'allergie aux produits de la ruche. Dans la même famille, [Forever Bee Propolis](/produits/forever-bee-propolis/) propose la propolis en comprimés à croquer.
 
 ## Comment le prendre
 

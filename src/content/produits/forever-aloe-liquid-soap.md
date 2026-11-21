@@ -42,7 +42,7 @@ La base lavante reste douce, enrichie en gel d'aloe vera stabilisé qui respecte
 
 ## Pour qui
 
-Vous cherchez un nettoyant multi-usage pour toute la maison, doux pour les peaux sensibles et celles des enfants. Vous en avez assez des savons qui tiraillent. Ce produit vous convient, du visage au corps.
+Vous cherchez un nettoyant multi-usage pour toute la maison, doux pour les peaux sensibles et celles des enfants. Vous en avez assez des savons qui tiraillent. Ce produit vous convient, du visage au corps. Si vous préférez un pain de savon, l'[Aloe Avocado Soap](/produits/forever-aloe-avocado-face-and-body-soap/) associe l'aloe vera à l'huile d'avocat, pour le visage et le corps.
 
 ## Comment l'intégrer
 

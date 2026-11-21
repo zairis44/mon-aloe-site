@@ -40,6 +40,8 @@ Plusieurs de ces nutriments ont des rôles reconnus : les vitamines B2, B3, B5, 
 
 Pour les adultes qui veulent une base de vitamines et minéraux, par exemple en période chargée ou quand l'alimentation est moins variée. Il ne remplace pas une alimentation équilibrée.
 
+Forever le déconseille aux enfants : pour eux, à partir de 4 ans, la gamme propose [Forever Kids](/produits/forever-kids/), des comprimés à croquer. Si vous cherchez surtout du calcium et de la vitamine D, [Forever Calcium](/produits/forever-calcium/) est plus ciblé ; pour les oméga-3, voyez [Forever Arctic Sea](/produits/forever-arctic-sea/). Plusieurs nutriments se retrouvent d'un produit à l'autre : parlons-en avant de les cumuler. Les autres compléments sont dans la catégorie [nutrition](/produits/nutrition/).
+
 ## Les précautions, à lire avant de commencer
 
 Forever Daily contient du fer et de l'iode : il est déconseillé en cas d'hémochromatose, de polyglobulie ou de troubles de la thyroïde, ainsi qu'aux enfants, pendant la grossesse et l'allaitement, sous anticoagulant ou sous traitement anti-hypertenseur. Forever déconseille aussi l'usage prolongé : prévoyez des cures d'un mois.

@@ -1,5 +1,16 @@
 # Esprit Aloé — À ne pas oublier
-*Mise à jour : 21 novembre 2026 (article « Bakuchiol ou rétinol ? »)*
+*Mise à jour : 21 novembre 2026 (lot AU, maillage éditorial)*
+
+## Lot AU du 21 novembre 2026 — maillage éditorial vers les pages orphelines
+
+- **Audit** (build complet, 115 pages, script de graphe sur `dist/`) : ~7 800 liens internes, dont ~5 100 de navigation (menu, pied de page, fil d'Ariane), ~2 200 de blocs (produits associés, cartes) et ~510 dans le texte. Aucun lien cassé ni vers une redirection. **24 pages ne recevaient aucun lien dans le texte** : surtout les fiches des 20-21/11 (Lean, Move, Calcium, Kids, Scrub, Infusion, Huile capillaire…), le déodorant Ever-Shield (un des 6 produits préférés de Rafael), l'article coup de soleil et les 5 pages catégories.
+- **Semrush (21/11)** : `/produits/` en pos. 24-25 sur « forever aloe vera » (1 000/mois) et « aloe vera by forever » (480), mais tous ses liens disent « Produits » / « Toute la gamme » ; `c9-forever-avis` n'a qu'un lien dans le texte et perd « cure c9 forever avis » face à l'avis Forever (pos. 28 contre 6).
+- **Fait (accord de Rafael)** : 32 liens dans le texte, posés **uniquement depuis des pages hors mesure** (script `scripts/lot-au-maillage.py`, une assertion par remplacement) :
+  - Articles : minceur (→ catégorie Programmes détox, F15 ×3, Therm + Lean), sport (→ Move avec ses précautions, Cooling Lotion, catégorie Sport), quelle boisson (→ Mango, nouvelle section « Et l'infusion Fleur d'Aloès ? » qui précise qu'elle ne contient pas de gel, catégorie Boissons), franchise (→ article VDI).
+  - Fiches : F15 Débutant (→ Intermédiaire, Avancé), Therm (→ Lean, sans caféine), Forever Daily (→ Kids, Calcium, Arctic Sea, catégorie Nutrition, mise en garde sur les doublons), Absorbent-C (→ ImmuBlend), Royal Jelly (→ Bee Propolis), Body Wash (→ déodorant), Liquid Soap (→ savon avocat), Body Lotion (→ article coup de soleil, Aloe Lèvres), Logic Nettoyant (→ Essence Tonifiante, Scrub, Masque-Gel de Nuit, catégorie Crèmes et gels), Après-shampoing (→ Huile capillaire), ARGI+ (→ glossaire arginine).
+- **Reste à 0 lien dans le texte** : Lycium Plus (aucune source naturelle hors mesure : à lier depuis l'article immunité après le 9/12), article stress/sommeil et `/` (en mesure ; l'accueil reçoit déjà le menu).
+- **Après le 9/12 : lot AV préparé** dans `scripts/lot-av-maillage-apres-bilan.py` (liens dans les pages aujourd'hui en mesure). À lancer seulement après la lecture du bilan, puis `npm run build`.
+- **Mesure** : les pages sources ci-dessus changent au 21/11 (ajout de liens, pas de title/meta). Les pages cibles ne sont pas modifiées.
 
 - **/a-propos/ (20/11, demande de Rafael)** : la photo du profil devient le même portrait que `/contact/` (`rafael/rafael-avenard-portrait.webp`, 256 × 256, affiché en 288 × 288 : légèrement agrandi). À remplacer par une version plus grande avec la photo prévue après le coiffeur. L'encadré auteur des articles utilise encore l'ancienne `rafael-avenard.webp`.
 

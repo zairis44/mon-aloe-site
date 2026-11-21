@@ -59,6 +59,8 @@ S'hydrater avant, pendant et après l'effort reste la base, et l'eau suffit pour
 
 Course, football, tennis : les sports d'impact sollicitent les articulations. Le **[Forever Freedom](/produits/forever-freedom-confort-articulaire/)** associe le gel d'aloe vera à la glucosamine, à la chondroïtine et au MSM, des ingrédients qu'on retrouve dans de nombreux compléments destinés au confort articulaire. Il se prend en cure, sur plusieurs semaines. Une douleur qui persiste ou un gonflement relève d'un avis médical, pas d'un complément.
 
+Si vous préférez des capsules sans aloe vera, [Forever Move](/produits/forever-move/) associe la membrane de coquille d'œuf et un extrait de curcuma, 3 capsules par jour. Il contient de l'œuf, du poisson et du soja, et Forever le déconseille sous anticoagulant ; en cas de problème de foie ou de vésicule biliaire, demandez l'avis de votre médecin.
+
 ### Un coup de pouce avant la séance
 
 Le **[Forever ARGI+](/produits/forever-argi-pls/)** apporte 5 g de L-arginine par stick, ainsi que des vitamines C, B6 et B12, qui contribuent à réduire la fatigue. Il ne contient pas de caféine. Si vous cherchez un effet stimulant, le **[Forever FAB](/produits/forever-fab-active-boost/)** en contient, issue du guarana (environ 80 à 100 mg par canette) : il est réservé aux adultes qui la tolèrent, et à éviter le soir.
@@ -72,6 +74,8 @@ Le **[Forever ARGI+](/produits/forever-argi-pls/)** apporte 5 g de L-arginine pa
 **[Forever ARGI+](/produits/forever-argi-pls/)** : un stick dans 240 ml d'eau, avant la séance ou dans la journée. Déconseillé pendant la grossesse et l'allaitement, et sous anticoagulant.
 
 **[Forever Aloe MSM Gel](/produits/forever-aloe-msm-gel/)** : un gel non gras à masser sur les zones sollicitées après la séance, pour la sensation de fraîcheur. À appliquer sur une peau saine.
+
+**[Forever Aloe Cooling Lotion](/produits/forever-aloe-cooling-lotion/)** : un gel-crème à l'aloe vera, au menthol et à l'eucalyptus, pour un massage rafraîchissant après l'effort. Réservé aux adultes, déconseillé pendant la grossesse.
 
 **[Forever FAB](/produits/forever-fab-active-boost/)** : une boisson à base d'aloe vera et de guarana, pour les séances où vous voulez un effet stimulant. Elle contient de la caféine : réservée aux adultes, pas plus de 2 à 3 canettes par jour.
 
@@ -89,6 +93,8 @@ Le **[Forever ARGI+](/produits/forever-argi-pls/)** apporte 5 g de L-arginine pa
 - Aucune étude solide ne démontre à ce jour un effet de l'aloe vera sur la récupération musculaire : choisissez-le pour la routine qu'il facilite, pas pour une promesse.
 - Choisissez selon votre besoin : la pulpe au quotidien, Freedom pour le confort articulaire, ARGI+ ou FAB avant l'effort, l'Aloe MSM Gel en massage.
 - Grossesse, allaitement, traitement en cours, problème cardiaque : demandez l'avis de votre médecin avant de commencer, en particulier pour ARGI+ et FAB.
+
+Toute la gamme pour les sportifs est réunie dans la catégorie [sport et fitness](/produits/sport-et-fitness/).
 
 Vous hésitez entre deux produits ? [Écrivez-moi ou appelez-moi](/contact/) : je vous aide à choisir selon votre sport et votre rythme d'entraînement.
 

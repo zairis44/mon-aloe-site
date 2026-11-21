@@ -41,7 +41,7 @@ La formule réunit le thé vert, qui contribue au contrôle du poids et soutient
 
 ## Pour qui
 
-Vous êtes un adulte en bonne santé, engagé dans une démarche de contrôle du poids avec une alimentation équilibrée et de l'activité physique, et vous tolérez bien la caféine. Il est souvent utilisé en complément du [Programme C9](/produits/programme-c9-forever-vanille-peche/) ou des programmes F15.
+Vous êtes un adulte en bonne santé, engagé dans une démarche de contrôle du poids avec une alimentation équilibrée et de l'activité physique, et vous tolérez bien la caféine. Si la caféine ne vous convient pas, regardez [Forever Lean](/produits/forever-lean/), une formule sans caféine à base de nopal, de haricot blanc et de chrome. Il est souvent utilisé en complément du [Programme C9](/produits/programme-c9-forever-vanille-peche/) ou des programmes F15.
 
 ## Comment l'utiliser
 

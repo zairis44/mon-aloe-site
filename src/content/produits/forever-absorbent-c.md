@@ -42,7 +42,7 @@ Pour les adultes qui mangent peu de fruits et légumes frais, ou qui préfèrent
 
 ## Comment le prendre
 
-Un comprimé à croquer par jour, le matin. Si vous prenez déjà Forever Daily, parlons-en avant de cumuler les deux.
+Un comprimé à croquer par jour, le matin. Si vous prenez déjà Forever Daily, parlons-en avant de cumuler les deux. Pour une formule qui associe la vitamine C à la vitamine D3 et au zinc, regardez [Forever ImmuBlend](/produits/forever-immublend/) : là aussi, évitez de la cumuler sans en parler.
 
 ## Une question avant de commander ?
 

@@ -52,7 +52,7 @@ Le coffret réunit les mêmes familles de produits que le C9 — pulpe d'aloe ve
 
 ## Pour qui est ce niveau
 
-Le niveau Débutant s'adresse à vous si vous reprenez une activité physique après une pause, si vous n'avez pas de repères nutritionnels précis, ou si le C9 était votre première expérience de cadre alimentaire structuré. Rien n'est présupposé : les séances commencent doux et progressent à votre rythme.
+Le niveau Débutant s'adresse à vous si vous reprenez une activité physique après une pause, si vous n'avez pas de repères nutritionnels précis, ou si le C9 était votre première expérience de cadre alimentaire structuré. Rien n'est présupposé : les séances commencent doux et progressent à votre rythme. Si vous vous entraînez déjà régulièrement, regardez plutôt le [F15 Intermédiaire](/produits/programme-f15-intermediaire-vanille/) ; si vous êtes un pratiquant confirmé, le [F15 Avancé](/produits/programme-f15-avance-vanille/).
 
 ## Ce qu'il faut comprendre avant de commander
 

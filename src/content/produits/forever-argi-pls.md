@@ -37,7 +37,7 @@ Vous cherchez une boisson simple à emporter les jours d'entraînement ? Forever
 
 ## La L-arginine et les vitamines au cœur de la formule
 
-La L-arginine est un acide aminé. ARGI+ l'associe à des vitamines C, D, B6, B12 et K et à des extraits de fruits (grenade, raisin, baies). Les vitamines B6, B12 et C contribuent à réduire la fatigue ; la vitamine D contribue au maintien d'une fonction musculaire normale ; la vitamine C contribue à la formation normale de collagène pour assurer la fonction normale des vaisseaux sanguins.
+La [L-arginine](/glossaire/arginine/) est un acide aminé. ARGI+ l'associe à des vitamines C, D, B6, B12 et K et à des extraits de fruits (grenade, raisin, baies). Les vitamines B6, B12 et C contribuent à réduire la fatigue ; la vitamine D contribue au maintien d'une fonction musculaire normale ; la vitamine C contribue à la formation normale de collagène pour assurer la fonction normale des vaisseaux sanguins.
 
 ## Pour qui
 

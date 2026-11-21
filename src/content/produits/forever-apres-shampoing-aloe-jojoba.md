@@ -46,7 +46,7 @@ Pour les cheveux longs, secs ou qui s'emmêlent, et pour celles et ceux qui util
 
 ## Mon conseil
 
-Laissez-le vraiment poser 2 à 3 minutes avant de rincer : c'est ce temps de pose qui fait la différence au démêlage. Pour aller plus loin, lisez notre article sur [l'aloe vera pour les cheveux](/blog/aloe-vera-cheveux-cuir-chevelu-bienfaits/).
+Laissez-le vraiment poser 2 à 3 minutes avant de rincer : c'est ce temps de pose qui fait la différence au démêlage. Sur les pointes sèches ou la barbe, terminez par quelques gouttes d'[Huile Capillaire Nourrissante](/produits/forever-huile-capillaire-nourrissante/), une huile sèche sans rinçage. Pour aller plus loin, lisez notre article sur [l'aloe vera pour les cheveux](/blog/aloe-vera-cheveux-cuir-chevelu-bienfaits/).
 
 ## Une question avant de commander ?
 
