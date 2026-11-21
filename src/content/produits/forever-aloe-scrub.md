@@ -3,7 +3,7 @@ name: "Forever Aloe Scrub : gommage doux visage à l'aloe vera"
 reference: "238"
 slug: "forever-aloe-scrub"
 price: 26.32
-image: ""
+image: "/images/produits/forever-aloe-scrub.webp"
 images: []
 category: "cremes-et-gels"
 description: "Le gommage visage de Forever : une crème avec 31,7 % de gel d'aloe vera et des microbilles de cire de jojoba, qui exfolient en douceur sans grains abrasifs. Pour le visage, le cou et le décolleté, 1 à 2 fois par semaine. Tube de 99 g. Réf. 238."

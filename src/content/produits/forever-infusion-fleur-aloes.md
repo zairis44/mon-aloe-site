@@ -4,7 +4,7 @@ reference: "200"
 slug: "forever-infusion-fleur-aloes"
 price: 26.78
 coutJour: "environ 1,07 € le litre (1 sachet par litre)"
-image: ""
+image: "/images/produits/forever-infusion-fleur-aloes.webp"
 images: []
 category: "boissons-aloe-vera"
 description: "La tisane de Forever : fleurs d'aloès séchées, cannelle, écorce d'orange, clou de girofle, gingembre, cardamome, fenouil et camomille. Sans thé, donc sans théine. Un sachet pour environ un litre d'eau, à boire chaud ou froid. Boîte de 25 sachets. Réf. 200."
