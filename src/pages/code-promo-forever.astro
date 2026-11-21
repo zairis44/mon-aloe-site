@@ -9,9 +9,12 @@
 import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
-import { OFFRE_EN_COURS, OFFRE_BIENVENUE, LIEN_BOUTIQUE } from '../data/offres';
+import { OFFRE_EN_COURS, OFFRE_PERMANENTE, OFFRE_BIENVENUE, LIEN_BOUTIQUE } from '../data/offres';
 
-const offre = OFFRE_EN_COURS;
+/** Offre datée éventuelle (null depuis le 21/11/2026 : MYFOREVER seul). */
+const active = OFFRE_EN_COURS;
+/** Code mis en avant dans le mode d'emploi et la FAQ. */
+const offre = active ?? OFFRE_PERMANENTE;
 const bienvenue = OFFRE_BIENVENUE;
 
 const etapes = [
@@ -26,10 +29,10 @@ const faq = [
     q: "Existe-t-il une réduction Forever toute l'année ?",
     r: `Oui : le code ${bienvenue.code}. Les ${bienvenue.public} ont −${bienvenue.remise} sur ${bienvenue.portee} dès ${bienvenue.minimum} d'achat, en saisissant ce code lors de leur inscription sur la boutique Forever. Il est valable toute l'année et n'est pas cumulable avec une promotion ponctuelle.`,
   },
-  {
-    q: `Jusqu'à quand le code ${offre.code} est-il valable ?`,
-    r: `Jusqu'au ${offre.finTexte} inclus. Après cette date, il ne fonctionne plus.`,
-  },
+  ...(active ? [{
+    q: `Jusqu'à quand le code ${active.code} est-il valable ?`,
+    r: `Jusqu'au ${active.finTexte} inclus. Après cette date, il ne fonctionne plus.`,
+  }] : []),
   {
     q: `Le code ${offre.code} fonctionne-t-il si j'ai déjà un compte Forever ?`,
     r: `Non. Il est réservé aux ${offre.public}. Si vous êtes déjà client, contactez-moi : je vous indique les offres auxquelles vous avez droit.`,
@@ -94,7 +97,8 @@ const schemaFAQ = {
   <!-- OFFRE EN COURS -->
   <section class="bg-cream py-14">
     <div class="mx-auto max-w-4xl px-6">
-      <div id="offre-active" data-debut={offre.debut} data-fin={offre.fin}
+      {active && (
+      <div id="offre-active" data-debut={active.debut} data-fin={active.fin}
            class="rounded-3xl bg-[#141414] text-white p-8 md:p-10 text-center">
         <span class="inline-block rounded-full bg-[#d4a64a] text-[#141414] text-xs font-semibold uppercase tracking-widest px-4 py-1.5 mb-5">
           {offre.nom}
@@ -118,9 +122,10 @@ const schemaFAQ = {
         </div>
         <p class="text-xs text-[#a3a3a3] mt-6 max-w-xl mx-auto">{offre.conditions}</p>
       </div>
+      )}
 
       <!-- Offre de bienvenue permanente : affichée quand aucune promotion datée n'est en cours -->
-      <div id="offre-terminee" hidden class="rounded-3xl bg-[#141414] text-white p-8 md:p-10 text-center">
+      <div id="offre-terminee" hidden={!!active} class="rounded-3xl bg-[#141414] text-white p-8 md:p-10 text-center">
         <span class="inline-block rounded-full bg-[#d4a64a] text-[#141414] text-xs font-semibold uppercase tracking-widest px-4 py-1.5 mb-5">
           Offre de bienvenue, toute l'année
         </span>

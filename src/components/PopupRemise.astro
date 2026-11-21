@@ -11,7 +11,7 @@
  * Avec `secours`, le popup (offre de bienvenue permanente) ne s'affiche que si
  * aucune offre datée n'est active.
  */
-import { OFFRE_EN_COURS, LIEN_BOUTIQUE, type Offre } from '../data/offres';
+import { OFFRE_EN_COURS, OFFRE_PERMANENTE, LIEN_BOUTIQUE, type Offre } from '../data/offres';
 
 export interface Props {
   ctaLabel?: string;
@@ -19,7 +19,7 @@ export interface Props {
   secours?: boolean;
 }
 
-const { ctaLabel = "Profiter de l'offre", offre = OFFRE_EN_COURS, secours = false } = Astro.props;
+const { ctaLabel = "Profiter de l'offre", offre = OFFRE_EN_COURS ?? OFFRE_PERMANENTE, secours = false } = Astro.props;
 const id = `popup-remise-${offre.code.toLowerCase()}`;
 const { code, remise, minimum, conditions, theme, debut, fin, finTexte } = offre;
 const estBlackFriday = theme === 'blackfriday';

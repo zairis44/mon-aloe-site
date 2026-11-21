@@ -30,19 +30,16 @@ export interface Offre {
   theme: 'standard' | 'blackfriday';
 }
 
-export const OFFRE_EN_COURS: Offre = {
-  nom: 'Black Friday',
-  code: 'BLACKFRIDAY',
-  remise: '15 %',
-  minimum: '50 €',
-  public: 'nouveaux clients de la boutique Forever',
-  debut: '2026-11-13T00:00:00+01:00',
-  fin: '2026-11-30T23:59:59+01:00',
-  finTexte: 'dimanche 30 novembre 2026',
-  conditions:
-    "Offre réservée aux nouveaux clients de la boutique Forever, valable jusqu'au dimanche 30 novembre 2026 inclus, dès 50 € d'achat. Non cumulable avec une autre offre.",
-  theme: 'blackfriday',
-};
+/**
+ * Offre datée en cours, ou null s'il n'y en a pas.
+ * Décision de Rafael (21/11/2026) : seul le code de bienvenue MYFOREVER est affiché sur le site.
+ * Le code BLACKFRIDAY (13 → 30/11/2026) a été retiré. Modèle pour une future offre datée :
+ *   { nom: 'Black Friday', code: 'BLACKFRIDAY', remise: '15 %', minimum: '50 €',
+ *     public: 'nouveaux clients de la boutique Forever', debut: '2026-11-13T00:00:00+01:00',
+ *     fin: '2026-11-30T23:59:59+01:00', finTexte: 'dimanche 30 novembre 2026',
+ *     conditions: '…', theme: 'blackfriday' }
+ */
+export const OFFRE_EN_COURS: Offre | null = null;
 
 /**
  * Offre de bienvenue permanente (confirmée par Rafael le 20/11/2026) :

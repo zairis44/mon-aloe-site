@@ -15,7 +15,7 @@ import '@fontsource/mulish/700.css';
 import frauncesTitres from '@fontsource/fraunces/files/fraunces-latin-500-normal.woff2?url';
 import mulishTexte from '@fontsource/mulish/files/mulish-latin-400-normal.woff2?url';
 import PopupRemise from '../components/PopupRemise.astro';
-import { OFFRE_PERMANENTE } from '../data/offres';
+import { OFFRE_PERMANENTE, OFFRE_EN_COURS } from '../data/offres';
 import AnalyticsConsent from '../components/AnalyticsConsent.astro';
 import MesureUmami from '../components/MesureUmami.astro';
 
@@ -135,7 +135,7 @@ const schemaGraph = {
     <slot />
 
     <!-- Popup promo -15% -->
-    <PopupRemise />
+    {OFFRE_EN_COURS && <PopupRemise />}
     <PopupRemise offre={OFFRE_PERMANENTE} secours />
 
     <AnalyticsConsent />

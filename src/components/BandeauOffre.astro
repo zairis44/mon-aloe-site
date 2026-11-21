@@ -9,11 +9,11 @@
  * - Dans le navigateur : le choix est refait selon la date du jour,
  *   sans rebuild le jour de la fin d'une offre.
  */
-import { OFFRE_EN_COURS, OFFRE_PERMANENTE } from '../data/offres';
+import { OFFRE_EN_COURS, OFFRE_PERMANENTE, type Offre } from '../data/offres';
 
 const maintenant = Date.now();
 const actif = (o: { debut: string; fin: string }) => maintenant >= Date.parse(o.debut) && maintenant <= Date.parse(o.fin);
-const offres = [OFFRE_EN_COURS, OFFRE_PERMANENTE].filter((o) => maintenant <= Date.parse(o.fin));
+const offres = [OFFRE_EN_COURS, OFFRE_PERMANENTE].filter((o): o is Offre => o !== null && maintenant <= Date.parse(o.fin));
 const indexVisible = offres.findIndex(actif);
 ---
 

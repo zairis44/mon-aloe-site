@@ -1,5 +1,5 @@
 # Esprit Aloé — À ne pas oublier
-*Mise à jour : 21 novembre 2026 (pas-à-pas illustré de /commander/)*
+*Mise à jour : 21 novembre 2026 (MYFOREVER seul, captures anonymisées)*
 
 - **/a-propos/ (20/11, demande de Rafael)** : la photo du profil devient le même portrait que `/contact/` (`rafael/rafael-avenard-portrait.webp`, 256 × 256, affiché en 288 × 288 : légèrement agrandi). À remplacer par une version plus grande avec la photo prévue après le coiffeur. L'encadré auteur des articles utilise encore l'ancienne `rafael-avenard.webp`.
 
@@ -8,7 +8,8 @@
 - **Captures fournies par Rafael** (21/11, parcours réel sur la boutique Forever avec l'Aloe Mango) : 7 étapes, recadrées, converties en WebP (q80, 1 000 px max) dans `public/images/commander/`. **Floutés** : prénom, nom, e-mail, mot de passe, adresse (étape 4), code postal, ville, téléphone (étape 5). Gardé visible : le numéro de conseiller 330001628607 (étape 5). Étape 1 : ligne « Livraison offerte dès 150 € » (ancien barème) masquée sur la capture. Étape 6 : capture coupée au-dessus des codes proposés par Forever.
 - **Le vrai parcours diffère de l'ancien pas-à-pas** : le compte se crée **après** le panier, le code promo se saisit **à l'étape livraison**. `/commander/` passe de 5 étapes texte à 7 étapes illustrées (texte à gauche, capture à droite) : fiche « Commander sur Forever » → ajouter au panier → étape suivante → créer le compte → vérifier le conseiller 330001628607 et valider → livraison + code promo → paiement. HowTo avec une image par étape.
 - **Paiement vérifié** (capture) : carte uniquement, CB, Visa, Visa Electron, Mastercard, Maestro, e-Carte Bleue, via Systempay (Banque Populaire). Nouvelle question FAQ (10 questions).
-- **À confirmer par Rafael** : la boutique propose sous le champ code promo les codes **BLACKFRIDAY** et **BIENVENUE15**, pas MYFOREVER. Le site annonce MYFOREVER partout (`src/data/offres.ts`) : vérifier lequel est le bon code de bienvenue.
+- **Code promo (décision de Rafael, 21/11)** : on garde **uniquement MYFOREVER** sur le site. Le code BLACKFRIDAY est retiré (popup, bandeau, page code promo) : `OFFRE_EN_COURS = null` dans `src/data/offres.ts` (modèle d'offre datée gardé en commentaire) ; Layout, BandeauOffre, PopupRemise et `/code-promo-forever/` gèrent l'absence d'offre datée. BIENVENUE15 (proposé par la boutique Forever) n'est cité nulle part.
+- **Captures anonymisées** (demande de Rafael, 21/11) : sur les étapes 4 et 5, les champs personnels (dont le mot de passe) sont maintenant vidés (aplat de la couleur du champ) au lieu d'être floutés ; les captures originales ont été supprimées de l'espace de travail.
 
 ## Lot AO du 21 novembre 2026 — conditions de livraison Forever + parrainage accueil et Suisse
 
