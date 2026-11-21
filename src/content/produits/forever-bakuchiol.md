@@ -46,6 +46,9 @@ Le bakuchiol est extrait principalement des graines de *Psoralea corylifolia*, u
 
 ## Ce que dit la recherche
 
+Pour le comparatif complet, lisez mon article [bakuchiol ou rétinol : lequel choisir ?](/blog/bakuchiol-ou-retinol/)
+
+
 L'étude de référence a été publiée en 2019 dans le *British Journal of Dermatology*. Pendant 12 semaines, 44 volontaires ont appliqué soit une crème à 0,5 % de bakuchiol deux fois par jour, soit une crème à 0,5 % de rétinol une fois par jour. Les deux groupes ont vu leurs rides et leurs taches diminuer, sans différence significative entre les deux actifs. Le groupe rétinol a signalé davantage de desquamation et de picotements.
 
 Deux limites à garder en tête : l'étude est petite, et elle a testé une crème de laboratoire, pas le sérum Forever. Elle montre que le bakuchiol est une piste sérieuse, pas que ce flacon effacera vos rides.

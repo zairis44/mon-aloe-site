@@ -1,7 +1,16 @@
 # Esprit Aloé — À ne pas oublier
-*Mise à jour : 21 novembre 2026 (fiches Infusion Fleur d'Aloès et Aloe Scrub)*
+*Mise à jour : 21 novembre 2026 (article « Bakuchiol ou rétinol ? »)*
 
 - **/a-propos/ (20/11, demande de Rafael)** : la photo du profil devient le même portrait que `/contact/` (`rafael/rafael-avenard-portrait.webp`, 256 × 256, affiché en 288 × 288 : légèrement agrandi). À remplacer par une version plus grande avec la photo prévue après le coiffeur. L'encadré auteur des articles utilise encore l'ancienne `rafael-avenard.webp`.
+
+## Lot AT du 21 novembre 2026 — article « Bakuchiol ou rétinol ? »
+
+- **Cibles** (Semrush France, 21/11) : « bakuchiol » 4 400/mois (KD 20, SERP tenue par Aroma-Zone, Nivea, Typology, Paula's Choice, État Pur), longue traîne « bakuchiol avis » 260, « bakuchiol ou rétinol » 140, « bakuchiol bienfaits » 140, « bakuchiol c'est quoi » 110, « rétinol végétal » 70, « bakuchiol grossesse » 40, « bakuchiol et vitamine c » 30.
+- **`/blog/bakuchiol-ou-retinol/`** (catégorie beauté) : réponse directe en tête, tableau comparatif, étude Dhaliwal 2019 (BJD, 44 volontaires) avec ses limites, bienfaits prudents, **règlement (UE) 2024/996** (depuis le 1/11/2025 : 0,3 % d'équivalent rétinol visage, 0,05 % laits corps, mention d'étiquetage ; retrait des non-conformes au 1/5/2027), grossesse (ANSM 2018 : rétinoïdes cutanés **médicaments** contre-indiqués ; bakuchiol non étudié → avis médical), mode d'emploi, 3 critères de choix (INCI « Bakuchiol » plutôt qu'huile de *Psoralea* brute qui contient des psoralènes photosensibilisants, concentration, rétinoïde/parfum), regard de distributeur sur Forever Bakuchiol **avec l'intérêt déclaré et le rétinoïde signalé**. FAQ 6 questions (FAQPage). Sources listées en fin d'article.
+- Maillage : article ajouté en tête des guides de la catégorie crèmes et gels (`maillage.ts`), lien depuis la fiche Forever Bakuchiol, `public/llms.txt`. 114 → 115 pages.
+- **Image : à choisir par Rafael** (1200 × 600 ; aucune image pour l'instant).
+- **Après le 9/12** : liens depuis l'article `aloe-vera-visage` et `aloe-vera-peau-beaute-bienfaits-forever` (en mesure).
+- **Mesure : démarre le 21/11.**
 
 ## Lot AS du 21 novembre 2026 — fiches Infusion Fleur d'Aloès et Aloe Scrub
 

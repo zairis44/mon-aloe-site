@@ -315,6 +315,7 @@ export const GUIDES_CATEGORIE: Record<string, string[]> = {
   ],
   'cremes-et-gels': [
     'gel-aloe-vera-bienfaits-utilisation',
+    'bakuchiol-ou-retinol',
     'creme-aloe-vera-laquelle-choisir',
     'aloe-vera-visage',
     'aloe-vera-coup-de-soleil',
