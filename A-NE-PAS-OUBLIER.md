@@ -1,7 +1,15 @@
 # Esprit Aloé — À ne pas oublier
-*Mise à jour : 21 novembre 2026 (fiches Huile Capillaire et Masque-Gel de Nuit)*
+*Mise à jour : 21 novembre 2026 (fiches Infusion Fleur d'Aloès et Aloe Scrub)*
 
 - **/a-propos/ (20/11, demande de Rafael)** : la photo du profil devient le même portrait que `/contact/` (`rafael/rafael-avenard-portrait.webp`, 256 × 256, affiché en 288 × 288 : légèrement agrandi). À remplacer par une version plus grande avec la photo prévue après le coiffeur. L'encadré auteur des articles utilise encore l'ancienne `rafael-avenard.webp`.
+
+## Lot AS du 21 novembre 2026 — fiches Infusion Fleur d'Aloès et Aloe Scrub
+
+- **`/produits/forever-infusion-fleur-aloes/`** (réf. 200, 26,78 €, 25 sachets, catégorie boissons) : seoTitle « Tisane aloe vera Forever : infusion Aloe Blossom sans théine » (cibles « aloe blossom herbal tea » 90 + « tisane aloe vera » 70 + 20/mois). **Précisé honnêtement : fleurs d'aloès séchées, pas de gel d'aloe vera** → renvoi vers la pulpe. Sans théine (aucun thé dans la liste). Allégations Forever **non reprises** : « bien-être digestif grâce à la cannelle », « réhydrate », « action détoxifiante, 2 litres à jeun ». Précautions : dose de l'emballage, cannelle cassia + gymnéma → avis médical si traitement du diabète, grossesse, allaitement. Temps d'infusion non donné par Forever : « quelques minutes selon votre goût ». Coût ~1,07 €/litre.
+- **`/produits/forever-aloe-scrub/`** (réf. 238, 26,32 €, 99 g) : seoTitle « Aloe Scrub Forever : gommage visage doux à l'aloe vera » (cibles « aloe scrub » ~60 + « gommage aloe vera » 30/mois). 31,7 % d'aloe vera, microbilles de cire de jojoba, 1-2 fois/semaine. Signalés : parfum, parabènes, diazolidinyl urea, soja. Allégations Forever atténuées : « active le renouvellement cellulaire », « assainit les peaux à problèmes », « régularise le sébum » (le gommage ne traite pas l'acné).
+- Maillage (`maillage.ts`) : Infusion ↔ pulpe nature / pêche / Berry Nectar ; Scrub ↔ Logic nettoyant / Masque-Gel de Nuit / Crème Aloès. 112 → 114 pages.
+- **Images : à choisir par Rafael** (`image: ""` ; visuels officiels : `…/storage/products/images/200.webp` et `238.webp`).
+- **Mesure : démarre le 21/11.**
 
 ## Lot AR du 21 novembre 2026 — fiches Huile Capillaire Nourrissante et Masque-Gel de Nuit
 

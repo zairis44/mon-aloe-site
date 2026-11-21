@@ -217,6 +217,16 @@ export const ASSOCIATIONS: Record<string, Association[]> = {
     ['forever-logic-aloe-gel-nettoyant', 'Le nettoyant à utiliser avant le sérum'],
     ['forever-aloe-moisturizing-lotion', 'Une crème hydratante à appliquer ensuite'],
   ],
+  'forever-infusion-fleur-aloes': [
+    ['forever-pulpe-daloe-vera', 'La boisson au gel d’aloe vera, nature'],
+    ['forever-aloe-vera-peche-bien-etre', 'La pulpe d’aloe vera, version pêche'],
+    ['forever-aloe-berry-nectar', 'Une autre boisson fruitée de la gamme'],
+  ],
+  'forever-aloe-scrub': [
+    ['forever-logic-aloe-gel-nettoyant', 'Le nettoyant du quotidien, à utiliser les autres jours'],
+    ['forever-masque-gel-de-nuit', 'Le masque de nuit à appliquer le soir du gommage'],
+    ['forever-aloe-moisturizing-lotion', 'Une crème hydratante à appliquer après le gommage'],
+  ],
   'forever-huile-capillaire-nourrissante': [
     ['forever-shampoing-aloe-jojoba', 'Le shampoing doux à utiliser avant l’huile'],
     ['forever-apres-shampoing-aloe-jojoba', 'L’après-shampoing pour démêler les longueurs'],
@@ -257,6 +267,8 @@ export const LIBELLES: Record<string, string> = {
   'forever-argi-pls': 'Forever Argi+',
   'forever-calcium': 'Forever Calcium',
   'forever-kids': 'Forever Kids',
+  'forever-infusion-fleur-aloes': 'Infusion Fleur d’Aloès',
+  'forever-aloe-scrub': 'Aloe Scrub',
   'forever-huile-capillaire-nourrissante': 'Huile Capillaire Nourrissante',
   'forever-masque-gel-de-nuit': 'Masque-Gel de Nuit',
   'forever-vitamin-c': 'Sérum Forever Vitamin C',
