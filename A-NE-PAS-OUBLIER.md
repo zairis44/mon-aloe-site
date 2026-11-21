@@ -1,5 +1,12 @@
 # Esprit Aloé — À ne pas oublier
-*Mise à jour : 21 novembre 2026 (lot AU, maillage éditorial)*
+*Mise à jour : 21 novembre 2026 (lot AW, page blog par thèmes)*
+
+## Lot AW du 21 novembre 2026 — page /blog/ organisée par thèmes (demande de Rafael)
+
+- **Avant** : les 26 articles à la suite par date, avec des étiquettes de catégorie incohérentes (« beaute », « sport » affichés bruts ; « Guides » = 11 articles sans rapport).
+- **Maintenant** (choix de Rafael) : journal C9 → encadré « Aloe vera à boire : est-ce dangereux ? » (gardé) → carrousel « À lire en premier » (3 visibles, flèches, défilement tactile, 6 articles choisis selon le trafic : avis Forever, avis C9, guide C9, quelle boisson, crème aloe vera, comment boire) → sommaire en pastilles → **6 sections** : Boire l'aloe vera (5), Programmes C9 et minceur (3), Beauté et soins (7), Bien-être et vie active (5, le sport y est rangé), Avis et confiance (3), Devenir distributeur (3).
+- **Source unique** : `src/data/blog-sections.ts` (carrousel + sections, ordre d'affichage). Le champ `category` des articles **n'est pas modifié** (aucune page en mesure touchée). **Un nouvel article doit être ajouté à une section**, sinon `npm run build` échoue avec son slug.
+- Composant `src/components/CarteArticle.astro` (titre en h3, image décorative, date). Carrousel en CSS scroll-snap + quelques lignes de JS sans framework, respecte « réduire les animations ». Vérifié en capture desktop et mobile.
 
 ## Lot AU du 21 novembre 2026 — maillage éditorial vers les pages orphelines
 

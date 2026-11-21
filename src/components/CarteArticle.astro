@@ -1,0 +1,44 @@
+---
+/**
+ * Carte d'article du blog (page /blog/ : carrousel et sections).
+ * Le titre est un <h3> : les sections portent les <h2>.
+ */
+interface Props {
+  slug: string;
+  titre: string;
+  description: string;
+  image?: string;
+  imageAlt?: string;
+  date: Date;
+}
+const { slug, titre, description, image, imageAlt, date } = Astro.props;
+const href = `/blog/${slug}/`;
+---
+
+<article class="group rounded-3xl bg-white border border-aloe-100 overflow-hidden hover:shadow-xl hover:shadow-aloe-900/10 transition-all flex flex-col h-full">
+  {image && (
+    <a href={href} class="block overflow-hidden aspect-[2/1]" tabindex="-1" aria-hidden="true">
+      <img
+        src={image}
+        alt=""
+        width="400"
+        height="200"
+        loading="lazy"
+        decoding="async"
+        class="w-full h-full object-cover motion-safe:group-hover:scale-105 transition-transform duration-500"
+      />
+    </a>
+  )}
+  <div class="p-6 flex flex-col flex-1">
+    <time datetime={date.toISOString()} class="text-xs text-aloe-400 mb-2">
+      {date.toLocaleDateString('fr-FR', { day: 'numeric', month: 'short', year: 'numeric' })}
+    </time>
+    <h3 class="text-lg text-aloe-800 mb-2 leading-snug">
+      <a href={href} class="hover:text-aloe-600 transition-colors">{titre}</a>
+    </h3>
+    <p class="text-sm text-aloe-600 leading-relaxed mb-4 line-clamp-3">{description}</p>
+    <a href={href} class="mt-auto text-sm font-semibold text-aloe-500 hover:text-aloe-700 transition-colors" aria-label={`Lire l'article : ${titre}`}>
+      Lire l'article →
+    </a>
+  </div>
+</article>

@@ -15,7 +15,7 @@ Tu es le responsable SEO & contenu d'espritaloe.fr (Astro, distribution Forever 
 ⚠️ **Ne jamais modifier une page signalée comme "gelée" / en fenêtre de mesure** dans `A-NE-PAS-OUBLIER.md`. Une modification pendant la mesure détruit la mesure. Si le travail demandé touche une page gelée, le dire et proposer d'attendre la date de verdict.
 
 ## Collections
-- `blog/` — articles de fond. Frontmatter : `title`, `description`, `pubDate`, `category`, `tags`, `image`+`imageAlt`, `seoTitle` (si différent du H1), `faq`, `produitsLies`, `articlesLies`, `draft`.
+- `blog/` — articles de fond. Frontmatter : `title`, `description`, `pubDate`, `category`, `tags`, `image`+`imageAlt`, `seoTitle` (si différent du H1), `faq`, `produitsLies`, `articlesLies`, `draft`. **Tout nouvel article doit être ajouté à une section de `src/data/blog-sections.ts`** (page /blog/ par thèmes), sinon le build échoue.
 - `journal/` — journal de cure jour par jour (schéma riche : `jours[]`, `synthese`, `mesurationsDepart`). Contenu vécu à la première personne, jamais inventé : si une donnée (poids, ressenti, photo) manque, la demander à Rafael.
 - `recettes/` — recettes C9 (`categorie`: repas | shaker | boisson).
 - `produits/` — géré par l'agent `fiches-produits`.
