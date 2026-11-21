@@ -1,7 +1,15 @@
 # Esprit Aloé — À ne pas oublier
-*Mise à jour : 20 novembre 2026 (lot AM : groupe « Acheter Forever en France »)*
+*Mise à jour : 21 novembre 2026 (lien de parrainage distributeur)*
 
 - **/a-propos/ (20/11, demande de Rafael)** : la photo du profil devient le même portrait que `/contact/` (`rafael/rafael-avenard-portrait.webp`, 256 × 256, affiché en 288 × 288 : légèrement agrandi). À remplacer par une version plus grande avec la photo prévue après le coiffeur. L'encadré auteur des articles utilise encore l'ancienne `rafael-avenard.webp`.
+
+## Lot AN du 21 novembre 2026 — lien de parrainage distributeur
+
+- **Lien d'inscription distributeur** donné par Rafael (21/11) : `https://join.foreverliving.fr/ref/330001628607`. Il n'apparaissait nulle part sur le site (seul le lien boutique client `foreverliving.fr/ref/…` était utilisé). Constante partagée `LIEN_PARRAINAGE` dans `src/lib/forever.ts` (avec `LIEN_BOUTIQUE`), `rel="sponsored noopener noreferrer"`.
+- **`/devenir-distributeur-forever-living/`** : 3 emplacements. En-tête : bouton « M'inscrire comme distributeur » (remplace « Voir les étapes », gardé en lien texte dessous). Section « Démarrer en 4 étapes » : « Déjà décidé ? Inscris-toi en ligne… » sous le bouton d'appel (l'appel reste l'action principale : Rafael préfère en parler avant). CTA final : 3e bouton « M'inscrire en ligne ».
+- **Pied de page** (toutes les pages, donc aussi l'accueil) : lien « Devenir distributeur Forever avec moi : inscription en ligne ↗ » sous le téléphone.
+- **Suivi** : le domaine `join.foreverliving.fr` est déjà compté par GA4 (`click_lien_forever`) et Umami (`clic-boutique`) ; filtrer sur le lien `join.foreverliving.fr` pour isoler les clics d'inscription.
+- **Pas fait** : bloc distributeur du corps de l'accueil (page en mesure jusqu'au 9/12, décision de Rafael attendue) ; page Suisse (lien valable pour la Suisse ? à confirmer par Rafael) ; article pyramidal (en mesure : le point ouvert « lien d'inscription distinct du lien boutique » est maintenant résolu, à intégrer après le bilan).
 
 ## Lot AM du 20 novembre 2026 (soir) — groupe « Acheter Forever en France » (plan validé par Rafael)
 

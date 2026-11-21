@@ -5,6 +5,7 @@
  * Schema.org : FAQPage + WebPage
  */
 import Layout from '../layouts/Layout.astro';
+import { LIEN_PARRAINAGE, FOREVER_REL } from '../lib/forever';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 
@@ -188,11 +189,15 @@ const schemaWebPage = {
               class="rounded-full bg-aloe-500 hover:bg-aloe-400 px-7 py-3.5 text-sm font-semibold text-cream transition-colors">
               📞 En parler avec Rafael
             </a>
-            <a href="#etapes"
+            <a href={LIEN_PARRAINAGE} target="_blank" rel={FOREVER_REL}
               class="rounded-full border border-aloe-600 hover:border-aloe-400 px-7 py-3.5 text-sm font-semibold text-aloe-200 hover:text-cream transition-colors">
-              Voir les étapes →
+              ✍️ M'inscrire comme distributeur
             </a>
           </div>
+          <p class="text-xs text-aloe-400 mt-4">
+            L'inscription se fait sur le site officiel Forever, avec moi comme parrain.
+            Pas encore décidé ? <a href="#etapes" class="underline hover:text-cream">Voir les étapes</a> ou appelle-moi d'abord.
+          </p>
         </div>
 
         <!-- Chiffres clés -->
@@ -366,6 +371,9 @@ const schemaWebPage = {
           📞 Appeler Rafael pour démarrer — 06 77 35 22 26
         </a>
         <p class="text-aloe-500 text-xs mt-4">Appel gratuit, sans engagement. Je réponds à toutes tes questions.</p>
+        <p class="text-aloe-300 text-sm mt-6">
+          Déjà décidé ? <a href={LIEN_PARRAINAGE} target="_blank" rel={FOREVER_REL} class="font-semibold text-cream underline underline-offset-4 hover:text-aloe-200">Inscris-toi en ligne comme distributeur Forever</a>, avec moi comme parrain.
+        </p>
       </div>
     </div>
   </section>
@@ -480,7 +488,12 @@ const schemaWebPage = {
           class="rounded-full border border-aloe-500 hover:border-aloe-300 px-10 py-4 text-sm font-semibold text-aloe-200 hover:text-cream transition-colors">
           ✉️ Envoyer un message
         </a>
+        <a href={LIEN_PARRAINAGE} target="_blank" rel={FOREVER_REL}
+          class="rounded-full border border-aloe-500 hover:border-aloe-300 px-10 py-4 text-sm font-semibold text-aloe-200 hover:text-cream transition-colors">
+          ✍️ M'inscrire en ligne
+        </a>
       </div>
+      <p class="text-aloe-400 text-xs mt-4">Le lien d'inscription ouvre le site officiel Forever Living dans un nouvel onglet, avec moi comme parrain.</p>
     </div>
   </section>
 

@@ -13,6 +13,12 @@
 
 export const FOREVER_REL = 'sponsored noopener noreferrer';
 
+/** Boutique officielle Forever France, rattachée à Rafael (clients). */
+export const LIEN_BOUTIQUE = 'https://www.foreverliving.fr/ref/330001628607/';
+
+/** Inscription distributeur (FBO) avec Rafael comme parrain (lien donné par Rafael le 21/11/2026). */
+export const LIEN_PARRAINAGE = 'https://join.foreverliving.fr/ref/330001628607';
+
 function estForever(hostname: string): boolean {
   return hostname === 'foreverliving.fr' || hostname.endsWith('.foreverliving.fr');
 }
