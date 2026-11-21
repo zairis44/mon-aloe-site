@@ -2,8 +2,8 @@
 name: Forever FAB Active Boost
 reference: '821'
 slug: forever-fab-active-boost
-price: 51.93
-coutJour: 'environ 4,30 € la canette (pack de 12)'
+price: 49.9
+coutJour: 'environ 4,16 € la canette (pack de 12)'
 image: /images/produits/forever-fab-active-boost.webp
 images:
 - /images/produits/forever-fab-active-boost-2.webp

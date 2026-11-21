@@ -1,7 +1,20 @@
 # Esprit Aloé — À ne pas oublier
-*Mise à jour : 21 novembre 2026 (MYFOREVER seul, captures anonymisées)*
+*Mise à jour : 21 novembre 2026 (fiches Forever Bakuchiol et Forever Vitamin C)*
 
 - **/a-propos/ (20/11, demande de Rafael)** : la photo du profil devient le même portrait que `/contact/` (`rafael/rafael-avenard-portrait.webp`, 256 × 256, affiché en 288 × 288 : légèrement agrandi). À remplacer par une version plus grande avec la photo prévue après le coiffeur. L'encadré auteur des articles utilise encore l'ancienne `rafael-avenard.webp`.
+
+## Lot AQ du 21 novembre 2026 — fiches Forever Bakuchiol et Forever Vitamin C
+
+- **Méthode** : catalogue Forever relevé le 21/11 via l'API publique (`apisite.foreverliving.fr/api/product-list-filter`, POST `{categories:[id]}` par catégorie de `/api/get-all-categories` ; fiche détaillée : `/api/get-product/<réf>`). ~30 références absentes du site, mais le nom seul du produit est très peu cherché (10 à 90/mois). Retenu : viser des **recherches génériques** via le produit. Choix de Rafael : les 2 sérums d'abord.
+- **`/produits/forever-bakuchiol/`** (réf. 687, 62,27 €, 30 ml, crèmes et gels) : seoTitle « Sérum bakuchiol Forever : soin du soir à 1 % de bakuchiol » (cible « bakuchiol » 4 400/mois, « sérum bakuchiol » 1 300). Étude Dhaliwal 2019 (BJD, 44 volontaires, bakuchiol 0,5 % ≈ rétinol 0,5 %, mieux toléré) citée avec ses limites. **Signalé honnêtement : l'INCI contient un rétinoïde (Hydroxypinacolone Retinoate)** → pas « sans rétinoïde », prudence grossesse ; huile de soja.
+- **`/produits/forever-vitamin-c/`** (réf. 686, 62,27 €, 30 ml) : seoTitle « Sérum vitamine C Forever : 6 % de vitamine C stable, le matin » (cible « sérum vitamine C » 6 600/mois, très concurrentiel). Explication THD ascorbate vs acide ascorbique (ne pas comparer 6 % aux 15 % d'acide ascorbique), protection solaire, protéines de soja.
+- Allégations : celles de Forever (« cliniquement testée », « éclat ») attribuées à Forever, sans promesse chiffrée. Duo Expert (réf. 701, 118,25 €) mentionné en FAQ.
+- Maillage : associations Bakuchiol ↔ Vitamin C ↔ Logic nettoyant / hydratant / Crème Aloès (`maillage.ts`), libellés ajoutés. 108 → 110 pages.
+- **Images : à choisir par Rafael** (`image: ""` pour l'instant ; visuels officiels Forever : `https://www.foreverliving.fr/storage/products/images/686.png` et `687.png`).
+- **Prix corrigé** : FAB Active Boost 51,93 € → **49,90 €** (prix Forever du 21/11), coût par canette 4,16 €, aussi dans le tableau de la catégorie Sport.
+- **Après le 9/12** : liens depuis l'article `aloe-vera-visage` et la page `/quel-produit-forever-choisir/` (besoin « peau ») vers les 2 sérums. Article possible « Bakuchiol ou rétinol ? » pour viser « bakuchiol » (4 400/mois) avec un contenu informatif.
+- Prochaines fiches proposées (non validées) : Huile Capillaire Nourrissante (« huile capillaire » 1 000/mois), Masque-Gel de Nuit (« masque de nuit visage » 880), Aloe Blossom Herbal Tea (~180), Aloe Scrub (~90), puis le reste du catalogue.
+- **Mesure : démarre le 21/11.**
 
 ## Lot AP du 21 novembre 2026 — pas-à-pas illustré de /commander/
 

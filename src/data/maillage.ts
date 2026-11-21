@@ -212,6 +212,16 @@ export const ASSOCIATIONS: Record<string, Association[]> = {
     ['forever-logic-aloe-essence-tonifiante', 'L’étape qui précède dans la routine Logic'],
     ['aloe-gelly-forever-gel-apaisant', 'Un gel d’aloe vera pur à 84 %'],
   ],
+  'forever-bakuchiol': [
+    ['forever-vitamin-c', 'Le sérum du matin, complémentaire du bakuchiol'],
+    ['forever-logic-aloe-gel-nettoyant', 'Le nettoyant à utiliser avant le sérum'],
+    ['forever-aloe-moisturizing-lotion', 'Une crème hydratante à appliquer ensuite'],
+  ],
+  'forever-vitamin-c': [
+    ['forever-bakuchiol', 'Le sérum du soir, complémentaire de la vitamine C'],
+    ['forever-logic-aloe-gel-nettoyant', 'Le nettoyant à utiliser avant le sérum'],
+    ['forever-logic-aloe-gel-hydratant', 'Un soin hydratant à appliquer ensuite'],
+  ],
   'forever-marine-collagen': [
     ['forever-logic-aloe-gel-hydratant', 'Un soin hydratant pour le visage'],
     ['forever-logic-aloe-essence-tonifiante', 'Un autre produit de la gamme beauté'],
@@ -237,9 +247,11 @@ export const LIBELLES: Record<string, string> = {
   'forever-argi-pls': 'Forever Argi+',
   'forever-calcium': 'Forever Calcium',
   'forever-kids': 'Forever Kids',
+  'forever-vitamin-c': 'Sérum Forever Vitamin C',
   'forever-lean': 'Forever Lean',
   'forever-move': 'Forever Move',
   'forever-bee-propolis': 'Bee Propolis',
+  'forever-bakuchiol': 'Sérum Forever Bakuchiol',
   'forever-bright-toothgel': 'Bright Toothgel',
   'forever-fab-active-boost': 'FAB Active Boost',
   'forever-fast-break': 'Fast Break',
