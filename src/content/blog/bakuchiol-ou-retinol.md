@@ -5,6 +5,8 @@ description: "Le bakuchiol, c'est quoi ? L'étude face au rétinol, tolérance, 
 pubDate: 2026-11-21
 author: "Rafael Avenard"
 category: "beaute"
+image: "/images/blog/bakuchiol-ou-retinol.webp"
+imageAlt: "Femme qui applique un soin du bout des doigts sur le haut de la joue, près de l'œil"
 tags:
   - "bakuchiol"
   - "bakuchiol ou rétinol"
