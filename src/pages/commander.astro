@@ -26,46 +26,78 @@ const essentiel = [
   { titre: "Livraison", texte: "Point relais en 48 à 72 h, offerte dès 50 € d'achat, ou Chronopost à domicile en J+1." },
 ];
 
+// Pas-à-pas illustré : captures de la boutique Forever fournies par Rafael le 21/11/2026
+// (données personnelles floutées), dans public/images/commander/.
 const etapes = [
   {
     numero: "01",
-    titre: "Ouvrez la boutique Forever avec mon lien",
+    titre: "Choisissez votre produit et cliquez sur « Commander sur Forever »",
     texte:
-      "Le lien ouvre la boutique officielle Forever Living France et vous rattache à moi comme distributeur. Vous gardez ainsi un interlocuteur pour vos questions, avant et après l'achat.",
-    lien: null,
-    labelLien: null,
+      "Sur chaque fiche produit d'Esprit Aloé, le bouton « Commander sur Forever » ouvre ce produit sur la boutique officielle Forever Living France, déjà rattaché à moi comme distributeur.",
+    image: "/images/commander/etape-1-fiche.webp", w: 619, h: 500,
+    alt: "Fiche produit Esprit Aloé : prix et bouton « Commander sur Forever »",
+    lien: "/produits/",
+    labelLien: "Voir les produits",
   },
   {
     numero: "02",
-    titre: "Créez votre compte client",
+    titre: "Ajoutez le produit au panier",
     texte:
-      "Première commande : créez un compte avec votre nom, votre e-mail et votre adresse. Déjà client : connectez-vous simplement avec vos identifiants.",
+      "Sur la boutique Forever, choisissez la quantité puis cliquez sur « Ajouter au panier ». Un message confirme l'ajout : ouvrez ensuite votre panier avec l'icône en haut à droite.",
+    image: "/images/commander/etape-2-panier.webp", w: 1000, h: 859,
+    alt: "Page produit de la boutique Forever : quantité, bouton « Ajouter au panier » et confirmation",
     lien: null,
     labelLien: null,
   },
   {
     numero: "03",
-    titre: "Ajoutez vos produits au panier",
+    titre: "Continuez vos achats ou passez à l'étape suivante",
     texte:
-      "Cherchez le produit par son nom ou par sa gamme. Pour comparer avant de choisir, nos fiches produit détaillent la composition, l'utilisation et le prix de chaque produit.",
-    lien: "/produits/",
-    labelLien: "Comparer les produits",
+      "Le panier affiche le total et les conditions de livraison. Ajoutez d'autres produits avec « Continuer mes achats », ou cliquez sur « Passer à l'étape suivante ».",
+    image: "/images/commander/etape-3-etape-suivante.webp", w: 1000, h: 326,
+    alt: "Panier de la boutique Forever avec le total et le bouton « Passer à l'étape suivante »",
+    lien: null,
+    labelLien: null,
   },
   {
     numero: "04",
-    titre: `Saisissez le code ${OFFRE_BIENVENUE.code}`,
+    titre: "Créez votre compte client",
     texte:
-      `Nouveau client, panier d'au moins ${OFFRE_BIENVENUE.minimum} : saisissez ${OFFRE_BIENVENUE.code} en majuscules dans le champ code promo. La remise de ${OFFRE_BIENVENUE.remise} s'affiche avant la validation.`,
-    lien: "/code-promo-forever/",
-    labelLien: "Conditions du code",
+      "Première commande : remplissez « Je crée mon compte client » (civilité, prénom, nom, e-mail, mot de passe, adresse). Déjà client : connectez-vous à gauche avec votre e-mail.",
+    image: "/images/commander/etape-4-compte.webp", w: 1000, h: 935,
+    alt: "Formulaire « Je crée mon compte client » de la boutique Forever",
+    lien: null,
+    labelLien: null,
   },
   {
     numero: "05",
-    titre: "Choisissez la livraison et payez",
+    titre: "Vérifiez mon numéro de conseiller et validez",
     texte:
-      "Point relais ou domicile : les frais s'affichent avant le paiement. Vérifiez le total, réglez sur la boutique sécurisée Forever et gardez votre numéro de commande.",
+      "Complétez le pays, le code postal, la ville et le téléphone, acceptez les CGU et les CGV. Dans « Connaissez-vous un conseiller Forever ? », mon numéro 330001628607 doit apparaître : saisissez-le s'il est vide. Cliquez sur « Créer mon compte ».",
+    image: "/images/commander/etape-5-conseiller.webp", w: 900, h: 1016,
+    alt: "Suite du formulaire Forever : conseiller Forever 330001628607 et bouton « Créer mon compte »",
+    lien: null,
+    labelLien: null,
+  },
+  {
+    numero: "06",
+    titre: "Choisissez la livraison et saisissez votre code promo",
+    texte:
+      `Point relais ou domicile : le prix s'affiche à côté de chaque mode. Nouveau client avec un panier d'au moins ${OFFRE_BIENVENUE.minimum} : saisissez ${OFFRE_BIENVENUE.code} dans « Code promo » puis cliquez sur « Valider ».`,
+    image: "/images/commander/etape-6-livraison.webp", w: 1000, h: 276,
+    alt: "Choix du mode de livraison (domicile ou point relais) et champ code promo sur la boutique Forever",
     lien: "/livraison/",
     labelLien: "Tarifs de livraison",
+  },
+  {
+    numero: "07",
+    titre: "Payez par carte bancaire",
+    texte:
+      "Le paiement se fait sur la plateforme sécurisée Systempay de la Banque Populaire : CB, Visa, Visa Electron, Mastercard, Maestro ou e-Carte Bleue. Vérifiez le récapitulatif (produits, frais de port, total) avant de payer.",
+    image: "/images/commander/etape-7-paiement.webp", w: 1000, h: 282,
+    alt: "Page de paiement sécurisé de la boutique Forever avec le récapitulatif du panier",
+    lien: null,
+    labelLien: null,
   },
 ];
 
@@ -145,7 +177,11 @@ const faq = [
   },
   {
     q: "Dois-je créer un compte pour commander en ligne ?",
-    r: "Oui. Pour une première commande, créez votre compte client sur la boutique Forever. Si vous êtes déjà client, connectez-vous avec vos identifiants. En cas de blocage, appelez-moi au 06 77 35 22 26.",
+    r: "Oui. Après avoir rempli votre panier, la boutique Forever vous demande de créer votre compte client (ou de vous connecter si vous êtes déjà client). Vérifiez que mon numéro de conseiller, 330001628607, est bien indiqué. En cas de blocage, appelez-moi au 06 77 35 22 26.",
+  },
+  {
+    q: "Quels moyens de paiement accepte la boutique Forever ?",
+    r: "La carte bancaire : CB, Visa, Visa Electron, Mastercard, Maestro et e-Carte Bleue, sur la plateforme de paiement sécurisé Systempay de la Banque Populaire.",
   },
   {
     q: "Y a-t-il un code promo pour une première commande Forever ?",
@@ -189,12 +225,13 @@ const schemaHowTo = {
   "@type": "HowTo",
   name: "Comment commander des produits Forever Living en ligne en France",
   description:
-    "Les 5 étapes pour acheter des produits Forever Living sur la boutique officielle en France, de la création du compte au paiement.",
+    "Les 7 étapes pour acheter des produits Forever Living sur la boutique officielle en France, du choix du produit au paiement.",
   step: etapes.map((e, i) => ({
     "@type": "HowToStep",
     position: i + 1,
     name: e.titre,
     text: e.texte,
+    image: `${siteUrl}${e.image}`,
   })),
 };
 
@@ -212,7 +249,7 @@ const schemaFAQ = {
 
 <Layout
   title="Commander Forever en ligne : boutique Forever Living France"
-  description={`Acheter Forever Living en France : la boutique officielle en 5 étapes, le code ${OFFRE_BIENVENUE.code} (−${OFFRE_BIENVENUE.remise} sur la 1re commande) et les frais de livraison.`}
+  description={`Acheter Forever Living en France : la boutique officielle étape par étape, le code ${OFFRE_BIENVENUE.code} (−${OFFRE_BIENVENUE.remise} sur la 1re commande) et les frais de livraison.`}
   canonical="https://espritaloe.fr/commander/"
 >
   <script type="application/ld+json" set:html={JSON.stringify(schemaBreadcrumb)} slot="head" />
@@ -278,22 +315,35 @@ const schemaFAQ = {
     <div class="mx-auto max-w-6xl px-6">
       <div class="text-center mb-14">
         <span class="text-xs font-semibold uppercase tracking-widest text-aloe-500">Pas à pas</span>
-        <h2 class="text-4xl text-aloe-900 mt-2">Commander Forever en ligne en 5 étapes</h2>
+        <h2 class="text-4xl text-aloe-900 mt-2">Commander Forever en ligne : les étapes en images</h2>
       </div>
-      <ol class="grid md:grid-cols-2 lg:grid-cols-5 gap-6">
+      <ol class="space-y-8">
         {etapes.map((e) => (
-          <li class="rounded-2xl bg-white border border-aloe-100 p-6 flex flex-col">
-            <span class="text-xs font-semibold text-aloe-400 tracking-widest mb-2">Étape {e.numero}</span>
-            <h3 class="text-lg font-semibold text-aloe-800 mb-3 leading-snug">{e.titre}</h3>
-            <p class="text-sm text-aloe-600 leading-relaxed flex-1">{e.texte}</p>
-            {e.lien && (
-              <a
-                href={e.lien}
-                class="mt-5 inline-flex items-center gap-1 text-sm font-semibold text-aloe-600 hover:text-aloe-800 transition-colors"
-              >
-                {e.labelLien} →
-              </a>
-            )}
+          <li class="rounded-2xl bg-white border border-aloe-100 p-6 md:p-8 grid md:grid-cols-5 gap-6 items-center">
+            <div class="md:col-span-2">
+              <span class="text-xs font-semibold text-aloe-400 tracking-widest">Étape {e.numero}</span>
+              <h3 class="text-xl font-semibold text-aloe-800 mt-2 mb-3 leading-snug">{e.titre}</h3>
+              <p class="text-sm text-aloe-600 leading-relaxed">{e.texte}</p>
+              {e.lien && (
+                <a
+                  href={e.lien}
+                  class="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-aloe-600 hover:text-aloe-800 transition-colors"
+                >
+                  {e.labelLien} →
+                </a>
+              )}
+            </div>
+            <div class="md:col-span-3">
+              <img
+                src={e.image}
+                alt={e.alt}
+                width={e.w}
+                height={e.h}
+                loading="lazy"
+                decoding="async"
+                class="w-full h-auto rounded-xl border border-aloe-100 shadow-sm"
+              />
+            </div>
           </li>
         ))}
       </ol>
