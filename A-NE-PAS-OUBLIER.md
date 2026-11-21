@@ -1,5 +1,12 @@
 # Esprit Aloé — À ne pas oublier
-*Mise à jour : 21 novembre 2026 (lot AW, page blog par thèmes)*
+*Mise à jour : 21 novembre 2026 (demandes d'indexation du soir)*
+
+## Demandes d'indexation du 21/11/2026 (20h)
+
+- **Constat** (relevé de l'outil SEO, collecte du 21/11 matin) : 48 pages indexées sur 104 vérifiées ; 25 « explorées, non indexées » (dont guide C9, minceur, déodorant, FAB, Berry Nectar, Therm, DX4 ; la plupart non revues depuis juin), 23 « détectées, non indexées » (dont /catalogue-forever/, shampoing, Lean, Move, Calcium, F15, /recettes-c9/), 7 inconnues de Google (Forever Daily, Kids, Lycium, Absorbent-C, glossaire gelée royale / MSM / propolis), et /produits/nutrition/ en 404 au crawl du 19/06.
+- **Fait (10/10, « Indexation demandée » confirmé à chaque fois)** : guide C9, /catalogue-forever/, /produits/nutrition/, article minceur, c9-forever-avis, fiche shampoing, fiche déodorant, fiche FAB, /livraison/, fiche Berry Nectar.
+- **Prochaines demandes** (une dizaine par jour) : Forever Daily, Kids, Calcium, Lean, Move, F15 Débutant/Avancé, /recettes-c9/, Therm, DX4, Mango, savon liquide, Arctic Sea, ImmuBlend.
+- Sitemap `sitemap-index.xml` lu le 21/11 par Google, « Opération effectuée », 104 pages découvertes.
 
 ## Lot AW du 21 novembre 2026 — page /blog/ organisée par thèmes (demande de Rafael)
 
