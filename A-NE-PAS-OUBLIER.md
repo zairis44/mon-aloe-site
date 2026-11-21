@@ -1,7 +1,15 @@
 # Esprit Aloé — À ne pas oublier
-*Mise à jour : 21 novembre 2026 (fiches Forever Bakuchiol et Forever Vitamin C)*
+*Mise à jour : 21 novembre 2026 (fiches Huile Capillaire et Masque-Gel de Nuit)*
 
 - **/a-propos/ (20/11, demande de Rafael)** : la photo du profil devient le même portrait que `/contact/` (`rafael/rafael-avenard-portrait.webp`, 256 × 256, affiché en 288 × 288 : légèrement agrandi). À remplacer par une version plus grande avec la photo prévue après le coiffeur. L'encadré auteur des articles utilise encore l'ancienne `rafael-avenard.webp`.
+
+## Lot AR du 21 novembre 2026 — fiches Huile Capillaire Nourrissante et Masque-Gel de Nuit
+
+- **`/produits/forever-huile-capillaire-nourrissante/`** (réf. 642, 34,91 €, 30 ml) : seoTitle « Huile capillaire Forever : huile sèche sans silicone » (cible « huile capillaire » 1 000/mois). Sans silicone vérifié dans l'INCI (base C15-19 Alkane), 6 huiles (crambe, jojoba, camélia, patauá, pequi, carthame), parfum + allergènes déclarés signalés. Allégation Forever « répare les fourches » **non reprise** (une huile gaine, ne recolle pas). Usage cheveux et barbe.
+- **`/produits/forever-masque-gel-de-nuit/`** (réf. 677, 29,59 €, 59 ml, nouveauté Forever) : seoTitle « Masque de nuit visage Forever : masque-gel à l'aloe vera » (cible « masque de nuit visage » 880/mois). 2 à 3 soirs/semaine, rincer le matin, peaux mixtes. **Nuance** : Forever dit « sans parfum » ; l'INCI contient des huiles essentielles (davana, basilic, carotte) → écrit « sans parfum ajouté » + mention des HE. Allégations Forever non reprises : « la peau perd 4 fois plus d'eau la nuit », « optimise la régénération cellulaire », « sébo-régulatrices ».
+- Maillage (`maillage.ts`) : Huile ↔ shampoing / après-shampoing / Gelly ; Masque ↔ Logic nettoyant / Bakuchiol / Propolis Crème. 110 → 112 pages.
+- **Images : à choisir par Rafael** (`image: ""` ; visuels officiels : `…/storage/products/images/642.webp` et `677.png`).
+- **Mesure : démarre le 21/11.**
 
 ## Lot AQ du 21 novembre 2026 — fiches Forever Bakuchiol et Forever Vitamin C
 
@@ -10,7 +18,7 @@
 - **`/produits/forever-vitamin-c/`** (réf. 686, 62,27 €, 30 ml) : seoTitle « Sérum vitamine C Forever : 6 % de vitamine C stable, le matin » (cible « sérum vitamine C » 6 600/mois, très concurrentiel). Explication THD ascorbate vs acide ascorbique (ne pas comparer 6 % aux 15 % d'acide ascorbique), protection solaire, protéines de soja.
 - Allégations : celles de Forever (« cliniquement testée », « éclat ») attribuées à Forever, sans promesse chiffrée. Duo Expert (réf. 701, 118,25 €) mentionné en FAQ.
 - Maillage : associations Bakuchiol ↔ Vitamin C ↔ Logic nettoyant / hydratant / Crème Aloès (`maillage.ts`), libellés ajoutés. 108 → 110 pages.
-- **Images : à choisir par Rafael** (`image: ""` pour l'instant ; visuels officiels Forever : `https://www.foreverliving.fr/storage/products/images/686.png` et `687.png`).
+- **Images** (choisies par Rafael, 21/11) : visuels officiels Forever en mise en scène (Bakuchiol sur fond bleu, Vitamin C sur fond jaune), 1080 × 1080, webp q80.
 - **Prix corrigé** : FAB Active Boost 51,93 € → **49,90 €** (prix Forever du 21/11), coût par canette 4,16 €, aussi dans le tableau de la catégorie Sport.
 - **Après le 9/12** : liens depuis l'article `aloe-vera-visage` et la page `/quel-produit-forever-choisir/` (besoin « peau ») vers les 2 sérums. Article possible « Bakuchiol ou rétinol ? » pour viser « bakuchiol » (4 400/mois) avec un contenu informatif.
 - Prochaines fiches proposées (non validées) : Huile Capillaire Nourrissante (« huile capillaire » 1 000/mois), Masque-Gel de Nuit (« masque de nuit visage » 880), Aloe Blossom Herbal Tea (~180), Aloe Scrub (~90), puis le reste du catalogue.

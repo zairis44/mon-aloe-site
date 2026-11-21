@@ -3,7 +3,7 @@ name: "Forever Bakuchiol : sérum de nuit au bakuchiol (1 %)"
 reference: "687"
 slug: "forever-bakuchiol"
 price: 62.27
-image: ""
+image: "/images/produits/forever-bakuchiol.webp"
 images: []
 category: "cremes-et-gels"
 description: "Le sérum du soir de Forever : 1 % de bakuchiol, un actif d'origine végétale souvent présenté comme une alternative au rétinol, avec du gel d'aloe vera en premier ingrédient et du jojoba. Texture lactée, sans parfum ajouté, vegan. Flacon de 30 ml. Réf. 687."

@@ -217,6 +217,16 @@ export const ASSOCIATIONS: Record<string, Association[]> = {
     ['forever-logic-aloe-gel-nettoyant', 'Le nettoyant à utiliser avant le sérum'],
     ['forever-aloe-moisturizing-lotion', 'Une crème hydratante à appliquer ensuite'],
   ],
+  'forever-huile-capillaire-nourrissante': [
+    ['forever-shampoing-aloe-jojoba', 'Le shampoing doux à utiliser avant l’huile'],
+    ['forever-apres-shampoing-aloe-jojoba', 'L’après-shampoing pour démêler les longueurs'],
+    ['aloe-gelly-forever-gel-apaisant', 'Le gel d’aloe vera, aussi utilisé en masque cheveux'],
+  ],
+  'forever-masque-gel-de-nuit': [
+    ['forever-logic-aloe-gel-nettoyant', 'Le nettoyant à utiliser avant le masque'],
+    ['forever-bakuchiol', 'Le sérum du soir, pour les autres soirs de la semaine'],
+    ['forever-aloe-propolis-creme', 'Une crème plus riche pour les peaux très sèches'],
+  ],
   'forever-vitamin-c': [
     ['forever-bakuchiol', 'Le sérum du soir, complémentaire de la vitamine C'],
     ['forever-logic-aloe-gel-nettoyant', 'Le nettoyant à utiliser avant le sérum'],
@@ -247,6 +257,8 @@ export const LIBELLES: Record<string, string> = {
   'forever-argi-pls': 'Forever Argi+',
   'forever-calcium': 'Forever Calcium',
   'forever-kids': 'Forever Kids',
+  'forever-huile-capillaire-nourrissante': 'Huile Capillaire Nourrissante',
+  'forever-masque-gel-de-nuit': 'Masque-Gel de Nuit',
   'forever-vitamin-c': 'Sérum Forever Vitamin C',
   'forever-lean': 'Forever Lean',
   'forever-move': 'Forever Move',

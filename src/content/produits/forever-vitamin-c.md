@@ -3,7 +3,7 @@ name: "Forever Vitamin C : sérum à la vitamine C (6 %) pour l'éclat"
 reference: "686"
 slug: "forever-vitamin-c"
 price: 62.27
-image: ""
+image: "/images/produits/forever-vitamin-c.webp"
 images: []
 category: "cremes-et-gels"
 description: "Le sérum du matin de Forever : 6 % d'une forme stable de vitamine C (ascorbate de tétrahexyldécyle), du gel d'aloe vera en premier ingrédient et du jojoba. Texture lactée, sans parfum ajouté, vegan. Flacon de 30 ml. Réf. 686."
