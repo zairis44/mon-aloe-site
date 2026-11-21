@@ -3,7 +3,7 @@ name: "Masque-Gel de Nuit Forever : masque de nuit visage à l'aloe vera"
 reference: "677"
 slug: "forever-masque-gel-de-nuit"
 price: 29.59
-image: ""
+image: "/images/produits/forever-masque-gel-de-nuit.webp"
 images: []
 category: "cremes-et-gels"
 description: "Un masque de nuit en gel à garder toute la nuit et à rincer le matin, 2 à 3 fois par semaine. Gel d'aloe vera en premier ingrédient, glycérine, extraits de pomme, de bambou coréen et de réglisse, pensé pour les peaux mixtes. Sans parfum ajouté. Pot de 59 ml. Réf. 677."

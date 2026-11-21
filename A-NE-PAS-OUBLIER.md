@@ -8,7 +8,7 @@
 - **`/produits/forever-huile-capillaire-nourrissante/`** (réf. 642, 34,91 €, 30 ml) : seoTitle « Huile capillaire Forever : huile sèche sans silicone » (cible « huile capillaire » 1 000/mois). Sans silicone vérifié dans l'INCI (base C15-19 Alkane), 6 huiles (crambe, jojoba, camélia, patauá, pequi, carthame), parfum + allergènes déclarés signalés. Allégation Forever « répare les fourches » **non reprise** (une huile gaine, ne recolle pas). Usage cheveux et barbe.
 - **`/produits/forever-masque-gel-de-nuit/`** (réf. 677, 29,59 €, 59 ml, nouveauté Forever) : seoTitle « Masque de nuit visage Forever : masque-gel à l'aloe vera » (cible « masque de nuit visage » 880/mois). 2 à 3 soirs/semaine, rincer le matin, peaux mixtes. **Nuance** : Forever dit « sans parfum » ; l'INCI contient des huiles essentielles (davana, basilic, carotte) → écrit « sans parfum ajouté » + mention des HE. Allégations Forever non reprises : « la peau perd 4 fois plus d'eau la nuit », « optimise la régénération cellulaire », « sébo-régulatrices ».
 - Maillage (`maillage.ts`) : Huile ↔ shampoing / après-shampoing / Gelly ; Masque ↔ Logic nettoyant / Bakuchiol / Propolis Crème. 110 → 112 pages.
-- **Images : à choisir par Rafael** (`image: ""` ; visuels officiels : `…/storage/products/images/642.webp` et `677.png`).
+- **Images** (choisies par Rafael, 21/11) : visuels officiels Forever en mise en scène (huile : flacon pipette, aloe et camomille sur fond rose, 1200 × 1200 ; masque : tube « Refining Gel Mask » avec pomme et grenade, 1080 × 1080), webp q80.
 - **Mesure : démarre le 21/11.**
 
 ## Lot AQ du 21 novembre 2026 — fiches Forever Bakuchiol et Forever Vitamin C

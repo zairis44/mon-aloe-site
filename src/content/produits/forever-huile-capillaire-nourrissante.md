@@ -3,7 +3,7 @@ name: "Huile Capillaire Nourrissante Forever : huile sèche cheveux et barbe"
 reference: "642"
 slug: "forever-huile-capillaire-nourrissante"
 price: 34.91
-image: ""
+image: "/images/produits/forever-huile-capillaire-nourrissante.webp"
 images: []
 category: "cremes-et-gels"
 description: "Une huile sèche sans silicone et sans rinçage pour les longueurs, les pointes et la barbe : six huiles végétales (crambe, jojoba, camélia, patauá, pequi, carthame) et de l'aloe vera. Texture non grasse, parfum fruité et floral. Flacon de 30 ml. Réf. 642."
