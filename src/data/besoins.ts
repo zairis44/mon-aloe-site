@@ -86,7 +86,7 @@ export const BESOINS: Besoin[] = [
     titre: 'Peau et soins à l’aloe vera',
     court: 'Peau et soins',
     intro:
-      'L’aloe vera est un grand classique de la cosmétique. La gamme va du gel multi-usages à la routine visage complète, avec une crème plus riche pour les peaux sèches.',
+      'L’aloe vera est un grand classique de la cosmétique. La gamme va du gel multi-usages à la routine visage complète, avec une crème plus riche pour les peaux sèches et deux sérums, un pour le matin et un pour le soir.',
     attention:
       'Faites toujours un test sur le pli du coude avant un nouveau soin. Un gel cosmétique ne se boit pas et ne remplace pas l’avis d’un médecin sur une peau irritée.',
     produits: [
@@ -94,6 +94,8 @@ export const BESOINS: Besoin[] = [
       ['forever-logic-aloe-gel-hydratant', 'Un soin visage léger à l’aloe vera et à la niacinamide.'],
       ['forever-logic-aloe-essence-tonifiante', 'L’étape qui précède les soins : une essence sans alcool.'],
       ['forever-aloe-propolis-creme', 'Une crème riche à l’aloe vera et à la propolis, pour les peaux qui tirent.'],
+      ['forever-vitamin-c', 'Le sérum du matin : 6 % d’une forme stable de vitamine C, sous la crème.'],
+      ['forever-bakuchiol', 'Le sérum du soir : 1 % de bakuchiol, l’actif végétal souvent comparé au rétinol.'],
     ],
     guides: ['aloe-vera-peau-beaute-bienfaits-forever', 'aloe-vera-cheveux-cuir-chevelu-bienfaits'],
   },

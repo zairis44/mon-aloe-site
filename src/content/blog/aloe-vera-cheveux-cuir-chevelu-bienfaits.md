@@ -3,7 +3,7 @@ title: "Aloe vera pour les cheveux : bienfaits, application et produits Forever"
 seoTitle: "Aloe vera cheveux : bienfaits et soins Forever"
 description: "Chute de cheveux, cuir chevelu irrité, pointes sèches : comment l'aloe vera agit sur la santé capillaire et quels produits Forever utiliser."
 pubDate: 2026-04-05
-updatedDate: 2026-11-13
+updatedDate: 2026-12-09
 author: "Rafael Avenard"
 category: "beaute"
 tags:
@@ -41,7 +41,7 @@ Les cheveux et le cuir chevelu réagissent à tout : stress, alimentation désé
 
 Le cuir chevelu est une peau comme les autres — mais une peau soumise à des agressions spécifiques : chaleur des appareils coiffants, produits chimiques (teintures, défrisant), pollution, sébum accumulé. L'aloe vera s'utilise à la fois sur le cuir chevelu, comme soin de peau, et sur les longueurs.
 
-Son gel, composé surtout d'eau et de polysaccharides qui retiennent l'hydratation, en fait un soin léger, facile à utiliser en masque ou sans rinçage.
+Son gel, composé surtout d'eau et de polysaccharides qui retiennent l'hydratation, en fait un soin léger, facile à utiliser en masque ou sans rinçage. Pour ses autres usages, sur la peau ou en boisson, et pour bien choisir un gel, lisez [gel d'aloe vera : bienfaits et utilisation](/blog/gel-aloe-vera-bienfaits-utilisation/).
 
 ## 4 usages de l'aloe vera pour les cheveux
 

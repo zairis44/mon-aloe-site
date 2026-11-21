@@ -3,6 +3,7 @@ title: "Aloe vera à boire : comment boire la pulpe, dose et conseils"
 seoTitle: "Aloe vera à boire : dose, moment et conseils"
 description: "Aloe vera à boire : pulpe ou jus, combien en boire par jour, à quel moment, ce qu'on peut en attendre et les précautions. Le mode d'emploi simple."
 pubDate: 2026-11-13
+updatedDate: 2026-12-09
 author: "Rafael Avenard"
 category: "guides"
 image: "/images/blog/comment-boire-pulpe-aloe-vera.webp"
@@ -35,7 +36,7 @@ faq:
   - question: "Quel est le meilleur moment pour boire l'aloe vera ?"
     reponse: "Le matin à jeun, un quart d'heure avant le petit-déjeuner, est le moment le plus simple à tenir. Vous pouvez aussi répartir la dose en deux prises, matin et avant le dîner."
   - question: "Peut-on boire de l'aloe vera tous les jours ?"
-    reponse: "Une pulpe dont l'aloïne a été écartée peut se boire au quotidien, à la dose indiquée, en dehors des situations où elle est déconseillée : grossesse, allaitement, enfant sans avis médical, traitement médicamenteux sans avis de votre médecin."
+    reponse: "Oui, une pulpe dont l'aloïne a été écartée peut se boire au quotidien, à la dose indiquée (60 à 90 ml), en cure de quelques semaines ou toute l'année. Elle est déconseillée pendant la grossesse et l'allaitement, chez l'enfant sans avis médical, et si vous suivez un traitement ou avez une maladie digestive, sans l'avis de votre médecin. Ne buvez pas le gel d'une feuille du jardin : il est difficile de le séparer parfaitement du latex, qui contient l'aloïne."
   - question: "Faut-il boire la pulpe d'aloe vera pure ou diluée ?"
     reponse: "Les deux se font. Pure, elle a un goût neutre et légèrement acidulé. Diluée dans un grand verre d'eau ou de jus, elle passe plus facilement. Évitez simplement les boissons chaudes."
   - question: "Combien de temps se conserve une bouteille ouverte ?"
@@ -51,7 +52,7 @@ Trois mots circulent, et ils ne désignent pas tous la même chose :
 
 - **La pulpe d'aloe vera à boire** (on dit aussi gel à boire) : la pulpe intérieure de la feuille, stabilisée, vendue en bouteille. C'est par exemple le [Forever Aloe Vera Gel](/produits/forever-pulpe-daloe-vera/), à 99,7 % de pulpe.
 - **Le jus d'aloe vera** : le terme est utilisé pour des produits très différents. Certains sont proches d'une pulpe, d'autres sont surtout de l'eau sucrée aromatisée à l'aloe vera. Lisez la liste des ingrédients : le gel d'aloe vera doit arriver en premier.
-- **Le gel d'aloe vera cosmétique** : il s'applique sur la peau et **ne se boit pas**. Même s'il porte le même nom, il n'est pas formulé pour être consommé.
+- **Le gel d'aloe vera cosmétique** : il s'applique sur la peau et **ne se boit pas**. Même s'il porte le même nom, il n'est pas formulé pour être consommé. Je compare les usages du gel, sur la peau comme en boisson, dans [gel d'aloe vera : bienfaits et utilisation](/blog/gel-aloe-vera-bienfaits-utilisation/).
 
 Ce guide parle de la pulpe à boire.
 
@@ -116,7 +117,7 @@ Le matin à jeun, un quart d'heure avant le petit-déjeuner, est le moment le pl
 
 ### Peut-on boire de l'aloe vera tous les jours ?
 
-Une pulpe dont l'aloïne a été écartée peut se boire au quotidien, à la dose indiquée, en dehors des situations où elle est déconseillée : grossesse, allaitement, enfant sans avis médical, traitement médicamenteux sans avis de votre médecin.
+Oui, une pulpe dont l'aloïne a été écartée peut se boire au quotidien, à la dose indiquée (60 à 90 ml), en cure de quelques semaines ou toute l'année. Elle est déconseillée pendant la grossesse et l'allaitement, chez l'enfant sans avis médical, et si vous suivez un traitement ou avez une maladie digestive, sans l'avis de votre médecin. Ne buvez pas le gel d'une feuille du jardin : il est difficile de le séparer parfaitement du latex, qui contient l'aloïne.
 
 ### Faut-il boire la pulpe d'aloe vera pure ou diluée ?
 

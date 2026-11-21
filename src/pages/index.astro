@@ -107,8 +107,8 @@ const schemaFAQ = {
 const nbProduits = (await getCollection('produits')).length;
 ---
 <Layout
-  title="Forever Living : distributeur et commande d'aloe vera en France"
-  description="Commandez vos produits Forever Living sur la boutique officielle auprès d'un distributeur indépendant. Pulpe d'aloe vera, C9, soins. Livraison 48–72h."
+  title="Distributeur Forever Living France : produits à l'aloe vera"
+  description="Distributeur indépendant Forever Living en France : pulpe d'aloe vera, soins, programme C9. Conseils personnalisés et boutique officielle Forever."
 >
   <script type="application/ld+json" set:html={JSON.stringify(schemaFAQ)} slot="head" />
   <Header />
@@ -120,12 +120,11 @@ const nbProduits = (await getCollection('produits')).length;
     <div class="mx-auto max-w-6xl px-6 grid md:grid-cols-2 gap-12 items-center">
       <div>
         <span class="inline-block rounded-full bg-aloe-100 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-aloe-700 mb-6">
-          Distributeur Forever Living — France
+          Distributeur indépendant — partout en France
         </span>
         <h1 class="text-5xl md:text-6xl text-aloe-900 leading-tight mb-6">
-          L'aloe vera<br />
-          <span class="italic text-aloe-500">qui vous fait</span><br />
-          du bien
+          Votre distributeur Forever Living France<br />
+          <span class="block mt-3 text-3xl md:text-4xl italic text-aloe-500">l'aloe vera qui vous fait du bien</span>
         </h1>
         <p class="text-xl text-aloe-700 leading-relaxed max-w-lg mb-8">
           Des produits Forever Living certifiés IASC pour prendre soin de vous au quotidien :
@@ -156,6 +155,24 @@ const nbProduits = (await getCollection('produits')).length;
           <p class="text-xs text-aloe-500 uppercase tracking-wide">d'aloe vera pur</p>
         </div>
       </div>
+    </div>
+  </section>
+  <!-- ══════════════════════════════════════════════
+       COMMANDER — renvoi vers /commander/ (la page qui porte
+       les requêtes « commander / acheter / boutique en ligne »)
+  ══════════════════════════════════════════════ -->
+  <section class="bg-aloe-50 py-12" aria-labelledby="commander-titre">
+    <div class="mx-auto max-w-4xl px-6 flex flex-col md:flex-row md:items-center gap-6 md:gap-10">
+      <div class="flex-1">
+        <h2 id="commander-titre" class="text-2xl md:text-3xl text-aloe-900 mb-2">Commander les produits Forever en France</h2>
+        <p class="text-aloe-700 leading-relaxed">
+          La commande se passe sur la boutique officielle Forever, rattachée à votre distributeur.
+          Je vous explique chaque étape, la livraison et le code de bienvenue MYFOREVER pour les nouveaux clients.
+        </p>
+      </div>
+      <a href="/commander/" class="shrink-0 inline-flex items-center justify-center rounded-full bg-aloe-600 px-7 py-3.5 text-sm font-semibold text-cream hover:bg-aloe-700 transition-colors">
+        Comment commander →
+      </a>
     </div>
   </section>
   <!-- ══════════════════════════════════════════════
@@ -369,7 +386,8 @@ const nbProduits = (await getCollection('produits')).length;
           <dd class="text-sm text-aloe-600 leading-relaxed">
             Commandez directement via notre boutique en ligne sécurisée ou par téléphone au
             <a href="tel:+33677352226" class="text-aloe-600 underline">06 77 35 22 26</a>.
-            Livraison en 48–72h partout en France.
+            Livraison en 48–72h partout en France. Le pas-à-pas est sur la page
+            <a href="/commander/" class="text-aloe-600 underline">commander Forever en ligne</a>.
           </dd>
         </div>
         <div class="rounded-2xl bg-white border border-aloe-100 p-6">

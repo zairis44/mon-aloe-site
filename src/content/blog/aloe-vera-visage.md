@@ -3,6 +3,7 @@ title: "Aloe vera sur le visage : comment l'utiliser selon votre peau"
 seoTitle: "Aloe vera visage : bienfaits et utilisation"
 description: "Gel d'aloe vera sur le visage : ce qu'il apporte, comment l'appliquer selon votre type de peau, en masque ou sous le maquillage, et les erreurs à éviter."
 pubDate: 2026-11-20
+updatedDate: 2026-12-09
 author: "Rafael Avenard"
 category: "beaute"
 image: "/images/blog/aloe-vera-visage.webp"
@@ -32,6 +33,10 @@ produitsLies:
     nom: "Logic Gel Hydratant"
   - slug: "forever-logic-aloe-gel-nettoyant"
     nom: "Logic Gel Nettoyant"
+  - slug: "forever-vitamin-c"
+    nom: "Sérum Forever Vitamin C"
+  - slug: "forever-bakuchiol"
+    nom: "Sérum Forever Bakuchiol"
 articlesLies:
   - slug: "aloe-vera-peau-beaute-bienfaits-forever"
     titre: "Aloe vera pour la peau : guide complet des bienfaits et produits Forever"
@@ -39,6 +44,8 @@ articlesLies:
     titre: "Crème à l'aloe vera : laquelle choisir selon votre peau ?"
   - slug: "aloe-vera-gelly-utilisation"
     titre: "Aloe Vera Gelly : comment l'utiliser ? 8 usages au quotidien"
+  - slug: "bakuchiol-ou-retinol"
+    titre: "Bakuchiol ou rétinol : lequel choisir pour votre peau ?"
 ---
 
 Sur le visage, le gel d'aloe vera hydrate, rafraîchit et laisse la peau souple sans film gras. Une couche fine matin et soir sur peau propre suffit. Selon votre peau, vous l'utilisez seul, sous une crème ou en masque express. Il ne traite ni l'acné ni les taches : c'est un soin d'hydratation.
@@ -77,6 +84,15 @@ Pour les bienfaits de l'aloe vera sur la peau en général, et ce qu'en disent l
 ## En masque express
 
 Une fois par semaine, ou après une journée au vent ou au soleil, appliquez une couche épaisse de gel sur le visage propre. Laissez poser 10 à 15 minutes, puis retirez l'excédent avec un coton humide. Gardez le tube au réfrigérateur pour un effet plus frais. Je donne les quantités pour ce masque et sept autres usages dans [les 8 façons d'utiliser l'Aloe Vera Gelly](/blog/aloe-vera-gelly-utilisation/).
+
+## Aller plus loin : un sérum le matin ou le soir
+
+Le gel d'aloe vera hydrate, mais il n'apporte pas d'actif ciblé. Si vous cherchez plus d'éclat ou si vos premières ridules vous préoccupent, un sérum se glisse entre le nettoyage et le gel (ou la crème) :
+
+- **Le matin**, le [sérum Forever Vitamin C](/produits/forever-vitamin-c/) contient 6 % d'une forme stable de vitamine C. Il se porte sous votre crème et sous une protection solaire.
+- **Le soir**, le [sérum Forever Bakuchiol](/produits/forever-bakuchiol/) contient 1 % de bakuchiol, un actif d'origine végétale souvent présenté comme une alternative au rétinol. Sa formule contient aussi un dérivé de la vitamine A, en faible quantité : si vous êtes enceinte ou si vous évitez les rétinoïdes, demandez l'avis de votre médecin avant de l'utiliser.
+
+Pour savoir ce que le bakuchiol fait vraiment, et ce que l'étude qui le compare au rétinol montre ou ne montre pas, lisez [bakuchiol ou rétinol : lequel choisir pour votre peau ?](/blog/bakuchiol-ou-retinol/)
 
 ## Les erreurs à éviter
 

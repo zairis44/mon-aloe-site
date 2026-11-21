@@ -3,6 +3,7 @@ title: "Aloe Vera Gelly : comment l'utiliser ? 8 usages au quotidien"
 seoTitle: "Aloe Vera Gelly : utilisation et 8 usages pratiques"
 description: "Soleil, rasage, piqûres, mains sèches, cuir chevelu : 8 façons d'utiliser l'Aloe Vera Gelly Forever, la bonne quantité et les précautions à connaître."
 pubDate: 2026-11-14
+updatedDate: 2026-12-09
 author: "Rafael Avenard"
 category: "beaute"
 image: "/images/blog/aloe-vera-gelly-utilisation.webp"
@@ -46,7 +47,7 @@ draft: false
 
 L'Aloe Vera Gelly s'applique en couche fine sur une peau propre, autant de fois que nécessaire. Vous pouvez l'utiliser dans huit situations courantes : après le soleil, après le rasage ou l'épilation, sur une piqûre d'insecte, sous votre crème de jour, en masque express, sur les mains sèches, sur le cuir chevelu et après le sport.
 
-Je conseille ce tube depuis que je suis distributeur Forever, en 2016, et il fait partie des six produits que je recommande le plus. Ce guide reprend chaque usage, la bonne quantité et les précautions.
+Je conseille ce tube depuis que je suis distributeur Forever, en 2016, et il fait partie des six produits que je recommande le plus. Ce guide reprend chaque usage, la bonne quantité et les précautions. Pour les généralités sur le gel d'aloe vera (peau, cheveux, boisson, lecture de l'étiquette), voyez mon [guide du gel d'aloe vera](/blog/gel-aloe-vera-bienfaits-utilisation/).
 
 ## Les 8 usages de l'Aloe Vera Gelly
 
@@ -54,7 +55,7 @@ Je conseille ce tube depuis que je suis distributeur Forever, en 2016, et il fai
 
 En été, rangez le tube au réfrigérateur. Le soir, étalez une couche généreuse sur les épaules, le nez et le haut du dos, sans frotter. Vous sentez la fraîcheur du gel froid dès l'application, et la peau tiraille moins.
 
-Le Gelly hydrate la peau après l'exposition. Il ne la protège pas du soleil et ne remplace pas votre crème solaire. En cas de cloques, de fièvre, de coup de soleil étendu ou chez un jeune enfant, demandez l'avis d'un pharmacien ou d'un médecin.
+Le Gelly hydrate la peau après l'exposition. Il ne la protège pas du soleil et ne remplace pas votre crème solaire. En cas de cloques, de fièvre, de coup de soleil étendu ou chez un jeune enfant, demandez l'avis d'un pharmacien ou d'un médecin. Je détaille les premiers gestes et ces signes d'alerte dans [aloe vera et coup de soleil](/blog/aloe-vera-coup-de-soleil/).
 
 ### 2. Après le rasage ou l'épilation
 
@@ -72,7 +73,7 @@ Un gonflement important, une piqûre de guêpe chez une personne allergique ou u
 
 Le matin, après le nettoyage, appliquez une fine couche sur le visage et le cou. Laissez pénétrer une minute, puis passez votre crème de jour ou votre protection solaire. Sur une peau mixte à grasse, le Gelly peut suffire seul.
 
-Pour construire une routine complète matin et soir selon votre type de peau, consultez notre [guide de l'aloe vera pour la peau](/blog/aloe-vera-peau-beaute-bienfaits-forever/).
+Pour construire une routine complète matin et soir selon votre type de peau, consultez [l'aloe vera sur le visage](/blog/aloe-vera-visage/), et pour les généralités, notre [guide de l'aloe vera pour la peau](/blog/aloe-vera-peau-beaute-bienfaits-forever/).
 
 ### 5. En masque express pour le visage
 
@@ -82,7 +83,7 @@ Après une journée au vent, au froid ou sur les pistes, étalez une couche épa
 
 Après le jardinage, le bricolage ou une journée d'hiver, massez une petite quantité sur les mains et les cuticules. Le soir, insistez sur les coudes, les genoux et les talons.
 
-Sur une peau très sèche, le gel seul ne suffit pas toujours. Appliquez le Gelly en premier, puis la [crème Aloe Propolis](/produits/forever-aloe-propolis-creme/) par-dessus : sa texture plus riche garde l'hydratation en place pendant la nuit.
+Sur une peau très sèche, le gel seul ne suffit pas toujours. Appliquez le Gelly en premier, puis la [crème Aloe Propolis](/produits/forever-aloe-propolis-creme/) par-dessus : sa texture plus riche garde l'hydratation en place pendant la nuit. Pour choisir la crème qui convient à votre peau, voyez [crème à l'aloe vera : laquelle choisir ?](/blog/creme-aloe-vera-laquelle-choisir/)
 
 ### 7. Sur le cuir chevelu sec
 
