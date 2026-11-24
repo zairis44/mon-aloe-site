@@ -3,10 +3,11 @@ name: "Forever Nutra Q10 : coenzyme Q10, vitamines et plantes en sachets"
 reference: "312"
 slug: "forever-nutra-q10"
 price: 36.69
+coutJour: "environ 1,22 € par jour (1 sachet)"
 image: "/images/produits/forever-nutra-q10.webp"
 images: []
 category: "nutrition"
-description: "Un complément en poudre, en sachets, qui associe la coenzyme Q10, les vitamines B6, B9, B12, C et E, du magnésium, du chrome et des extraits de plantes (olivier, curcuma, pépins de raisin, boswellia). 1 sachet par jour dans la pulpe d'aloe vera ou un verre d'eau. Boîte de 105 g. Contient du soja. Réf. 312."
+description: "Un complément en poudre, en sachets, qui associe la coenzyme Q10, les vitamines B6, B9, B12, C et E, du magnésium, du chrome et des extraits de plantes (olivier, curcuma, pépins de raisin, boswellia). 1 sachet par jour dans la pulpe d'aloe vera ou un verre d'eau. 30 sachets de 3,5 g, soit un mois. Contient du soja. Réf. 312."
 titreDetails: "Forever Nutra Q10 : composition, dose et précautions"
 seoTitle: "Coenzyme Q10 Forever (Nutra Q10) : bienfaits, dose, précautions"
 seoDescription: "Forever Nutra Q10 (réf. 312) : coenzyme Q10, vitamines B, C, E, magnésium et plantes en sachets. Ce qu'on peut en dire honnêtement, dose et précautions."
@@ -20,7 +21,7 @@ faq:
   - question: "Quels sont les bienfaits de la coenzyme Q10 ?"
     reponse: "En Europe, aucune allégation de santé n'est autorisée pour la coenzyme Q10 : l'EFSA n'a validé aucune des demandes (énergie, cœur, peau). Je ne vous promettrai donc pas d'effet de la Q10 elle-même. Dans le Nutra Q10, ce sont les vitamines qui portent les allégations autorisées mises en avant par Forever (homocystéine, stress oxydatif)."
   - question: "Comment prendre Forever Nutra Q10 ?"
-    reponse: "1 sachet par jour, à diluer dans 90 ml de pulpe d'aloe vera Forever ou dans un verre d'eau. Ne dépassez pas cette dose."
+    reponse: "1 sachet par jour, à diluer dans 90 ml de pulpe d'aloe vera Forever ou dans un verre d'eau. Une boîte de 30 sachets dure un mois, pour un coût d'environ 1,22 € par jour. Ne dépassez pas cette dose."
   - question: "Combien de coenzyme Q10 contient un sachet ?"
     reponse: "Forever ne publie pas la quantité par sachet sur sa fiche en ligne. Elle figure dans le tableau nutritionnel de la boîte. Si ce chiffre compte pour vous, demandez-le-moi avant de commander : je vous le transmets."
   - question: "Qui ne doit pas prendre Forever Nutra Q10 ?"
@@ -31,7 +32,7 @@ caracteristiques:
   - titre: "Composition"
     contenu: "Fructose, carbonate de magnésium, émulsifiant : lécithine de soja, acide ascorbique (vitamine C), coenzyme Q10, agent de charge : cellulose microcristalline, antiagglomérant : dioxyde de silicium, extrait de feuilles d'olivier (Olea europaea) (maltodextrine, antiagglomérant : dioxyde de silicium), extrait de racines de curcuma (Curcuma longa), extrait de pépins de raisins (Vitis vinifera) dosé en proanthocyanidines, extrait de résine de boswellia (Boswellia serrata), succinate de d-alpha tocophérol (vitamine E) (agent de charge : hydroxypropylméthylcellulose), chlorure de chrome (agent de charge : cellulose microcristalline), chlorhydrate de pyridoxine (vitamine B6), acide folique (vitamine B9), cyanocobalamine (vitamine B12) (agent de charge : phosphate de calcium). Contient du soja. Sans gluten. Liste publiée par Forever en novembre 2026 : référez-vous à l'emballage."
   - titre: "Comment l'utiliser"
-    contenu: "1 sachet par jour, dans 90 ml de pulpe d'aloe vera ou dans un verre d'eau. Boîte de 105 g."
+    contenu: "1 sachet par jour, dans 90 ml de pulpe d'aloe vera ou dans un verre d'eau. 30 sachets de 3,5 g par boîte, soit un mois."
   - titre: "Précautions"
     contenu: "Déconseillé aux personnes sous anticoagulants. Contient du soja et du fructose. Avis médical recommandé en cas de traitement au long cours, de problème de foie ou de vésicule biliaire (curcuma), de grossesse ou d'allaitement. Ne pas dépasser la dose journalière recommandée. Tenir hors de portée des enfants. Les compléments alimentaires ne remplacent pas une alimentation variée et équilibrée et un mode de vie sain."
 ---
@@ -77,7 +78,7 @@ Ce n'est pas pour vous si vous prenez un anticoagulant, si vous êtes allergique
 
 ## Comment le prendre
 
-Un sachet par jour, à diluer dans 90 ml de [pulpe d'aloe vera Forever](/produits/forever-pulpe-daloe-vera/) ou dans un verre d'eau. Pour savoir comment intégrer l'aloe vera à votre journée, lisez [aloe vera à boire : comment et combien](/blog/comment-boire-pulpe-aloe-vera/).
+Un sachet par jour, à diluer dans 90 ml de [pulpe d'aloe vera Forever](/produits/forever-pulpe-daloe-vera/) ou dans un verre d'eau. La boîte de 30 sachets dure un mois et revient à environ 1,22 € par jour. Pour savoir comment intégrer l'aloe vera à votre journée, lisez [aloe vera à boire : comment et combien](/blog/comment-boire-pulpe-aloe-vera/).
 
 ## Une question avant de commander ?
 
