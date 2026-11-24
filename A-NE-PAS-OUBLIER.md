@@ -1,5 +1,21 @@
 # Esprit Aloé — À ne pas oublier
-*Mise à jour : 21 novembre 2026 (demandes d'indexation du soir)*
+*Mise à jour : 24 novembre 2026 (lot AX, 3 fiches produit)*
+
+## Lot AX du 24 novembre 2026 — 3 fiches produit : Nutra Q10, Active HA, Crème Contour des Yeux
+
+- **Demande de Rafael** : 3 produits, priorité aux plus recherchés.
+- **Méthode** : catalogue foreverliving.fr relevé le 24/11 (API du site, ~115 références) comparé aux fiches ; volumes Semrush France des ~35 produits absents. Le nom seul reste très peu cherché (10 à 50/mois, hors Active Pro-B 140 et Multi-Maca 90, écartés au lot T). Comme au lot AQ, choix sur les **recherches génériques** que le produit peut capter :
+  - **Nutra Q10** (réf. 312) : « coenzyme q10 » 12 100/mois (KD 32), « coq10 » 6 600, « coenzyme q10 bienfaits » 2 400, « ubiquinol » 2 400.
+  - **Crème Contour des Yeux** (réf. 561) : « crème contour des yeux » 1 900 (KD 28), « meilleure crème contour des yeux » 170, « contour des yeux aloe vera » 90.
+  - **Active HA** (réf. 264) : « acide hyaluronique complément alimentaire » 1 000 (KD 23), « acide hyaluronique gélule » 260, « forever active ha » 50.
+  - Suivants possibles : Plant Protein (« protéine végétale en poudre » 480, « protéine vegan » 480), Fiber (« fibres complément alimentaire » 320), Bee Honey (« miel de fleurs » 1 600, intention peu commerciale). Sensatiable écarté (« coupe faim naturel » 5 400, mais allégation coupe-faim non autorisée).
+- **`/produits/forever-nutra-q10/`** (36,69 €, 105 g en sachets, nutrition) : seoTitle « Coenzyme Q10 Forever (Nutra Q10) : bienfaits, dose, précautions ». **Q10 : aucune allégation** (dit clairement). Allégations des vitamines (B6/B9/B12 homocystéine, C/E stress oxydatif) **attribuées à Forever**, avec la réserve que les quantités par sachet ne sont pas publiées en ligne (même règle que Calcium). Précautions : anticoagulants (Forever), statines et traitements au long cours → médecin, curcuma (ANSES), soja, fructose. Nombre de sachets et coût par jour **non indiqués** (non publiés par Forever) : à compléter avec la boîte.
+- **`/produits/forever-active-ha/`** (44,44 €, 60 capsules, sport et fitness, ~1,48 €/jour) : seoTitle « Acide hyaluronique complément alimentaire : Forever Active HA ». Aucune allégation (HA oral, curcuma, gingembre) ; zinc non repris (quantité inconnue). Précautions Forever : grossesse, anticoagulants ; ajoutées : curcuma (ANSES), soja, cire d'abeille, gélatine (non végétarien).
+- **`/produits/forever-creme-contour-des-yeux/`** (22,87 €, 21 g, crèmes et gels) : seoTitle « Crème contour des yeux Forever : aloe vera, peptides, collagène ». Sans parfum vérifié dans l'INCI. Promesses Forever (lifte, réduit poches et cernes) **attribuées et nuancées** (aspect, pas disparition). Cire d'abeille signalée.
+- Maillage (`maillage.ts`) : associations des 3 fiches + libellés ; glossaire coenzyme Q10 → Nutra Q10. Aucune page en mesure modifiée. 115 → 118 pages.
+- **Images : à fournir par Rafael** (`public/images/produits/forever-nutra-q10.webp`, `forever-active-ha.webp`, `forever-creme-contour-des-yeux.webp`). Ne pas mettre en ligne avant.
+- **Après le 9/12** : liens dans le texte depuis l'article `aloe-vera-visage` (→ contour des yeux) et `forever-freedom-aloe-vera-articulations-mobilite` (→ Active HA) ; demander l'indexation des 3 fiches.
+- **Mesure : démarre à la mise en ligne.**
 
 ## Demandes d'indexation du 21/11/2026 (20h)
 

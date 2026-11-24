@@ -151,6 +151,18 @@ export const ASSOCIATIONS: Record<string, Association[]> = {
     ['forever-marine-collagen', 'Une boisson au collagène'],
   ],
 
+  // Lot AX (24/11/2026)
+  'forever-nutra-q10': [
+    ['forever-pulpe-daloe-vera', 'La pulpe d’aloe vera dans laquelle diluer le sachet'],
+    ['forever-daily', 'Le multivitamines de la gamme, qui contient aussi de la Q10'],
+    ['forever-arctic-sea', 'Les oméga-3 de la gamme'],
+  ],
+  'forever-active-ha': [
+    ['forever-freedom-confort-articulaire', 'La boisson à l’aloe vera pour les cartilages'],
+    ['forever-move', 'L’autre complément en capsules, avec du curcuma lui aussi'],
+    ['forever-marine-collagen', 'Une boisson au collagène'],
+  ],
+
   // Beauté et bien-être
   'aloe-gelly-forever-gel-apaisant': [
     ['forever-aloe-msm-gel', 'Un autre gel multi-usages de la gamme'],
@@ -232,6 +244,11 @@ export const ASSOCIATIONS: Record<string, Association[]> = {
     ['forever-apres-shampoing-aloe-jojoba', 'L’après-shampoing pour démêler les longueurs'],
     ['aloe-gelly-forever-gel-apaisant', 'Le gel d’aloe vera, aussi utilisé en masque cheveux'],
   ],
+  'forever-creme-contour-des-yeux': [
+    ['forever-logic-aloe-gel-nettoyant', 'Le nettoyant à utiliser avant la crème'],
+    ['forever-vitamin-c', 'Le sérum du matin, pour le reste du visage'],
+    ['forever-bakuchiol', 'Le sérum du soir, pour le reste du visage'],
+  ],
   'forever-masque-gel-de-nuit': [
     ['forever-logic-aloe-gel-nettoyant', 'Le nettoyant à utiliser avant le masque'],
     ['forever-bakuchiol', 'Le sérum du soir, pour les autres soirs de la semaine'],
@@ -266,6 +283,9 @@ export const LIBELLES: Record<string, string> = {
   'forever-aloe-vera-peche-bien-etre': 'Aloe Vera Pêche',
   'forever-argi-pls': 'Forever Argi+',
   'forever-calcium': 'Forever Calcium',
+  'forever-nutra-q10': 'Forever Nutra Q10',
+  'forever-active-ha': 'Forever Active HA',
+  'forever-creme-contour-des-yeux': 'Crème Contour des Yeux',
   'forever-kids': 'Forever Kids',
   'forever-infusion-fleur-aloes': 'Infusion Fleur d’Aloès',
   'forever-aloe-scrub': 'Aloe Scrub',
