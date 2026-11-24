@@ -14,7 +14,8 @@
 - **`/produits/forever-creme-contour-des-yeux/`** (22,87 €, 21 g, crèmes et gels) : seoTitle « Crème contour des yeux Forever : aloe vera, peptides, collagène ». Sans parfum vérifié dans l'INCI. Promesses Forever (lifte, réduit poches et cernes) **attribuées et nuancées** (aspect, pas disparition). Cire d'abeille signalée.
 - Maillage (`maillage.ts`) : associations des 3 fiches + libellés ; glossaire coenzyme Q10 → Nutra Q10. Aucune page en mesure modifiée. 115 → 118 pages.
 - **Images** (choisies par Rafael, 24/11) : visuels officiels Forever, 1200 × 1200, webp q80. Active HA : flacon sur meuble de salle de bain avec aloe ; Contour des Yeux : tube en main (emballage anglais « awakening eye cream ») ; Nutra Q10 : packshot sur fond blanc détouré par Forever, posé par Claude sur un plan de travail de cuisine flou (fond dessiné, pas une photo), à la demande de Rafael.
-- **Après le 9/12** : liens dans le texte depuis l'article `aloe-vera-visage` (→ contour des yeux) et `forever-freedom-aloe-vera-articulations-mobilite` (→ Active HA) ; demander l'indexation des 3 fiches.
+- **En ligne le 24/11 (21h20)**. Demande d'indexation refusée ce soir : **quota Search Console du jour dépassé**. À faire en priorité à la prochaine session : Nutra Q10, Active HA, Crème Contour des Yeux.
+- **Après le 9/12** : liens dans le texte depuis l'article `aloe-vera-visage` (→ contour des yeux) et `forever-freedom-aloe-vera-articulations-mobilite` (→ Active HA).
 - **Mesure : démarre à la mise en ligne.**
 
 ## Demandes d'indexation du 21/11/2026 (20h)
