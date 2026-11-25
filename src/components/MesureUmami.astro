@@ -7,7 +7,8 @@
  * (lignes directrices du 04/07/2025, grille d'auto-évaluation). Conditions tenues ici :
  *   - finalité unique : statistiques de fréquentation d'espritaloe.fr, pour Esprit Aloé seul ;
  *   - aucun cookie, aucun identifiant stocké dans le navigateur, pas de suivi entre sites ;
- *   - données agrégées et anonymes (pages vues, clics vers la boutique, page d'origine) ;
+ *   - données agrégées et anonymes (pages vues, page d'origine, clics sur les boutons,
+ *     les liens de contact et les liens vers la boutique) ;
  *   - conservation limitée (6 mois sur l'offre gratuite) ;
  *   - le réglage « Ne pas me suivre » du navigateur est respecté.
  * Ne rien ajouter ici qui sorte de ce cadre (enregistrement de session, identifiant
@@ -39,22 +40,77 @@ const UMAMI_WEBSITE_ID = '62867fb8-5df6-4924-837f-5a651f9ff781';
 ></script>
 
 <script is:inline>
-  // Clics vers la boutique Forever : un événement « clic-boutique » par clic,
-  // avec la page d'origine et l'adresse du lien (sans paramètres).
+  // Suivi des clics (Umami → Événements). Trois événements, données anonymes uniquement
+  // (texte du bouton, zone de la page, page, lien) — jamais de saisie du visiteur :
+  //   - « clic-boutique » : tout lien vers foreverliving.fr (boutique et inscription) ;
+  //   - « clic-contact »  : téléphone, e-mail, WhatsApp, Facebook, Instagram ;
+  //   - « clic-bouton »   : boutons du site (liens en forme de bouton et <button>).
+  // Les liens ordinaires dans le texte ne sont pas comptés, pour garder des chiffres lisibles.
+  function texteBouton(el) {
+    var t = el.getAttribute('aria-label') || el.getAttribute('title') || el.textContent || '';
+    if (!t.trim()) {
+      var img = el.querySelector('img[alt]');
+      if (img) t = img.getAttribute('alt') || '';
+    }
+    t = t.replace(/\s+/g, ' ').trim();
+    return (t.length > 80 ? t.slice(0, 79) + '…' : t) || '(sans texte)';
+  }
+  function zoneBouton(el) {
+    var marque = el.closest('[data-zone]');
+    if (marque) return marque.getAttribute('data-zone');
+    if (el.closest('[role="dialog"]')) return 'fenetre';
+    if (el.closest('header')) return 'en-tete';
+    if (el.closest('footer')) return 'pied-de-page';
+    if (el.closest('nav')) return 'menu';
+    return 'contenu';
+  }
+  function canalContact(url) {
+    if (url.protocol === 'tel:') return 'telephone';
+    if (url.protocol === 'mailto:') return 'email';
+    var h = url.hostname.replace(/^www\./, '');
+    if (h === 'wa.me' || h.endsWith('whatsapp.com')) return 'whatsapp';
+    if (h.endsWith('facebook.com')) return 'facebook';
+    if (h.endsWith('instagram.com')) return 'instagram';
+    return null;
+  }
+  function envoyer(nom, donnees) {
+    if (window.umami && typeof window.umami.track === 'function') window.umami.track(nom, donnees);
+  }
+
   document.addEventListener('click', function (event) {
     var target = event.target;
     if (!(target instanceof Element)) return;
-    var link = target.closest('a[href]');
-    if (!link) return;
+    var el = target.closest('a[href], button');
+    if (!el) return;
+    var base = { bouton: texteBouton(el), zone: zoneBouton(el), page: location.pathname };
+
+    if (el.tagName === 'BUTTON') {
+      envoyer('clic-bouton', base);
+      return;
+    }
+
     var url;
-    try { url = new URL(link.href, location.href); } catch (e) { return; }
-    if (url.protocol !== 'https:' && url.protocol !== 'http:') return;
-    if (url.hostname !== 'foreverliving.fr' && !url.hostname.endsWith('.foreverliving.fr')) return;
-    if (window.umami && typeof window.umami.track === 'function') {
-      window.umami.track('clic-boutique', {
-        page: location.pathname,
-        lien: url.origin + url.pathname,
-      });
+    try { url = new URL(el.getAttribute('href'), location.href); } catch (e) { return; }
+
+    if (url.protocol === 'https:' || url.protocol === 'http:') {
+      if (url.hostname === 'foreverliving.fr' || url.hostname.endsWith('.foreverliving.fr')) {
+        base.lien = url.origin + url.pathname;
+        envoyer('clic-boutique', base);
+        return;
+      }
+    }
+
+    var canal = canalContact(url);
+    if (canal) {
+      base.canal = canal;
+      envoyer('clic-contact', base);
+      return;
+    }
+
+    // Lien interne en forme de bouton (classe « rounded-full » des boutons du site).
+    if (url.origin === location.origin && /\brounded-full\b/.test(el.className || '')) {
+      base.cible = url.pathname;
+      envoyer('clic-bouton', base);
     }
   }, { capture: true });
 </script>

@@ -1,5 +1,15 @@
 # Esprit Aloé — À ne pas oublier
-*Mise à jour : 24 novembre 2026 (lot AX, 3 fiches produit)*
+*Mise à jour : 25 novembre 2026 (lot AY, suivi des boutons dans Umami)*
+
+## Lot AY du 25 novembre 2026 — Umami : quels boutons sont cliqués
+
+- `MesureUmami.astro` : chaque événement porte désormais **`bouton`** (texte ou aria-label, 80 car. max), **`zone`** (`en-tete`, `menu`, `contenu`, `fenetre` = popup, `pied-de-page`, ou `data-zone` s'il est posé) et **`page`**.
+  - **`clic-boutique`** (nom inchangé, historique conservé) : + `lien`. Inscription distributeur = lien `join.foreverliving.fr`.
+  - **`clic-contact`** (nouveau) : + `canal` (`telephone`, `email`, `whatsapp`, `facebook`, `instagram`).
+  - **`clic-bouton`** (nouveau) : `<button>` et liens internes en forme de bouton (classe `rounded-full`) ; + `cible` pour les liens. Les liens dans le texte ne sont pas comptés.
+- Lecture : cloud.umami.is → site → **Événements** → choisir l'événement → propriétés `bouton` / `zone` / `page`.
+- Toujours dans l'exemption CNIL : aucune saisie du visiteur, aucun identifiant. `/confidentialite/` mis à jour (« boutons cliqués, clics vers la boutique et vers les moyens de contact »).
+- Pour distinguer deux boutons au texte identique, poser `data-zone="..."` sur leur bloc parent.
 
 ## Lot AX du 24 novembre 2026 — 3 fiches produit : Nutra Q10, Active HA, Crème Contour des Yeux
 
